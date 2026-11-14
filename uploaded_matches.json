@@ -509,6 +509,17 @@
       "category": "VIDEOCAST"
     },
     {
+      "video_id": 1074841,
+      "url": "https://footballi.net/video/1074841/%DA%AF%D9%84-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%D9%85%D9%87%D8%AF%DB%8C-%D8%B7%D8%A7%D8%B1%D9%85%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%AF%D8%A8%DB%8C-%D9%85%D8%B1%D8%AF%D9%88%D8%AF-%D8%A7%D8%B9%D9%84%D8%A7%D9%85-%D8%B4%D8%AF",
+      "title": "گل قیچی برگردان مهدی طارمی مقابل النصر دبی مردود اعلام شد!",
+      "description": "گل قیچی برگردان مهدی طارمی مقابل النصر دبی که مردود اعلام شد!در پایان بازی الوصل با نتیجه 2-0 مقابل النصر دبی به پیروزی رسید",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-446fe862-7ae5-4ebc-87e7-61442a75933f.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946828731414.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1074806,
       "url": "https://footballi.net/video/1074806/%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D9%87-%D8%AF%D9%84%DB%8C%D9%84-%D8%AD%D8%B1%DA%A9%D8%AA-%D8%BA%DB%8C%D8%B1%D9%88%D8%B1%D8%B2%D8%B4%DB%8C-%D8%B1%D9%88%DB%8C-%D8%B3%D8%B9%DB%8C%D8%AF-%D8%B9%D8%B2%D8%AA-%D8%A7%D9%84%D9%84%D9%87%DB%8C",
       "title": "اخراج بازیکن فلسطین به دلیل حرکت غیرورزشی روی سعید عزت‌اللهی",
@@ -815,17 +826,6 @@
       "is_short": false,
       "category": "VIDEO",
       "video_id": 1074528
-    },
-    {
-      "url": "https://footballi.net/video/1074525/%D9%86%D8%B8%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D9%86%D9%88%D8%A7%D8%B2%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D9%88-%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%AF%D8%B1-%D8%B1%D9%88%D8%B2%D9%86%D8%A7%D9%85%D9%87-%D8%AA%D9%88%D8%B3%D8%B7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
-      "title": "نظر محمد نوازی درباره عملکرد استقلال و آگهی فروش محمودی در روزنامه توسط پرسپولیس",
-      "description": "حواشی مراسم تجلیل از ابراهیم تهامی با حضور پیشکسوتان تیم ملی و پیشکسوتان استقلال خوزستان را به صورت اختصاصی در فوتبالی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-63c533eb-0c75-441c-8759-62a2f69a4197.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945764888016.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074525
     }
   ],
   "organized_playlist_vids": [
@@ -1474,5 +1474,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1074838
+  "max_seen_video_id": 1074845
 }
