@@ -509,6 +509,17 @@
       "category": "VIDEOCAST"
     },
     {
+      "video_id": 1074906,
+      "url": "https://footballi.net/video/1074906/%D8%A8%D8%A7%D8%B2%DA%AF%D8%B4%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D9%85%D8%AF%D8%A7%D8%B1%DA%A9-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AF%D8%A7%D8%AF%DA%AF%D8%A7%D9%87-CAS-%D8%A7%D8%B1%D8%B3%D8%A7%D9%84-%DA%A9%D8%B1%D8%AF",
+      "title": "بازگشا: پرسپولیس مدارک پرونده یاسر آسانی را به دادگاه CAS ارسال کرد",
+      "description": "علی بازگشا مدارک مربوط به پرونده یاسر آسانی را به دادگاه CAS ارسال کرد. این اقدام پرسپولیس در جریان مسائل حقوقی مربوط به این بازیکن در لیگ برتر ایران صورت گرفت.",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-3148db7e-c1b8-4928-bcef-b9da02a195d3.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947277777071.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1074900,
       "url": "https://footballi.net/video/1074900/%D8%A7%D8%B2-%D8%B9%D9%84%DB%8C-%D8%AF%D8%A7%DB%8C%DB%8C-%D8%AA%D8%A7-%D8%B3%D8%B1%D8%AF%D8%A7%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%86-10-%DA%AF%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%B9%D8%B1%D8%A7%D9%82",
       "title": "از علی دایی تا سردار آزمون؛ 10 گل برتر ایران مقابل عراق",
@@ -815,17 +826,6 @@
       "is_short": false,
       "category": "VIDEO",
       "video_id": 1074574
-    },
-    {
-      "url": "https://footballi.net/video/1074529/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7-%D8%A7%DA%A9%D8%A8%D8%B1%DB%8C%D8%A7%D9%86-%D9%87%D9%86%D9%88%D8%B2-%D8%A8%D8%A7%D9%88%D8%B1-%D9%86%D8%AF%D8%A7%D8%B1%D9%85-%D8%A7%DB%8C%D9%84%D8%AF%D8%B1%D9%88%D9%85-%D8%A8%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%AA%D9%88%D9%87%DB%8C%D9%86-%DA%A9%D8%B1%D8%AF%D9%87-%D8%A8%D8%A7%D8%B4%D8%AF",
-      "title": "محمدرضا اکبریان: هنوز باور ندارم ایلدروم به یاسر آسانی توهین کرده باشد",
-      "description": "حواشی مراسم تجلیل از ابراهیم تهامی با حضور پیشکسوتان تیم ملی و پیشکسوتان استقلال خوزستان را به صورت اختصاصی در فوتبالی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-673eb6c2-f454-4dc5-8dd7-5d791f58366c.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945778883987.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074529
     }
   ],
   "organized_playlist_vids": [
@@ -1099,8 +1099,8 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-f4ef1d85-da50-4697-b27b-89074ee30013.mp4"
   ],
   "daily_uploads": {
-    "date": "2026-11-14",
-    "count": 10
+    "date": "2026-11-15",
+    "count": 0
   },
   "last_upload_timestamp": 1794664940.025519,
   "last_apify_check": 0,
@@ -1467,12 +1467,12 @@
       "INTERVIEW"
     ]
   },
-  "upload_limit_cooldown_until": 1794729825.1956453,
+  "upload_limit_cooldown_until": 0,
   "quota_exhausted_date": "2026-11-12",
   "ignored_comments": [],
   "deleted_comments": [
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1074900
+  "max_seen_video_id": 1074906
 }
