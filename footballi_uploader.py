@@ -26,6 +26,7 @@ from config import (
 )
 from scrapers import (
     crawl_footballi_videos,
+    fetch_telegram_shorts,
     normalize_persian,
     is_foreign_or_blacklisted,
     is_video_too_old,
@@ -365,7 +366,7 @@ def normalize_queue_item(item: dict) -> dict:
     title = re.sub(r"\s*\|\s*خلاصه بازی\s*$", "", title).strip()
     poster = item.get("poster_url") or item.get("poster") or item.get("thumbnail") or ""
     is_short = bool(item.get("is_short", False))
-    vid_id = extract_numeric_id(u)
+    vid_id = extract_numeric_id(u) or int(item.get("video_id", 0))
     item["video_id"] = vid_id
     item["url"] = u
     item["mp4_url"] = mp4
@@ -392,13 +393,14 @@ def deduplicate_and_purge_old_queue(
         u = item.get("url", "")
         mp4 = item.get("mp4_url", "")
         t = normalize_persian(item.get("title", "")).lower()
-        vid_id = item.get("video_id", 0)
+        vid_id = extract_numeric_id(u)
 
         if not u or not mp4 or not t:
             continue
-        if is_video_too_old(item.get("title", ""), "", video_id=vid_id, max_site_id=highest_id):
-            purged_old_or_foreign += 1
-            continue
+        if item.get("source") != "telegram_shorts":
+            if is_video_too_old(item.get("title", ""), "", video_id=vid_id, max_site_id=highest_id):
+                purged_old_or_foreign += 1
+                continue
         if is_foreign_or_blacklisted(item.get("title", ""), ""):
             purged_old_or_foreign += 1
             continue
@@ -490,7 +492,7 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 
 
 def main():
-    print("[START] Footballi Bot starting (Fast 32MB Chunk Upload + >=3min Horizontal Gate)...")
+    print("[START] Footballi Bot starting (Web >=3m + Free Telegram Vertical Shorts Edition)...")
     state = load_state()
     reset_key = get_tehran_reset_key()
 
@@ -503,7 +505,9 @@ def main():
     channel_norm_titles = {normalize_persian(t).lower() for t in state.get("uploaded_titles", [])}
 
     new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
-    for item in new_web_videos:
+    new_tg_shorts = fetch_telegram_shorts(state)
+
+    for item in new_web_videos + new_tg_shorts:
         item["category"] = detect_primary_category(
             item["title"], item.get("description", ""), item.get("is_short", False)
         )
@@ -606,6 +610,12 @@ def main():
             candidate = top
             break
         else:
+            if top.get("source") == "telegram_shorts":
+                print(f"⏭️ [SKIP-TG-HORIZONTAL] Telegram video is horizontal ({w}x{h}), skipping for Shorts: {top['title']}")
+                state["pending_queue"].pop(0)
+                state["uploaded_urls"].append(top["url"])
+                state["seen_mp4s"].append(top["mp4_url"])
+                continue
             if dur > 0 and dur < MIN_HORIZONTAL_DURATION_SECONDS:
                 print(
                     f"⏭️ [SKIP-SHORT-HORIZONTAL] Rejected horizontal video under 3 mins "
