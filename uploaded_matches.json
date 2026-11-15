@@ -500,6 +500,28 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 9999999,
+      "url": "https://t.me/footballiapp/511862",
+      "title": "محمد قربانی: برای پیروزی به میدان می‌رویم",
+      "description": "محمد قربانی: برای پیروزی به میدان می‌رویم\nعراق تیم خوبی است و حالا به رویارویی با آن‌ها فکر می‌کنیم/ باید متمرکز بمانیم و سخت تمرین کنیم/ برای برد بازی خواهیم کرد چون تیم و مربی خوبی داریم و همه آماده این بازی هستیم/ چند بازیکن جدید به ترکیب ما اضافه شده‌اند اما فکر می‌کنم که این بازی خوبی برای ما خواهد بود/ تعدادی از بازیکنان عراقی در لیگ ایران بازی کرده‌اند/ از دید من بشار رسن که در پرسپولیس بازی می‌کرد و هم‌پستی خود من هم هست، بهترین بازیکن عراقی شاغل در لیگ ایران بوده است",
+      "mp4_url": "https://cdn4.telesco.pe/file/b3ec3f69f5.mp4?token=kSQMXhWoIK6egmYXx1FWivFx0IRLcisf6KNSWPFbXDL8SOq-rDlKMTN-fB-B6eO8g9ckYt149TcgSZlqZOheKPHDGZ5SqPn2vYsciAPRaCuSINecnAsXTGQGComRc_TsEHuC0RU6ZaWpm4WcfW6q4_KxYykE8GOjgUjbprh94kKhticrj7LV6RZXeu8ssxMN1bXLQUgsRMdy7RJBRMAFpNXCGOnV8iQwpY0mDUHBX7AyH1iFd5lkYGpLTuePAPgv5jGmfuG6oXaAHVSXs3Xpke4sh_eIHrY6tFNOPuAWBZ7WjYFEUvGB8HNAHmuuxDipBMVNTlW3DcmOdjESDSEY0w",
+      "poster_url": "",
+      "source": "telegram_shorts",
+      "is_short": true,
+      "category": "SHORTS"
+    },
+    {
+      "video_id": 9999999,
+      "url": "https://t.me/footballiapp/511865",
+      "title": "پرسپولیس مدارک پرونده یاسر آسانی را به دادگاه CAS ارسال کرد",
+      "description": "پرسپولیس مدارک پرونده یاسر آسانی را به دادگاه CAS ارسال کرد\nویدیو",
+      "mp4_url": "https://cdn4.telesco.pe/file/216b466fd2.mp4?token=MO4LZ5Eze8ZeoMlVJz_VYYtDhinYvdagnxkD8oUxbkO7ObPJ4AU3Y98iOwB2dfrQov8Z7nmNgDfTNrrYcfuc0bZVQLvrXft3aRsLIs2gXiQ4_joxdUwSVeI17qSAy5I1FM8QNAnjZWUvcidds_L-QKceOSwo3olRoA7fP_fi0AUINj4WC1nixscsTxj6TQRYoC9WlRTd1lmJ4wCRaaw4EVjD2bVaiEb-JmVFMm4XPqgFj7bCWNvHPKfDkN52KJKyUUmvYkXDiQ-4lnTwRXJ7fV8m4IK9dDzaKq6l_ennhA_j0-GnHTiAto33NHTQQQpyNbLhvYFU442P_M2Mm6XMxw",
+      "poster_url": "",
+      "source": "telegram_shorts",
+      "is_short": true,
+      "category": "SHORTS"
+    },
+    {
       "video_id": 1074906,
       "url": "https://footballi.net/video/1074906/%D8%A8%D8%A7%D8%B2%DA%AF%D8%B4%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D9%85%D8%AF%D8%A7%D8%B1%DA%A9-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%A8%D9%87-%D8%AF%D8%A7%D8%AF%DA%AF%D8%A7%D9%87-CAS-%D8%A7%D8%B1%D8%B3%D8%A7%D9%84-%DA%A9%D8%B1%D8%AF",
       "title": "بازگشا: پرسپولیس مدارک پرونده یاسر آسانی را به دادگاه CAS ارسال کرد",
@@ -806,28 +828,6 @@
       "is_short": false,
       "category": "VIDEO",
       "video_id": 1074583
-    },
-    {
-      "url": "https://footballi.net/video/1074574/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%DB%8C%D9%84-%D8%B5%D9%81%DB%8C%D8%B1%DB%8C-%D8%A8%D9%87-%D8%AF%D8%B1%DA%AF%DB%8C%D8%B1%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%A7%DB%8C%D9%84%D8%AF%D8%B1%D9%88%D9%85-%D9%88-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C",
-      "title": "واکنش اسماعیل صفیری به درگیری عجیب ایلدروم و یاسر آسانی",
-      "description": "سوال مهدی توتونچی از صفیری؛ اگر ایلدروم توهینی به آسانی نکرده است، چرا پس او احضار و محروم شده است؟اسماعیل صفیری رییس کمیته داوران فدراسیون فوتبال: بعضی وقت ها انسان از خود بی خود می‌شود و تحت فشار، ممکن است حرف هایی بزند",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-56854b30-a6e5-45b2-8fa9-9e2473a70581.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945916183875.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074574
-    },
-    {
-      "video_id": 1074529,
-      "url": "https://footballi.net/video/1074529/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7-%D8%A7%DA%A9%D8%A8%D8%B1%DB%8C%D8%A7%D9%86-%D9%87%D9%86%D9%88%D8%B2-%D8%A8%D8%A7%D9%88%D8%B1-%D9%86%D8%AF%D8%A7%D8%B1%D9%85-%D8%A7%DB%8C%D9%84%D8%AF%D8%B1%D9%88%D9%85-%D8%A8%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%AA%D9%88%D9%87%DB%8C%D9%86-%DA%A9%D8%B1%D8%AF%D9%87-%D8%A8%D8%A7%D8%B4%D8%AF",
-      "title": "محمدرضا اکبریان: هنوز باور ندارم ایلدروم به یاسر آسانی توهین کرده باشد",
-      "description": "حواشی مراسم تجلیل از ابراهیم تهامی با حضور پیشکسوتان تیم ملی و پیشکسوتان استقلال خوزستان را به صورت اختصاصی در فوتبالی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-673eb6c2-f454-4dc5-8dd7-5d791f58366c.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945778883987.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
     }
   ],
   "organized_playlist_vids": [
@@ -1480,5 +1480,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1074912
+  "max_seen_video_id": 1074921
 }
