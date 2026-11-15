@@ -510,6 +510,61 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 9999999,
+      "url": "https://t.me/footballiapp/511887",
+      "title": "علی مختاری: ما بازیکنان شهرستانی حرفهایمان را در زمین می‌زنیم",
+      "description": "علی مختاری: ما بازیکنان شهرستانی حرفهایمان را در زمین می‌زنیم\nانشالله قهرمان شویم/ برایمان دعا کنید تا برای چهارمین بار قهرمان آسیا شویم\nصحبت های محمد علی مختاری، کاپیتان تیم ملی فوتبال ساحلی در مراسم بدرقه پیش از اعزام به جام ملتهای آسیا\nاختصاصی_فوتبالی",
+      "mp4_url": "https://cdn4.telesco.pe/file/5a9e5bcaab.mp4?token=Xnj69TMe9hRhlh39ft8ijz_NGYaCUgkExGQNUUqkf-G0lOJzIXphUg9rQYnHteOhCuOLho4_pDVprg_K1OZrmfbkUd99Whozb48AM7hjwoMkzI01OmPhTToGeh4cwX6fuDipEW7Xm--hWk23mLGejbRMHgcIeSwnUq_usJbTmVXKjYBghJkkm3uM5me3jvalOtMUpxTzzOTc1-lUPk2Hg-QzASdvObVVuk-JTJPv5-HmyGz4oXRmsH8KqEVeLBQba347XCdtL_QvJhMJO1CFa7jbE4y6fRsex9vcwPuU892jE8_uIMHeNAeQU3lVdQrtvlFbFaBbJgjj_z_aHQgABw",
+      "poster_url": "",
+      "source": "telegram_shorts",
+      "is_short": true,
+      "category": "SHORTS"
+    },
+    {
+      "video_id": 1074940,
+      "url": "https://footballi.net/video/1074940/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D8%A7%D8%B1%DB%8C%D8%8C-%DA%A9%D8%A7%D9%BE%DB%8C%D8%AA%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A7%D8%B9%D8%B2%D8%A7%D9%85-%D8%A8%D9%87-%D8%AC%D8%A7%D9%85-%D9%85%D9%84%D8%AA%D9%87%D8%A7%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7",
+      "title": "صحبت های مختاری، کاپیتان تیم ملی فوتبال ساحلی در مراسم بدرقه پیش از اعزام به جام ملتهای آسیا",
+      "description": "حواشی مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا در تایلند را در پایگاه خبری فوتبالی به صورت اختصاصی مشاهده کنید",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-4f766002-d9c4-4efc-9786-8074237c79c6.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947395427140.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074939,
+      "url": "https://footballi.net/video/1074939/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A8%D9%87-%D8%AC%D8%A7%D9%85-%D9%85%D9%84%D8%AA%D9%87%D8%A7%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7",
+      "title": "صحبت های مهدی تاج در مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا",
+      "description": "حواشی مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا در تایلند را در پایگاه خبری فوتبالی به صورت اختصاصی مشاهده کنید",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-09c0c140-00f7-4cc7-8716-bbc8c48cda79.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947394392480.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074938,
+      "url": "https://footballi.net/video/1074938/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%AD%D9%85%D8%AF-%D8%A2%D8%AE%D9%88%D9%86%D8%AF%DB%8C%D8%8C-%D8%B1%DB%8C%D8%A7%D8%B3%D8%AA-%DA%A9%D9%85%DB%8C%D8%AA%D9%87-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C",
+      "title": "صحبت‌های محمد آخوندی، ریاست کمیته فوتبال ساحلی در مراسم بدرقه تیم ملی ساحلی",
+      "description": "حواشی مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا در تایلند را در پایگاه خبری فوتبالی به صورت اختصاصی مشاهده کنید",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d321f9b2-629c-4182-bd79-7bd2e28f3cd6.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947393797434.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074933,
+      "url": "https://footballi.net/video/1074933/%D8%B3%D8%B1%D9%86%D9%88%D8%B4%D8%AA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C-%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8-%D8%A7%D8%B5%D9%84%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%BE%D8%B1%D8%AA%D8%BA%D8%A7%D9%84-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86-%DB%8C%D9%88%D8%B1%D9%88-2016",
+      "title": "سرنوشت فوتبالی ترکیب اصلی تیم ملی پرتغال قهرمان یورو 2016",
+      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | یورو 2016,تیم ملی پرتغال,کریستیانو رونالدو,ویدیوی خارجی",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-a6fecdea-4368-4e6d-a1d4-20e8d74c5e1e.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947382598426.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1074841,
       "url": "https://footballi.net/video/1074841/%DA%AF%D9%84-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%D9%85%D9%87%D8%AF%DB%8C-%D8%B7%D8%A7%D8%B1%D9%85%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%AF%D8%A8%DB%8C-%D9%85%D8%B1%D8%AF%D9%88%D8%AF-%D8%A7%D8%B9%D9%84%D8%A7%D9%85-%D8%B4%D8%AF",
       "title": "گل قیچی برگردان مهدی طارمی مقابل النصر دبی مردود اعلام شد!",
@@ -783,17 +838,6 @@
       "is_short": false,
       "category": "VIDEO",
       "video_id": 1074585
-    },
-    {
-      "url": "https://footballi.net/video/1074583/%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7-%DA%A9%D9%88%D8%B4%DA%A9%DB%8C-%D8%A7%D8%B2-%D8%B2%D8%A8%D8%A7%D9%86-%D8%B1%DB%8C%DB%8C%D8%B3-%D8%B4%D9%88%D8%B1%D8%A7%DB%8C-%D9%BE%D8%B2%D8%B4%DA%A9%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
-      "title": "آخرین وضعیت علیرضا کوشکی از زبان رییس شورای پزشکی استقلال",
-      "description": "دکتر مهرزاد بهلولی، رییس شورای پزشکی باشگاه استقلال و رییس هیات مدیره بیمارستان جم:علیرضا کوشکی در تمرین استقلال پس از یک تروما و ضربه به سمت راست قفسه سینه، دچار مشکل شد و پس از اقدامات اولیه توسط پزشک تیم، بازی الشمال قطر را از دست داد. در بازگشت به ایران با ازایش علایم و عدم بهبود از کوشکی در اهواز سی تی اسکن گرفته شد و مشخص شد که هوا در ریه او گیر کرده است. پس از اعزام او به گچساران، ما چون احتمالا عود مجدد مشکل را داده بودیم، هماهنگی لازم را با همه شهرهای در مسیر کوشکی انجام دادیم. پس از وی ...",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-f6475c1b-fdf5-463a-a9ff-ff2a619648a9.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945927001558.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074583
     }
   ],
   "organized_playlist_vids": [
@@ -1462,5 +1506,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1074929
+  "max_seen_video_id": 1074940
 }
