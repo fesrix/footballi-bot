@@ -345,7 +345,17 @@
     "https://t.me/footballiapp/511887",
     "https://t.me/footballiapp/511896",
     "https://footballi.net/video/1074940/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D8%A7%D8%B1%DB%8C%D8%8C-%DA%A9%D8%A7%D9%BE%DB%8C%D8%AA%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A7%D8%B9%D8%B2%D8%A7%D9%85-%D8%A8%D9%87-%D8%AC%D8%A7%D9%85-%D9%85%D9%84%D8%AA%D9%87%D8%A7%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7",
-    "https://footballi.net/video/1074939/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A8%D9%87-%D8%AC%D8%A7%D9%85-%D9%85%D9%84%D8%AA%D9%87%D8%A7%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7"
+    "https://footballi.net/video/1074939/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A8%D9%87-%D8%AC%D8%A7%D9%85-%D9%85%D9%84%D8%AA%D9%87%D8%A7%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7",
+    "https://t.me/footballiapp/511898",
+    "https://t.me/footballiapp/511899",
+    "https://t.me/footballiapp/511900",
+    "https://t.me/footballiapp/511901",
+    "https://t.me/footballiapp/511902",
+    "https://t.me/footballiapp/511903",
+    "https://t.me/footballiapp/511904",
+    "https://t.me/footballiapp/511907",
+    "https://t.me/footballiapp/511910",
+    "https://footballi.net/video/1074962/%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%AC%D9%88%D8%A7%D9%86%DA%AF%D8%B1%D8%A7%DB%8C%DB%8C-%D9%85%DB%8C-%DA%A9%D8%B1%D8%AF%DB%8C%D9%85-%D9%88-%D8%A7%DB%8C%D9%86-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A7%D9%81%D8%AA%D8%A7%D8%AF"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -477,7 +487,8 @@
     "ویدیو کست/ بررسی ناهنجاری در فوتبال ایران؛ از کشاله و فحاشی تا آگهی فروش بازیکن  | فوتبال ایران",
     "از علی دایی تا سردار آزمون؛ 10 گل برتر ایران مقابل عراق | فوتبال ایران",
     "یاسر آسانی رفتنی شد؟ حواشی داغ فوتبال ایران و جهان (24 آبان) | فوتبال ایران",
-    "صحبت های مهدی تاج در مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا | فوتبال ایران"
+    "صحبت های مهدی تاج در مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا | فوتبال ایران",
+    "مهدی تاج: باید جوانگرایی می‌کردیم و این اتفاق افتاد | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -515,83 +526,6 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511898",
-      "title": "بخش اول نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش اول نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/929ce48e60.mp4?token=DBEPpiMDnGe26uRBpllsmbgmdCTgWyS7DGOXRYagtbTTNBLu_7jADOSDeq952qpM_e9xqOzKYbz9fSpZl28FzoA0hT58HuXU2Mqnk4TQZqMfNQuIMDCpiJKZz6eSdqRKfaaQzHCr3-lc4Vy8mbuTlXtEmim2YmlgnZFHcYIXt0Olkkz3JWcIQWIAw8RnNoFvMZOo1j_Dhtdv5N2O68YdgYOpz1FDgtnreh63tvtotGVgralthTery0kYczsd77-yivJA3zJ-V5nndWIXcRD4hkBjyx38WMY-l-bA78bfz9aZAreplFlXEC_0KLUl7-CqSXh6WxPnKmcTStwzl6Gjv4i-rc8JTn60jg3WQw8tSra5FJxajnlRbgTcvWPed9A7hoA88mFEYCu96vjiXAEZIAWkQueE-1qfgrnZIiKZoOLSGAUdxqESUh_wv6CWr27chfsCsgVoKSxYSAmHOwd9qM7iqlPdgl1WkxUyV4FV1b61Q8iTvryYmw13wykAZmAL84M8Ol7JirvcyAAKeOKp5D_ZEhqwoY_cuXrmIQkPFgzhCGz6UMwuTUnj_s4PDZe4dZ6NOvNp-dJRftmQqnzb8PDbBsTnn49KDphInnbCV3xZTrl6vLoFMz2QYxq3AZWfks8FtguR1kxPhFOt7Z_JSDXnBAlnUdZaDVx7DBCB7MQ",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511899",
-      "title": "بخش دوم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش دوم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/e4f19b7695.mp4?token=RKwcIgLcRk_uXaGQaZYHqvwLQv5jhj4vuX9jQ3fi52G85agfwj0XT9jpdlk1ixGNTOqDc11exzfn0JpiJA4LAbw7vr4JyKsFlGma-8qu9fLdaV7igl3wToPRZOpd9tv1ojsaBeo6J-6ZS47p5iEwj9CRylaRBc52p7iE0niblCN6j0_lQvMaDU8HIUTRxS5eUslKg8gcyC_x-Tzvns87rt7Z2JJxqtDnHnMtQfAKPT6KcPtpIO2CQmWeS3-cqjS8aWbZ136YTgXY6RR4vkIEYg-JzhcI850YtJLJt0LDEHgTQqmZtNMluDqGmnfsGkugLrz6vzMlDW1Hk_zuuKd5PYtYu6qaxDaz5HE1Ole2rJ66BNAiEwH3FiD2aphcbPbEM-UVsx-oakq7lMC8qBCOFfEwSKgw3jQXoKUW8tGSLYMKvnPdS0kDwop7I7bezp7155Uf-UIawm-uqVukstcf4BdLOOfps9UxQWRrzWLPRV8Pau9mw-1zuqK-Cp94ugLDy3plZmsnH085TqqjPYPnUxgIdfhSxr_7Y7dEGQLLq4qlVzr4UxOFA0olKwPcN5nEoiWPJgIIbW2q78hdbyneBc6GqQ8L7KrQdCZaRjqGHE3ZDZt7LiQCg8PPcA67aC0mXa9wy3lY9kMMkljqxHnMkPV3WHQL30ze3zb1WSzBIRs",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511900",
-      "title": "بخش سوم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش سوم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/a06444a364.mp4?token=SYPKJTXmh0cgXbRwd9z60ZK6wOHopGQY_BwMkXfN3Dd2Y2_gsQn8f_MbrbpUlWjD8MzcpixSlKt1bp2JC5p1RLJ5ikU3kAzwx7EiqnIGYuucxaB_5JK9XH3904groGKDQ4RCbuRarWv0uNKivUAzSFCPkq_pN5Ywi2ulOQ61Csk-CIwa4Eko2as_P0iKj4N7p4yumwoSEa-dGMkQXBW6EQBLdPlyokpfBKgFXu9tah6zyS1-xCJRIoHPADP9y8eDJEBBHhz3nv0NCRZbA5-WpRHLrrFOjVF5suOCGGSZI3Sf8xpN5rIi-josx_4ALtMsTUtVgZIQFMOBkx8EPZ2qxokkZbFy_x0XfWvR5ZuQd_QHrOqUYYNrSl8jN0JDEh9P81yI7rtZljkQc5Rzd3R1Oxf_2gAX4hteM3a_Za50_V9vMdhWmKtbdmmORpdQfC7xTPM5_6oo50mgIjFXrgfkvG-fDz2bybhRFh6FqyuXPba92EYMMBaiPm1JmPHO5ycWrnBW97R3ScENi02P4IHVWZ78xQB7yJcNkZZlCJEqRSBil7NnwnxJ8wvkIgF3AkmZDTzA9nZVsQ4654tBtXiNU4KvlmzFvS8BY9cyq8c07B0iURjLFj4uC-yr1OuIjOhNNmGzrr5etK4MhBx5GPwQqYVwvYxPdfCWzyLU72hujOQ",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511901",
-      "title": "بخش چهارم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش چهارم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/cf53be5d5c.mp4?token=E_C67NzzF5d6lqyCBm1HNsOeeXenh_Bm3oA6Gz5G16ZXkEjT9oJg1F8c6TRLMyrY3iPmdBU3C8BtLvVdZoykva4wYwE52frO8rjq1fefj8Xpx_lPuLExzBQybqohsyXOwkycX6RdBiBG9-BonsDaa7biKI3zGTqRnWVyKfkTv3xTht8rNfRwn6J4CdPMWmgLa2hoZ14WAkbV4uLPmGoJhT_ClD4Rl_dTOAT2FIiu6mPWug_SD5zBdGqkb5cc_W93sgfTweuOYGSkW2QnVCns9uUJBb6_9opiDsf851jQ8-DIKjIxS9R3hQ7cnIc6Z3fhzr-S7koyBV3SoqBA6XBkozb38PccnY0n5yFjczbYcvyDOwVRgmFB3J22T2V7ZjD4k36UeaeLAPMDFkJzmNV2-SYziA3DaIiTYjO3Zs-QyLEhBns4UwwyUJrnG01HNfZ54FALqNpa3UfXBlnRx8_IOhoeB-FJTKUseKlMLeUS6LI6IfdwOYqMgDAktEw0kVMeCsXcNicyeA-INr-lDSVXWqGU50i8vyyQECYFuzu5HJrGEcsYQfK1B4A6AybKGuo3a_bRqJ1yK1goC-K_mqxBaxmgN_jtYqZkVgGtVGOZWx22v_Zuu31PEPIhXtfCTagYLNlYIrTlnHci5MfLS_Ecir39L7HEtHLjlCEK739qebI",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511902",
-      "title": "بخش پنجم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش پنجم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/9f3d23b050.mp4?token=E5gCQxO5ZArUr2EimCKt_U8pPRRXMYNAkAmtcsoHXhvFAHqvf14iJVb-iyEeLR8bz3kR5eY0b3zgRAL9w6PHCjK5AP10wb_mhU52DGOi7ooizwF6dneIPXOBklhO76pbCRNurkG7BKe14UnGuanfgr1HHsnygK5yhOKe6x-fmVkRt5WS3Os77oJkQS5YqfZxQquAqmm7GMrD7DvhAjnQTdmIvSmsNA3OHCpAXku9NtppajMnOV-26lE8N5gUTDvlEmgc8K8Fnu38BNuGrWOpE6WZTNnk5tX9JGK3_s65TVPavmvUbAPOjdYyK4jWoy1qBr9o2FGBtkkA2aNnh2gwA0ym4Fb607K_VLLi020VDfdQFmqfWBWq_X0HbS35D46qxhwiX6WrmNSEErgdAHHOCk5l26Wh_F6Qlbp3Os957xE3DMOvNecMXdWQ3WTnqxc3mngkxXt8NCT1Eu9JSD8HBs1pXnAZRC-JI47uPo1Yg0MV2ISH0RSqrAMKpdbcISWKc1R4yURuvyFDKDy41ryynYtvDT76eZdHR8qIbjfVXR_SlUMpB5nc9h7hTk0GjjfsZGBgaIciljeNEaKmyg0qbAafbNUCwQbOoluNP4Bz1Xd6LQPYQNDN0lTZPn1N_EgQeavVBjUTVB2eKuMoooXvWDOvFNAjzkHW20SsLwifs7E",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511903",
-      "title": "بخش ششم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش ششم نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/dfbd55b6b4.mp4?token=gFCBirV2VItwp1Vn9UacqGB2RUJ5Dp46AoA1giILJh3JICQwDNJlOvX-MOiAwvqoodaCsblzmDjoFq0lTrVtTJC41RKLEYU-Xhf6XEHzAQFbOnU_yr13dVwbvPCMv8l48Ymv45xW6ByLDG8P-GYGdT_j2ThptaJyOoVMW2ZxiyfKTJps1iNx031l7wukCa_BtYXp4KaDvgl_mM7Ruzj-UGVyvhEn-rPCtHAwrbZKJCkiRI_gAPoBQil5UyvxVgbgHEDMpd_fH8sqS2M3DFmPxJlm4BLNSucNn1jNuc2QSbCP1HvLn5BuZOQ9x7ggukx1ZGkna8HZfXlt-JNrzQOqeqU6CacT2g8IHeKHCS81vHsSAinhFb-gmsX5UMeeyYTIxJhqE6fScFBxmmSRL6IKKAl9RXg26h8_OLQ1SxHkqxTQLz3jqlJvZDxTbL1Mtc3Bf39109zSeCNUaxXcy0Z-trNihIdyQ-N0MiKbcREHAowmtqgdm01GZytX8IQdgF5vkEjkaskD_rRZRbCcHSg5xRzI0CPzEDiWhUXiXaErIEQ2mXEuxzgPDFgO60AcqzBPxpcbXmoo6WFmIF1cmnDdJ-EMl2uRjzfcFntZ1si6zrFV3ysutTC0xqAEzbE6NZ3bcD0GTM9eylM6rHv3jMRmTBWbHupsSWuEMWsBwju1C8E",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511904",
-      "title": "بخش هفتم و پایانی نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر",
-      "description": "بخش هفتم و پایانی نشست خبری ادموند بزیک مدیر آکادمی پرسپولیس درباره حواشی اخیر\nاختصاصی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/62e5daf9c3.mp4?token=nwUNUWhPMsAFYdp3CgMup79h2k_COtu-8Dg-oCMANe4S0e43CVJwpQ_4goRuSDBXJjhqoZLYcihDJcdlVZyga954CjQn5jjDSEk4jFbq3HDsy5dmZmQuerR2WW9xpUIcGHZ6wjXmWcmF4IVx7u5uTtd9HIWuweHgQrTsiZx81JgG_JOwhUCwNbNYH6j88a-Hb7o3oaOCImy_uTFY6EvrEtQeWuGYnUOQJ_jUak9TEpU_9WyN9RORF_810_LCTEVbmLiv_cdcU_95EWlgoRZTHj5vp24MZKvkMBFgiYJGa5IDYnseRjMlI3mTYZihPAfmIsfRqkmKmytTgYMjYfCEUw",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
       "video_id": 1074960,
       "url": "https://footballi.net/video/1074960/%D8%A7%D8%AF%D9%85%D9%88%D9%86%D8%AF-%D8%A8%D8%B2%DB%8C%DA%A9-%D8%B1%D9%88%D9%86%D8%AF-%D8%AE%D9%88%D8%A8-%D8%A2%DA%A9%D8%A7%D8%AF%D9%85%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%AF%D8%B1-%D8%AF%D8%B1%D8%A8%DB%8C-%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AF%D8%A7%D8%B1%D8%AF",
       "title": "ادموند بزیک: روند خوب آکادمی پرسپولیس در دربی ها ادامه دارد",
@@ -609,6 +543,17 @@
       "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | تیم ملی ایران,سردار آزمون,تیم ملی فلسطین,تورنمنت بصره",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-abf963de-ab11-4c0f-9411-ce35e7b3fb00.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947435118327.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074953,
+      "url": "https://footballi.net/video/1074953/%D8%AF%D8%A8%D9%84-%D8%B3%D9%88%D9%BE%D8%B1-%DA%AF%D9%84-%D9%88%DB%8C%D9%86%DB%8C%D8%B3%DB%8C%D9%88%D8%B3-%D8%AC%D9%88%D9%86%DB%8C%D9%88%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%DA%98%D8%A7%D9%BE%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+      "title": "دبل سوپر گل وینیسیوس جونیور مقابل ژاپن از زاویه دید هواداران",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | تیم ملی برزیل,تیم ملی ژاپن,وینیسیوس جونیور,سوپرگل",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-907f6ea8-73ff-44aa-9157-e6f91dab02d5.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947426972943.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -799,50 +744,6 @@
       "is_short": false,
       "category": "VIDEO",
       "video_id": 1074634
-    },
-    {
-      "url": "https://footballi.net/video/1074629/%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D9%88%D8%AA%D9%88%D9%86%DA%86%DB%8C-%D8%AE%D8%B7%D8%A7%D8%A8-%D8%A8%D9%87-%DA%A9%D9%85%D8%A7%D9%84%D9%88%D9%86%D8%AF-%D8%AE%D9%88%D8%A7%D8%B3%D8%AA%DB%8C%D8%AF-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-%D8%B1%D8%A7-%D8%A8%D9%81%D8%B1%D9%88%D8%B4%DB%8C%D8%AF%D8%8C-%D8%A7%D9%88-%D8%B1%D8%A7-%D8%A2%DA%AF%D9%87%DB%8C-%D9%86%DA%A9%D9%86%DB%8C%D8%AF",
-      "title": "مهدی توتونچی خطاب به کمالوند: خواستید فارسی را بفروشید، او را آگهی نکنید!",
-      "description": "مهدی توتونچی خطاب به کمالوند با کنایه به مدیران پرسپولیس: اگر خواستید فارسی را بفروشید، او را آگهی نکنید!فراز کمالوند: به نظرم باشگاه پرسپولیس قصد نداشت که محمودی را تخریب کند",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-3ea9485f-b51d-4b77-b82c-b9e95137dbd8.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17946018325121.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074629
-    },
-    {
-      "url": "https://footballi.net/video/1074616/%D9%81%D8%B1%D8%A7%D8%B2-%DA%A9%D9%85%D8%A7%D9%84%D9%88%D9%86%D8%AF-%D8%AF%D8%B1-%D9%86%DB%8C%D9%85-%D9%81%D8%B5%D9%84-%D8%AF%D9%88%D9%85%D8%8C-%DA%86%D9%86%D8%AF-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%AF%DB%8C%DA%AF%D8%B1-%D9%85%D8%AB%D9%84-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%DA%A9%D8%B1%D8%AF",
-      "title": "فراز کمالوند: در نیم فصل دوم، چند بازیکن دیگر مثل فارسی معرفی خواهیم کرد",
-      "description": "فراز کمالوند سرمربی خیبر خرم آباد: در نیم فصل دوم، چند بازیکن دیگر مثل فارسی معرفی خواهیم کرد؛ انتظار مالک باشگاه این است که بتوانیم به تیم ملی بازیکن بفرستیم",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-d4f2ca35-8896-46de-ab78-c83c0d1f01f3.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945992177973.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074616
-    },
-    {
-      "url": "https://footballi.net/video/1074607/%D8%A8%D9%87-%D8%A8%D9%87%D8%A7%D9%86%D9%87-%D9%BE%DB%8C%D9%88%D8%B3%D8%AA%D9%86-%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7-%D9%85%D9%86%D8%B5%D9%88%D8%B1%DB%8C%D8%A7%D9%86-%D8%A8%D9%87-%D8%BA%D9%88%D9%84-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B9%D8%B1%D8%A7%D9%82",
-      "title": "به بهانه پیوستن علیرضا منصوریان به غول فوتبال عراق",
-      "description": "علیرضا منصوریان که با انتقال شبانه‌اش به الزورا حسابی در فوتبال عراق خبرساز شده بود، امروز در مراسمی رسمی به‌عنوان سرمربی جدید این تیم معارفه شد. سرمربی جدید «مرغ‌های نوروزی» هم بدون معطلی راهی محل تمرین شد و نخستین جلسه تمرینی‌اش را با تیم جدید پشت سر گذاشت.",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-32ea9013-a271-4ff4-bc59-3ae61c94efe6.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945959891473.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074607
-    },
-    {
-      "url": "https://footballi.net/video/1074602/%D8%B6%D8%B1%D8%A8%D9%87-%D8%A7%DB%8C%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%DB%8C-%D8%AF%DB%8C%D8%AF%D9%86%DB%8C-%D8%A2%D8%B1%D8%AF%D8%A7-%DA%AF%D9%88%D9%84%D8%B1-%D8%A8%D9%87-%D8%A8%D9%84%DA%98%DB%8C%DA%A9-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
-      "title": "ضربه ایستگاهی دیدنی آردا گولر به بلژیک از دید دوربین هواداران",
-      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | تیم ملی ترکیه,تیم ملی بلژیک,ضربه ایستگاهی,ضربات کاشته",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-81aaf50b-8bff-4ed3-99be-294cd4a7cbb4.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945953201652.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074602
     }
   ],
   "organized_playlist_vids": [
@@ -1126,13 +1027,23 @@
     "https://cdn4.telesco.pe/file/5a9e5bcaab.mp4?token=Xnj69TMe9hRhlh39ft8ijz_NGYaCUgkExGQNUUqkf-G0lOJzIXphUg9rQYnHteOhCuOLho4_pDVprg_K1OZrmfbkUd99Whozb48AM7hjwoMkzI01OmPhTToGeh4cwX6fuDipEW7Xm--hWk23mLGejbRMHgcIeSwnUq_usJbTmVXKjYBghJkkm3uM5me3jvalOtMUpxTzzOTc1-lUPk2Hg-QzASdvObVVuk-JTJPv5-HmyGz4oXRmsH8KqEVeLBQba347XCdtL_QvJhMJO1CFa7jbE4y6fRsex9vcwPuU892jE8_uIMHeNAeQU3lVdQrtvlFbFaBbJgjj_z_aHQgABw",
     "https://cdn4.telesco.pe/file/daf345cd70.mp4?token=SO0jnG9ZunQoaD-3spXSBkezHO5XMtN-imxL4U3bTNpdFN1QCqOVBAWih9gmAJVaeIcIZWdBVT0d7de15UFM_VC3aXgiPe6xoP_-0n_iIvThTcTp0JcK5SPvGuf2LWmMSpC2VbMBvslury2w3ErMx_6iIqMdvvmJnVEEoM1lKfb9fD6WORm5FCxswZ_Qt8ZEPAsDsICJ6v_CsJqbRF0pkJSJFPx19_wxRXMCQUJbt__E2cLnwnHi8AIy_4mJwbFQRfw3w1IenkkdvJV-XZV7nxeUhED0dXqtwfjWAIzkZjU-X70yrlPUAev_3ETP5M-RU30fVyHiVP9xFWJqbvi85Y_eKPF7oVmSKj_iCTTfD_R-LUszVPsgrARj4hpLR8MFXa0uXTPdcjkNz3sR0NSykzm8HzktvrExstOJSYLgKgphoYHtmN58p0mMqL2mpZZHEGNso1d0uL2UiH2oGL3YL7w3TIFEVkZ6iIUdcLgmbkvlWSNR5xaghtMjTAapBizLVDAWqcu9C1saTwtVYh9UrV59fCNFYTNMT38inRKKLBfpANkTFmylrtJgKmZSKLt6oyAhALVLOrDupxqUE_89MDNh1DJeUbLMOEnDcp3FYloMqEAD1XSzpVkzPg9FegEFgQuHDpsxXxk-8qk_qpMxLBvoSQhJ-IvsP-20sCdfPYA",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-4f766002-d9c4-4efc-9786-8074237c79c6.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-09c0c140-00f7-4cc7-8716-bbc8c48cda79.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-09c0c140-00f7-4cc7-8716-bbc8c48cda79.mp4",
+    "https://cdn4.telesco.pe/file/929ce48e60.mp4?token=DBEPpiMDnGe26uRBpllsmbgmdCTgWyS7DGOXRYagtbTTNBLu_7jADOSDeq952qpM_e9xqOzKYbz9fSpZl28FzoA0hT58HuXU2Mqnk4TQZqMfNQuIMDCpiJKZz6eSdqRKfaaQzHCr3-lc4Vy8mbuTlXtEmim2YmlgnZFHcYIXt0Olkkz3JWcIQWIAw8RnNoFvMZOo1j_Dhtdv5N2O68YdgYOpz1FDgtnreh63tvtotGVgralthTery0kYczsd77-yivJA3zJ-V5nndWIXcRD4hkBjyx38WMY-l-bA78bfz9aZAreplFlXEC_0KLUl7-CqSXh6WxPnKmcTStwzl6Gjv4i-rc8JTn60jg3WQw8tSra5FJxajnlRbgTcvWPed9A7hoA88mFEYCu96vjiXAEZIAWkQueE-1qfgrnZIiKZoOLSGAUdxqESUh_wv6CWr27chfsCsgVoKSxYSAmHOwd9qM7iqlPdgl1WkxUyV4FV1b61Q8iTvryYmw13wykAZmAL84M8Ol7JirvcyAAKeOKp5D_ZEhqwoY_cuXrmIQkPFgzhCGz6UMwuTUnj_s4PDZe4dZ6NOvNp-dJRftmQqnzb8PDbBsTnn49KDphInnbCV3xZTrl6vLoFMz2QYxq3AZWfks8FtguR1kxPhFOt7Z_JSDXnBAlnUdZaDVx7DBCB7MQ",
+    "https://cdn4.telesco.pe/file/e4f19b7695.mp4?token=RKwcIgLcRk_uXaGQaZYHqvwLQv5jhj4vuX9jQ3fi52G85agfwj0XT9jpdlk1ixGNTOqDc11exzfn0JpiJA4LAbw7vr4JyKsFlGma-8qu9fLdaV7igl3wToPRZOpd9tv1ojsaBeo6J-6ZS47p5iEwj9CRylaRBc52p7iE0niblCN6j0_lQvMaDU8HIUTRxS5eUslKg8gcyC_x-Tzvns87rt7Z2JJxqtDnHnMtQfAKPT6KcPtpIO2CQmWeS3-cqjS8aWbZ136YTgXY6RR4vkIEYg-JzhcI850YtJLJt0LDEHgTQqmZtNMluDqGmnfsGkugLrz6vzMlDW1Hk_zuuKd5PYtYu6qaxDaz5HE1Ole2rJ66BNAiEwH3FiD2aphcbPbEM-UVsx-oakq7lMC8qBCOFfEwSKgw3jQXoKUW8tGSLYMKvnPdS0kDwop7I7bezp7155Uf-UIawm-uqVukstcf4BdLOOfps9UxQWRrzWLPRV8Pau9mw-1zuqK-Cp94ugLDy3plZmsnH085TqqjPYPnUxgIdfhSxr_7Y7dEGQLLq4qlVzr4UxOFA0olKwPcN5nEoiWPJgIIbW2q78hdbyneBc6GqQ8L7KrQdCZaRjqGHE3ZDZt7LiQCg8PPcA67aC0mXa9wy3lY9kMMkljqxHnMkPV3WHQL30ze3zb1WSzBIRs",
+    "https://cdn4.telesco.pe/file/a06444a364.mp4?token=SYPKJTXmh0cgXbRwd9z60ZK6wOHopGQY_BwMkXfN3Dd2Y2_gsQn8f_MbrbpUlWjD8MzcpixSlKt1bp2JC5p1RLJ5ikU3kAzwx7EiqnIGYuucxaB_5JK9XH3904groGKDQ4RCbuRarWv0uNKivUAzSFCPkq_pN5Ywi2ulOQ61Csk-CIwa4Eko2as_P0iKj4N7p4yumwoSEa-dGMkQXBW6EQBLdPlyokpfBKgFXu9tah6zyS1-xCJRIoHPADP9y8eDJEBBHhz3nv0NCRZbA5-WpRHLrrFOjVF5suOCGGSZI3Sf8xpN5rIi-josx_4ALtMsTUtVgZIQFMOBkx8EPZ2qxokkZbFy_x0XfWvR5ZuQd_QHrOqUYYNrSl8jN0JDEh9P81yI7rtZljkQc5Rzd3R1Oxf_2gAX4hteM3a_Za50_V9vMdhWmKtbdmmORpdQfC7xTPM5_6oo50mgIjFXrgfkvG-fDz2bybhRFh6FqyuXPba92EYMMBaiPm1JmPHO5ycWrnBW97R3ScENi02P4IHVWZ78xQB7yJcNkZZlCJEqRSBil7NnwnxJ8wvkIgF3AkmZDTzA9nZVsQ4654tBtXiNU4KvlmzFvS8BY9cyq8c07B0iURjLFj4uC-yr1OuIjOhNNmGzrr5etK4MhBx5GPwQqYVwvYxPdfCWzyLU72hujOQ",
+    "https://cdn4.telesco.pe/file/cf53be5d5c.mp4?token=E_C67NzzF5d6lqyCBm1HNsOeeXenh_Bm3oA6Gz5G16ZXkEjT9oJg1F8c6TRLMyrY3iPmdBU3C8BtLvVdZoykva4wYwE52frO8rjq1fefj8Xpx_lPuLExzBQybqohsyXOwkycX6RdBiBG9-BonsDaa7biKI3zGTqRnWVyKfkTv3xTht8rNfRwn6J4CdPMWmgLa2hoZ14WAkbV4uLPmGoJhT_ClD4Rl_dTOAT2FIiu6mPWug_SD5zBdGqkb5cc_W93sgfTweuOYGSkW2QnVCns9uUJBb6_9opiDsf851jQ8-DIKjIxS9R3hQ7cnIc6Z3fhzr-S7koyBV3SoqBA6XBkozb38PccnY0n5yFjczbYcvyDOwVRgmFB3J22T2V7ZjD4k36UeaeLAPMDFkJzmNV2-SYziA3DaIiTYjO3Zs-QyLEhBns4UwwyUJrnG01HNfZ54FALqNpa3UfXBlnRx8_IOhoeB-FJTKUseKlMLeUS6LI6IfdwOYqMgDAktEw0kVMeCsXcNicyeA-INr-lDSVXWqGU50i8vyyQECYFuzu5HJrGEcsYQfK1B4A6AybKGuo3a_bRqJ1yK1goC-K_mqxBaxmgN_jtYqZkVgGtVGOZWx22v_Zuu31PEPIhXtfCTagYLNlYIrTlnHci5MfLS_Ecir39L7HEtHLjlCEK739qebI",
+    "https://cdn4.telesco.pe/file/9f3d23b050.mp4?token=E5gCQxO5ZArUr2EimCKt_U8pPRRXMYNAkAmtcsoHXhvFAHqvf14iJVb-iyEeLR8bz3kR5eY0b3zgRAL9w6PHCjK5AP10wb_mhU52DGOi7ooizwF6dneIPXOBklhO76pbCRNurkG7BKe14UnGuanfgr1HHsnygK5yhOKe6x-fmVkRt5WS3Os77oJkQS5YqfZxQquAqmm7GMrD7DvhAjnQTdmIvSmsNA3OHCpAXku9NtppajMnOV-26lE8N5gUTDvlEmgc8K8Fnu38BNuGrWOpE6WZTNnk5tX9JGK3_s65TVPavmvUbAPOjdYyK4jWoy1qBr9o2FGBtkkA2aNnh2gwA0ym4Fb607K_VLLi020VDfdQFmqfWBWq_X0HbS35D46qxhwiX6WrmNSEErgdAHHOCk5l26Wh_F6Qlbp3Os957xE3DMOvNecMXdWQ3WTnqxc3mngkxXt8NCT1Eu9JSD8HBs1pXnAZRC-JI47uPo1Yg0MV2ISH0RSqrAMKpdbcISWKc1R4yURuvyFDKDy41ryynYtvDT76eZdHR8qIbjfVXR_SlUMpB5nc9h7hTk0GjjfsZGBgaIciljeNEaKmyg0qbAafbNUCwQbOoluNP4Bz1Xd6LQPYQNDN0lTZPn1N_EgQeavVBjUTVB2eKuMoooXvWDOvFNAjzkHW20SsLwifs7E",
+    "https://cdn4.telesco.pe/file/dfbd55b6b4.mp4?token=gFCBirV2VItwp1Vn9UacqGB2RUJ5Dp46AoA1giILJh3JICQwDNJlOvX-MOiAwvqoodaCsblzmDjoFq0lTrVtTJC41RKLEYU-Xhf6XEHzAQFbOnU_yr13dVwbvPCMv8l48Ymv45xW6ByLDG8P-GYGdT_j2ThptaJyOoVMW2ZxiyfKTJps1iNx031l7wukCa_BtYXp4KaDvgl_mM7Ruzj-UGVyvhEn-rPCtHAwrbZKJCkiRI_gAPoBQil5UyvxVgbgHEDMpd_fH8sqS2M3DFmPxJlm4BLNSucNn1jNuc2QSbCP1HvLn5BuZOQ9x7ggukx1ZGkna8HZfXlt-JNrzQOqeqU6CacT2g8IHeKHCS81vHsSAinhFb-gmsX5UMeeyYTIxJhqE6fScFBxmmSRL6IKKAl9RXg26h8_OLQ1SxHkqxTQLz3jqlJvZDxTbL1Mtc3Bf39109zSeCNUaxXcy0Z-trNihIdyQ-N0MiKbcREHAowmtqgdm01GZytX8IQdgF5vkEjkaskD_rRZRbCcHSg5xRzI0CPzEDiWhUXiXaErIEQ2mXEuxzgPDFgO60AcqzBPxpcbXmoo6WFmIF1cmnDdJ-EMl2uRjzfcFntZ1si6zrFV3ysutTC0xqAEzbE6NZ3bcD0GTM9eylM6rHv3jMRmTBWbHupsSWuEMWsBwju1C8E",
+    "https://cdn4.telesco.pe/file/62e5daf9c3.mp4?token=nwUNUWhPMsAFYdp3CgMup79h2k_COtu-8Dg-oCMANe4S0e43CVJwpQ_4goRuSDBXJjhqoZLYcihDJcdlVZyga954CjQn5jjDSEk4jFbq3HDsy5dmZmQuerR2WW9xpUIcGHZ6wjXmWcmF4IVx7u5uTtd9HIWuweHgQrTsiZx81JgG_JOwhUCwNbNYH6j88a-Hb7o3oaOCImy_uTFY6EvrEtQeWuGYnUOQJ_jUak9TEpU_9WyN9RORF_810_LCTEVbmLiv_cdcU_95EWlgoRZTHj5vp24MZKvkMBFgiYJGa5IDYnseRjMlI3mTYZihPAfmIsfRqkmKmytTgYMjYfCEUw",
+    "https://cdn4.telesco.pe/file/a48b5e63d6.mp4?token=KWmLr0B78AcoS-SNlCMGTG-5XgPKumOLff-Z_X4bOf4GQDP6Gxhv3GjrPyJU9RWqSkH524t61l1jQtrB_WULF2XpM_qPoArgsA0P6a_nemlKNrc7jT0JpKmUphmx4lTBN9rjTMJTAgjnl5zsPcLFrDtihfco3m-Zxu4FxZwwhDon0MbvXtxcsteMHDzxX1rhxeMR8c5ArdVk0qI2pmgQ2DSIT3E8c5EFyrohVzgvQoVh0YpfBc2Cqqpf0TDTGwlFphtmLDUudYmuLJRB4SDrjRSKeuc4PMipAedrEpQeBwx7rXhTBi2FcAEVVjeYVwn7R0YD-DZoSYlThovNKZTZag",
+    "https://cdn4.telesco.pe/file/db0064efbd.mp4?token=giE2tjaEg2pJpH4JrX8akM7GKjkNDmLJIK0mMDyvgIyMhevYl4LZo7Uw4TNPlImj5H2sWUzVgL9Rn_tFIhAZ8cIaufphuNhnWaTFoHxKb_TG9B7j8qU5L2CNQ5i_nsyznDyp35xGvbU4UI7HAeDb0_6-DOAepD0lA1FAVcuyn8tsjaVPzsJLdX4c9B7hjBH2A8JkS3HInudLKIajFE86zfku1p5-U5pbFPgzONyjwDc6T9cU_Ov45V8vcw1gra2cjfsMdCasf8TGPaJ9mCBMRDQCDgkL_X5EQvHQxXM3T1cYXkXwr1O43TFY-dEdDfzDJVH9MakbGEddJAeGwwoXlA",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-be3f9905-16d5-4195-ae07-eedded421198.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-15",
-    "count": 4
+    "count": 5
   },
-  "last_upload_timestamp": 1794742332.0399773,
+  "last_upload_timestamp": 1794745931.2007499,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1510,6 +1421,9 @@
     "eL3xQkAGtjM": [
       "INTERVIEW",
       "TEAM_MELLI"
+    ],
+    "fo0CJYWV9XA": [
+      "INTERVIEW"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1519,5 +1433,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1074961
+  "max_seen_video_id": 1074971
 }
