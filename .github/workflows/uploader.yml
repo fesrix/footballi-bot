@@ -15,7 +15,7 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 15
 
     env:
       PYTHONUNBUFFERED: "1"
@@ -35,7 +35,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run Footballi Pipeline (All-in-One Live Log)
-        timeout-minutes: 7
+        timeout-minutes: 14
         run: |
           echo "=== [1/4] Fast Setup: FFmpeg Static Binary & Python Packages (No apt-get) ==="
           if ! command -v ffmpeg &> /dev/null; then
@@ -46,7 +46,7 @@ jobs:
 
           echo ""
           echo "=== [2/4] Running Footballi Video Uploader & Queue ==="
-          timeout --kill-after=10s 240s stdbuf -oL -eL python -u footballi_uploader.py || echo "⚠️ [INFO] Uploader step finished."
+          timeout --kill-after=15s 660s stdbuf -oL -eL python -u footballi_uploader.py || echo "⚠️ [INFO] Uploader step finished."
 
           echo ""
           echo "=== [3/4] Running AI Comment Moderator & Responder ==="
