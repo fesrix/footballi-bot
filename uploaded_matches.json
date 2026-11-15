@@ -509,6 +509,17 @@
       "category": "VIDEOCAST"
     },
     {
+      "video_id": 1074900,
+      "url": "https://footballi.net/video/1074900/%D8%A7%D8%B2-%D8%B9%D9%84%DB%8C-%D8%AF%D8%A7%DB%8C%DB%8C-%D8%AA%D8%A7-%D8%B3%D8%B1%D8%AF%D8%A7%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%86-10-%DA%AF%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%B9%D8%B1%D8%A7%D9%82",
+      "title": "از علی دایی تا سردار آزمون؛ 10 گل برتر ایران مقابل عراق",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | سوپرگل,تیم ملی ایران,تیم ملی عراق",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-eebb4bcc-78e0-44b5-a29f-08f9ec0992da.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947220118184.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1074841,
       "url": "https://footballi.net/video/1074841/%DA%AF%D9%84-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%D9%85%D9%87%D8%AF%DB%8C-%D8%B7%D8%A7%D8%B1%D9%85%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%AF%D8%A8%DB%8C-%D9%85%D8%B1%D8%AF%D9%88%D8%AF-%D8%A7%D8%B9%D9%84%D8%A7%D9%85-%D8%B4%D8%AF",
       "title": "گل قیچی برگردان مهدی طارمی مقابل النصر دبی مردود اعلام شد!",
@@ -815,17 +826,6 @@
       "is_short": false,
       "category": "VIDEO",
       "video_id": 1074529
-    },
-    {
-      "url": "https://footballi.net/video/1074528/%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%DB%8C%D9%84-%D8%AD%D9%84%D8%A7%D9%84%DB%8C-%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%B3%D9%88%D8%AE%D8%AA%D8%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D8%A7-%D8%AF%DB%8C%DA%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A7%DB%8C%D9%86-%DA%A9%D8%A7%D8%B1-%D8%B1%D8%A7-%D9%86%DA%A9%D9%86%D8%AF",
-      "title": "اسماعیل حلالی: امیرحسین محمودی سوخت، پرسپولیس با دیگر بازیکنان این کار را نکند",
-      "description": "حواشی مراسم تجلیل از ابراهیم تهامی با حضور پیشکسوتان تیم ملی و پیشکسوتان استقلال خوزستان را به صورت اختصاصی در فوتبالی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-19db7db4-49ee-47dd-98f2-b9a6f8101ffe.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945774896327.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "video_id": 1074528
     }
   ],
   "organized_playlist_vids": [
@@ -1474,5 +1474,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1074890
+  "max_seen_video_id": 1074900
 }
