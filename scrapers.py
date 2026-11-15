@@ -5,6 +5,7 @@ import json
 import time
 import shutil
 import requests
+from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
@@ -18,7 +19,6 @@ from config import (
     IRANIAN_FOOTBALL_ENTITIES,
 )
 
-# حداکثر اختلاف شماره سریال ویدیو نسبت به جدیدترین ویدیوی سایت (حدود ۳۶ تا ۴۸ ساعت اخیر)
 MAX_VIDEO_ID_AGE_GAP = 650
 MIN_ABSOLUTE_VIDEO_ID = 1073500
 
@@ -28,7 +28,6 @@ def normalize_persian(text: str) -> str:
         return ""
     text = re.sub(r"[\u064B-\u065F\u0670]", "", text)
     text = text.replace("ي", "ی").replace("ك", "ک").replace("\u200c", " ")
-    # تبدیل اعداد فارسی و عربی به انگلیسی برای بررسی دقیق تاریخ
     persian_digits = "۰۱۲۳۴۵۶۷۸۹"
     arabic_digits = "٠١٢٣٤٥٦٧٨٩"
     for i in range(10):
@@ -61,11 +60,6 @@ EXTENDED_IRANIAN_FIGURES = IRANIAN_FOOTBALL_ENTITIES + [
 
 
 def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0, max_site_id: int = 0) -> bool:
-    """
-    بررسی دقیق تاریخ و قدمت ویدیو:
-    فقط ویدیوهای ۲۴ تا ۴۸ ساعت اخیر مجاز هستند و ویدیوهای قدیمی‌تر فوراً رد می‌شوند.
-    """
-    # ۱. بررسی بر اساس شماره سریال افزایشی سایت فوتبالی
     if video_id > 0:
         if video_id < MIN_ABSOLUTE_VIDEO_ID:
             return True
@@ -75,13 +69,11 @@ def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0, 
     norm_t = normalize_persian(title).lower()
     norm_page = normalize_persian(page_text_sample).lower()
 
-    # ۲. سال‌های قدیمی در عنوان
     old_years = ["1398", "1399", "1400", "1401", "1402", "1403", "1404", "2020", "2021", "2022", "2023", "2024", "2025"]
     for y in old_years:
         if y in norm_t:
             return True
 
-    # ۳. بررسی عبارت زمان انتشار در بالای صفحه ویدیو («هفته پیش»، «ماه پیش»، «سال پیش»، یا بیش از ۲ روز پیش)
     if any(old_unit in norm_page for old_unit in ["هفته پیش", "ماه پیش", "سال پیش"]):
         return True
 
@@ -323,7 +315,6 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
     if video_id <= 0:
         return None
 
-    # رد فوری ویدیوهای قدیمی قبل از درخواست شبکه
     if is_video_too_old("", "", video_id=video_id, max_site_id=max_site_id):
         return None
 
@@ -346,12 +337,10 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
         title = soup.title.string.strip()
     title = re.sub(r"\s*[-|]\s*فوتبالی.*$", "", title).strip()
 
-    # بررسی تاریخ نسبی داخل بدنه صفحه (مثلاً «۳ هفته پیش» یا «۲ ماه پیش»)
     for tag in soup.find_all(["aside", "footer", "nav"]):
         tag.decompose()
     main_text_sample = soup.get_text(" ", strip=True)[:600]
     if is_video_too_old(title, main_text_sample, video_id=video_id, max_site_id=max_site_id):
-        print(f"⏳ [SKIP-OLD] Skipping archival/old video ({video_id}): {title}")
         return None
 
     poster_url = ""
@@ -439,7 +428,6 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
         except Exception:
             continue
 
-    # محاسبه بالاترین شماره سریال ویدیوهای روز سایت برای فیلتر کردن ویدیوهای قدیمی
     all_ids = [extract_numeric_id(u) for u in raw_discovered_links if extract_numeric_id(u) > 0]
     max_site_id = max(all_ids) if all_ids else MIN_ABSOLUTE_VIDEO_ID
     state["max_seen_video_id"] = max(int(state.get("max_seen_video_id", 0)), max_site_id)
@@ -448,7 +436,6 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
     candidate_links = []
     seen_candidate_ids = set()
 
-    # مرتب‌سازی از جدیدترین شماره سریال به قدیم و حذف فوری ویدیوهای بیش از ۴۸ ساعت قبل
     for u in sorted(raw_discovered_links, key=extract_numeric_id, reverse=True):
         vid_id = extract_numeric_id(u)
         if vid_id <= 0 or vid_id in known_ids or vid_id in seen_candidate_ids:
@@ -493,5 +480,88 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
     return results
 
 
-def fetch_instagram_reels(state: dict) -> list:
-    return []
+def fetch_telegram_shorts(state: dict) -> list:
+    """
+    روش ۱۰۰٪ رایگان بدون Apify:
+    خواندن مستقیم کانال عمومی تلگرام فوتبالی (t.me/s/footballiapp) برای شکار ریلزها و ویدیوهای عمودی ۴۸ ساعت اخیر
+    """
+    tg_url = "https://t.me/s/footballiapp"
+    uploaded_urls = set(state.get("uploaded_urls", []))
+    seen_mp4s = set(state.get("seen_mp4s", []))
+    queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
+    queued_mp4s = {item.get("mp4_url") for item in state.get("pending_queue", []) if item.get("mp4_url")}
+
+    try:
+        resp = requests.get(tg_url, headers=HEADERS, timeout=15)
+        if resp.status_code != 200:
+            return []
+    except Exception as e:
+        print(f"[TG-WARN] Could not fetch Telegram public channel: {e}")
+        return []
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    now_utc = datetime.now(timezone.utc)
+    raw_candidates = []
+
+    for msg in soup.select(".tgme_widget_message"):
+        post_attr = msg.get("data-post", "")
+        if not post_attr:
+            continue
+        post_url = f"https://t.me/{post_attr}"
+
+        video_tag = msg.select_one("video")
+        if not video_tag:
+            continue
+        mp4_url = video_tag.get("src") or ""
+        if not mp4_url:
+            src_el = video_tag.select_one("source")
+            mp4_url = src_el.get("src", "") if src_el else ""
+        if not mp4_url or ".mp4" not in mp4_url:
+            continue
+
+        if post_url in uploaded_urls or post_url in queued_urls or mp4_url in seen_mp4s or mp4_url in queued_mp4s:
+            continue
+
+        # بررسی تاریخ انتشار (فقط پست‌های کمتر از ۴۸ ساعت اخیر)
+        time_tag = msg.select_one("time[datetime]")
+        if time_tag and time_tag.get("datetime"):
+            try:
+                post_dt = datetime.fromisoformat(time_tag["datetime"].replace("Z", "+00:00"))
+                if (now_utc - post_dt).total_seconds() > 48 * 3600:
+                    continue
+            except Exception:
+                pass
+
+        text_el = msg.select_one(".tgme_widget_message_text")
+        raw_text = text_el.get_text("\n", strip=True) if text_el else ""
+        # پاکسازی لینک‌های تلگرامی از متن
+        clean_lines = [
+            ln.strip() for ln in raw_text.split("\n")
+            if ln.strip() and "t.me/" not in ln and "@footballi" not in ln.lower()
+        ]
+        if not clean_lines:
+            continue
+
+        title = re.sub(r"^[⚽🎥🔥🔴🔵🟡🟢▶️🎙️\s]+", "", clean_lines[0]).strip()[:95]
+        desc = "\n".join(clean_lines)
+        if not title:
+            continue
+
+        raw_candidates.append({
+            "video_id": 9999999,  # اولویت بالا برای بررسی شورتس‌های تازه
+            "url": post_url,
+            "title": title,
+            "description": desc,
+            "mp4_url": mp4_url,
+            "poster_url": "",
+            "source": "telegram_shorts",
+            "is_short": True,
+        })
+
+    verified = ai_batch_verify_borderline_titles(raw_candidates)
+    print(f"[TG-SHORTS] Found {len(verified)} fresh domestic video candidates from @footballiapp Telegram!")
+    return verified
+
+
+# حفظ نام قبلی برای سازگاری
+fetch_instagram_reels = fetch_telegram_shorts
