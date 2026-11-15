@@ -45,10 +45,6 @@ MIN_HORIZONTAL_DURATION_SECONDS = 180  # حداقل ۳ دقیقه برای وی�
 
 
 def get_exact_video_dimensions(video_path: str) -> tuple:
-    """
-    خواندن دقیق عرض، ارتفاع و مدت‌زمان ویدیو با ffprobe
-    خروجی: (width, height, duration_seconds)
-    """
     try:
         cmd = [
             "ffprobe", "-v", "error", "-select_streams", "v:0",
@@ -494,7 +490,7 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 
 
 def main():
-    print("[START] Footballi Bot starting (Horizontal >=3min + Vertical Shorts Gate Edition)...")
+    print("[START] Footballi Bot starting (Fast 32MB Chunk Upload + >=3min Horizontal Gate)...")
     state = load_state()
     reset_key = get_tehran_reset_key()
 
@@ -560,7 +556,6 @@ def main():
     candidate = None
     is_short = False
 
-    # بررسی تک‌تک آیتم‌های صف تا اولین ویدیوی واجد شرایط پیدا شود
     while state["pending_queue"]:
         top = state["pending_queue"][0]
 
@@ -584,7 +579,6 @@ def main():
             save_state(state)
             return
 
-        # دانلود ویدیو برای بررسی دقیق ابعاد و مدت‌زمان
         dl_fn = getattr(media_utils, "download_file", None)
         if dl_fn:
             ok = dl_fn(top["mp4_url"], video_file)
@@ -607,13 +601,11 @@ def main():
         is_vertical = (h > w) if (w > 0 and h > 0) else bool(top.get("is_short", False))
 
         if is_vertical:
-            # ویدیوی عمودی کوتاه -> به عنوان YouTube Shorts آپلود شود
             is_short = dur <= 175 if dur > 0 else True
             print(f"📱 [VERTICAL-SHORTS] Approved vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
             candidate = top
             break
         else:
-            # ویدیوی افقی -> اگر کمتر از ۳ دقیقه (۱۸۰ ثانیه) بود، فوراً رد و از صف حذف شود!
             if dur > 0 and dur < MIN_HORIZONTAL_DURATION_SECONDS:
                 print(
                     f"⏭️ [SKIP-SHORT-HORIZONTAL] Rejected horizontal video under 3 mins "
@@ -661,11 +653,13 @@ def main():
                 "selfDeclaredMadeForKids": False,
             },
         }
-        media = MediaFileUpload(video_file, chunksize=4 * 1024 * 1024, resumable=True, mimetype="video/mp4")
+        media = MediaFileUpload(video_file, chunksize=32 * 1024 * 1024, resumable=True, mimetype="video/mp4")
         req = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
         response = None
         while response is None:
-            _, response = req.next_chunk()
+            status, response = req.next_chunk()
+            if status:
+                print(f"⬆️ [UPLOADING] {int(status.progress() * 100)}% complete...")
 
         vid_id = response["id"]
         print(f"✅ [SUCCESS] Uploaded Video ID: {vid_id}")
