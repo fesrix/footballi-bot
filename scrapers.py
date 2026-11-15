@@ -522,7 +522,6 @@ def fetch_telegram_shorts(state: dict) -> list:
         if post_url in uploaded_urls or post_url in queued_urls or mp4_url in seen_mp4s or mp4_url in queued_mp4s:
             continue
 
-        # بررسی تاریخ انتشار (فقط پست‌های کمتر از ۴۸ ساعت اخیر)
         time_tag = msg.select_one("time[datetime]")
         if time_tag and time_tag.get("datetime"):
             try:
@@ -534,21 +533,25 @@ def fetch_telegram_shorts(state: dict) -> list:
 
         text_el = msg.select_one(".tgme_widget_message_text")
         raw_text = text_el.get_text("\n", strip=True) if text_el else ""
-        # پاکسازی لینک‌های تلگرامی از متن
-        clean_lines = [
-            ln.strip() for ln in raw_text.split("\n")
-            if ln.strip() and "t.me/" not in ln and "@footballi" not in ln.lower()
-        ]
+
+        clean_lines = []
+        for ln in raw_text.split("\n"):
+            ln = ln.strip()
+            if not ln or "t.me/" in ln or "@footballi" in ln.lower():
+                continue
+            stripped = re.sub(r"^[^\w\u0600-\u06FF]+", "", ln).strip()
+            letters_only = re.findall(r"[\u0600-\u06FFa-zA-Z]", stripped)
+            if len(letters_only) >= 4:
+                clean_lines.append(stripped)
+
         if not clean_lines:
             continue
 
-        title = re.sub(r"^[⚽🎥🔥🔴🔵🟡🟢▶️🎙️\s]+", "", clean_lines[0]).strip()[:95]
+        title = clean_lines[0][:95]
         desc = "\n".join(clean_lines)
-        if not title:
-            continue
 
         raw_candidates.append({
-            "video_id": 9999999,  # اولویت بالا برای بررسی شورتس‌های تازه
+            "video_id": 9999999,
             "url": post_url,
             "title": title,
             "description": desc,
@@ -563,5 +566,4 @@ def fetch_telegram_shorts(state: dict) -> list:
     return verified
 
 
-# حفظ نام قبلی برای سازگاری
 fetch_instagram_reels = fetch_telegram_shorts
