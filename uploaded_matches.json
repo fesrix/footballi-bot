@@ -369,7 +369,8 @@
     "https://footballi.net/video/1074960/%D8%A7%D8%AF%D9%85%D9%88%D9%86%D8%AF-%D8%A8%D8%B2%DB%8C%DA%A9-%D8%B1%D9%88%D9%86%D8%AF-%D8%AE%D9%88%D8%A8-%D8%A2%DA%A9%D8%A7%D8%AF%D9%85%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%AF%D8%B1-%D8%AF%D8%B1%D8%A8%DB%8C-%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AF%D8%A7%D8%B1%D8%AF",
     "https://t.me/footballiapp/511919",
     "https://t.me/footballiapp/511920",
-    "https://t.me/footballiapp/511922"
+    "https://t.me/footballiapp/511922",
+    "https://footballi.net/video/1075008/%D9%BE%D8%B4%D8%AA-%D8%AE%D8%B7-%D9%81%D8%B1%D8%B2%D8%A7%D8%AF-%D8%A2%D8%B4%D9%88%D8%A8%DB%8C-%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%A8%D9%88%D8%AF%D8%8C-%DA%A9%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%AA%D8%B1"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -504,7 +505,8 @@
     "صحبت های مهدی تاج در مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا | فوتبال ایران",
     "مهدی تاج: باید جوانگرایی می‌کردیم و این اتفاق افتاد | فوتبال ایران",
     "ادموند بزیک: روند خوب آکادمی پرسپولیس در دربی ها ادامه دارد | فوتبال ایران",
-    "استاد اسدی دیگر نمی‌تواند به عابدزاده گل بزند! #Shorts"
+    "استاد اسدی دیگر نمی‌تواند به عابدزاده گل بزند! #Shorts",
+    "پشت خط/ فرزاد آشوبی: مصاحبه محمودی عجیب بود، کار پرسپولیس عجیب تر! | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -859,17 +861,6 @@
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
-    },
-    {
-      "video_id": 1074574,
-      "url": "https://footballi.net/video/1074574/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A7%D8%B3%D9%85%D8%A7%D8%B9%DB%8C%D9%84-%D8%B5%D9%81%DB%8C%D8%B1%DB%8C-%D8%A8%D9%87-%D8%AF%D8%B1%DA%AF%DB%8C%D8%B1%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%A7%DB%8C%D9%84%D8%AF%D8%B1%D9%88%D9%85-%D9%88-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C",
-      "title": "واکنش اسماعیل صفیری به درگیری عجیب ایلدروم و یاسر آسانی",
-      "description": "سوال مهدی توتونچی از صفیری؛ اگر ایلدروم توهینی به آسانی نکرده است، چرا پس او احضار و محروم شده است؟اسماعیل صفیری رییس کمیته داوران فدراسیون فوتبال: بعضی وقت ها انسان از خود بی خود می‌شود و تحت فشار، ممکن است حرف هایی بزند",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/13/tus-56854b30-a6e5-45b2-8fa9-9e2473a70581.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/13/17945916183875.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
     }
   ],
   "organized_playlist_vids": [
@@ -1177,13 +1168,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-0ec54028-08d4-411f-b6c7-b1ebb6e43e29.mp4",
     "https://cdn4.telesco.pe/file/b21814e774.mp4?token=HGBRN5W5CTSeb8bDNYv8t3j-dsrfhCjgXbRS36YUuQur-VeUGj7ZwjFKLDIcLpuvF78KqkxL2oMKo05EuPziHDlhV4lc1vmhAlXdlkheGsg30I7jbphOAxCfvoJcrW2u5hpoP-38jR62WcOSrXvw3XP6bHRxwgI5eXEAr4cWgtZD4cO9jqGfqjHDIA1DhUHNdVQyCcN1SBBf47jxXylcKRh204DanHhIhCqvU5a0gJ7-guxezDbjW4yNYb1GQV752vDi6Q3pYaJTe2KnoLRbq5AyfbDTnoggfDFTxYWtfC-CH7-oSHi6nzUdu3zOYPOODiHybl0HYqW1ek28EJNgAg",
     "https://cdn4.telesco.pe/file/acc10d9f89.mp4?token=GrbjTiOx6b0Z5ZqA61UDawFlRwpgX5zgFQGplN-eiApNF90_hmdO86w4YhIODnwuTS7gxGHRqkaKtzKP9urUPBHSDHuFnMt9ll0hjdTrcrnXlzRc1u2UQM5GcRWDcTrmpYCwvf2gR0kaJz9WEFAYmJiJOrz4hrf13OD2sA5BJIi27zLnThK5nSq-TBk-sbUyQZVmenxycwMxT-i2uPfocMzXAldIwxSVR5Be0eW1e1Oz94Plx-LBZNrEm0VvL5cLaSN-tMYDSvkS4mbRJVXADHlmstnHz0zC0gk-At3Je7znVGDwf5wPa2Iw9s3ps6jOHhwxAUsnohMPqjYNWwgFAQ",
-    "https://cdn4.telesco.pe/file/3becafd997.mp4?token=dtRLggvNEXMDuLMvIhxfwiDAPksYV4V1U2Hc_2o3qLzd8VdUWWc0Xz--fXDYKNzOk3sSLnYFCZtD0LSHYW4OUIBpqBymxBLtv6PpBiwrVNFlkDtzWc0yTsiZkw90WTzLa09E1By0Bwvt8ZxxUxp5q9frDeFz3ADw2owGPMxoTZ-UIA4Oy97zjGCdAhZJm0TIezKq6KQTxDgtwwheAchRYUIkf-8LUD6QLDgANjxLThVlzDcFKafCiR2Dq6XMmVLQ8MgFbKSYRVyJ6t4P10FO-1393UP2DEK40BY7sxm9yO9PKgNjaijXsX_45_yyiAIQJqLBXsN44NajLYicDUBPXg"
+    "https://cdn4.telesco.pe/file/3becafd997.mp4?token=dtRLggvNEXMDuLMvIhxfwiDAPksYV4V1U2Hc_2o3qLzd8VdUWWc0Xz--fXDYKNzOk3sSLnYFCZtD0LSHYW4OUIBpqBymxBLtv6PpBiwrVNFlkDtzWc0yTsiZkw90WTzLa09E1By0Bwvt8ZxxUxp5q9frDeFz3ADw2owGPMxoTZ-UIA4Oy97zjGCdAhZJm0TIezKq6KQTxDgtwwheAchRYUIkf-8LUD6QLDgANjxLThVlzDcFKafCiR2Dq6XMmVLQ8MgFbKSYRVyJ6t4P10FO-1393UP2DEK40BY7sxm9yO9PKgNjaijXsX_45_yyiAIQJqLBXsN44NajLYicDUBPXg",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-8ebe1f6d-9b53-4447-9f21-465e6c10b900.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-15",
-    "count": 7
+    "count": 8
   },
-  "last_upload_timestamp": 1794753098.3592288,
+  "last_upload_timestamp": 1794756752.6300337,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1571,6 +1563,10 @@
     ],
     "xRmWpp-FcK8": [
       "SHORTS"
+    ],
+    "_kfhPpKTxp0": [
+      "POSHTE_KHAT",
+      "PERSEPOLIS"
     ]
   },
   "upload_limit_cooldown_until": 0,
