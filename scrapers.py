@@ -72,11 +72,14 @@ def is_match_broadcast_footage(norm_title: str) -> bool:
         "گلهای بازی", "گل های برتر", "گلهای برتر", "پاس گل های برتر", "پاس گلهای برتر",
         "تمام گل های", "ضربات پنالتی بازی", "شبیه سازی گل",
     ]
-    return any(normalize_persian(w).lower() in norm_title for w in match_words)
+    if any(normalize_persian(w).lower() in norm_title for w in match_words):
+        return True
+    # تشخیص خودکار هر عنوانی به شکل «گل [نام بازیکن] به [نام تیم]»
+    return bool(re.search(r"(?:^|\s)گل\s+\S+.*\s+به\s+\S+", norm_title))
 
 
 def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
-    """فیلتر پشتیبان و خط قرمز قطعی برای خلاصه بازی‌های خارجی و آسیایی"""
+    """خط قرمز قطعی برای تصاویر خام مسابقات خارجی و آسیایی"""
     clean_title = re.sub(r"\|.*$", "", title).strip()
     norm_title = normalize_persian(clean_title).lower()
 
@@ -106,7 +109,6 @@ def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
 
 
 def is_strictly_domestic_short(title: str, desc: str = "") -> bool:
-    """بررسی سریع برای شورتس‌های اینستاگرام"""
     norm_full = normalize_persian(f"{title} {desc}").lower()
     if is_match_broadcast_footage(norm_full):
         for bad_word in FOREIGN_BLACKLIST:
@@ -117,9 +119,10 @@ def is_strictly_domestic_short(title: str, desc: str = "") -> bool:
 
 def ai_judge_videos(candidates: list) -> list:
     """
-    قضاوت دسته‌جمعی تمام عنوان‌ها توسط هوش مصنوعی (بدون وابستگی به لیست‌های ثابت و ایستا):
-    کل لیست در ۱ درخواست ارسال می‌شود تا با هزینه نزدیک به صفر، مصاحبه‌ها و خلاصه‌بازی‌های ایران تایید
-    و کلیپ‌های خارجی، اروپایی، آسیایی (AFC) و گیمینگ به دقت رد شوند.
+    قضاوت هوشمند و دسته‌جمعی توسط AI بر اساس سیاست‌های کپی‌رایت و Fair Use یوتیوب:
+    - تصاویر خام مسابقات خارجی/آسیایی همیشه رد می‌شوند (Content ID / Strike).
+    - ویدیوهای تحلیلی، خبری، آماری، انیمیشن/هوش مصنوعی و برنامه‌های تولیدی تیم فوتبالی
+      (حتی اگر موضوعشان فوتبال خارجی باشد) در صورتی که با قوانین یوتیوب سازگار باشند تایید می‌شوند.
     """
     if not candidates:
         return []
@@ -127,9 +130,8 @@ def ai_judge_videos(candidates: list) -> list:
     safe_candidates = []
     for c in candidates:
         norm_t = normalize_persian(c["title"]).lower()
-        # خط قرمز سخت‌افزاری: خلاصه بازی/گل خارجی یا آسیایی حتی برای هوش مصنوعی هم فرستاده نمی‌شود
         if is_match_broadcast_footage(norm_t) and is_foreign_or_blacklisted(c["title"]):
-            print(f"🚫 [SKIP-FOREIGN-MATCH] Blocked copyrighted match footage: {c['title']}")
+            print(f"🚫 [SKIP-FOREIGN-MATCH] Blocked copyrighted match broadcast footage: {c['title']}")
             continue
         safe_candidates.append(c)
 
@@ -141,21 +143,24 @@ def ai_judge_videos(candidates: list) -> list:
 
     payload = [{"index": i, "title": c["title"]} for i, c in enumerate(safe_candidates)]
     prompt = f"""
-You are the Head of Copyright & Content Curation for 'Footballi' (فوتبالی), an official Iranian domestic football YouTube channel.
-Review each Persian video title and decide whether to APPROVE (true) or REJECT (false).
+You are the Head of YouTube Copyright & Content Compliance for 'Footballi' (فوتبالی), an Iranian sports media channel.
+Evaluate each Persian video title carefully against YouTube's Copyright, Content ID, and Fair Use / Transformative Content policies.
 
 APPROVE (true) ALL of these:
 1. Domestic Iranian football match highlights, goals, assists, or weekly compilations (لیگ برتر ایران, لیگ آزادگان, جام حذفی, استقلال, پرسپولیس, سپاهان, تراکتور, فولاد, ملوان, etc.).
-2. ALL interviews, quotes, press conferences, and news about Iranian players, coaches, referees, club managers, veterans (پیشکسوتان), Iranian legionnaires abroad (like علی قلی‌زاده, طارمی, آزمون, صیادمنش), or Iranian stadiums (like ورزشگاه آزادی).
-   - IMPORTANT: Approve Iranian interviews even if they casually mention a foreign club or player as an example or comparison (e.g., "مثل دیبالا شماره 21 میپوشم" or talking about an Iranian player's European club).
+2. ALL interviews, quotes, press conferences, and news about Iranian players, coaches, referees, club managers, veterans (پیشکسوتان), Iranian legionnaires abroad, or Iranian stadiums.
 3. All Footballi studio/talk shows (ویدیوکست, پُشتِ خَط, تُپُلیگ, فوتبال برتر, شب‌های فوتبالی, کارشناسی داوری).
+4. Transformative / Editorial content produced & edited by the Footballi team — EVEN IF it is about foreign/international football — as long as it does NOT rely on raw copyrighted TV match broadcasts and complies with YouTube policies. Examples to APPROVE:
+   - Newspaper reviews, editorial commentary, and news analysis (e.g., مرور تیترهای روزنامه‌های اروپایی).
+   - Historical trophy/stat comparisons, rankings, or car/lifestyle trivia (e.g., مقایسه افتخارات رسمی بارسلونا و رئال مادرید، گران‌ترین ماشین بازیکنان).
+   - Original AI-generated reconstructions, 3D/Lego animations, or original fan-reaction/off-pitch press clips.
 
 REJECT (false) ALL of these:
-1. Any foreign football match highlights, goals, skills, or compilations (European leagues, La Liga, Serie A, Premier League, Bundesliga, MLS, Arab leagues, Champions League, international matches like Spain vs England, Brazil vs Japan, Haiti vs USA, etc.).
-2. Any AFC Champions League, Asian Cup, or FIFA World Cup match broadcast footage (even if Iran's national team or an Iranian club is playing in it, e.g. خلاصه بازی ایران و عراق, ایران و فلسطین, نوجوانان ایران و سریلانکا).
-3. Video games (FC27, FIFA, PES, GTA), generic viral foreign football clips, or foreign football newspaper reviews.
+1. Raw foreign TV match broadcast footage, highlights, goals, saves, assists, tackles, or skills compilations from protected leagues (La Liga, Serie A, Premier League, Bundesliga, Champions League, MLS, Saudi/Arab leagues, international matches like Spain vs England, Brazil vs Japan, Haiti vs USA). These trigger instant Content ID claims or copyright strikes.
+2. Any AFC Champions League, Asian Cup, or FIFA World Cup match broadcast footage (even involving Iranian teams, e.g., خلاصه بازی ایران و عراق, ایران و فلسطین).
+3. Pure third-party video game walkthroughs/tutorials with no Footballi editorial angle (e.g., آموزش ضربه ایستگاهی در FC27) unless it's a news/editorial feature.
 
-Return ONLY valid JSON mapping each index string ("0", "1", ...) to {{"approve": true/false, "reason": "short reason"}}.
+Return ONLY valid JSON mapping each index string ("0", "1", ...) to {{"approve": true/false, "reason": "short Persian or English reason"}}.
 
 Videos:
 {json.dumps(payload, ensure_ascii=False, indent=2)}
@@ -163,7 +168,6 @@ Videos:
 
     decisions = {}
 
-    # ۱. تلاش با جمینای رایگان گوگل (هزینه صفر)
     if gemini_key:
         try:
             g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={gemini_key}"
@@ -181,7 +185,6 @@ Videos:
         except Exception:
             pass
 
-    # ۲. فال‌بک به مدل فوق‌ارزان Arvan
     if not decisions and arvan_key:
         for model_name in ["Gemini-2.5-Flash-lite", "GPT-4.1-Nano"]:
             try:
@@ -223,7 +226,6 @@ Videos:
             else:
                 print(f"🚫 [AI-REJECTED] {c['title']}")
         else:
-            # فال‌بک در صورت خطای شبکه هوش مصنوعی
             if not is_foreign_or_blacklisted(c["title"], c.get("description", "")):
                 approved.append(c)
             else:
@@ -486,21 +488,17 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "is_short": False,
         })
 
-    # ارسال کل ویدیوهای استخراج‌شده برای تصمیم‌گیری هوشمند به AI
     verified = ai_judge_videos(raw_extracted)
     results = []
     for item in verified[:max_new_candidates]:
         seen_mp4s.add(item["mp4_url"])
         results.append(item)
 
-    print(f"[CRAWLER] AI Curator approved {len(results)} brand-new (<48h) domestic Iranian videos!")
+    print(f"[CRAWLER] AI Curator approved {len(results)} brand-new (<48h) YouTube-safe videos!")
     return results
 
 
 def fetch_instagram_reels(state: dict) -> list:
-    """
-    دریافت ریلزهای باکیفیت HD از پیج اینستاگرام @footballiapp با Apify و قضاوت هوش مصنوعی
-    """
     apify_token = os.environ.get("APIFY_TOKEN", "").strip()
     if not apify_token:
         print("[APIFY] APIFY_TOKEN not set; skipping Instagram Reels check.")
@@ -555,7 +553,7 @@ def fetch_instagram_reels(state: dict) -> list:
             })
 
         verified_reels = ai_judge_videos(raw_reels)
-        print(f"[APIFY] AI Curator approved {len(verified_reels)} fresh domestic HD Reels from Instagram!")
+        print(f"[APIFY] AI Curator approved {len(verified_reels)} fresh YouTube-safe HD Reels from Instagram!")
         return verified_reels
     except Exception as e:
         print(f"[APIFY-WARN] Instagram check skipped: {e}")
