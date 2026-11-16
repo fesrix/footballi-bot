@@ -567,17 +567,6 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/512026",
-      "title": "گل ازری کنسا به اسپانیا از دید هواداران",
-      "description": "گل ازری کنسا به اسپانیا از دید هواداران\nویدیو",
-      "mp4_url": "https://cdn4.telesco.pe/file/adce9b35a3.mp4?token=W16KLfKIc1j393w4jIKZprruepeC4WDafr8GXyeLlgTD6fH0boKD4PG17_fJjIknBZWKJAsQi9uv9rQ9HxBW-pOfKGC1lkKCT_CrAeCVQ_qfWIEyf2cX1K1jNDMvViE7iy2Ow5CLkCiQNaVIfdjucHZNXHSiSOYDv88HXwqN70Id1Tq7XYWUZZEru-xGNG9q2GEF_ek4BIvL5fXPWiJC7lD-BO2q7IjcQjcUKDYOEuCH475H85hcHiGFLM-0-1I2klB8CwinLqlWMwTR3NLQqFDYlU04OCQuDbccQwCkt7IxQAWxJ6JpjNRZ_CzIbUQIeG8bXeC15VecxiMM335GjA",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
       "video_id": 1075141,
       "url": "https://footballi.net/video/1075141/share",
       "title": "گل بن وایت به اسپانیا از دید هواداران",
@@ -804,6 +793,17 @@
       "description": "مصطفی متدین: ما هیچ اقدامی برای جذب امیرحسین محمودی نکرده ایمواکنش مدیرعامل استقلال به آگهی فروش بازیکن پرسپولیس و شرایط ورزشگاه آزادی",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-c96ee2c3-6ef9-4e2a-be55-388ddf20d988.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946678581253.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074764,
+      "url": "https://footballi.net/video/1074764/%D8%AA%D9%86%DB%8C%D8%B3-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%DB%8C%D9%86-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D9%88-%D9%85%DB%8C%D8%AB%D8%A7%D9%82%DB%8C",
+      "title": "تنیس فوتبال بین سهراب بختیاری‌زاده و میثاقی",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | استقلال,سهراب بختیاری‌زاده,محمدحسین میثاقی,فوتبال برتر",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-3dc259ca-3dad-453e-b0fd-957735c360db.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946659052291.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
