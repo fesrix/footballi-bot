@@ -387,7 +387,8 @@
     "https://t.me/footballiapp/512007",
     "https://t.me/footballiapp/512008",
     "https://footballi.net/video/1075149/%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-06-1405",
-    "https://footballi.net/video/1075142/%DA%AF%D9%84-%D8%A7%D8%B2%D8%B1%DB%8C-%DA%A9%D9%86%D8%B3%D8%A7-%D8%A8%D9%87-%D8%A7%D8%B3%D9%BE%D8%A7%D9%86%DB%8C%D8%A7-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86"
+    "https://footballi.net/video/1075142/%DA%AF%D9%84-%D8%A7%D8%B2%D8%B1%DB%8C-%DA%A9%D9%86%D8%B3%D8%A7-%D8%A8%D9%87-%D8%A7%D8%B3%D9%BE%D8%A7%D9%86%DB%8C%D8%A7-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+    "https://footballi.net/video/1075141/share"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -529,7 +530,8 @@
     "وضعیت فعلی ترکیب تیم ملی پرتغال فینال یورو ۲۰۱۶ #Shorts",
     "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران #Shorts",
     "گل صالح حردانی به فلسطین از زاویه متفاوت #Shorts",
-    "گل ازری کنسا به اسپانیا از دید هواداران #Shorts"
+    "گل ازری کنسا به اسپانیا از دید هواداران #Shorts",
+    "گل بن وایت به اسپانیا از دید هواداران #Shorts"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -567,23 +569,23 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
-      "video_id": 1075141,
-      "url": "https://footballi.net/video/1075141/share",
-      "title": "گل بن وایت به اسپانیا از دید هواداران",
-      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | بن وایت,تیم ملی انگلیس,تیم ملی اسپانیا,جام ملتهای اروپا",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aedabf06-9b15-4941-b0e6-c06af19b6843.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948203541499.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
       "video_id": 1075140,
       "url": "https://footballi.net/video/1075140/%DA%AF%D9%84-%D9%85%DB%8C%DA%A9%D9%84-%D8%A7%D9%88%DB%8C%D8%A7%D8%B1%D8%B2%D8%A7%D8%A8%D8%A7%D9%84-%D8%A8%D9%87-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
       "title": "گل میکل اویارزابال به انگلیس از دید هواداران",
       "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | میکل اویارزابال,تیم ملی انگلیس,تیم ملی اسپانیا,لیگ ملت های اروپا",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-72b1ea53-973b-4268-a122-0d0c0a19f578.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948199106951.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075134,
+      "url": "https://footballi.net/video/1075134/%D9%BE%D8%A7%D8%B3-%DA%AF%D9%84-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-06-1405",
+      "title": "پاس گل‌های برتر هفته دوازدهم لیگ برتر ایران 06-1405",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | پاس گل,ترین های هفته,لیگ برتر ایران",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-c25ca3a9-fb91-4b93-bb09-e7af074c9920.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948177672491.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -606,6 +608,17 @@
       "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | محوطه جریمه,پپ گواردیولا,تراکتور,دست اول",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-d6877490-20d1-414f-a373-eee49c9d6590.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948127152324.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075119,
+      "url": "https://footballi.net/video/1075119/share",
+      "title": "یحیی گل محمدی در تیم امید موفق می شود؟",
+      "description": "گفت و گو با اردلان آشتیانی سرمربی تیم نونهالان پرسپولیس تهران در برنامه سلام تهران را در فوتبالی مشاهده کنید",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-d6d6f738-4bef-48c7-b398-dca8061ec21c.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948122581185.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -804,6 +817,17 @@
       "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | استقلال,سهراب بختیاری‌زاده,محمدحسین میثاقی,فوتبال برتر",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-3dc259ca-3dad-453e-b0fd-957735c360db.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946659052291.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074696,
+      "url": "https://footballi.net/video/1074696/%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C-%D8%AA%D9%87%D8%B1%D8%A7%D9%86-23-%D8%A2%D8%A8%D8%A7%D9%86",
+      "title": "آخرین وضعیت ورزشگاه آزادی تهران (23 آبان)",
+      "description": "در این بخش از فوتبالی آخرین وضعیت ورزشگاه آزادی تهران را مشاهده می کنید، باید دید این ورزشگاه تا چه زمانی آماده میزبانی از مسابقات خواهد شد",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-b0ceb5fd-bb98-4e9c-b0d0-764389e202a2.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946471823934.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1132,13 +1156,14 @@
     "https://cdn4.telesco.pe/file/1d9304c03b.mp4?token=fxt6EqAdHlpAtPUup96klpBNV7XAA2bxWiP3aOZ2K5AxbeQcKASDas1C2_LZErpubLnX_-BgbhUR_HrGZYykiNiQKbBWOyyS4OPXVGRXShDOkQcjxHazH9Yzlq69xhDGLMpDWcq6ld2klWImKjpN_v3MGYCA3m1hm63EtXCMx2qEpspS3T-_FDZt7_VwbtBAr6tmlCG3fOvkZ7bG4d8jygpnqXvB0Rr6nbW03SmkApVZaT9XSEk5GPAlfcYC8ZVF4MpDo0Emscaim7yk09HUVYUtG46z6zfqln6pEzhxgYjuwTFLu8Cvl66mRzf_NprxLdmik4JGlqMcJRCHqg48Bg",
     "https://cdn4.telesco.pe/file/33ff374a76.mp4?token=SIyq-kpKQ8jpAOenBPBDHemdNUjlkhJYPcw1-Ri-XVOc3fVwt1Yu0EaEVHq6QPDd2KW2YP0s4VTD7j4R5WR-AIb-i35pAdVbbApnxYWTZ0AmiM8JuHBBtnTsQcD4atT4SBvAxtM95s9ZIPBms6rSbg14oDBPyo0ammZDGNpgxrl9cpiFXfMG7YMmPAM4pZXFVR5KFzffPfWdZORkFdf5m7fnksuvKEpwgjju4uqSS4nkot7HtfwkfX9LKDa72zi1Gbnc5k4_bX-IhffnstZt2Sj1uAJExth3kt3-s1AA3dcK6TGgn2dYBkAXC0srnjTUPLmHTajr01AOIqTMHuA3Y2k0LapLG944cHftzNeRxInfWjigdyibasWSNzEAqhsrxU3cuqpOgdMxcdpCCGDAFDVHCfnQn4cVN4SR_MU2McGMbKf73U5YrNOVioW8crwww8O6d20Wc4BE-2iMvraHy2VjWBOdR7Glx7oPR8KEoxY-8fEs-RrAMwOI6X-OtbrMdF7rYO9jPrkK6wnQUwtMVd8yfBb41a6XWTtRqwqKyzS5EfKd8hg5AH3M8DRARyfE8CJgL41M3IV99ArkN4FIZ73n9UItATHaFdsGXopeEErkvsn19bhnRyeZLefozeWA7ZnsZ-Kb_BsCslfB0OGTPhktb4H42uDLbA86SNeNW60",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-92fffb5b-8651-4da0-ad91-4aa6d73cce0d.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-1a45bb77-8fdb-4711-8f0c-348f5c622411.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-1a45bb77-8fdb-4711-8f0c-348f5c622411.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aedabf06-9b15-4941-b0e6-c06af19b6843.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 3
+    "count": 4
   },
-  "last_upload_timestamp": 1794825129.0773773,
+  "last_upload_timestamp": 1794828282.821738,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1550,6 +1575,9 @@
     ],
     "SgjSIJjRllI": [
       "SHORTS"
+    ],
+    "Odu2hIUafqw": [
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1557,9 +1585,9 @@
   "ignored_comments": [],
   "deleted_comments": [
     "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
+    "UgwnFn0zjTK0i1dfQwd4AaABAg",
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
-    "Ugz_-NosHp-bXis5K6R4AaABAg",
-    "UgwnFn0zjTK0i1dfQwd4AaABAg"
+    "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075150
+  "max_seen_video_id": 1075155
 }
