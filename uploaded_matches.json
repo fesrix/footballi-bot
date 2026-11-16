@@ -373,7 +373,8 @@
     "https://footballi.net/video/1075008/%D9%BE%D8%B4%D8%AA-%D8%AE%D8%B7-%D9%81%D8%B1%D8%B2%D8%A7%D8%AF-%D8%A2%D8%B4%D9%88%D8%A8%DB%8C-%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%A8%D9%88%D8%AF%D8%8C-%DA%A9%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%AA%D8%B1",
     "https://t.me/footballiapp/511932",
     "https://t.me/footballiapp/511933",
-    "https://footballi.net/video/1075025/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%81%D9%88%D8%AA%D8%B3%D8%A7%D9%84-%DA%AF%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B3%D9%86%D8%AF-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%87%D8%B1%D9%85%D8%B2%DA%AF%D8%A7%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C"
+    "https://footballi.net/video/1075025/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%81%D9%88%D8%AA%D8%B3%D8%A7%D9%84-%DA%AF%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B3%D9%86%D8%AF-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%87%D8%B1%D9%85%D8%B2%DA%AF%D8%A7%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C",
+    "https://t.me/footballiapp/511941"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -510,7 +511,8 @@
     "ادموند بزیک: روند خوب آکادمی پرسپولیس در دربی ها ادامه دارد | فوتبال ایران",
     "استاد اسدی دیگر نمی‌تواند به عابدزاده گل بزند! #Shorts",
     "پشت خط/ فرزاد آشوبی: مصاحبه محمودی عجیب بود، کار پرسپولیس عجیب تر! | فوتبال ایران",
-    "حواشی دیدار فوتسال گیتی پسند - فولاد هرمزگان از زاویه دوربین فوتبالی | فوتبال ایران"
+    "حواشی دیدار فوتسال گیتی پسند - فولاد هرمزگان از زاویه دوربین فوتبالی | فوتبال ایران",
+    "بازیکنانی با بیشترین تعداد بازی برای تیم ملی انگلیس #Shorts"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -547,17 +549,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511941",
-      "title": "بازیکنانی با بیشترین تعداد بازی برای تیم ملی انگلیس",
-      "description": "بازیکنانی با بیشترین تعداد بازی برای تیم ملی انگلیس\nاخیرا هری کین با رد شدن از رکورد پیتر شیلتون رکورد‌دار بیشترین تعداد بازی برای تیم ملی انگلیس شد.\nویدیو",
-      "mp4_url": "https://cdn4.telesco.pe/file/5df5bf0eaa.mp4?token=DPIclIMDxd9_kPfYsaZSDURmvfTlnVWqky583rrZkJ65sNVC8bb6l3Z0jf93QjTTLrgq865JSc8yw50v2uKnQvr2xPggy92K6F3y2GNpEpZyjWow0_-KS9GM-e_EbGf_CTeyATDvS13cvHZkWUO-ZQVwqboppWEP_tku59KDlNJ0yggP3TXLJ0bSjEITKfJ__lYfH7kheFeRsCro-7iYsViVr1YqD4vQb59XTGiBzbOts75fGixZOipGuCQdu7sNyxY8xL1s0-5FvggptYxjLNym47i7q2e5iAfgY0nBc9pesmZoURa-p60wl087rb_yZh96p7zQ25eZdRLpSHbU0g",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
     {
       "video_id": 9999999,
       "url": "https://t.me/footballiapp/511942",
@@ -656,6 +647,17 @@
       "source": "telegram_shorts",
       "is_short": true,
       "category": "SHORTS"
+    },
+    {
+      "video_id": 1075111,
+      "url": "https://footballi.net/video/1075111/share",
+      "title": "سوپرگل‌های هفته دوازدهم لیگ برتر ایران 06-1405",
+      "description": "گل‌های برتر هفته دوازدهم لیگ برتر ایران در فصل ۱۴۰۵-۰۶ به نمایش درآمده است. این گل‌های زیبا توسط صالح حردانی و شروین بزرگ به ثمر رسیدند.",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-43d5cda9-0c7c-4a45-aac8-cf672b13e0c8.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948095379623.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
     },
     {
       "video_id": 1075041,
@@ -862,17 +864,6 @@
       "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | دیدار دوستانه,تیم ملی ایران,تیم ملی فلسطین",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-b841cc02-556d-48e6-aefb-662e8e250ed2.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946741532506.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074789,
-      "url": "https://footballi.net/video/1074789/%D8%B6%D8%B1%D8%A8%D9%87-%D8%B3%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DB%8C-%D8%A8%D9%87-%D8%AA%DB%8C%D8%B1-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D8%B1%D8%AE%D9%88%D8%B1%D8%AF-%DA%A9%D8%B1%D8%AF",
-      "title": "ضربه سر محمد قربانی به تیر دروازه فلسطین برخورد کرد",
-      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | تیم ملی ایران,تیم ملی فلسطین,دیدار دوستانه",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-b6d7f9a1-9e19-4783-bc6e-09bf29104e2f.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946709126647.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1187,13 +1178,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-8ebe1f6d-9b53-4447-9f21-465e6c10b900.mp4",
     "https://cdn4.telesco.pe/file/0346887fbe.mp4?token=BsJlVzbIr8RTDT92URzb39j-b8rZ9g6njMTkDEBykQvgw0QVczJDa5N7EqknFa7wG-3bFXiyoo6xlMbKjpgsMbC_xWZpHy6OHu034FxZVXr7gbGrmCxGPhz9PlqWbA7BsN4VNqSKKmQ9iR5k6jkph6n-NnLVpz-rA5Wk_Why1a_RsB3UDGBvIYr6_3MEapOEHH1vY3_AlZS7iUyBlrZ3ndzACSlbNtCSQAmkB_ajZIsxz16qogcq0gogzsgSMSRPu9_ENfZzcBbRU60Ptk7m3Ck2i-TYxkp_Ol5R6F1e2Q39vPm3pZ_EEUV1AHNqOvGV-6a__70u7VbiQPhD7Y8YrZgazR7EZIjyalT3VSAYImJZ-zq_pLOuq-7r16wmMlBWjRYkxUABseRTS0CzCzoKNlbP0qRmthQOtpguoyLc2I_mayBWm2dmX5W8TIpY7tW0DyuFoXQrkeFXnkFiWen-MqB-CYEIh0HMltcF4XkoLkD5Pel9NYqfH7b401v3ozJ8iu634Hj3K67Rjrvxd7nX-b1u5VYLFNn3PCunVm5bHVk4Gs7uc99mzCpjCKI0aT-3NUU1rzM2c_BFrIrRuEe7BqUVqATNdEEeM0N4pjdL_tV887vllUubvvW9OFyYAc53SsBxypq9QwRY3PhJ6N5Kt0zK8sbb5s-zc_rfRd5XsKc",
     "https://cdn4.telesco.pe/file/764353eba3.mp4?token=DdS5zvAKfnaGDkj6Drd4z3o9szWfp77MC39qiwd3rTAkfDE-vUcE9zUW9-snFJzt6OM9uMLNgT4IJy4a-C3FvzUli17yJic8QBNjMf0ZDEPEwiCPvSVa4FuFBSRwmJHwN61z5I7l7DeMCbl15SDQHs8UKOmd9ZdSFnYh-1lHh8EgGshMCBMjuXwG0-gPM88Hzv7gCmZdw9HN3YdOxt9G3dqFA0mZzqSng6QHIbGYio3g_o6oGZOesUuw6VrflQszkB7GNBpe-BSbr9fisrxYq0IX8e90W7Q_blqtAtPcbT1hCj3xMG7gpKmcL0BEmIelWzvyyHA-41J_1Op_ufDPLg",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d19c5034-0855-4075-8e0c-46e0053cc7dc.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d19c5034-0855-4075-8e0c-46e0053cc7dc.mp4",
+    "https://cdn4.telesco.pe/file/5df5bf0eaa.mp4?token=DPIclIMDxd9_kPfYsaZSDURmvfTlnVWqky583rrZkJ65sNVC8bb6l3Z0jf93QjTTLrgq865JSc8yw50v2uKnQvr2xPggy92K6F3y2GNpEpZyjWow0_-KS9GM-e_EbGf_CTeyATDvS13cvHZkWUO-ZQVwqboppWEP_tku59KDlNJ0yggP3TXLJ0bSjEITKfJ__lYfH7kheFeRsCro-7iYsViVr1YqD4vQb59XTGiBzbOts75fGixZOipGuCQdu7sNyxY8xL1s0-5FvggptYxjLNym47i7q2e5iAfgY0nBc9pesmZoURa-p60wl087rb_yZh96p7zQ25eZdRLpSHbU0g"
   ],
   "daily_uploads": {
     "date": "2026-11-15",
-    "count": 9
+    "count": 10
   },
-  "last_upload_timestamp": 1794760301.6684222,
+  "last_upload_timestamp": 1794810704.8986294,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1588,16 +1580,20 @@
     ],
     "kcXtfRp5vGw": [
       "INTERVIEW"
+    ],
+    "cvuAwQ4k21M": [
+      "SHORTS",
+      "TEAM_MELLI"
     ]
   },
-  "upload_limit_cooldown_until": 1794808924.7095768,
+  "upload_limit_cooldown_until": 0,
   "quota_exhausted_date": "2026-11-12",
   "ignored_comments": [],
   "deleted_comments": [
+    "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgwnFn0zjTK0i1dfQwd4AaABAg",
-    "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
     "UgwCAcPvVRxAwbDwXvN4AaABAg"
   ],
-  "max_seen_video_id": 1075108
+  "max_seen_video_id": 1075111
 }
