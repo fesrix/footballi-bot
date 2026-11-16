@@ -5,6 +5,7 @@ import json
 import time
 import inspect
 import subprocess
+from difflib import SequenceMatcher
 from datetime import datetime, timezone, timedelta
 
 from google.oauth2.credentials import Credentials
@@ -45,7 +46,7 @@ SCOPES = [
 MAX_MAIN_QUEUE_SIZE = 25
 MAX_SHORTS_QUEUE_SIZE = 5
 MIN_HORIZONTAL_DURATION_SECONDS = 180
-MIN_SHORTS_WIDTH_PX = 540  # جلوگیری از آپلود شورتس‌های بی‌کیفیت زیر 540p
+MIN_SHORTS_WIDTH_PX = 540
 
 
 def get_exact_video_dimensions(video_path: str) -> tuple:
@@ -73,11 +74,33 @@ def get_tehran_reset_key() -> str:
     return (now_utc - timedelta(hours=8)).strftime("%Y-%m-%d")
 
 
+def is_duplicate_title(candidate_title: str, existing_norm_titles: set) -> bool:
+    """بررسی دقیق و هوشمند شباهت عنوان (۸۵٪+) برای جلوگیری قطعی از آپلود تکراری"""
+    clean = re.sub(r"\|.*$", "", candidate_title).replace("#Shorts", "").replace("#shorts", "").strip()
+    norm_cand = normalize_persian(clean).lower()
+    if not norm_cand:
+        return True
+    if norm_cand in existing_norm_titles:
+        return True
+    for ext in existing_norm_titles:
+        clean_ext = re.sub(r"\|.*$", "", ext).replace("#shorts", "").strip()
+        if not clean_ext:
+            continue
+        if norm_cand == clean_ext:
+            return True
+        if len(norm_cand) > 15 and len(clean_ext) > 15:
+            if SequenceMatcher(None, norm_cand, clean_ext).ratio() >= 0.85:
+                return True
+    return False
+
+
 def load_state() -> dict:
     default_state = {
         "uploaded_urls": [],
+        "rejected_urls": [],
         "seen_mp4s": [],
         "uploaded_titles": [],
+        "seen_raw_titles": [],
         "pending_queue": [],
         "daily_uploads": {"date": "", "count": 0},
         "last_upload_timestamp": 0,
@@ -301,7 +324,7 @@ def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlist
     return added_count
 
 
-def fetch_channel_existing_videos(youtube, state: dict, max_items: int = 100) -> list:
+def fetch_channel_existing_videos(youtube, state: dict, max_items: int = 120) -> list:
     videos = []
     try:
         ch_res = youtube.channels().list(part="contentDetails", mine=True).execute()
@@ -380,12 +403,13 @@ def normalize_queue_item(item: dict) -> dict:
 
 
 def deduplicate_and_balance_queue(
-    queue: list, uploaded_urls: set, seen_mp4s: set, channel_norm_titles: set, max_site_id: int
+    queue: list,
+    uploaded_urls: set,
+    rejected_urls: set,
+    seen_mp4s: set,
+    known_norm_titles: set,
+    max_site_id: int,
 ) -> list:
-    """
-    پالایش صف و تضمین اینکه ویدیوهای اصلی (SUMMARY, VIDEOCAST, POSHTE_KHAT, VIDEO)
-    همیشه در اولویت بالاتر از SHORTS قرار بگیرند و هیچ‌وقت پشت سر شورتس‌ها گیر نکنند.
-    """
     main_items = []
     short_items = []
     q_urls = set()
@@ -405,9 +429,12 @@ def deduplicate_and_balance_queue(
 
         if not u or not mp4 or not t:
             continue
-        # حذف آیتم‌های بی‌کیفیت باقی‌مانده از تلگرام در صف قبلی
         if item.get("source") == "telegram_shorts" or "t.me/" in u:
             purged += 1
+            continue
+        if u in uploaded_urls or u in rejected_urls or u in q_urls or mp4 in seen_mp4s or mp4 in q_mp4s:
+            continue
+        if is_duplicate_title(item.get("title", ""), known_norm_titles | q_titles):
             continue
 
         if item.get("is_short"):
@@ -422,9 +449,6 @@ def deduplicate_and_balance_queue(
                 purged += 1
                 continue
 
-        if u in uploaded_urls or u in q_urls or mp4 in q_mp4s or t in q_titles or t in channel_norm_titles:
-            continue
-
         q_urls.add(u)
         q_mp4s.add(mp4)
         q_titles.add(t)
@@ -435,9 +459,8 @@ def deduplicate_and_balance_queue(
             main_items.append(item)
 
     if purged > 0:
-        print(f"🧹 [QUEUE-PURGE] Removed {purged} old, foreign, or low-quality Telegram items from queue.")
+        print(f"🧹 [QUEUE-PURGE] Removed {purged} old, foreign, or duplicate items from queue.")
 
-    # اولویت‌بندی قطعی: ویدیوهای اصلی (0 تا 3) همیشه بالاتر از شورتس (4)
     priority_order = {"SUMMARY": 0, "VIDEOCAST": 1, "POSHTE_KHAT": 2, "VIDEO": 3}
     main_items.sort(
         key=lambda x: (
@@ -516,7 +539,7 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 
 
 def main():
-    print("[START] Footballi Bot starting (Main Videos Priority + HD Instagram Shorts Edition)...")
+    print("[START] Footballi Bot starting (Zero-Duplicate Memory + AI Curator Edition)...")
     state = load_state()
     reset_key = get_tehran_reset_key()
 
@@ -525,9 +548,23 @@ def main():
         state["upload_limit_cooldown_until"] = 0
 
     uploaded_urls = set(state.get("uploaded_urls", []))
+    rejected_urls = set(state.get("rejected_urls", []))
     seen_mp4s = set(state.get("seen_mp4s", []))
-    channel_norm_titles = {normalize_persian(t).lower() for t in state.get("uploaded_titles", [])}
+    known_norm_titles = {
+        normalize_persian(t).lower()
+        for t in (state.get("uploaded_titles", []) + state.get("seen_raw_titles", []))
+    }
 
+    # ۱. بررسی اولیه کانال یوتیوب قبل از خزش تا کل عنوان‌های کانال در حافظه ضدتکرار باشد
+    youtube = None
+    channel_videos = []
+    if state.get("quota_exhausted_date") != reset_key:
+        youtube = get_youtube_client()
+        channel_videos = fetch_channel_existing_videos(youtube, state, max_items=120)
+        for v in channel_videos:
+            known_norm_titles.add(normalize_persian(v["title"]).lower())
+
+    # ۲. خزش سایت و اینستاگرام (ویدیوهای ردشده و تکراری فوراً در state ذخیره می‌شوند)
     new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
     new_ig_reels = fetch_instagram_reels(state)
 
@@ -538,8 +575,14 @@ def main():
         state["pending_queue"].append(item)
 
     max_site_id = int(state.get("max_seen_video_id", MIN_ABSOLUTE_VIDEO_ID))
+    rejected_urls = set(state.get("rejected_urls", []))
     state["pending_queue"] = deduplicate_and_balance_queue(
-        state.get("pending_queue", []), uploaded_urls, seen_mp4s, channel_norm_titles, max_site_id
+        state.get("pending_queue", []),
+        uploaded_urls,
+        rejected_urls,
+        seen_mp4s,
+        known_norm_titles,
+        max_site_id,
     )
     save_state(state)
 
@@ -547,18 +590,9 @@ def main():
     shorts_count = sum(1 for x in state["pending_queue"] if x.get("category") == "SHORTS")
     print(f"[QUEUE] Ready -> Main Videos: {main_count} | Instagram HD Shorts: {shorts_count}")
 
-    if state.get("quota_exhausted_date") == reset_key:
+    if state.get("quota_exhausted_date") == reset_key or youtube is None:
         print("⏸️ [QUOTA-GUARD] Daily YouTube API quota is full for today. Holding queue safely until 11:30 AM Tehran reset.")
         return
-
-    youtube = get_youtube_client()
-    channel_videos = fetch_channel_existing_videos(youtube, state, max_items=100)
-    if state.get("quota_exhausted_date") == reset_key:
-        save_state(state)
-        return
-
-    for v in channel_videos:
-        channel_norm_titles.add(normalize_persian(v["title"]).lower())
 
     uploads_today = state["daily_uploads"].get("count", 0)
     print(
@@ -589,17 +623,22 @@ def main():
     while state["pending_queue"]:
         top = state["pending_queue"][0]
 
+        if is_duplicate_title(top["title"], known_norm_titles) or top["url"] in uploaded_urls or top["mp4_url"] in seen_mp4s:
+            print(f"♻️ [SKIP-DUPLICATE] Already uploaded to channel: {top['title']}")
+            state["pending_queue"].pop(0)
+            continue
+
         if top.get("is_short"):
             if not is_strictly_domestic_short(top["title"], top.get("description", "")):
                 print(f"🚫 [SHORT-REJECT] Blocked non-domestic Short before upload: {top['title']}")
                 state["pending_queue"].pop(0)
-                state["uploaded_urls"].append(top["url"])
+                state["rejected_urls"].append(top["url"])
                 continue
         else:
             if not call_ai_copyright_audit(top["title"], top.get("description", "")):
                 print(f"🚫 [AI-AUDIT-REJECT] Blocked unsafe video before upload: {top['title']}")
                 state["pending_queue"].pop(0)
-                state["uploaded_urls"].append(top["url"])
+                state["rejected_urls"].append(top["url"])
                 continue
 
         cat_check = top.get("category", "VIDEO")
@@ -641,7 +680,7 @@ def main():
             if w > 0 and w < MIN_SHORTS_WIDTH_PX:
                 print(f"⏭️ [SKIP-LOWRES-SHORT] Rejected low-resolution Short ({w}x{h} < {MIN_SHORTS_WIDTH_PX}px): {top['title']}")
                 state["pending_queue"].pop(0)
-                state["uploaded_urls"].append(top["url"])
+                state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
             is_short = dur <= 175 if dur > 0 else True
@@ -655,7 +694,7 @@ def main():
                     f"({w}x{h}, {dur:.0f}s < 180s): {top['title']}"
                 )
                 state["pending_queue"].pop(0)
-                state["uploaded_urls"].append(top["url"])
+                state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
             is_short = False
@@ -726,6 +765,7 @@ def main():
         state["uploaded_urls"].append(candidate["url"])
         state["seen_mp4s"].append(candidate["mp4_url"])
         state["uploaded_titles"].append(final_title)
+        state["seen_raw_titles"].append(candidate["title"])
         state["daily_uploads"]["count"] = uploads_today + 1
         state["last_upload_timestamp"] = time.time()
         state["upload_limit_cooldown_until"] = 0
