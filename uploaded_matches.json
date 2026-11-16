@@ -377,7 +377,17 @@
     "https://t.me/footballiapp/511941",
     "https://t.me/footballiapp/511942",
     "https://t.me/footballiapp/511945",
-    "https://t.me/footballiapp/511954"
+    "https://t.me/footballiapp/511954",
+    "https://t.me/footballiapp/511964",
+    "https://t.me/footballiapp/511965",
+    "https://t.me/footballiapp/511967",
+    "https://t.me/footballiapp/511968",
+    "https://t.me/footballiapp/511969",
+    "https://t.me/footballiapp/511970",
+    "https://t.me/footballiapp/512007",
+    "https://t.me/footballiapp/512008",
+    "https://footballi.net/video/1075149/%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-06-1405",
+    "https://footballi.net/video/1075142/%DA%AF%D9%84-%D8%A7%D8%B2%D8%B1%DB%8C-%DA%A9%D9%86%D8%B3%D8%A7-%D8%A8%D9%87-%D8%A7%D8%B3%D9%BE%D8%A7%D9%86%DB%8C%D8%A7-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -518,7 +528,8 @@
     "بازیکنانی با بیشترین تعداد بازی برای تیم ملی انگلیس #Shorts",
     "وضعیت فعلی ترکیب تیم ملی پرتغال فینال یورو ۲۰۱۶ #Shorts",
     "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران #Shorts",
-    "گل صالح حردانی به فلسطین از زاویه متفاوت #Shorts"
+    "گل صالح حردانی به فلسطین از زاویه متفاوت #Shorts",
+    "گل ازری کنسا به اسپانیا از دید هواداران #Shorts"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -555,94 +566,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511964",
-      "title": "فرزاد آشوبی: نه مصاحبه محمودی، استاندارد و درست بود نه اقدام باشگاه پرسپولیس",
-      "description": "فرزاد آشوبی: نه مصاحبه محمودی، استاندارد و درست بود نه اقدام باشگاه پرسپولیس\nهم مصاحبه محمودی عجیب بود هم اقدام باشگاه پرسپولیس و اصلا نباید کار به اینجا می‌رسید/ هر دو تصمیم را من اشتباه می‌دانم و این دست مسائل باید داخل خانواده و با تدبیر حل شود\nبازیکن اسبق پرسپولیس در گفت‌وگو با برنامه پشت خط با اجرای رامین طبرسی(بخش اول)\nاختصاصی_فوتبالی\nپشت_خط\nفرزاد_آشوبی\nفوتبالی_پرسپولیس",
-      "mp4_url": "https://cdn4.telesco.pe/file/1f7ce852a1.mp4?token=nF3DsgeDnWUfodVIkA8Hx8yvGXEtodOy2EMde0Hg21rczBp8I_x8zjMngWohzFACx8-wHZmwwqfgna1FHUb6hly2xCjbxmXSCN6kevVQwZyvjJCqETegjVJFK1M1Vu_G-KeoIZNEOsGwVUT6lanlqtr1W5m5Dp4wv2P4YqzSfZd_wjoyuNspCQcG4K8N1fQ5wAWaOW4ZSG1VnG5jt9YapW_SCrwTTwvo4g9XFalQjIk81okC90v0LjgVSHOtgefX6s1ekil9NLSNvqp3xRsClrehgpdNlpr_0NJo7zr5KTPovbow9hHaJdzOhGsCbWrfq8mQ1rhoAHgLWEJOXBiKOA",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511965",
-      "title": "فرزاد آشوبی: محمودی شایسته دقایق بازی بیشتری در پرسپولیس است",
-      "description": "فرزاد آشوبی: محمودی شایسته دقایق بازی بیشتری در پرسپولیس است\nمصاحبه محمودی، کنایه به کادر فنی پرسپولیس بود/ او زمانی که در پرسپولیس کم بازی می‌کرد به تیم ملی دعوت می‌شد/ به شکل کلی، من این مدل مصاحبه‌ها را نمی‌پسندم\nبازیکن اسبق پرسپولیس در گفت‌وگو با برنامه پشت خط با اجرای رامین طبرسی(بخش دوم)\nاختصاصی_فوتبالی\nپشت_خط\nفرزاد_آشوبی\nفوتبالی_پرسپولیس",
-      "mp4_url": "https://cdn4.telesco.pe/file/f4f0f5c2ca.mp4?token=LBhMBYdvcboPBUUhZaIfCGGPsq66VDQvr1k_FrbQAhy5pwOrZt2eB4955UjxDEpqI3G3pKnQf-Ct20u950qMgHBjWNpDN2mHAsmz6zGL8QLUsAMT3svTHU-u1Q8M6V3AEgSwI-t8h5LA342ca5qxphF_hp48c4D_p9vUzRBrKLzR2n-ucWOm-rLDjj0KX3WxtaaTEr24fIvZY2atDKd1ZkhQESQzZfcQWdeH-bwcUKBBwrvPBTbtXGBNFYcX_24pX-1SjntA1bwmtV0OJNJ9_9IpLN1yeiM-D_OEHyN7R0yzXfoJRSb_JXZFtBtBbmqqyCoYEIb4xeQzFbjGeZjW9w",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511967",
-      "title": "فرزاد آشوبی: تصمیم‌گیرنده نهایی درباره بازی دادن یا ندادن به محمودی، تارتار است",
-      "description": "فرزاد آشوبی: تصمیم‌گیرنده نهایی درباره بازی دادن یا ندادن به محمودی، تارتار است\nاین مساله که یکی از اعضای کادر فنی پرسپولیس به محمودی اعتقاد ندارد، چیزی نیست که راست یا دروغش مشخص باشد/ این به آن معنا نیست که همه اعضای کادر فنی، روی یک موضوع، اتفاق نظر داشته باشند/ در نهایت سرمربی تصمیم می‌گیرد و بقیه موظف هستند تصمیم سرمربی را اجرا کنند\nبازیکن اسبق پرسپولیس در گفت‌وگو با برنامه پشت خط با اجرای رامین طبرسی(بخش سوم)\nاختصاصی_فوتبالی\nپشت_خط\nفرزاد_آشوبی\nفوتبالی_پرسپولیس",
-      "mp4_url": "https://cdn4.telesco.pe/file/98a8a0eb91.mp4?token=Sw0W87kuK1EtS5jpFvMtVRRXpktBu6NokUIlaLL2RiGD8moO22JlfrjHqH3l5Vsa9gUnZqJi3lzyGinJ_mwAHUbdot0F0gvAmQOZMvm70BU1IUJC3t4ZSr2Ia35wGPLoyta5h2Ndrfrm3Yr7EyY722zZFVR4X0y8dB7-uHJQ1068Qhk2n4Z4WFbrYW-rbuULDuOVet23VQMCfDjLmNJcCelym1szBciQGGL837UH7n-AdmmYyNfDhsyqTbZp9mv3MbFb0T5-dLErzd-BGV-gj3AbXx2iGu0g6DkxKkvhOrmmT-5pgXqHkQim8G4iHrGDwZ1WWjGhHJKsy0-Nv5OP_FF75btkJLAqD5Z4qxiLSyfhvhE8RA5-WvHY0IUilZpKfohJ-NWyLMrmiSHcI0HVcBdKw1jBEBM9242qPuj6578N3PDa2Z9RljJXJPMADmRmsEMvwaAZCZMf6VjHO8c4f1AAWGwTHVKoAgTVvWKBEvxrEqej6aatNEnWMX5ah9_OP7YDgzzs_1Sa0xOC5iSPuUXf_oWSf0t3LXtAuJnDuQy9BabwdiGs0V6kZP15LWSuPkVt3NWD8OT-xb7z4TEf3wRYIY8apBCpfjnYVipenF0vFbZvUY6LjWCs0QyR5K7ssZkf8HZ7jxKrUhpJRzJJxsiBgJ0YOdjihoSDBwdIubE",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511968",
-      "title": "فرزاد آشوبی: انتشار آگهی فروش محمودی هیچ جای توجیهی ندارد",
-      "description": "فرزاد آشوبی: انتشار آگهی فروش محمودی هیچ جای توجیهی ندارد\nتصمیم تارتار درباره اینکه محمودی در تمرین گروهی حاضر نشود، تصمیم قابل درکی است/ محمودی با آن مصاحبه، از یکسری اصول رد شده و باید متوجه اشتباهش شود/ این استدلال که چون پرسپولیس یک شرکت بورسی است، باید این مدلی شفاف‌سازی کند، جای توجیه ندارد/ به نظرم خواسته محمودی در قبال افزایش دستمزدش، خواسته منطقی است و این موضوع نباید تا اینجا پیش می‌رفت که این حاشیه‌ها درست شود\nبازیکن اسبق پرسپولیس در گفت‌وگو با برنامه پشت خط با اجرای رامین طبرسی(بخش چهارم)\nاختصاصی_فوتبالی\nپشت_خط\nفرزاد_آشوبی\nفوتبالی_پرسپولیس",
-      "mp4_url": "https://cdn4.telesco.pe/file/c8b56f87c4.mp4?token=Ybm00HkOD_EcxWpSyKlLRKoxXHg4tvAcsNezGo9rp0AEH3TPmpYqCD3SEG17aojuoKK3vYpT72MqV_AZ-OhBkcJDvPAvMozGodHTlMjTkW-dFM4mqcEnM5TLfscnLRN2Ylaw7vBotyVeCfeBy-3-AKK1Wb7Mn6jxqjYiLJwgz3erdvAUl1NGheC54VAc_y30E-JF_29DKcPuFOy4C7FHn-Mwt56P8o06XEk5GT7aFbp0UX7MGBBhqTzK3Y2H9BWX_xMxbcPjpvh9ke-lanh8LZw80VlkVSnl7cgYpF7DJWIxYOOQKamExKCJ-wh7YxlKJcRWe_XczccLAj6VEvefA4EBTpsUxzE8-eLijKGASTPfCV6E22Zr5ovg6WxBjrwb28H0i0huTFHOg_nrBEJuigELYn59kWEbZyh9kVp8hPo5lRwZFZd9ENtJ1iTzePKdD7h3a_101SbNAbFwdPEFMQvHSUPAp7J8aQZ__TxNbpQsaSZB48zrcJnZQ8_cJyvBZLHGVGfkudMGVm2WZ1J2EqDFogM7hsMwg-Wg-UPFLhpb0Hxz2BMsy-D4o4oUraNlsXTZ66fGAXBkk5Dnj7tYmkuP3azAI8_BcN9LhgYLIBpW1jkTr9avl00U53uAM-o4gGY3hwPHPFQEWVu2OgFY3hx_jJJ7ndBWfSkL0stI_Aw",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511969",
-      "title": "فرزاد آشوبی: تصمیم باشگاه پرسپولیس، غیرقابل درک و دور از انتظار بود",
-      "description": "فرزاد آشوبی: تصمیم باشگاه پرسپولیس، غیرقابل درک و دور از انتظار بود\nبرای هیچ هوادار فوتبال، تصمیم باشگاه پرسپولیس در انتشار آگهی فروش محمودی، قابل درک نیست/ احساسم این است که این مساله ناشی از عدم سنجش تمام جوانب کار بوده است/ این اتفاق باعث شد که چند روز، بازیکن و باشگاه درگیر یک حاشیه غیرضروری و غیرمنطقی شوند/ اگر در این موارد، دوراندیشی داشته باشید، تصمیم متفاوتی خواهید گرفت\nبازیکن اسبق پرسپولیس در گفت‌وگو با برنامه پشت خط با اجرای رامین طبرسی(بخش پنجم)\nاختصاصی_فوتبالی\nپشت_خط\nفرزاد_آشوبی\nفوتبالی_پرسپولیس",
-      "mp4_url": "https://cdn4.telesco.pe/file/53f2b09e4c.mp4?token=sEWiEzSr4V8QSKSyvJHmPACjSuWWAmj2d1C5w6snzeLqwlwJJErNSJSGSclgLHYl-7_DxEqNvyTqwEGfk_2K_6vk-tokjNLQ5Y23VuU_nBgKC10HPm8KoqUrK3TRPv1X0lJKT2XloWrplcvdwQg9epNKEKpnuL6BnO3n6O4dJ3OHmVKQOIjCAX8OX5HpfUkpj2Em1UXix9vpwOcNMLE-Wl3ksdCHXGUfE8cSwrSSJv921f-t2mP2Qxjo8FFQHwgPJ_HeAlRXyd-YcnKMix0s9KJBFZ2Ruq85VUwhd5xtl_GIIi8Pki_1IwetFkNfUUe2Gdpqes97gPAkYNfsI9ELq3d2iA9gVmfp9vZYEjAxo1o_utt2j1z5rDqmoqsKSykunuNnEnIr30nq42vKPUZgTT3uzz-iIt379pUlNqUhWOQUX7u16TThqfSPGdzI5bejRExfhOd5s0OxVjQkseKEA4eaWsmJBgmnsMb2NheZnBSvn7uw-9AV-8rQ_rhkki56UB5FAwZVm3CRKvj-F4zDYIWhy4ex0rHsQFyjEv7TSoYXahkoUaW88glkmKZpeAZ5tO1jH7wSwTya8N6YxTz0zzR-d8vtbMFs5fnIrvMJ_6FvNJBKVp0MGvH2EeM6GIVot2FJVns_JZLEeY8ba61G1cdqsPaEDFPdjuUO19Elp5w",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511970",
-      "title": "فرزاد آشوبی: پرسپولیس در قبال محمودی می‌توانست از ابزار دیگری استفاده کند",
-      "description": "فرزاد آشوبی: پرسپولیس در قبال محمودی می‌توانست از ابزار دیگری استفاده کند\nمصاحبه محمودی را نپسندیم اما انتظارم این بود که باشگاه روش مناسبتری را برای برخورد با این موضوع انتخاب کند/ پرسپولیس می‌توانست از ابزار دیگری استفاده کند تا هم محمودی به خواسته‌اش نزدیک شود هم منافع باشگاه حفظ شود\nبازیکن اسبق پرسپولیس در گفت‌وگو با برنامه پشت خط با اجرای رامین طبرسی(بخش ششم)\nاختصاصی_فوتبالی\nپشت_خط\nفرزاد_آشوبی\nفوتبالی_پرسپولیس",
-      "mp4_url": "https://cdn4.telesco.pe/file/59cc3e129e.mp4?token=rNaGi_ujfJysbcywOhOS7gC-1I0pnIJXb4v11duFIefjBXqYE6HsOCylRlfyb8zxfq0eBqUJoF2TcU_eLXeWQKoaCZKd-R2KbYyilsW8j1VuccRSTePxHdIf3izUC2twpzDXm_7xTJc3FImv8BLYB6i2tRxHPeG-s09jbyP-ZIR9MPRyWd_wrkud1BjdbyTOsYQPLD4G4NltbONFJPwgKllGtIlKQucjmsBQobWY5oxdz1ehy_dRSa-5CURaoAuD75EJAC-Xv-UzHX8Z5iSQUPfvLkn07WFi9Htr9mzqL7snN8TerVU_O4_pzvsdxD_0ovMFzKa2V1cdoJ__fTc5jg",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/512007",
-      "title": "مهدی تاج خبر داد؛ ایجاد تغییرات بصری در البسه تیم‌های ملی و لوگوی فدراسیون فوتبال",
-      "description": "مهدی تاج خبر داد؛ ایجاد تغییرات بصری در البسه تیم‌های ملی و لوگوی فدراسیون فوتبال\nویدیو",
-      "mp4_url": "https://cdn4.telesco.pe/file/1d9304c03b.mp4?token=fxt6EqAdHlpAtPUup96klpBNV7XAA2bxWiP3aOZ2K5AxbeQcKASDas1C2_LZErpubLnX_-BgbhUR_HrGZYykiNiQKbBWOyyS4OPXVGRXShDOkQcjxHazH9Yzlq69xhDGLMpDWcq6ld2klWImKjpN_v3MGYCA3m1hm63EtXCMx2qEpspS3T-_FDZt7_VwbtBAr6tmlCG3fOvkZ7bG4d8jygpnqXvB0Rr6nbW03SmkApVZaT9XSEk5GPAlfcYC8ZVF4MpDo0Emscaim7yk09HUVYUtG46z6zfqln6pEzhxgYjuwTFLu8Cvl66mRzf_NprxLdmik4JGlqMcJRCHqg48Bg",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/512008",
-      "title": "تک گل ایران در بازی ایران ۱-۰ عراق بازی های آسیایی ۱۹۷۴ تهران",
-      "description": "تک گل ایران در بازی ایران ۱-۰ عراق بازی های آسیایی ۱۹۷۴ تهران\nدر ۲۲ شهریور ۱۳۵۳ در تهران، تیم ملی فوتبال در ورزشگاه آزادی، ایران با تک گل حسن روشن در دقیقه ۷۶ پیروز مسابقه شد و به فینال بازی های آسیایی ۱۹۷۴ راه یافت. این ویدیو را با صدای زنده یاد مسعود اسکویی ببینید.\nویدیو\nنوستالژی_فوتبالی",
-      "mp4_url": "https://cdn4.telesco.pe/file/33ff374a76.mp4?token=SIyq-kpKQ8jpAOenBPBDHemdNUjlkhJYPcw1-Ri-XVOc3fVwt1Yu0EaEVHq6QPDd2KW2YP0s4VTD7j4R5WR-AIb-i35pAdVbbApnxYWTZ0AmiM8JuHBBtnTsQcD4atT4SBvAxtM95s9ZIPBms6rSbg14oDBPyo0ammZDGNpgxrl9cpiFXfMG7YMmPAM4pZXFVR5KFzffPfWdZORkFdf5m7fnksuvKEpwgjju4uqSS4nkot7HtfwkfX9LKDa72zi1Gbnc5k4_bX-IhffnstZt2Sj1uAJExth3kt3-s1AA3dcK6TGgn2dYBkAXC0srnjTUPLmHTajr01AOIqTMHuA3Y2k0LapLG944cHftzNeRxInfWjigdyibasWSNzEAqhsrxU3cuqpOgdMxcdpCCGDAFDVHCfnQn4cVN4SR_MU2McGMbKf73U5YrNOVioW8crwww8O6d20Wc4BE-2iMvraHy2VjWBOdR7Glx7oPR8KEoxY-8fEs-RrAMwOI6X-OtbrMdF7rYO9jPrkK6wnQUwtMVd8yfBb41a6XWTtRqwqKyzS5EfKd8hg5AH3M8DRARyfE8CJgL41M3IV99ArkN4FIZ73n9UItATHaFdsGXopeEErkvsn19bhnRyeZLefozeWA7ZnsZ-Kb_BsCslfB0OGTPhktb4H42uDLbA86SNeNW60",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
     {
       "video_id": 1075141,
       "url": "https://footballi.net/video/1075141/share",
@@ -859,28 +782,6 @@
       "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | تیم ملی ایران,سردار آزمون,تیم ملی فلسطین,تورنمنت بصره",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-abf963de-ab11-4c0f-9411-ce35e7b3fb00.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947435118327.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074953,
-      "url": "https://footballi.net/video/1074953/%D8%AF%D8%A8%D9%84-%D8%B3%D9%88%D9%BE%D8%B1-%DA%AF%D9%84-%D9%88%DB%8C%D9%86%DB%8C%D8%B3%DB%8C%D9%88%D8%B3-%D8%AC%D9%88%D9%86%DB%8C%D9%88%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%DA%98%D8%A7%D9%BE%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
-      "title": "دبل سوپر گل وینیسیوس جونیور مقابل ژاپن از زاویه دید هواداران",
-      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | تیم ملی برزیل,تیم ملی ژاپن,وینیسیوس جونیور,سوپرگل",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-907f6ea8-73ff-44aa-9157-e6f91dab02d5.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947426972943.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074764,
-      "url": "https://footballi.net/video/1074764/%D8%AA%D9%86%DB%8C%D8%B3-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%DB%8C%D9%86-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D9%88-%D9%85%DB%8C%D8%AB%D8%A7%D9%82%DB%8C",
-      "title": "تنیس فوتبال بین سهراب بختیاری‌زاده و میثاقی",
-      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | استقلال,سهراب بختیاری‌زاده,محمدحسین میثاقی,فوتبال برتر",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-3dc259ca-3dad-453e-b0fd-957735c360db.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946659052291.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1199,13 +1100,23 @@
     "https://cdn4.telesco.pe/file/5df5bf0eaa.mp4?token=DPIclIMDxd9_kPfYsaZSDURmvfTlnVWqky583rrZkJ65sNVC8bb6l3Z0jf93QjTTLrgq865JSc8yw50v2uKnQvr2xPggy92K6F3y2GNpEpZyjWow0_-KS9GM-e_EbGf_CTeyATDvS13cvHZkWUO-ZQVwqboppWEP_tku59KDlNJ0yggP3TXLJ0bSjEITKfJ__lYfH7kheFeRsCro-7iYsViVr1YqD4vQb59XTGiBzbOts75fGixZOipGuCQdu7sNyxY8xL1s0-5FvggptYxjLNym47i7q2e5iAfgY0nBc9pesmZoURa-p60wl087rb_yZh96p7zQ25eZdRLpSHbU0g",
     "https://cdn4.telesco.pe/file/37d28c8961.mp4?token=QwjfxlhtcwcPiy-qeJH_FSl-yKn3dbUhBEtNa6gkyPxmuNBapacJug3sqVyZ8rdKk08nvExoQ7y463U8RGSkad_x2Wx9aZNMI-P6R3CRrjFa1eQwOLya6wH2dfP51_2HQZi2IKZRwQIrD9JdoqOB1XQOCDj7ucpiSQL4dYVFhj19n2A5t9ZrS777dfKwdTqeLOTKK5SXXyJ_1tpHTHQLamNYVV6NFr8cZBO0G5StE_T5UxBqjq9Qamb5AH0x0zksEk5IPtly54rN6DQczTUKMkoh1rvz_vNrCARPCuvEhNZoBg2bsg0qoh8bfsjRYS_CXjY9-sOit2P6qBHzf9jmzA",
     "https://cdn4.telesco.pe/file/0de12ddc6d.mp4?token=o2qhcneBw-uEHpxYoYjgSenP2k4GrbsbBEI_PY_Fhvwucfw2DaYUebRum7rcxIPCAb2yHq2huicUyKqHRcbV9VbjuZtjLeoxH98eQkpscwr_j2q6YUg3gU6laOceNbLr2qyH5gdhoRYDaLCHaEuKfIvcJ8NkMfP35ubx42DRVLxpVQvRSc2YfIBfEeIbB1pZmI0-329uf6U1q6zbQWDDXK0ebWKl_Jet0JJgCr3yReiM0UX__XKEUXt0DVtUqCXEBWuBgSAVB1txvS3fAT1sDROpoIjTdMq0Nd9i5AjPR_sRuYc_d_yRe5MBwdPrGf5RuACmM0-Q_L_fedbda8EazA",
-    "https://cdn4.telesco.pe/file/d1938512bf.mp4?token=gQFizxnAoSMiiO6FJTOwQt8vOl1dwp20fK7vPACWfSQsOz-ewO2eBS88TpbIw7opqflzaHGRZuNAY_A9BNzL3-mJEinOKg-OS7xilDrVfnp5LySfb5d-H5uyp5iHXHdPuOGwaIoE1SmstyPqY8F-F8txCvubYWM5VjYUTkS3AIU1M9Xlwbh_aQ1OrCcQRtERaJcqrsyq-N4d5pJF6F6GjLMCO_uQxH-vpoye4q-Tl0Ard0gDw4tVNI8oVDJz9Bx-dCR-PW7cx-EuMc3qGfD7j6pImRtzkDi8O3t9w_yDf9WdevDErOpwrUfXlYWadJ93lY46CY6L7OmLdZn_f666Wg"
+    "https://cdn4.telesco.pe/file/d1938512bf.mp4?token=gQFizxnAoSMiiO6FJTOwQt8vOl1dwp20fK7vPACWfSQsOz-ewO2eBS88TpbIw7opqflzaHGRZuNAY_A9BNzL3-mJEinOKg-OS7xilDrVfnp5LySfb5d-H5uyp5iHXHdPuOGwaIoE1SmstyPqY8F-F8txCvubYWM5VjYUTkS3AIU1M9Xlwbh_aQ1OrCcQRtERaJcqrsyq-N4d5pJF6F6GjLMCO_uQxH-vpoye4q-Tl0Ard0gDw4tVNI8oVDJz9Bx-dCR-PW7cx-EuMc3qGfD7j6pImRtzkDi8O3t9w_yDf9WdevDErOpwrUfXlYWadJ93lY46CY6L7OmLdZn_f666Wg",
+    "https://cdn4.telesco.pe/file/1f7ce852a1.mp4?token=nF3DsgeDnWUfodVIkA8Hx8yvGXEtodOy2EMde0Hg21rczBp8I_x8zjMngWohzFACx8-wHZmwwqfgna1FHUb6hly2xCjbxmXSCN6kevVQwZyvjJCqETegjVJFK1M1Vu_G-KeoIZNEOsGwVUT6lanlqtr1W5m5Dp4wv2P4YqzSfZd_wjoyuNspCQcG4K8N1fQ5wAWaOW4ZSG1VnG5jt9YapW_SCrwTTwvo4g9XFalQjIk81okC90v0LjgVSHOtgefX6s1ekil9NLSNvqp3xRsClrehgpdNlpr_0NJo7zr5KTPovbow9hHaJdzOhGsCbWrfq8mQ1rhoAHgLWEJOXBiKOA",
+    "https://cdn4.telesco.pe/file/f4f0f5c2ca.mp4?token=LBhMBYdvcboPBUUhZaIfCGGPsq66VDQvr1k_FrbQAhy5pwOrZt2eB4955UjxDEpqI3G3pKnQf-Ct20u950qMgHBjWNpDN2mHAsmz6zGL8QLUsAMT3svTHU-u1Q8M6V3AEgSwI-t8h5LA342ca5qxphF_hp48c4D_p9vUzRBrKLzR2n-ucWOm-rLDjj0KX3WxtaaTEr24fIvZY2atDKd1ZkhQESQzZfcQWdeH-bwcUKBBwrvPBTbtXGBNFYcX_24pX-1SjntA1bwmtV0OJNJ9_9IpLN1yeiM-D_OEHyN7R0yzXfoJRSb_JXZFtBtBbmqqyCoYEIb4xeQzFbjGeZjW9w",
+    "https://cdn4.telesco.pe/file/98a8a0eb91.mp4?token=Sw0W87kuK1EtS5jpFvMtVRRXpktBu6NokUIlaLL2RiGD8moO22JlfrjHqH3l5Vsa9gUnZqJi3lzyGinJ_mwAHUbdot0F0gvAmQOZMvm70BU1IUJC3t4ZSr2Ia35wGPLoyta5h2Ndrfrm3Yr7EyY722zZFVR4X0y8dB7-uHJQ1068Qhk2n4Z4WFbrYW-rbuULDuOVet23VQMCfDjLmNJcCelym1szBciQGGL837UH7n-AdmmYyNfDhsyqTbZp9mv3MbFb0T5-dLErzd-BGV-gj3AbXx2iGu0g6DkxKkvhOrmmT-5pgXqHkQim8G4iHrGDwZ1WWjGhHJKsy0-Nv5OP_FF75btkJLAqD5Z4qxiLSyfhvhE8RA5-WvHY0IUilZpKfohJ-NWyLMrmiSHcI0HVcBdKw1jBEBM9242qPuj6578N3PDa2Z9RljJXJPMADmRmsEMvwaAZCZMf6VjHO8c4f1AAWGwTHVKoAgTVvWKBEvxrEqej6aatNEnWMX5ah9_OP7YDgzzs_1Sa0xOC5iSPuUXf_oWSf0t3LXtAuJnDuQy9BabwdiGs0V6kZP15LWSuPkVt3NWD8OT-xb7z4TEf3wRYIY8apBCpfjnYVipenF0vFbZvUY6LjWCs0QyR5K7ssZkf8HZ7jxKrUhpJRzJJxsiBgJ0YOdjihoSDBwdIubE",
+    "https://cdn4.telesco.pe/file/c8b56f87c4.mp4?token=Ybm00HkOD_EcxWpSyKlLRKoxXHg4tvAcsNezGo9rp0AEH3TPmpYqCD3SEG17aojuoKK3vYpT72MqV_AZ-OhBkcJDvPAvMozGodHTlMjTkW-dFM4mqcEnM5TLfscnLRN2Ylaw7vBotyVeCfeBy-3-AKK1Wb7Mn6jxqjYiLJwgz3erdvAUl1NGheC54VAc_y30E-JF_29DKcPuFOy4C7FHn-Mwt56P8o06XEk5GT7aFbp0UX7MGBBhqTzK3Y2H9BWX_xMxbcPjpvh9ke-lanh8LZw80VlkVSnl7cgYpF7DJWIxYOOQKamExKCJ-wh7YxlKJcRWe_XczccLAj6VEvefA4EBTpsUxzE8-eLijKGASTPfCV6E22Zr5ovg6WxBjrwb28H0i0huTFHOg_nrBEJuigELYn59kWEbZyh9kVp8hPo5lRwZFZd9ENtJ1iTzePKdD7h3a_101SbNAbFwdPEFMQvHSUPAp7J8aQZ__TxNbpQsaSZB48zrcJnZQ8_cJyvBZLHGVGfkudMGVm2WZ1J2EqDFogM7hsMwg-Wg-UPFLhpb0Hxz2BMsy-D4o4oUraNlsXTZ66fGAXBkk5Dnj7tYmkuP3azAI8_BcN9LhgYLIBpW1jkTr9avl00U53uAM-o4gGY3hwPHPFQEWVu2OgFY3hx_jJJ7ndBWfSkL0stI_Aw",
+    "https://cdn4.telesco.pe/file/53f2b09e4c.mp4?token=sEWiEzSr4V8QSKSyvJHmPACjSuWWAmj2d1C5w6snzeLqwlwJJErNSJSGSclgLHYl-7_DxEqNvyTqwEGfk_2K_6vk-tokjNLQ5Y23VuU_nBgKC10HPm8KoqUrK3TRPv1X0lJKT2XloWrplcvdwQg9epNKEKpnuL6BnO3n6O4dJ3OHmVKQOIjCAX8OX5HpfUkpj2Em1UXix9vpwOcNMLE-Wl3ksdCHXGUfE8cSwrSSJv921f-t2mP2Qxjo8FFQHwgPJ_HeAlRXyd-YcnKMix0s9KJBFZ2Ruq85VUwhd5xtl_GIIi8Pki_1IwetFkNfUUe2Gdpqes97gPAkYNfsI9ELq3d2iA9gVmfp9vZYEjAxo1o_utt2j1z5rDqmoqsKSykunuNnEnIr30nq42vKPUZgTT3uzz-iIt379pUlNqUhWOQUX7u16TThqfSPGdzI5bejRExfhOd5s0OxVjQkseKEA4eaWsmJBgmnsMb2NheZnBSvn7uw-9AV-8rQ_rhkki56UB5FAwZVm3CRKvj-F4zDYIWhy4ex0rHsQFyjEv7TSoYXahkoUaW88glkmKZpeAZ5tO1jH7wSwTya8N6YxTz0zzR-d8vtbMFs5fnIrvMJ_6FvNJBKVp0MGvH2EeM6GIVot2FJVns_JZLEeY8ba61G1cdqsPaEDFPdjuUO19Elp5w",
+    "https://cdn4.telesco.pe/file/59cc3e129e.mp4?token=rNaGi_ujfJysbcywOhOS7gC-1I0pnIJXb4v11duFIefjBXqYE6HsOCylRlfyb8zxfq0eBqUJoF2TcU_eLXeWQKoaCZKd-R2KbYyilsW8j1VuccRSTePxHdIf3izUC2twpzDXm_7xTJc3FImv8BLYB6i2tRxHPeG-s09jbyP-ZIR9MPRyWd_wrkud1BjdbyTOsYQPLD4G4NltbONFJPwgKllGtIlKQucjmsBQobWY5oxdz1ehy_dRSa-5CURaoAuD75EJAC-Xv-UzHX8Z5iSQUPfvLkn07WFi9Htr9mzqL7snN8TerVU_O4_pzvsdxD_0ovMFzKa2V1cdoJ__fTc5jg",
+    "https://cdn4.telesco.pe/file/1d9304c03b.mp4?token=fxt6EqAdHlpAtPUup96klpBNV7XAA2bxWiP3aOZ2K5AxbeQcKASDas1C2_LZErpubLnX_-BgbhUR_HrGZYykiNiQKbBWOyyS4OPXVGRXShDOkQcjxHazH9Yzlq69xhDGLMpDWcq6ld2klWImKjpN_v3MGYCA3m1hm63EtXCMx2qEpspS3T-_FDZt7_VwbtBAr6tmlCG3fOvkZ7bG4d8jygpnqXvB0Rr6nbW03SmkApVZaT9XSEk5GPAlfcYC8ZVF4MpDo0Emscaim7yk09HUVYUtG46z6zfqln6pEzhxgYjuwTFLu8Cvl66mRzf_NprxLdmik4JGlqMcJRCHqg48Bg",
+    "https://cdn4.telesco.pe/file/33ff374a76.mp4?token=SIyq-kpKQ8jpAOenBPBDHemdNUjlkhJYPcw1-Ri-XVOc3fVwt1Yu0EaEVHq6QPDd2KW2YP0s4VTD7j4R5WR-AIb-i35pAdVbbApnxYWTZ0AmiM8JuHBBtnTsQcD4atT4SBvAxtM95s9ZIPBms6rSbg14oDBPyo0ammZDGNpgxrl9cpiFXfMG7YMmPAM4pZXFVR5KFzffPfWdZORkFdf5m7fnksuvKEpwgjju4uqSS4nkot7HtfwkfX9LKDa72zi1Gbnc5k4_bX-IhffnstZt2Sj1uAJExth3kt3-s1AA3dcK6TGgn2dYBkAXC0srnjTUPLmHTajr01AOIqTMHuA3Y2k0LapLG944cHftzNeRxInfWjigdyibasWSNzEAqhsrxU3cuqpOgdMxcdpCCGDAFDVHCfnQn4cVN4SR_MU2McGMbKf73U5YrNOVioW8crwww8O6d20Wc4BE-2iMvraHy2VjWBOdR7Glx7oPR8KEoxY-8fEs-RrAMwOI6X-OtbrMdF7rYO9jPrkK6wnQUwtMVd8yfBb41a6XWTtRqwqKyzS5EfKd8hg5AH3M8DRARyfE8CJgL41M3IV99ArkN4FIZ73n9UItATHaFdsGXopeEErkvsn19bhnRyeZLefozeWA7ZnsZ-Kb_BsCslfB0OGTPhktb4H42uDLbA86SNeNW60",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-92fffb5b-8651-4da0-ad91-4aa6d73cce0d.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-1a45bb77-8fdb-4711-8f0c-348f5c622411.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 2
+    "count": 3
   },
-  "last_upload_timestamp": 1794821512.203615,
+  "last_upload_timestamp": 1794825129.0773773,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1614,6 +1525,9 @@
     ],
     "5ELPWaInU5E": [
       "SHORTS"
+    ],
+    "SgjSIJjRllI": [
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1625,5 +1539,5 @@
     "UgwnFn0zjTK0i1dfQwd4AaABAg",
     "UgwCAcPvVRxAwbDwXvN4AaABAg"
   ],
-  "max_seen_video_id": 1075146
+  "max_seen_video_id": 1075149
 }
