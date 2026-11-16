@@ -40,25 +40,6 @@ def extract_numeric_id(url: str) -> int:
     return int(m.group(1)) if m else 0
 
 
-EXTENDED_IRANIAN_FIGURES = IRANIAN_FOOTBALL_ENTITIES + [
-    "قلی زاده", "قلی‌زاده", "صیادمنش", "سردار آزمون", "طارمی", "جهانبخش", "قایدی",
-    "قدوس", "محبی", "عزت اللهی", "عزت‌اللهی", "کنعانی", "شجاع", "بیرانوند", "نیازمند",
-    "حامد لک", "سیدحسین حسینی", "فرعباسی", "اخباری", "پورعلی گنجی", "حردانی",
-    "رضاییان", "ترابی", "اورونوف", "آسانی", "ماشاریپوف", "گندوز", "چشمی", "رفیعی",
-    "عالیشاه", "امیری", "سحرخیزان", "مغانلو", "حسین زاده", "آل کثیر", "قربانی",
-    "هاشمیان", "وحید هاشمیان", "نامجو مطلق", "دین محمدی", "حلالی", "اسماعیل حلالی",
-    "خاکپور", "قاسمپور", "قاسم پور", "مطهری", "حمید مطهری", "سراج", "اصغرزاده",
-    "توتونچی", "میثاقی", "فردوسی پور", "مظفری", "فغانی", "مرادی", "جباری", "صفیری",
-    "حیدری", "بنیادی فر", "عرب براقی", "زاهدی فر", "نصیرزاده", "تاج", "طالقانی",
-    "نکونام", "تارتار", "بختیاری", "موسیمانه", "گاریدو", "اسکوچیچ", "کارترون",
-    "قلعه نویی", "درویش", "خطیر", "سمیعی", "زنوزی", "الهامی", "رحمتی", "عنایتی",
-    "منصوریان", "مظلومی", "درخشان", "پیروانی", "پروین", "دایی", "کریمی", "مجیدی",
-    "باقری", "برومند", "رافت", "سامره", "بیک زاده", "ابوالقاسم پور", "فتاحی",
-    "ویسی", "جلالی", "آشوبی", "مسلمان", "جمشیدی", "علیدوستی", "شمسایی", "تهامی",
-    "عمران زاده", "پنجعلی", "بیانی", "اسفندیارپور", "پیشکسوتان",
-]
-
-
 def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0, max_site_id: int = 0) -> bool:
     if video_id > 0:
         if video_id < MIN_ABSOLUTE_VIDEO_ID:
@@ -88,13 +69,14 @@ def is_match_broadcast_footage(norm_title: str) -> bool:
     match_words = [
         "خلاصه بازی", "خلاصه دیدار", "خلاصه مسابقه", "هایلایت بازی", "بازی کامل",
         "گل اول", "گل دوم", "گل سوم", "گل چهارم", "گل پنجم", "گل های بازی",
-        "گلهای بازی", "تمام گل های", "گل های برتر هفته", "ضربات پنالتی بازی",
-        "شبیه سازی گل",
+        "گلهای بازی", "گل های برتر", "گلهای برتر", "پاس گل های برتر", "پاس گلهای برتر",
+        "تمام گل های", "ضربات پنالتی بازی", "شبیه سازی گل",
     ]
     return any(normalize_persian(w).lower() in norm_title for w in match_words)
 
 
 def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
+    """فیلتر پشتیبان و خط قرمز قطعی برای خلاصه بازی‌های خارجی و آسیایی"""
     clean_title = re.sub(r"\|.*$", "", title).strip()
     norm_title = normalize_persian(clean_title).lower()
 
@@ -105,122 +87,147 @@ def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
         for bad_word in FOREIGN_BLACKLIST:
             if normalize_persian(bad_word).lower() in norm_title:
                 return True
-        has_iranian_club = any(normalize_persian(club).lower() in norm_title for club in IRANIAN_DOMESTIC_CLUBS)
+        has_iranian_club = any(
+            normalize_persian(club).lower() in norm_title
+            for club in IRANIAN_DOMESTIC_CLUBS + ["لیگ برتر ایران", "لیگ آزادگان", "جام حذفی", "فوتبال ایران"]
+        )
         return not has_iranian_club
-
-    is_safe_show = any(normalize_persian(s).lower() in norm_title for s in IRANIAN_SAFE_SHOWS)
-    has_iranian_figure = any(normalize_persian(e).lower() in norm_title for e in EXTENDED_IRANIAN_FIGURES)
-
-    if is_safe_show or has_iranian_figure:
-        pure_foreign_clip_words = [
-            "گلها و مهارتهای", "تکنیک و گلهای", "دروازه بانی کایل واکر",
-            "کاشته های برتر بوندسلیگا", "دریبل های تماشایی لالیگا",
-            "برندگان لیگ قهرمانان اروپا", "آموزش حرکت های تکنیکی جدید بازی",
-        ]
-        if any(normalize_persian(pw).lower() in norm_title for pw in pure_foreign_clip_words):
-            return True
-        return False
 
     for bad_word in FOREIGN_BLACKLIST:
         if normalize_persian(bad_word).lower() in norm_title:
-            return True
+            has_iranian_ref = any(
+                normalize_persian(ent).lower() in norm_title
+                for ent in IRANIAN_FOOTBALL_ENTITIES + ["لیگ برتر", "تیم ملی", "فوتبال ایران"]
+            )
+            if not has_iranian_ref:
+                return True
 
-    foreign_viral_patterns = [
-        "دیوانه وارترین", "تحقیرآمیزترین", "باورنکردنی ترین", "عجیب ترین و خنده دارترین",
-        "بهترین گل های لحظه آخری تاریخ", "گل های کاملاً تحقیرآمیز", "یک در میلیارد",
-        "چالش دقت و تمرکز", "کری خوانی به سبک فوتبال آمریکایی", "فوتبال در بین برزیلی ها",
-        "در لیگ ترکیه", "عملکرد جالب و دیدنی روماریو", "ضربات پنالتی تاریخ",
-    ]
-    if any(normalize_persian(fp).lower() in norm_title for fp in foreign_viral_patterns):
-        return True
-
-    if ":" in clean_title and any(
-        w in norm_title for w in ["لیگ", "تیم ملی", "فوتبال", "داور", "بازیکن", "مربی", "جام", "باشگاه", "استادیوم", "هوادار"]
-    ):
-        return False
-
-    return True
+    return False
 
 
 def is_strictly_domestic_short(title: str, desc: str = "") -> bool:
-    """فیلتر سخت‌گیرانه مخصوص شورتس‌های اینستاگرام برای جلوگیری ۱۰۰٪ از آپلود کلیپ خارجی"""
+    """بررسی سریع برای شورتس‌های اینستاگرام"""
     norm_full = normalize_persian(f"{title} {desc}").lower()
-    for bad_word in FOREIGN_BLACKLIST:
-        if normalize_persian(bad_word).lower() in norm_full:
-            return False
-    return any(normalize_persian(ent).lower() in norm_full for ent in EXTENDED_IRANIAN_FIGURES)
+    if is_match_broadcast_footage(norm_full):
+        for bad_word in FOREIGN_BLACKLIST:
+            if normalize_persian(bad_word).lower() in norm_full:
+                return False
+    return not is_foreign_or_blacklisted(title, desc)
 
 
-def ai_batch_verify_borderline_titles(candidates: list) -> list:
+def ai_judge_videos(candidates: list) -> list:
+    """
+    قضاوت دسته‌جمعی تمام عنوان‌ها توسط هوش مصنوعی (بدون وابستگی به لیست‌های ثابت و ایستا):
+    کل لیست در ۱ درخواست ارسال می‌شود تا با هزینه نزدیک به صفر، مصاحبه‌ها و خلاصه‌بازی‌های ایران تایید
+    و کلیپ‌های خارجی، اروپایی، آسیایی (AFC) و گیمینگ به دقت رد شوند.
+    """
     if not candidates:
+        return []
+
+    safe_candidates = []
+    for c in candidates:
+        norm_t = normalize_persian(c["title"]).lower()
+        # خط قرمز سخت‌افزاری: خلاصه بازی/گل خارجی یا آسیایی حتی برای هوش مصنوعی هم فرستاده نمی‌شود
+        if is_match_broadcast_footage(norm_t) and is_foreign_or_blacklisted(c["title"]):
+            print(f"🚫 [SKIP-FOREIGN-MATCH] Blocked copyrighted match footage: {c['title']}")
+            continue
+        safe_candidates.append(c)
+
+    if not safe_candidates:
         return []
 
     arvan_key = os.environ.get("ARVAN_API_KEY", "").strip()
     gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not arvan_key and not gemini_key:
-        return [c for c in candidates if not is_foreign_or_blacklisted(c["title"], c.get("description", ""))]
 
-    approved = []
-    borderline = []
+    payload = [{"index": i, "title": c["title"]} for i, c in enumerate(safe_candidates)]
+    prompt = f"""
+You are the Head of Copyright & Content Curation for 'Footballi' (فوتبالی), an official Iranian domestic football YouTube channel.
+Review each Persian video title and decide whether to APPROVE (true) or REJECT (false).
 
-    for c in candidates:
-        norm_t = normalize_persian(c["title"]).lower()
-        if is_match_broadcast_footage(norm_t):
-            if not is_foreign_or_blacklisted(c["title"], c.get("description", "")):
-                approved.append(c)
-            else:
-                print(f"🚫 [SKIP-FOREIGN-MATCH] Rejecting foreign match footage: {c['title']}")
-            continue
+APPROVE (true) ALL of these:
+1. Domestic Iranian football match highlights, goals, assists, or weekly compilations (لیگ برتر ایران, لیگ آزادگان, جام حذفی, استقلال, پرسپولیس, سپاهان, تراکتور, فولاد, ملوان, etc.).
+2. ALL interviews, quotes, press conferences, and news about Iranian players, coaches, referees, club managers, veterans (پیشکسوتان), Iranian legionnaires abroad (like علی قلی‌زاده, طارمی, آزمون, صیادمنش), or Iranian stadiums (like ورزشگاه آزادی).
+   - IMPORTANT: Approve Iranian interviews even if they casually mention a foreign club or player as an example or comparison (e.g., "مثل دیبالا شماره 21 میپوشم" or talking about an Iranian player's European club).
+3. All Footballi studio/talk shows (ویدیوکست, پُشتِ خَط, تُپُلیگ, فوتبال برتر, شب‌های فوتبالی, کارشناسی داوری).
 
-        if not is_foreign_or_blacklisted(c["title"], c.get("description", "")):
-            approved.append(c)
-        else:
-            has_explicit_foreign = any(normalize_persian(bw).lower() in norm_t for bw in FOREIGN_BLACKLIST)
-            if not has_explicit_foreign:
-                borderline.append(c)
-            else:
-                print(f"🚫 [SKIP-FOREIGN] Rejecting foreign clip: {c['title']}")
+REJECT (false) ALL of these:
+1. Any foreign football match highlights, goals, skills, or compilations (European leagues, La Liga, Serie A, Premier League, Bundesliga, MLS, Arab leagues, Champions League, international matches like Spain vs England, Brazil vs Japan, Haiti vs USA, etc.).
+2. Any AFC Champions League, Asian Cup, or FIFA World Cup match broadcast footage (even if Iran's national team or an Iranian club is playing in it, e.g. خلاصه بازی ایران و عراق, ایران و فلسطین, نوجوانان ایران و سریلانکا).
+3. Video games (FC27, FIFA, PES, GTA), generic viral foreign football clips, or foreign football newspaper reviews.
 
-    if not borderline:
-        return approved
+Return ONLY valid JSON mapping each index string ("0", "1", ...) to {{"approve": true/false, "reason": "short reason"}}.
 
-    prompt_items = [{"index": i, "title": c["title"]} for i, c in enumerate(borderline)]
-    prompt = (
-        "You are the content filter for 'Footballi', an Iranian domestic football YouTube channel.\n"
-        "Review these Persian video titles. Approve (true) ANY video that is an interview, press conference, "
-        "or news item about Iranian football, Iranian players/coaches/veterans/legionnaires, or domestic Iranian sports.\n"
-        "Reject (false) generic foreign viral football compilations or foreign leagues.\n"
-        "Return ONLY valid JSON mapping index to boolean, e.g. {\"0\": true, \"1\": false}.\n\n"
-        f"Videos:\n{json.dumps(prompt_items, ensure_ascii=False)}"
-    )
+Videos:
+{json.dumps(payload, ensure_ascii=False, indent=2)}
+"""
 
     decisions = {}
-    if arvan_key:
+
+    # ۱. تلاش با جمینای رایگان گوگل (هزینه صفر)
+    if gemini_key:
         try:
-            r = requests.post(
-                f"{PROTO}ai.najafivip.ir/v1/chat/completions",
-                headers={"Authorization": f"Bearer {arvan_key}", "Content-Type": "application/json"},
-                json={
-                    "model": "Gemini-2.5-Flash-lite",
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.1,
-                },
-                timeout=15,
+            g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={gemini_key}"
+            resp = requests.post(
+                g_url,
+                json={"contents": [{"parts": [{"text": prompt}]}]},
+                timeout=25,
             )
-            if r.status_code == 200:
-                txt = r.json()["choices"][0]["message"]["content"]
+            if resp.status_code == 200:
+                txt = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
                 m = re.search(r"\{.*\}", txt, re.DOTALL)
                 if m:
                     decisions = json.loads(m.group(0))
+                    print(f"[AI-CURATOR] Evaluated {len(safe_candidates)} candidates via Free Gemini API.")
         except Exception:
             pass
 
-    for i, c in enumerate(borderline):
-        if decisions.get(str(i)) is True:
-            print(f"✅ [AI-APPROVED] Verified Iranian football interview/video: {c['title']}")
-            approved.append(c)
+    # ۲. فال‌بک به مدل فوق‌ارزان Arvan
+    if not decisions and arvan_key:
+        for model_name in ["Gemini-2.5-Flash-lite", "GPT-4.1-Nano"]:
+            try:
+                r = requests.post(
+                    f"{PROTO}ai.najafivip.ir/v1/chat/completions",
+                    headers={"Authorization": f"Bearer {arvan_key}", "Content-Type": "application/json"},
+                    json={
+                        "model": model_name,
+                        "messages": [{"role": "user", "content": prompt}],
+                        "temperature": 0.1,
+                    },
+                    timeout=25,
+                )
+                if r.status_code == 200:
+                    txt = r.json()["choices"][0]["message"]["content"]
+                    m = re.search(r"\{.*\}", txt, re.DOTALL)
+                    if m:
+                        decisions = json.loads(m.group(0))
+                        print(f"[AI-CURATOR] Evaluated {len(safe_candidates)} candidates via {model_name}.")
+                        break
+            except Exception:
+                continue
+
+    approved = []
+    for i, c in enumerate(safe_candidates):
+        dec = decisions.get(str(i))
+        if isinstance(dec, dict):
+            is_ok = bool(dec.get("approve", False))
+            reason = dec.get("reason", "")
+            if is_ok:
+                print(f"✅ [AI-APPROVED] {c['title']} ({reason})")
+                approved.append(c)
+            else:
+                print(f"🚫 [AI-REJECTED] {c['title']} ({reason})")
+        elif isinstance(dec, bool):
+            if dec:
+                print(f"✅ [AI-APPROVED] {c['title']}")
+                approved.append(c)
+            else:
+                print(f"🚫 [AI-REJECTED] {c['title']}")
         else:
-            print(f"🚫 [SKIP-FOREIGN] Rejecting non-domestic video: {c['title']}")
+            # فال‌بک در صورت خطای شبکه هوش مصنوعی
+            if not is_foreign_or_blacklisted(c["title"], c.get("description", "")):
+                approved.append(c)
+            else:
+                print(f"🚫 [FALLBACK-SKIP] {c['title']}")
 
     return approved
 
@@ -479,20 +486,20 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "is_short": False,
         })
 
-    verified = ai_batch_verify_borderline_titles(raw_extracted)
+    # ارسال کل ویدیوهای استخراج‌شده برای تصمیم‌گیری هوشمند به AI
+    verified = ai_judge_videos(raw_extracted)
     results = []
     for item in verified[:max_new_candidates]:
         seen_mp4s.add(item["mp4_url"])
         results.append(item)
 
-    print(f"[CRAWLER] Verified {len(results)} brand-new (<48h) domestic Iranian videos!")
+    print(f"[CRAWLER] AI Curator approved {len(results)} brand-new (<48h) domestic Iranian videos!")
     return results
 
 
 def fetch_instagram_reels(state: dict) -> list:
     """
-    دریافت ریلزهای باکیفیت HD از پیج اینستاگرام @footballiapp با Apify
-    (با کول‌داون ۸ ساعته و فیلتر سخت‌گیرانه ایران برای جلوگیری از هرگونه کلیپ خارجی)
+    دریافت ریلزهای باکیفیت HD از پیج اینستاگرام @footballiapp با Apify و قضاوت هوش مصنوعی
     """
     apify_token = os.environ.get("APIFY_TOKEN", "").strip()
     if not apify_token:
@@ -521,7 +528,7 @@ def fetch_instagram_reels(state: dict) -> list:
         seen_mp4s = set(state.get("seen_mp4s", []))
         queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
 
-        reels = []
+        raw_reels = []
         for item in client.dataset(run["defaultDatasetId"]).iterate_items():
             reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
             video_url = item.get("videoUrl")
@@ -536,11 +543,7 @@ def fetch_instagram_reels(state: dict) -> list:
             ]
             first_line = clean_lines[0][:95] if clean_lines else "ویدیوی کوتاه فوتبالی"
 
-            if not is_strictly_domestic_short(first_line, caption):
-                print(f"🚫 [SKIP-IG-FOREIGN] Rejecting non-domestic Instagram Reel: {first_line}")
-                continue
-
-            reels.append({
+            raw_reels.append({
                 "video_id": 0,
                 "url": reel_url,
                 "title": first_line,
@@ -551,8 +554,9 @@ def fetch_instagram_reels(state: dict) -> list:
                 "is_short": True,
             })
 
-        print(f"[APIFY] Verified {len(reels)} fresh domestic HD Reels from Instagram!")
-        return reels
+        verified_reels = ai_judge_videos(raw_reels)
+        print(f"[APIFY] AI Curator approved {len(verified_reels)} fresh domestic HD Reels from Instagram!")
+        return verified_reels
     except Exception as e:
         print(f"[APIFY-WARN] Instagram check skipped: {e}")
         return []
