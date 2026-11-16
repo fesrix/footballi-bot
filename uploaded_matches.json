@@ -873,6 +873,17 @@
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
+    },
+    {
+      "video_id": 1074764,
+      "url": "https://footballi.net/video/1074764/%D8%AA%D9%86%DB%8C%D8%B3-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%DB%8C%D9%86-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D9%88-%D9%85%DB%8C%D8%AB%D8%A7%D9%82%DB%8C",
+      "title": "تنیس فوتبال بین سهراب بختیاری‌زاده و میثاقی",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | استقلال,سهراب بختیاری‌زاده,محمدحسین میثاقی,فوتبال برتر",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-3dc259ca-3dad-453e-b0fd-957735c360db.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946659052291.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
     }
   ],
   "organized_playlist_vids": [
@@ -1614,5 +1625,5 @@
     "UgwnFn0zjTK0i1dfQwd4AaABAg",
     "UgwCAcPvVRxAwbDwXvN4AaABAg"
   ],
-  "max_seen_video_id": 1075141
+  "max_seen_video_id": 1075146
 }
