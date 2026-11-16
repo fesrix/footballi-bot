@@ -388,7 +388,12 @@
     "https://t.me/footballiapp/512008",
     "https://footballi.net/video/1075149/%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-06-1405",
     "https://footballi.net/video/1075142/%DA%AF%D9%84-%D8%A7%D8%B2%D8%B1%DB%8C-%DA%A9%D9%86%D8%B3%D8%A7-%D8%A8%D9%87-%D8%A7%D8%B3%D9%BE%D8%A7%D9%86%DB%8C%D8%A7-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
-    "https://footballi.net/video/1075141/share"
+    "https://footballi.net/video/1075141/share",
+    "https://footballi.net/video/1075165/%D8%A8%D9%84%DB%8C%D9%86%DA%AF%D8%A7%D9%85-%D8%AD%D8%AA%DB%8C-%D8%A8%D9%87-%D9%87%D9%85-%D8%AA%DB%8C%D9%85%DB%8C-%D8%A7%D8%B4-%DA%A9%D9%88%DA%A9%D9%88%D8%B1%DB%8C%D8%A7-%D9%87%D9%85-%D8%B1%D8%AD%D9%85-%D9%86%DA%A9%D8%B1%D8%AF",
+    "https://footballi.net/video/1075163/%DA%AF%D8%B1%D9%85-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%86%D9%81%D8%AA-%D9%88-%DA%AF%D8%A7%D8%B2-%DA%AF%DA%86%D8%B3%D8%A7%D8%B1%D8%A7%D9%86-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C-%D9%82%D8%A8%D9%84-%D8%A7%D8%B2-%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D9%87",
+    "https://footballi.net/video/1075162/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%B9%D8%B1%D8%A7%D9%82-%D9%81%D8%B1%D8%AF-%D8%A8%D8%B2%D8%B1%DA%AF%DB%8C-%D8%A7%D8%B3%D8%AA",
+    "https://footballi.net/video/1075161/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88-%D8%B9%D8%B1%D8%A7%D9%82-%D9%87%D9%85%DB%8C%D8%B4%D9%87-%D8%B3%D8%AE%D8%AA-%D8%A7%D8%B3%D8%AA",
+    "https://footballi.net/video/1075156/%D9%86%D8%AA%DB%8C%D8%AC%D9%87-%D9%87%D9%85%D9%87-%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1%D8%A8%DB%8C-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-%D8%A7%D8%B2-%D8%B3%D8%A7%D9%84-%DB%B1%DB%B9%DB%B2%DB%B8-%D8%AA%D8%A7-%DB%B2%DB%B0%DB%B2%DB%B6"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -531,7 +536,8 @@
     "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران #Shorts",
     "گل صالح حردانی به فلسطین از زاویه متفاوت #Shorts",
     "گل ازری کنسا به اسپانیا از دید هواداران #Shorts",
-    "گل بن وایت به اسپانیا از دید هواداران #Shorts"
+    "گل بن وایت به اسپانیا از دید هواداران #Shorts",
+    "نتیجه همه تقابل های دربی مادرید از سال ۱۹۲۸ تا ۲۰۲۶ #Shorts"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -568,39 +574,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 1075163,
-      "url": "https://footballi.net/video/1075163/%DA%AF%D8%B1%D9%85-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%86%D9%81%D8%AA-%D9%88-%DA%AF%D8%A7%D8%B2-%DA%AF%DA%86%D8%B3%D8%A7%D8%B1%D8%A7%D9%86-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C-%D9%82%D8%A8%D9%84-%D8%A7%D8%B2-%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D9%87",
-      "title": "گرم کردن بازیکنان نفت و گاز گچساران - نیروی زمینی قبل از مسابقه",
-      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | نفت و گاز گچساران,نیروی زمینی,لیگ یک,اختصاصی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-e7f23ecc-8414-497c-9842-eaed875c7bad.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948291649788.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075162,
-      "url": "https://footballi.net/video/1075162/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%B9%D8%B1%D8%A7%D9%82-%D9%81%D8%B1%D8%AF-%D8%A8%D8%B2%D8%B1%DA%AF%DB%8C-%D8%A7%D8%B3%D8%AA",
-      "title": "امیر قلعه‌نویی: سرمربی عراق فرد بزرگی است",
-      "description": "امیر قلعه‌نویی: سرمربی عراق فرد بزرگی است و به فوتبال این کشور خیلی می تواند کمک کندصحبتهای سرمربی تیم ملی قبل از دیدار دوستانه با عراق در تورنومنت بصره در نشست خبری",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-76fbcbbf-50df-45cd-a4ae-28aded9eb072.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948289118716.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075161,
-      "url": "https://footballi.net/video/1075161/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88-%D8%B9%D8%B1%D8%A7%D9%82-%D9%87%D9%85%DB%8C%D8%B4%D9%87-%D8%B3%D8%AE%D8%AA-%D8%A7%D8%B3%D8%AA",
-      "title": "امیر قلعه‌نویی: بازی های ایران و عراق همیشه سخت است",
-      "description": "امیر قلعه‌نویی: بازی های ایران و عراق همیشه سخت است چون فوتبال ما به هم نزدیک است/ تبادل بین فوتبال ایران و عراق به هر دو کشور کمک می‌کندصحبتهای سرمربی تیم ملی قبل از دیدار دوستانه با عراق در تورنومنت بصره در نشست خبری",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b2799c28-6d3e-4f15-b627-657275cf57ef.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948286970785.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
     {
       "video_id": 1075155,
       "url": "https://footballi.net/video/1075155/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B6%D8%B1%D8%A8%D9%87-%D8%A7%DB%8C%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-FC27",
@@ -817,28 +790,6 @@
       "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | ادموند بزیک,پرسپولیس,آکادمی پرسپولیس,اختصاصی,رضا شاهرودی",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-a00fcf6e-1c46-4cc5-8d91-e6696df03b46.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947443288157.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074964,
-      "url": "https://footballi.net/video/1074964/%D8%A7%D8%AF%D9%85%D9%88%D9%86%D8%AF-%D8%A8%D8%B2%DB%8C%DA%A9-%D8%A7%DA%AF%D8%B1-%D9%85%D9%86-%D8%A8%D9%84%D9%87-%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DA%AF%D9%88-%D8%A8%D9%88%D8%AF%D9%85-%D8%A2%D9%86-%D8%B3%D8%A7%D9%84-%D8%A8%D9%87-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%86%D9%85%DB%8C-%D8%B1%D9%81%D8%AA%D9%85",
-      "title": "ادموند بزیک: اگر من بله قربانگو بودم آن سال به سپاهان نمی‌رفتم",
-      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | اختصاصی,پرسپولیس,ادموند بزیک,آکادمی پرسپولیس,امیرحسین محمودی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-fdf644c2-cca7-4ea1-a5b2-c0bc61af4a63.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947442463402.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074963,
-      "url": "https://footballi.net/video/1074963/%D8%A7%D8%AF%D9%85%D9%88%D9%86%D8%AF-%D8%A8%D8%B2%DB%8C%DA%A9-%D9%85%D9%86-%D8%A7%D8%B2-%D8%B4%D8%A7%D9%87%D8%B1%D9%88%D8%AF%DB%8C-%D8%B1%D8%AE%D8%B5%D8%AA-%DA%AF%D8%B1%D9%81%D8%AA%D9%85-%D9%88%D9%84%DB%8C-%D8%A7%D9%88-%D9%86%D8%A7%D8%B1%D8%A7%D8%AD%D8%AA-%D8%B4%D8%AF",
-      "title": "ادموند بزیک: من از شاهرودی رخصت گرفتم ولی او ناراحت شد",
-      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | اختصاصی,پرسپولیس,ادموند بزیک,آکادمی پرسپولیس,رضا شاهرودی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-155cc3f3-4677-4d43-9725-3f57c9a907e7.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947441159265.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1168,13 +1119,18 @@
     "https://cdn4.telesco.pe/file/33ff374a76.mp4?token=SIyq-kpKQ8jpAOenBPBDHemdNUjlkhJYPcw1-Ri-XVOc3fVwt1Yu0EaEVHq6QPDd2KW2YP0s4VTD7j4R5WR-AIb-i35pAdVbbApnxYWTZ0AmiM8JuHBBtnTsQcD4atT4SBvAxtM95s9ZIPBms6rSbg14oDBPyo0ammZDGNpgxrl9cpiFXfMG7YMmPAM4pZXFVR5KFzffPfWdZORkFdf5m7fnksuvKEpwgjju4uqSS4nkot7HtfwkfX9LKDa72zi1Gbnc5k4_bX-IhffnstZt2Sj1uAJExth3kt3-s1AA3dcK6TGgn2dYBkAXC0srnjTUPLmHTajr01AOIqTMHuA3Y2k0LapLG944cHftzNeRxInfWjigdyibasWSNzEAqhsrxU3cuqpOgdMxcdpCCGDAFDVHCfnQn4cVN4SR_MU2McGMbKf73U5YrNOVioW8crwww8O6d20Wc4BE-2iMvraHy2VjWBOdR7Glx7oPR8KEoxY-8fEs-RrAMwOI6X-OtbrMdF7rYO9jPrkK6wnQUwtMVd8yfBb41a6XWTtRqwqKyzS5EfKd8hg5AH3M8DRARyfE8CJgL41M3IV99ArkN4FIZ73n9UItATHaFdsGXopeEErkvsn19bhnRyeZLefozeWA7ZnsZ-Kb_BsCslfB0OGTPhktb4H42uDLbA86SNeNW60",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-92fffb5b-8651-4da0-ad91-4aa6d73cce0d.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-1a45bb77-8fdb-4711-8f0c-348f5c622411.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aedabf06-9b15-4941-b0e6-c06af19b6843.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aedabf06-9b15-4941-b0e6-c06af19b6843.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f3a65dd5-aa81-4dc4-a1db-45a56c5a7808.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-e7f23ecc-8414-497c-9842-eaed875c7bad.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-76fbcbbf-50df-45cd-a4ae-28aded9eb072.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b2799c28-6d3e-4f15-b627-657275cf57ef.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-9c35dbb3-80db-474b-8376-06620643647d.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 4
+    "count": 5
   },
-  "last_upload_timestamp": 1794828282.821738,
+  "last_upload_timestamp": 1794832324.885147,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1589,6 +1545,9 @@
     ],
     "Odu2hIUafqw": [
       "SHORTS"
+    ],
+    "7gY733Mk_Dw": [
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1600,5 +1559,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075163
+  "max_seen_video_id": 1075165
 }
