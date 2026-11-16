@@ -595,6 +595,39 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 1075299,
+      "url": "https://footballi.net/video/1075299/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AA%D8%A7-%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%D8%AF%D8%A7%D8%AF",
+      "title": "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد",
+      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | 17064,31974,51487,53309,54118",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f6c12de0-118f-493f-aa44-2a853fe8ed01.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/5OIzlvzttR6L5Wzr6SoevLV9ATGevp6MYOkFXsTi.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075295,
+      "url": "https://footballi.net/video/1075295/%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%DB%8C%D8%A7-%D8%B3%DA%A9%D9%88%DB%8C-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AF-%D8%AA%D9%88%D8%B6%DB%8C%D8%AD-%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C",
+      "title": "آگهی فروش یا سکوی افزایش قرارداد؟ توضیح حدادی درباره محمودی!",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | 17064,31974,51487,53309",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-fc77d4cc-2fb0-44c1-8ad2-2fbe85ebda59.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/PMLXxPBAOQzlByEWjxUutDUlB8es7tA2lSIeHuYu.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075291,
+      "url": "https://footballi.net/video/1075291/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%86%D8%B4%D8%A7%D9%86-%D8%AF%D8%A7%D8%AF%D9%86-%D8%A7%D8%B1%D8%B2%D8%B4-%D8%A7%D9%88-%D8%A8%D9%88%D8%AF",
+      "title": "حدادی: آگهی فروش محمودی برای نشان دادن ارزش او بود!",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | 17064,31974,51487,53309",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b96d3ab7-d6f1-4336-9f3e-1edf3b403676.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/UFDI1cFfuvbMG1vEa3xEwzYuCV21F2a8O5qchDld.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1075279,
       "url": "https://footballi.net/video/1075279/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D9%85%D8%B4%DA%A9%D9%84-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%A8%DB%8C%D9%86-%D8%A8%D8%B2%D8%B1%DA%AF%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D8%AD%D9%84-%D9%85%DB%8C%D8%B4%D8%AF",
       "title": "مسلمان: مشکل محمودی در پرسپولیس باید بین بزرگان تیم حل میشد",
@@ -832,28 +865,6 @@
       "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | 17033,17038,18158",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-d93ae183-6f52-46ff-af94-5360b6664082.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/giyrfGQRcsfv5OVCuCyBXpglaABbGe4oS3rfZBBH.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075183,
-      "url": "https://footballi.net/video/1075183/%D8%B2%D9%84%D8%A7%D8%AA%D8%A7%D9%86-%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85%D9%88%D9%88%DB%8C%DA%86-%D8%AF%D8%B1-%D8%AF%D9%88%D8%B1%D8%A7%D9%86-%D9%BE%D8%B1%D8%A7%DB%8C%D9%85-%D8%A8%D8%AF%D9%88%D9%86-%D8%B1%D9%82%DB%8C%D8%A8-%D8%A8%D9%88%D8%AF",
-      "title": "زلاتان ابراهیموویچ در دوران پرایم بدون رقیب بود",
-      "description": "زلاتان ابراهیموویچ در دوران اوج خود با گل های تماشایی، تکنیک فوق العاده، قدرت بدنی و اعتماد به نفس مثال زدنی، یکی از خاص ترین مهاجمان فوتبال جهان بود. مروری بر حرکات دیدنی و لحظات درخشان ستاره سوئدی در دوران طلایی فوتبالش.",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-5f53685a-dbee-4bb3-860f-dd00b0a6c458.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948337615588.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075134,
-      "url": "https://footballi.net/video/1075134/%D9%BE%D8%A7%D8%B3-%DA%AF%D9%84-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-06-1405",
-      "title": "پاس گل‌های برتر هفته دوازدهم لیگ برتر ایران 06-1405",
-      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | پاس گل,ترین های هفته,لیگ برتر ایران",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-c25ca3a9-fb91-4b93-bb09-e7af074c9920.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948177672491.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1665,7 +1676,7 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075290,
+  "max_seen_video_id": 1075299,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF"
   ],
