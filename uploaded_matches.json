@@ -376,7 +376,8 @@
     "https://footballi.net/video/1075025/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%81%D9%88%D8%AA%D8%B3%D8%A7%D9%84-%DA%AF%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B3%D9%86%D8%AF-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%87%D8%B1%D9%85%D8%B2%DA%AF%D8%A7%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C",
     "https://t.me/footballiapp/511941",
     "https://t.me/footballiapp/511942",
-    "https://t.me/footballiapp/511945"
+    "https://t.me/footballiapp/511945",
+    "https://t.me/footballiapp/511954"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -516,7 +517,8 @@
     "حواشی دیدار فوتسال گیتی پسند - فولاد هرمزگان از زاویه دوربین فوتبالی | فوتبال ایران",
     "بازیکنانی با بیشترین تعداد بازی برای تیم ملی انگلیس #Shorts",
     "وضعیت فعلی ترکیب تیم ملی پرتغال فینال یورو ۲۰۱۶ #Shorts",
-    "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران #Shorts"
+    "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران #Shorts",
+    "گل صالح حردانی به فلسطین از زاویه متفاوت #Shorts"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -553,17 +555,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511954",
-      "title": "گل صالح حردانی به فلسطین از زاویه متفاوت",
-      "description": "گل صالح حردانی به فلسطین از زاویه متفاوت\nویدیو",
-      "mp4_url": "https://cdn4.telesco.pe/file/d1938512bf.mp4?token=gQFizxnAoSMiiO6FJTOwQt8vOl1dwp20fK7vPACWfSQsOz-ewO2eBS88TpbIw7opqflzaHGRZuNAY_A9BNzL3-mJEinOKg-OS7xilDrVfnp5LySfb5d-H5uyp5iHXHdPuOGwaIoE1SmstyPqY8F-F8txCvubYWM5VjYUTkS3AIU1M9Xlwbh_aQ1OrCcQRtERaJcqrsyq-N4d5pJF6F6GjLMCO_uQxH-vpoye4q-Tl0Ard0gDw4tVNI8oVDJz9Bx-dCR-PW7cx-EuMc3qGfD7j6pImRtzkDi8O3t9w_yDf9WdevDErOpwrUfXlYWadJ93lY46CY6L7OmLdZn_f666Wg",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
     {
       "video_id": 9999999,
       "url": "https://t.me/footballiapp/511964",
@@ -651,6 +642,28 @@
       "source": "telegram_shorts",
       "is_short": true,
       "category": "SHORTS"
+    },
+    {
+      "video_id": 1075141,
+      "url": "https://footballi.net/video/1075141/share",
+      "title": "گل بن وایت به اسپانیا از دید هواداران",
+      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | بن وایت,تیم ملی انگلیس,تیم ملی اسپانیا,جام ملتهای اروپا",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aedabf06-9b15-4941-b0e6-c06af19b6843.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948203541499.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075140,
+      "url": "https://footballi.net/video/1075140/%DA%AF%D9%84-%D9%85%DB%8C%DA%A9%D9%84-%D8%A7%D9%88%DB%8C%D8%A7%D8%B1%D8%B2%D8%A7%D8%A8%D8%A7%D9%84-%D8%A8%D9%87-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+      "title": "گل میکل اویارزابال به انگلیس از دید هواداران",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | میکل اویارزابال,تیم ملی انگلیس,تیم ملی اسپانیا,لیگ ملت های اروپا",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-72b1ea53-973b-4268-a122-0d0c0a19f578.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948199106951.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
     },
     {
       "video_id": 1075128,
@@ -857,28 +870,6 @@
       "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | تیم ملی برزیل,تیم ملی ژاپن,وینیسیوس جونیور,سوپرگل",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-907f6ea8-73ff-44aa-9157-e6f91dab02d5.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947426972943.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074938,
-      "url": "https://footballi.net/video/1074938/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%AD%D9%85%D8%AF-%D8%A2%D8%AE%D9%88%D9%86%D8%AF%DB%8C%D8%8C-%D8%B1%DB%8C%D8%A7%D8%B3%D8%AA-%DA%A9%D9%85%DB%8C%D8%AA%D9%87-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D8%AF%D8%B1%D9%82%D9%87-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C",
-      "title": "صحبت‌های محمد آخوندی، ریاست کمیته فوتبال ساحلی در مراسم بدرقه تیم ملی ساحلی",
-      "description": "حواشی مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا در تایلند را در پایگاه خبری فوتبالی به صورت اختصاصی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d321f9b2-629c-4182-bd79-7bd2e28f3cd6.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947393797434.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074774,
-      "url": "https://footballi.net/video/1074774/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D9%85%D8%AF%DB%8C%D8%B1%D8%B9%D8%A7%D9%85%D9%84-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%A8%D9%87-%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
-      "title": "واکنش مدیرعامل استقلال به آگهی فروش بازیکن پرسپولیس",
-      "description": "مصطفی متدین: ما هیچ اقدامی برای جذب امیرحسین محمودی نکرده ایمواکنش مدیرعامل استقلال به آگهی فروش بازیکن پرسپولیس و شرایط ورزشگاه آزادی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-c96ee2c3-6ef9-4e2a-be55-388ddf20d988.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946678581253.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1196,13 +1187,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d19c5034-0855-4075-8e0c-46e0053cc7dc.mp4",
     "https://cdn4.telesco.pe/file/5df5bf0eaa.mp4?token=DPIclIMDxd9_kPfYsaZSDURmvfTlnVWqky583rrZkJ65sNVC8bb6l3Z0jf93QjTTLrgq865JSc8yw50v2uKnQvr2xPggy92K6F3y2GNpEpZyjWow0_-KS9GM-e_EbGf_CTeyATDvS13cvHZkWUO-ZQVwqboppWEP_tku59KDlNJ0yggP3TXLJ0bSjEITKfJ__lYfH7kheFeRsCro-7iYsViVr1YqD4vQb59XTGiBzbOts75fGixZOipGuCQdu7sNyxY8xL1s0-5FvggptYxjLNym47i7q2e5iAfgY0nBc9pesmZoURa-p60wl087rb_yZh96p7zQ25eZdRLpSHbU0g",
     "https://cdn4.telesco.pe/file/37d28c8961.mp4?token=QwjfxlhtcwcPiy-qeJH_FSl-yKn3dbUhBEtNa6gkyPxmuNBapacJug3sqVyZ8rdKk08nvExoQ7y463U8RGSkad_x2Wx9aZNMI-P6R3CRrjFa1eQwOLya6wH2dfP51_2HQZi2IKZRwQIrD9JdoqOB1XQOCDj7ucpiSQL4dYVFhj19n2A5t9ZrS777dfKwdTqeLOTKK5SXXyJ_1tpHTHQLamNYVV6NFr8cZBO0G5StE_T5UxBqjq9Qamb5AH0x0zksEk5IPtly54rN6DQczTUKMkoh1rvz_vNrCARPCuvEhNZoBg2bsg0qoh8bfsjRYS_CXjY9-sOit2P6qBHzf9jmzA",
-    "https://cdn4.telesco.pe/file/0de12ddc6d.mp4?token=o2qhcneBw-uEHpxYoYjgSenP2k4GrbsbBEI_PY_Fhvwucfw2DaYUebRum7rcxIPCAb2yHq2huicUyKqHRcbV9VbjuZtjLeoxH98eQkpscwr_j2q6YUg3gU6laOceNbLr2qyH5gdhoRYDaLCHaEuKfIvcJ8NkMfP35ubx42DRVLxpVQvRSc2YfIBfEeIbB1pZmI0-329uf6U1q6zbQWDDXK0ebWKl_Jet0JJgCr3yReiM0UX__XKEUXt0DVtUqCXEBWuBgSAVB1txvS3fAT1sDROpoIjTdMq0Nd9i5AjPR_sRuYc_d_yRe5MBwdPrGf5RuACmM0-Q_L_fedbda8EazA"
+    "https://cdn4.telesco.pe/file/0de12ddc6d.mp4?token=o2qhcneBw-uEHpxYoYjgSenP2k4GrbsbBEI_PY_Fhvwucfw2DaYUebRum7rcxIPCAb2yHq2huicUyKqHRcbV9VbjuZtjLeoxH98eQkpscwr_j2q6YUg3gU6laOceNbLr2qyH5gdhoRYDaLCHaEuKfIvcJ8NkMfP35ubx42DRVLxpVQvRSc2YfIBfEeIbB1pZmI0-329uf6U1q6zbQWDDXK0ebWKl_Jet0JJgCr3yReiM0UX__XKEUXt0DVtUqCXEBWuBgSAVB1txvS3fAT1sDROpoIjTdMq0Nd9i5AjPR_sRuYc_d_yRe5MBwdPrGf5RuACmM0-Q_L_fedbda8EazA",
+    "https://cdn4.telesco.pe/file/d1938512bf.mp4?token=gQFizxnAoSMiiO6FJTOwQt8vOl1dwp20fK7vPACWfSQsOz-ewO2eBS88TpbIw7opqflzaHGRZuNAY_A9BNzL3-mJEinOKg-OS7xilDrVfnp5LySfb5d-H5uyp5iHXHdPuOGwaIoE1SmstyPqY8F-F8txCvubYWM5VjYUTkS3AIU1M9Xlwbh_aQ1OrCcQRtERaJcqrsyq-N4d5pJF6F6GjLMCO_uQxH-vpoye4q-Tl0Ard0gDw4tVNI8oVDJz9Bx-dCR-PW7cx-EuMc3qGfD7j6pImRtzkDi8O3t9w_yDf9WdevDErOpwrUfXlYWadJ93lY46CY6L7OmLdZn_f666Wg"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 1
+    "count": 2
   },
-  "last_upload_timestamp": 1794817911.2640905,
+  "last_upload_timestamp": 1794821512.203615,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1608,6 +1600,9 @@
     ],
     "VrVmB1u0WWQ": [
       "SHORTS"
+    ],
+    "5ELPWaInU5E": [
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1619,5 +1614,5 @@
     "UgwnFn0zjTK0i1dfQwd4AaABAg",
     "UgwCAcPvVRxAwbDwXvN4AaABAg"
   ],
-  "max_seen_video_id": 1075134
+  "max_seen_video_id": 1075141
 }
