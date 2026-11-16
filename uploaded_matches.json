@@ -402,7 +402,8 @@
     "https://footballi.net/video/1075222/%D9%81%D8%B1%D8%B4%D8%A7%D8%AF-%D9%BE%DB%8C%D9%88%D8%B3-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%85%D8%B3-%D8%B1%D9%81%D8%B3%D9%86%D8%AC%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D8%A7-%D9%84%D9%87-%D9%88%D8%A7%D8%B1%D8%AF-%D8%B2%D9%85%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%B4%D8%AF",
     "https://footballi.net/video/1075225/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7%D9%86%D9%88%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-2-0-%D8%A8%D8%A7%D9%86%D9%88%D8%A7%D9%86-%D9%85%D9%84%D9%88%D8%A7%D9%86",
     "https://footballi.net/video/1075241/%D9%85%D8%B1%D9%81%D8%A7%D9%88%DB%8C-%D9%81%D8%B4%D8%A7%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%88-%D8%B3%D8%B1%D8%AF%D8%B1%DA%AF%D9%85%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C-%D8%B1%D8%A7-%DA%A9%D9%86%D8%AA%D8%B1%D9%84-%DA%A9%D8%B1%D8%AF%DB%8C%D9%85",
-    "https://footballi.net/video/1075260/%D8%AC%D8%B9%D9%81%D8%B1-%D8%B3%D9%84%D9%85%D8%A7%D9%86%DB%8C-%D8%A7%D9%88%D8%B6%D8%A7%D8%B9-%D9%85%D8%A7%D9%84%DB%8C-%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D9%87-%D8%A7%D8%B5%D9%84%D8%A7-%D8%AE%D9%88%D8%A8-%D9%86%DB%8C%D8%B3%D8%AA"
+    "https://footballi.net/video/1075260/%D8%AC%D8%B9%D9%81%D8%B1-%D8%B3%D9%84%D9%85%D8%A7%D9%86%DB%8C-%D8%A7%D9%88%D8%B6%D8%A7%D8%B9-%D9%85%D8%A7%D9%84%DB%8C-%D8%A7%D9%84%D8%B7%D9%84%D8%A8%D9%87-%D8%A7%D8%B5%D9%84%D8%A7-%D8%AE%D9%88%D8%A8-%D9%86%DB%8C%D8%B3%D8%AA",
+    "https://footballi.net/video/1075271/%D8%B4%D9%88%D8%AE%DB%8C-%D9%88-%D8%AE%D9%86%D8%AF%D9%87-%D8%A8%D8%A7-%D9%85%D9%84%DB%8C-%D9%BE%D9%88%D8%B4%D8%A7%D9%86-%DA%AF%D9%BE-%D9%88%DA%AF%D9%81%D8%AA%DB%8C-%D9%85%D8%AA%D9%81%D8%A7%D9%88%D8%AA-%D8%AF%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -553,7 +554,8 @@
     "فرشاد پیوس سرمربی مس رفسنجان: تیم ما له وارد زمین بازی شد! | فوتبال ایران",
     "خلاصه بازی بانوان استقلال 2-0 بانوان ملوان | خلاصه بازی",
     "مرفاوی: فشار بازی و سردرگمی مقابل نیروی زمینی را کنترل کردیم | فوتبال ایران",
-    "جعفر سلمانی: اوضاع مالی الطلبه اصلا خوب نیست! | فوتبال ایران"
+    "جعفر سلمانی: اوضاع مالی الطلبه اصلا خوب نیست! | فوتبال ایران",
+    "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -590,6 +592,28 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
+    {
+      "video_id": 1075269,
+      "url": "https://footballi.net/video/1075269/%D8%B1%D9%88%D8%A7%DB%8C%D8%AA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%D8%B2-%D8%AE%D8%AF%D8%A7%D8%AD%D8%A7%D9%81%D8%B8%DB%8C-%D8%B3%D8%A7%D9%85%D8%A7%D9%86-%D9%82%D8%AF%D9%88%D8%B3-%D8%A7%D8%B2-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C",
+      "title": "روایت فوتبال برتر از خداحافظی سامان قدوس از تیم ملی",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | 17144,23744,31974",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-31055e7b-7c65-428a-91a1-84dd7c860133.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/mAXyQeoBS6bcVJ4jArQUFLNsVsWGSffvds6Vhhqv.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075268,
+      "url": "https://footballi.net/video/1075268/%DA%AF%D9%88%D8%AF%D8%B1%D8%B2%DB%8C-%D8%B4%D8%A7%D8%AF%DB%8C-%DA%AF%D9%84%D9%85-%D8%A8%D9%87-%D8%A7%D9%81%D8%AA%D8%AE%D8%A7%D8%B1-%D9%84%D8%B1%D9%87%D8%A7%D8%B3%D8%AA",
+      "title": "گودرزی: شادی گلم به افتخار لرهاست",
+      "description": "بخش ششم و پایانی صحبت های جعفر سلمانی و حسین گودرزی بازیکنان تیم ملی در ارتباط زنده برنامه فوتبال برتر",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-e0586712-ce5d-48ea-b52f-2c37ed92b674.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/Ylfe7Xxefui3xZ3mHQrO7HnE8Rj5jWmN3bjL0szn.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
     {
       "video_id": 1075267,
       "url": "https://footballi.net/video/1075267/%D8%B3%D9%84%D9%85%D8%A7%D9%86%DB%8C-%D9%88-%DA%AF%D9%88%D8%AF%D8%B1%D8%B2%DB%8C-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%AE%D8%A7%D8%B1%D8%AC%DB%8C-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1",
@@ -696,17 +720,6 @@
       "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | 18076,19109,41972",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-ccf9f2f2-98a9-425e-9263-92e915da9b6c.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/DsnLhmbKQzQKWLuWNX7m42XTHA6bfESb5jTAYJRd.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075213,
-      "url": "https://footballi.net/video/1075213/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%85%D8%B1%D8%A8%DB%8C%D8%A7%D9%86-%D9%85%D8%B3-%D8%B1%D9%81%D8%B3%D9%86%D8%AC%D8%A7%D9%86-%D9%88-%D8%B4%D8%A7%D9%87%DB%8C%D9%86-%D8%A8%D9%86%D8%AF%D8%B1%D8%B9%D8%A7%D9%85%D8%B1%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C",
-      "title": "مصاحبه مربیان مس رفسنجان و شاهین بندرعامری در پایان بازی",
-      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | 18076,19109,41972",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-01084086-c74c-4465-82e7-8cf96cf208f7.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/4dJtZxMg2Ee3UJPKmKeyLRmLippAmN0eefBOTQsG.jpg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -828,39 +841,6 @@
       "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | روزنامه های ورزشی,دست اول,روزنامه",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-52e5d288-23f6-4bec-ba6d-95029e9853fe.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948128105656.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075122,
-      "url": "https://footballi.net/video/1075122/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%D8%A7%D8%BA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88-%D8%AC%D9%87%D8%A7%D9%86-25-%D8%A2%D8%A8%D8%A7%D9%86",
-      "title": "حواشی داغ فوتبال ایران و جهان (25 آبان)",
-      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | محوطه جریمه,پپ گواردیولا,تراکتور,دست اول",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-d6877490-20d1-414f-a373-eee49c9d6590.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948127152324.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075119,
-      "url": "https://footballi.net/video/1075119/share",
-      "title": "یحیی گل محمدی در تیم امید موفق می شود؟",
-      "description": "گفت و گو با اردلان آشتیانی سرمربی تیم نونهالان پرسپولیس تهران در برنامه سلام تهران را در فوتبالی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-d6d6f738-4bef-48c7-b398-dca8061ec21c.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948122581185.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075118,
-      "url": "https://footballi.net/video/1075118/%D9%86%D8%B8%D8%B1-%D8%A7%D8%B1%D8%AF%D9%84%D8%A7%D9%86-%D8%A2%D8%B4%D8%AA%DB%8C%D8%A7%D9%86%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%AC%D9%86%D8%AC%D8%A7%D9%84-%D9%87%D8%A7%DB%8C-%D8%A7%D8%AE%DB%8C%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D9%88-%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C",
-      "title": "نظر اردلان آشتیانی درباره جنجال‌های اخیر پرسپولیس و امیرحسین محمودی",
-      "description": "گفت و گو با اردلان آشتیانی سرمربی تیم نونهالان پرسپولیس تهران در برنامه سلام تهران را در فوتبالی مشاهده کنید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-34b40973-ebb1-46e1-8818-ddadeade7906.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948120182821.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1204,13 +1184,15 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-13265085-b9a0-4789-bd4e-8842ca7ae82a.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aa7d344a-5706-4a93-89af-722dd786c329.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f68eb99c-7845-48ab-a7e3-1b896e00899a.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-ba8b0a06-e0cd-4f47-baf6-b26a2132a9a0.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-ba8b0a06-e0cd-4f47-baf6-b26a2132a9a0.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-345d5130-435c-4338-82d0-ac25d8d34993.mp4",
+    "https://vod.liveboks.com/foot/upload/videos/2026/11/16/tus-d5962e7f-c68a-4890-b4f2-4c1a83c5bece.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 12
+    "count": 13
   },
-  "last_upload_timestamp": 1794857532.6164513,
+  "last_upload_timestamp": 1794861222.9814806,
   "last_apify_check": 1794855729.8317857,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1650,6 +1632,10 @@
     ],
     "P0GkO19VBlM": [
       "INTERVIEW"
+    ],
+    "IRTTiHJS_Js": [
+      "INTERVIEW",
+      "FOOTBALL_BARTAR"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1661,5 +1647,11 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075267
+  "max_seen_video_id": 1075273,
+  "rejected_urls": [
+    "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF"
+  ],
+  "seen_raw_titles": [
+    "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر"
+  ]
 }
