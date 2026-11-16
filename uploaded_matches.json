@@ -396,7 +396,8 @@
     "https://footballi.net/video/1075156/%D9%86%D8%AA%DB%8C%D8%AC%D9%87-%D9%87%D9%85%D9%87-%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D9%87%D8%A7%DB%8C-%D8%AF%D8%B1%D8%A8%DB%8C-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-%D8%A7%D8%B2-%D8%B3%D8%A7%D9%84-%DB%B1%DB%B9%DB%B2%DB%B8-%D8%AA%D8%A7-%DB%B2%DB%B0%DB%B2%DB%B6",
     "https://footballi.net/video/1075177/%DA%AF%D9%84-%D8%B2%DB%8C%D8%A8%D8%A7%DB%8C-%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85-%D8%AA%D9%88%D8%B1%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%BA%D8%B1%D8%A7%D9%81%D9%87",
     "https://footballi.net/video/1075176/%D8%AF%D8%A8%D9%84-%D8%B9%D9%85%D8%A7%D8%AF-%D8%B1%D8%B6%D8%A7-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
-    "https://footballi.net/video/1075155/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B6%D8%B1%D8%A8%D9%87-%D8%A7%DB%8C%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-FC27"
+    "https://footballi.net/video/1075155/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B6%D8%B1%D8%A8%D9%87-%D8%A7%DB%8C%D8%B3%D8%AA%DA%AF%D8%A7%D9%87%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-FC27",
+    "https://footballi.net/video/1075192/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D9%88-%DA%AF%D8%B1%D9%85-%DA%A9%D8%B1%D8%AF%D9%86-%D9%86%D9%81%D8%AA-%D9%85%D8%B3%D8%AC%D8%AF%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -541,7 +542,8 @@
     "گل ازری کنسا به اسپانیا از دید هواداران #Shorts",
     "گل بن وایت به اسپانیا از دید هواداران #Shorts",
     "نتیجه همه تقابل های دربی مادرید از سال ۱۹۲۸ تا ۲۰۲۶ #Shorts",
-    "آموزش ضربه ایستگاهی در بازی FC27 #Shorts"
+    "آموزش ضربه ایستگاهی در بازی FC27 #Shorts",
+    "حواشی و گرم کردن نفت مسجدسلیمان - نیروی زمینی | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -578,17 +580,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 1075192,
-      "url": "https://footballi.net/video/1075192/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D9%88-%DA%AF%D8%B1%D9%85-%DA%A9%D8%B1%D8%AF%D9%86-%D9%86%D9%81%D8%AA-%D9%85%D8%B3%D8%AC%D8%AF%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C",
-      "title": "حواشی و گرم کردن نفت مسجدسلیمان - نیروی زمینی",
-      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | نفت مسجدسلیمان,نیروی زمینی,لیگ یک,اختصاصی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-634628af-f7a7-46ce-aced-410fb93f6c7d.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948366560208.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
     {
       "video_id": 1075134,
       "url": "https://footballi.net/video/1075134/%D9%BE%D8%A7%D8%B3-%DA%AF%D9%84-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-06-1405",
@@ -1186,13 +1177,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-9c35dbb3-80db-474b-8376-06620643647d.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-3cc48926-c5e7-4a85-99d5-7bfd092cb36e.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-bde621aa-64e1-4568-ad19-87fb4eb789a3.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-611f1352-944d-4f8a-9002-eabb5bb1da32.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-611f1352-944d-4f8a-9002-eabb5bb1da32.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-634628af-f7a7-46ce-aced-410fb93f6c7d.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 6
+    "count": 7
   },
-  "last_upload_timestamp": 1794835957.3739667,
+  "last_upload_timestamp": 1794839515.7021875,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1613,6 +1605,9 @@
     ],
     "78pHfXgilGU": [
       "SHORTS"
+    ],
+    "1zQhf6XSwHA": [
+      "INTERVIEW"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1620,9 +1615,9 @@
   "ignored_comments": [],
   "deleted_comments": [
     "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
-    "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgwnFn0zjTK0i1dfQwd4AaABAg",
-    "UgwCAcPvVRxAwbDwXvN4AaABAg"
+    "UgwCAcPvVRxAwbDwXvN4AaABAg",
+    "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
   "max_seen_video_id": 1075192
 }
