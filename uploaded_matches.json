@@ -569,12 +569,23 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
-      "video_id": 1075140,
-      "url": "https://footballi.net/video/1075140/%DA%AF%D9%84-%D9%85%DB%8C%DA%A9%D9%84-%D8%A7%D9%88%DB%8C%D8%A7%D8%B1%D8%B2%D8%A7%D8%A8%D8%A7%D9%84-%D8%A8%D9%87-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
-      "title": "گل میکل اویارزابال به انگلیس از دید هواداران",
-      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | میکل اویارزابال,تیم ملی انگلیس,تیم ملی اسپانیا,لیگ ملت های اروپا",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-72b1ea53-973b-4268-a122-0d0c0a19f578.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948199106951.jpeg",
+      "video_id": 1075162,
+      "url": "https://footballi.net/video/1075162/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%B9%D8%B1%D8%A7%D9%82-%D9%81%D8%B1%D8%AF-%D8%A8%D8%B2%D8%B1%DA%AF%DB%8C-%D8%A7%D8%B3%D8%AA",
+      "title": "امیر قلعه‌نویی: سرمربی عراق فرد بزرگی است",
+      "description": "امیر قلعه‌نویی: سرمربی عراق فرد بزرگی است و به فوتبال این کشور خیلی می تواند کمک کندصحبتهای سرمربی تیم ملی قبل از دیدار دوستانه با عراق در تورنومنت بصره در نشست خبری",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-76fbcbbf-50df-45cd-a4ae-28aded9eb072.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948289118716.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075161,
+      "url": "https://footballi.net/video/1075161/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%87%D8%A7%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%88-%D8%B9%D8%B1%D8%A7%D9%82-%D9%87%D9%85%DB%8C%D8%B4%D9%87-%D8%B3%D8%AE%D8%AA-%D8%A7%D8%B3%D8%AA",
+      "title": "امیر قلعه‌نویی: بازی های ایران و عراق همیشه سخت است",
+      "description": "امیر قلعه‌نویی: بازی های ایران و عراق همیشه سخت است چون فوتبال ما به هم نزدیک است/ تبادل بین فوتبال ایران و عراق به هر دو کشور کمک می‌کندصحبتهای سرمربی تیم ملی قبل از دیدار دوستانه با عراق در تورنومنت بصره در نشست خبری",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b2799c28-6d3e-4f15-b627-657275cf57ef.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948286970785.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -597,6 +608,17 @@
       "description": "توضیحات مهدی تاج رییس فدراسیون فوتبال ایران درباره تغییر در لوگوی فدراسیون فوتبال و لباس تیم ملی ایران",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-a1236e65-ed54-4187-b86c-76e3752c23f3.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948160605303.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075123,
+      "url": "https://footballi.net/video/1075123/share",
+      "title": "مرور تیترهای داغ روزنامه‌های فوتبالی اروپا (25 آبان)",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | روزنامه های ورزشی,دست اول,روزنامه",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-52e5d288-23f6-4bec-ba6d-95029e9853fe.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948128105656.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -712,17 +734,6 @@
       "category": "VIDEO"
     },
     {
-      "video_id": 1075005,
-      "url": "https://footballi.net/video/1075005/%DA%AF%D9%84-%D8%B5%D8%A7%D9%84%D8%AD-%D8%AD%D8%B1%D8%AF%D8%A7%D9%86%DB%8C-%D8%A8%D9%87-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A7%D8%B2-%D8%B2%D9%88%D8%A7%DB%8C%D9%87-%D9%85%D8%AA%D9%81%D8%A7%D9%88%D8%AA",
-      "title": "گل صالح حردانی به فلسطین از زوایه متفاوت",
-      "description": "گل صالح حردانی به فلسطین از زوایه متفاوت",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-45f59152-b564-48d9-ab27-5bc6e3403183.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947539716929.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
       "video_id": 1074997,
       "url": "https://footballi.net/video/1074997/%D8%A7%D8%B3%D8%AA%D8%A7%D8%AF-%D8%A7%D8%B3%D8%AF%DB%8C-%D8%AF%DB%8C%DA%AF%D8%B1-%D9%86%D9%85%DB%8C%D8%AA%D9%88%D8%A7%D9%86%D8%AF-%D8%A8%D9%87-%D8%B9%D8%A7%D8%A8%D8%AF%D8%B2%D8%A7%D8%AF%D9%87-%DA%AF%D9%84-%D8%A8%D8%B2%D9%86%D8%AF",
       "title": "استاد اسدی دیگر نمیتواند به عابدزاده گل بزند!",
@@ -817,17 +828,6 @@
       "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | ادموند بزیک,پرسپولیس,آکادمی پرسپولیس,اختصاصی",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-a41a7c87-a448-489c-b0db-7cbbc638b195.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947439638480.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074958,
-      "url": "https://footballi.net/video/1074958/%DA%AF%D9%84-%D8%B3%D8%B1%D8%AF%D8%A7%D8%B1-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D8%A8%D9%87-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D9%85%D8%AA%D9%81%D8%A7%D9%88%D8%AA",
-      "title": "گل سردار آزمون به فلسطین از زاویه متفاوت",
-      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | تیم ملی ایران,سردار آزمون,تیم ملی فلسطین,تورنمنت بصره",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-abf963de-ab11-4c0f-9411-ce35e7b3fb00.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947435118327.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1600,5 +1600,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075155
+  "max_seen_video_id": 1075162
 }
