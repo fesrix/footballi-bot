@@ -589,6 +589,17 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 1075246,
+      "url": "https://footballi.net/video/1075246/%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
+      "title": "آخرین تمرین تیم ملی پیش از دیدار با عراق",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | 17144,17575,20490,38526",
+      "mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/16/tus-ee33f1c1-6b2b-44b9-b21f-63610e983ead.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/VGULraa8ZetiCG6TXcsXXVHmQKrhUrtDYvVKW5Rv.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1075237,
       "url": "https://footballi.net/video/1075237/%D8%A7%D9%85%DB%8C%D8%B1%DB%8C-%D9%82%D9%88%D9%84-%D9%85%DB%8C-%D8%AF%D9%87%D9%85-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C-%D8%AF%D8%B1-%D8%AC%D9%85%D8%B9-%D8%B4%D8%B4-%D8%AA%DB%8C%D9%85-%D8%A8%D8%A7%D9%84%D8%A7%DB%8C-%D8%AC%D8%AF%D9%88%D9%84-%D8%AE%D9%88%D8%A7%D9%87%D8%AF-%D8%A8%D9%88%D8%AF",
       "title": "امیری: قول می‌دهم نیروی زمینی در جمع شش تیم بالای جدول خواهد بود",
@@ -1197,7 +1208,7 @@
     "count": 11
   },
   "last_upload_timestamp": 1794854010.3274238,
-  "last_apify_check": 0,
+  "last_apify_check": 1794855729.8317857,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
     "SHORTS": "PLfu5X5snZYqc",
@@ -1644,5 +1655,5 @@
     "UgwCAcPvVRxAwbDwXvN4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075241
+  "max_seen_video_id": 1075246
 }
