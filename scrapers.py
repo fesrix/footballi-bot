@@ -5,7 +5,6 @@ import json
 import time
 import shutil
 import requests
-from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
@@ -17,6 +16,7 @@ from config import (
     IRANIAN_DOMESTIC_CLUBS,
     IRANIAN_SAFE_SHOWS,
     IRANIAN_FOOTBALL_ENTITIES,
+    APIFY_COOLDOWN_HOURS,
 )
 
 MAX_VIDEO_ID_AGE_GAP = 650
@@ -140,6 +140,15 @@ def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
         return False
 
     return True
+
+
+def is_strictly_domestic_short(title: str, desc: str = "") -> bool:
+    """فیلتر سخت‌گیرانه مخصوص شورتس‌های اینستاگرام برای جلوگیری ۱۰۰٪ از آپلود کلیپ خارجی"""
+    norm_full = normalize_persian(f"{title} {desc}").lower()
+    for bad_word in FOREIGN_BLACKLIST:
+        if normalize_persian(bad_word).lower() in norm_full:
+            return False
+    return any(normalize_persian(ent).lower() in norm_full for ent in EXTENDED_IRANIAN_FIGURES)
 
 
 def ai_batch_verify_borderline_titles(candidates: list) -> list:
@@ -480,90 +489,70 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
     return results
 
 
-def fetch_telegram_shorts(state: dict) -> list:
+def fetch_instagram_reels(state: dict) -> list:
     """
-    روش ۱۰۰٪ رایگان بدون Apify:
-    خواندن مستقیم کانال عمومی تلگرام فوتبالی (t.me/s/footballiapp) برای شکار ریلزها و ویدیوهای عمودی ۴۸ ساعت اخیر
+    دریافت ریلزهای باکیفیت HD از پیج اینستاگرام @footballiapp با Apify
+    (با کول‌داون ۸ ساعته و فیلتر سخت‌گیرانه ایران برای جلوگیری از هرگونه کلیپ خارجی)
     """
-    tg_url = "https://t.me/s/footballiapp"
-    uploaded_urls = set(state.get("uploaded_urls", []))
-    seen_mp4s = set(state.get("seen_mp4s", []))
-    queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
-    queued_mp4s = {item.get("mp4_url") for item in state.get("pending_queue", []) if item.get("mp4_url")}
-
-    try:
-        resp = requests.get(tg_url, headers=HEADERS, timeout=15)
-        if resp.status_code != 200:
-            return []
-    except Exception as e:
-        print(f"[TG-WARN] Could not fetch Telegram public channel: {e}")
+    apify_token = os.environ.get("APIFY_TOKEN", "").strip()
+    if not apify_token:
+        print("[APIFY] APIFY_TOKEN not set; skipping Instagram Reels check.")
         return []
 
-    soup = BeautifulSoup(resp.text, "html.parser")
-    now_utc = datetime.now(timezone.utc)
-    raw_candidates = []
+    last_check = float(state.get("last_apify_check", 0))
+    elapsed_hours = (time.time() - last_check) / 3600.0
+    if elapsed_hours < APIFY_COOLDOWN_HOURS:
+        rem = APIFY_COOLDOWN_HOURS - elapsed_hours
+        print(f"[APIFY] Cooldown active ({rem:.1f}h remaining before next Instagram check).")
+        return []
 
-    for msg in soup.select(".tgme_widget_message"):
-        post_attr = msg.get("data-post", "")
-        if not post_attr:
-            continue
-        post_url = f"https://t.me/{post_attr}"
+    try:
+        from apify_client import ApifyClient
+        client = ApifyClient(apify_token)
+        run_input = {
+            "username": ["footballiapp"],
+            "resultsLimit": 6,
+        }
+        print("[APIFY] Fetching latest HD Reels from @footballiapp Instagram...")
+        run = client.actor("apify/instagram-reel-scraper").call(run_input=run_input)
+        state["last_apify_check"] = time.time()
 
-        video_tag = msg.select_one("video")
-        if not video_tag:
-            continue
-        mp4_url = video_tag.get("src") or ""
-        if not mp4_url:
-            src_el = video_tag.select_one("source")
-            mp4_url = src_el.get("src", "") if src_el else ""
-        if not mp4_url or ".mp4" not in mp4_url:
-            continue
+        uploaded_urls = set(state.get("uploaded_urls", []))
+        seen_mp4s = set(state.get("seen_mp4s", []))
+        queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
 
-        if post_url in uploaded_urls or post_url in queued_urls or mp4_url in seen_mp4s or mp4_url in queued_mp4s:
-            continue
-
-        time_tag = msg.select_one("time[datetime]")
-        if time_tag and time_tag.get("datetime"):
-            try:
-                post_dt = datetime.fromisoformat(time_tag["datetime"].replace("Z", "+00:00"))
-                if (now_utc - post_dt).total_seconds() > 48 * 3600:
-                    continue
-            except Exception:
-                pass
-
-        text_el = msg.select_one(".tgme_widget_message_text")
-        raw_text = text_el.get_text("\n", strip=True) if text_el else ""
-
-        clean_lines = []
-        for ln in raw_text.split("\n"):
-            ln = ln.strip()
-            if not ln or "t.me/" in ln or "@footballi" in ln.lower():
+        reels = []
+        for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+            reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
+            video_url = item.get("videoUrl")
+            caption = (item.get("caption") or "").strip()
+            if not video_url or reel_url in uploaded_urls or reel_url in queued_urls or video_url in seen_mp4s:
                 continue
-            stripped = re.sub(r"^[^\w\u0600-\u06FF]+", "", ln).strip()
-            letters_only = re.findall(r"[\u0600-\u06FFa-zA-Z]", stripped)
-            if len(letters_only) >= 4:
-                clean_lines.append(stripped)
 
-        if not clean_lines:
-            continue
+            clean_lines = [
+                re.sub(r"^[^\w\u0600-\u06FF]+", "", ln).strip()
+                for ln in caption.split("\n")
+                if ln.strip() and len(re.findall(r"[\u0600-\u06FFa-zA-Z]", ln)) >= 4
+            ]
+            first_line = clean_lines[0][:95] if clean_lines else "ویدیوی کوتاه فوتبالی"
 
-        title = clean_lines[0][:95]
-        desc = "\n".join(clean_lines)
+            if not is_strictly_domestic_short(first_line, caption):
+                print(f"🚫 [SKIP-IG-FOREIGN] Rejecting non-domestic Instagram Reel: {first_line}")
+                continue
 
-        raw_candidates.append({
-            "video_id": 9999999,
-            "url": post_url,
-            "title": title,
-            "description": desc,
-            "mp4_url": mp4_url,
-            "poster_url": "",
-            "source": "telegram_shorts",
-            "is_short": True,
-        })
+            reels.append({
+                "video_id": 0,
+                "url": reel_url,
+                "title": first_line,
+                "description": caption,
+                "mp4_url": video_url,
+                "poster_url": item.get("displayUrl", ""),
+                "source": "instagram",
+                "is_short": True,
+            })
 
-    verified = ai_batch_verify_borderline_titles(raw_candidates)
-    print(f"[TG-SHORTS] Found {len(verified)} fresh domestic video candidates from @footballiapp Telegram!")
-    return verified
-
-
-fetch_instagram_reels = fetch_telegram_shorts
+        print(f"[APIFY] Verified {len(reels)} fresh domestic HD Reels from Instagram!")
+        return reels
+    except Exception as e:
+        print(f"[APIFY-WARN] Instagram check skipped: {e}")
+        return []
