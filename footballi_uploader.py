@@ -26,9 +26,10 @@ from config import (
 )
 from scrapers import (
     crawl_footballi_videos,
-    fetch_telegram_shorts,
+    fetch_instagram_reels,
     normalize_persian,
     is_foreign_or_blacklisted,
+    is_strictly_domestic_short,
     is_video_too_old,
     extract_numeric_id,
     MIN_ABSOLUTE_VIDEO_ID,
@@ -41,8 +42,10 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
 
-MAX_FRESH_QUEUE_SIZE = 30
-MIN_HORIZONTAL_DURATION_SECONDS = 180  # حداقل ۳ دقیقه برای ویدیوهای افقی
+MAX_MAIN_QUEUE_SIZE = 25
+MAX_SHORTS_QUEUE_SIZE = 5
+MIN_HORIZONTAL_DURATION_SECONDS = 180
+MIN_SHORTS_WIDTH_PX = 540  # جلوگیری از آپلود شورتس‌های بی‌کیفیت زیر 540p
 
 
 def get_exact_video_dimensions(video_path: str) -> tuple:
@@ -366,7 +369,7 @@ def normalize_queue_item(item: dict) -> dict:
     title = re.sub(r"\s*\|\s*خلاصه بازی\s*$", "", title).strip()
     poster = item.get("poster_url") or item.get("poster") or item.get("thumbnail") or ""
     is_short = bool(item.get("is_short", False))
-    vid_id = extract_numeric_id(u) or int(item.get("video_id", 0))
+    vid_id = extract_numeric_id(u) or 0
     item["video_id"] = vid_id
     item["url"] = u
     item["mp4_url"] = mp4
@@ -376,14 +379,19 @@ def normalize_queue_item(item: dict) -> dict:
     return item
 
 
-def deduplicate_and_purge_old_queue(
+def deduplicate_and_balance_queue(
     queue: list, uploaded_urls: set, seen_mp4s: set, channel_norm_titles: set, max_site_id: int
 ) -> list:
-    clean = []
+    """
+    پالایش صف و تضمین اینکه ویدیوهای اصلی (SUMMARY, VIDEOCAST, POSHTE_KHAT, VIDEO)
+    همیشه در اولویت بالاتر از SHORTS قرار بگیرند و هیچ‌وقت پشت سر شورتس‌ها گیر نکنند.
+    """
+    main_items = []
+    short_items = []
     q_urls = set()
     q_mp4s = set()
     q_titles = set()
-    purged_old_or_foreign = 0
+    purged = 0
 
     all_q_ids = [extract_numeric_id(it.get("url", "")) for it in queue if isinstance(it, dict)]
     highest_id = max([max_site_id, MIN_ABSOLUTE_VIDEO_ID] + all_q_ids)
@@ -397,32 +405,48 @@ def deduplicate_and_purge_old_queue(
 
         if not u or not mp4 or not t:
             continue
-        if item.get("source") != "telegram_shorts":
-            if is_video_too_old(item.get("title", ""), "", video_id=vid_id, max_site_id=highest_id):
-                purged_old_or_foreign += 1
-                continue
-        if is_foreign_or_blacklisted(item.get("title", ""), ""):
-            purged_old_or_foreign += 1
+        # حذف آیتم‌های بی‌کیفیت باقی‌مانده از تلگرام در صف قبلی
+        if item.get("source") == "telegram_shorts" or "t.me/" in u:
+            purged += 1
             continue
+
+        if item.get("is_short"):
+            if not is_strictly_domestic_short(item.get("title", ""), item.get("description", "")):
+                purged += 1
+                continue
+        else:
+            if is_video_too_old(item.get("title", ""), "", video_id=vid_id, max_site_id=highest_id):
+                purged += 1
+                continue
+            if is_foreign_or_blacklisted(item.get("title", ""), ""):
+                purged += 1
+                continue
+
         if u in uploaded_urls or u in q_urls or mp4 in q_mp4s or t in q_titles or t in channel_norm_titles:
             continue
 
         q_urls.add(u)
         q_mp4s.add(mp4)
         q_titles.add(t)
-        clean.append(item)
 
-    if purged_old_or_foreign > 0:
-        print(f"🧹 [QUEUE-PURGE] Removed {purged_old_or_foreign} old (>48h) or foreign videos from Pending Queue!")
+        if item.get("is_short") or item.get("category") == "SHORTS":
+            short_items.append(item)
+        else:
+            main_items.append(item)
 
-    priority_order = {"SUMMARY": 0, "VIDEOCAST": 1, "POSHTE_KHAT": 2, "SHORTS": 3, "VIDEO": 4}
-    clean.sort(
+    if purged > 0:
+        print(f"🧹 [QUEUE-PURGE] Removed {purged} old, foreign, or low-quality Telegram items from queue.")
+
+    # اولویت‌بندی قطعی: ویدیوهای اصلی (0 تا 3) همیشه بالاتر از شورتس (4)
+    priority_order = {"SUMMARY": 0, "VIDEOCAST": 1, "POSHTE_KHAT": 2, "VIDEO": 3}
+    main_items.sort(
         key=lambda x: (
-            priority_order.get(x.get("category", "VIDEO"), 5),
+            priority_order.get(x.get("category", "VIDEO"), 3),
             -int(x.get("video_id", 0)),
         )
     )
-    return clean[:MAX_FRESH_QUEUE_SIZE]
+
+    return main_items[:MAX_MAIN_QUEUE_SIZE] + short_items[:MAX_SHORTS_QUEUE_SIZE]
 
 
 def call_ai_copyright_audit(title: str, desc: str) -> bool:
@@ -492,7 +516,7 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 
 
 def main():
-    print("[START] Footballi Bot starting (Web >=3m + Free Telegram Vertical Shorts Edition)...")
+    print("[START] Footballi Bot starting (Main Videos Priority + HD Instagram Shorts Edition)...")
     state = load_state()
     reset_key = get_tehran_reset_key()
 
@@ -505,21 +529,23 @@ def main():
     channel_norm_titles = {normalize_persian(t).lower() for t in state.get("uploaded_titles", [])}
 
     new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
-    new_tg_shorts = fetch_telegram_shorts(state)
+    new_ig_reels = fetch_instagram_reels(state)
 
-    for item in new_web_videos + new_tg_shorts:
+    for item in new_web_videos + new_ig_reels:
         item["category"] = detect_primary_category(
             item["title"], item.get("description", ""), item.get("is_short", False)
         )
         state["pending_queue"].append(item)
 
     max_site_id = int(state.get("max_seen_video_id", MIN_ABSOLUTE_VIDEO_ID))
-    state["pending_queue"] = deduplicate_and_purge_old_queue(
+    state["pending_queue"] = deduplicate_and_balance_queue(
         state.get("pending_queue", []), uploaded_urls, seen_mp4s, channel_norm_titles, max_site_id
     )
     save_state(state)
 
-    print(f"[QUEUE] {len(state['pending_queue'])} fresh (<48h) domestic Iranian videos ready in Pending Queue.")
+    main_count = sum(1 for x in state["pending_queue"] if x.get("category") != "SHORTS")
+    shorts_count = sum(1 for x in state["pending_queue"] if x.get("category") == "SHORTS")
+    print(f"[QUEUE] Ready -> Main Videos: {main_count} | Instagram HD Shorts: {shorts_count}")
 
     if state.get("quota_exhausted_date") == reset_key:
         print("⏸️ [QUOTA-GUARD] Daily YouTube API quota is full for today. Holding queue safely until 11:30 AM Tehran reset.")
@@ -563,11 +589,18 @@ def main():
     while state["pending_queue"]:
         top = state["pending_queue"][0]
 
-        if not call_ai_copyright_audit(top["title"], top.get("description", "")):
-            print(f"🚫 [AI-AUDIT-REJECT] Blocked unsafe video before upload: {top['title']}")
-            state["pending_queue"].pop(0)
-            state["uploaded_urls"].append(top["url"])
-            continue
+        if top.get("is_short"):
+            if not is_strictly_domestic_short(top["title"], top.get("description", "")):
+                print(f"🚫 [SHORT-REJECT] Blocked non-domestic Short before upload: {top['title']}")
+                state["pending_queue"].pop(0)
+                state["uploaded_urls"].append(top["url"])
+                continue
+        else:
+            if not call_ai_copyright_audit(top["title"], top.get("description", "")):
+                print(f"🚫 [AI-AUDIT-REJECT] Blocked unsafe video before upload: {top['title']}")
+                state["pending_queue"].pop(0)
+                state["uploaded_urls"].append(top["url"])
+                continue
 
         cat_check = top.get("category", "VIDEO")
         mins_since_last = (time.time() - float(state.get("last_upload_timestamp", 0))) / 60.0
@@ -605,17 +638,17 @@ def main():
         is_vertical = (h > w) if (w > 0 and h > 0) else bool(top.get("is_short", False))
 
         if is_vertical:
-            is_short = dur <= 175 if dur > 0 else True
-            print(f"📱 [VERTICAL-SHORTS] Approved vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
-            candidate = top
-            break
-        else:
-            if top.get("source") == "telegram_shorts":
-                print(f"⏭️ [SKIP-TG-HORIZONTAL] Telegram video is horizontal ({w}x{h}), skipping for Shorts: {top['title']}")
+            if w > 0 and w < MIN_SHORTS_WIDTH_PX:
+                print(f"⏭️ [SKIP-LOWRES-SHORT] Rejected low-resolution Short ({w}x{h} < {MIN_SHORTS_WIDTH_PX}px): {top['title']}")
                 state["pending_queue"].pop(0)
                 state["uploaded_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
+            is_short = dur <= 175 if dur > 0 else True
+            print(f"📱 [VERTICAL-SHORTS] Approved HD vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
+            candidate = top
+            break
+        else:
             if dur > 0 and dur < MIN_HORIZONTAL_DURATION_SECONDS:
                 print(
                     f"⏭️ [SKIP-SHORT-HORIZONTAL] Rejected horizontal video under 3 mins "
@@ -632,7 +665,7 @@ def main():
 
     save_state(state)
     if not candidate:
-        print("[DONE] No qualifying videos (>=3m horizontal or vertical Shorts) ready in queue.")
+        print("[DONE] No qualifying videos (>=3m horizontal or HD vertical Shorts) ready in queue.")
         return
 
     cat = "SHORTS" if is_short else candidate.get("category", "VIDEO")
@@ -697,7 +730,7 @@ def main():
         state["last_upload_timestamp"] = time.time()
         state["upload_limit_cooldown_until"] = 0
         save_state(state)
-        print(f"[DONE] Uploaded: 1 | Fresh videos waiting in Queue: {len(state['pending_queue'])}")
+        print(f"[DONE] Uploaded: 1 | Remaining in Queue: {len(state['pending_queue'])}")
 
     except HttpError as e:
         err_str = str(e)
