@@ -375,7 +375,8 @@
     "https://t.me/footballiapp/511933",
     "https://footballi.net/video/1075025/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%81%D9%88%D8%AA%D8%B3%D8%A7%D9%84-%DA%AF%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B3%D9%86%D8%AF-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%87%D8%B1%D9%85%D8%B2%DA%AF%D8%A7%D9%86-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C",
     "https://t.me/footballiapp/511941",
-    "https://t.me/footballiapp/511942"
+    "https://t.me/footballiapp/511942",
+    "https://t.me/footballiapp/511945"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -514,7 +515,8 @@
     "پشت خط/ فرزاد آشوبی: مصاحبه محمودی عجیب بود، کار پرسپولیس عجیب تر! | فوتبال ایران",
     "حواشی دیدار فوتسال گیتی پسند - فولاد هرمزگان از زاویه دوربین فوتبالی | فوتبال ایران",
     "بازیکنانی با بیشترین تعداد بازی برای تیم ملی انگلیس #Shorts",
-    "وضعیت فعلی ترکیب تیم ملی پرتغال فینال یورو ۲۰۱۶ #Shorts"
+    "وضعیت فعلی ترکیب تیم ملی پرتغال فینال یورو ۲۰۱۶ #Shorts",
+    "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران #Shorts"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -551,17 +553,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 9999999,
-      "url": "https://t.me/footballiapp/511945",
-      "title": "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران",
-      "description": "دبل سوپرگل وینیسیوس مقابل ژاپن از زاویه دید هواداران\nویدیو",
-      "mp4_url": "https://cdn4.telesco.pe/file/0de12ddc6d.mp4?token=o2qhcneBw-uEHpxYoYjgSenP2k4GrbsbBEI_PY_Fhvwucfw2DaYUebRum7rcxIPCAb2yHq2huicUyKqHRcbV9VbjuZtjLeoxH98eQkpscwr_j2q6YUg3gU6laOceNbLr2qyH5gdhoRYDaLCHaEuKfIvcJ8NkMfP35ubx42DRVLxpVQvRSc2YfIBfEeIbB1pZmI0-329uf6U1q6zbQWDDXK0ebWKl_Jet0JJgCr3yReiM0UX__XKEUXt0DVtUqCXEBWuBgSAVB1txvS3fAT1sDROpoIjTdMq0Nd9i5AjPR_sRuYc_d_yRe5MBwdPrGf5RuACmM0-Q_L_fedbda8EazA",
-      "poster_url": "",
-      "source": "telegram_shorts",
-      "is_short": true,
-      "category": "SHORTS"
-    },
     {
       "video_id": 9999999,
       "url": "https://t.me/footballiapp/511954",
@@ -649,6 +640,28 @@
       "source": "telegram_shorts",
       "is_short": true,
       "category": "SHORTS"
+    },
+    {
+      "video_id": 9999999,
+      "url": "https://t.me/footballiapp/512008",
+      "title": "تک گل ایران در بازی ایران ۱-۰ عراق بازی های آسیایی ۱۹۷۴ تهران",
+      "description": "تک گل ایران در بازی ایران ۱-۰ عراق بازی های آسیایی ۱۹۷۴ تهران\nدر ۲۲ شهریور ۱۳۵۳ در تهران، تیم ملی فوتبال در ورزشگاه آزادی، ایران با تک گل حسن روشن در دقیقه ۷۶ پیروز مسابقه شد و به فینال بازی های آسیایی ۱۹۷۴ راه یافت. این ویدیو را با صدای زنده یاد مسعود اسکویی ببینید.\nویدیو\nنوستالژی_فوتبالی",
+      "mp4_url": "https://cdn4.telesco.pe/file/33ff374a76.mp4?token=SIyq-kpKQ8jpAOenBPBDHemdNUjlkhJYPcw1-Ri-XVOc3fVwt1Yu0EaEVHq6QPDd2KW2YP0s4VTD7j4R5WR-AIb-i35pAdVbbApnxYWTZ0AmiM8JuHBBtnTsQcD4atT4SBvAxtM95s9ZIPBms6rSbg14oDBPyo0ammZDGNpgxrl9cpiFXfMG7YMmPAM4pZXFVR5KFzffPfWdZORkFdf5m7fnksuvKEpwgjju4uqSS4nkot7HtfwkfX9LKDa72zi1Gbnc5k4_bX-IhffnstZt2Sj1uAJExth3kt3-s1AA3dcK6TGgn2dYBkAXC0srnjTUPLmHTajr01AOIqTMHuA3Y2k0LapLG944cHftzNeRxInfWjigdyibasWSNzEAqhsrxU3cuqpOgdMxcdpCCGDAFDVHCfnQn4cVN4SR_MU2McGMbKf73U5YrNOVioW8crwww8O6d20Wc4BE-2iMvraHy2VjWBOdR7Glx7oPR8KEoxY-8fEs-RrAMwOI6X-OtbrMdF7rYO9jPrkK6wnQUwtMVd8yfBb41a6XWTtRqwqKyzS5EfKd8hg5AH3M8DRARyfE8CJgL41M3IV99ArkN4FIZ73n9UItATHaFdsGXopeEErkvsn19bhnRyeZLefozeWA7ZnsZ-Kb_BsCslfB0OGTPhktb4H42uDLbA86SNeNW60",
+      "poster_url": "",
+      "source": "telegram_shorts",
+      "is_short": true,
+      "category": "SHORTS"
+    },
+    {
+      "video_id": 1075128,
+      "url": "https://footballi.net/video/1075128/%D8%AA%D8%A7%D8%AC-%D8%AE%D8%A8%D8%B1-%D8%AF%D8%A7%D8%AF-%D8%A7%DB%8C%D8%AC%D8%A7%D8%AF-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1%D8%A7%D8%AA-%D8%A8%D8%B5%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A7%D9%84%D8%A8%D8%B3%D9%87-%D8%AA%DB%8C%D9%85-%D9%87%D8%A7%DB%8C-%D9%85%D9%84%DB%8C-%D9%88-%D9%84%D9%88%DA%AF%D9%88%DB%8C-%D9%81%D8%AF%D8%B1%D8%A7%D8%B3%DB%8C%D9%88%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84",
+      "title": "تاج خبر داد؛ ایجاد تغییرات بصری در البسه تیم‌های ملی و لوگوی فدراسیون فوتبال",
+      "description": "توضیحات مهدی تاج رییس فدراسیون فوتبال ایران درباره تغییر در لوگوی فدراسیون فوتبال و لباس تیم ملی ایران",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-a1236e65-ed54-4187-b86c-76e3752c23f3.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/16/17948160605303.jpeg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
     },
     {
       "video_id": 1075122,
@@ -855,28 +868,6 @@
       "description": "حواشی مراسم بدرقه تیم ملی فوتبال ساحلی به جام ملتهای آسیا در تایلند را در پایگاه خبری فوتبالی به صورت اختصاصی مشاهده کنید",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d321f9b2-629c-4182-bd79-7bd2e28f3cd6.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947393797434.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074933,
-      "url": "https://footballi.net/video/1074933/%D8%B3%D8%B1%D9%86%D9%88%D8%B4%D8%AA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C-%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8-%D8%A7%D8%B5%D9%84%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%BE%D8%B1%D8%AA%D8%BA%D8%A7%D9%84-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86-%DB%8C%D9%88%D8%B1%D9%88-2016",
-      "title": "سرنوشت فوتبالی ترکیب اصلی تیم ملی پرتغال قهرمان یورو 2016",
-      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | یورو 2016,تیم ملی پرتغال,کریستیانو رونالدو,ویدیوی خارجی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-a6fecdea-4368-4e6d-a1d4-20e8d74c5e1e.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/15/17947382598426.jpeg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1074841,
-      "url": "https://footballi.net/video/1074841/%DA%AF%D9%84-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%D9%85%D9%87%D8%AF%DB%8C-%D8%B7%D8%A7%D8%B1%D9%85%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%AF%D8%A8%DB%8C-%D9%85%D8%B1%D8%AF%D9%88%D8%AF-%D8%A7%D8%B9%D9%84%D8%A7%D9%85-%D8%B4%D8%AF",
-      "title": "گل قیچی برگردان مهدی طارمی مقابل النصر دبی مردود اعلام شد!",
-      "description": "گل قیچی برگردان مهدی طارمی مقابل النصر دبی که مردود اعلام شد!در پایان بازی الوصل با نتیجه 2-0 مقابل النصر دبی به پیروزی رسید",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/14/tus-446fe862-7ae5-4ebc-87e7-61442a75933f.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946828731414.jpeg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1193,13 +1184,14 @@
     "https://cdn4.telesco.pe/file/764353eba3.mp4?token=DdS5zvAKfnaGDkj6Drd4z3o9szWfp77MC39qiwd3rTAkfDE-vUcE9zUW9-snFJzt6OM9uMLNgT4IJy4a-C3FvzUli17yJic8QBNjMf0ZDEPEwiCPvSVa4FuFBSRwmJHwN61z5I7l7DeMCbl15SDQHs8UKOmd9ZdSFnYh-1lHh8EgGshMCBMjuXwG0-gPM88Hzv7gCmZdw9HN3YdOxt9G3dqFA0mZzqSng6QHIbGYio3g_o6oGZOesUuw6VrflQszkB7GNBpe-BSbr9fisrxYq0IX8e90W7Q_blqtAtPcbT1hCj3xMG7gpKmcL0BEmIelWzvyyHA-41J_1Op_ufDPLg",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/15/tus-d19c5034-0855-4075-8e0c-46e0053cc7dc.mp4",
     "https://cdn4.telesco.pe/file/5df5bf0eaa.mp4?token=DPIclIMDxd9_kPfYsaZSDURmvfTlnVWqky583rrZkJ65sNVC8bb6l3Z0jf93QjTTLrgq865JSc8yw50v2uKnQvr2xPggy92K6F3y2GNpEpZyjWow0_-KS9GM-e_EbGf_CTeyATDvS13cvHZkWUO-ZQVwqboppWEP_tku59KDlNJ0yggP3TXLJ0bSjEITKfJ__lYfH7kheFeRsCro-7iYsViVr1YqD4vQb59XTGiBzbOts75fGixZOipGuCQdu7sNyxY8xL1s0-5FvggptYxjLNym47i7q2e5iAfgY0nBc9pesmZoURa-p60wl087rb_yZh96p7zQ25eZdRLpSHbU0g",
-    "https://cdn4.telesco.pe/file/37d28c8961.mp4?token=QwjfxlhtcwcPiy-qeJH_FSl-yKn3dbUhBEtNa6gkyPxmuNBapacJug3sqVyZ8rdKk08nvExoQ7y463U8RGSkad_x2Wx9aZNMI-P6R3CRrjFa1eQwOLya6wH2dfP51_2HQZi2IKZRwQIrD9JdoqOB1XQOCDj7ucpiSQL4dYVFhj19n2A5t9ZrS777dfKwdTqeLOTKK5SXXyJ_1tpHTHQLamNYVV6NFr8cZBO0G5StE_T5UxBqjq9Qamb5AH0x0zksEk5IPtly54rN6DQczTUKMkoh1rvz_vNrCARPCuvEhNZoBg2bsg0qoh8bfsjRYS_CXjY9-sOit2P6qBHzf9jmzA"
+    "https://cdn4.telesco.pe/file/37d28c8961.mp4?token=QwjfxlhtcwcPiy-qeJH_FSl-yKn3dbUhBEtNa6gkyPxmuNBapacJug3sqVyZ8rdKk08nvExoQ7y463U8RGSkad_x2Wx9aZNMI-P6R3CRrjFa1eQwOLya6wH2dfP51_2HQZi2IKZRwQIrD9JdoqOB1XQOCDj7ucpiSQL4dYVFhj19n2A5t9ZrS777dfKwdTqeLOTKK5SXXyJ_1tpHTHQLamNYVV6NFr8cZBO0G5StE_T5UxBqjq9Qamb5AH0x0zksEk5IPtly54rN6DQczTUKMkoh1rvz_vNrCARPCuvEhNZoBg2bsg0qoh8bfsjRYS_CXjY9-sOit2P6qBHzf9jmzA",
+    "https://cdn4.telesco.pe/file/0de12ddc6d.mp4?token=o2qhcneBw-uEHpxYoYjgSenP2k4GrbsbBEI_PY_Fhvwucfw2DaYUebRum7rcxIPCAb2yHq2huicUyKqHRcbV9VbjuZtjLeoxH98eQkpscwr_j2q6YUg3gU6laOceNbLr2qyH5gdhoRYDaLCHaEuKfIvcJ8NkMfP35ubx42DRVLxpVQvRSc2YfIBfEeIbB1pZmI0-329uf6U1q6zbQWDDXK0ebWKl_Jet0JJgCr3yReiM0UX__XKEUXt0DVtUqCXEBWuBgSAVB1txvS3fAT1sDROpoIjTdMq0Nd9i5AjPR_sRuYc_d_yRe5MBwdPrGf5RuACmM0-Q_L_fedbda8EazA"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 0
+    "count": 1
   },
-  "last_upload_timestamp": 1794814299.2838733,
+  "last_upload_timestamp": 1794817911.2640905,
   "last_apify_check": 0,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1602,6 +1594,9 @@
     "Txy_j-gn5cM": [
       "TEAM_MELLI",
       "SHORTS"
+    ],
+    "VrVmB1u0WWQ": [
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1613,5 +1608,5 @@
     "UgwnFn0zjTK0i1dfQwd4AaABAg",
     "UgwCAcPvVRxAwbDwXvN4AaABAg"
   ],
-  "max_seen_video_id": 1075122
+  "max_seen_video_id": 1075134
 }
