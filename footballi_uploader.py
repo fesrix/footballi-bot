@@ -115,6 +115,7 @@ def load_state() -> dict:
         "ignored_comments": [],
         "deleted_comments": [],
         "analytics": {},
+        "published_metadata": {},
         "rights_migration_version": 0,
     }
     if os.path.exists(STATE_FILE):
@@ -831,6 +832,9 @@ def main():
     final_title = seo.get("title", candidate["title"])[:100]
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
+    source_url = candidate.get("source_url") or candidate.get("url")
+    if source_url and source_url not in final_desc:
+        final_desc = f"{final_desc}\n\nمنبع رسمی: {source_url}"
 
     print(f"[UPLOAD] Publishing 1 video ({cat} | Score: {candidate.get('ai_score', 6)}/10): {final_title}")
 
@@ -863,6 +867,14 @@ def main():
         state["seen_mp4s"].append(candidate["mp4_url"])
         state["uploaded_titles"].append(final_title)
         state["seen_raw_titles"].append(candidate["title"])
+        state.setdefault("published_metadata", {})[vid_id] = {
+            "title": final_title,
+            "category": cat,
+            "source": candidate.get("source"),
+            "source_url": source_url,
+            "rights_status": candidate.get("rights_status"),
+            "published_at": datetime.now(timezone.utc).isoformat(),
+        }
         state["daily_uploads"]["count"] = uploads_today + 1
         state["last_upload_timestamp"] = time.time()
         state["upload_limit_cooldown_until"] = 0
