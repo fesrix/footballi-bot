@@ -406,7 +406,8 @@
     "https://footballi.net/video/1075271/%D8%B4%D9%88%D8%AE%DB%8C-%D9%88-%D8%AE%D9%86%D8%AF%D9%87-%D8%A8%D8%A7-%D9%85%D9%84%DB%8C-%D9%BE%D9%88%D8%B4%D8%A7%D9%86-%DA%AF%D9%BE-%D9%88%DA%AF%D9%81%D8%AA%DB%8C-%D9%85%D8%AA%D9%81%D8%A7%D9%88%D8%AA-%D8%AF%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1",
     "https://footballi.net/video/1075283/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B4%DA%AF%D8%A7%D9%87-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%B9%D8%B0%D8%B1%D8%AE%D9%88%D8%A7%D9%87%DB%8C-%D9%85%DB%8C%DA%A9%D8%B1%D8%AF",
     "https://footballi.net/video/1075304/%D8%B4%D9%88%D8%AE%DB%8C-%D9%88-%DA%A9%D9%86%D8%A7%DB%8C%D9%87-%D9%87%D8%A7%DB%8C-%D8%AC%D8%A7%D9%84%D8%A8-%D9%85%DB%8C%D8%AB%D8%A7%D9%82%DB%8C-%D8%A8%D9%87-%D8%AD%D8%B6%D9%88%D8%B1-%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%D8%AF%D8%B1-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D9%87%D8%A7%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7",
-    "https://footballi.net/video/1075312/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%B3%D8%B2%D8%A7%D9%88%D8%A7%D8%B1-%D8%A7%DB%8C%D9%86-%D8%B4%D8%B9%D8%A7%D8%B1%D9%87%D8%A7-%D9%86%DB%8C%D8%B3%D8%AA"
+    "https://footballi.net/video/1075312/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%B3%D8%B2%D8%A7%D9%88%D8%A7%D8%B1-%D8%A7%DB%8C%D9%86-%D8%B4%D8%B9%D8%A7%D8%B1%D9%87%D8%A7-%D9%86%DB%8C%D8%B3%D8%AA",
+    "https://footballi.net/video/1075323/%D9%88%D9%82%D8%AA%DB%8C-%D9%81%DB%8C%D9%81%D8%A7%D8%AF%DB%8C-%D8%A7%D8%B3%D8%AA-%D9%88-%D8%B3%D9%88%DA%98%D9%87-%DA%A9%D9%85-%D9%85%DB%8C-%D8%A2%DB%8C%D8%AF-%D8%AA%D9%86%DB%8C%D8%B3-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%AF%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -561,7 +562,8 @@
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر | فوتبال ایران",
     "حدادی: محمودی باید از باشگاه پرسپولیس عذرخواهی میکرد | فوتبال ایران",
     "شوخی و کنایه‌های جالب میثاقی به حضور بیرانوند در مراسم بهترین‌های آسیا | فوتبال ایران",
-    "مسلمان: پرسپولیس سزاوار این شعارها نیست | فوتبال ایران"
+    "مسلمان: پرسپولیس سزاوار این شعارها نیست | فوتبال ایران",
+    "وقتی فیفادی است و سوژه کم می‌آید؛ تنیس فوتبال در فوتبال برتر! | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -598,6 +600,17 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
+    {
+      "video_id": 1075322,
+      "url": "https://footballi.net/video/1075322/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D9%87%D8%A7-%D8%A7%D8%B2-%D9%84%DB%8C%DA%AF-%D9%81%D8%B1%D8%A7%D8%B1-%DA%A9%D9%86%D9%86%D8%AF",
+      "title": "کاظمی: کاری می‌کنیم آسانی‌ها از لیگ فرار کنند!",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | محسن مسلمان‌,حسین کاظمی,فوتبال برتر,لیگ برتر ایران,یاسر آسانی",
+      "mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/16/tus-130d2d22-29fa-41ba-beb1-b734aa72442c.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/OdQ6TlCRXvJyBRiTdigmWU6GQkWiNz8Y8RhqM7xv.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
     {
       "video_id": 1075321,
       "url": "https://footballi.net/video/1075321/%D8%A2%D9%86%D8%A7%D9%84%DB%8C%D8%B2-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%AF%D8%B1-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D8%A7-%D8%AD%D8%B6%D9%88%D8%B1-%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D9%88-%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86",
@@ -847,28 +860,6 @@
       "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | 17038,18076,36419,41972",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-bf75da0c-6f29-44b4-888a-a1d76154eb3f.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/OFGLuQ3naDbuUPKTXOOl27ookxYGuk1DlvdRdPC1.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075208,
-      "url": "https://footballi.net/video/1075208/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%85%D8%B3-%D8%B1%D9%81%D8%B3%D9%86%D8%AC%D8%A7%D9%86-%D8%A8%D9%87-%D8%B4%D8%A7%D9%87%DB%8C%D9%86-%D8%A8%D9%86%D8%AF%D8%B1-%D8%B9%D8%A7%D9%85%D8%B1%DB%8C-%D8%A7%D8%B2-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D8%AE%D8%A8%D8%B1%D9%86%DA%AF%D8%A7%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C",
-      "title": "گل اول مس رفسنجان به شاهین بندر عامری از دوربین خبرنگار فوتبالی",
-      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | 17038,18076,19109,41972",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-320e5682-4c1f-4f3b-bfd3-b8a6c16e2c92.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/IJZFPZpZCyDfYNDhQbVqMSFaGQRK3ZI5J9nsAwFh.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
-    {
-      "video_id": 1075207,
-      "url": "https://footballi.net/video/1075207/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%B1%D8%A8%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%A7%D9%86%D9%88%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D9%BE%D8%B3-%D8%A7%D8%B2-%D9%BE%DB%8C%D8%B1%D9%88%D8%B2%DB%8C-%DB%B2-%D8%A8%D8%B1-%D8%B5%D9%81%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%85%D9%84%D9%88%D8%A7%D9%86",
-      "title": "صحبت‌های مربی و بازیکنان تیم فوتبال بانوان استقلال پس از پیروزی ۲ بر صفر مقابل ملوان",
-      "description": "مربی و بازیکنان تیم فوتبال بانوان استقلال پس از پیروزی ۲ بر صفر مقابل ملوان، درباره عملکرد تیم و کسب این نتیجه صحبت کردند. گفت و گو با اعضای تیم استقلال و واکنش آن ها به برد ارزشمند مقابل ملوان.",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b83f3ac2-17e5-472f-b597-21c000bae2c7.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/cKAOxU6uN1AHRkoTfnnAIORl5QqGRWMzHzOaCMnS.jpg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1218,13 +1209,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-9afbc716-09df-455c-9990-88fd94b5960f.mp4",
     "https://vod.liveboks.com/foot/upload/videos/2026/11/16/tus-64807d38-009a-4432-9e94-681b5307c986.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-d09d1b5d-4ba6-4ab1-be76-b2a650465c30.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aa366a14-a0f8-44e2-bcea-18f52c8e53be.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-aa366a14-a0f8-44e2-bcea-18f52c8e53be.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/17/tus-3749ab33-0fbd-4eeb-8653-00e3ed5d5088.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 16
+    "count": 17
   },
-  "last_upload_timestamp": 1794871928.8978133,
+  "last_upload_timestamp": 1794875523.0793967,
   "last_apify_check": 1794855729.8317857,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1681,6 +1673,10 @@
     "WvCzuBIX1H8": [
       "INTERVIEW",
       "PERSEPOLIS"
+    ],
+    "ffvnaGxX4dg": [
+      "INTERVIEW",
+      "FOOTBALL_BARTAR"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1693,7 +1689,7 @@
     "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
     "UgwnFn0zjTK0i1dfQwd4AaABAg"
   ],
-  "max_seen_video_id": 1075321,
+  "max_seen_video_id": 1075323,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF"
@@ -1702,6 +1698,7 @@
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر",
     "حدادی: محمودی باید از باشگاه پرسپولیس عذرخواهی میکرد",
     "شوخی و کنایه‌های جالب میثاقی به حضور بیرانوند در مراسم بهترین‌های آسیا",
-    "مسلمان: پرسپولیس سزاوار این شعارها نیست"
+    "مسلمان: پرسپولیس سزاوار این شعارها نیست",
+    "وقتی فیفادی است و سوژه کم می‌آید؛ تنیس فوتبال در فوتبال برتر!"
   ]
 }
