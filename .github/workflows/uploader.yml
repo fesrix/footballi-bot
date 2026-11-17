@@ -60,10 +60,15 @@ jobs:
           timeout --kill-after=10s 120s stdbuf -oL -eL python -u comment_manager.py || comment_status=$?
 
           echo ""
+          echo "=== Growth report ==="
+          report_status=0
+          python -u growth_report.py || report_status=$?
+
+          echo ""
           echo "=== [5/5] Saving Queue & Channel State ==="
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add uploaded_matches.json
+          git add uploaded_matches.json growth_report.md
           push_status=0
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update video queue and indexed matches [skip ci]"
@@ -76,6 +81,7 @@ jobs:
 
           echo "## Footballi run summary" >> "$GITHUB_STEP_SUMMARY"
           echo "- Analytics status: $analytics_status" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Report status: $report_status" >> "$GITHUB_STEP_SUMMARY"
           echo "- Uploader status: $uploader_status" >> "$GITHUB_STEP_SUMMARY"
           echo "- Comment manager status: $comment_status" >> "$GITHUB_STEP_SUMMARY"
           echo "- State push status: $push_status" >> "$GITHUB_STEP_SUMMARY"
@@ -93,7 +99,7 @@ jobs:
           print(f"- Rejections: {run.get('rejected_by_reason', {})}")
           PY
           fi
-          if [ "$analytics_status" -ne 0 ] || [ "$uploader_status" -ne 0 ] || [ "$comment_status" -ne 0 ] || [ "$push_status" -ne 0 ]; then
+          if [ "$analytics_status" -ne 0 ] || [ "$report_status" -ne 0 ] || [ "$uploader_status" -ne 0 ] || [ "$comment_status" -ne 0 ] || [ "$push_status" -ne 0 ]; then
             echo "❌ One or more pipeline stages failed." >&2
             exit 1
           fi
