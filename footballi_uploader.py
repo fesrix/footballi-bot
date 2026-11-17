@@ -44,6 +44,7 @@ import media_utils
 SCOPES = [
     "https://www.googleapis.com/auth/youtube",
     "https://www.googleapis.com/auth/youtube.force-ssl",
+    "https://www.googleapis.com/auth/yt-analytics.readonly",
 ]
 
 MAX_MAIN_QUEUE_SIZE = 15
@@ -104,6 +105,7 @@ def load_state() -> dict:
         "processed_comments": [],
         "ignored_comments": [],
         "deleted_comments": [],
+        "analytics": {},
     }
     if os.path.exists(STATE_FILE):
         try:
@@ -842,3 +844,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
