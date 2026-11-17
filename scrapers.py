@@ -40,6 +40,22 @@ def extract_numeric_id(url: str) -> int:
     return int(m.group(1)) if m else 0
 
 
+def pick_highest_quality_mp4(mp4_list: list) -> str:
+    """انتخاب بالاترین کیفیت MP4 موجود در صفحه (ترجیح 1080p و 720p به جای 480p/360p)"""
+    if not mp4_list:
+        return ""
+    def quality_score(url: str) -> int:
+        u = url.lower()
+        if "1080" in u or "fhd" in u:
+            return 4
+        if "720" in u or "_hd" in u or "-hd" in u:
+            return 3
+        if "480" in u or "360" in u or "240" in u or "_sd" in u:
+            return 1
+        return 2
+    return sorted(mp4_list, key=quality_score, reverse=True)[0]
+
+
 def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0, max_site_id: int = 0) -> bool:
     if video_id > 0:
         if video_id < MIN_ABSOLUTE_VIDEO_ID:
@@ -70,16 +86,14 @@ def is_match_broadcast_footage(norm_title: str) -> bool:
         "خلاصه بازی", "خلاصه دیدار", "خلاصه مسابقه", "هایلایت بازی", "بازی کامل",
         "گل اول", "گل دوم", "گل سوم", "گل چهارم", "گل پنجم", "گل های بازی",
         "گلهای بازی", "گل های برتر", "گلهای برتر", "پاس گل های برتر", "پاس گلهای برتر",
-        "تمام گل های", "ضربات پنالتی بازی", "شبیه سازی گل",
+        "تمام گل های", "ضربات پنالتی بازی", "شبیه سازی گل", "سوپرگل", "دیدارهای لیگ",
     ]
     if any(normalize_persian(w).lower() in norm_title for w in match_words):
         return True
-    # تشخیص خودکار هر عنوانی به شکل «گل [نام بازیکن] به [نام تیم]»
     return bool(re.search(r"(?:^|\s)گل\s+\S+.*\s+به\s+\S+", norm_title))
 
 
 def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
-    """خط قرمز قطعی برای تصاویر خام مسابقات خارجی و آسیایی"""
     clean_title = re.sub(r"\|.*$", "", title).strip()
     norm_title = normalize_persian(clean_title).lower()
 
@@ -117,21 +131,25 @@ def is_strictly_domestic_short(title: str, desc: str = "") -> bool:
     return not is_foreign_or_blacklisted(title, desc)
 
 
-def ai_judge_videos(candidates: list) -> list:
+def ai_judge_videos(candidates: list, state: dict = None) -> list:
     """
-    قضاوت هوشمند و دسته‌جمعی توسط AI بر اساس سیاست‌های کپی‌رایت و Fair Use یوتیوب:
-    - تصاویر خام مسابقات خارجی/آسیایی همیشه رد می‌شوند (Content ID / Strike).
-    - ویدیوهای تحلیلی، خبری، آماری، انیمیشن/هوش مصنوعی و برنامه‌های تولیدی تیم فوتبالی
-      (حتی اگر موضوعشان فوتبال خارجی باشد) در صورتی که با قوانین یوتیوب سازگار باشند تایید می‌شوند.
+    قضاوت هوشمند کپی‌رایت + امتیازدهی پتانسیل بازدید یوتیوب (Viral/CTR Score 1..10)
+    ویدیوهای کم‌بازده و غیرجذاب (امتیاز زیر ۶) رد می‌شوند تا صف خلوت و پربازدید بماند.
     """
     if not candidates:
         return []
+
+    rejected_list = state.setdefault("rejected_urls", []) if state is not None else []
+    rejected_set = set(rejected_list)
 
     safe_candidates = []
     for c in candidates:
         norm_t = normalize_persian(c["title"]).lower()
         if is_match_broadcast_footage(norm_t) and is_foreign_or_blacklisted(c["title"]):
             print(f"🚫 [SKIP-FOREIGN-MATCH] Blocked copyrighted match broadcast footage: {c['title']}")
+            if state is not None and c["url"] not in rejected_set:
+                rejected_list.append(c["url"])
+                rejected_set.add(c["url"])
             continue
         safe_candidates.append(c)
 
@@ -141,26 +159,22 @@ def ai_judge_videos(candidates: list) -> list:
     arvan_key = os.environ.get("ARVAN_API_KEY", "").strip()
     gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
 
-    payload = [{"index": i, "title": c["title"]} for i, c in enumerate(safe_candidates)]
+    payload = [
+        {"index": i, "title": c["title"], "site_views": c.get("site_views", 0)}
+        for i, c in enumerate(safe_candidates)
+    ]
+
     prompt = f"""
-You are the Head of YouTube Copyright & Content Compliance for 'Footballi' (فوتبالی), an Iranian sports media channel.
-Evaluate each Persian video title carefully against YouTube's Copyright, Content ID, and Fair Use / Transformative Content policies.
+You are the Chief YouTube Growth Strategist & Copyright Officer for 'Footballi' (فوتبالی), an Iranian sports channel.
+Evaluate each video on TWO criteria:
+1. **YouTube Copyright Safety**:
+   - REJECT raw foreign/AFC TV match broadcast footage, highlights, goals, super-goals, tackles, saves, or video game clips (FC27, GTA).
+   - APPROVE domestic Iranian match highlights (لیگ برتر ایران, جام حذفی), Iranian player/coach interviews, Footballi shows (ویدیوکست, پُشتِ خَط, تُپُلیگ, فوتبال برتر, شب‌های فوتبالی, کارشناسی داوری), AND transformative Footballi-produced editorial/analysis videos about world football (newspaper reviews, comparisons, AI animations) with no raw TV broadcast footage.
+2. **YouTube Viral & View Potential (score 1 to 10)**:
+   - We ONLY want high-CTR, engaging videos that Iranian football fans actually click and watch on YouTube (e.g., match highlights of big Iranian clubs, hot controversies, Esteghlal/Persepolis/Tractor/Sepahan/Team Melli news, Videocast, Poshte Khat, Referee VAR debates, or high `site_views` on footballi.net).
+   - REJECT (`"approve": false` or `"score" < 6`) boring, low-interest filler videos (e.g., minor dry statements, unknown lower-tier quotes, or repetitive multi-part clips with low appeal) so the queue stays clean and focused on high-view winners.
 
-APPROVE (true) ALL of these:
-1. Domestic Iranian football match highlights, goals, assists, or weekly compilations (لیگ برتر ایران, لیگ آزادگان, جام حذفی, استقلال, پرسپولیس, سپاهان, تراکتور, فولاد, ملوان, etc.).
-2. ALL interviews, quotes, press conferences, and news about Iranian players, coaches, referees, club managers, veterans (پیشکسوتان), Iranian legionnaires abroad, or Iranian stadiums.
-3. All Footballi studio/talk shows (ویدیوکست, پُشتِ خَط, تُپُلیگ, فوتبال برتر, شب‌های فوتبالی, کارشناسی داوری).
-4. Transformative / Editorial content produced & edited by the Footballi team — EVEN IF it is about foreign/international football — as long as it does NOT rely on raw copyrighted TV match broadcasts and complies with YouTube policies. Examples to APPROVE:
-   - Newspaper reviews, editorial commentary, and news analysis (e.g., مرور تیترهای روزنامه‌های اروپایی).
-   - Historical trophy/stat comparisons, rankings, or car/lifestyle trivia (e.g., مقایسه افتخارات رسمی بارسلونا و رئال مادرید، گران‌ترین ماشین بازیکنان).
-   - Original AI-generated reconstructions, 3D/Lego animations, or original fan-reaction/off-pitch press clips.
-
-REJECT (false) ALL of these:
-1. Raw foreign TV match broadcast footage, highlights, goals, saves, assists, tackles, or skills compilations from protected leagues (La Liga, Serie A, Premier League, Bundesliga, Champions League, MLS, Saudi/Arab leagues, international matches like Spain vs England, Brazil vs Japan, Haiti vs USA). These trigger instant Content ID claims or copyright strikes.
-2. Any AFC Champions League, Asian Cup, or FIFA World Cup match broadcast footage (even involving Iranian teams, e.g., خلاصه بازی ایران و عراق, ایران و فلسطین).
-3. Pure third-party video game walkthroughs/tutorials with no Footballi editorial angle (e.g., آموزش ضربه ایستگاهی در FC27) unless it's a news/editorial feature.
-
-Return ONLY valid JSON mapping each index string ("0", "1", ...) to {{"approve": true/false, "reason": "short Persian or English reason"}}.
+Return ONLY valid JSON mapping each index ("0", "1", ...) to {{"approve": true/false, "score": 1-10, "reason": "short reason"}}.
 
 Videos:
 {json.dumps(payload, ensure_ascii=False, indent=2)}
@@ -181,7 +195,7 @@ Videos:
                 m = re.search(r"\{.*\}", txt, re.DOTALL)
                 if m:
                     decisions = json.loads(m.group(0))
-                    print(f"[AI-CURATOR] Evaluated {len(safe_candidates)} candidates via Free Gemini API.")
+                    print(f"[AI-CURATOR] Scored & filtered {len(safe_candidates)} candidates via Free Gemini API.")
         except Exception:
             pass
 
@@ -203,7 +217,7 @@ Videos:
                     m = re.search(r"\{.*\}", txt, re.DOTALL)
                     if m:
                         decisions = json.loads(m.group(0))
-                        print(f"[AI-CURATOR] Evaluated {len(safe_candidates)} candidates via {model_name}.")
+                        print(f"[AI-CURATOR] Scored & filtered {len(safe_candidates)} candidates via {model_name}.")
                         break
             except Exception:
                 continue
@@ -211,25 +225,32 @@ Videos:
     approved = []
     for i, c in enumerate(safe_candidates):
         dec = decisions.get(str(i))
+        is_ok = False
+        score = 6
+        reason = ""
+
         if isinstance(dec, dict):
-            is_ok = bool(dec.get("approve", False))
+            score = int(dec.get("score", 6))
+            is_ok = bool(dec.get("approve", False)) and score >= 6
             reason = dec.get("reason", "")
-            if is_ok:
-                print(f"✅ [AI-APPROVED] {c['title']} ({reason})")
-                approved.append(c)
-            else:
-                print(f"🚫 [AI-REJECTED] {c['title']} ({reason})")
         elif isinstance(dec, bool):
-            if dec:
-                print(f"✅ [AI-APPROVED] {c['title']}")
-                approved.append(c)
-            else:
-                print(f"🚫 [AI-REJECTED] {c['title']}")
+            is_ok = dec
         else:
-            if not is_foreign_or_blacklisted(c["title"], c.get("description", "")):
-                approved.append(c)
-            else:
-                print(f"🚫 [FALLBACK-SKIP] {c['title']}")
+            is_ok = not is_foreign_or_blacklisted(c["title"], c.get("description", ""))
+            reason = "fallback check"
+
+        if is_ok:
+            c["ai_score"] = score
+            print(f"✅ [AI-APPROVED | Score {score}/10 | Views {c.get('site_views', 0)}] {c['title']} ({reason})")
+            approved.append(c)
+        else:
+            print(f"🚫 [AI-REJECTED | Score {score}/10] {c['title']} ({reason})")
+            if state is not None and c["url"] not in rejected_set:
+                rejected_list.append(c["url"])
+                rejected_set.add(c["url"])
+
+    if state is not None and len(rejected_list) > 500:
+        state["rejected_urls"] = rejected_list[-500:]
 
     return approved
 
@@ -357,9 +378,19 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
 
     for tag in soup.find_all(["aside", "footer", "nav"]):
         tag.decompose()
-    main_text_sample = soup.get_text(" ", strip=True)[:600]
+    main_text_sample = soup.get_text(" ", strip=True)[:800]
     if is_video_too_old(title, main_text_sample, video_id=video_id, max_site_id=max_site_id):
         return None
+
+    # استخراج تعداد بازدید داخل سایت فوتبالی برای اولویت‌بندی ویدیوهای پربازدید
+    site_views = 0
+    norm_sample = normalize_persian(main_text_sample)
+    vm = re.search(r"(\d[\d,]*)\s*(?:بازدید|مشاهده|view)", norm_sample, re.IGNORECASE)
+    if vm:
+        try:
+            site_views = int(vm.group(1).replace(",", ""))
+        except Exception:
+            pass
 
     poster_url = ""
     og_img = soup.find("meta", property="og:image")
@@ -371,40 +402,32 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
     if og_desc and og_desc.get("content"):
         description = og_desc["content"].strip()
 
-    mp4_url = ""
+    # جمع‌آوری تمام لینک‌های MP4 موجود برای انتخاب بالاترین کیفیت HD
+    candidate_mp4s = []
     for meta_prop in ["og:video", "og:video:url", "og:video:secure_url", "twitter:player:stream"]:
         m_tag = soup.find("meta", property=meta_prop) or soup.find("meta", attrs={"name": meta_prop})
         if m_tag and m_tag.get("content") and ".mp4" in m_tag["content"]:
-            mp4_url = m_tag["content"].strip()
-            break
+            candidate_mp4s.append(m_tag["content"].strip())
 
-    if not mp4_url:
-        video_tag = soup.find("video")
-        if video_tag:
-            if video_tag.get("src") and ".mp4" in video_tag["src"]:
-                mp4_url = video_tag["src"].strip()
-            else:
-                src_tag = video_tag.find("source")
-                if src_tag and src_tag.get("src") and ".mp4" in src_tag["src"]:
-                    mp4_url = src_tag["src"].strip()
-            if not poster_url and video_tag.get("poster"):
-                poster_url = video_tag["poster"].strip()
+    video_tag = soup.find("video")
+    if video_tag:
+        if video_tag.get("src") and ".mp4" in video_tag["src"]:
+            candidate_mp4s.append(video_tag["src"].strip())
+        for src_tag in video_tag.find_all("source"):
+            if src_tag.get("src") and ".mp4" in src_tag["src"]:
+                candidate_mp4s.append(src_tag["src"].strip())
+        if not poster_url and video_tag.get("poster"):
+            poster_url = video_tag["poster"].strip()
 
-    if not mp4_url:
-        idx = html.find(str(video_id))
-        while idx != -1:
-            window = html[max(0, idx - 1500) : min(len(html), idx + 2500)]
-            mp4_matches = re.findall(r"https?://[^\s\"\'<>\\]+\.mp4", window)
-            if mp4_matches:
-                mp4_url = mp4_matches[0]
-                break
-            idx = html.find(str(video_id), idx + len(str(video_id)))
+    idx = html.find(str(video_id))
+    if idx != -1:
+        window = html[max(0, idx - 1500) : min(len(html), idx + 2500)]
+        candidate_mp4s.extend(re.findall(r"https?://[^\s\"\'<>\\]+\.mp4", window))
 
-    if not mp4_url:
-        all_mp4s = re.findall(r"https?://[^\s\"\'<>\\]+\.mp4", html)
-        if all_mp4s:
-            mp4_url = all_mp4s[0]
+    if not candidate_mp4s:
+        candidate_mp4s.extend(re.findall(r"https?://[^\s\"\'<>\\]+\.mp4", html))
 
+    mp4_url = pick_highest_quality_mp4(list(dict.fromkeys(candidate_mp4s)))
     if not mp4_url or not title:
         return None
 
@@ -415,17 +438,19 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
         "description": description or title,
         "mp4_url": mp4_url,
         "poster_url": poster_url,
+        "site_views": site_views,
     }
 
 
 def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
     uploaded_urls = set(state.get("uploaded_urls", []))
+    rejected_urls = set(state.get("rejected_urls", []))
     seen_mp4s = set(state.get("seen_mp4s", []))
     queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
     queued_mp4s = {item.get("mp4_url") for item in state.get("pending_queue", []) if item.get("mp4_url")}
 
     known_ids = set()
-    for u in uploaded_urls | queued_urls:
+    for u in uploaded_urls | queued_urls | rejected_urls:
         vid_id = extract_numeric_id(u)
         if vid_id:
             known_ids.add(vid_id)
@@ -465,13 +490,14 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
 
     print(
         f"[CRAWLER] Latest site video ID: {max_site_id} | "
-        f"Found {len(candidate_links)} fresh (<48h) candidate video pages to inspect."
+        f"Found {len(candidate_links)} fresh (<48h) uninspected video pages."
     )
 
     raw_extracted = []
     for link in candidate_links[: max_new_candidates * 2]:
         details = extract_video_page_details(link, max_site_id=max_site_id, session=session)
         if not details:
+            state.setdefault("rejected_urls", []).append(link)
             continue
 
         if details["mp4_url"] in seen_mp4s or details["mp4_url"] in queued_mp4s:
@@ -484,24 +510,24 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "description": details["description"],
             "mp4_url": details["mp4_url"],
             "poster_url": details["poster_url"],
+            "site_views": details["site_views"],
             "source": "footballi_web",
             "is_short": False,
         })
 
-    verified = ai_judge_videos(raw_extracted)
+    verified = ai_judge_videos(raw_extracted, state=state)
     results = []
     for item in verified[:max_new_candidates]:
         seen_mp4s.add(item["mp4_url"])
         results.append(item)
 
-    print(f"[CRAWLER] AI Curator approved {len(results)} brand-new (<48h) YouTube-safe videos!")
+    print(f"[CRAWLER] AI Curator approved {len(results)} high-potential (<48h) videos!")
     return results
 
 
 def fetch_instagram_reels(state: dict) -> list:
     apify_token = os.environ.get("APIFY_TOKEN", "").strip()
     if not apify_token:
-        print("[APIFY] APIFY_TOKEN not set; skipping Instagram Reels check.")
         return []
 
     last_check = float(state.get("last_apify_check", 0))
@@ -523,6 +549,7 @@ def fetch_instagram_reels(state: dict) -> list:
         state["last_apify_check"] = time.time()
 
         uploaded_urls = set(state.get("uploaded_urls", []))
+        rejected_urls = set(state.get("rejected_urls", []))
         seen_mp4s = set(state.get("seen_mp4s", []))
         queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
 
@@ -531,7 +558,13 @@ def fetch_instagram_reels(state: dict) -> list:
             reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
             video_url = item.get("videoUrl")
             caption = (item.get("caption") or "").strip()
-            if not video_url or reel_url in uploaded_urls or reel_url in queued_urls or video_url in seen_mp4s:
+            if (
+                not video_url
+                or reel_url in uploaded_urls
+                or reel_url in rejected_urls
+                or reel_url in queued_urls
+                or video_url in seen_mp4s
+            ):
                 continue
 
             clean_lines = [
@@ -548,12 +581,13 @@ def fetch_instagram_reels(state: dict) -> list:
                 "description": caption,
                 "mp4_url": video_url,
                 "poster_url": item.get("displayUrl", ""),
+                "site_views": int(item.get("videoPlayCount") or item.get("likesCount") or 0),
                 "source": "instagram",
                 "is_short": True,
             })
 
-        verified_reels = ai_judge_videos(raw_reels)
-        print(f"[APIFY] AI Curator approved {len(verified_reels)} fresh YouTube-safe HD Reels from Instagram!")
+        verified_reels = ai_judge_videos(raw_reels, state=state)
+        print(f"[APIFY] AI Curator approved {len(verified_reels)} high-potential HD Reels from Instagram!")
         return verified_reels
     except Exception as e:
         print(f"[APIFY-WARN] Instagram check skipped: {e}")
