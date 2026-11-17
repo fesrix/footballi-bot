@@ -112,6 +112,8 @@ def _merge_rows(state: dict, rows: list[dict], start_date: str, end_date: str) -
             for key in METRICS.split(",")
         }
         item = videos.setdefault(video_id, {"snapshots": []})
+        item.setdefault("video_id", video_id)
+        item.setdefault("source", "youtube")
         item["last_synced_at"] = synced_at
         item["period_start"] = start_date
         item["period_end"] = end_date
@@ -144,12 +146,42 @@ def sync_analytics(state: dict | None = None) -> int:
     analytics = build("youtubeAnalytics", "v2", credentials=credentials, cache_discovery=False)
     rows = _query_video_rows(analytics, start_date, end_date)
     updated = _merge_rows(state, rows, start_date, end_date)
+    _enrich_video_metadata(state, credentials, [str(row.get("video")) for row in rows if row.get("video")])
     save_state(state)
     print(
         f"[ANALYTICS] Synced {updated} video rows "
         f"({start_date} → {end_date}); tracked videos: {state['analytics']['video_count']}"
     )
     return updated
+
+
+def _enrich_video_metadata(state: dict, credentials: Credentials, video_ids: list[str]) -> None:
+    """Attach current YouTube title/category/date and recent statistics."""
+    if not video_ids:
+        return
+    from footballi_uploader import detect_primary_category
+
+    youtube = build("youtube", "v3", credentials=credentials, cache_discovery=False)
+    videos = state.setdefault("analytics", {}).setdefault("videos", {})
+    for offset in range(0, len(video_ids), 50):
+        chunk = [x for x in video_ids[offset:offset + 50] if x]
+        response = youtube.videos().list(
+            part="snippet,statistics", id=",".join(chunk), maxResults=50
+        ).execute()
+        for entry in response.get("items", []):
+            video_id = entry["id"]
+            snippet = entry.get("snippet", {})
+            statistics = entry.get("statistics", {})
+            record = videos.setdefault(video_id, {"snapshots": []})
+            title = snippet.get("title", "")
+            record["video_id"] = video_id
+            record["title"] = title
+            record["category"] = detect_primary_category(title)
+            record["published_at"] = snippet.get("publishedAt")
+            record["recent_statistics"] = {
+                key: _as_number(statistics.get(key, 0))
+                for key in ("viewCount", "likeCount", "commentCount")
+            }
 
 
 def main() -> int:
@@ -159,8 +191,10 @@ def main() -> int:
         print(f"[ANALYTICS-SKIP] {exc}")
     except HttpError as exc:
         print(f"[ANALYTICS-WARN] YouTube Analytics API request failed: {exc}")
+        return 1
     except Exception as exc:
         print(f"[ANALYTICS-WARN] Analytics sync failed: {exc}")
+        return 1
     return 0
 
 
