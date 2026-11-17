@@ -411,7 +411,8 @@
     "https://footballi.net/video/1075324/%D8%AD%D8%B6%D9%88%D8%B1-%D8%BA%D9%84%D8%A7%D9%85%D8%B1%D8%B6%D8%A7-%D9%81%D8%B1%D8%AE%DB%8C-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86-%DA%A9%D8%B4%D8%AA%DB%8C-%D8%AF%D8%B1-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D9%81%D8%AC%D8%B1-%D8%B3%D9%BE%D8%A7%D8%B3%DB%8C",
     "https://footballi.net/video/1075321/%D8%A2%D9%86%D8%A7%D9%84%DB%8C%D8%B2-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%AF%D8%B1-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D8%A7-%D8%AD%D8%B6%D9%88%D8%B1-%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D9%88-%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86",
     "https://footballi.net/video/1075309/%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DA%86%D9%87-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%87%D8%A7%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
-    "https://footballi.net/video/1075302/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%DB%8C%DA%A9-%D9%85%D8%B1%D8%A8%DB%8C-%D8%A8%D9%87-%DA%A9%D8%A7%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF"
+    "https://footballi.net/video/1075302/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%DB%8C%DA%A9-%D9%85%D8%B1%D8%A8%DB%8C-%D8%A8%D9%87-%DA%A9%D8%A7%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF",
+    "https://footballi.net/video/1075299/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AA%D8%A7-%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%D8%AF%D8%A7%D8%AF"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -571,7 +572,8 @@
     "حضور غلامرضا فرخی قهرمان کشتی در تمرینات فجر سپاسی | فوتبال ایران",
     "آنالیز عملکرد تیم ملی در دیدار با فلسطین با حضور کاظمی و مسلمان | فوتبال ایران",
     "تاریخچه دیدار‌های تیم ملی ایران با عراق | فوتبال ایران",
-    "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود | فوتبال ایران"
+    "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود | فوتبال ایران",
+    "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -608,17 +610,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 1075299,
-      "url": "https://footballi.net/video/1075299/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AA%D8%A7-%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%D8%AF%D8%A7%D8%AF",
-      "title": "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد",
-      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | 17064,31974,51487,53309,54118",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f6c12de0-118f-493f-aa44-2a853fe8ed01.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/5OIzlvzttR6L5Wzr6SoevLV9ATGevp6MYOkFXsTi.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
     {
       "video_id": 1075295,
       "url": "https://footballi.net/video/1075295/%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%DB%8C%D8%A7-%D8%B3%DA%A9%D9%88%DB%8C-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AF-%D8%AA%D9%88%D8%B6%DB%8C%D8%AD-%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C",
@@ -1213,13 +1204,14 @@
     "https://vod.liveboks.com/foot/upload/videos/2026/11/16/tus-130d2d22-29fa-41ba-beb1-b734aa72442c.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b5448f4a-f7bc-48c9-ace5-e2a8f5cc7c85.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-5398f225-dba9-42f5-a154-68299e14b90a.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-378b338a-6585-4952-8b79-7b6a29b31691.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-378b338a-6585-4952-8b79-7b6a29b31691.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f6c12de0-118f-493f-aa44-2a853fe8ed01.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 21
+    "count": 22
   },
-  "last_upload_timestamp": 1794889928.448429,
+  "last_upload_timestamp": 1794893515.4574602,
   "last_apify_check": 1794884575.4152408,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1695,6 +1687,10 @@
     "cY91jitiefk": [
       "INTERVIEW",
       "PERSEPOLIS"
+    ],
+    "AxVGoleCjpk": [
+      "INTERVIEW",
+      "ESTEGHLAL"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1707,7 +1703,7 @@
     "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
     "UgwnFn0zjTK0i1dfQwd4AaABAg"
   ],
-  "max_seen_video_id": 1075325,
+  "max_seen_video_id": 1075326,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF",
@@ -1723,6 +1719,7 @@
     "حضور غلامرضا فرخی قهرمان کشتی در تمرینات فجر سپاسی",
     "آنالیز عملکرد تیم ملی در دیدار با فلسطین با حضور کاظمی و مسلمان",
     "تاریخچه دیدار‌های تیم ملی ایران با عراق",
-    "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود"
+    "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود",
+    "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد"
   ]
 }
