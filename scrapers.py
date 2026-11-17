@@ -645,6 +645,12 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "poster_url": details["poster_url"],
             "site_views": details["site_views"],
             "source": "footballi_web",
+            "source_url": details["url"],
+            "source_published_at": details["published_at"],
+            "rights_status": "internal_authorized",
+            "content_type": "footballi_web_video",
+            "discovery_timestamp": time.time(),
+            "attempt_count": 1,
             "is_short": False,
         })
 
@@ -739,6 +745,12 @@ def fetch_instagram_reels(state: dict) -> list:
                 "poster_url": item.get("displayUrl", ""),
                 "site_views": int(item.get("videoPlayCount") or item.get("likesCount") or 0),
                 "source": "instagram",
+                "source_url": reel_url,
+                "source_published_at": published_at,
+                "rights_status": "internal_authorized",
+                "content_type": "instagram_reel",
+                "discovery_timestamp": time.time(),
+                "attempt_count": 1,
                 "is_short": True,
             })
 
