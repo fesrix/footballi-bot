@@ -679,7 +679,7 @@ def fetch_instagram_reels(state: dict) -> list:
         }
         print("[APIFY] Fetching latest HD Reels from @footballiapp Instagram...")
         actor = client.actor("apify/instagram-reel-scraper")
-        call_kwargs = {"run_input": run_input, "timeout_secs": 90}
+        call_kwargs = {"run_input": run_input}
         # apify-client renamed the server-side wait argument across releases.
         # Keep the workflow compatible with both the legacy and current SDKs.
         try:
@@ -692,6 +692,10 @@ def fetch_instagram_reels(state: dict) -> list:
             call_kwargs["wait_duration"] = timedelta(seconds=90)
         elif "wait_for_finish" in call_parameters:
             call_kwargs["wait_for_finish"] = 90
+        if "timeout_secs" in call_parameters:
+            call_kwargs["timeout_secs"] = 90
+        elif "run_timeout" in call_parameters:
+            call_kwargs["run_timeout"] = timedelta(seconds=90)
         run = actor.call(**call_kwargs)
         state["last_apify_check"] = time.time()
 
