@@ -23,6 +23,9 @@ from config import (
     RESERVED_SUMMARY_SLOTS,
     MAX_UPLOADS_PER_RUN,
     MIN_MINUTES_BETWEEN_UPLOADS,
+    MIN_MINUTES_BETWEEN_SHORTS,
+    MAIN_UPLOAD_WINDOWS,
+    SHORT_UPLOAD_WINDOWS,
     STATE_FILE,
     SUMMARY_KEYWORDS,
     VIDEOCAST_KEYWORDS,
@@ -76,6 +79,12 @@ def get_quota_reset_key() -> str:
     return datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%Y-%m-%d")
 
 
+def is_in_upload_window(category: str, tehran_now) -> bool:
+    minute = tehran_now.hour * 60 + tehran_now.minute
+    windows = SHORT_UPLOAD_WINDOWS if category == "SHORTS" else MAIN_UPLOAD_WINDOWS
+    return any(start <= minute < end for start, end in windows)
+
+
 def is_duplicate_title(candidate_title: str, existing_norm_titles: set) -> bool:
     clean = re.sub(r"\|.*$", "", candidate_title).replace("#Shorts", "").replace("#shorts", "").strip()
     norm_cand = normalize_persian(clean).lower()
@@ -105,6 +114,7 @@ def load_state() -> dict:
         "pending_queue": [],
         "daily_uploads": {"date": "", "count": 0},
         "last_upload_timestamp": 0,
+        "last_short_upload_timestamp": 0,
         "upload_limit_cooldown_until": 0,
         "quota_exhausted_date": "",
         "max_seen_video_id": MIN_ABSOLUTE_VIDEO_ID,
@@ -706,10 +716,7 @@ def main():
         print(f"🛡️ [QUOTA-SHIELD] Channel 24h upload cap active. Pausing upload attempts for {rem_min:.0f}m to preserve API quota.")
         return
 
-    # قفل ساعات طلایی ایران (۰۸:۳۰ صبح تا ۰۰:۳۰ بامداد به وقت تهران)
     tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
-    tehran_mins = tehran_now.hour * 60 + tehran_now.minute
-    is_iran_sleep_hours = 30 <= tehran_mins < (8 * 60 + 30)
 
     video_file = "temp_video.mp4"
     thumb_file = "temp_thumb.jpg"
@@ -724,9 +731,9 @@ def main():
             state["pending_queue"].pop(0)
             continue
 
-        cat_check = top.get("category", "VIDEO")
-        if is_iran_sleep_hours:
-            print(f"🌙 [PEAK-HOURS] Iran night hours ({tehran_now.strftime('%H:%M')}). Waiting for 08:30 AM Tehran peak window.")
+        cat_check = "SHORTS" if top.get("is_short") else top.get("category", "VIDEO")
+        if not is_in_upload_window(cat_check, tehran_now):
+            print(f"🌙 [TIMING] Outside the {cat_check} Tehran publish window ({tehran_now.strftime('%H:%M')}); waiting for the next audience window.")
             save_state(state)
             return
 
@@ -740,10 +747,12 @@ def main():
             save_state(state)
             return
 
-        mins_since_last = (time.time() - float(state.get("last_upload_timestamp", 0))) / 60.0
-        if mins_since_last < MIN_MINUTES_BETWEEN_UPLOADS:
-            wait_rem = MIN_MINUTES_BETWEEN_UPLOADS - mins_since_last
-            print(f"⏳ [PACING] Waiting {wait_rem:.1f}m (2.5h spacing) before next upload to maximize views.")
+        last_upload_key = "last_short_upload_timestamp" if top.get("is_short") else "last_upload_timestamp"
+        min_spacing = MIN_MINUTES_BETWEEN_SHORTS if top.get("is_short") else MIN_MINUTES_BETWEEN_UPLOADS
+        mins_since_last = (time.time() - float(state.get(last_upload_key, 0))) / 60.0
+        if mins_since_last < min_spacing:
+            wait_rem = min_spacing - mins_since_last
+            print(f"⏳ [PACING] Waiting {wait_rem:.1f}m before the next {cat_check} upload window.")
             save_state(state)
             return
 
@@ -877,6 +886,8 @@ def main():
         }
         state["daily_uploads"]["count"] = uploads_today + 1
         state["last_upload_timestamp"] = time.time()
+        if is_short:
+            state["last_short_upload_timestamp"] = state["last_upload_timestamp"]
         state["upload_limit_cooldown_until"] = 0
         save_state(state)
 
