@@ -4,6 +4,6 @@ Pillow==11.1.0
 google-api-python-client==2.166.0
 google-auth-oauthlib==1.2.1
 google-auth-httplib2==0.2.0
-apify-client==1.9.2
+apify-client==3.5.1
 playwright==1.51.0
 
