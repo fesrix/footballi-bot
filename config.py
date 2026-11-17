@@ -12,7 +12,7 @@ RESERVED_SUMMARY_SLOTS = 3
 RESERVED_FOR_SUMMARIES = 3
 MAX_UPLOADS_PER_RUN = 1
 MIN_MINUTES_BETWEEN_UPLOADS = 150  # فاصله ۲.۵ ساعته بین ویدیوهای عادی
-APIFY_COOLDOWN_HOURS = 8.0
+APIFY_COOLDOWN_HOURS = 0.0
 INSTAGRAM_COOLDOWN_HOURS = 8.0
 
 HEADERS = {
@@ -223,3 +223,4 @@ def __getattr__(name: str):
     if name in defaults:
         return defaults[name]
     return ""
+
