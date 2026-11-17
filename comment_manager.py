@@ -490,6 +490,8 @@ def main():
                     deleted_ids.add(cid)
                     deleted_count += 1
                     print(f"🗑️ [MODERATOR] Removed comment ({cid}).")
+                else:
+                    retry_count += 1
 
             elif action == "REPLY" and reason in REPLYABLE_REASONS and reply_text:
                 if replied_count < MAX_REPLIES_PER_RUN:
@@ -499,6 +501,8 @@ def main():
                         replied_count += 1
                         print(f"💬 [REPLIED] Sent: '{reply_text}'")
                         time.sleep(1.5)
+                    else:
+                        retry_count += 1
                 else:
                     retry_count += 1
 
