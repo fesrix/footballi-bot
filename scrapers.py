@@ -713,8 +713,16 @@ def fetch_instagram_reels(state: dict) -> list:
         seen_mp4s = set(state.get("seen_mp4s", []))
         queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
 
+        dataset_id = None
+        if isinstance(run, dict):
+            dataset_id = run.get("defaultDatasetId") or run.get("default_dataset_id")
+        else:
+            dataset_id = getattr(run, "default_dataset_id", None) or getattr(run, "defaultDatasetId", None)
+        if not dataset_id:
+            raise RuntimeError("Apify run completed without a default dataset ID")
+
         raw_reels = []
-        for item in client.dataset(run["defaultDatasetId"]).iterate_items():
+        for item in client.dataset(dataset_id).iterate_items():
             reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
             published_at = parse_published_timestamp(item.get("timestamp"))
             if is_video_too_old("", published_at=published_at):
