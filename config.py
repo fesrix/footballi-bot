@@ -12,6 +12,12 @@ RESERVED_SUMMARY_SLOTS = 3
 RESERVED_FOR_SUMMARIES = 3
 MAX_UPLOADS_PER_RUN = 1
 MIN_MINUTES_BETWEEN_UPLOADS = 150  # فاصله ۲.۵ ساعته بین ویدیوهای عادی
+MIN_MINUTES_BETWEEN_SHORTS = 90
+# Windows are Tehran local time (minutes from midnight). The scheduler keeps
+# long-form uploads away from overnight low-attention hours while allowing
+# Shorts to use a separate midday/evening cadence.
+MAIN_UPLOAD_WINDOWS = [(9 * 60 + 30, 12 * 60 + 30), (16 * 60, 24 * 60)]
+SHORT_UPLOAD_WINDOWS = [(11 * 60 + 30, 14 * 60 + 30), (18 * 60, 23 * 60 + 30)]
 APIFY_COOLDOWN_HOURS = 8.0
 INSTAGRAM_COOLDOWN_HOURS = 8.0
 
@@ -223,3 +229,4 @@ def __getattr__(name: str):
     if name in defaults:
         return defaults[name]
     return ""
+
