@@ -615,6 +615,36 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 1075363,
+      "published_at": null,
+      "discovered_at": 1794911477.8491018,
+      "url": "https://footballi.net/video/1075363/%D8%B1%D9%88%D9%86%D9%85%D8%A7%DB%8C%DB%8C-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%A7%D8%B2-%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%A8%D8%B1%D8%AE%D9%88%D8%B1%D8%AF-%D8%A8%D8%A7-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%AA%DB%8C%D9%85%D9%87%D8%A7-%D9%88-%D8%B4%D8%B9%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%86%DA%98%D8%A7%D8%AF%D9%BE%D8%B1%D8%B3%D8%AA%D8%A7%D9%86%D9%87",
+      "title": "رونمایی مهدی تاج از قوانین جدید برای برخورد با نیمکت تیمها و شعارهای نژادپرستانه",
+      "description": "مهدی تاج: در نیم فصل دوم هیچ شخصی جز سرمربی حق ندارد از روی نیمکت بلند شود. از نیم فصل دوم هر اخراج، جریمه خواهد داشت",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/17/tus-9132647c-0bd5-426a-9b4a-a51eebef1775.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/HWBa5xusPBPeR8gsK2FcTmIGmEYiPKZKGZwM6sRt.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1074764,
+      "published_at": null,
+      "discovered_at": 1794911479.1754186,
+      "url": "https://footballi.net/video/1074764/%D8%AA%D9%86%DB%8C%D8%B3-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%DB%8C%D9%86-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D9%88-%D9%85%DB%8C%D8%AB%D8%A7%D9%82%DB%8C",
+      "title": "تنیس فوتبال بین سهراب بختیاری‌زاده و میثاقی",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | استقلال,سهراب بختیاری‌زاده,محمدحسین میثاقی,فوتبال برتر",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-032d775d-170d-4fb3-9166-796a91a1a168.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/2026/11/14/17946659052291.jpeg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1075279,
       "url": "https://footballi.net/video/1075279/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D9%85%D8%B4%DA%A9%D9%84-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%A8%DB%8C%D9%86-%D8%A8%D8%B2%D8%B1%DA%AF%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D8%AD%D9%84-%D9%85%DB%8C%D8%B4%D8%AF",
       "title": "مسلمان: مشکل محمودی در پرسپولیس باید بین بزرگان تیم حل میشد",
@@ -1645,7 +1675,7 @@
     "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
     "UgwnFn0zjTK0i1dfQwd4AaABAg"
   ],
-  "max_seen_video_id": 1075354,
+  "max_seen_video_id": 1075365,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF",
@@ -1692,7 +1722,8 @@
     "https://footballi.net/video/1075344/%DA%AF%D9%84%D8%B2%D9%86%DB%8C-%D8%A8%D8%A7%D9%84%D8%AF%D9%87-%D8%A8%D8%A7-%D8%AA%DB%8C%DA%A9%DB%8C-%D8%AA%D8%A7%DA%A9%D8%A7-%D8%AF%D8%B1-%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B1%D8%B3%D9%84%D9%88%D9%86%D8%A7",
     "https://footballi.net/video/1075207/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%B1%D8%A8%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%A7%D9%86%D9%88%D8%A7%D9%86-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D9%BE%D8%B3-%D8%A7%D8%B2-%D9%BE%DB%8C%D8%B1%D9%88%D8%B2%DB%8C-%DB%B2-%D8%A8%D8%B1-%D8%B5%D9%81%D8%B1-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%85%D9%84%D9%88%D8%A7%D9%86",
     "https://footballi.net/video/1075354/%DA%AF%D9%84-%D8%AF%D9%88%D9%85-%D9%86%D9%88%D8%AC%D9%88%D8%A7%D9%86%D8%A7%D9%86-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%A7%D8%B1%D8%AF%D9%86-%D8%A7%D9%85%DB%8C%D8%B1%D9%85%D8%AD%D9%85%D8%AF-%D8%B2%D8%A7%D8%B1%D8%B9%DB%8C",
-    "https://footballi.net/video/1075351/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%86%D9%88%D8%AC%D9%88%D8%A7%D9%86%D8%A7%D9%86-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%A7%D8%B1%D8%AF%D9%86-%D8%B9%D9%84%DB%8C-%D8%A7%D8%B5%D8%BA%D8%B1-%D9%86%D8%A7%D8%AF%D8%B1%DB%8C"
+    "https://footballi.net/video/1075351/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%86%D9%88%D8%AC%D9%88%D8%A7%D9%86%D8%A7%D9%86-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%A7%D8%B1%D8%AF%D9%86-%D8%B9%D9%84%DB%8C-%D8%A7%D8%B5%D8%BA%D8%B1-%D9%86%D8%A7%D8%AF%D8%B1%DB%8C",
+    "https://footballi.net/video/1075365/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%A8%D8%B1%D8%B2%DB%8C%D9%84-%D8%A8%D9%87-%D8%B3%D9%86%DA%AF%D8%A7%D9%BE%D9%88%D8%B1-%D9%88%DB%8C%D9%86%DB%8C%D8%B3%DB%8C%D9%88%D8%B3-%D8%AC%D9%88%D9%86%DB%8C%D9%88%D8%B1"
   ],
   "seen_raw_titles": [
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر",
