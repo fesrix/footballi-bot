@@ -16,5 +16,5 @@
 ## Last run
 
 - New web candidates: 0
-- New Instagram candidates: 2
+- New Instagram candidates: 0
 - Rejections: {}
