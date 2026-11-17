@@ -4,7 +4,8 @@ import re
 import json
 import time
 import shutil
-from datetime import datetime, timezone
+import inspect
+from datetime import datetime, timezone, timedelta
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -677,7 +678,21 @@ def fetch_instagram_reels(state: dict) -> list:
             "resultsLimit": 6,
         }
         print("[APIFY] Fetching latest HD Reels from @footballiapp Instagram...")
-        run = client.actor("apify/instagram-reel-scraper").call(run_input=run_input, wait_secs=90, timeout_secs=90)
+        actor = client.actor("apify/instagram-reel-scraper")
+        call_kwargs = {"run_input": run_input, "timeout_secs": 90}
+        # apify-client renamed the server-side wait argument across releases.
+        # Keep the workflow compatible with both the legacy and current SDKs.
+        try:
+            call_parameters = inspect.signature(actor.call).parameters
+        except (TypeError, ValueError):
+            call_parameters = {}
+        if "wait_secs" in call_parameters:
+            call_kwargs["wait_secs"] = 90
+        elif "wait_duration" in call_parameters:
+            call_kwargs["wait_duration"] = timedelta(seconds=90)
+        elif "wait_for_finish" in call_parameters:
+            call_kwargs["wait_for_finish"] = 90
+        run = actor.call(**call_kwargs)
         state["last_apify_check"] = time.time()
 
         uploaded_urls = set(state.get("uploaded_urls", []))
@@ -729,3 +744,4 @@ def fetch_instagram_reels(state: dict) -> list:
     except Exception as e:
         print(f"[APIFY-WARN] Instagram check skipped: {e}")
         return []
+
