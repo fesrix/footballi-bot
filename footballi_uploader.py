@@ -10,6 +10,7 @@ import math
 from zoneinfo import ZoneInfo
 from difflib import SequenceMatcher
 from datetime import datetime, timezone, timedelta
+from urllib.parse import urlsplit
 
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
@@ -40,6 +41,14 @@ from scrapers import (
 )
 import ai_seo
 import media_utils
+
+
+def is_trusted_source_url(value: str) -> bool:
+    try:
+        host = (urlsplit(str(value).strip()).hostname or "").lower().rstrip(".")
+    except ValueError:
+        return False
+    return host in {"footballi.net", "www.footballi.net", "instagram.com", "www.instagram.com"}
 
 SCOPES = [
     "https://www.googleapis.com/auth/youtube",
@@ -106,6 +115,7 @@ def load_state() -> dict:
         "ignored_comments": [],
         "deleted_comments": [],
         "analytics": {},
+        "rights_migration_version": 0,
     }
     if os.path.exists(STATE_FILE):
         try:
@@ -118,6 +128,16 @@ def load_state() -> dict:
                     data[k] = v
                 elif isinstance(v, (list, dict)) and not isinstance(data[k], type(v)):
                     raise ValueError(f"Invalid state type for {k}")
+            if int(data.get("rights_migration_version", 0) or 0) < 1:
+                for item in data.get("pending_queue", []):
+                    if isinstance(item, dict) and not item.get("rights_status"):
+                        source_url = item.get("source_url") or item.get("url") or ""
+                        trusted = is_trusted_source_url(source_url)
+                        item["rights_status"] = "internal_authorized" if trusted else "quarantine"
+                        if trusted:
+                            item.setdefault("source_url", item.get("url", ""))
+                            item.setdefault("content_type", "short" if item.get("is_short") else "video")
+                data["rights_migration_version"] = 1
             return data
         except Exception as e:
             # Never replace damaged upload history with an empty successful state.
@@ -412,6 +432,13 @@ def normalize_queue_item(item: dict) -> dict:
     item["ai_score"] = safe_int(item.get("ai_score"), 6)
     item["site_views"] = safe_int(item.get("site_views"), 0)
     item["category"] = detect_primary_category(title, "", is_short=is_short)
+    item.setdefault("source", "unknown")
+    item.setdefault("source_url", u)
+    item.setdefault("source_published_at", item.get("published_at"))
+    item.setdefault("rights_status", "")
+    item.setdefault("content_type", "short" if is_short else "video")
+    item.setdefault("discovery_timestamp", time.time())
+    item["attempt_count"] = safe_int(item.get("attempt_count"), 0) + 1
     return item
 
 
@@ -436,6 +463,12 @@ def deduplicate_and_balance_queue(
     q_mp4s = set()
     q_titles = set()
     purged = 0
+    rejection_counts = {}
+
+    def reject(reason: str):
+        nonlocal purged
+        purged += 1
+        rejection_counts[reason] = rejection_counts.get(reason, 0) + 1
 
     all_q_ids = [extract_numeric_id(it.get("url", "")) for it in queue if isinstance(it, dict)]
     highest_id = max([max_site_id, MIN_ABSOLUTE_VIDEO_ID] + all_q_ids)
@@ -449,11 +482,14 @@ def deduplicate_and_balance_queue(
 
         if not u or not mp4 or not t:
             continue
+        if item.get("rights_status") != "internal_authorized":
+            reject("rights_status")
+            continue
         if is_video_too_old(item.get("title", ""), published_at=item.get("published_at")):
-            purged += 1
+            reject("too_old")
             continue
         if item.get("source") == "telegram_shorts" or "t.me/" in u:
-            purged += 1
+            reject("unsupported_source")
             continue
         if u in uploaded_urls or u in rejected_urls or u in q_urls or mp4 in seen_mp4s or mp4 in q_mp4s:
             continue
@@ -462,14 +498,14 @@ def deduplicate_and_balance_queue(
 
         if item.get("is_short"):
             if not is_strictly_domestic_short(item.get("title", ""), item.get("description", "")):
-                purged += 1
+                reject("foreign_or_blacklisted_short")
                 continue
         else:
             if is_video_too_old(item.get("title", ""), "", video_id=vid_id, max_site_id=highest_id):
-                purged += 1
+                reject("old_video_id")
                 continue
             if is_foreign_or_blacklisted(item.get("title", ""), item.get("description", "")):
-                purged += 1
+                reject("foreign_or_blacklisted")
                 continue
 
         q_urls.add(u)
@@ -483,12 +519,29 @@ def deduplicate_and_balance_queue(
 
     if purged > 0:
         print(f"🧹 [QUEUE-PURGE] Removed {purged} old, foreign, or duplicate items from queue.")
+    state_rejection_counts = globals().get("_QUEUE_REJECTION_COUNTS")
+    if isinstance(state_rejection_counts, dict):
+        state_rejection_counts.clear()
+        state_rejection_counts.update(rejection_counts)
 
     # مرتب‌سازی بر اساس اولویت دسته ← امتیاز پتانسیل بازدید هوش مصنوعی ← بازدید سایت ← جدیدترین ویدیو
     priority_order = {"SUMMARY": 0, "VIDEOCAST": 1, "POSHTE_KHAT": 2, "VIDEO": 3}
+    def historical_score(item):
+        # Analytics is optional. Keep the existing ordering when it is absent.
+        analytics = globals().get("_ACTIVE_ANALYTICS", {}) or {}
+        category = item.get("category", "VIDEO")
+        records = [v.get("metrics", {}) for v in analytics.get("videos", {}).values()
+                   if v.get("category") == category]
+        if len(records) < 3:
+            return 0.0
+        avg_watch = sum(float(r.get("estimatedMinutesWatched", 0)) for r in records) / len(records)
+        avg_subs = sum(float(r.get("subscribersGained", 0)) for r in records) / len(records)
+        return min(10.0, avg_watch / 30.0 + avg_subs * 2.0)
+
     main_items.sort(
         key=lambda x: (
             priority_order.get(x.get("category", "VIDEO"), 3),
+            -historical_score(x),
             -int(x.get("ai_score", 6)),
             -int(x.get("site_views", 0)),
             -int(x.get("video_id", 0)),
@@ -570,6 +623,9 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 def main():
     print("[START] Footballi Bot starting (Peak-Hours + 8/Day Viral Quality + 720p+ HD Edition)...")
     state = load_state()
+    global _ACTIVE_ANALYTICS, _QUEUE_REJECTION_COUNTS
+    _ACTIVE_ANALYTICS = state.get("analytics", {})
+    _QUEUE_REJECTION_COUNTS = {}
     reset_key = get_tehran_reset_key()
     quota_key = get_quota_reset_key()
 
@@ -611,6 +667,13 @@ def main():
         known_norm_titles,
         max_site_id,
     )
+    state["last_run"] = {
+        "finished_at": datetime.now(timezone.utc).isoformat(),
+        "queue_size": len(state["pending_queue"]),
+        "rejected_by_reason": dict(_QUEUE_REJECTION_COUNTS),
+        "new_web_candidates": len(new_web_videos),
+        "new_instagram_candidates": len(new_ig_reels),
+    }
     save_state(state)
 
     main_count = sum(1 for x in state["pending_queue"] if x.get("category") != "SHORTS")
