@@ -30,7 +30,7 @@ jobs:
       APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
       CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
       YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
-      APIFY_FORCE_CHECK: ${{ inputs.force_instagram || 'false' }}
+      APIFY_FORCE_CHECK: ${{ github.event.inputs.force_instagram == 'true' }}
 
     steps:
       - name: Checkout Repository
