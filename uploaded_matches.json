@@ -619,6 +619,36 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 1075420,
+      "published_at": null,
+      "discovered_at": 1794928504.8954222,
+      "url": "https://footballi.net/video/1075420/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%D9%87%D8%A7%DB%8C%DB%8C-%D9%85%D8%AB%D9%84-%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D9%87-%D8%A2%D9%85%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%85%D8%A7-%D8%AE%DB%8C%D9%84%DB%8C-%DA%A9%D9%85%DA%A9-%D9%85%DB%8C-%DA%A9%D9%86%D8%AF",
+      "title": "امیر قلعه نویی: بازیهایی مثل عراق به آماده سازی ما خیلی کمک می کند",
+      "description": "امیر قلعه نویی: بازی مقابل تماشاگران زیاد برای تیم ما مناسب است و به روند آماده سازی تیم ما برای جام ملت ها خیلی کمک می کند",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/17/tus-695f794c-8c8b-483a-9dff-908b9b7b851d.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/0algDW3qCuBFaaoU8QKQm91nMFhViXL6mywVqXtX.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075418,
+      "published_at": null,
+      "discovered_at": 1794928505.7734118,
+      "url": "https://footballi.net/video/1075418/%D9%88%D8%B1%D9%88%D8%AF-%D8%A7%D8%AA%D9%88%D8%A8%D9%88%D8%B3-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A8%D9%87-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A8%D8%B5%D8%B1%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
+      "title": "ورود اتوبوس تیم ملی به ورزشگاه بصره برای تقابل با عراق",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | تیم ملی ایران,عراق,تیم ملی عراق,بصره,تورنمنت بصره",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/17/tus-243fe4a0-d76b-4ed8-8cee-881bc02574af.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/HdrS2HbzY7Y58UGds2zoBmhUUJO9VX7tAndvcM4c.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO"
+    },
+    {
       "video_id": 1075400,
       "published_at": null,
       "discovered_at": 1794925859.955077,
@@ -785,19 +815,6 @@
       "description": "گفت‌وگو با هواداران در حاشیه دیدار نفت مسجدسلیمان و جزیره قشم در رقابت‌های لیگ یک فوتبال ایران، فرصتی برای انعکاس دیدگاه‌ها و احساسات تماشاگران درباره این مسابقه است. در این ویدیو، هواداران از شرایط تیم‌ها، عملکرد بازیکنان، فضای ورزشگاه و انتظارات خود از ادامه رقابت‌های لیگ یک صحبت می‌کنند و نظراتشان را درباره این دیدار به اشتراک می‌گذارند.",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-ed544a9d-349a-4427-8368-a842aa451f85.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/TXmnVu6bjm5zfBjB4idKCoOe6k2hbHgxC8KopV3T.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO",
-      "ai_score": 6,
-      "site_views": 0
-    },
-    {
-      "video_id": 1075228,
-      "url": "https://footballi.net/video/1075228/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%86%D9%81%D8%AA-%D9%85%D8%B3%D8%AC%D8%AF%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86-%D9%88-%D8%AC%D8%B2%DB%8C%D8%B1%D9%87-%D9%82%D8%B4%D9%85",
-      "title": "حواشی بازی نفت مسجدسلیمان و جزیره قشم",
-      "description": "حواشی دیدار نفت مسجدسلیمان و جزیره قشم در چارچوب رقابت‌های لیگ یک فوتبال ایران، بخش‌های مختلف این مسابقه و اتفاقات پیرامون آن را در بر می‌گیرد. در این ویدیو، فضای ورزشگاه، اتفاقات کنار زمین، واکنش بازیکنان و کادر فنی و حواشی این تقابل از جمله سوژه‌های مورد توجه قرار گرفته است.",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-038885dd-da07-4244-8e7f-11b38916b19d.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/wW1PZAM66srAhXXjno8vM9bRdVijQ0FjJDoh69yT.jpg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO",
@@ -1674,7 +1691,7 @@
     "Ugz-fhncZoHERKkp1_J4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075415,
+  "max_seen_video_id": 1075420,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF",
@@ -1744,7 +1761,9 @@
     "https://footballi.net/video/1075407/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D9%88%DB%8C%D9%86-%D8%B1%D9%88%D9%86%DB%8C-%D8%A8%D9%87-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C%D8%AA%DB%8C",
     "https://footballi.net/video/1075415/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%DA%A9%D8%B1%D9%87-%D8%AC%D9%86%D9%88%D8%A8%DB%8C-%D8%A8%D9%87-%D9%82%D8%B7%D8%B1-%D8%A7%D9%88-%D8%B3%D9%87-%D9%87%D8%A7%D9%86",
     "https://footballi.net/video/1075412/%D9%BE%D8%A7%D8%B3-%DA%AF%D9%84-%D8%AF%DB%8C%D8%AF%D9%86%DB%8C-%D9%85%D9%88%D8%AF%D8%B1%DB%8C%DA%86-%D8%A8%D9%87-%D9%BE%D9%88%D9%84%DB%8C%D8%B4%DB%8C%DA%86-%D8%A7%D8%B2-%DA%86%D9%86%D8%AF-%D9%86%D9%85%D8%A7%DB%8C-%D9%85%D8%AA%D9%81%D8%A7%D9%88%D8%AA",
-    "https://footballi.net/video/1075414/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D9%85%D8%B1%D9%88%D8%B1-%D9%85%D8%B1%DA%AF-%D9%87%D8%A7%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%AF%D8%B1-%D8%B2%D9%85%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84"
+    "https://footballi.net/video/1075414/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D9%85%D8%B1%D9%88%D8%B1-%D9%85%D8%B1%DA%AF-%D9%87%D8%A7%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D8%AF%D8%B1-%D8%B2%D9%85%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84",
+    "https://footballi.net/video/1075419/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%A7%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D9%87-%D8%B3%D9%88%D8%B1%DB%8C%D9%87-%D8%B3%D8%A7%D8%B4%D8%A7-%D8%A7%DB%8C%D9%88%DA%A9%D9%88%D9%88%DB%8C%DA%86",
+    "https://footballi.net/video/1075417/%D8%A8%D8%B1%D8%AE%D9%88%D8%B1%D8%AF-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%88-%D8%AE%D8%B4%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%87%D9%86%D8%AF-%D8%AF%D8%B1-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%DB%8C-%D8%B2%DB%8C%D8%B1-17-%D8%B3%D8%A7%D9%84-%D8%A2%D8%B3%DB%8C%D8%A7"
   ],
   "seen_raw_titles": [
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر",
@@ -1761,5 +1780,6 @@
     "حدادی: آگهی فروش محمودی برای نشان دادن ارزش او بود!",
     "تنیس فوتبال بین سهراب بختیاری‌زاده و میثاقی",
     "مهرداد طهماسبی سرمربی هوادار: 80 دقیقه مقابل مس مسلط بودیم ولی نشد"
-  ]
+  ],
+  "analytics": {}
 }
