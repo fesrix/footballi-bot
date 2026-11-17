@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
+    inputs:
+      force_instagram:
+        description: "Run Instagram check immediately, ignoring the normal cooldown"
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: footballi-bot-runner
@@ -24,6 +30,7 @@ jobs:
       APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
       CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
       YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+      APIFY_FORCE_CHECK: ${{ inputs.force_instagram || 'false' }}
 
     steps:
       - name: Checkout Repository
