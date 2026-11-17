@@ -43,10 +43,11 @@ SCOPES = [
     "https://www.googleapis.com/auth/youtube.force-ssl",
 ]
 
-MAX_MAIN_QUEUE_SIZE = 25
+MAX_MAIN_QUEUE_SIZE = 15
 MAX_SHORTS_QUEUE_SIZE = 5
 MIN_HORIZONTAL_DURATION_SECONDS = 180
-MIN_SHORTS_WIDTH_PX = 540
+MIN_HORIZONTAL_HEIGHT_PX = 720  # رد خودکار ویدیوهای بی‌کیفیت 360p و 480p
+MIN_SHORTS_WIDTH_PX = 720       # شورتس‌ها فقط 720p و 1080p
 
 
 def get_exact_video_dimensions(video_path: str) -> tuple:
@@ -75,7 +76,6 @@ def get_tehran_reset_key() -> str:
 
 
 def is_duplicate_title(candidate_title: str, existing_norm_titles: set) -> bool:
-    """بررسی دقیق و هوشمند شباهت عنوان (۸۵٪+) برای جلوگیری قطعی از آپلود تکراری"""
     clean = re.sub(r"\|.*$", "", candidate_title).replace("#Shorts", "").replace("#shorts", "").strip()
     norm_cand = normalize_persian(clean).lower()
     if not norm_cand:
@@ -398,6 +398,8 @@ def normalize_queue_item(item: dict) -> dict:
     item["mp4_url"] = mp4
     item["title"] = title
     item["poster_url"] = poster
+    item["ai_score"] = int(item.get("ai_score", 6))
+    item["site_views"] = int(item.get("site_views", 0))
     item["category"] = detect_primary_category(title, "", is_short=is_short)
     return item
 
@@ -461,12 +463,18 @@ def deduplicate_and_balance_queue(
     if purged > 0:
         print(f"🧹 [QUEUE-PURGE] Removed {purged} old, foreign, or duplicate items from queue.")
 
+    # مرتب‌سازی بر اساس اولویت دسته ← امتیاز پتانسیل بازدید هوش مصنوعی ← بازدید سایت ← جدیدترین ویدیو
     priority_order = {"SUMMARY": 0, "VIDEOCAST": 1, "POSHTE_KHAT": 2, "VIDEO": 3}
     main_items.sort(
         key=lambda x: (
             priority_order.get(x.get("category", "VIDEO"), 3),
+            -int(x.get("ai_score", 6)),
+            -int(x.get("site_views", 0)),
             -int(x.get("video_id", 0)),
         )
+    )
+    short_items.sort(
+        key=lambda x: (-int(x.get("ai_score", 6)), -int(x.get("site_views", 0)))
     )
 
     return main_items[:MAX_MAIN_QUEUE_SIZE] + short_items[:MAX_SHORTS_QUEUE_SIZE]
@@ -539,7 +547,7 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 
 
 def main():
-    print("[START] Footballi Bot starting (Zero-Duplicate Memory + AI Curator Edition)...")
+    print("[START] Footballi Bot starting (Peak-Hours + 8/Day Viral Quality + 720p+ HD Edition)...")
     state = load_state()
     reset_key = get_tehran_reset_key()
 
@@ -555,7 +563,6 @@ def main():
         for t in (state.get("uploaded_titles", []) + state.get("seen_raw_titles", []))
     }
 
-    # ۱. بررسی اولیه کانال یوتیوب قبل از خزش تا کل عنوان‌های کانال در حافظه ضدتکرار باشد
     youtube = None
     channel_videos = []
     if state.get("quota_exhausted_date") != reset_key:
@@ -564,7 +571,6 @@ def main():
         for v in channel_videos:
             known_norm_titles.add(normalize_persian(v["title"]).lower())
 
-    # ۲. خزش سایت و اینستاگرام (ویدیوهای ردشده و تکراری فوراً در state ذخیره می‌شوند)
     new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
     new_ig_reels = fetch_instagram_reels(state)
 
@@ -588,7 +594,7 @@ def main():
 
     main_count = sum(1 for x in state["pending_queue"] if x.get("category") != "SHORTS")
     shorts_count = sum(1 for x in state["pending_queue"] if x.get("category") == "SHORTS")
-    print(f"[QUEUE] Ready -> Main Videos: {main_count} | Instagram HD Shorts: {shorts_count}")
+    print(f"[QUEUE] Ready -> Top Viral Main Videos: {main_count} | Instagram HD Shorts: {shorts_count}")
 
     if state.get("quota_exhausted_date") == reset_key or youtube is None:
         print("⏸️ [QUOTA-GUARD] Daily YouTube API quota is full for today. Holding queue safely until 11:30 AM Tehran reset.")
@@ -606,7 +612,7 @@ def main():
     save_state(state)
 
     if not state["pending_queue"]:
-        print("[DONE] No fresh videos in queue to upload right now.")
+        print("[DONE] No fresh high-potential videos in queue right now.")
         return
 
     cooldown_until = float(state.get("upload_limit_cooldown_until", 0))
@@ -614,6 +620,11 @@ def main():
         rem_min = (cooldown_until - time.time()) / 60.0
         print(f"🛡️ [QUOTA-SHIELD] Channel 24h upload cap active. Pausing upload attempts for {rem_min:.0f}m to preserve API quota.")
         return
+
+    # قفل ساعات طلایی ایران (۰۸:۳۰ صبح تا ۰۰:۳۰ بامداد به وقت تهران)
+    tehran_now = datetime.now(timezone.utc) + timedelta(hours=3, minutes=30)
+    tehran_mins = tehran_now.hour * 60 + tehran_now.minute
+    is_iran_sleep_hours = 30 <= tehran_mins < (8 * 60 + 30)
 
     video_file = "temp_video.mp4"
     thumb_file = "temp_thumb.jpg"
@@ -628,6 +639,29 @@ def main():
             state["pending_queue"].pop(0)
             continue
 
+        cat_check = top.get("category", "VIDEO")
+        if is_iran_sleep_hours and cat_check != "SUMMARY":
+            print(f"🌙 [PEAK-HOURS] Iran night hours ({tehran_now.strftime('%H:%M')}). Waiting for 08:30 AM Tehran peak window.")
+            save_state(state)
+            return
+
+        if uploads_today >= MAX_DAILY_UPLOADS:
+            print(f"🎯 [DAILY-CAP] Reached optimal daily cap ({MAX_DAILY_UPLOADS}/{MAX_DAILY_UPLOADS}) to protect channel CTR and views.")
+            save_state(state)
+            return
+
+        if uploads_today >= (MAX_DAILY_UPLOADS - RESERVED_SUMMARY_SLOTS) and cat_check != "SUMMARY":
+            print("[QUOTA] Remaining daily slots are reserved strictly for Match Summaries.")
+            save_state(state)
+            return
+
+        mins_since_last = (time.time() - float(state.get("last_upload_timestamp", 0))) / 60.0
+        if cat_check != "SUMMARY" and mins_since_last < MIN_MINUTES_BETWEEN_UPLOADS:
+            wait_rem = MIN_MINUTES_BETWEEN_UPLOADS - mins_since_last
+            print(f"⏳ [PACING] Waiting {wait_rem:.1f}m (2.5h spacing) before next upload to maximize views.")
+            save_state(state)
+            return
+
         if top.get("is_short"):
             if not is_strictly_domestic_short(top["title"], top.get("description", "")):
                 print(f"🚫 [SHORT-REJECT] Blocked non-domestic Short before upload: {top['title']}")
@@ -640,20 +674,6 @@ def main():
                 state["pending_queue"].pop(0)
                 state["rejected_urls"].append(top["url"])
                 continue
-
-        cat_check = top.get("category", "VIDEO")
-        mins_since_last = (time.time() - float(state.get("last_upload_timestamp", 0))) / 60.0
-
-        if cat_check != "SUMMARY" and mins_since_last < MIN_MINUTES_BETWEEN_UPLOADS:
-            wait_rem = MIN_MINUTES_BETWEEN_UPLOADS - mins_since_last
-            print(f"⏳ [PACING] Waiting {wait_rem:.1f}m before next regular upload to maximize impressions.")
-            save_state(state)
-            return
-
-        if uploads_today >= (MAX_DAILY_UPLOADS - RESERVED_SUMMARY_SLOTS) and cat_check != "SUMMARY":
-            print("[QUOTA] Remaining daily slots are reserved strictly for Match Summaries.")
-            save_state(state)
-            return
 
         dl_fn = getattr(media_utils, "download_file", None)
         if dl_fn:
@@ -678,16 +698,22 @@ def main():
 
         if is_vertical:
             if w > 0 and w < MIN_SHORTS_WIDTH_PX:
-                print(f"⏭️ [SKIP-LOWRES-SHORT] Rejected low-resolution Short ({w}x{h} < {MIN_SHORTS_WIDTH_PX}px): {top['title']}")
+                print(f"⏭️ [SKIP-LOWRES-SHORT] Rejected low-res Short ({w}x{h} < 720p): {top['title']}")
                 state["pending_queue"].pop(0)
                 state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
             is_short = dur <= 175 if dur > 0 else True
-            print(f"📱 [VERTICAL-SHORTS] Approved HD vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
+            print(f"📱 [VERTICAL-SHORTS] Approved 720p+ HD vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
             candidate = top
             break
         else:
+            if h > 0 and h < MIN_HORIZONTAL_HEIGHT_PX:
+                print(f"⏭️ [SKIP-LOWRES-HD] Rejected low-quality horizontal video ({w}x{h} < 720p): {top['title']}")
+                state["pending_queue"].pop(0)
+                state["rejected_urls"].append(top["url"])
+                state["seen_mp4s"].append(top["mp4_url"])
+                continue
             if dur > 0 and dur < MIN_HORIZONTAL_DURATION_SECONDS:
                 print(
                     f"⏭️ [SKIP-SHORT-HORIZONTAL] Rejected horizontal video under 3 mins "
@@ -698,13 +724,13 @@ def main():
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
             is_short = False
-            print(f"🎬 [HORIZONTAL-HD] Approved horizontal video ({w}x{h}, {dur:.0f}s >= 180s).")
+            print(f"🎬 [HORIZONTAL-HD] Approved 720p+ HD video ({w}x{h}, {dur:.0f}s >= 180s).")
             candidate = top
             break
 
     save_state(state)
     if not candidate:
-        print("[DONE] No qualifying videos (>=3m horizontal or HD vertical Shorts) ready in queue.")
+        print("[DONE] No qualifying 720p+ HD videos ready in queue.")
         return
 
     cat = "SHORTS" if is_short else candidate.get("category", "VIDEO")
@@ -720,7 +746,7 @@ def main():
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
 
-    print(f"[UPLOAD] Publishing 1 video ({cat} | ID: {candidate.get('video_id')}): {final_title}")
+    print(f"[UPLOAD] Publishing 1 video ({cat} | Score: {candidate.get('ai_score', 6)}/10): {final_title}")
 
     try:
         body = {
