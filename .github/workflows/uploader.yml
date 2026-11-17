@@ -2,7 +2,7 @@ name: Footballi YouTube Bot & Comment Manager
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 concurrency:
@@ -45,15 +45,19 @@ jobs:
           echo "✅ Setup completed in seconds! FFmpeg: $(which ffmpeg) | Chrome: $(which google-chrome)"
 
           echo ""
-          echo "=== [2/4] Running Footballi Video Uploader & Queue ==="
+          echo "=== [2/5] Syncing YouTube Analytics ==="
+          python -u analytics.py
+
+          echo ""
+          echo "=== [3/5] Running Footballi Video Uploader & Queue ==="
           timeout --kill-after=15s 660s stdbuf -oL -eL python -u footballi_uploader.py || echo "⚠️ [INFO] Uploader step finished."
 
           echo ""
-          echo "=== [3/4] Running AI Comment Moderator & Responder ==="
+          echo "=== [4/5] Running AI Comment Moderator & Responder ==="
           timeout --kill-after=10s 120s stdbuf -oL -eL python -u comment_manager.py || echo "⚠️ [INFO] Comment manager step finished."
 
           echo ""
-          echo "=== [4/4] Saving Queue & Channel State ==="
+          echo "=== [5/5] Saving Queue & Channel State ==="
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add uploaded_matches.json
@@ -65,3 +69,4 @@ jobs:
           else
             echo "ℹ️ No changes to commit."
           fi
+
