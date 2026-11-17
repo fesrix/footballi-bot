@@ -4,6 +4,7 @@ import re
 import json
 import time
 import shutil
+from datetime import datetime, timezone
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -35,66 +36,21 @@ Return one JSON object, without Markdown or commentary.
 Include every input index exactly once as its string representation.
 Each value has exactly:
 {"approve": boolean, "score": integer 1..10, "reason": string}
-reason must be one of:
-PASS, LOW_DEMAND, BROADCAST_RISK, REVIEW_DOMESTIC_RIGHTS,
-REVIEW_PROVENANCE, REUSED_CONTENT, OUT_OF_SCOPE.
+reason must be one of: PASS, LOW_DEMAND, BROADCAST_RISK.
 
-MEANING
-approve=true means editorial shortlist, NEVER permission to publish.
-The application must independently verify rights to footage, audio,
-music, graphics and any embedded third-party material, and assess
-original contribution before publication.
-A website upload, Instagram account, watermark, Iranian subject,
-Persian commentary or show name does not establish those rights.
-
-DECISION ORDER
-
-1. FORMAT / RIGHTS RISK
-A. Raw foreign or international match footage:
-Reject summaries, goals, saves, tackles, penalty shootouts, compilations
-and full matches from European leagues, UEFA, FIFA, AFC, national-team
-competitions and other international broadcasts.
-An Iranian club or player appearing does not change this rule.
-reason=BROADCAST_RISK.
-
-B. Explicitly domestic Iranian match footage:
-For domestic league/cup highlights, goals and full matches, return
-approve=false, reason=REVIEW_DOMESTIC_RIGHTS.
-This means hold for asset-specific rights review, not "illegal".
-Do not confuse domestic Iranian competitions with AFC competitions.
-The application may release this hold only after independently
-verified rights AND original-value assessment, with score>=8.
-If the competition is unclear, use REVIEW_PROVENANCE.
-
-C. Original editorial formats:
-Interviews, reporting, original studio discussions, podcasts,
-Footballi videocasts and پشت خط may enter the editorial shortlist.
-Discussion ABOUT Messi, Ronaldo, European football or AFC is allowed.
-Foreign names are not copyright violations.
-"تحلیل گل مسی" does not prove the video contains raw match footage.
-"گل مسی مقابل ..." normally identifies a match clip.
-A standalone Footballi editorial production about foreign football
-must not be rejected solely because the topic is foreign.
-All shortlisted assets still require the application's rights gate.
-
-D. Third-party productions:
-Footballi hosting a TV segment does not make it Footballi's production.
-Third-party studio shows, television interviews, fan uploads and
-unclear compilations => REVIEW_PROVENANCE unless the title clearly
-describes a standalone original Footballi editorial production.
-Names such as فوتبال برتر and شبهای فوتبالی are not ownership proof.
-If a title explicitly describes reposting/compiling others' clips
-without substantive editorial contribution => REUSED_CONTENT.
-
-E. Never infer legal fair use from:
-short duration, cropping, mirroring, speed changes, subtitles,
-a logo, attribution, AI narration or a "fair use" disclaimer.
-Fair-use-dependent assets require review outside this model.
-An analysis label alone does not clear embedded footage or music.
-
-F. Clearly unrelated gaming, product promotions, unrelated entertainment
-or non-football content => OUT_OF_SCOPE.
-Do not classify all animation or original football explainers as gaming.
+1. PUBLISHING POLICY
+- Domestic Iranian league and cup highlights are eligible automatically.
+- Footballi videocasts, پُشتِ خَط, referee analysis, فوتبال برتر and
+  شب‌های فوتبالی are eligible automatically. Do not impose a manual hold.
+- Reject foreign/European/UEFA/AFC/FIFA match broadcast footage, including
+  clips featuring Iranian clubs/players in international competitions.
+  Use BROADCAST_RISK, regardless of demand score.
+- Foreign names in original interviews, news or studio discussions alone
+  are not broadcast footage. Do not reject editorial discussion solely
+  because it mentions foreign football.
+- Judge format from the actual title; a program name must not override
+  explicit foreign match footage.
+- Python independently enforces source age, resolution, duration and pacing.
 
 2. SCORE EVERY ITEM, INCLUDING REJECTED ITEMS
 Score measures title-based audience potential, not copyright safety.
@@ -136,40 +92,12 @@ C: Specificity / standalone promise, 0..1
 A known program name or episode number alone earns no point.
 
 3. APPROVAL
-- Only shortlist original-editorial-format candidates with score>=8.
-- Such candidates: approve=true, reason=PASS.
-- Original-editorial-format candidates scoring <=7:
-  approve=false, reason=LOW_DEMAND.
-- Rights/format decisions from step 1 override approval at every score.
-- Keep the calculated demand score even when rejecting for rights.
-- Do not fill an upload quota.
-- Do not select a daily top eight here; Python handles the rolling
-  queue, duplicate assets, story repetition, freshness and daily cap.
+- Eligible videos scoring >=7: approve=true, reason=PASS.
+- Eligible videos scoring <7: approve=false, reason=LOW_DEMAND.
+- Foreign match footage: approve=false, reason=BROADCAST_RISK.
+- Score every item. Do not invent facts or inflate scores to fill a quota.
+- Do not select a daily top eight; Python manages the queue and daily cap.
 
-EXAMPLES
-
-INPUT:
-[
- {"index":0,"title":"گفتوگوی اختصاصی فوتبالی با سرمربی استقلال درباره پنالتی جنجالی دربی","site_views":3000},
- {"index":1,"title":"تمرین امروز پرسپولیس","site_views":100},
- {"index":2,"title":"خلاصه بازی رئال مادرید و بارسلونا؛ پنالتی جنجالی","site_views":50000},
- {"index":3,"title":"خلاصه دربی استقلال و پرسپولیس؛ پنالتی جنجالی","site_views":20000},
- {"index":4,"title":"تحلیل اختصاصی فوتبالی؛ تاثیر مسی بر تاکتیک اینتر میامی","site_views":12000},
- {"index":5,"title":"ویدیوکست فوتبالی؛ قسمت ۱۲","site_views":100},
- {"index":6,"title":"فوتبال برتر؛ بررسی پنالتی جنجالی دربی","site_views":12000},
- {"index":7,"title":"گل طارمی در لیگ قهرمانان اروپا","site_views":20000}
-]
-OUTPUT:
-{
- "0":{"approve":true,"score":9,"reason":"PASS"},
- "1":{"approve":false,"score":4,"reason":"LOW_DEMAND"},
- "2":{"approve":false,"score":9,"reason":"BROADCAST_RISK"},
- "3":{"approve":false,"score":10,"reason":"REVIEW_DOMESTIC_RIGHTS"},
- "4":{"approve":true,"score":8,"reason":"PASS"},
- "5":{"approve":false,"score":1,"reason":"LOW_DEMAND"},
- "6":{"approve":false,"score":10,"reason":"REVIEW_PROVENANCE"},
- "7":{"approve":false,"score":8,"reason":"BROADCAST_RISK"}
-}
 """
 
 
@@ -205,7 +133,27 @@ def pick_highest_quality_mp4(mp4_list: list) -> str:
     return sorted(mp4_list, key=quality_score, reverse=True)[0]
 
 
-def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0, max_site_id: int = 0) -> bool:
+def parse_published_timestamp(value):
+    """Return UTC epoch seconds for source ISO dates or Unix timestamps."""
+    try:
+        if isinstance(value, bool) or value is None:
+            return None
+        if isinstance(value, (int, float)):
+            timestamp = float(value)
+            return timestamp if 0 < timestamp < 1e11 else None
+        parsed = datetime.fromisoformat(str(value).strip().replace("Z", "+00:00"))
+        # A source date without an offset is ambiguous; use other evidence.
+        return parsed.timestamp() if parsed.tzinfo else None
+    except (ValueError, TypeError, OverflowError):
+        return None
+
+
+def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0,
+                     max_site_id: int = 0, published_at=None) -> bool:
+    timestamp = parse_published_timestamp(published_at)
+    if timestamp is not None:
+        return time.time() - timestamp > 48 * 3600
+
     if video_id > 0:
         if video_id < MIN_ABSOLUTE_VIDEO_ID:
             return True
@@ -221,6 +169,10 @@ def is_video_too_old(title: str, page_text_sample: str = "", video_id: int = 0, 
             return True
 
     if any(old_unit in norm_page for old_unit in ["هفته پیش", "ماه پیش", "سال پیش"]):
+        return True
+
+    m_hours = re.search(r"(\d+)\s*ساعت پیش", norm_page)
+    if m_hours and int(m_hours.group(1)) > 48:
         return True
 
     m_days = re.search(r"(\d+)\s*روز پیش", norm_page)
@@ -240,19 +192,20 @@ def is_match_broadcast_footage(norm_title: str) -> bool:
     ]
     if any(normalize_persian(w).lower() in norm_title for w in match_words):
         return True
-    return bool(re.search(r"(?:^|\s)گل\s+\S+.*\s+به\s+\S+", norm_title))
+    if re.search(r"(?:^|\s)گل\s+\S+.*\s+(?:به|مقابل|برابر)\s+\S+", norm_title):
+        return True
+    editorial = any(w in norm_title for w in ["تحلیل", "بررسی", "کارشناسی", "مصاحبه", "ویدیوکست", "پشت خط"])
+    return not editorial and bool(re.search(r"(?:^|\s)(?:گل|مهار|سیو|هایلایت|highlights|goals?)\b", norm_title))
 
 
 def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
     clean_title = re.sub(r"\|.*$", "", title).strip()
     norm_title = normalize_persian(clean_title).lower()
 
-    if is_video_too_old(clean_title):
-        return True
-
+    norm_context = normalize_persian(f"{title} {desc}").lower()
     if is_match_broadcast_footage(norm_title):
         for bad_word in FOREIGN_BLACKLIST:
-            if normalize_persian(bad_word).lower() in norm_title:
+            if normalize_persian(bad_word).lower() in norm_context:
                 return True
         has_iranian_club = any(
             normalize_persian(club).lower() in norm_title
@@ -260,14 +213,6 @@ def is_foreign_or_blacklisted(title: str, desc: str = "") -> bool:
         )
         return not has_iranian_club
 
-    for bad_word in FOREIGN_BLACKLIST:
-        if normalize_persian(bad_word).lower() in norm_title:
-            has_iranian_ref = any(
-                normalize_persian(ent).lower() in norm_title
-                for ent in IRANIAN_FOOTBALL_ENTITIES + ["لیگ برتر", "تیم ملی", "فوتبال ایران"]
-            )
-            if not has_iranian_ref:
-                return True
 
     return False
 
@@ -367,15 +312,18 @@ def ai_judge_videos(candidates: list, state: dict = None) -> list:
                     continue
 
         for i, c in enumerate(batch):
-            dec = decisions.get(str(i))
+            dec = decisions.get(str(i)) if isinstance(decisions, dict) else None
             is_ok = False
             score = 5
             reason = "FALLBACK"
 
             if isinstance(dec, dict) and not isinstance(dec.get("score"), bool):
-                score = int(dec.get("score", 5))
+                try:
+                    score = max(1, min(10, int(dec.get("score", 5))))
+                except (TypeError, ValueError, OverflowError):
+                    score = 5
                 reason = str(dec.get("reason", "")).strip()
-                raw_approve = bool(dec.get("approve", False))
+                raw_approve = dec.get("approve") is True
 
                 # پذیرش آیتم‌های PASS با امتیاز بالا + خلاصه‌بازی‌ها و برنامه‌های داخلی ایران که امتیاز جذابیت >= 7 دارند
                 if raw_approve and reason == "PASS" and score >= 7:
@@ -387,6 +335,8 @@ def ai_judge_videos(candidates: list, state: dict = None) -> list:
                 is_ok = not is_foreign_or_blacklisted(c["title"], c.get("description", ""))
                 score = 7 if is_ok else 2
 
+            # A model approval can never override the deterministic broadcast gate.
+            is_ok = is_ok and not is_foreign_or_blacklisted(c["title"], c.get("description", ""))
             if is_ok:
                 c["ai_score"] = score
                 print(f"✅ [AI-APPROVED | Score {score}/10 | {reason}] {c['title']}")
@@ -526,8 +476,40 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
 
     for tag in soup.find_all(["aside", "footer", "nav"]):
         tag.decompose()
+    published_at = None
+    for attrs in ({"property": "article:published_time"}, {"itemprop": "datePublished"},
+                  {"name": "datePublished"}):
+        meta = soup.find("meta", attrs=attrs)
+        if meta:
+            published_at = parse_published_timestamp(meta.get("content"))
+            if published_at is not None:
+                break
+    if published_at is None:
+        stamp = soup.find("time", datetime=True)
+        if stamp:
+            published_at = parse_published_timestamp(stamp.get("datetime"))
+    if published_at is None:
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                structured = json.loads(script.string or script.get_text())
+                nodes = structured if isinstance(structured, list) else [structured]
+                for node in nodes:
+                    if isinstance(node, dict):
+                        nodes_to_check = node.get("@graph", [node])
+                        for entry in nodes_to_check:
+                            if isinstance(entry, dict) and entry.get("datePublished"):
+                                published_at = parse_published_timestamp(entry["datePublished"])
+                                if published_at is not None:
+                                    break
+                    if published_at is not None:
+                        break
+            except (TypeError, ValueError):
+                continue
+            if published_at is not None:
+                break
     main_text_sample = soup.get_text(" ", strip=True)[:800]
-    if is_video_too_old(title, main_text_sample, video_id=video_id, max_site_id=max_site_id):
+    if is_video_too_old(title, main_text_sample, video_id=video_id, max_site_id=max_site_id,
+                        published_at=published_at):
         return None
 
     site_views = 0
@@ -579,6 +561,8 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
 
     return {
         "video_id": video_id,
+        "published_at": published_at,
+        "discovered_at": time.time(),
         "url": page_url,
         "title": title,
         "description": description or title,
@@ -643,7 +627,7 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
     for link in candidate_links[: max_new_candidates * 2]:
         details = extract_video_page_details(link, max_site_id=max_site_id, session=session)
         if not details:
-            state.setdefault("rejected_urls", []).append(link)
+            # Network failures and incomplete pages must remain retryable.
             continue
 
         if details["mp4_url"] in seen_mp4s or details["mp4_url"] in queued_mp4s:
@@ -651,6 +635,8 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
 
         raw_extracted.append({
             "video_id": details["video_id"],
+            "published_at": details["published_at"],
+            "discovered_at": details["discovered_at"],
             "url": details["url"],
             "title": details["title"],
             "description": details["description"],
@@ -691,7 +677,7 @@ def fetch_instagram_reels(state: dict) -> list:
             "resultsLimit": 6,
         }
         print("[APIFY] Fetching latest HD Reels from @footballiapp Instagram...")
-        run = client.actor("apify/instagram-reel-scraper").call(run_input=run_input)
+        run = client.actor("apify/instagram-reel-scraper").call(run_input=run_input, wait_secs=90, timeout_secs=90)
         state["last_apify_check"] = time.time()
 
         uploaded_urls = set(state.get("uploaded_urls", []))
@@ -702,6 +688,9 @@ def fetch_instagram_reels(state: dict) -> list:
         raw_reels = []
         for item in client.dataset(run["defaultDatasetId"]).iterate_items():
             reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
+            published_at = parse_published_timestamp(item.get("timestamp"))
+            if is_video_too_old("", published_at=published_at):
+                continue
             video_url = item.get("videoUrl")
             caption = (item.get("caption") or "").strip()
             if (
@@ -722,6 +711,8 @@ def fetch_instagram_reels(state: dict) -> list:
 
             raw_reels.append({
                 "video_id": 0,
+                "published_at": published_at,
+                "discovered_at": time.time(),
                 "url": reel_url,
                 "title": first_line,
                 "description": caption,

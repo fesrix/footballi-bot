@@ -5,6 +5,9 @@ import json
 import time
 import inspect
 import subprocess
+import tempfile
+import math
+from zoneinfo import ZoneInfo
 from difflib import SequenceMatcher
 from datetime import datetime, timezone, timedelta
 
@@ -51,28 +54,16 @@ MIN_SHORTS_WIDTH_PX = 720       # شورتس‌ها فقط 720p و 1080p
 
 
 def get_exact_video_dimensions(video_path: str) -> tuple:
-    try:
-        cmd = [
-            "ffprobe", "-v", "error", "-select_streams", "v:0",
-            "-show_entries", "stream=width,height:format=duration",
-            "-of", "json", video_path,
-        ]
-        out = subprocess.check_output(cmd, text=True, timeout=15)
-        data = json.loads(out)
-        streams = data.get("streams", [])
-        fmt = data.get("format", {})
-        w = int(streams[0].get("width", 0)) if streams else 0
-        h = int(streams[0].get("height", 0)) if streams else 0
-        dur = float(fmt.get("duration", 0))
-        return w, h, dur
-    except Exception as e:
-        print(f"[PROBE-WARN] Could not inspect video dimensions: {e}")
-        return 0, 0, 0
+    return media_utils.inspect_video_file(video_path)
 
 
 def get_tehran_reset_key() -> str:
-    now_utc = datetime.now(timezone.utc)
-    return (now_utc - timedelta(hours=8)).strftime("%Y-%m-%d")
+    return datetime.now(ZoneInfo("Asia/Tehran")).strftime("%Y-%m-%d")
+
+
+def get_quota_reset_key() -> str:
+    # YouTube resets API quota at midnight Pacific, including daylight saving.
+    return datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%Y-%m-%d")
 
 
 def is_duplicate_title(candidate_title: str, existing_norm_titles: set) -> bool:
@@ -111,23 +102,39 @@ def load_state() -> dict:
         "playlists": {},
         "playlist_assignments": {},
         "processed_comments": [],
+        "ignored_comments": [],
+        "deleted_comments": [],
     }
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 data = json.load(f)
+            if not isinstance(data, dict):
+                raise ValueError("State root must be an object")
             for k, v in default_state.items():
                 if k not in data:
                     data[k] = v
+                elif isinstance(v, (list, dict)) and not isinstance(data[k], type(v)):
+                    raise ValueError(f"Invalid state type for {k}")
             return data
         except Exception as e:
-            print(f"[WARN] Could not parse {STATE_FILE}: {e}")
+            # Never replace damaged upload history with an empty successful state.
+            raise RuntimeError(f"Cannot safely load {STATE_FILE}; preserving original") from e
     return default_state
 
 
 def save_state(state: dict):
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, ensure_ascii=False, indent=2)
+    directory = os.path.dirname(os.path.abspath(STATE_FILE))
+    fd, tmp_path = tempfile.mkstemp(prefix=".footballi-state-", dir=directory)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(state, f, ensure_ascii=False, indent=2, allow_nan=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, STATE_FILE)
+    finally:
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
 
 
 def get_youtube_client():
@@ -139,8 +146,10 @@ def get_youtube_client():
     token_info.pop("scope", None)
     creds = Credentials.from_authorized_user_info(token_info)
     if not creds.valid:
-        if creds.expired and creds.refresh_token:
+        if creds.refresh_token:
             creds.refresh(Request())
+        else:
+            raise RuntimeError("YouTube credentials have no usable refresh token")
     return build("youtube", "v3", credentials=creds)
 
 
@@ -226,7 +235,7 @@ def ensure_all_playlists(youtube, state: dict) -> dict:
             existing_map[normalize_persian(pl_title)] = pl_id
     except HttpError as e:
         if "quotaExceeded" in str(e):
-            state["quota_exhausted_date"] = get_tehran_reset_key()
+            state["quota_exhausted_date"] = get_quota_reset_key()
         print(f"[PLAYLIST-WARN] Could not list channel playlists: {e}")
         return playlists_state
     except Exception as e:
@@ -313,7 +322,7 @@ def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlist
             if e.resp.status == 409 or "videoAlreadyInPlaylist" in str(e):
                 already_assigned.add(key)
             elif "quotaExceeded" in str(e):
-                state["quota_exhausted_date"] = get_tehran_reset_key()
+                state["quota_exhausted_date"] = get_quota_reset_key()
                 break
             else:
                 print(f"[PLAYLIST-WARN] Could not add {video_id} to {key}: {e}")
@@ -353,8 +362,8 @@ def fetch_channel_existing_videos(youtube, state: dict, max_items: int = 120) ->
                 break
     except HttpError as e:
         if "quotaExceeded" in str(e):
-            state["quota_exhausted_date"] = get_tehran_reset_key()
-            print("⏸️ [QUOTA-PAUSE] Google Cloud daily API quota (10,000 units) is full until 11:30 AM Tehran reset.")
+            state["quota_exhausted_date"] = get_quota_reset_key()
+            print("⏸️ [QUOTA-PAUSE] Google Cloud daily API quota (10,000 units) is full until midnight Pacific quota reset.")
         else:
             print(f"[WARN] Could not index channel videos: {e}")
     except Exception as e:
@@ -367,7 +376,7 @@ def organize_existing_channel_videos(youtube, channel_videos: list, playlists_ma
     assignments = state.setdefault("playlist_assignments", {})
 
     for vid in channel_videos:
-        if ops >= max_ops_per_run or state.get("quota_exhausted_date") == get_tehran_reset_key():
+        if ops >= max_ops_per_run or state.get("quota_exhausted_date") == get_quota_reset_key():
             break
         vid_id = vid["video_id"]
         title = vid["title"]
@@ -398,10 +407,17 @@ def normalize_queue_item(item: dict) -> dict:
     item["mp4_url"] = mp4
     item["title"] = title
     item["poster_url"] = poster
-    item["ai_score"] = int(item.get("ai_score", 6))
-    item["site_views"] = int(item.get("site_views", 0))
+    item["ai_score"] = safe_int(item.get("ai_score"), 6)
+    item["site_views"] = safe_int(item.get("site_views"), 0)
     item["category"] = detect_primary_category(title, "", is_short=is_short)
     return item
+
+
+def safe_int(value, default=0):
+    try:
+        return int(value) if not isinstance(value, bool) else default
+    except (TypeError, ValueError, OverflowError):
+        return default
 
 
 def deduplicate_and_balance_queue(
@@ -431,6 +447,9 @@ def deduplicate_and_balance_queue(
 
         if not u or not mp4 or not t:
             continue
+        if is_video_too_old(item.get("title", ""), published_at=item.get("published_at")):
+            purged += 1
+            continue
         if item.get("source") == "telegram_shorts" or "t.me/" in u:
             purged += 1
             continue
@@ -447,7 +466,7 @@ def deduplicate_and_balance_queue(
             if is_video_too_old(item.get("title", ""), "", video_id=vid_id, max_site_id=highest_id):
                 purged += 1
                 continue
-            if is_foreign_or_blacklisted(item.get("title", ""), ""):
+            if is_foreign_or_blacklisted(item.get("title", ""), item.get("description", "")):
                 purged += 1
                 continue
 
@@ -550,10 +569,10 @@ def main():
     print("[START] Footballi Bot starting (Peak-Hours + 8/Day Viral Quality + 720p+ HD Edition)...")
     state = load_state()
     reset_key = get_tehran_reset_key()
+    quota_key = get_quota_reset_key()
 
     if not isinstance(state.get("daily_uploads"), dict) or state["daily_uploads"].get("date") != reset_key:
         state["daily_uploads"] = {"date": reset_key, "count": 0}
-        state["upload_limit_cooldown_until"] = 0
 
     uploaded_urls = set(state.get("uploaded_urls", []))
     rejected_urls = set(state.get("rejected_urls", []))
@@ -565,7 +584,7 @@ def main():
 
     youtube = None
     channel_videos = []
-    if state.get("quota_exhausted_date") != reset_key:
+    if state.get("quota_exhausted_date") != quota_key:
         youtube = get_youtube_client()
         channel_videos = fetch_channel_existing_videos(youtube, state, max_items=120)
         for v in channel_videos:
@@ -596,14 +615,14 @@ def main():
     shorts_count = sum(1 for x in state["pending_queue"] if x.get("category") == "SHORTS")
     print(f"[QUEUE] Ready -> Top Viral Main Videos: {main_count} | Instagram HD Shorts: {shorts_count}")
 
-    if state.get("quota_exhausted_date") == reset_key or youtube is None:
-        print("⏸️ [QUOTA-GUARD] Daily YouTube API quota is full for today. Holding queue safely until 11:30 AM Tehran reset.")
+    if state.get("quota_exhausted_date") == quota_key or youtube is None:
+        print("⏸️ [QUOTA-GUARD] Daily YouTube API quota is full for today. Holding queue safely until midnight Pacific quota reset.")
         return
 
     uploads_today = state["daily_uploads"].get("count", 0)
     print(
         f"[STATUS] Channel indexed titles: {len(channel_videos)} | "
-        f"Uploads since 11:30 AM reset: {uploads_today}/{MAX_DAILY_UPLOADS} "
+        f"Uploads today (Tehran): {uploads_today}/{MAX_DAILY_UPLOADS} "
         f"(Reserved for Match Summaries: {RESERVED_SUMMARY_SLOTS})"
     )
 
@@ -622,7 +641,7 @@ def main():
         return
 
     # قفل ساعات طلایی ایران (۰۸:۳۰ صبح تا ۰۰:۳۰ بامداد به وقت تهران)
-    tehran_now = datetime.now(timezone.utc) + timedelta(hours=3, minutes=30)
+    tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
     tehran_mins = tehran_now.hour * 60 + tehran_now.minute
     is_iran_sleep_hours = 30 <= tehran_mins < (8 * 60 + 30)
 
@@ -640,7 +659,7 @@ def main():
             continue
 
         cat_check = top.get("category", "VIDEO")
-        if is_iran_sleep_hours and cat_check != "SUMMARY":
+        if is_iran_sleep_hours:
             print(f"🌙 [PEAK-HOURS] Iran night hours ({tehran_now.strftime('%H:%M')}). Waiting for 08:30 AM Tehran peak window.")
             save_state(state)
             return
@@ -656,7 +675,7 @@ def main():
             return
 
         mins_since_last = (time.time() - float(state.get("last_upload_timestamp", 0))) / 60.0
-        if cat_check != "SUMMARY" and mins_since_last < MIN_MINUTES_BETWEEN_UPLOADS:
+        if mins_since_last < MIN_MINUTES_BETWEEN_UPLOADS:
             wait_rem = MIN_MINUTES_BETWEEN_UPLOADS - mins_since_last
             print(f"⏳ [PACING] Waiting {wait_rem:.1f}m (2.5h spacing) before next upload to maximize views.")
             save_state(state)
@@ -689,12 +708,16 @@ def main():
                             f.write(chunk)
 
         if not ok or not os.path.exists(video_file):
-            print(f"[WARN] Could not download MP4: {top['mp4_url']}")
-            state["pending_queue"].pop(0)
-            continue
+            print("[WARN] MP4 download failed; retaining candidate for next run.")
+            save_state(state)
+            return
 
         w, h, dur = get_exact_video_dimensions(video_file)
-        is_vertical = (h > w) if (w > 0 and h > 0) else bool(top.get("is_short", False))
+        if w <= 0 or h <= 0 or not math.isfinite(dur) or dur <= 0:
+            print("[PROBE-WARN] Cannot verify quality/duration; retaining candidate for retry.")
+            save_state(state)
+            return
+        is_vertical = h > w
 
         if is_vertical:
             if w > 0 and w < MIN_SHORTS_WIDTH_PX:
@@ -741,8 +764,6 @@ def main():
 
     seo = call_generate_seo(candidate["title"], candidate.get("description", ""), cat, is_short)
     final_title = seo.get("title", candidate["title"])[:100]
-    if is_short and "#shorts" not in final_title.lower():
-        final_title = (final_title[:92] + " #Shorts").strip()
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
 
@@ -765,12 +786,22 @@ def main():
         req = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
         response = None
         while response is None:
-            status, response = req.next_chunk()
+            status, response = req.next_chunk(num_retries=3)
             if status:
                 print(f"⬆️ [UPLOADING] {int(status.progress() * 100)}% complete...")
 
         vid_id = response["id"]
         print(f"✅ [SUCCESS] Uploaded Video ID: {vid_id}")
+
+        state["pending_queue"].pop(0)
+        state["uploaded_urls"].append(candidate["url"])
+        state["seen_mp4s"].append(candidate["mp4_url"])
+        state["uploaded_titles"].append(final_title)
+        state["seen_raw_titles"].append(candidate["title"])
+        state["daily_uploads"]["count"] = uploads_today + 1
+        state["last_upload_timestamp"] = time.time()
+        state["upload_limit_cooldown_until"] = 0
+        save_state(state)
 
         if thumb_to_use and os.path.exists(thumb_to_use) and not is_short:
             try:
@@ -787,15 +818,6 @@ def main():
         )
         add_video_to_playlists(youtube, vid_id, matched_playlists, playlists_map, state)
 
-        state["pending_queue"].pop(0)
-        state["uploaded_urls"].append(candidate["url"])
-        state["seen_mp4s"].append(candidate["mp4_url"])
-        state["uploaded_titles"].append(final_title)
-        state["seen_raw_titles"].append(candidate["title"])
-        state["daily_uploads"]["count"] = uploads_today + 1
-        state["last_upload_timestamp"] = time.time()
-        state["upload_limit_cooldown_until"] = 0
-        save_state(state)
         print(f"[DONE] Uploaded: 1 | Remaining in Queue: {len(state['pending_queue'])}")
 
     except HttpError as e:
@@ -806,12 +828,16 @@ def main():
             print("🛡️ [QUOTA-SHIELD] Channel 24h upload limit active! Pausing upload retries for 3 hours to save API quota.")
             save_state(state)
         elif "quotaExceeded" in err_str:
-            state["quota_exhausted_date"] = reset_key
-            print("⏸️ [QUOTA-GUARD] Daily API quota reached! Holding queue until 11:30 AM Tehran reset.")
+            state["quota_exhausted_date"] = quota_key
+            print("⏸️ [QUOTA-GUARD] Daily API quota reached! Holding queue until midnight Pacific quota reset.")
             save_state(state)
         else:
-            state["pending_queue"].pop(0)
+            print("[UPLOAD-WARN] Retaining candidate after API failure for retry.")
             save_state(state)
+            raise
+    except Exception:
+        save_state(state)
+        raise
 
 
 if __name__ == "__main__":

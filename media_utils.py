@@ -2,6 +2,8 @@
 import os
 import json
 import subprocess
+import time
+import math
 import requests
 from config import HEADERS
 from ai_seo import sanitize_url
@@ -17,17 +19,19 @@ def inspect_video_file(filepath):
             "-of", "json",
             filepath
         ]
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=20, check=True)
         data = json.loads(res.stdout)
         streams = data.get("streams", [{}])
-        width = int(streams[0].get("width", 1920))
-        height = int(streams[0].get("height", 1080))
+        width = int(streams[0].get("width", 0))
+        height = int(streams[0].get("height", 0))
         dur_str = streams[0].get("duration") or data.get("format", {}).get("duration") or "0"
         duration = float(dur_str)
+        if width <= 0 or height <= 0 or not math.isfinite(duration) or duration <= 0:
+            raise ValueError("Missing or invalid video dimensions/duration")
         return width, height, duration
     except Exception as e:
         print(f"[WARN] ffprobe error: {e}")
-        return 1920, 1080, 120.0
+        return 0, 0, 0.0
 
 
 def enhance_short_to_1080p(input_path, width, height):
@@ -76,17 +80,27 @@ def download_file(url, dest_path, min_bytes=3_000):
     clean_u = sanitize_url(url)
     if not clean_u:
         return False
+    partial_path = dest_path + ".part"
     try:
-        with requests.get(clean_u, headers=HEADERS, stream=True, timeout=60) as r:
+        started = time.monotonic()
+        with requests.get(clean_u, headers=HEADERS, stream=True, timeout=(10, 30)) as r:
             r.raise_for_status()
-            with open(dest_path, "wb") as f:
+            with open(partial_path, "wb") as f:
                 for chunk in r.iter_content(chunk_size=1024 * 256):
+                    if time.monotonic() - started > 180:
+                        raise TimeoutError("Download exceeded 180 seconds")
                     if chunk:
                         f.write(chunk)
-        return os.path.exists(dest_path) and os.path.getsize(dest_path) > min_bytes
+        if os.path.getsize(partial_path) <= min_bytes:
+            return False
+        os.replace(partial_path, dest_path)
+        return True
     except Exception as e:
-        print(f"[WARN] Download failed for {clean_u}: {e}")
+        print(f"[WARN] Download failed ({type(e).__name__}); candidate remains retryable.")
         return False
+    finally:
+        if os.path.exists(partial_path):
+            os.remove(partial_path)
 
 
 def prepare_clean_thumbnail(video_path, thumb_url, output_thumb_path, duration=120.0):
@@ -96,6 +110,10 @@ def prepare_clean_thumbnail(video_path, thumb_url, output_thumb_path, duration=1
     3. ZERO artificial text, ZERO duplicate watermarks. 100% Free.
     """
     raw_thumb = output_thumb_path.replace(".jpg", "_raw.jpg")
+    # Never reuse a previous candidate's poster after an FFmpeg failure.
+    for stale in (raw_thumb, output_thumb_path):
+        if os.path.exists(stale):
+            os.remove(stale)
 
     vf_enhance = (
         "scale=1280:720:flags=lanczos:force_original_aspect_ratio=increase,"
@@ -105,11 +123,11 @@ def prepare_clean_thumbnail(video_path, thumb_url, output_thumb_path, duration=1
     )
 
     if thumb_url and download_file(thumb_url, raw_thumb, min_bytes=3_000):
-        cmd = ["ffmpeg", "-y", "-v", "error", "-i", raw_thumb, "-vf", vf_enhance, "-q:v", "2", output_thumb_path]
-        subprocess.run(cmd, timeout=30)
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", raw_thumb, "-vf", vf_enhance, "-frames:v", "1", "-q:v", "2", output_thumb_path]
+        result = subprocess.run(cmd, timeout=30)
         if os.path.exists(raw_thumb):
             os.remove(raw_thumb)
-        if os.path.exists(output_thumb_path) and os.path.getsize(output_thumb_path) > 8_000:
+        if result.returncode == 0 and os.path.exists(output_thumb_path) and 8_000 < os.path.getsize(output_thumb_path) < 2_000_000:
             print("[THUMBNAIL] Official Footballi poster polished to 1280x720 HD.")
             return output_thumb_path
 
@@ -128,8 +146,8 @@ def prepare_clean_thumbnail(video_path, thumb_url, output_thumb_path, duration=1
             "-q:v", "2",
             output_thumb_path
         ]
-        subprocess.run(cmd_frame, timeout=35)
-        if os.path.exists(output_thumb_path) and os.path.getsize(output_thumb_path) > 8_000:
+        result = subprocess.run(cmd_frame, timeout=35)
+        if result.returncode == 0 and os.path.exists(output_thumb_path) and 8_000 < os.path.getsize(output_thumb_path) < 2_000_000:
             return output_thumb_path
 
     return None

@@ -8,7 +8,8 @@ from datetime import datetime, timezone, timedelta
 from googleapiclient.errors import HttpError
 
 from config import PROTO, HISTORY_FILE
-from footballi_uploader import get_authenticated_service, load_history, save_history
+from footballi_uploader import (get_authenticated_service, load_history, save_history,
+                                get_quota_reset_key)
 
 BATCH_SIZE = 8
 MAX_REPLIES_PER_RUN = 12
@@ -152,10 +153,6 @@ DELETE_REASONS = {
     "SEXUAL_ABUSE", "FAMILY_ABUSE", "HATE_OR_THREAT", "SPAM_SCAM", "POLITICAL_SLOGAN"
 }
 
-
-def get_tehran_reset_key() -> str:
-    now_utc = datetime.now(timezone.utc)
-    return (now_utc - timedelta(hours=8)).strftime("%Y-%m-%d")
 
 
 def fetch_video_titles_map(youtube, video_ids: list) -> dict:
@@ -350,10 +347,10 @@ def reply_to_comment(youtube, parent_id: str, reply_text: str) -> bool:
 def main():
     print("[COMMENT-AGENT] Starting Footballi AI Comment Moderator (Strict Schema + Contextual Video Titles)...")
     state = load_history()
-    reset_key = get_tehran_reset_key()
+    reset_key = get_quota_reset_key()
 
     if state.get("quota_exhausted_date") == reset_key:
-        print("⏸️ [COMMENT-AGENT] Daily YouTube API quota is full for today. Skipping until 11:30 AM reset.")
+        print("⏸️ [COMMENT-AGENT] Daily YouTube API quota is full for today. Skipping until midnight Pacific quota reset.")
         return
 
     try:
@@ -426,6 +423,7 @@ def main():
                 if replied_count < MAX_REPLIES_PER_RUN:
                     print(f"✨ [ENGAGE] On '{c['video_title'][:30]}' -> {c['author']}: '{c['text'][:45]}'")
                     if reply_to_comment(youtube, cid, reply_text):
+                        ignored_ids.add(cid)
                         replied_count += 1
                         print(f"💬 [REPLIED] Sent: '{reply_text}'")
                         time.sleep(1.5)
@@ -433,8 +431,13 @@ def main():
             elif action == "IGNORE":
                 ignored_ids.add(cid)
 
-    state["ignored_comments"] = list(ignored_ids)[-1000:]
-    state["deleted_comments"] = list(deleted_ids)[-1000:]
+            # Persist each successful action before processing the next comment.
+            state["ignored_comments"] = sorted(ignored_ids)[-1000:]
+            state["deleted_comments"] = sorted(deleted_ids)[-1000:]
+            save_history(state)
+
+    state["ignored_comments"] = sorted(ignored_ids)[-1000:]
+    state["deleted_comments"] = sorted(deleted_ids)[-1000:]
     save_history(state)
     print(f"[COMMENT-AGENT] Run complete! Deleted: {deleted_count} | Replied: {replied_count}")
 

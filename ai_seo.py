@@ -158,18 +158,27 @@ OUTPUT:
 def validate_seo_result(res: dict, raw_title: str, raw_desc: str, is_short: bool) -> dict:
     if not isinstance(res, dict):
         return None
-    t = str(res.get("title", "")).replace("ي", "ی").replace("ك", "ک").strip()
-    d = str(res.get("description", "")).replace("ي", "ی").replace("ك", "ک").strip()
+    if not isinstance(res.get("title"), str) or not isinstance(res.get("description"), str):
+        return None
+    t = res["title"].replace("ي", "ی").replace("ك", "ک").strip()
+    d = res["description"].replace("ي", "ی").replace("ك", "ک").strip()
     tags = res.get("tags", [])
     if not t or not d or not isinstance(tags, list):
         return None
-    t = re.sub(r"#shorts", "", t, flags=re.IGNORECASE).strip()[:90]
+    t = re.sub(r"#shorts\b", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"[<>\r\n]", " ", t).strip()[:90]
+    d = re.sub(r"[<>]", "", d)
+    d = re.sub(r"#shorts\b", "", d, flags=re.IGNORECASE).strip()[:4800]
+    if not t or not d:
+        return None
     if is_short and "#shorts" not in d.lower():
         d = f"{d}\n\n#Shorts".strip()
     clean_tags = []
     total_len = 0
     for tg in tags:
-        s = str(tg).strip()
+        if not isinstance(tg, str):
+            continue
+        s = re.sub(r"[<>]", "", tg).strip()
         if s and s not in clean_tags and total_len + len(s) + 2 <= 340:
             clean_tags.append(s)
             total_len += len(s) + 2
@@ -240,14 +249,14 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
             except Exception:
                 continue
 
-    clean_t = title.replace("ي", "ی").replace("ك", "ک").strip()[:88]
+    clean_t = re.sub(r"[<>\r\n]", " ", title).replace("ي", "ی").replace("ك", "ک").strip()[:88]
     hashtag_tail = "#فوتبالی #Shorts" if is_short else "#فوتبالی"
     clean_d = f"{clean_t}\n\n{description or clean_t}\n\n{hashtag_tail}".strip()
-    return {
+    return validate_seo_result({
         "title": clean_t,
         "description": clean_d,
         "tags": ["فوتبالی", "Footballi"],
-    }
+    }, title, description, is_short)
 
 
 ai_generate_seo_metadata = generate_seo_metadata
@@ -255,11 +264,8 @@ build_seo_package = generate_seo_metadata
 
 
 def ai_free_copyright_audit(title: str, desc: str = "", source_type: str = "WEB") -> bool:
-    norm = f"{title}".replace("ي", "ی").replace("ك", "ک").lower()
-    for bad in FORBIDDEN_KEYWORDS:
-        if bad.lower() in norm and any(w in norm for w in ["خلاصه بازی", "گل اول", "گل دوم", "هایلایت", "سوپرگل"]):
-            return False
-    return True
+    from scrapers import is_foreign_or_blacklisted
+    return not is_foreign_or_blacklisted(title, desc)
 
 
 def ai_rank_and_filter_candidates(candidates: list) -> list:
