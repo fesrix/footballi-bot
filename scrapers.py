@@ -671,10 +671,13 @@ def fetch_instagram_reels(state: dict) -> list:
 
     last_check = float(state.get("last_apify_check", 0))
     elapsed_hours = (time.time() - last_check) / 3600.0
-    if elapsed_hours < APIFY_COOLDOWN_HOURS:
+    force_check = os.environ.get("APIFY_FORCE_CHECK", "").strip().lower() in {"1", "true", "yes"}
+    if elapsed_hours < APIFY_COOLDOWN_HOURS and not force_check:
         rem = APIFY_COOLDOWN_HOURS - elapsed_hours
         print(f"[APIFY] Cooldown active ({rem:.1f}h remaining before next Instagram check).")
         return []
+    if force_check:
+        print("[APIFY] Cooldown override enabled for this manual verification run.")
 
     try:
         from apify_client import ApifyClient
