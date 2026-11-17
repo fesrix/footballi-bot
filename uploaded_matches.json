@@ -410,7 +410,8 @@
     "https://footballi.net/video/1075323/%D9%88%D9%82%D8%AA%DB%8C-%D9%81%DB%8C%D9%81%D8%A7%D8%AF%DB%8C-%D8%A7%D8%B3%D8%AA-%D9%88-%D8%B3%D9%88%DA%98%D9%87-%DA%A9%D9%85-%D9%85%DB%8C-%D8%A2%DB%8C%D8%AF-%D8%AA%D9%86%DB%8C%D8%B3-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%AF%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1",
     "https://footballi.net/video/1075324/%D8%AD%D8%B6%D9%88%D8%B1-%D8%BA%D9%84%D8%A7%D9%85%D8%B1%D8%B6%D8%A7-%D9%81%D8%B1%D8%AE%DB%8C-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86-%DA%A9%D8%B4%D8%AA%DB%8C-%D8%AF%D8%B1-%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D9%81%D8%AC%D8%B1-%D8%B3%D9%BE%D8%A7%D8%B3%DB%8C",
     "https://footballi.net/video/1075321/%D8%A2%D9%86%D8%A7%D9%84%DB%8C%D8%B2-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%AF%D8%B1-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D8%A7-%D8%AD%D8%B6%D9%88%D8%B1-%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D9%88-%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86",
-    "https://footballi.net/video/1075309/%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DA%86%D9%87-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%87%D8%A7%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82"
+    "https://footballi.net/video/1075309/%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DA%86%D9%87-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%87%D8%A7%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
+    "https://footballi.net/video/1075302/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%DB%8C%DA%A9-%D9%85%D8%B1%D8%A8%DB%8C-%D8%A8%D9%87-%DA%A9%D8%A7%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -569,7 +570,8 @@
     "وقتی فیفادی است و سوژه کم می‌آید؛ تنیس فوتبال در فوتبال برتر! | فوتبال ایران",
     "حضور غلامرضا فرخی قهرمان کشتی در تمرینات فجر سپاسی | فوتبال ایران",
     "آنالیز عملکرد تیم ملی در دیدار با فلسطین با حضور کاظمی و مسلمان | فوتبال ایران",
-    "تاریخچه دیدار‌های تیم ملی ایران با عراق | فوتبال ایران"
+    "تاریخچه دیدار‌های تیم ملی ایران با عراق | فوتبال ایران",
+    "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -606,17 +608,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 1075302,
-      "url": "https://footballi.net/video/1075302/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%DB%8C%DA%A9-%D9%85%D8%B1%D8%A8%DB%8C-%D8%A8%D9%87-%DA%A9%D8%A7%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF",
-      "title": "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود",
-      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | پرسپولیس,پیمان حدادی,فوتبال برتر",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-378b338a-6585-4952-8b79-7b6a29b31691.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/FYQtJPn2SOZ6Uyom0ztPwvC2NjLI1KHOSXKq9d09.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
     {
       "video_id": 1075299,
       "url": "https://footballi.net/video/1075299/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AA%D8%A7-%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%D8%AF%D8%A7%D8%AF",
@@ -1221,13 +1212,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/17/tus-bd0c5be1-7187-435d-8d69-5cfe7c53b68a.mp4",
     "https://vod.liveboks.com/foot/upload/videos/2026/11/16/tus-130d2d22-29fa-41ba-beb1-b734aa72442c.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b5448f4a-f7bc-48c9-ace5-e2a8f5cc7c85.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-5398f225-dba9-42f5-a154-68299e14b90a.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-5398f225-dba9-42f5-a154-68299e14b90a.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-378b338a-6585-4952-8b79-7b6a29b31691.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 20
+    "count": 21
   },
-  "last_upload_timestamp": 1794886323.016372,
+  "last_upload_timestamp": 1794889928.448429,
   "last_apify_check": 1794884575.4152408,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1699,6 +1691,10 @@
     "NjBDBkuT0ow": [
       "INTERVIEW",
       "TEAM_MELLI"
+    ],
+    "cY91jitiefk": [
+      "INTERVIEW",
+      "PERSEPOLIS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1726,6 +1722,7 @@
     "وقتی فیفادی است و سوژه کم می‌آید؛ تنیس فوتبال در فوتبال برتر!",
     "حضور غلامرضا فرخی قهرمان کشتی در تمرینات فجر سپاسی",
     "آنالیز عملکرد تیم ملی در دیدار با فلسطین با حضور کاظمی و مسلمان",
-    "تاریخچه دیدار‌های تیم ملی ایران با عراق"
+    "تاریخچه دیدار‌های تیم ملی ایران با عراق",
+    "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود"
   ]
 }
