@@ -412,7 +412,8 @@
     "https://footballi.net/video/1075321/%D8%A2%D9%86%D8%A7%D9%84%DB%8C%D8%B2-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%AF%D8%B1-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%A8%D8%A7-%D8%AD%D8%B6%D9%88%D8%B1-%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D9%88-%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86",
     "https://footballi.net/video/1075309/%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DA%86%D9%87-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%87%D8%A7%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
     "https://footballi.net/video/1075302/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%DB%8C%DA%A9-%D9%85%D8%B1%D8%A8%DB%8C-%D8%A8%D9%87-%DA%A9%D8%A7%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF",
-    "https://footballi.net/video/1075299/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AA%D8%A7-%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%D8%AF%D8%A7%D8%AF"
+    "https://footballi.net/video/1075299/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AA%D8%A7-%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D8%A7%D8%AF%D8%A7%D9%85%D9%87-%D8%AE%D9%88%D8%A7%D9%87%DB%8C%D9%85-%D8%AF%D8%A7%D8%AF",
+    "https://footballi.net/video/1075295/%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%DB%8C%D8%A7-%D8%B3%DA%A9%D9%88%DB%8C-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AF-%D8%AA%D9%88%D8%B6%DB%8C%D8%AD-%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -573,7 +574,8 @@
     "آنالیز عملکرد تیم ملی در دیدار با فلسطین با حضور کاظمی و مسلمان | فوتبال ایران",
     "تاریخچه دیدار‌های تیم ملی ایران با عراق | فوتبال ایران",
     "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود | فوتبال ایران",
-    "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد | فوتبال ایران"
+    "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد | فوتبال ایران",
+    "آگهی فروش یا سکوی افزایش قرارداد؟ توضیح حدادی درباره محمودی! | فوتبال ایران"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -610,17 +612,6 @@
   ],
   "unblocked_v3": true,
   "pending_queue": [
-    {
-      "video_id": 1075295,
-      "url": "https://footballi.net/video/1075295/%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%DB%8C%D8%A7-%D8%B3%DA%A9%D9%88%DB%8C-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AF-%D8%AA%D9%88%D8%B6%DB%8C%D8%AD-%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C",
-      "title": "آگهی فروش یا سکوی افزایش قرارداد؟ توضیح حدادی درباره محمودی!",
-      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | 17064,31974,51487,53309",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-fc77d4cc-2fb0-44c1-8ad2-2fbe85ebda59.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/PMLXxPBAOQzlByEWjxUutDUlB8es7tA2lSIeHuYu.jpg",
-      "source": "footballi_web",
-      "is_short": false,
-      "category": "VIDEO"
-    },
     {
       "video_id": 1075291,
       "url": "https://footballi.net/video/1075291/%D8%AD%D8%AF%D8%A7%D8%AF%DB%8C-%D8%A2%DA%AF%D9%87%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%86%D8%B4%D8%A7%D9%86-%D8%AF%D8%A7%D8%AF%D9%86-%D8%A7%D8%B1%D8%B2%D8%B4-%D8%A7%D9%88-%D8%A8%D9%88%D8%AF",
@@ -705,6 +696,17 @@
       "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | 17144,30567,31974,50330",
       "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-c2ce92eb-f20c-49cc-8df7-d4828803b119.mp4",
       "poster_url": "https://cdn.oddrun.ir/news/1000/images/EnTtSIeBwW6UXt1mCaeNlmPr0Rcv9Utr3zfeyv0P.jpg",
+      "source": "footballi_web",
+      "is_short": false,
+      "category": "VIDEO"
+    },
+    {
+      "video_id": 1075254,
+      "url": "https://footballi.net/video/1075254/%D8%A8%D8%AD%D8%AB-%D9%88-%D8%AC%D8%AF%D8%A7%D9%84-%D9%87%D8%A7%DB%8C-%D8%AF%D8%A7%D8%BA-%D8%B1%D9%88%DB%8C-%D8%A2%D9%86%D8%AA%D9%86-%D8%B2%D9%86%D8%AF%D9%87-%D8%AA%D9%84%D9%88%DB%8C%D8%B2%DB%8C%D9%88%D9%86",
+      "title": "بحث و جدال های داغ روی آنتن زنده تلویزیون",
+      "description": "مروری بر جنجالی‌ترین درگیری‌های فوتبالی که در برابر دوربین‌های تلویزیونی و در پخش زنده رخ دادند؛ از درگیری لفظی و مشاجره بازیکنان و مربیان تا لحظات پرتنش و برخوردهای فیزیکی که میلیون‌ها بیننده شاهد آن بودند و به حواشی فراموش‌نشدنی فوتبال تبدیل شدند.",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-e9b11d1d-8849-4534-a664-d0096c1fb86c.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/SBPe4NZ8boTIExpS8tg81DVHQaDumetcmcJ8CoAv.jpg",
       "source": "footballi_web",
       "is_short": false,
       "category": "VIDEO"
@@ -1216,13 +1218,15 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-b5448f4a-f7bc-48c9-ace5-e2a8f5cc7c85.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-5398f225-dba9-42f5-a154-68299e14b90a.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-378b338a-6585-4952-8b79-7b6a29b31691.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f6c12de0-118f-493f-aa44-2a853fe8ed01.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-f6c12de0-118f-493f-aa44-2a853fe8ed01.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/17/tus-cb1726b5-5701-4330-b690-08c19e2c36e2.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/16/tus-fc77d4cc-2fb0-44c1-8ad2-2fbe85ebda59.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-16",
-    "count": 22
+    "count": 23
   },
-  "last_upload_timestamp": 1794893515.4574602,
+  "last_upload_timestamp": 1794897151.0978317,
   "last_apify_check": 1794884575.4152408,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1702,6 +1706,10 @@
     "AxVGoleCjpk": [
       "INTERVIEW",
       "ESTEGHLAL"
+    ],
+    "RSSubbsW44E": [
+      "INTERVIEW",
+      "TRANSFERS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -1714,12 +1722,13 @@
     "Ugwfa5Oz6HdnQdb2c_F4AaABAg",
     "UgwnFn0zjTK0i1dfQwd4AaABAg"
   ],
-  "max_seen_video_id": 1075327,
+  "max_seen_video_id": 1075328,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF",
     "https://footballi.net/video/1075325/%D9%84%DB%8C%DA%AF-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D8%B4%D8%B4%D9%85-%D8%A8%D9%87-%D8%B1%D9%88%D8%A7%DB%8C%D8%AA-%D8%A2%D9%85%D8%A7%D8%B1-%D9%88-%D8%A7%D8%B1%D9%82%D8%A7%D9%85-%D8%AA%D8%A7-%D9%87%D9%81%D8%AA%D9%87-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85",
-    "https://footballi.net/video/1075322/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D9%87%D8%A7-%D8%A7%D8%B2-%D9%84%DB%8C%DA%AF-%D9%81%D8%B1%D8%A7%D8%B1-%DA%A9%D9%86%D9%86%D8%AF"
+    "https://footballi.net/video/1075322/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D9%87%D8%A7-%D8%A7%D8%B2-%D9%84%DB%8C%DA%AF-%D9%81%D8%B1%D8%A7%D8%B1-%DA%A9%D9%86%D9%86%D8%AF",
+    "https://footballi.net/video/1075328/%DA%A9%D9%86%D9%81%D8%B1%D8%A7%D9%86%D8%B3-%D8%B9%D9%84%DB%8C-%D9%86%D8%A7%D8%AF%D8%B1%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A2%D8%BA%D8%A7%D8%B2-%D9%85%D8%B3%D8%A7%D8%A8%D9%82%D8%A7%D8%AA-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%DB%8C-%D8%A2%D8%B3%DB%8C%D8%A7"
   ],
   "seen_raw_titles": [
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر",
@@ -1731,6 +1740,7 @@
     "آنالیز عملکرد تیم ملی در دیدار با فلسطین با حضور کاظمی و مسلمان",
     "تاریخچه دیدار‌های تیم ملی ایران با عراق",
     "حدادی: یک مربی به کادر فنی پرسپولیس اضافه می‌شود",
-    "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد"
+    "حدادی: پرونده یاسر آسانی را تا انتها ادامه خواهیم داد",
+    "آگهی فروش یا سکوی افزایش قرارداد؟ توضیح حدادی درباره محمودی!"
   ]
 }
