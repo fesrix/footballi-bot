@@ -631,7 +631,13 @@
       "source": "footballi_web",
       "is_short": false,
       "ai_score": 7,
-      "category": "VIDEO"
+      "category": "VIDEO",
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075420/%D8%A7%D9%85%DB%8C%D8%B1-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%D9%87%D8%A7%DB%8C%DB%8C-%D9%85%D8%AB%D9%84-%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D9%87-%D8%A2%D9%85%D8%A7%D8%AF%D9%87-%D8%B3%D8%A7%D8%B2%DB%8C-%D9%85%D8%A7-%D8%AE%DB%8C%D9%84%DB%8C-%DA%A9%D9%85%DA%A9-%D9%85%DB%8C-%DA%A9%D9%86%D8%AF",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930766.9408286,
+      "attempt_count": 1
     },
     {
       "video_id": 1075418,
@@ -646,7 +652,13 @@
       "source": "footballi_web",
       "is_short": false,
       "ai_score": 7,
-      "category": "VIDEO"
+      "category": "VIDEO",
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075418/%D9%88%D8%B1%D9%88%D8%AF-%D8%A7%D8%AA%D9%88%D8%A8%D9%88%D8%B3-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A8%D9%87-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A8%D8%B5%D8%B1%D9%87-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930766.9585044,
+      "attempt_count": 1
     },
     {
       "video_id": 1075400,
@@ -661,7 +673,13 @@
       "source": "footballi_web",
       "is_short": false,
       "ai_score": 7,
-      "category": "VIDEO"
+      "category": "VIDEO",
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075400/%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1-%D8%B3%D8%A7%DB%8C%D9%BE%D8%A7-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84%DB%8C",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930766.9726932,
+      "attempt_count": 1
     },
     {
       "video_id": 1075389,
@@ -676,7 +694,13 @@
       "source": "footballi_web",
       "is_short": false,
       "ai_score": 7,
-      "category": "VIDEO"
+      "category": "VIDEO",
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075389/%D8%AA%DA%A9-%DA%AF%D9%84-%D8%B2%DB%8C%D8%A8%D8%A7%DB%8C-%D8%A8%D8%A7%D9%86%D9%88%D8%A7%D9%86-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D8%B1%D8%A7%D8%A8%D8%B1-%D8%AE%D8%A7%D8%AA%D9%88%D9%86-%D8%A8%D9%85-%D8%AA%D9%88%D8%B3%D8%B7-%D8%B2%DB%8C%D9%86%D8%A8-%D8%B9%D8%A8%D8%A7%D8%B3%D9%BE%D9%88%D8%B1",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930766.98667,
+      "attempt_count": 1
     },
     {
       "video_id": 1075279,
@@ -689,7 +713,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075279/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D9%85%D8%B4%DA%A9%D9%84-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%A8%DB%8C%D9%86-%D8%A8%D8%B2%D8%B1%DA%AF%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D8%AD%D9%84-%D9%85%DB%8C%D8%B4%D8%AF",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.002629,
+      "attempt_count": 1
     },
     {
       "video_id": 1075278,
@@ -702,7 +732,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075278/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AD%D8%B3%DB%8C%D9%86-%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D9%BE%DB%8C%D8%B1%D8%A7%D9%85%D9%88%D9%86-%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.017135,
+      "attempt_count": 1
     },
     {
       "video_id": 1075277,
@@ -715,7 +751,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075277/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%A2%D9%82%D8%A7%DB%8C-%D9%82%D9%84%D8%B9%D9%87-%D9%86%D9%88%DB%8C%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D8%AF-%D8%AA%D8%BA%DB%8C%DB%8C%D8%B1-%D9%86%D8%B3%D9%84-%D8%A7%D8%B3%D8%AA",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.030567,
+      "attempt_count": 1
     },
     {
       "video_id": 1075269,
@@ -728,7 +770,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075269/%D8%B1%D9%88%D8%A7%DB%8C%D8%AA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%D8%B2-%D8%AE%D8%AF%D8%A7%D8%AD%D8%A7%D9%81%D8%B8%DB%8C-%D8%B3%D8%A7%D9%85%D8%A7%D9%86-%D9%82%D8%AF%D9%88%D8%B3-%D8%A7%D8%B2-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.042977,
+      "attempt_count": 1
     },
     {
       "video_id": 1075268,
@@ -741,7 +789,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075268/%DA%AF%D9%88%D8%AF%D8%B1%D8%B2%DB%8C-%D8%B4%D8%A7%D8%AF%DB%8C-%DA%AF%D9%84%D9%85-%D8%A8%D9%87-%D8%A7%D9%81%D8%AA%D8%AE%D8%A7%D8%B1-%D9%84%D8%B1%D9%87%D8%A7%D8%B3%D8%AA",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.0569837,
+      "attempt_count": 1
     },
     {
       "video_id": 1075267,
@@ -754,7 +808,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075267/%D8%B3%D9%84%D9%85%D8%A7%D9%86%DB%8C-%D9%88-%DA%AF%D9%88%D8%AF%D8%B1%D8%B2%DB%8C-%DB%8C%D8%A7%D8%B3%D8%B1-%D8%A2%D8%B3%D8%A7%D9%86%DB%8C-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%AE%D8%A7%D8%B1%D8%AC%DB%8C-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.066794,
+      "attempt_count": 1
     },
     {
       "video_id": 1075261,
@@ -767,7 +827,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075261/%D8%AD%D8%B3%DB%8C%D9%86-%DA%AF%D9%88%D8%AF%D8%B1%D8%B2%DB%8C-%D8%AF%D9%88%D8%B3%D8%AA-%D8%AF%D8%A7%D8%B4%D8%AA%D9%85-%D8%A7%D9%88%D9%84%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%84%DB%8C-%D8%B1%D8%A7-%D8%A8%D8%A7-%D8%A8%D8%B1%D8%AF-%D8%B3%D9%BE%D8%B1%DB%8C-%DA%A9%D9%86%D9%85",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.082136,
+      "attempt_count": 1
     },
     {
       "video_id": 1075254,
@@ -780,7 +846,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075254/%D8%A8%D8%AD%D8%AB-%D9%88-%D8%AC%D8%AF%D8%A7%D9%84-%D9%87%D8%A7%DB%8C-%D8%AF%D8%A7%D8%BA-%D8%B1%D9%88%DB%8C-%D8%A2%D9%86%D8%AA%D9%86-%D8%B2%D9%86%D8%AF%D9%87-%D8%AA%D9%84%D9%88%DB%8C%D8%B2%DB%8C%D9%88%D9%86",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.0993614,
+      "attempt_count": 1
     },
     {
       "video_id": 1075246,
@@ -793,7 +865,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075246/%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D8%AA%D9%85%D8%B1%DB%8C%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.1127288,
+      "attempt_count": 1
     },
     {
       "video_id": 1075237,
@@ -806,7 +884,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075237/%D8%A7%D9%85%DB%8C%D8%B1%DB%8C-%D9%82%D9%88%D9%84-%D9%85%DB%8C-%D8%AF%D9%87%D9%85-%D9%86%DB%8C%D8%B1%D9%88%DB%8C-%D8%B2%D9%85%DB%8C%D9%86%DB%8C-%D8%AF%D8%B1-%D8%AC%D9%85%D8%B9-%D8%B4%D8%B4-%D8%AA%DB%8C%D9%85-%D8%A8%D8%A7%D9%84%D8%A7%DB%8C-%D8%AC%D8%AF%D9%88%D9%84-%D8%AE%D9%88%D8%A7%D9%87%D8%AF-%D8%A8%D9%88%D8%AF",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.1253114,
+      "attempt_count": 1
     },
     {
       "video_id": 1075230,
@@ -819,7 +903,13 @@
       "is_short": false,
       "category": "VIDEO",
       "ai_score": 6,
-      "site_views": 0
+      "site_views": 0,
+      "rights_status": "internal_authorized",
+      "source_url": "https://footballi.net/video/1075230/%DA%AF%D9%81%D8%AA-%D9%88-%DA%AF%D9%88-%D8%A8%D8%A7-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86-%D8%AF%D8%B1-%D8%AD%D8%A7%D8%B4%DB%8C%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%86%D9%81%D8%AA-%D9%85%D8%B3%D8%AC%D8%AF%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86-%D9%88-%D8%AC%D8%B2%DB%8C%D8%B1%D9%87-%D9%82%D8%B4%D9%85",
+      "content_type": "video",
+      "source_published_at": null,
+      "discovery_timestamp": 1794930767.1423762,
+      "attempt_count": 1
     }
   ],
   "organized_playlist_vids": [
@@ -1693,7 +1783,7 @@
     "Ugz-fhncZoHERKkp1_J4AaABAg",
     "Ugz_-NosHp-bXis5K6R4AaABAg"
   ],
-  "max_seen_video_id": 1075432,
+  "max_seen_video_id": 1075435,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF",
@@ -1772,7 +1862,9 @@
     "https://footballi.net/video/1075426/%D8%AD%D8%A7%D9%84-%D9%88-%D9%87%D9%88%D8%A7%DB%8C-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A8%D8%B5%D8%B1%D9%87-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D9%82%D8%A8%D9%84-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D8%B9%D8%B1%D8%A7%D9%82",
     "https://footballi.net/video/1075423/%D8%A8%D8%B1%D8%AE%D9%88%D8%B1%D8%AF-%D8%B3%D9%86%DA%AF%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%D8%A7%D8%B1%D8%A7%DA%AF%D9%88%D8%A6%D9%87-%D8%A8%D8%A7-%DA%A9%D9%88%D8%A8%D9%88-%D9%88-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%DA%98%D8%A7%D9%BE%D9%86%DB%8C-%D9%87%D8%A7",
     "https://footballi.net/video/1075431/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%98%D8%A7%D9%BE%D9%86-1-2-%D9%BE%D8%A7%D8%B1%D8%A7%DA%AF%D9%88%D8%A6%D9%87",
-    "https://footballi.net/video/1075432/%D8%AA%D8%AC%D9%84%DB%8C%D9%84-%DA%98%D8%A7%D9%BE%D9%86%DB%8C-%D9%87%D8%A7-%D8%A7%D8%B2-%D9%85%D9%88%D8%B1%DB%8C%D8%A7%D8%B3%D9%88-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C"
+    "https://footballi.net/video/1075432/%D8%AA%D8%AC%D9%84%DB%8C%D9%84-%DA%98%D8%A7%D9%BE%D9%86%DB%8C-%D9%87%D8%A7-%D8%A7%D8%B2-%D9%85%D9%88%D8%B1%DB%8C%D8%A7%D8%B3%D9%88-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C",
+    "https://footballi.net/video/1075435/%DA%AF%D9%84-%DA%86%D9%87%D8%A7%D8%B1%D9%85-%D8%A7%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D9%87-%D8%B3%D9%88%D8%B1%DB%8C%D9%87-%DA%A9%D8%A7%D9%85%D8%A7%D8%B1%D8%A7",
+    "https://footballi.net/video/1075434/%DA%AF%D9%84-%D8%B3%D9%88%D9%85-%D8%A7%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D9%87-%D8%B3%D9%88%D8%B1%DB%8C%D9%87-%D8%AE%DB%8C%D9%85%D9%86%D8%B2"
   ],
   "seen_raw_titles": [
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر",
@@ -1796,7 +1888,7 @@
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 8702,
               "estimatedMinutesWatched": 38554,
@@ -1809,7 +1901,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -1821,13 +1913,23 @@
           "likes": 75,
           "comments": 54,
           "shares": 18
+        },
+        "video_id": "S_VYBNL7FUw",
+        "source": "youtube",
+        "title": "گفت‌وگو با رییس دپارتمان داوری درباره اخراج یاسر آسانی مقابل استقلال خوزستان",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T06:35:51Z",
+        "recent_statistics": {
+          "viewCount": 9619,
+          "likeCount": 82,
+          "commentCount": 48
         }
       },
       "KBoFCIWbTDc": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 12593,
               "estimatedMinutesWatched": 34082,
@@ -1840,7 +1942,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -1852,13 +1954,23 @@
           "likes": 59,
           "comments": 3,
           "shares": 5
+        },
+        "video_id": "KBoFCIWbTDc",
+        "source": "youtube",
+        "title": "خلاصه بازی استقلال 1-0 گل گهر سیرجان | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-14T11:03:39Z",
+        "recent_statistics": {
+          "viewCount": 15774,
+          "likeCount": 83,
+          "commentCount": 9
         }
       },
       "U8ulvXoEgs8": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 14068,
               "estimatedMinutesWatched": 28045,
@@ -1871,7 +1983,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -1883,13 +1995,23 @@
           "likes": 69,
           "comments": 12,
           "shares": 23
+        },
+        "video_id": "U8ulvXoEgs8",
+        "source": "youtube",
+        "title": "شاهرودی: سطح فوتبال کریم باقری از کاویانپور بالاتر بود | حواشی فوتبال ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-11T05:05:06Z",
+        "recent_statistics": {
+          "viewCount": 17812,
+          "likeCount": 88,
+          "commentCount": 30
         }
       },
       "8ojRxQ9IY5s": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 9213,
               "estimatedMinutesWatched": 25069,
@@ -1902,7 +2024,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -1914,13 +2036,23 @@
           "likes": 51,
           "comments": 17,
           "shares": 4
+        },
+        "video_id": "8ojRxQ9IY5s",
+        "source": "youtube",
+        "title": "کارشناسی داوری بازی جنجالی استقلال خوزستان و استقلال | لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T06:35:06Z",
+        "recent_statistics": {
+          "viewCount": 9970,
+          "likeCount": 53,
+          "commentCount": 24
         }
       },
       "iQiMG7snDgU": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 4511,
               "estimatedMinutesWatched": 18235,
@@ -1933,7 +2065,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -1945,13 +2077,23 @@
           "likes": 28,
           "comments": 26,
           "shares": 2
+        },
+        "video_id": "iQiMG7snDgU",
+        "source": "youtube",
+        "title": "کارشناسی داوری استقلال خوزستان و استقلال با نوید مظفری | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-12T09:32:13Z",
+        "recent_statistics": {
+          "viewCount": 5141,
+          "likeCount": 33,
+          "commentCount": 39
         }
       },
       "URucfHuv2YE": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 5227,
               "estimatedMinutesWatched": 17560,
@@ -1964,7 +2106,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -1976,13 +2118,23 @@
           "likes": 32,
           "comments": 1,
           "shares": 6
+        },
+        "video_id": "URucfHuv2YE",
+        "source": "youtube",
+        "title": "خلاصه بازی سپاهان 4-0 ملوان",
+        "category": "SUMMARY",
+        "published_at": "2026-11-06T14:47:27Z",
+        "recent_statistics": {
+          "viewCount": 5294,
+          "likeCount": 33,
+          "commentCount": 2
         }
       },
       "OXJ70v_2uCc": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 6508,
               "estimatedMinutesWatched": 11099,
@@ -1995,7 +2147,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2007,13 +2159,23 @@
           "likes": 37,
           "comments": 12,
           "shares": 12
+        },
+        "video_id": "OXJ70v_2uCc",
+        "source": "youtube",
+        "title": "فرشاد پیوس: صحبت‌های مهدی تارتار اشتباه بود! | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-11T05:37:04Z",
+        "recent_statistics": {
+          "viewCount": 8169,
+          "likeCount": 51,
+          "commentCount": 25
         }
       },
       "csoeRjEzIKA": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 5238,
               "estimatedMinutesWatched": 7324,
@@ -2026,7 +2188,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2038,13 +2200,23 @@
           "likes": 27,
           "comments": 6,
           "shares": 9
+        },
+        "video_id": "csoeRjEzIKA",
+        "source": "youtube",
+        "title": "بررسی ادعاهای جنجالی علیه ایلدروم کمک داور بازی استقلال خوزستان و استقلال",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T06:36:10Z",
+        "recent_statistics": {
+          "viewCount": 5430,
+          "likeCount": 27,
+          "commentCount": 7
         }
       },
       "Ud5TSd3MlyI": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 3813,
               "estimatedMinutesWatched": 4803,
@@ -2057,7 +2229,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2069,13 +2241,23 @@
           "likes": 28,
           "comments": 28,
           "shares": 4
+        },
+        "video_id": "Ud5TSd3MlyI",
+        "source": "youtube",
+        "title": "دانیال مرادی: در صورت اثبات توهین ایلدروم به یاسر آسانی، با او برخورد می‌کنیم | کمیته داوران",
+        "category": "VIDEO",
+        "published_at": "2026-11-09T20:32:59Z",
+        "recent_statistics": {
+          "viewCount": 3823,
+          "likeCount": 28,
+          "commentCount": 44
         }
       },
       "vEf2fSJDli0": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 491,
               "estimatedMinutesWatched": 1643,
@@ -2088,7 +2270,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2100,13 +2282,23 @@
           "likes": 3,
           "comments": 1,
           "shares": 2
+        },
+        "video_id": "vEf2fSJDli0",
+        "source": "youtube",
+        "title": "خلاصه بازی استقلال خوزستان ۲-۲ استقلال | طوفان گل و جنجال در لیگ برتر ایران ⚽🔥",
+        "category": "SUMMARY",
+        "published_at": "2026-11-08T09:11:50Z",
+        "recent_statistics": {
+          "viewCount": 592,
+          "likeCount": 3,
+          "commentCount": 0
         }
       },
       "j4bjTRVQ0nY": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 2255,
               "estimatedMinutesWatched": 1543,
@@ -2119,7 +2311,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2131,13 +2323,23 @@
           "likes": 53,
           "comments": 10,
           "shares": 5
+        },
+        "video_id": "j4bjTRVQ0nY",
+        "source": "youtube",
+        "title": "دابسمش طنز هوادار پرسپولیس و استقلال پس از گل جنجالی در لیگ برتر #shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-09T18:38:41Z",
+        "recent_statistics": {
+          "viewCount": 2456,
+          "likeCount": 64,
+          "commentCount": 14
         }
       },
       "KeK7EsUVpx0": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 432,
               "estimatedMinutesWatched": 1408,
@@ -2150,7 +2352,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2162,13 +2364,23 @@
           "likes": 6,
           "comments": 0,
           "shares": 1
+        },
+        "video_id": "KeK7EsUVpx0",
+        "source": "youtube",
+        "title": "ویدیوکست: از شعار علیه تارتار تا جنجال کشاله آسانی! | حواشی لیگ برتر ایران",
+        "category": "VIDEOCAST",
+        "published_at": "2026-11-11T05:35:59Z",
+        "recent_statistics": {
+          "viewCount": 434,
+          "likeCount": 6,
+          "commentCount": 0
         }
       },
       "OawsusTUJ_0": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 1396,
               "estimatedMinutesWatched": 750,
@@ -2181,7 +2393,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2193,13 +2405,23 @@
           "likes": 20,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "OawsusTUJ_0",
+        "source": "youtube",
+        "title": "مصاحبه پورعلی گنجی درباره علیرضا منصوریان #Shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-07T07:36:31Z",
+        "recent_statistics": {
+          "viewCount": 1426,
+          "likeCount": 20,
+          "commentCount": 0
         }
       },
       "jKuTNGoRG8Y": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 1116,
               "estimatedMinutesWatched": 740,
@@ -2212,7 +2434,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2224,13 +2446,23 @@
           "likes": 16,
           "comments": 3,
           "shares": 1
+        },
+        "video_id": "jKuTNGoRG8Y",
+        "source": "youtube",
+        "title": "اعتراض هواداران پرسپولیس علیه مهدی تارتار #Shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-07T07:36:48Z",
+        "recent_statistics": {
+          "viewCount": 1132,
+          "likeCount": 16,
+          "commentCount": 4
         }
       },
       "vA4XphQjqt4": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 515,
               "estimatedMinutesWatched": 630,
@@ -2243,7 +2475,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2255,13 +2487,23 @@
           "likes": 2,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "vA4XphQjqt4",
+        "source": "youtube",
+        "title": "حواشی و متن و حاشیه دیدار استقلال خوزستان ۲-۲ استقلال | لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T06:34:43Z",
+        "recent_statistics": {
+          "viewCount": 548,
+          "likeCount": 2,
+          "commentCount": 0
         }
       },
       "_3OROS99wxQ": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 1507,
               "estimatedMinutesWatched": 584,
@@ -2274,7 +2516,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2286,13 +2528,23 @@
           "likes": 19,
           "comments": 4,
           "shares": 0
+        },
+        "video_id": "_3OROS99wxQ",
+        "source": "youtube",
+        "title": "مجید جلالی: قایدی نباید در آن برنامه می‌خندید | حواشی تیم ملی #shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-09T19:03:41Z",
+        "recent_statistics": {
+          "viewCount": 1548,
+          "likeCount": 20,
+          "commentCount": 6
         }
       },
       "ha2o5jQy8Ko": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 919,
               "estimatedMinutesWatched": 574,
@@ -2305,7 +2557,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2317,13 +2569,23 @@
           "likes": 10,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "ha2o5jQy8Ko",
+        "source": "youtube",
+        "title": "جنجال ساکت الهامی و افشاگری بعد از گل تساوی! 🚨 #shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-08T09:46:02Z",
+        "recent_statistics": {
+          "viewCount": 930,
+          "likeCount": 11,
+          "commentCount": 0
         }
       },
       "VWrhlwIbXqs": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 1620,
               "estimatedMinutesWatched": 473,
@@ -2336,7 +2598,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2348,13 +2610,23 @@
           "likes": 21,
           "comments": 4,
           "shares": 0
+        },
+        "video_id": "VWrhlwIbXqs",
+        "source": "youtube",
+        "title": "روایت جالب پایان رافت از بازیکنان پرسپولیس #Shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-08T07:46:50Z",
+        "recent_statistics": {
+          "viewCount": 1636,
+          "likeCount": 21,
+          "commentCount": 6
         }
       },
       "JJmdPL-P7A0": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 1371,
               "estimatedMinutesWatched": 405,
@@ -2367,7 +2639,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2379,13 +2651,23 @@
           "likes": 36,
           "comments": 2,
           "shares": 0
+        },
+        "video_id": "JJmdPL-P7A0",
+        "source": "youtube",
+        "title": "2 گل تیم بانوان گل گهر به پرسپولیس در هفته ششم لیگ فوتبال بانوان",
+        "category": "VIDEO",
+        "published_at": "2026-11-03T21:33:06Z",
+        "recent_statistics": {
+          "viewCount": 1388,
+          "likeCount": 37,
+          "commentCount": 0
         }
       },
       "UExgMc5CCOc": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 118,
               "estimatedMinutesWatched": 357,
@@ -2398,7 +2680,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2410,13 +2692,23 @@
           "likes": 3,
           "comments": 0,
           "shares": 1
+        },
+        "video_id": "UExgMc5CCOc",
+        "source": "youtube",
+        "title": "پرسپولیس و فجرسپاسی به روایت تهران",
+        "category": "VIDEO",
+        "published_at": "2026-11-06T08:17:35Z",
+        "recent_statistics": {
+          "viewCount": 143,
+          "likeCount": 3,
+          "commentCount": 0
         }
       },
       "vORLF0uEAQg": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 3450,
               "estimatedMinutesWatched": 317,
@@ -2429,7 +2721,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2441,13 +2733,23 @@
           "likes": 18,
           "comments": 1,
           "shares": 0
+        },
+        "video_id": "vORLF0uEAQg",
+        "source": "youtube",
+        "title": "فن کمر دیدنی سحرخیزان به صالح هادی 😆🔥 #shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-08T09:47:20Z",
+        "recent_statistics": {
+          "viewCount": 3479,
+          "likeCount": 20,
+          "commentCount": 2
         }
       },
       "QexBPX9WY7w": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 195,
               "estimatedMinutesWatched": 303,
@@ -2460,7 +2762,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2472,13 +2774,23 @@
           "likes": 1,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "QexBPX9WY7w",
+        "source": "youtube",
+        "title": "اعتراض شدید هواداران پرسپولیس پس از شکست برابر فجر سپاسی | حواشی",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T05:06:00Z",
+        "recent_statistics": {
+          "viewCount": 199,
+          "likeCount": 1,
+          "commentCount": 0
         }
       },
       "nfwnT5E57s8": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 282,
               "estimatedMinutesWatched": 292,
@@ -2491,7 +2803,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2503,13 +2815,23 @@
           "likes": 1,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "nfwnT5E57s8",
+        "source": "youtube",
+        "title": "خلاصه بازی گل گهر سیرجان 0-0 ذوب آهن | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-13T08:02:50Z",
+        "recent_statistics": {
+          "viewCount": 302,
+          "likeCount": 2,
+          "commentCount": 0
         }
       },
       "FzpsXKUAbPY": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 735,
               "estimatedMinutesWatched": 279,
@@ -2522,7 +2844,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2534,13 +2856,23 @@
           "likes": 23,
           "comments": 1,
           "shares": 0
+        },
+        "video_id": "FzpsXKUAbPY",
+        "source": "youtube",
+        "title": "استقبال دیوانه‌وار هواداران اهوازی از آسانی 🔥⚽ #shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-08T09:50:21Z",
+        "recent_statistics": {
+          "viewCount": 752,
+          "likeCount": 24,
+          "commentCount": 0
         }
       },
       "etI6cKEgFsg": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 173,
               "estimatedMinutesWatched": 249,
@@ -2553,7 +2885,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2565,13 +2897,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "etI6cKEgFsg",
+        "source": "youtube",
+        "title": "میزان محرومیت احتمالی یاسر آسانی چقدر خواهد بود؟ | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-11T05:04:43Z",
+        "recent_statistics": {
+          "viewCount": 181,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "itGTGlK1vO0": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 399,
               "estimatedMinutesWatched": 209,
@@ -2584,7 +2926,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2596,13 +2938,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "itGTGlK1vO0",
+        "source": "youtube",
+        "title": "جواد نکونام: در استقلال باید برترین سرمربی فصل می‌شدم | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-12T12:32:19Z",
+        "recent_statistics": {
+          "viewCount": 412,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "dVlLzsigO00": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 277,
               "estimatedMinutesWatched": 208,
@@ -2615,7 +2967,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2627,13 +2979,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 1
+        },
+        "video_id": "dVlLzsigO00",
+        "source": "youtube",
+        "title": "کارشناسی داوری دیدار پرسپولیس و فجر سپاسی | بررسی دقیق صحنه‌ها",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T05:05:16Z",
+        "recent_statistics": {
+          "viewCount": 298,
+          "likeCount": 1,
+          "commentCount": 0
         }
       },
       "MT1__mZ5qGk": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 109,
               "estimatedMinutesWatched": 202,
@@ -2646,7 +3008,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2658,13 +3020,23 @@
           "likes": 0,
           "comments": 1,
           "shares": 0
+        },
+        "video_id": "MT1__mZ5qGk",
+        "source": "youtube",
+        "title": "روایت متفاوت و جنجالی از بازی پرسپولیس و فجر سپاسی",
+        "category": "VIDEO",
+        "published_at": "2026-11-07T09:33:08Z",
+        "recent_statistics": {
+          "viewCount": 125,
+          "likeCount": 0,
+          "commentCount": 2
         }
       },
       "S3ddbU58nxs": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 213,
               "estimatedMinutesWatched": 194,
@@ -2677,7 +3049,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2689,13 +3061,23 @@
           "likes": 1,
           "comments": 1,
           "shares": 0
+        },
+        "video_id": "S3ddbU58nxs",
+        "source": "youtube",
+        "title": "سعید اخباری: خوشحالم که نسل ملی ما در حال تغییر است | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-11T05:35:41Z",
+        "recent_statistics": {
+          "viewCount": 230,
+          "likeCount": 1,
+          "commentCount": 2
         }
       },
       "vMOuPdgcQlw": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 146,
               "estimatedMinutesWatched": 191,
@@ -2708,7 +3090,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2720,13 +3102,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "vMOuPdgcQlw",
+        "source": "youtube",
+        "title": "خلاصه بازی چادرملو اردکان 1-1 فولاد خوزستان | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-14T08:04:13Z",
+        "recent_statistics": {
+          "viewCount": 169,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "9A2kNdcUuKs": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 141,
               "estimatedMinutesWatched": 153,
@@ -2739,7 +3131,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2751,13 +3143,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "9A2kNdcUuKs",
+        "source": "youtube",
+        "title": "ماجرای ناراحتی فرشاد فرجی و استوری جنجالی برای جواد نکونام | حواشی لیگ برتر",
+        "category": "VIDEO",
+        "published_at": "2026-11-12T05:32:20Z",
+        "recent_statistics": {
+          "viewCount": 148,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "LXnHg8-cwO8": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 77,
               "estimatedMinutesWatched": 98,
@@ -2770,7 +3172,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2782,13 +3184,23 @@
           "likes": 1,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "LXnHg8-cwO8",
+        "source": "youtube",
+        "title": "جواد نکونام: امیدوارم بیرانوند زودتر برگردد | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-12T07:32:15Z",
+        "recent_statistics": {
+          "viewCount": 80,
+          "likeCount": 1,
+          "commentCount": 0
         }
       },
       "sFAa5pg9jSg": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 89,
               "estimatedMinutesWatched": 97,
@@ -2801,7 +3213,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2813,13 +3225,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "sFAa5pg9jSg",
+        "source": "youtube",
+        "title": "خلاصه بازی آلومینیوم اراک 1-0 مس شهر بابک",
+        "category": "SUMMARY",
+        "published_at": "2026-11-06T14:19:47Z",
+        "recent_statistics": {
+          "viewCount": 95,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "uTXIliANluE": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 78,
               "estimatedMinutesWatched": 72,
@@ -2832,7 +3254,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2844,13 +3266,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "uTXIliANluE",
+        "source": "youtube",
+        "title": "شجاع خلیل‌زاده: مصاحبه جنجالی پس از پیروزی تراکتور مقابل خیبر",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T04:52:00Z",
+        "recent_statistics": {
+          "viewCount": 87,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "JKMJ4pGl8n4": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 64,
               "estimatedMinutesWatched": 71,
@@ -2863,7 +3295,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2875,13 +3307,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "JKMJ4pGl8n4",
+        "source": "youtube",
+        "title": "خلاصه بازی گل گهر سیرجان 0-1 خیبر خرم آباد | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-14T10:33:13Z",
+        "recent_statistics": {
+          "viewCount": 77,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "--vp7qA9TVw": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 62,
               "estimatedMinutesWatched": 71,
@@ -2894,7 +3336,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2906,13 +3348,23 @@
           "likes": 1,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "--vp7qA9TVw",
+        "source": "youtube",
+        "title": "حمید درخشان: وضعیت پرسپولیس و حواشی اخیر نیازمند مدیریت است | پرسپولیس",
+        "category": "VIDEO",
+        "published_at": "2026-11-09T06:47:36Z",
+        "recent_statistics": {
+          "viewCount": 70,
+          "likeCount": 2,
+          "commentCount": 0
         }
       },
       "X_Zux4iPhNg": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 99,
               "estimatedMinutesWatched": 66,
@@ -2925,7 +3377,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2937,13 +3389,23 @@
           "likes": 2,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "X_Zux4iPhNg",
+        "source": "youtube",
+        "title": "خلاصه بازی شمس آذر قزوین 0-1 صنعت نفت آبادان | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-14T09:03:27Z",
+        "recent_statistics": {
+          "viewCount": 129,
+          "likeCount": 2,
+          "commentCount": 0
         }
       },
       "48Pn7rcatgw": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 78,
               "estimatedMinutesWatched": 63,
@@ -2956,7 +3418,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2968,13 +3430,23 @@
           "likes": 2,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "48Pn7rcatgw",
+        "source": "youtube",
+        "title": "نبردهای فراموش‌نشدنی استقلال در خانه استقلال خوزستان",
+        "category": "VIDEO",
+        "published_at": "2026-11-07T04:47:53Z",
+        "recent_statistics": {
+          "viewCount": 80,
+          "likeCount": 2,
+          "commentCount": 0
         }
       },
       "kl96uXA3T3M": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 82,
               "estimatedMinutesWatched": 50,
@@ -2987,7 +3459,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -2999,13 +3471,23 @@
           "likes": 3,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "kl96uXA3T3M",
+        "source": "youtube",
+        "title": "پشت صحنه جذاب و دیدنی دیدار سپاهان و ملوان از زاویه دوربین باشگاه! 🔥⚽",
+        "category": "VIDEO",
+        "published_at": "2026-11-08T11:35:17Z",
+        "recent_statistics": {
+          "viewCount": 85,
+          "likeCount": 4,
+          "commentCount": 0
         }
       },
       "uApJUU_OztI": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 98,
               "estimatedMinutesWatched": 47,
@@ -3018,7 +3500,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3030,13 +3512,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "uApJUU_OztI",
+        "source": "youtube",
+        "title": "خلاصه بازی پیکان 1-1 نساجی مازندران | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-14T09:32:52Z",
+        "recent_statistics": {
+          "viewCount": 126,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "4-ZGuhvq6FY": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 112,
               "estimatedMinutesWatched": 41,
@@ -3049,7 +3541,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3061,13 +3553,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "4-ZGuhvq6FY",
+        "source": "youtube",
+        "title": "کارشناسی داوری پرسپولیس و فجرسپاسی با نوید مظفری | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-12T10:31:41Z",
+        "recent_statistics": {
+          "viewCount": 125,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "53JGcdX3_Ts": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 73,
               "estimatedMinutesWatched": 39,
@@ -3080,7 +3582,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3092,13 +3594,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "53JGcdX3_Ts",
+        "source": "youtube",
+        "title": "کارشناسی داوری سپاهان و ملوان با نوید مظفری | حواشی لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-12T11:31:41Z",
+        "recent_statistics": {
+          "viewCount": 78,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "xM-qJnrnwzI": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 60,
               "estimatedMinutesWatched": 35,
@@ -3111,7 +3623,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3123,13 +3635,23 @@
           "likes": 2,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "xM-qJnrnwzI",
+        "source": "youtube",
+        "title": "سعید دقیقی: لیاقت بردن پرسپولیس را داشتیم اما نشد",
+        "category": "VIDEO",
+        "published_at": "2026-11-06T10:17:59Z",
+        "recent_statistics": {
+          "viewCount": 59,
+          "likeCount": 2,
+          "commentCount": 0
         }
       },
       "IlsPqUzSLig": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 38,
               "estimatedMinutesWatched": 34,
@@ -3142,7 +3664,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3154,13 +3676,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "IlsPqUzSLig",
+        "source": "youtube",
+        "title": "چوکا تالش 1-1 داماش گیلان (خلاصه بازی دربی گیلان) | خلاصه بازی",
+        "category": "SUMMARY",
+        "published_at": "2026-11-14T08:33:50Z",
+        "recent_statistics": {
+          "viewCount": 55,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "HwOKDxYAWtQ": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 67,
               "estimatedMinutesWatched": 33,
@@ -3173,7 +3705,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3185,13 +3717,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "HwOKDxYAWtQ",
+        "source": "youtube",
+        "title": "پنج اتفاق ویژه از تقابل‌های استقلال و استقلال خوزستان!",
+        "category": "VIDEO",
+        "published_at": "2026-11-07T05:17:37Z",
+        "recent_statistics": {
+          "viewCount": 72,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "R0TxSs1SUdE": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 12,
               "estimatedMinutesWatched": 27,
@@ -3204,7 +3746,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3216,13 +3758,23 @@
           "likes": 1,
           "comments": 0,
           "shares": 1
+        },
+        "video_id": "R0TxSs1SUdE",
+        "source": "youtube",
+        "title": "داستان عجیب دانکن فرگوسن؛ از محبوبیت بین هواداران تا زندانی شدن در اسکاتلند",
+        "category": "VIDEO",
+        "published_at": "2026-11-07T06:32:03Z",
+        "recent_statistics": {
+          "viewCount": 14,
+          "likeCount": 1,
+          "commentCount": 0
         }
       },
       "bZ8oYfGpcFE": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 11,
               "estimatedMinutesWatched": 27,
@@ -3235,7 +3787,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3247,13 +3799,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "bZ8oYfGpcFE",
+        "source": "youtube",
+        "title": "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
+        "category": "VIDEO",
+        "published_at": "2025-05-06T08:39:55Z",
+        "recent_statistics": {
+          "viewCount": 139,
+          "likeCount": 1,
+          "commentCount": 0
         }
       },
       "HkT-X8Koc1o": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 8,
               "estimatedMinutesWatched": 26,
@@ -3266,7 +3828,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3278,13 +3840,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "HkT-X8Koc1o",
+        "source": "youtube",
+        "title": "خلاصه بازی استقلال 0-0 چادرملو اردکان (پنج شنبه، 18 اردیبهشت 1404)",
+        "category": "SUMMARY",
+        "published_at": "2025-05-09T16:12:52Z",
+        "recent_statistics": {
+          "viewCount": 149,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "0qyILFNEVBA": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 80,
               "estimatedMinutesWatched": 18,
@@ -3297,7 +3869,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3309,13 +3881,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "0qyILFNEVBA",
+        "source": "youtube",
+        "title": "کارشناسی داوری بازی آلومینیوم اراک و مس شهربابک | بررسی کارشناسان",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T04:50:16Z",
+        "recent_statistics": {
+          "viewCount": 88,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "R2Uy8OtsuQM": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 26,
               "estimatedMinutesWatched": 16,
@@ -3328,7 +3910,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3340,13 +3922,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "R2Uy8OtsuQM",
+        "source": "youtube",
+        "title": "پیکان و نساجی | واکنش ساکت الهامی به گل تساوی: «تیم هزار میلیاردی!» #shorts",
+        "category": "VIDEO",
+        "published_at": "2026-11-09T10:20:38Z",
+        "recent_statistics": {
+          "viewCount": 47,
+          "likeCount": 1,
+          "commentCount": 0
         }
       },
       "Kq1TMK-4z94": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 61,
               "estimatedMinutesWatched": 16,
@@ -3359,7 +3951,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3371,13 +3963,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "Kq1TMK-4z94",
+        "source": "youtube",
+        "title": "تاج: برخی از باشگاه‌ها اصلا برای صدور مجوز حرفه ای اقدام نکردند که این خیلی بد ا | فوتبال ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-14T13:05:05Z",
+        "recent_statistics": {
+          "viewCount": 72,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "RXK1XYqjl-A": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 34,
               "estimatedMinutesWatched": 15,
@@ -3390,7 +3992,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3402,13 +4004,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "RXK1XYqjl-A",
+        "source": "youtube",
+        "title": "حواشی بازی چادرملو و فولاد | متن و حاشیه لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T04:51:17Z",
+        "recent_statistics": {
+          "viewCount": 36,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "BLv2n6rwN5U": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 44,
               "estimatedMinutesWatched": 13,
@@ -3421,7 +4033,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3433,13 +4045,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "BLv2n6rwN5U",
+        "source": "youtube",
+        "title": "حواشی و متن و حاشیه بازی شمس آذر و نفت آبادان | لیگ برتر ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-10T04:50:32Z",
+        "recent_statistics": {
+          "viewCount": 55,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "AnLkQWHXPgk": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 57,
               "estimatedMinutesWatched": 10,
@@ -3452,7 +4074,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3464,13 +4086,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "AnLkQWHXPgk",
+        "source": "youtube",
+        "title": "مهدی تاج: امکان دارد AFC مجوز حرفه ای باشگاه‌ها را لغو کند که برای کشور خوب نیست | فوتبال ایران",
+        "category": "VIDEO",
+        "published_at": "2026-11-14T14:02:58Z",
+        "recent_statistics": {
+          "viewCount": 68,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "MW3dG4P4lqw": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 16,
               "estimatedMinutesWatched": 9,
@@ -3483,7 +4115,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3495,13 +4127,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "MW3dG4P4lqw",
+        "source": "youtube",
+        "title": "خلاصه و حواشی بازی شمس آذر 0-4 تراکتور",
+        "category": "VIDEO",
+        "published_at": "2025-05-05T21:03:12Z",
+        "recent_statistics": {
+          "viewCount": 135,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "_9ToJi3tQpU": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 25,
               "estimatedMinutesWatched": 7,
@@ -3514,7 +4156,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3526,13 +4168,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "_9ToJi3tQpU",
+        "source": "youtube",
+        "title": "درگیری در بازی آریو اسلامشهر 0-3 فرد البرز در لیگ آزادگان",
+        "category": "VIDEO",
+        "published_at": "2026-11-03T21:32:07Z",
+        "recent_statistics": {
+          "viewCount": 28,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "Me1MWbh4B0c": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 3,
               "estimatedMinutesWatched": 2,
@@ -3545,7 +4197,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3557,13 +4209,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "Me1MWbh4B0c",
+        "source": "youtube",
+        "title": "❌⚽️🇮🇷 🟢علی سامره: در تیم ملی باید جوان‌گرایی داشته باشیم💬علی سامره، مهاجم سابق استقلال و ت",
+        "category": "VIDEO",
+        "published_at": "2026-11-04T21:20:17Z",
+        "recent_statistics": {
+          "viewCount": 3,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "YZmJ1rQ8FNE": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 3,
               "estimatedMinutesWatched": 1,
@@ -3576,7 +4238,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3588,13 +4250,23 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "YZmJ1rQ8FNE",
+        "source": "youtube",
+        "title": "عالیشاه: بازی با آرکاداغ می‌توانست در کشور ثالث برگزار شود",
+        "category": "VIDEO",
+        "published_at": "2026-11-03T23:16:52Z",
+        "recent_statistics": {
+          "viewCount": 3,
+          "likeCount": 0,
+          "commentCount": 0
         }
       },
       "dA7kGzdurUU": {
         "snapshots": [
           {
             "window": "2026-08-18:2026-11-15",
-            "synced_at": "2026-11-17T15:44:47.305496+00:00",
+            "synced_at": "2026-11-17T15:52:25.165017+00:00",
             "metrics": {
               "views": 10,
               "estimatedMinutesWatched": 1,
@@ -3607,7 +4279,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-17T15:44:47.305496+00:00",
+        "last_synced_at": "2026-11-17T15:52:25.165017+00:00",
         "period_start": "2026-08-18",
         "period_end": "2026-11-15",
         "metrics": {
@@ -3619,13 +4291,32 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "video_id": "dA7kGzdurUU",
+        "source": "youtube",
+        "title": "خلاصه و حواشی بازی مس رفسنجان 0-3 پرسپولیس",
+        "category": "VIDEO",
+        "published_at": "2025-05-06T07:58:13Z",
+        "recent_statistics": {
+          "viewCount": 74,
+          "likeCount": 0,
+          "commentCount": 2
         }
       }
     },
-    "last_sync_at": "2026-11-17T15:44:47.305496+00:00",
+    "last_sync_at": "2026-11-17T15:52:25.165017+00:00",
     "period_start": "2026-08-18",
     "period_end": "2026-11-15",
     "video_count": 59,
     "last_row_count": 59
+  },
+  "published_metadata": {},
+  "rights_migration_version": 1,
+  "last_run": {
+    "finished_at": "2026-11-17T15:52:47.158666+00:00",
+    "queue_size": 15,
+    "rejected_by_reason": {},
+    "new_web_candidates": 0,
+    "new_instagram_candidates": 0
   }
 }
