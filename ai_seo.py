@@ -3,8 +3,30 @@ import os
 import re
 import json
 import requests
+from urllib.parse import quote, urlsplit, urlunsplit
 
 from config import PROTO, FORBIDDEN_KEYWORDS
+
+
+def sanitize_url(url: str) -> str:
+    """استانداردسازی لینک‌های دارای حروف فارسی برای دانلود بدون خطا در media_utils"""
+    if not url:
+        return ""
+    url = str(url).strip()
+    try:
+        parts = urlsplit(url)
+        safe_path = quote(parts.path, safe="/%:@-._~!$&'()*+,;=")
+        return urlunsplit((parts.scheme, parts.netloc, safe_path, parts.query, parts.fragment))
+    except Exception:
+        return url
+
+
+def clean_persian_text(text: str) -> str:
+    if not text:
+        return ""
+    text = str(text).replace("ي", "ی").replace("ك", "ک").replace("\u200c", " ")
+    return re.sub(r"\s+", " ", text).strip()
+
 
 SEO_PROMPT = r"""
 You package a Footballi / فوتبالی video for Persian YouTube viewers.
@@ -132,17 +154,6 @@ OUTPUT:
  "tags":["فوتبالی","Footballi","پشت خط فوتبالی","پشت خط قسمت ۲۱"]}
 """
 
-SEO_SCHEMA = {
-    "type": "object",
-    "properties": {
-        "title": {"type": "string"},
-        "description": {"type": "string"},
-        "tags": {"type": "array", "items": {"type": "string"}},
-    },
-    "required": ["title", "description", "tags"],
-    "additionalProperties": False,
-}
-
 
 def validate_seo_result(res: dict, raw_title: str, raw_desc: str, is_short: bool) -> dict:
     if not isinstance(res, dict):
@@ -178,7 +189,6 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
     gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
     arvan_key = os.environ.get("ARVAN_API_KEY", "").strip()
 
-    # ۱. تلاش با Gemini Direct API + Structured Schema
     if gemini_key:
         try:
             g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={gemini_key}"
@@ -201,9 +211,8 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
         except Exception:
             pass
 
-    # ۲. تلاش با Arvan Gateway
     if arvan_key:
-        for model_name in ["Gemini-2.5-Flash-lite", "GPT-4.1-Nano", "GPT-4o-mini"]:
+        for model_name in ["Gemini-2.5-Flash-lite", "GPT-4o-mini", "GPT-4.1-Nano"]:
             try:
                 body = {
                     "model": model_name,
@@ -231,7 +240,6 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
             except Exception:
                 continue
 
-    # ۳. فال‌بک ایمن و بدون توهم در صورت قطعی هر دو سرویس
     clean_t = title.replace("ي", "ی").replace("ك", "ک").strip()[:88]
     hashtag_tail = "#فوتبالی #Shorts" if is_short else "#فوتبالی"
     clean_d = f"{clean_t}\n\n{description or clean_t}\n\n{hashtag_tail}".strip()
@@ -252,3 +260,7 @@ def ai_free_copyright_audit(title: str, desc: str = "", source_type: str = "WEB"
         if bad.lower() in norm and any(w in norm for w in ["خلاصه بازی", "گل اول", "گل دوم", "هایلایت", "سوپرگل"]):
             return False
     return True
+
+
+def ai_rank_and_filter_candidates(candidates: list) -> list:
+    return candidates or []
