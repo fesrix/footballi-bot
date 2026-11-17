@@ -13,6 +13,12 @@ from footballi_uploader import (get_authenticated_service, load_history, save_hi
 
 BATCH_SIZE = 8
 MAX_REPLIES_PER_RUN = 12
+# A channel can have more than 200 comments.  We scan a bounded number of
+# time-ordered pages on every run so the backlog is drained over subsequent
+# 30-minute Actions runs without spending the whole daily YouTube quota.
+COMMENT_PAGE_SIZE = 100
+COMMENT_SCAN_MAX_PAGES = 10
+REPLYABLE_REASONS = {"ENGAGE", "BANTER_KEEP", "CRITICISM_KEEP"}
 
 COMMENT_PROMPT = r"""
 You moderate comments and selectively reply for Footballi / فوتبالی.
@@ -170,7 +176,21 @@ def fetch_video_titles_map(youtube, video_ids: list) -> dict:
     return titles_map
 
 
-def fetch_all_unreplied_channel_comments(youtube, my_channel_id: str, ignored_ids: set, deleted_ids: set) -> list:
+def fetch_all_unreplied_channel_comments(
+    youtube,
+    my_channel_id: str,
+    ignored_ids: set,
+    deleted_ids: set,
+    max_pages: int = COMMENT_SCAN_MAX_PAGES,
+) -> list:
+    """Fetch eligible top-level comments without silently hiding scan errors.
+
+    The previous implementation stopped after two unspecified-order pages,
+    which left older comments permanently outside the AI's view.  A bounded
+    time-ordered scan lets each run move through the backlog while keeping
+    quota usage predictable.  Any API failure is raised to the caller instead
+    of being reported as an empty, successfully reviewed channel.
+    """
     unreplied = []
     seen_thread_ids = set()
 
@@ -217,15 +237,18 @@ def fetch_all_unreplied_channel_comments(youtube, my_channel_id: str, ignored_id
                 })
 
     next_page = None
-    for _ in range(2):
+    pages_scanned = 0
+    for _ in range(max(1, int(max_pages))):
         try:
             res = youtube.commentThreads().list(
                 part="snippet,replies",
                 allThreadsRelatedToChannelId=my_channel_id,
-                maxResults=100,
+                maxResults=COMMENT_PAGE_SIZE,
+                order="time",
                 textFormat="plainText",
                 pageToken=next_page,
             ).execute()
+            pages_scanned += 1
             process_thread_items(res.get("items", []))
             next_page = res.get("nextPageToken")
             if not next_page:
@@ -233,9 +256,15 @@ def fetch_all_unreplied_channel_comments(youtube, my_channel_id: str, ignored_id
         except HttpError as e:
             if "quotaExceeded" in str(e):
                 raise
-            break
-        except Exception:
-            break
+            raise RuntimeError(f"YouTube comment scan failed on page {pages_scanned + 1}: {e}") from e
+        except Exception as e:
+            raise RuntimeError(f"YouTube comment scan failed on page {pages_scanned + 1}: {e}") from e
+
+    if next_page:
+        print(
+            f"[COMMENT-AGENT] Comment scan reached {pages_scanned} pages; "
+            "older comments remain eligible for the next run."
+        )
 
     if unreplied:
         v_map = fetch_video_titles_map(youtube, [c["video_id"] for c in unreplied])
@@ -243,6 +272,43 @@ def fetch_all_unreplied_channel_comments(youtube, my_channel_id: str, ignored_id
             c["video_title"] = v_map.get(c["video_id"]) or "ویدیوی فوتبال ایران"
 
     return unreplied
+
+
+def _normalise_ai_decisions(raw) -> dict:
+    """Accept strict JSON plus common model wrappers without losing comments."""
+    if isinstance(raw, dict) and isinstance(raw.get("decisions"), (dict, list)):
+        raw = raw["decisions"]
+
+    if isinstance(raw, list):
+        raw = {str(index): value for index, value in enumerate(raw)}
+    if not isinstance(raw, dict):
+        return {}
+
+    normalised = {}
+    for key, value in raw.items():
+        if isinstance(value, dict):
+            normalised[str(key)] = value
+    return normalised
+
+
+def _parse_ai_json(text: str) -> dict:
+    """Parse provider output with optional Markdown fences or surrounding text."""
+    cleaned = (text or "").strip()
+    if cleaned.startswith("```"):
+        cleaned = re.sub(r"^```(?:json)?\s*|\s*```$", "", cleaned, flags=re.IGNORECASE | re.DOTALL).strip()
+    candidates = [cleaned]
+    match = re.search(r"\{.*\}", cleaned, re.DOTALL)
+    if match and match.group(0) != cleaned:
+        candidates.append(match.group(0))
+    for candidate in candidates:
+        try:
+            parsed = json.loads(candidate)
+        except (TypeError, ValueError):
+            continue
+        normalised = _normalise_ai_decisions(parsed)
+        if normalised:
+            return normalised
+    return {}
 
 
 def ai_evaluate_comments(comments_batch: list) -> dict:
@@ -277,8 +343,8 @@ def ai_evaluate_comments(comments_batch: list) -> dict:
             resp = requests.post(g_url, json=body, timeout=35)
             if resp.status_code == 200:
                 txt = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
-                parsed = json.loads(txt)
-                if isinstance(parsed, dict) and parsed:
+                parsed = _parse_ai_json(txt)
+                if parsed:
                     print(f"[AI-TIER-1] Evaluated batch of {len(comments_batch)} comments via Free Gemini-2.5-Flash-lite.")
                     return parsed
         except Exception:
@@ -304,12 +370,10 @@ def ai_evaluate_comments(comments_batch: list) -> dict:
                 )
                 if resp.status_code == 200:
                     content = resp.json()["choices"][0]["message"]["content"]
-                    m = re.search(r"\{.*\}", content, re.DOTALL)
-                    if m:
-                        parsed = json.loads(m.group(0))
-                        if isinstance(parsed, dict) and parsed:
-                            print(f"[AI-TIER-2] Evaluated batch of {len(comments_batch)} comments with {model_name}.")
-                            return parsed
+                    parsed = _parse_ai_json(content)
+                    if parsed:
+                        print(f"[AI-TIER-2] Evaluated batch of {len(comments_batch)} comments with {model_name}.")
+                        return parsed
             except Exception as e:
                 print(f"[WARN] Arvan {model_name} note: {e}")
 
@@ -379,16 +443,22 @@ def main():
             save_history(state)
             print("⏸️ [COMMENT-AGENT] Daily YouTube API quota reached during scan.")
             return
-        unreplied_comments = []
+        print(f"[COMMENT-AGENT] Comment scan failed; pending comments will be retried: {e}")
+        return
+    except Exception as e:
+        print(f"[COMMENT-AGENT] Comment scan failed; pending comments will be retried: {e}")
+        return
 
     if not unreplied_comments:
-        print("[COMMENT-AGENT] All existing and new comments on the channel have been reviewed!")
+        print("[COMMENT-AGENT] No eligible unreplied comments found in the scanned pages.")
         return
 
     print(f"[COMMENT-AGENT] Found {len(unreplied_comments)} unreplied comments. Processing in batches of {BATCH_SIZE}...")
 
     deleted_count = 0
     replied_count = 0
+    ignored_count = 0
+    retry_count = 0
 
     for start_idx in range(0, len(unreplied_comments), BATCH_SIZE):
         if replied_count >= MAX_REPLIES_PER_RUN:
@@ -397,6 +467,8 @@ def main():
         batch = unreplied_comments[start_idx : start_idx + BATCH_SIZE]
         decisions = ai_evaluate_comments(batch)
         if not decisions:
+            retry_count += len(batch)
+            print(f"[COMMENT-AGENT] AI returned no usable decisions for {len(batch)} comments; keeping them for retry.")
             continue
 
         for idx, c in enumerate(batch):
@@ -419,7 +491,7 @@ def main():
                     deleted_count += 1
                     print(f"🗑️ [MODERATOR] Removed comment ({cid}).")
 
-            elif action == "REPLY" and reason == "ENGAGE" and reply_text:
+            elif action == "REPLY" and reason in REPLYABLE_REASONS and reply_text:
                 if replied_count < MAX_REPLIES_PER_RUN:
                     print(f"✨ [ENGAGE] On '{c['video_title'][:30]}' -> {c['author']}: '{c['text'][:45]}'")
                     if reply_to_comment(youtube, cid, reply_text):
@@ -427,9 +499,17 @@ def main():
                         replied_count += 1
                         print(f"💬 [REPLIED] Sent: '{reply_text}'")
                         time.sleep(1.5)
+                else:
+                    retry_count += 1
 
             elif action == "IGNORE":
                 ignored_ids.add(cid)
+                ignored_count += 1
+            else:
+                # Invalid, incomplete, or failed actions must remain eligible
+                # for a later run; never mark them terminal just to make the
+                # summary look clean.
+                retry_count += 1
 
             # Persist each successful action before processing the next comment.
             state["ignored_comments"] = sorted(ignored_ids)[-1000:]
@@ -439,8 +519,12 @@ def main():
     state["ignored_comments"] = sorted(ignored_ids)[-1000:]
     state["deleted_comments"] = sorted(deleted_ids)[-1000:]
     save_history(state)
-    print(f"[COMMENT-AGENT] Run complete! Deleted: {deleted_count} | Replied: {replied_count}")
+    print(
+        f"[COMMENT-AGENT] Run complete! Deleted: {deleted_count} | "
+        f"Replied: {replied_count} | Ignored: {ignored_count} | Retry pending: {retry_count}"
+    )
 
 
 if __name__ == "__main__":
     main()
+
