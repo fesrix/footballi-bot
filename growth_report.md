@@ -2,8 +2,8 @@
 
 - Analytics window: 2026-08-19 → 2026-11-16
 - Tracked videos: 70
-- Queue size: 13
-- Uploads today: 3
+- Queue size: 12
+- Uploads today: 4
 
 ## Performance by category
 
