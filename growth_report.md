@@ -2,7 +2,7 @@
 
 - Analytics window: 2026-08-19 → 2026-11-16
 - Tracked videos: 70
-- Queue size: 9
+- Queue size: 10
 - Uploads today: 2
 
 ## Performance by category
@@ -16,6 +16,6 @@
 
 ## Last run
 
-- New web candidates: 0
+- New web candidates: 1
 - New Instagram candidates: 0
 - Rejections: {}
