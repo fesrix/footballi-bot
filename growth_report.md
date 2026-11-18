@@ -1,7 +1,7 @@
 # Footballi Growth Report
 
 - Analytics window: 2026-08-19 → 2026-11-16
-- Tracked videos: 70
+- Tracked videos: 92
 - Queue size: 12
 - Uploads today: 4
 
@@ -9,10 +9,10 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 56 | 79330 | 153870.0 | 214 |
-| SUMMARY | 11 | 21849 | 60972.0 | 50 |
-| VIDEOCAST | 2 | 540 | 1550.0 | 4 |
-| POSHTE_KHAT | 1 | 162 | 210.0 | 1 |
+| VIDEO | 76 | 99571 | 163798.0 | 237 |
+| SUMMARY | 12 | 22794 | 62985.0 | 54 |
+| VIDEOCAST | 3 | 650 | 2044.0 | 5 |
+| POSHTE_KHAT | 1 | 206 | 279.0 | 2 |
 
 ## Last run
 
