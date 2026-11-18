@@ -1,6 +1,6 @@
 # Footballi Growth Report
 
-- Analytics window: 2026-08-18 → 2026-11-15
+- Analytics window: 2026-08-19 → 2026-11-16
 - Tracked videos: 70
 - Queue size: 17
 - Uploads today: 0
