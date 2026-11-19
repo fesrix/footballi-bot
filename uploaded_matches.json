@@ -648,7 +648,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795082511.23973,
-      "attempt_count": 2,
+      "attempt_count": 3,
       "is_short": false,
       "ai_score": 8,
       "category": "VIDEO",
@@ -670,7 +670,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795082510.7144523,
-      "attempt_count": 2,
+      "attempt_count": 3,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -692,7 +692,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795082510.9772866,
-      "attempt_count": 2,
+      "attempt_count": 3,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -714,7 +714,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795082511.7828958,
-      "attempt_count": 2,
+      "attempt_count": 3,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -736,7 +736,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795038077.491675,
-      "attempt_count": 5,
+      "attempt_count": 6,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -758,7 +758,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1794999682.9355395,
-      "attempt_count": 25,
+      "attempt_count": 26,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -780,7 +780,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1794997869.2913373,
-      "attempt_count": 26,
+      "attempt_count": 27,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -802,7 +802,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1794992485.6788645,
-      "attempt_count": 29,
+      "attempt_count": 30,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -824,7 +824,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795001458.98192,
-      "attempt_count": 24,
+      "attempt_count": 25,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -847,7 +847,7 @@
       "content_type": "video",
       "source_published_at": null,
       "discovery_timestamp": 1794930767.017135,
-      "attempt_count": 67,
+      "attempt_count": 68,
       "learning_factor": 1.0
     },
     {
@@ -867,7 +867,7 @@
       "content_type": "video",
       "source_published_at": null,
       "discovery_timestamp": 1794930767.030567,
-      "attempt_count": 67,
+      "attempt_count": 68,
       "learning_factor": 1.0
     },
     {
@@ -887,7 +887,7 @@
       "content_type": "video",
       "source_published_at": null,
       "discovery_timestamp": 1794930767.042977,
-      "attempt_count": 67,
+      "attempt_count": 68,
       "learning_factor": 1.0
     },
     {
@@ -907,7 +907,7 @@
       "content_type": "video",
       "source_published_at": null,
       "discovery_timestamp": 1794930767.0569837,
-      "attempt_count": 67,
+      "attempt_count": 68,
       "learning_factor": 1.0
     },
     {
@@ -927,7 +927,7 @@
       "content_type": "video",
       "source_published_at": null,
       "discovery_timestamp": 1794930767.066794,
-      "attempt_count": 67,
+      "attempt_count": 68,
       "learning_factor": 1.0
     }
   ],
@@ -1831,6 +1831,10 @@
     "HMcCNwgsmvE": [
       "INTERVIEW",
       "ESTEGHLAL"
+    ],
+    "CDWL_-oTZ40": [
+      "TEAM_MELLI",
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2152,7 +2156,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2221,7 +2225,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2240,9 +2244,9 @@
         "category": "SUMMARY",
         "published_at": "2026-11-14T11:03:39Z",
         "recent_statistics": {
-          "viewCount": 15994,
+          "viewCount": 16000,
           "likeCount": 87,
-          "commentCount": 11
+          "commentCount": 9
         },
         "format": "unknown",
         "first_three_days": {
@@ -2301,7 +2305,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2320,9 +2324,9 @@
         "category": "VIDEO",
         "published_at": "2026-11-11T05:05:06Z",
         "recent_statistics": {
-          "viewCount": 18664,
+          "viewCount": 18690,
           "likeCount": 89,
-          "commentCount": 33
+          "commentCount": 36
         }
       },
       "8ojRxQ9IY5s": {
@@ -2370,7 +2374,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2439,7 +2443,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2458,9 +2462,9 @@
         "category": "VIDEO",
         "published_at": "2026-11-12T09:32:13Z",
         "recent_statistics": {
-          "viewCount": 5372,
+          "viewCount": 5373,
           "likeCount": 33,
-          "commentCount": 39
+          "commentCount": 35
         }
       },
       "URucfHuv2YE": {
@@ -2508,7 +2512,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2577,7 +2581,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2646,7 +2650,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2665,7 +2669,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-10T06:36:10Z",
         "recent_statistics": {
-          "viewCount": 5454,
+          "viewCount": 5456,
           "likeCount": 28,
           "commentCount": 7
         }
@@ -2715,7 +2719,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2784,7 +2788,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2803,7 +2807,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-08T09:11:50Z",
         "recent_statistics": {
-          "viewCount": 670,
+          "viewCount": 669,
           "likeCount": 3,
           "commentCount": 0
         }
@@ -2853,7 +2857,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2922,7 +2926,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -2991,7 +2995,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3010,7 +3014,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-07T07:36:31Z",
         "recent_statistics": {
-          "viewCount": 1439,
+          "viewCount": 1441,
           "likeCount": 20,
           "commentCount": 0
         }
@@ -3060,7 +3064,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3129,7 +3133,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3198,7 +3202,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3267,7 +3271,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3336,7 +3340,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3405,7 +3409,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3474,7 +3478,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3543,7 +3547,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3612,7 +3616,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3681,7 +3685,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3703,6 +3707,17 @@
           "viewCount": 309,
           "likeCount": 2,
           "commentCount": 0
+        },
+        "format": "unknown",
+        "first_three_days": {
+          "start": "2026-11-13",
+          "end": "2026-11-15",
+          "metrics": {
+            "views": 288,
+            "estimatedMinutesWatched": 294,
+            "subscribersGained": 2,
+            "averageViewPercentage": 27.860000000000003
+          }
         }
       },
       "FzpsXKUAbPY": {
@@ -3750,7 +3765,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3819,7 +3834,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3888,7 +3903,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -3910,6 +3925,17 @@
           "viewCount": 415,
           "likeCount": 0,
           "commentCount": 0
+        },
+        "format": "unknown",
+        "first_three_days": {
+          "start": "2026-11-12",
+          "end": "2026-11-14",
+          "metrics": {
+            "views": 399,
+            "estimatedMinutesWatched": 209,
+            "subscribersGained": 0,
+            "averageViewPercentage": 49.12
+          }
         }
       },
       "dVlLzsigO00": {
@@ -3957,7 +3983,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4026,7 +4052,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4095,7 +4121,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4164,7 +4190,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4244,7 +4270,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4313,7 +4339,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4382,7 +4408,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4451,7 +4477,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4520,7 +4546,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4542,6 +4568,17 @@
           "viewCount": 78,
           "likeCount": 0,
           "commentCount": 0
+        },
+        "format": "unknown",
+        "first_three_days": {
+          "start": "2026-11-14",
+          "end": "2026-11-16",
+          "metrics": {
+            "views": 74,
+            "estimatedMinutesWatched": 80,
+            "subscribersGained": 1,
+            "averageViewPercentage": 31.58
+          }
         }
       },
       "--vp7qA9TVw": {
@@ -4589,7 +4626,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4658,7 +4695,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4738,7 +4775,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4807,7 +4844,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4876,7 +4913,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -4956,7 +4993,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5025,7 +5062,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5094,7 +5131,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5163,7 +5200,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5185,6 +5222,17 @@
           "viewCount": 57,
           "likeCount": 0,
           "commentCount": 0
+        },
+        "format": "unknown",
+        "first_three_days": {
+          "start": "2026-11-14",
+          "end": "2026-11-16",
+          "metrics": {
+            "views": 54,
+            "estimatedMinutesWatched": 53,
+            "subscribersGained": 0,
+            "averageViewPercentage": 20.87
+          }
         }
       },
       "HwOKDxYAWtQ": {
@@ -5232,7 +5280,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5301,7 +5349,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5370,7 +5418,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5439,7 +5487,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5508,7 +5556,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5577,7 +5625,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5646,7 +5694,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5726,7 +5774,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5795,7 +5843,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5864,7 +5912,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -5886,6 +5934,17 @@
           "viewCount": 68,
           "likeCount": 0,
           "commentCount": 0
+        },
+        "format": "unknown",
+        "first_three_days": {
+          "start": "2026-11-14",
+          "end": "2026-11-16",
+          "metrics": {
+            "views": 68,
+            "estimatedMinutesWatched": 12,
+            "subscribersGained": 0,
+            "averageViewPercentage": 11.74
+          }
         }
       },
       "MW3dG4P4lqw": {
@@ -5933,7 +5992,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6002,7 +6061,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6071,7 +6130,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6140,7 +6199,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6209,7 +6268,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6280,7 +6339,7 @@
         ],
         "video_id": "s2bUTzUIsQs",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6349,7 +6408,7 @@
         ],
         "video_id": "xRmWpp-FcK8",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6366,7 +6425,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-15T14:32:02Z",
         "recent_statistics": {
-          "viewCount": 10645,
+          "viewCount": 10648,
           "likeCount": 99,
           "commentCount": 13
         }
@@ -6418,7 +6477,7 @@
         ],
         "video_id": "fo0CJYWV9XA",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6487,7 +6546,7 @@
         ],
         "video_id": "_kfhPpKTxp0",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6504,7 +6563,7 @@
         "category": "POSHTE_KHAT",
         "published_at": "2026-11-15T15:33:48Z",
         "recent_statistics": {
-          "viewCount": 259,
+          "viewCount": 258,
           "likeCount": 1,
           "commentCount": 0
         }
@@ -6556,7 +6615,7 @@
         ],
         "video_id": "wbsXnJe0u74",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6625,7 +6684,7 @@
         ],
         "video_id": "yNMQFVLrYI0",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6694,7 +6753,7 @@
         ],
         "video_id": "j2FxETm3Q-A",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6763,7 +6822,7 @@
         ],
         "video_id": "kcXtfRp5vGw",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6832,7 +6891,7 @@
         ],
         "video_id": "eL3xQkAGtjM",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6901,7 +6960,7 @@
         ],
         "video_id": "cvuAwQ4k21M",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6918,7 +6977,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T06:32:13Z",
         "recent_statistics": {
-          "viewCount": 439,
+          "viewCount": 438,
           "likeCount": 6,
           "commentCount": 0
         }
@@ -6970,7 +7029,7 @@
         ],
         "video_id": "Txy_j-gn5cM",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -6987,7 +7046,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T07:31:59Z",
         "recent_statistics": {
-          "viewCount": 6350,
+          "viewCount": 6330,
           "likeCount": 25,
           "commentCount": 0
         }
@@ -7025,7 +7084,7 @@
         ],
         "video_id": "5dWV-l6DvS0",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7042,7 +7101,7 @@
         "category": "VIDEOCAST",
         "published_at": "2026-11-16T15:36:59Z",
         "recent_statistics": {
-          "viewCount": 119,
+          "viewCount": 118,
           "likeCount": 1,
           "commentCount": 0
         }
@@ -7080,7 +7139,7 @@
         ],
         "video_id": "FS5rZJKjUwM",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7097,7 +7156,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-17T02:33:34Z",
         "recent_statistics": {
-          "viewCount": 630,
+          "viewCount": 637,
           "likeCount": 5,
           "commentCount": 0
         }
@@ -7135,7 +7194,7 @@
         ],
         "video_id": "7gY733Mk_Dw",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7152,7 +7211,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T12:32:36Z",
         "recent_statistics": {
-          "viewCount": 1470,
+          "viewCount": 1469,
           "likeCount": 17,
           "commentCount": 0
         }
@@ -7190,7 +7249,7 @@
         ],
         "video_id": "pOWvf8sxbFk",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7207,7 +7266,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T22:32:32Z",
         "recent_statistics": {
-          "viewCount": 767,
+          "viewCount": 758,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -7245,7 +7304,7 @@
         ],
         "video_id": "5ELPWaInU5E",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7262,8 +7321,8 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T09:32:09Z",
         "recent_statistics": {
-          "viewCount": 2989,
-          "likeCount": 29,
+          "viewCount": 3000,
+          "likeCount": 31,
           "commentCount": 2
         }
       },
@@ -7300,7 +7359,7 @@
         ],
         "video_id": "MZA1NXvV1SQ",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7317,7 +7376,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-16T17:33:41Z",
         "recent_statistics": {
-          "viewCount": 317,
+          "viewCount": 315,
           "likeCount": 3,
           "commentCount": 0
         }
@@ -7355,7 +7414,7 @@
         ],
         "video_id": "Odu2hIUafqw",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7410,7 +7469,7 @@
         ],
         "video_id": "SgjSIJjRllI",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7465,7 +7524,7 @@
         ],
         "video_id": "-Ud6slcyGiI",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7520,7 +7579,7 @@
         ],
         "video_id": "78pHfXgilGU",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7537,7 +7596,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T13:33:00Z",
         "recent_statistics": {
-          "viewCount": 1031,
+          "viewCount": 1030,
           "likeCount": 17,
           "commentCount": 0
         }
@@ -7575,7 +7634,7 @@
         ],
         "video_id": "Gppn0m_RFMY",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7592,7 +7651,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T16:32:59Z",
         "recent_statistics": {
-          "viewCount": 186,
+          "viewCount": 185,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -7630,7 +7689,7 @@
         ],
         "video_id": "NjBDBkuT0ow",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7685,7 +7744,7 @@
         ],
         "video_id": "1zQhf6XSwHA",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7740,7 +7799,7 @@
         ],
         "video_id": "P0GkO19VBlM",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7795,7 +7854,7 @@
         ],
         "video_id": "ffvnaGxX4dg",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7850,7 +7909,7 @@
         ],
         "video_id": "AxVGoleCjpk",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7905,7 +7964,7 @@
         ],
         "video_id": "Nb6g5gq3CxI",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -7960,7 +8019,7 @@
         ],
         "video_id": "RSSubbsW44E",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -8015,7 +8074,7 @@
         ],
         "video_id": "IRTTiHJS_Js",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -8070,7 +8129,7 @@
         ],
         "video_id": "eWVkTSwg7DY",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -8087,7 +8146,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-17T01:32:42Z",
         "recent_statistics": {
-          "viewCount": 158,
+          "viewCount": 153,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -8125,7 +8184,7 @@
         ],
         "video_id": "WvCzuBIX1H8",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -8180,7 +8239,7 @@
         ],
         "video_id": "cY91jitiefk",
         "source": "youtube",
-        "last_synced_at": "2026-11-19T09:58:42.559666+00:00",
+        "last_synced_at": "2026-11-19T10:02:39.467054+00:00",
         "period_start": "2026-08-19",
         "period_end": "2026-11-16",
         "metrics": {
@@ -8211,9 +8270,9 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T08:48:20Z",
         "recent_statistics": {
-          "viewCount": 28,
+          "viewCount": 30,
           "likeCount": 1,
-          "commentCount": 1
+          "commentCount": 2
         }
       },
       "FXfpPnmOdhI": {
@@ -8225,9 +8284,9 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T16:02:00Z",
         "recent_statistics": {
-          "viewCount": 6577,
-          "likeCount": 252,
-          "commentCount": 9
+          "viewCount": 6672,
+          "likeCount": 258,
+          "commentCount": 11
         }
       },
       "SBlVEUMTVj8": {
@@ -8239,7 +8298,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T13:03:05Z",
         "recent_statistics": {
-          "viewCount": 117,
+          "viewCount": 115,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -8253,7 +8312,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T08:33:46Z",
         "recent_statistics": {
-          "viewCount": 155,
+          "viewCount": 161,
           "likeCount": 1,
           "commentCount": 0
         }
@@ -8267,9 +8326,9 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T06:02:19Z",
         "recent_statistics": {
-          "viewCount": 3414,
+          "viewCount": 3416,
           "likeCount": 32,
-          "commentCount": 1
+          "commentCount": 2
         }
       },
       "3_4mnhwaJdg": {
@@ -8281,9 +8340,9 @@
         "source": "footballi_web",
         "published_at": "2026-11-17T17:31:51Z",
         "recent_statistics": {
-          "viewCount": 1058,
+          "viewCount": 1065,
           "likeCount": 4,
-          "commentCount": 3
+          "commentCount": 4
         }
       },
       "fdXOpvO5cJI": {
@@ -8309,12 +8368,26 @@
           "likeCount": 0,
           "commentCount": 0
         }
+      },
+      "CDWL_-oTZ40": {
+        "snapshots": [],
+        "video_id": "CDWL_-oTZ40",
+        "title": "منصوریان: ممکن بود سرمربی تیم ملی عراق شوم",
+        "category": "SHORTS",
+        "format": "short",
+        "source": "instagram",
+        "published_at": "2026-11-19T10:02:12Z",
+        "recent_statistics": {
+          "viewCount": 0,
+          "likeCount": 0,
+          "commentCount": 0
+        }
       }
     },
-    "last_sync_at": "2026-11-19T09:58:42.559666+00:00",
+    "last_sync_at": "2026-11-19T10:02:39.467054+00:00",
     "period_start": "2026-08-19",
     "period_end": "2026-11-16",
-    "video_count": 100,
+    "video_count": 101,
     "last_row_count": 92
   },
   "published_metadata": {
@@ -8381,18 +8454,15 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-19T10:02:05.115375+00:00",
-    "queue_size": 15,
+    "finished_at": "2026-11-19T10:04:30.275977+00:00",
+    "queue_size": 14,
     "rejected_by_reason": {},
-    "new_web_candidates": 4,
+    "new_web_candidates": 0,
     "new_instagram_candidates": 0,
     "learning": {
       "revision": "4f53cda18c2baa0c",
       "changes": [],
-      "queue_adjusted": 0,
-      "title_style": "direct",
-      "selected_factor": 1.0,
-      "published_tehran": "13:32"
+      "queue_adjusted": 0
     }
   },
   "last_short_upload_timestamp": 1795082533.7258804,
@@ -8433,461 +8503,14 @@
         "attempts": 1,
         "retry_at": 1795084235.551381
       },
-      "UgyOttlxhChOrzLxELR4AaABAg": {
-        "parent": "UgyOttlxhChOrzLxELR4AaABAg",
-        "video": "VWrhlwIbXqs",
-        "hash": "645b9450ea0b1f05b15099091d1879f7bea9771dfa1d9e971094cfb827485d4b",
-        "status": "pending"
-      },
-      "UgylXQzReYti_chDfMh4AaABAg": {
-        "parent": "UgylXQzReYti_chDfMh4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "653c49cc58c16e23e3f9d998500323a91a5f87ea3bd0d8a357aa3e397e8db789",
-        "status": "pending"
-      },
-      "UgyYgaoLYoVyU39Wkkd4AaABAg": {
-        "parent": "UgyYgaoLYoVyU39Wkkd4AaABAg",
-        "video": "_3OROS99wxQ",
-        "hash": "2f5d2cde90520ca8025379931e442dee3c8ed912e2705c9a245b5b6742b78466",
-        "status": "pending"
-      },
-      "Ugyyy0Rr2eFvx63kilt4AaABAg": {
-        "parent": "Ugyyy0Rr2eFvx63kilt4AaABAg",
-        "video": "U8ulvXoEgs8",
-        "hash": "e7029842d855de2f4c2a5a4db2878d1544adacd64991be95201201c080de380e",
-        "status": "pending"
-      },
-      "Ugyyy0Rr2eFvx63kilt4AaABAg.Ad49O2q9EJvAdF1uVSvuha": {
-        "parent": "Ugyyy0Rr2eFvx63kilt4AaABAg",
-        "video": "U8ulvXoEgs8",
-        "hash": "16f1faf0fcc778c819d44b32615283185e85bac7c987990354dba6a737f049fd",
-        "status": "pending"
-      },
-      "Ugwy2o-qnF4PAaYaBfZ4AaABAg": {
-        "parent": "Ugwy2o-qnF4PAaYaBfZ4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "157338251e589356f84b170e6231501190a37585411614cfdac4e0291ed24d1b",
-        "status": "pending"
-      },
-      "UgzaxbrqUcLUASNlLAB4AaABAg": {
-        "parent": "UgzaxbrqUcLUASNlLAB4AaABAg",
-        "video": "OXJ70v_2uCc",
-        "hash": "5a62a4cad6c0837c2c69fa6fc2b5e22d66bf71c688da742b06115ff68c103e8e",
-        "status": "pending"
-      },
-      "UgxP2GShTG9bOppEPe94AaABAg": {
-        "parent": "UgxP2GShTG9bOppEPe94AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "5756aec2c1204654931cbda3900175d1aff267174f70066591882d1bc1c20f46",
-        "status": "pending"
-      },
-      "Ugw_cQ_SIVwmEBCFIMN4AaABAg": {
-        "parent": "Ugw_cQ_SIVwmEBCFIMN4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "925842ddc81804e4fa9f3528541fe25f1ba6eca9b0c4355c8fa8073ced865bde",
-        "status": "pending"
-      },
-      "UgzahET58iTEiBESkqB4AaABAg": {
-        "parent": "UgzahET58iTEiBESkqB4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "e1d6ac74d54ab9f98c5d1219d6b6d39988802b8e5646ed0bfc716bbfd392d70f",
-        "status": "pending"
-      },
-      "UgzVZj704RCcPDyDNS94AaABAg": {
-        "parent": "UgzVZj704RCcPDyDNS94AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "1a337dfe543b5adcc3fd74ae3588855eabd9e181b60bd2399c5f3172ec022f96",
-        "status": "pending"
-      },
-      "UgzVZj704RCcPDyDNS94AaABAg.Ad44UZeaUO5Ad4g74-Kqa0": {
-        "parent": "UgzVZj704RCcPDyDNS94AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "b54afaff217a54f9e85ef459c3640adf0fe1014ba3ebb02de3a4382ceb4f6a5f",
-        "status": "pending"
-      },
       "UgzZtxGU6FBiipCtwJF4AaABAg": {
         "parent": "UgzZtxGU6FBiipCtwJF4AaABAg",
         "video": "OXJ70v_2uCc",
         "hash": "1b1bdfe6e578cdd5ad501aff3789de8e244bc67fc96769a5cf95ec547b86527d",
-        "status": "pending"
-      },
-      "UgzjIZaDrq5ffFG-es94AaABAg": {
-        "parent": "UgzjIZaDrq5ffFG-es94AaABAg",
-        "video": "VWrhlwIbXqs",
-        "hash": "58bdcd9fa8eeed76fa0d9fbe66023f4b9de6b60ec0f417f07be5172f97452543",
-        "status": "pending"
-      },
-      "UgwR0eLv9pYY2RFglL54AaABAg": {
-        "parent": "UgwR0eLv9pYY2RFglL54AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "a4cb9b727b2bd66fec1b5730b29159bf974073f7fe9c23ee705e774d7d50229b",
-        "status": "pending"
-      },
-      "UgwR0eLv9pYY2RFglL54AaABAg.Ad3TLJT-YNAAd3b45AyChQ": {
-        "parent": "UgwR0eLv9pYY2RFglL54AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "6d1b95b12f870398e3162b02c924f5d519f4e8bd54ee2c340892a6a59f535155",
-        "status": "pending"
-      },
-      "UgwR0eLv9pYY2RFglL54AaABAg.Ad3TLJT-YNAAd4sxKl8tNR": {
-        "parent": "UgwR0eLv9pYY2RFglL54AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "5afd23481f09b095a48254e1b748aae91347636a58b0a07efde2952594191614",
-        "status": "pending"
-      },
-      "UgzEeTVLJNbvENU9qDt4AaABAg": {
-        "parent": "UgzEeTVLJNbvENU9qDt4AaABAg",
-        "video": "OXJ70v_2uCc",
-        "hash": "1ee8616e9d778b275276be7bf906480557437f03cd0284a34d3391ecf7c80a97",
-        "status": "pending"
-      },
-      "Ugzkly1wc2VMnp75X8x4AaABAg": {
-        "parent": "Ugzkly1wc2VMnp75X8x4AaABAg",
-        "video": "S3ddbU58nxs",
-        "hash": "02b6c3fc344b70eb12577a5c3c1b58e279b0260ca91080282e86d8ae5b67e093",
-        "status": "pending"
-      },
-      "UgymBO09cmyRNW3733d4AaABAg": {
-        "parent": "UgymBO09cmyRNW3733d4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "a0186baa033c1b6a23151a1c2222a6f81f127aaceafbd83f6500bbb749dfe58a",
-        "status": "pending"
-      },
-      "UgwuS1G8pbpVQoSRut54AaABAg": {
-        "parent": "UgwuS1G8pbpVQoSRut54AaABAg",
-        "video": "csoeRjEzIKA",
-        "hash": "684c858c855f58562b174fd5e12bf83acdbd1438084a537a273fc1dbc187e84f",
-        "status": "pending"
-      },
-      "UgzfTRISv1L1sTyQEQ94AaABAg": {
-        "parent": "UgzfTRISv1L1sTyQEQ94AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "ca2e1fd93c114d97507a20a2ee85b94ac66bab73f879f5cd662a304abf0a800e",
-        "status": "pending"
-      },
-      "Ugz7ug2CvFsY-8NyGXt4AaABAg": {
-        "parent": "Ugz7ug2CvFsY-8NyGXt4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "63f501e4c63c8f147b857c385a0304bf9e055697fead9d9f4c54e65b2a3e85e3",
-        "status": "pending"
-      },
-      "Ugz6vnsTpE9KMkmMhqd4AaABAg": {
-        "parent": "Ugz6vnsTpE9KMkmMhqd4AaABAg",
-        "video": "_3OROS99wxQ",
-        "hash": "57a915ca78f0e7dddbff87ab086fc4dc7e92d89c94a2e95f380e183c3380d8f4",
-        "status": "pending"
-      },
-      "Ugw4LHL9qwH9q3c6z6R4AaABAg": {
-        "parent": "Ugw4LHL9qwH9q3c6z6R4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "b7b7811b0b73e19804f4b8114f6ce6ddf43c67fd174aeaed7016562abb2d2f91",
-        "status": "pending"
-      },
-      "Ugyv04-vgzGf_m4bJtZ4AaABAg": {
-        "parent": "Ugyv04-vgzGf_m4bJtZ4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "ffb5935cfae2a828e0812a5abcfffc86c45a0474bb3e2a3b46e9db0751c2cf92",
-        "status": "pending"
-      },
-      "UgyP_aKgpQ0b2x3T4Kx4AaABAg": {
-        "parent": "UgyP_aKgpQ0b2x3T4Kx4AaABAg",
-        "video": "_3OROS99wxQ",
-        "hash": "76f1a963311dea5ef568c2dfc693db3a647354196f3414ce8e3e52d03be9a3b8",
-        "status": "pending"
-      },
-      "Ugy6lMB3u9N5vYIK2UN4AaABAg": {
-        "parent": "Ugy6lMB3u9N5vYIK2UN4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "423a0e3191e82be1a41d68b8b246d955b5b8179d47e6437373f014eb85a8431c",
-        "status": "pending"
-      },
-      "Ugz7UveLuhmzE_OBj1N4AaABAg": {
-        "parent": "Ugz7UveLuhmzE_OBj1N4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "423a0e3191e82be1a41d68b8b246d955b5b8179d47e6437373f014eb85a8431c",
-        "status": "pending"
-      },
-      "UgzE4P9yH8kLI5Za1Rd4AaABAg": {
-        "parent": "UgzE4P9yH8kLI5Za1Rd4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "52ac9bce8aa767a1455738f2908cd540f2f138dcd0670e88d287a08261a411a5",
-        "status": "pending"
-      },
-      "Ugxi1iuXk8w-MeiD7Xl4AaABAg": {
-        "parent": "Ugxi1iuXk8w-MeiD7Xl4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "0435b05ede02d3efd65daa2e0e740fed53d4178d7dc2b8116eeb2f79fe66ffa2",
-        "status": "pending"
-      },
-      "UgxZf4HyfHLPEL9RYN54AaABAg": {
-        "parent": "UgxZf4HyfHLPEL9RYN54AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "2bb8f3d271bde9292d18f7fd50c870a3f979b114e2956121bcb2f5bd80916ff1",
-        "status": "pending"
-      },
-      "Ugx8f4RSYyfFSmHa7H54AaABAg": {
-        "parent": "Ugx8f4RSYyfFSmHa7H54AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "ee32e4304c05ccd2f3923b89ef20d1534eabbec281adc5d6894dccbe6b86b137",
-        "status": "pending"
-      },
-      "UgwgBJqnsoJHqqnuVUR4AaABAg": {
-        "parent": "UgwgBJqnsoJHqqnuVUR4AaABAg",
-        "video": "csoeRjEzIKA",
-        "hash": "69a9f7ccc7f5ad13426f1f7b2e13a14f132c1ff8de3cfbd9d981b5266e536573",
-        "status": "pending"
-      },
-      "UgzRwPGjUX3owUKWB5N4AaABAg": {
-        "parent": "UgzRwPGjUX3owUKWB5N4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "dd82717a86e1529627b2707d945dee20d54a4e4741f17a21a30b51a30f738f8c",
-        "status": "pending"
-      },
-      "Ugw-jWmWm86R78f7jXZ4AaABAg": {
-        "parent": "Ugw-jWmWm86R78f7jXZ4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "e7c7c78b0c26d3c4bf21786aebd01c25b5929432648c94115396825d15119a88",
-        "status": "pending"
-      },
-      "UgwObuK4-uh8gTlgDgd4AaABAg": {
-        "parent": "UgwObuK4-uh8gTlgDgd4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "3feb79001c44019f9986d1c9e35dee05b4831e6ca109df34c77c5e15514b16c2",
-        "status": "pending"
-      },
-      "UgxiCHWTY0qIJcm004F4AaABAg": {
-        "parent": "UgxiCHWTY0qIJcm004F4AaABAg",
-        "video": "csoeRjEzIKA",
-        "hash": "29a2b30f4b0b636f6acadde068e04699b0a498ac39a90850283b7a4eee4cc56e",
-        "status": "pending"
-      },
-      "UgxiCHWTY0qIJcm004F4AaABAg.Ad1lTJNKqvqAd42zzszsK2": {
-        "parent": "UgxiCHWTY0qIJcm004F4AaABAg",
-        "video": "csoeRjEzIKA",
-        "hash": "8302d1f7dc4d2d1fa623a813733958a71829a965a14bd11247f61eea8136b9a3",
-        "status": "pending"
-      },
-      "UgyPgRxAJOvftDqYGFV4AaABAg": {
-        "parent": "UgyPgRxAJOvftDqYGFV4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "78f0e67665275418cffc877637137c7f76678e0671694c5bf6cb76505b50aae5",
-        "status": "pending"
-      },
-      "UgyPgRxAJOvftDqYGFV4AaABAg.Ad1kvtRsQOWAd1ts19AfS9": {
-        "parent": "UgyPgRxAJOvftDqYGFV4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "b3d2485062c12fa0dcd94fc00dcc88702ff754e64045414c3bf3953ff678c4e5",
-        "status": "pending"
-      },
-      "UgyPgRxAJOvftDqYGFV4AaABAg.Ad1kvtRsQOWAd2ncHXCKSh": {
-        "parent": "UgyPgRxAJOvftDqYGFV4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "ee499c99ea3d6f815f954fd5c72e0cf71bf167ebd9eef6ae3a70068e4b5159dd",
-        "status": "pending"
-      },
-      "UgyWC7P9DZmYuhnaoNZ4AaABAg": {
-        "parent": "UgyWC7P9DZmYuhnaoNZ4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "dce79e01df59b9906ab78077a4abd44fcf991fbe09418017b074a683c7911c33",
-        "status": "pending"
-      },
-      "UgyWC7P9DZmYuhnaoNZ4AaABAg.Ad1hWCSVholAd4gHDRcU_k": {
-        "parent": "UgyWC7P9DZmYuhnaoNZ4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "ed4a5f1064c3cf03f9e60885687d9fe4de832a4f8dc2fa19b3bc082898323714",
-        "status": "pending"
-      },
-      "Ugy76FLnC4PnWAXv7lR4AaABAg": {
-        "parent": "Ugy76FLnC4PnWAXv7lR4AaABAg",
-        "video": "S_VYBNL7FUw",
-        "hash": "c0d1b2b7ba74c8ea77117a5ff46dc2e36f46f56da1f7738b48a9596ae01b2f32",
-        "status": "pending"
-      },
-      "UgyTewGdL-2DXcypKbF4AaABAg": {
-        "parent": "UgyTewGdL-2DXcypKbF4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "b6179cad6a66a8ed2929390f0c60cccf0f49f474683e0208a9a6c643254f9e75",
-        "status": "pending"
-      },
-      "UgzW9JvG_g0-Cqi-y294AaABAg": {
-        "parent": "UgzW9JvG_g0-Cqi-y294AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "0756bf3eb2b9c78f767f0011c14f345277a68a1f757db696783e7532e7727554",
-        "status": "pending"
-      },
-      "UgzW9JvG_g0-Cqi-y294AaABAg.Ad1U0jXisWHAd4s-HWDIUT": {
-        "parent": "UgzW9JvG_g0-Cqi-y294AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "a37b21e8015012646b3ac66a2fb212d2b761dcf3b5e76bb4f784460ca54b4ecf",
-        "status": "pending"
-      },
-      "UgzW9JvG_g0-Cqi-y294AaABAg.Ad1U0jXisWHAd5RQDRxUrF": {
-        "parent": "UgzW9JvG_g0-Cqi-y294AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "deb79b8545395926e9876ead2e6a0227e44aba67c0430a333f41b325d3fccf60",
-        "status": "pending"
-      },
-      "UgzrF6r5p_iK-WIWobZ4AaABAg": {
-        "parent": "UgzrF6r5p_iK-WIWobZ4AaABAg",
-        "video": "8ojRxQ9IY5s",
-        "hash": "7d9fef183b47e3dd6e927be7f63d09b1b14337516a5ae2e55f8c25bfa008db24",
-        "status": "pending"
-      },
-      "UgzfN67KFQcbbrPN3fd4AaABAg": {
-        "parent": "UgzfN67KFQcbbrPN3fd4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "affb803eed49fc0989587822427cf903b3c24e75fdae61e5313549ea8e8f866c",
-        "status": "pending"
-      },
-      "UgyJ1YJi3TWWjYkHmXJ4AaABAg": {
-        "parent": "UgyJ1YJi3TWWjYkHmXJ4AaABAg",
-        "video": "j4bjTRVQ0nY",
-        "hash": "d8c7b3398b054be5f0e2b42502fb5e83a065956fba00bc15a2fb5e3e962194b4",
-        "status": "pending"
-      },
-      "UgyZZCvyQPwhA1m3mbJ4AaABAg": {
-        "parent": "UgyZZCvyQPwhA1m3mbJ4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "8862fabab5f81fd7fbb04c352e1c57d6378edc4483f72dc778c24b6ad0b2cfc8",
-        "status": "pending"
-      },
-      "Ugw7-YNQ_0g-snBVC6J4AaABAg": {
-        "parent": "Ugw7-YNQ_0g-snBVC6J4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "e81ef2c7aeabb1371f923a7f9012cc17d455cb8e358aa57da3cb6556135a7c80",
-        "status": "pending"
-      },
-      "Ugzfde39xITi-Dg98Cl4AaABAg": {
-        "parent": "Ugzfde39xITi-Dg98Cl4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "e2c07ef291d4e38ab2aedd8d5433fdbffc251aaf2071a824cbbb04da7897a8c7",
-        "status": "pending"
-      },
-      "UgzCSs9yos38Ijvs9xJ4AaABAg": {
-        "parent": "UgzCSs9yos38Ijvs9xJ4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "91f0eb5e4ac0337d779d54d4d0c4437b1bdaf1205a126f208a25a6de0f92d3a5",
-        "status": "pending"
-      },
-      "UgwPPDeEP4_jZzZzzR54AaABAg": {
-        "parent": "UgwPPDeEP4_jZzZzzR54AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "795768f68591594a0ef120604367897a883524a75e00ea4ccd7f465ef14182ec",
-        "status": "pending"
-      },
-      "Ugy8Km6Pjp_zMekq_d94AaABAg": {
-        "parent": "Ugy8Km6Pjp_zMekq_d94AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "3d955c0f2265797398c239338419a4eb4ba12762c6ad4645d92536f74ac8d574",
-        "status": "pending"
-      },
-      "Ugx0IgXRYuORyOcQrq94AaABAg": {
-        "parent": "Ugx0IgXRYuORyOcQrq94AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "089a158a0f062534c96724389f181969b4ee5584fbe260125beb02c492a1dcdd",
-        "status": "pending"
-      },
-      "UgyMbgNgb6aSYmxA0MN4AaABAg": {
-        "parent": "UgyMbgNgb6aSYmxA0MN4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "089a158a0f062534c96724389f181969b4ee5584fbe260125beb02c492a1dcdd",
-        "status": "pending"
-      },
-      "Ugy4uVf1EGAb39aSGNR4AaABAg": {
-        "parent": "Ugy4uVf1EGAb39aSGNR4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "089a158a0f062534c96724389f181969b4ee5584fbe260125beb02c492a1dcdd",
-        "status": "pending"
-      },
-      "UgzLeQJsWoUPWNumXlt4AaABAg": {
-        "parent": "UgzLeQJsWoUPWNumXlt4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "37420384312f195334961a9755174abfa8a9cb1720f85d34d422c6b024665e63",
-        "status": "pending"
-      },
-      "UgwvDqzqQQoB1sYljmN4AaABAg": {
-        "parent": "UgwvDqzqQQoB1sYljmN4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "05bd14246dc03ab3df47ffeb13d41402d58f36279f0363c4670bfc1f0366fadb",
-        "status": "pending"
-      },
-      "Ugyp5Uj6GV9mcw8JtC54AaABAg": {
-        "parent": "Ugyp5Uj6GV9mcw8JtC54AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "8c57854926ca8cfd62572fb29a045e79db8c642e38e9aa07f11b1af7283421d6",
-        "status": "pending"
-      },
-      "Ugzxvb1M3POIWsfCUY14AaABAg": {
-        "parent": "Ugzxvb1M3POIWsfCUY14AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "2b2e89690c4f10c0aa741649d23ecbf44353ac697ffa2cbfa5d7f6ced21a21d9",
-        "status": "pending"
-      },
-      "UgyRn6C69aNGlho28tt4AaABAg": {
-        "parent": "UgyRn6C69aNGlho28tt4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "01bc3cff675d269df576eda4d346f3fd691c3b9395c7f411396c4e40a45549b8",
-        "status": "pending"
-      },
-      "UgwJFhXwhsJfJ8JP0Lx4AaABAg": {
-        "parent": "UgwJFhXwhsJfJ8JP0Lx4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "5354fe31ccce1eb19649c42149346791ad2dbb66488d91315a5ecc2eb5da4eee",
-        "status": "pending"
-      },
-      "UgwJFhXwhsJfJ8JP0Lx4AaABAg.Ad03vWZnohcAd09Q-r4_zP": {
-        "parent": "UgwJFhXwhsJfJ8JP0Lx4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "701efed4038bcd02894ade055647071899d814ff7e4d5a87c365fad0bbf30fbf",
-        "status": "pending"
-      },
-      "UgwJFhXwhsJfJ8JP0Lx4AaABAg.Ad03vWZnohcAd0F7dod1yw": {
-        "parent": "UgwJFhXwhsJfJ8JP0Lx4AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "30e4c193b9a3c82dbe41e20194a2efe6d51caeaf94ac031791eacbba0fef633e",
-        "status": "pending"
-      },
-      "UgxoIX6ZZFdBZX-txq14AaABAg": {
-        "parent": "UgxoIX6ZZFdBZX-txq14AaABAg",
-        "video": "Ud5TSd3MlyI",
-        "hash": "7c3c67f061fa3f5d9d2699993493b3805f04f51274720953aa42a75bc10759af",
-        "status": "pending"
-      },
-      "UgwGDrSKe2c5fHoS9UV4AaABAg": {
-        "parent": "UgwGDrSKe2c5fHoS9UV4AaABAg",
-        "video": "j4bjTRVQ0nY",
-        "hash": "6b85f15b8d67d7fe99d39e79721edda1948d46f3060a024dc00bb46e56d04fe0",
-        "status": "pending"
-      },
-      "UgyW3sAROYh-fwUgwRJ4AaABAg": {
-        "parent": "UgyW3sAROYh-fwUgwRJ4AaABAg",
-        "video": "vORLF0uEAQg",
-        "hash": "2a994b328e7853dabca61d86203f6c5a8b5dbd7b40ab6d33305d513f1f29d9c9",
-        "status": "pending"
-      },
-      "Ugxt9rOCPiJ_Zvp8xeN4AaABAg": {
-        "parent": "Ugxt9rOCPiJ_Zvp8xeN4AaABAg",
-        "video": "jKuTNGoRG8Y",
-        "hash": "26bb549eee955d79f80fde705e99b174ca1756eb9e5133c35aa7c44a1e2d5f64",
-        "status": "pending"
-      },
-      "UgzJRdelNdByu11FLzx4AaABAg": {
-        "parent": "UgzJRdelNdByu11FLzx4AaABAg",
-        "video": "jKuTNGoRG8Y",
-        "hash": "69917769fe2323fa9ff54cadc2518fbb67a8751cf94f0ee8590adc559084bb82",
-        "status": "pending"
-      },
-      "Ugx-VGBbx6IxgTPhTN14AaABAg": {
-        "parent": "Ugx-VGBbx6IxgTPhTN14AaABAg",
-        "video": "URucfHuv2YE",
-        "hash": "a9c75c24905d126df879198b437d080d7d5380775ef7927ba3268093b43910e4",
-        "status": "pending"
-      },
-      "UgwEnvkmtrOs13ZT1Il4AaABAg": {
-        "parent": "UgwEnvkmtrOs13ZT1Il4AaABAg",
-        "video": "dA7kGzdurUU",
-        "hash": "b4cefc2565200f8b7c5337749af843166b61332d4cb9f54e700375ba62a15a5d",
-        "status": "pending"
+        "status": "retry",
+        "error": "ai_missing_or_invalid",
+        "attempts": 1,
+        "retry_at": 1795084372.8755357
       }
     },
     "records": {
@@ -9555,30 +9178,555 @@
         "hash": "a2d216b5d3d9c66f800f9b71d3a98bbd8076512042a8043bc0b8f968bc47e7fd",
         "reviewed_at": 1795082482,
         "has_replied": true
+      },
+      "UgyOttlxhChOrzLxELR4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "BANTER_KEEP",
+        "hash": "645b9450ea0b1f05b15099091d1879f7bea9771dfa1d9e971094cfb827485d4b",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "UgylXQzReYti_chDfMh4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "653c49cc58c16e23e3f9d998500323a91a5f87ea3bd0d8a357aa3e397e8db789",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "Ugyyy0Rr2eFvx63kilt4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "BANTER_KEEP",
+        "hash": "e7029842d855de2f4c2a5a4db2878d1544adacd64991be95201201c080de380e",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "Ugyyy0Rr2eFvx63kilt4AaABAg.Ad49O2q9EJvAdF1uVSvuha": {
+        "status": "reviewed_no_reply",
+        "reason": "BANTER_KEEP",
+        "hash": "16f1faf0fcc778c819d44b32615283185e85bac7c987990354dba6a737f049fd",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "Ugwy2o-qnF4PAaYaBfZ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "157338251e589356f84b170e6231501190a37585411614cfdac4e0291ed24d1b",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "UgzaxbrqUcLUASNlLAB4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "5a62a4cad6c0837c2c69fa6fc2b5e22d66bf71c688da742b06115ff68c103e8e",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "UgxP2GShTG9bOppEPe94AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "5756aec2c1204654931cbda3900175d1aff267174f70066591882d1bc1c20f46",
+        "reviewed_at": 1795082567,
+        "has_replied": false
+      },
+      "Ugw_cQ_SIVwmEBCFIMN4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "925842ddc81804e4fa9f3528541fe25f1ba6eca9b0c4355c8fa8073ced865bde",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgzahET58iTEiBESkqB4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "e1d6ac74d54ab9f98c5d1219d6b6d39988802b8e5646ed0bfc716bbfd392d70f",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgzVZj704RCcPDyDNS94AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "1a337dfe543b5adcc3fd74ae3588855eabd9e181b60bd2399c5f3172ec022f96",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgzVZj704RCcPDyDNS94AaABAg.Ad44UZeaUO5Ad4g74-Kqa0": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "b54afaff217a54f9e85ef459c3640adf0fe1014ba3ebb02de3a4382ceb4f6a5f",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgzjIZaDrq5ffFG-es94AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "BANTER_KEEP",
+        "hash": "58bdcd9fa8eeed76fa0d9fbe66023f4b9de6b60ec0f417f07be5172f97452543",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgwR0eLv9pYY2RFglL54AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "a4cb9b727b2bd66fec1b5730b29159bf974073f7fe9c23ee705e774d7d50229b",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgwR0eLv9pYY2RFglL54AaABAg.Ad3TLJT-YNAAd3b45AyChQ": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "6d1b95b12f870398e3162b02c924f5d519f4e8bd54ee2c340892a6a59f535155",
+        "reviewed_at": 1795082572,
+        "has_replied": false
+      },
+      "UgwR0eLv9pYY2RFglL54AaABAg.Ad3TLJT-YNAAd4sxKl8tNR": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "5afd23481f09b095a48254e1b748aae91347636a58b0a07efde2952594191614",
+        "reviewed_at": 1795082576,
+        "has_replied": false
+      },
+      "UgymBO09cmyRNW3733d4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "a0186baa033c1b6a23151a1c2222a6f81f127aaceafbd83f6500bbb749dfe58a",
+        "reviewed_at": 1795082576,
+        "has_replied": false
+      },
+      "UgwuS1G8pbpVQoSRut54AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "684c858c855f58562b174fd5e12bf83acdbd1438084a537a273fc1dbc187e84f",
+        "reviewed_at": 1795082576,
+        "has_replied": false
+      },
+      "UgzfTRISv1L1sTyQEQ94AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "ca2e1fd93c114d97507a20a2ee85b94ac66bab73f879f5cd662a304abf0a800e",
+        "reviewed_at": 1795082576,
+        "has_replied": false
+      },
+      "Ugz7ug2CvFsY-8NyGXt4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "63f501e4c63c8f147b857c385a0304bf9e055697fead9d9f4c54e65b2a3e85e3",
+        "reviewed_at": 1795082576,
+        "has_replied": false
+      },
+      "Ugz6vnsTpE9KMkmMhqd4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "57a915ca78f0e7dddbff87ab086fc4dc7e92d89c94a2e95f380e183c3380d8f4",
+        "reviewed_at": 1795082576,
+        "has_replied": false
+      },
+      "Ugw4LHL9qwH9q3c6z6R4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "b7b7811b0b73e19804f4b8114f6ce6ddf43c67fd174aeaed7016562abb2d2f91",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "Ugyv04-vgzGf_m4bJtZ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "ffb5935cfae2a828e0812a5abcfffc86c45a0474bb3e2a3b46e9db0751c2cf92",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "Ugy6lMB3u9N5vYIK2UN4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "423a0e3191e82be1a41d68b8b246d955b5b8179d47e6437373f014eb85a8431c",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "Ugz7UveLuhmzE_OBj1N4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "423a0e3191e82be1a41d68b8b246d955b5b8179d47e6437373f014eb85a8431c",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "UgzE4P9yH8kLI5Za1Rd4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "52ac9bce8aa767a1455738f2908cd540f2f138dcd0670e88d287a08261a411a5",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "Ugxi1iuXk8w-MeiD7Xl4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "0435b05ede02d3efd65daa2e0e740fed53d4178d7dc2b8116eeb2f79fe66ffa2",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "UgxZf4HyfHLPEL9RYN54AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "2bb8f3d271bde9292d18f7fd50c870a3f979b114e2956121bcb2f5bd80916ff1",
+        "reviewed_at": 1795082581,
+        "has_replied": false
+      },
+      "Ugx8f4RSYyfFSmHa7H54AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "ee32e4304c05ccd2f3923b89ef20d1534eabbec281adc5d6894dccbe6b86b137",
+        "reviewed_at": 1795082584,
+        "has_replied": false
+      },
+      "UgwgBJqnsoJHqqnuVUR4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "69a9f7ccc7f5ad13426f1f7b2e13a14f132c1ff8de3cfbd9d981b5266e536573",
+        "reviewed_at": 1795082584,
+        "has_replied": false
+      },
+      "UgzRwPGjUX3owUKWB5N4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "dd82717a86e1529627b2707d945dee20d54a4e4741f17a21a30b51a30f738f8c",
+        "reviewed_at": 1795082584,
+        "has_replied": false
+      },
+      "Ugw-jWmWm86R78f7jXZ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "e7c7c78b0c26d3c4bf21786aebd01c25b5929432648c94115396825d15119a88",
+        "reviewed_at": 1795082585,
+        "has_replied": false
+      },
+      "UgwObuK4-uh8gTlgDgd4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "3feb79001c44019f9986d1c9e35dee05b4831e6ca109df34c77c5e15514b16c2",
+        "reviewed_at": 1795082585,
+        "has_replied": false
+      },
+      "UgxiCHWTY0qIJcm004F4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "29a2b30f4b0b636f6acadde068e04699b0a498ac39a90850283b7a4eee4cc56e",
+        "reviewed_at": 1795082585,
+        "has_replied": false
+      },
+      "UgyPgRxAJOvftDqYGFV4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "78f0e67665275418cffc877637137c7f76678e0671694c5bf6cb76505b50aae5",
+        "reviewed_at": 1795082585,
+        "has_replied": false
+      },
+      "UgyPgRxAJOvftDqYGFV4AaABAg.Ad1kvtRsQOWAd1ts19AfS9": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "b3d2485062c12fa0dcd94fc00dcc88702ff754e64045414c3bf3953ff678c4e5",
+        "reviewed_at": 1795082594,
+        "has_replied": false
+      },
+      "UgyPgRxAJOvftDqYGFV4AaABAg.Ad1kvtRsQOWAd2ncHXCKSh": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "ee499c99ea3d6f815f954fd5c72e0cf71bf167ebd9eef6ae3a70068e4b5159dd",
+        "reviewed_at": 1795082594,
+        "has_replied": false
+      },
+      "UgyWC7P9DZmYuhnaoNZ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "dce79e01df59b9906ab78077a4abd44fcf991fbe09418017b074a683c7911c33",
+        "reviewed_at": 1795082594,
+        "has_replied": false
+      },
+      "Ugy76FLnC4PnWAXv7lR4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "c0d1b2b7ba74c8ea77117a5ff46dc2e36f46f56da1f7738b48a9596ae01b2f32",
+        "reviewed_at": 1795082594,
+        "has_replied": false
+      },
+      "UgzW9JvG_g0-Cqi-y294AaABAg.Ad1U0jXisWHAd4s-HWDIUT": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "a37b21e8015012646b3ac66a2fb212d2b761dcf3b5e76bb4f784460ca54b4ecf",
+        "reviewed_at": 1795082594,
+        "has_replied": false
+      },
+      "UgzW9JvG_g0-Cqi-y294AaABAg.Ad1U0jXisWHAd5RQDRxUrF": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "deb79b8545395926e9876ead2e6a0227e44aba67c0430a333f41b325d3fccf60",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "UgzrF6r5p_iK-WIWobZ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "7d9fef183b47e3dd6e927be7f63d09b1b14337516a5ae2e55f8c25bfa008db24",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "UgzfN67KFQcbbrPN3fd4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "affb803eed49fc0989587822427cf903b3c24e75fdae61e5313549ea8e8f866c",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "UgyJ1YJi3TWWjYkHmXJ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "d8c7b3398b054be5f0e2b42502fb5e83a065956fba00bc15a2fb5e3e962194b4",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "UgyZZCvyQPwhA1m3mbJ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "8862fabab5f81fd7fbb04c352e1c57d6378edc4483f72dc778c24b6ad0b2cfc8",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "Ugw7-YNQ_0g-snBVC6J4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "e81ef2c7aeabb1371f923a7f9012cc17d455cb8e358aa57da3cb6556135a7c80",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "Ugzfde39xITi-Dg98Cl4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "e2c07ef291d4e38ab2aedd8d5433fdbffc251aaf2071a824cbbb04da7897a8c7",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "UgzCSs9yos38Ijvs9xJ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "91f0eb5e4ac0337d779d54d4d0c4437b1bdaf1205a126f208a25a6de0f92d3a5",
+        "reviewed_at": 1795082598,
+        "has_replied": false
+      },
+      "UgwPPDeEP4_jZzZzzR54AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "795768f68591594a0ef120604367897a883524a75e00ea4ccd7f465ef14182ec",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "Ugy8Km6Pjp_zMekq_d94AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "3d955c0f2265797398c239338419a4eb4ba12762c6ad4645d92536f74ac8d574",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "Ugx0IgXRYuORyOcQrq94AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "UNCERTAIN_KEEP",
+        "hash": "089a158a0f062534c96724389f181969b4ee5584fbe260125beb02c492a1dcdd",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "UgyMbgNgb6aSYmxA0MN4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "UNCERTAIN_KEEP",
+        "hash": "089a158a0f062534c96724389f181969b4ee5584fbe260125beb02c492a1dcdd",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "Ugy4uVf1EGAb39aSGNR4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "UNCERTAIN_KEEP",
+        "hash": "089a158a0f062534c96724389f181969b4ee5584fbe260125beb02c492a1dcdd",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "UgzLeQJsWoUPWNumXlt4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "37420384312f195334961a9755174abfa8a9cb1720f85d34d422c6b024665e63",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "UgwvDqzqQQoB1sYljmN4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "05bd14246dc03ab3df47ffeb13d41402d58f36279f0363c4670bfc1f0366fadb",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "Ugyp5Uj6GV9mcw8JtC54AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "8c57854926ca8cfd62572fb29a045e79db8c642e38e9aa07f11b1af7283421d6",
+        "reviewed_at": 1795082602,
+        "has_replied": false
+      },
+      "Ugzxvb1M3POIWsfCUY14AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "2b2e89690c4f10c0aa741649d23ecbf44353ac697ffa2cbfa5d7f6ced21a21d9",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "UgyRn6C69aNGlho28tt4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "01bc3cff675d269df576eda4d346f3fd691c3b9395c7f411396c4e40a45549b8",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "UgwJFhXwhsJfJ8JP0Lx4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "5354fe31ccce1eb19649c42149346791ad2dbb66488d91315a5ecc2eb5da4eee",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "UgwJFhXwhsJfJ8JP0Lx4AaABAg.Ad03vWZnohcAd09Q-r4_zP": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "701efed4038bcd02894ade055647071899d814ff7e4d5a87c365fad0bbf30fbf",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "UgwJFhXwhsJfJ8JP0Lx4AaABAg.Ad03vWZnohcAd0F7dod1yw": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "30e4c193b9a3c82dbe41e20194a2efe6d51caeaf94ac031791eacbba0fef633e",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "UgwGDrSKe2c5fHoS9UV4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "6b85f15b8d67d7fe99d39e79721edda1948d46f3060a024dc00bb46e56d04fe0",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "UgyW3sAROYh-fwUgwRJ4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "2a994b328e7853dabca61d86203f6c5a8b5dbd7b40ab6d33305d513f1f29d9c9",
+        "reviewed_at": 1795082632,
+        "has_replied": false
+      },
+      "Ugxt9rOCPiJ_Zvp8xeN4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "BANTER_KEEP",
+        "hash": "26bb549eee955d79f80fde705e99b174ca1756eb9e5133c35aa7c44a1e2d5f64",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "UgzJRdelNdByu11FLzx4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "69917769fe2323fa9ff54cadc2518fbb67a8751cf94f0ee8590adc559084bb82",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "Ugx-VGBbx6IxgTPhTN14AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "NO_REPLY_NEEDED",
+        "hash": "a9c75c24905d126df879198b437d080d7d5380775ef7927ba3268093b43910e4",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "UgyYgaoLYoVyU39Wkkd4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "2f5d2cde90520ca8025379931e442dee3c8ed912e2705c9a245b5b6742b78466",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "UgzEeTVLJNbvENU9qDt4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "1ee8616e9d778b275276be7bf906480557437f03cd0284a34d3391ecf7c80a97",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "Ugzkly1wc2VMnp75X8x4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "02b6c3fc344b70eb12577a5c3c1b58e279b0260ca91080282e86d8ae5b67e093",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "UgyP_aKgpQ0b2x3T4Kx4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "76f1a963311dea5ef568c2dfc693db3a647354196f3414ce8e3e52d03be9a3b8",
+        "reviewed_at": 1795082636,
+        "has_replied": false
+      },
+      "UgxiCHWTY0qIJcm004F4AaABAg.Ad1lTJNKqvqAd42zzszsK2": {
+        "status": "deleted",
+        "reason": "POLITICAL_SLOGAN",
+        "hash": "8302d1f7dc4d2d1fa623a813733958a71829a965a14bd11247f61eea8136b9a3",
+        "reviewed_at": 1795082637,
+        "has_replied": false
+      },
+      "UgyWC7P9DZmYuhnaoNZ4AaABAg.Ad1hWCSVholAd4gHDRcU_k": {
+        "status": "deleted",
+        "reason": "HATE_OR_THREAT",
+        "hash": "ed4a5f1064c3cf03f9e60885687d9fe4de832a4f8dc2fa19b3bc082898323714",
+        "reviewed_at": 1795082637,
+        "has_replied": false
+      },
+      "UgyTewGdL-2DXcypKbF4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "b6179cad6a66a8ed2929390f0c60cccf0f49f474683e0208a9a6c643254f9e75",
+        "reviewed_at": 1795082637,
+        "has_replied": false
+      },
+      "UgzW9JvG_g0-Cqi-y294AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "0756bf3eb2b9c78f767f0011c14f345277a68a1f757db696783e7532e7727554",
+        "reviewed_at": 1795082637,
+        "has_replied": false
+      },
+      "UgxoIX6ZZFdBZX-txq14AaABAg": {
+        "status": "deleted",
+        "reason": "HATE_OR_THREAT",
+        "hash": "7c3c67f061fa3f5d9d2699993493b3805f04f51274720953aa42a75bc10759af",
+        "reviewed_at": 1795082638,
+        "has_replied": false
+      },
+      "UgwEnvkmtrOs13ZT1Il4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "channel_already_replied",
+        "hash": "b4cefc2565200f8b7c5337749af843166b61332d4cb9f54e700375ba62a15a5d",
+        "reviewed_at": 1795082638,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-19",
-      "read": 54,
-      "write": 550
+      "read": 89,
+      "write": 700
     },
     "last_run": {
-      "discovered": 172,
-      "reviewed": 95,
-      "reviewed_no_reply": 84,
-      "replied": 8,
+      "discovered": 0,
+      "reviewed": 75,
+      "reviewed_no_reply": 72,
+      "replied": 0,
       "deleted": 3,
       "errors": 1,
       "retries": 1,
       "archive_pages": 2,
-      "remaining": 77,
+      "remaining": 2,
       "reply_threads_remaining": 0,
-      "read_units": 54,
-      "write_units": 550
+      "read_units": 89,
+      "write_units": 700
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997267
+  "last_successful_run_slot": 997268
 }
