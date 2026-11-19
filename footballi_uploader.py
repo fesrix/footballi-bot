@@ -382,11 +382,9 @@ def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlist
             if e.resp.status == 409 or "videoAlreadyInPlaylist" in str(e):
                 already_assigned.add(key)
             elif "playlistNotFound" in str(e):
-                playlists_map.pop(key, None)
-                for saved_keys in assignments.values():
-                    if key in saved_keys:
-                        saved_keys.remove(key)
-                already_assigned.discard(key)
+                # A newly-created playlist may not be immediately readable
+                # through playlistItems. Keep its ID and retry next run.
+                print(f"[PLAYLIST-WARN] Playlist {key} is not readable yet; will retry.")
             elif "quotaExceeded" in str(e):
                 state["quota_exhausted_date"] = get_quota_reset_key()
                 break
