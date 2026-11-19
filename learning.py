@@ -107,7 +107,7 @@ def build_policy(state, now):
                         for key, weight in METRIC_WEIGHTS.items())
             for kind, label in (("categories", category), ("topics", topic),
                                 ("titles", style if style in TITLE_STYLES else ""),
-                                ("slots", str(slot))):
+                                ("slots", str(slot) if category != "SUMMARY" else "")):
                 if label:
                     buckets[kind, label].append(score)
         for (kind, label), scores in buckets.items():
@@ -132,7 +132,8 @@ def _select_preferred_minute(fmt, profile, old, previous_date, today):
         target, score = max(slots, key=lambda pair: (pair[1], -pair[0]))
         if score <= min(value for _, value in slots) + .05:
             target = start
-        current = old.get("preferred_minutes", {}).get(str(start), start)
+        target = min(target, start + 60)
+        current = min(start + 60, old.get("preferred_minutes", {}).get(str(start), start))
         preferred[str(start)] = current if previous_date == today else (
             current + max(-30, min(30, target - current)))
     profile["preferred_minutes"] = preferred
@@ -175,5 +176,5 @@ def defer_for_timing(category, is_short, policy, now):
     preferred = policy.get("formats", {}).get(fmt, {}).get("preferred_minutes", {})
     minute = now.hour * 60 + now.minute
     windows = SHORT_UPLOAD_WINDOWS if is_short else MAIN_UPLOAD_WINDOWS
-    return any(start <= minute < preferred.get(str(start), start) < end
-               and preferred[str(start)] - minute <= 30 for start, end in windows)
+    return any(start <= minute < min(preferred.get(str(start), start), start + 60, end)
+               for start, end in windows)

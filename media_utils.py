@@ -101,27 +101,32 @@ def enhance_short_to_1080p(input_path, width, height):
     return input_path
 
 
-def download_file(url, dest_path, min_bytes=3_000):
+def download_file(url, dest_path, min_bytes=3_000, *, referer=None, max_seconds=180):
     clean_u = sanitize_url(url)
     if not clean_u:
         return False
     partial_path = dest_path + ".part"
     try:
         started = time.monotonic()
-        with requests.get(clean_u, headers=HEADERS, stream=True, timeout=(10, 30)) as r:
+        headers = {**HEADERS, "Referer": referer} if referer else HEADERS
+        with requests.get(clean_u, headers=headers, stream=True,
+                          timeout=(min(10, max_seconds), min(30, max_seconds))) as r:
             r.raise_for_status()
             with open(partial_path, "wb") as f:
                 for chunk in r.iter_content(chunk_size=1024 * 256):
-                    if time.monotonic() - started > 180:
-                        raise TimeoutError("Download exceeded 180 seconds")
+                    if time.monotonic() - started > max_seconds:
+                        raise TimeoutError("Download time budget exceeded")
                     if chunk:
                         f.write(chunk)
         if os.path.getsize(partial_path) <= min_bytes:
             return False
         os.replace(partial_path, dest_path)
         return True
-    except Exception as e:
-        print(f"[WARN] Download failed ({type(e).__name__}); candidate remains retryable.")
+    except requests.HTTPError as exc:
+        print(f"[WARN] Media download returned HTTP {exc.response.status_code if exc.response is not None else 'unknown'}.")
+        return False
+    except Exception as exc:
+        print(f"[WARN] Media download failed ({type(exc).__name__}).")
         return False
     finally:
         if os.path.exists(partial_path):

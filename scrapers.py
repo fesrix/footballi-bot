@@ -498,8 +498,11 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
                     if isinstance(node, dict):
                         nodes_to_check = node.get("@graph", [node])
                         for entry in nodes_to_check:
-                            if isinstance(entry, dict) and entry.get("datePublished"):
-                                published_at = parse_published_timestamp(entry["datePublished"])
+                            if isinstance(entry, dict):
+                                raw_date = entry.get("datePublished") or (
+                                    entry.get("uploadDate") if entry.get("@type") == "VideoObject" else None
+                                )
+                                published_at = parse_published_timestamp(raw_date)
                                 if published_at is not None:
                                     break
                     if published_at is not None:
@@ -556,7 +559,8 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
     if not candidate_mp4s:
         candidate_mp4s.extend(re.findall(r"https?://[^\s\"\'<>\\]+\.mp4", html))
 
-    mp4_url = pick_highest_quality_mp4(list(dict.fromkeys(candidate_mp4s)))
+    variants = list(dict.fromkeys(candidate_mp4s))
+    mp4_url = pick_highest_quality_mp4(variants)
     if not mp4_url or not title:
         return None
 
@@ -568,6 +572,7 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
         "title": title,
         "description": description or title,
         "mp4_url": mp4_url,
+        "alternate_mp4_url": pick_highest_quality_mp4([url for url in variants if url != mp4_url]),
         "poster_url": poster_url,
         "site_views": site_views,
     }
@@ -604,8 +609,23 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
 
     all_ids = [extract_numeric_id(u) for u in raw_discovered_links if extract_numeric_id(u) > 0]
     max_site_id = max(all_ids) if all_ids else MIN_ABSOLUTE_VIDEO_ID
-    state["max_seen_video_id"] = max(int(state.get("max_seen_video_id", 0)), max_site_id)
+    previous_site_id = int(state.get("max_seen_video_id", 0))
+    state["max_seen_video_id"] = max(previous_site_id, max_site_id)
     max_site_id = state["max_seen_video_id"]
+    # Some Footballi pages omit a date. Record when new IDs first appeared after
+    # our last known site head, so retries cannot make undated older pages fresh.
+    observed_at = time.time()
+    recent_ids = {
+        key: stamp for key, stamp in state.get("footballi_recent_publications", {}).items()
+        if 0 <= observed_at - stamp <= 48 * 3600
+    }
+    if previous_site_id > MIN_ABSOLUTE_VIDEO_ID:
+        for video_id in set(all_ids):
+            if video_id > previous_site_id:
+                recent_ids.setdefault(str(video_id), observed_at)
+    state["footballi_recent_publications"] = dict(
+        sorted(recent_ids.items(), key=lambda item: int(item[0]), reverse=True)[:100]
+    )
 
     candidate_links = []
     seen_candidate_ids = set()
@@ -642,11 +662,13 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "title": details["title"],
             "description": details["description"],
             "mp4_url": details["mp4_url"],
+            "alternate_mp4_url": details.get("alternate_mp4_url", ""),
             "poster_url": details["poster_url"],
             "site_views": details["site_views"],
             "source": "footballi_web",
             "source_url": details["url"],
             "source_published_at": details["published_at"],
+            "source_first_seen_at": recent_ids.get(str(details["video_id"])),
             "rights_status": "internal_authorized",
             "content_type": "footballi_web_video",
             "discovery_timestamp": time.time(),

@@ -85,8 +85,11 @@ class LearningTests(unittest.TestCase):
         state = {"daily_uploads": {"count": 1}, "last_upload_timestamp": now.timestamp()}
         self.assertTrue(uploader.publication_block({}, "VIDEO", state, {}, now))
         self.assertFalse(uploader.publication_block({}, "SHORTS", state, {}, now))
-        state["daily_uploads"]["count"] = 5
-        self.assertTrue(uploader.publication_block({}, "SHORTS", state, {}, now))
+        state["published_metadata"] = {
+            str(i): {"category": "SHORTS", "published_at": now.isoformat()} for i in range(2)
+        }
+        self.assertEqual(uploader.publication_block({}, "SHORTS", state, {}, now),
+                         "daily short upload cap")
 
     def test_style_learning_has_stable_exploration(self):
         policy = build_policy(sample_state(), NOW)
@@ -104,13 +107,18 @@ class LearningTests(unittest.TestCase):
         record = {"published_at": "2026-11-10T14:00:00+00:00", "title": "No Shorts hashtag"}
         state["analytics"]["videos"]["new"] = record
         service = Mock()
+        historical = {"format": "unknown", "first_three_days": {"metrics": metrics(7)}}
+        state["analytics"]["videos"]["historical"] = historical
         service.reports.return_value.query.side_effect = [
-            SimpleNamespace(execute=lambda: {"rows": [["SHORTS", 1]]}),
+            SimpleNamespace(execute=lambda: {"rows": [["new", "SHORTS", 1],
+                                                       ["historical", "VIDEO_ON_DEMAND", 7]]}),
             SimpleNamespace(execute=lambda: {"columnHeaders": [{"name": k} for k in metrics(20)],
                                               "rows": [list(metrics(20).values())]}),
         ]
         with patch.object(analytics, "save_state"):
+            analytics._backfill_content_formats(state, service, "2026-08-19", "2026-11-16")
             analytics._collect_first_three_days(state, service, date(2026, 11, 16))
+        self.assertEqual(historical["format"], "main")
         self.assertEqual(record["format"], "short")
         self.assertEqual(record["first_three_days"]["end"], "2026-11-12")
         self.assertEqual(record["first_three_days"]["metrics"]["views"], 200)

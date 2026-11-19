@@ -21,11 +21,9 @@ from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
 
 from config import (
-    MAX_DAILY_UPLOADS,
-    RESERVED_SUMMARY_SLOTS,
-    MAX_UPLOADS_PER_RUN,
-    MIN_MINUTES_BETWEEN_UPLOADS,
-    MIN_MINUTES_BETWEEN_SHORTS,
+    ROUTINE_DAILY_LIMITS,
+    ROUTINE_SPACING_MINUTES,
+    PRIORITY_SUMMARY_MAX_AGE_HOURS,
     MAIN_UPLOAD_WINDOWS,
     SHORT_UPLOAD_WINDOWS,
     STATE_FILE,
@@ -42,11 +40,12 @@ from scrapers import (
     is_strictly_domestic_short,
     is_video_too_old,
     extract_numeric_id,
+    extract_video_page_details,
     MIN_ABSOLUTE_VIDEO_ID,
 )
 import ai_seo
 import media_utils
-from learning import build_policy, defer_for_timing, ranking, title_choice, topic_for
+from learning import build_policy, defer_for_timing, ranking, timestamp, title_choice, topic_for
 
 
 def is_trusted_source_url(value: str) -> bool:
@@ -67,6 +66,9 @@ MAX_SHORTS_QUEUE_SIZE = 5
 MIN_HORIZONTAL_DURATION_SECONDS = 180
 MIN_HORIZONTAL_HEIGHT_PX = 720  # رد خودکار ویدیوهای بی‌کیفیت 360p و 480p
 MIN_SHORTS_WIDTH_PX = 720       # شورتس‌ها فقط 720p و 1080p
+# Leave time for a final checkpoint before the workflow's 595-second hard timeout.
+PUBLISHING_BUDGET_SECONDS = 510
+MIN_TIME_TO_START_CANDIDATE = 85
 
 
 def get_exact_video_dimensions(video_path: str) -> tuple:
@@ -88,23 +90,66 @@ def is_in_upload_window(category: str, tehran_now) -> bool:
     return any(start <= minute < end for start, end in windows)
 
 
-def publication_block(item, category, state, policy, now):
-    short = category == "SHORTS"
-    today_count = state["daily_uploads"]["count"]
-    if today_count >= MAX_DAILY_UPLOADS:
-        return "daily upload cap"
-    if today_count >= MAX_DAILY_UPLOADS - RESERVED_SUMMARY_SLOTS and category != "SUMMARY":
-        return "remaining slots are reserved for match summaries"
-    if not is_in_upload_window(category, now):
-        return "outside the Tehran publish window"
-    last_key = "last_short_upload_timestamp" if short else "last_upload_timestamp"
-    spacing = MIN_MINUTES_BETWEEN_SHORTS if short else MIN_MINUTES_BETWEEN_UPLOADS
-    if now.timestamp() - float(state.get(last_key, 0)) < spacing * 60:
-        return "minimum spacing for this format"
-    if defer_for_timing(category, short, policy, now):
-        published = item.get("source_published_at") or item.get("published_at")
-        if not isinstance(published, (int, float)) or now.timestamp() - published < 47 * 3600:
-            return "Analytics preferred time"
+def is_priority_summary(item, now):
+    source_url = item.get("source_url") or item.get("url", "")
+    if (item.get("source") != "footballi_web"
+            or item.get("rights_status") != "internal_authorized"
+            or not is_trusted_source_url(source_url)
+            or (urlsplit(source_url).hostname or "").lower() not in {"footballi.net", "www.footballi.net"}
+            or not extract_numeric_id(source_url)):
+        return False
+    title = normalize_persian(item.get("title", "")).lower().strip()
+    if not any(title.startswith(normalize_persian(keyword).lower() + " ") for keyword in SUMMARY_KEYWORDS):
+        return False
+
+    # A source timestamp takes precedence over feed discovery evidence.
+    published = timestamp(item.get("source_published_at") or item.get("published_at"))
+    seen = timestamp(item.get("source_first_seen_at"))
+    observed = published or seen
+    return observed is not None and timedelta(0) <= now - observed <= timedelta(
+        hours=PRIORITY_SUMMARY_MAX_AGE_HOURS
+    )
+
+
+def daily_publishing_counts(state, now):
+    today = now.date().isoformat()
+    # Publications are already checkpointed on success. Reconstruct counts from
+    # that log so old state needs no migration and midnight resets correctly.
+    counts = {"main": 0, "short": 0, "priority_summaries": 0}
+    for metadata in state.get("published_metadata", {}).values():
+        published = timestamp(metadata.get("published_at"))
+        if not published or published.astimezone(now.tzinfo).date().isoformat() != today:
+            continue
+        if metadata.get("priority_summary"):
+            counts["priority_summaries"] += 1
+        else:
+            fmt = metadata.get("format") or ("short" if metadata.get("category") == "SHORTS" else "main")
+            if fmt in ROUTINE_DAILY_LIMITS:
+                counts[fmt] += 1
+    return counts
+
+
+def last_routine_timestamp(state, fmt):
+    # The legacy fields only include routine uploads made before this policy.
+    # Priority summaries never update them.
+    key = "last_short_upload_timestamp" if fmt == "short" else "last_upload_timestamp"
+    return float(state.get(key, 0) or 0)
+
+
+def publication_block(item, category, state, policy, now, *, is_short=None):
+    if not is_priority_summary(item, now):
+        short = category == "SHORTS" if is_short is None else is_short
+        fmt = "short" if short else "main"
+        if daily_publishing_counts(state, now)[fmt] >= ROUTINE_DAILY_LIMITS[fmt]:
+            return f"daily {fmt} upload cap"
+        if not is_in_upload_window("SHORTS" if short else category, now):
+            return "outside the Tehran publish window"
+        if now.timestamp() - last_routine_timestamp(state, fmt) < ROUTINE_SPACING_MINUTES[fmt] * 60:
+            return "minimum spacing for this format"
+        if defer_for_timing(category, short, policy, now):
+            published = timestamp(item.get("source_published_at") or item.get("published_at"))
+            if not published or now - published < timedelta(hours=47):
+                return "Analytics preferred time"
     return ""
 
 
@@ -268,8 +313,13 @@ def detect_all_matching_playlists(title: str, description: str = "", is_short: b
 def video_playlist_keys(video, state):
     video_id = video["video_id"]
     metadata = state.get("published_metadata", {}).get(video_id, {})
-    fmt = state.get("analytics", {}).get("videos", {}).get(video_id, {}).get("format")
-    is_short = metadata.get("category") == "SHORTS" if metadata.get("category") else fmt == "short"
+    fmt = metadata.get("format")
+    if fmt:
+        is_short = fmt == "short"
+    elif metadata.get("category"):
+        is_short = metadata["category"] == "SHORTS"
+    else:
+        is_short = state.get("analytics", {}).get("videos", {}).get(video_id, {}).get("format") == "short"
     return detect_all_matching_playlists(video["title"], is_short=is_short,
                                          source_title=metadata.get("source_title", ""))
 
@@ -559,10 +609,10 @@ def deduplicate_and_balance_queue(
 
         if not u or not mp4 or not t:
             continue
-        if item.get("rights_status") != "internal_authorized":
+        if item.get("rights_status") != "internal_authorized" or not is_trusted_source_url(item["source_url"]):
             reject("rights_status")
             continue
-        if is_video_too_old(item.get("title", ""), published_at=item.get("published_at")):
+        if is_video_too_old(item.get("title", ""), published_at=item.get("source_published_at") or item.get("published_at")):
             reject("too_old")
             continue
         if item.get("source") == "telegram_shorts" or "t.me/" in u:
@@ -607,13 +657,22 @@ def deduplicate_and_balance_queue(
     def sort_key(item):
         score, factor = ranking(item, policy, now)
         item["learning_factor"] = round(factor, 3)
-        return (item["category"] != "SUMMARY", -score, -item["ai_score"],
-                -item["site_views"], -item["video_id"])
+        priority = is_priority_summary(item, now)
+        fresh = timestamp(item.get("source_published_at") or item.get("published_at")
+                          or item.get("source_first_seen_at"))
+        return (not priority, -fresh.timestamp() if priority and fresh else 0,
+                -score, -item["ai_score"], -item["site_views"], -item["video_id"])
 
     main_items.sort(key=sort_key)
     short_items.sort(key=sort_key)
 
-    return main_items[:MAX_MAIN_QUEUE_SIZE] + short_items[:MAX_SHORTS_QUEUE_SIZE]
+    # Burst match days can generate more highlights than the routine queue cap.
+    # Keep every approved priority summary until it is handled or ages out.
+    main_priority = [item for item in main_items if is_priority_summary(item, now)]
+    short_priority = [item for item in short_items if is_priority_summary(item, now)]
+    routine_main = main_items[len(main_priority):][:MAX_MAIN_QUEUE_SIZE]
+    routine_short = short_items[len(short_priority):][:MAX_SHORTS_QUEUE_SIZE]
+    return sorted(main_priority + short_priority, key=sort_key) + routine_main + routine_short
 
 
 def call_ai_copyright_audit(title: str, desc: str) -> bool:
@@ -685,109 +744,81 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool,
     return {"title": clean_t, "description": full_desc, "tags": tags}
 
 
-def main():
-    print("[START] Footballi Bot starting (Peak-Hours + 8/Day Viral Quality + 720p+ HD Edition)...")
-    state = load_state()
-    global _QUEUE_REJECTION_COUNTS
-    policy = state.get("learning") or build_policy(state, datetime.now(timezone.utc))
-    state["learning"] = policy
-    _QUEUE_REJECTION_COUNTS = {}
-    reset_key = get_tehran_reset_key()
-    quota_key = get_quota_reset_key()
+def download_candidate(top, path, state, deadline):
+    source_url = top.get("source_url") or top["url"]
+    attempts = safe_int(top.get("download_failures"))
+    candidates = [top["mp4_url"], top.get("alternate_mp4_url")]
+    if (attempts and top.get("source") == "footballi_web" and is_trusted_source_url(source_url)
+            and extract_numeric_id(source_url) and deadline - time.monotonic() > 120):
+        fresh = extract_video_page_details(source_url, max_site_id=state.get("max_seen_video_id", 0))
+        if fresh:
+            candidates = [fresh["mp4_url"], fresh.get("alternate_mp4_url"), *candidates]
+    for url in dict.fromkeys(filter(None, candidates)):
+        remaining = deadline - time.monotonic() - 75
+        if remaining <= 0:
+            break
+        if url in state["seen_mp4s"]:
+            continue
+        if media_utils.download_file(url, path, referer=source_url, max_seconds=min(105, remaining)):
+            return url
+    return ""
 
-    if not isinstance(state.get("daily_uploads"), dict) or state["daily_uploads"].get("date") != reset_key:
-        state["daily_uploads"] = {"date": reset_key, "count": 0}
 
-    uploaded_urls = set(state.get("uploaded_urls", []))
-    rejected_urls = set(state.get("rejected_urls", []))
-    seen_mp4s = set(state.get("seen_mp4s", []))
-    known_norm_titles = {
-        normalize_persian(t).lower()
-        for t in (state.get("uploaded_titles", []) + state.get("seen_raw_titles", []))
-    }
-
-    youtube = None
-    channel_videos = []
-    if state.get("quota_exhausted_date") != quota_key:
-        youtube = get_youtube_client()
-        channel_videos = fetch_channel_existing_videos(youtube, state, max_items=180)
-        for v in channel_videos:
-            known_norm_titles.add(normalize_persian(v["title"]).lower())
-
-    new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
-    new_ig_reels = fetch_instagram_reels(state)
-
-    for item in new_web_videos + new_ig_reels:
-        item["category"] = detect_primary_category(
-            item["title"], item.get("description", ""), item.get("is_short", False)
-        )
-        state["pending_queue"].append(item)
-
-    max_site_id = int(state.get("max_seen_video_id", MIN_ABSOLUTE_VIDEO_ID))
-    rejected_urls = set(state.get("rejected_urls", []))
-    state["pending_queue"] = deduplicate_and_balance_queue(
-        state.get("pending_queue", []),
-        uploaded_urls,
-        rejected_urls,
-        seen_mp4s,
-        known_norm_titles,
-        max_site_id,
-        policy,
-    )
-    state["last_run"] = {
-        "finished_at": datetime.now(timezone.utc).isoformat(),
-        "queue_size": len(state["pending_queue"]),
-        "rejected_by_reason": dict(_QUEUE_REJECTION_COUNTS),
-        "new_web_candidates": len(new_web_videos),
-        "new_instagram_candidates": len(new_ig_reels),
-        "learning": {"revision": policy["revision"], "changes": policy["changes"],
-                     "queue_adjusted": sum(x["learning_factor"] != 1 for x in state["pending_queue"])},
-    }
+def retain_media_retry(item, state, reason):
+    # Delay only this item, limiting repeated requests against broken source URLs.
+    failures = safe_int(item.get("download_failures")) + 1
+    item["download_failures"] = failures
+    item["next_media_attempt"] = time.time() + min(120, 20 * 2 ** min(failures - 1, 3)) * 60
+    label = item.get("video_id") or item.get("source", "unknown")
+    print(f"[MEDIA-RETRY] {label}: {reason}; trying the next eligible candidate.")
+    counts = state["last_run"]["media_retries"]
+    counts[reason] = counts.get(reason, 0) + 1
     save_state(state)
 
-    main_count = sum(1 for x in state["pending_queue"] if x.get("category") != "SHORTS")
-    shorts_count = sum(1 for x in state["pending_queue"] if x.get("category") == "SHORTS")
-    print(f"[QUEUE] Ready -> Top Viral Main Videos: {main_count} | Instagram HD Shorts: {shorts_count}")
 
-    if state.get("quota_exhausted_date") == quota_key or youtube is None:
-        print("⏸️ [QUOTA-GUARD] Daily YouTube API quota is full for today. Holding queue safely until midnight Pacific quota reset.")
+def platform_upload_block(state, quota_key):
+    if state.get("quota_exhausted_date") == quota_key:
+        return "YouTube API quota reached until midnight Pacific"
+    if time.time() < float(state.get("upload_limit_cooldown_until", 0)):
+        return "YouTube rejected uploads because of the channel limit"
+    return ""
+
+
+def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded_urls, seen_mp4s,
+                  media_directory, deadline, *, priority_only):
+    if platform_upload_block(state, quota_key):
         return
+    video_file = os.path.join(media_directory, "video.mp4")
+    thumb_file = os.path.join(media_directory, "thumbnail.jpg")
+    now = datetime.now(ZoneInfo("Asia/Tehran"))
+    counts = daily_publishing_counts(state, now)
+    queue = [item for item in state["pending_queue"] if is_priority_summary(item, now) == priority_only]
+    if not priority_only:
+        def format_order(item):
+            fmt = "short" if item["is_short"] else "main"
+            return counts[fmt] / ROUTINE_DAILY_LIMITS[fmt], last_routine_timestamp(state, fmt)
+        queue.sort(key=format_order)
 
-    uploads_today = state["daily_uploads"].get("count", 0)
-    print(
-        f"[STATUS] Channel indexed titles: {len(channel_videos)} | "
-        f"Uploads today (Tehran): {uploads_today}/{MAX_DAILY_UPLOADS} "
-        f"(Reserved for Match Summaries: {RESERVED_SUMMARY_SLOTS})"
-    )
-
-    playlists_map = curate_channel_playlists(youtube, state, channel_videos)
-
-    if not state["pending_queue"]:
-        print("[DONE] No fresh high-potential videos in queue right now.")
-        return
-
-    cooldown_until = float(state.get("upload_limit_cooldown_until", 0))
-    if time.time() < cooldown_until:
-        rem_min = (cooldown_until - time.time()) / 60.0
-        print(f"🛡️ [QUOTA-SHIELD] Channel 24h upload cap active. Pausing upload attempts for {rem_min:.0f}m to preserve API quota.")
-        return
-
-    tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
-
-    video_file = "temp_video.mp4"
-    thumb_file = "temp_thumb.jpg"
-    candidate = None
-    is_short = False
-
-    for top in list(state["pending_queue"]):
+    for top in queue:
+        if deadline - time.monotonic() < MIN_TIME_TO_START_CANDIDATE:
+            print("[BUDGET] Leaving remaining candidates for the next half-hour run.")
+            break
 
         if is_duplicate_title(top["title"], known_norm_titles) or top["url"] in uploaded_urls or top["mp4_url"] in seen_mp4s:
             print(f"♻️ [SKIP-DUPLICATE] Already uploaded to channel: {top['title']}")
             state["pending_queue"].remove(top)
             continue
+        next_attempt = timestamp(top.get("next_media_attempt"))
+        if next_attempt and datetime.now(timezone.utc) < next_attempt:
+            continue
 
+        tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
         cat_check = "SHORTS" if top.get("is_short") else top.get("category", "VIDEO")
         blocked = publication_block(top, cat_check, state, policy, tehran_now)
+        # A website clip with unverified dimensions may turn out to be a Short.
+        may_be_short = top.get("source") == "footballi_web" and "verified_is_short" not in top
+        if blocked and may_be_short and not publication_block(top, "SHORTS", state, policy, tehran_now):
+            blocked = ""
         if blocked:
             print(f"[TIMING] {cat_check}: {blocked}")
             if blocked == "Analytics preferred time":
@@ -807,96 +838,80 @@ def main():
                 state["rejected_urls"].append(top["url"])
                 continue
 
-        dl_fn = getattr(media_utils, "download_file", None)
-        if dl_fn:
-            ok = dl_fn(top["mp4_url"], video_file)
-        else:
-            import requests
-            r = requests.get(top["mp4_url"], stream=True, timeout=60)
-            ok = r.status_code == 200
-            if ok:
-                with open(video_file, "wb") as f:
-                    for chunk in r.iter_content(chunk_size=65536):
-                        if chunk:
-                            f.write(chunk)
-
-        if not ok or not os.path.exists(video_file):
-            print("[WARN] MP4 download failed; retaining candidate for next run.")
-            save_state(state)
-            return
+        downloaded_url = download_candidate(top, video_file, state, deadline)
+        if not downloaded_url:
+            retain_media_retry(top, state, "download_failed")
+            continue
 
         w, h, dur = get_exact_video_dimensions(video_file)
         if w <= 0 or h <= 0 or not math.isfinite(dur) or dur <= 0:
-            print("[PROBE-WARN] Cannot verify quality/duration; retaining candidate for retry.")
-            save_state(state)
-            return
-        is_short = h > w and dur <= 175
+            retain_media_retry(top, state, "video_probe_failed")
+            continue
+        top["mp4_url"] = downloaded_url
+        top.pop("next_media_attempt", None)
+        top.pop("download_failures", None)
+
+        is_short = h >= w and dur <= 180
         top["verified_is_short"] = is_short
+        top["is_short"] = is_short
         if is_short and not is_strictly_domestic_short(top["title"], top.get("description", "")):
             state["pending_queue"].remove(top)
             state["rejected_urls"].append(top["url"])
             continue
-        actual_category = "SHORTS" if is_short else detect_primary_category(top["title"])
-        actual_block = publication_block(top, actual_category, state, policy,
-                                         datetime.now(ZoneInfo("Asia/Tehran")))
-        if actual_block:
-            print(f"[TIMING] Verified {actual_category}: {actual_block}")
+        actual_category = "SUMMARY" if priority_only else detect_primary_category(top["title"], is_short=is_short)
+        tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
+        if publication_block(top, actual_category, state, policy, tehran_now, is_short=is_short):
+            print(f"[TIMING] Verified {actual_category}: format is currently ineligible.")
             continue
 
-        if is_short:
-            if w > 0 and w < MIN_SHORTS_WIDTH_PX:
-                print(f"⏭️ [SKIP-LOWRES-SHORT] Rejected low-res Short ({w}x{h} < 720p): {top['title']}")
-                state["pending_queue"].remove(top)
-                state["rejected_urls"].append(top["url"])
-                state["seen_mp4s"].append(top["mp4_url"])
-                continue
+        reason = ""
+        if (is_short and w < MIN_SHORTS_WIDTH_PX) or (not is_short and h < MIN_HORIZONTAL_HEIGHT_PX):
+            reason = "resolution_under_720p"
+        elif not is_short and dur < MIN_HORIZONTAL_DURATION_SECONDS and not priority_only:
+            reason = "horizontal_under_three_minutes"
+        elif is_short or priority_only:
             audio_issue, peak = media_utils.inspect_audio_file(video_file)
+            if audio_issue == "audio_probe_failed":
+                retain_media_retry(top, state, audio_issue)
+                continue
             if audio_issue:
-                print(f"[SHORT-AUDIO-SKIP] {audio_issue}: {top['title']}")
-                counts = state["last_run"]["rejected_by_reason"]
-                counts[audio_issue] = counts.get(audio_issue, 0) + 1
-                if audio_issue in {"missing_audio", "silent_audio"}:
-                    state["pending_queue"].remove(top)
-                    state["seen_mp4s"].append(top["mp4_url"])
-                save_state(state)
-                continue
-            print(f"[SHORT-AUDIO] Decoded audio peak: {peak:.1f} dBFS")
-            print(f"📱 [VERTICAL-SHORTS] Approved 720p+ HD vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
-            candidate = top
+                reason = audio_issue
+            else:
+                print(f"[AUDIO] Decoded audio peak: {peak:.1f} dBFS")
+
+        if reason:
+            print(f"[MEDIA-REJECT] {reason}: {top['title']} ({w}x{h}, {dur:.0f}s)")
+            state["pending_queue"].remove(top)
+            state["rejected_urls"].append(top["url"])
+            state["seen_mp4s"].append(top["mp4_url"])
+            seen_mp4s.add(top["mp4_url"])
+            rejected = state["last_run"]["rejected_by_reason"]
+            rejected[reason] = rejected.get(reason, 0) + 1
+            continue
+        if deadline - time.monotonic() < 60:
+            print("[BUDGET] Video verified; deferring upload to allow a safe checkpoint.")
             break
-        else:
-            if h > 0 and h < MIN_HORIZONTAL_HEIGHT_PX:
-                print(f"⏭️ [SKIP-LOWRES-HD] Rejected low-quality horizontal video ({w}x{h} < 720p): {top['title']}")
-                state["pending_queue"].remove(top)
-                state["rejected_urls"].append(top["url"])
-                state["seen_mp4s"].append(top["mp4_url"])
-                continue
-            if dur > 0 and dur < MIN_HORIZONTAL_DURATION_SECONDS:
-                print(
-                    f"⏭️ [SKIP-SHORT-HORIZONTAL] Rejected horizontal video under 3 mins "
-                    f"({w}x{h}, {dur:.0f}s < 180s): {top['title']}"
-                )
-                state["pending_queue"].remove(top)
-                state["rejected_urls"].append(top["url"])
-                state["seen_mp4s"].append(top["mp4_url"])
-                continue
-            is_short = False
-            print(f"🎬 [HORIZONTAL-HD] Approved 720p+ HD video ({w}x{h}, {dur:.0f}s >= 180s).")
-            candidate = top
-            break
+
+        save_state(state)
+        published = publish_candidate(
+            youtube, state, policy, quota_key, top, actual_category, is_short,
+            priority_only, video_file, thumb_file, tehran_now, deadline
+        )
+        if not published:
+            break  # The platform-wide limit applies to every candidate.
+        uploaded_urls.add(top["url"])
+        seen_mp4s.add(top["mp4_url"])
+        known_norm_titles.add(normalize_persian(top["title"]).lower())
+        if platform_upload_block(state, quota_key) or not priority_only:
+            break  # One routine publication per scheduled run.
 
     save_state(state)
-    if not candidate:
-        print("[DONE] No qualifying 720p+ HD videos ready in queue.")
-        return
 
-    cat = "SHORTS" if is_short else detect_primary_category(candidate["title"])
 
-    thumb_to_use = None
-    if not is_short:
-        thumb_to_use = call_prepare_thumbnail(video_file, candidate.get("poster_url", ""), thumb_file)
-
-    style, explore = title_choice(candidate, policy, "short" if is_short else "main", tehran_now)
+def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_short,
+                      priority_summary, video_file, thumb_file, tehran_now, deadline):
+    fmt = "short" if is_short else "main"
+    style, explore = ("direct", False) if priority_summary else title_choice(candidate, policy, fmt, tehran_now)
     seo = call_generate_seo(candidate["title"], candidate.get("description", ""), cat, is_short,
                             learning_context=style)
     final_title = seo.get("title", candidate["title"])[:100]
@@ -906,7 +921,7 @@ def main():
     if source_url and source_url not in final_desc:
         final_desc = f"{final_desc}\n\nمنبع رسمی: {source_url}"
 
-    print(f"[UPLOAD] Publishing 1 video ({cat} | Score: {candidate.get('ai_score', 6)}/10): {final_title}")
+    print(f"[UPLOAD] Publishing {cat} ({'priority' if priority_summary else fmt} | Score: {candidate.get('ai_score', 6)}/10): {final_title}")
 
     try:
         body = {
@@ -940,6 +955,8 @@ def main():
         state.setdefault("published_metadata", {})[vid_id] = {
             "title": final_title,
             "category": cat,
+            "format": fmt,
+            "priority_summary": priority_summary,
             "source": candidate.get("source"),
             "source_url": source_url,
             "rights_status": candidate.get("rights_status"),
@@ -950,15 +967,25 @@ def main():
             "topic": topic_for(candidate["title"]),
             "source_title": candidate["title"],
         }
-        state["daily_uploads"]["count"] = uploads_today + 1
-        state["last_short_upload_timestamp" if is_short else "last_upload_timestamp"] = time.time()
+        tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
+        day = tehran_now.date().isoformat()
+        if state["daily_uploads"].get("date") != day:
+            state["daily_uploads"] = {"date": day, "count": 0}
+        state["daily_uploads"]["count"] += 1
+        if not priority_summary:
+            state["last_short_upload_timestamp" if is_short else "last_upload_timestamp"] = tehran_now.timestamp()
+        state["last_run"]["uploads"]["priority_summaries" if priority_summary else fmt] += 1
         state["last_run"]["learning"].update(title_style=seo.get("title_style"),
                                              selected_factor=candidate["learning_factor"],
                                              published_tehran=tehran_now.strftime("%H:%M"))
         state["upload_limit_cooldown_until"] = 0
+        state.pop("upload_limit_rejections", None)
         save_state(state)
 
-        if thumb_to_use and os.path.exists(thumb_to_use) and not is_short:
+        thumb_to_use = None
+        if not is_short and deadline - time.monotonic() >= 35:
+            thumb_to_use = call_prepare_thumbnail(video_file, candidate.get("poster_url", ""), thumb_file)
+        if thumb_to_use and os.path.exists(thumb_to_use):
             try:
                 youtube.thumbnails().set(
                     videoId=vid_id,
@@ -971,21 +998,28 @@ def main():
         matched_playlists = detect_all_matching_playlists(
             final_title, is_short=is_short, source_title=candidate["title"]
         )
-        add_video_to_playlists(youtube, vid_id, matched_playlists, playlists_map, state)
+        if deadline - time.monotonic() >= 20:
+            add_video_to_playlists(youtube, vid_id, matched_playlists, state.get("playlists", {}), state)
 
         print(f"[DONE] Uploaded: 1 | Remaining in Queue: {len(state['pending_queue'])}")
+        return True
 
     except HttpError as e:
         err_str = str(e)
         print(f" YouTube API Upload error: {e}")
         if "uploadLimitExceeded" in err_str:
-            state["upload_limit_cooldown_until"] = time.time() + (3 * 3600)
-            print("🛡️ [QUOTA-SHIELD] Channel 24h upload limit active! Pausing upload retries for 3 hours to save API quota.")
+            rejections = safe_int(state.get("upload_limit_rejections")) + 1
+            state["upload_limit_rejections"] = rejections
+            retry_minutes = 60 if rejections == 1 else 120
+            state["upload_limit_cooldown_until"] = time.time() + retry_minutes * 60
+            print(f"[QUOTA-SHIELD] YouTube channel limit; retry in {retry_minutes} minutes.")
             save_state(state)
+            return False
         elif "quotaExceeded" in err_str:
             state["quota_exhausted_date"] = quota_key
             print("⏸️ [QUOTA-GUARD] Daily API quota reached! Holding queue until midnight Pacific quota reset.")
             save_state(state)
+            return False
         else:
             print("[UPLOAD-WARN] Retaining candidate after API failure for retry.")
             save_state(state)
@@ -993,6 +1027,94 @@ def main():
     except Exception:
         save_state(state)
         raise
+
+
+def main():
+    print("[START] Footballi Bot — independent format schedules and priority match highlights.")
+    deadline = time.monotonic() + PUBLISHING_BUDGET_SECONDS
+    state = load_state()
+    global _QUEUE_REJECTION_COUNTS
+    policy = state.get("learning") or build_policy(state, datetime.now(timezone.utc))
+    state["learning"] = policy
+    _QUEUE_REJECTION_COUNTS = {}
+    reset_key = get_tehran_reset_key()
+    quota_key = get_quota_reset_key()
+
+    if not isinstance(state.get("daily_uploads"), dict) or state["daily_uploads"].get("date") != reset_key:
+        state["daily_uploads"] = {"date": reset_key, "count": 0}
+
+    uploaded_urls = set(state.get("uploaded_urls", []))
+    rejected_urls = set(state.get("rejected_urls", []))
+    seen_mp4s = set(state.get("seen_mp4s", []))
+    known_norm_titles = {
+        normalize_persian(t).lower()
+        for t in (state.get("uploaded_titles", []) + state.get("seen_raw_titles", []))
+    }
+
+    youtube = None
+    channel_videos = []
+    if state.get("quota_exhausted_date") != quota_key:
+        youtube = get_youtube_client()
+        channel_videos = fetch_channel_existing_videos(youtube, state, max_items=180)
+        for v in channel_videos:
+            known_norm_titles.add(normalize_persian(v["title"]).lower())
+
+    new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
+    state["last_run"] = {
+        "finished_at": datetime.now(timezone.utc).isoformat(),
+        "new_web_candidates": len(new_web_videos),
+        "new_instagram_candidates": 0,
+        "rejected_by_reason": {},
+        "media_retries": {},
+        "uploads": {"main": 0, "short": 0, "priority_summaries": 0},
+        "learning": {"revision": policy["revision"], "changes": policy["changes"]},
+    }
+
+    def merge_queue(items):
+        state["pending_queue"] = deduplicate_and_balance_queue(
+            state["pending_queue"] + items, uploaded_urls, set(state["rejected_urls"]),
+            seen_mp4s, known_norm_titles, int(state["max_seen_video_id"]), policy,
+        )
+        for reason, count in _QUEUE_REJECTION_COUNTS.items():
+            rejections = state["last_run"]["rejected_by_reason"]
+            rejections[reason] = rejections.get(reason, 0) + count
+        state["last_run"]["learning"]["queue_adjusted"] = sum(
+            item["learning_factor"] != 1 for item in state["pending_queue"]
+        )
+        save_state(state)
+
+    merge_queue(new_web_videos)
+    with tempfile.TemporaryDirectory(prefix="footballi-media-") as media_directory:
+        if youtube:
+            process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded_urls,
+                          seen_mp4s, media_directory, deadline, priority_only=True)
+
+        if deadline - time.monotonic() >= 150:
+            new_ig_reels = fetch_instagram_reels(state)
+            state["last_run"]["new_instagram_candidates"] = len(new_ig_reels)
+            if new_ig_reels:
+                merge_queue(new_ig_reels)
+        else:
+            print("[BUDGET] Instagram check deferred after priority work.")
+
+        platform_block = platform_upload_block(state, quota_key)
+        if not youtube or platform_block:
+            print(f"[QUOTA-GUARD] {platform_block or 'YouTube unavailable'}; queue preserved.")
+        else:
+            process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded_urls,
+                          seen_mp4s, media_directory, deadline, priority_only=False)
+            if deadline - time.monotonic() >= 60 and not platform_upload_block(state, quota_key):
+                curate_channel_playlists(youtube, state, channel_videos)
+
+    finished = datetime.now(ZoneInfo("Asia/Tehran"))
+    daily = daily_publishing_counts(state, finished)
+    state["last_run"].update(finished_at=finished.isoformat(),
+                             queue_size=len(state["pending_queue"]), daily_uploads=daily)
+    print(f"[STATUS] Routine main {daily['main']}/{ROUTINE_DAILY_LIMITS['main']}, "
+          f"routine Shorts {daily['short']}/{ROUTINE_DAILY_LIMITS['short']}, "
+          f"priority summaries {daily['priority_summaries']}, "
+          f"queue {len(state['pending_queue'])}.")
+    save_state(state)
 
 
 if __name__ == "__main__":
