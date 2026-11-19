@@ -22,10 +22,10 @@
 - Rejections: {}
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 75
-- Kept without reply: 72 | Replied: 0 | Removed: 3
-- Errors: 1 | In queue: 2 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 89 | Write quota: 700
+- Discovered: 2 | Reviewed by AI: 3
+- Kept without reply: 2 | Replied: 1 | Removed: 0
+- Errors: 0 | In queue: 1 | Threads awaiting a reply scan: 0
+- Archive pages processed: 2 | Read quota: 98 | Write quota: 750
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-16 | Revision: 4f53cda18c2baa0c
