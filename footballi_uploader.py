@@ -102,10 +102,13 @@ def is_priority_summary(item, now):
     if not any(title.startswith(normalize_persian(keyword).lower() + " ") for keyword in SUMMARY_KEYWORDS):
         return False
 
-    # A source timestamp takes precedence over feed discovery evidence.
+    # Prefer source publication and first-seen timestamps. A recent discovery
+    # timestamp is also valid because the crawler only sets it for a page
+    # inspected in the current run.
     published = timestamp(item.get("source_published_at") or item.get("published_at"))
     seen = timestamp(item.get("source_first_seen_at"))
-    observed = published or seen
+    discovered = timestamp(item.get("discovery_timestamp"))
+    observed = published or seen or discovered
     return observed is not None and timedelta(0) <= now - observed <= timedelta(
         hours=PRIORITY_SUMMARY_MAX_AGE_HOURS
     )
@@ -620,7 +623,9 @@ def deduplicate_and_balance_queue(
             continue
         if u in uploaded_urls or u in rejected_urls or u in q_urls or mp4 in seen_mp4s or mp4 in q_mp4s:
             continue
-        if is_duplicate_title(item.get("title", ""), known_norm_titles | q_titles):
+        priority_now = now or datetime.now(timezone.utc)
+        if (is_duplicate_title(item.get("title", ""), known_norm_titles | q_titles)
+                and not is_priority_summary(item, priority_now)):
             continue
 
         if item.get("is_short"):
@@ -804,7 +809,9 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             print("[BUDGET] Leaving remaining candidates for the next half-hour run.")
             break
 
-        if is_duplicate_title(top["title"], known_norm_titles) or top["url"] in uploaded_urls or top["mp4_url"] in seen_mp4s:
+        priority_item = is_priority_summary(top, datetime.now(ZoneInfo("Asia/Tehran")))
+        if ((not priority_item and is_duplicate_title(top["title"], known_norm_titles))
+                or top["url"] in uploaded_urls or top["mp4_url"] in seen_mp4s):
             print(f"♻️ [SKIP-DUPLICATE] Already uploaded to channel: {top['title']}")
             state["pending_queue"].remove(top)
             continue
