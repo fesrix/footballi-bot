@@ -1334,7 +1334,8 @@
     "TRANSFERS": "PLZozPlKYbNbQ",
     "TEAM_MELLI": "PLG15F1nvU1DI",
     "INTERVIEW": "PLYpSSuFpmCkA",
-    "FANS_STADIUM": "PLR2Lb5kN0V38"
+    "FANS_STADIUM": "PLR2Lb5kN0V38",
+    "FAJR_SEPASI": "PLUEj4mlXDI-o"
   },
   "playlist_assignments": {
     "itGTGlK1vO0": [
@@ -1353,10 +1354,11 @@
       "INTERVIEW"
     ],
     "4-ZGuhvq6FY": [
-      "SHABHAYE_FOOTBALLI",
-      "REFEREE",
+      "FAJR_SEPASI",
+      "INTERVIEW",
       "PERSEPOLIS",
-      "INTERVIEW"
+      "REFEREE",
+      "SHABHAYE_FOOTBALLI"
     ],
     "iQiMG7snDgU": [
       "ESTEGHLAL",
@@ -1443,14 +1445,16 @@
       "ESTEGHLAL"
     ],
     "QexBPX9WY7w": [
+      "FAJR_SEPASI",
       "FANS_STADIUM",
       "INTERVIEW",
       "PERSEPOLIS"
     ],
     "dVlLzsigO00": [
-      "REFEREE",
+      "FAJR_SEPASI",
       "INTERVIEW",
-      "PERSEPOLIS"
+      "PERSEPOLIS",
+      "REFEREE"
     ],
     "uTXIliANluE": [
       "INTERVIEW",
@@ -1515,6 +1519,7 @@
       "SHORTS"
     ],
     "MT1__mZ5qGk": [
+      "FAJR_SEPASI",
       "INTERVIEW",
       "PERSEPOLIS"
     ],
@@ -1567,6 +1572,7 @@
       "INTERVIEW"
     ],
     "UExgMc5CCOc": [
+      "FAJR_SEPASI",
       "PERSEPOLIS",
       "SHORTS"
     ],
@@ -1789,6 +1795,7 @@
       "FOOTBALL_BARTAR"
     ],
     "eWVkTSwg7DY": [
+      "FAJR_SEPASI",
       "INTERVIEW"
     ],
     "FS5rZJKjUwM": [
