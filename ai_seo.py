@@ -187,7 +187,14 @@ def validate_seo_result(res: dict, raw_title: str, raw_desc: str, is_short: bool
     return {"title": t, "description": d, "tags": clean_tags[:8]}
 
 
-def generate_seo_metadata(title: str, description: str = "", category: str = "VIDEO", is_short: bool = False) -> dict:
+def generate_seo_metadata(title: str, description: str = "", category: str = "VIDEO",
+                          is_short: bool = False, learning_context: str | None = None) -> dict:
+    from learning import TITLE_STYLES
+
+    guide = TITLE_STYLES.get(learning_context)
+    system_prompt = SEO_PROMPT
+    if guide:
+        system_prompt += f"\nTitle preference, where supported by the source: {guide}"
     payload_data = {
         "title": title,
         "description": description or "",
@@ -202,7 +209,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
         try:
             g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={gemini_key}"
             body = {
-                "systemInstruction": {"parts": [{"text": SEO_PROMPT}]},
+                "systemInstruction": {"parts": [{"text": system_prompt}]},
                 "contents": [{"role": "user", "parts": [{"text": json.dumps(payload_data, ensure_ascii=False)}]}],
                 "generationConfig": {
                     "temperature": 0.2,
@@ -216,7 +223,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
                 parsed = json.loads(txt)
                 valid = validate_seo_result(parsed, title, description, is_short)
                 if valid:
-                    return valid
+                    return dict(valid, title_style=learning_context) if guide else valid
         except Exception:
             pass
 
@@ -226,7 +233,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
                 body = {
                     "model": model_name,
                     "messages": [
-                        {"role": "system", "content": SEO_PROMPT},
+                        {"role": "system", "content": system_prompt},
                         {"role": "user", "content": json.dumps(payload_data, ensure_ascii=False)},
                     ],
                     "temperature": 0.2,
@@ -245,7 +252,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
                         parsed = json.loads(m.group(0))
                         valid = validate_seo_result(parsed, title, description, is_short)
                         if valid:
-                            return valid
+                            return dict(valid, title_style=learning_context) if guide else valid
             except Exception:
                 continue
 
