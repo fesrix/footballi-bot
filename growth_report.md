@@ -1,7 +1,7 @@
 # Footballi Growth Report
 
 - Analytics window: 2026-08-19 → 2026-11-16
-- Tracked videos: 104
+- Tracked videos: 105
 - Queue size: 10
 - Uploads today: 5
 
@@ -9,7 +9,7 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 72 | 77958 | 159832.0 | 212 |
+| VIDEO | 73 | 77958 | 159832.0 | 212 |
 | SUMMARY | 12 | 22725 | 62768.0 | 54 |
 | SHORTS | 15 | 21347 | 3859.0 | 25 |
 | VIDEOCAST | 3 | 648 | 2044.0 | 5 |
@@ -19,15 +19,15 @@
 
 - New web candidates: 1
 - New Instagram candidates: 0
-- Rejections: {'old_video_id': 1}
-- Published this run: 1 main, 0 Shorts, 0 priority highlights
+- Rejections: {}
+- Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 3 main, 2 Shorts, 0 priority highlights
 
 ## Comment review
-- Discovered: 4 | Reviewed by AI: 4
-- Kept without reply: 2 | Replied: 2 | Removed: 0
+- Discovered: 0 | Reviewed by AI: 0
+- Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 221 | Write quota: 1000
+- Archive pages processed: 2 | Read quota: 226 | Write quota: 1000
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-16 | Revision: a0d4da957e89f1b1
@@ -35,4 +35,3 @@
 - Candidates with an Analytics adjustment: 0
 - main: 0 mature samples, preferred Tehran times: default
 - short: 2 mature samples, preferred Tehran times: default
-- Published at 21:31 Tehran | Title style: direct | Queue factor: 1.0
