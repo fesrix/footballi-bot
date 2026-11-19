@@ -44,6 +44,7 @@ from scrapers import (
 )
 import ai_seo
 import media_utils
+from learning import build_policy, defer_for_timing, ranking, title_choice, topic_for
 
 
 def is_trusted_source_url(value: str) -> bool:
@@ -83,6 +84,26 @@ def is_in_upload_window(category: str, tehran_now) -> bool:
     minute = tehran_now.hour * 60 + tehran_now.minute
     windows = SHORT_UPLOAD_WINDOWS if category == "SHORTS" else MAIN_UPLOAD_WINDOWS
     return any(start <= minute < end for start, end in windows)
+
+
+def publication_block(item, category, state, policy, now):
+    short = category == "SHORTS"
+    today_count = state["daily_uploads"]["count"]
+    if today_count >= MAX_DAILY_UPLOADS:
+        return "daily upload cap"
+    if today_count >= MAX_DAILY_UPLOADS - RESERVED_SUMMARY_SLOTS and category != "SUMMARY":
+        return "remaining slots are reserved for match summaries"
+    if not is_in_upload_window(category, now):
+        return "outside the Tehran publish window"
+    last_key = "last_short_upload_timestamp" if short else "last_upload_timestamp"
+    spacing = MIN_MINUTES_BETWEEN_SHORTS if short else MIN_MINUTES_BETWEEN_UPLOADS
+    if now.timestamp() - float(state.get(last_key, 0)) < spacing * 60:
+        return "minimum spacing for this format"
+    if defer_for_timing(category, short, policy, now):
+        published = item.get("source_published_at") or item.get("published_at")
+        if not isinstance(published, (int, float)) or now.timestamp() - published < 47 * 3600:
+            return "Analytics preferred time"
+    return ""
 
 
 def is_duplicate_title(candidate_title: str, existing_norm_titles: set) -> bool:
@@ -433,7 +454,8 @@ def normalize_queue_item(item: dict) -> dict:
     title = item.get("title") or item.get("raw_title") or item.get("seo_title") or ""
     title = re.sub(r"\s*\|\s*خلاصه بازی\s*$", "", title).strip()
     poster = item.get("poster_url") or item.get("poster") or item.get("thumbnail") or ""
-    is_short = bool(item.get("is_short", False))
+    is_short = bool(item.get("verified_is_short", item.get("is_short", False)))
+    item["is_short"] = is_short
     vid_id = extract_numeric_id(u) or 0
     item["video_id"] = vid_id
     item["url"] = u
@@ -467,6 +489,8 @@ def deduplicate_and_balance_queue(
     seen_mp4s: set,
     known_norm_titles: set,
     max_site_id: int,
+    policy: dict | None = None,
+    now: datetime | None = None,
 ) -> list:
     main_items = []
     short_items = []
@@ -535,32 +559,17 @@ def deduplicate_and_balance_queue(
         state_rejection_counts.clear()
         state_rejection_counts.update(rejection_counts)
 
-    # مرتب‌سازی بر اساس اولویت دسته ← امتیاز پتانسیل بازدید هوش مصنوعی ← بازدید سایت ← جدیدترین ویدیو
-    priority_order = {"SUMMARY": 0, "VIDEOCAST": 1, "POSHTE_KHAT": 2, "VIDEO": 3}
-    def historical_score(item):
-        # Analytics is optional. Keep the existing ordering when it is absent.
-        analytics = globals().get("_ACTIVE_ANALYTICS", {}) or {}
-        category = item.get("category", "VIDEO")
-        records = [v.get("metrics", {}) for v in analytics.get("videos", {}).values()
-                   if v.get("category") == category]
-        if len(records) < 3:
-            return 0.0
-        avg_watch = sum(float(r.get("estimatedMinutesWatched", 0)) for r in records) / len(records)
-        avg_subs = sum(float(r.get("subscribersGained", 0)) for r in records) / len(records)
-        return min(10.0, avg_watch / 30.0 + avg_subs * 2.0)
+    now = now or datetime.now(timezone.utc)
+    policy = policy or {}
 
-    main_items.sort(
-        key=lambda x: (
-            priority_order.get(x.get("category", "VIDEO"), 3),
-            -historical_score(x),
-            -int(x.get("ai_score", 6)),
-            -int(x.get("site_views", 0)),
-            -int(x.get("video_id", 0)),
-        )
-    )
-    short_items.sort(
-        key=lambda x: (-int(x.get("ai_score", 6)), -int(x.get("site_views", 0)))
-    )
+    def sort_key(item):
+        score, factor = ranking(item, policy, now)
+        item["learning_factor"] = round(factor, 3)
+        return (item["category"] != "SUMMARY", -score, -item["ai_score"],
+                -item["site_views"], -item["video_id"])
+
+    main_items.sort(key=sort_key)
+    short_items.sort(key=sort_key)
 
     return main_items[:MAX_MAIN_QUEUE_SIZE] + short_items[:MAX_SHORTS_QUEUE_SIZE]
 
@@ -605,12 +614,15 @@ def call_prepare_thumbnail(video_path: str, poster_url: str, output_path: str) -
         return None
 
 
-def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> dict:
+def call_generate_seo(title: str, desc: str, category: str, is_short: bool,
+                      learning_context: str | None = None) -> dict:
     for fn_name in ["generate_seo_metadata", "ai_generate_seo_metadata", "build_seo_package"]:
         fn = getattr(ai_seo, fn_name, None)
         if fn:
             try:
                 sig = inspect.signature(fn)
+                if 'learning_context' in sig.parameters:
+                    return fn(title, desc, category, is_short, learning_context=learning_context)
                 if len(sig.parameters) >= 4:
                     return fn(title, desc, category, is_short)
                 elif len(sig.parameters) == 3:
@@ -634,8 +646,9 @@ def call_generate_seo(title: str, desc: str, category: str, is_short: bool) -> d
 def main():
     print("[START] Footballi Bot starting (Peak-Hours + 8/Day Viral Quality + 720p+ HD Edition)...")
     state = load_state()
-    global _ACTIVE_ANALYTICS, _QUEUE_REJECTION_COUNTS
-    _ACTIVE_ANALYTICS = state.get("analytics", {})
+    global _QUEUE_REJECTION_COUNTS
+    policy = state.get("learning") or build_policy(state, datetime.now(timezone.utc))
+    state["learning"] = policy
     _QUEUE_REJECTION_COUNTS = {}
     reset_key = get_tehran_reset_key()
     quota_key = get_quota_reset_key()
@@ -677,6 +690,7 @@ def main():
         seen_mp4s,
         known_norm_titles,
         max_site_id,
+        policy,
     )
     state["last_run"] = {
         "finished_at": datetime.now(timezone.utc).isoformat(),
@@ -684,6 +698,8 @@ def main():
         "rejected_by_reason": dict(_QUEUE_REJECTION_COUNTS),
         "new_web_candidates": len(new_web_videos),
         "new_instagram_candidates": len(new_ig_reels),
+        "learning": {"revision": policy["revision"], "changes": policy["changes"],
+                     "queue_adjusted": sum(x["learning_factor"] != 1 for x in state["pending_queue"])},
     }
     save_state(state)
 
@@ -723,49 +739,31 @@ def main():
     candidate = None
     is_short = False
 
-    while state["pending_queue"]:
-        top = state["pending_queue"][0]
+    for top in list(state["pending_queue"]):
 
         if is_duplicate_title(top["title"], known_norm_titles) or top["url"] in uploaded_urls or top["mp4_url"] in seen_mp4s:
             print(f"♻️ [SKIP-DUPLICATE] Already uploaded to channel: {top['title']}")
-            state["pending_queue"].pop(0)
+            state["pending_queue"].remove(top)
             continue
 
         cat_check = "SHORTS" if top.get("is_short") else top.get("category", "VIDEO")
-        if not is_in_upload_window(cat_check, tehran_now):
-            print(f"🌙 [TIMING] Outside the {cat_check} Tehran publish window ({tehran_now.strftime('%H:%M')}); waiting for the next audience window.")
-            save_state(state)
-            return
-
-        if uploads_today >= MAX_DAILY_UPLOADS:
-            print(f"🎯 [DAILY-CAP] Reached optimal daily cap ({MAX_DAILY_UPLOADS}/{MAX_DAILY_UPLOADS}) to protect channel CTR and views.")
-            save_state(state)
-            return
-
-        if uploads_today >= (MAX_DAILY_UPLOADS - RESERVED_SUMMARY_SLOTS) and cat_check != "SUMMARY":
-            print("[QUOTA] Remaining daily slots are reserved strictly for Match Summaries.")
-            save_state(state)
-            return
-
-        last_upload_key = "last_short_upload_timestamp" if top.get("is_short") else "last_upload_timestamp"
-        min_spacing = MIN_MINUTES_BETWEEN_SHORTS if top.get("is_short") else MIN_MINUTES_BETWEEN_UPLOADS
-        mins_since_last = (time.time() - float(state.get(last_upload_key, 0))) / 60.0
-        if mins_since_last < min_spacing:
-            wait_rem = min_spacing - mins_since_last
-            print(f"⏳ [PACING] Waiting {wait_rem:.1f}m before the next {cat_check} upload window.")
-            save_state(state)
-            return
+        blocked = publication_block(top, cat_check, state, policy, tehran_now)
+        if blocked:
+            print(f"[TIMING] {cat_check}: {blocked}")
+            if blocked == "Analytics preferred time":
+                state["last_run"]["learning"]["timing_deferred"] = cat_check
+            continue
 
         if top.get("is_short"):
             if not is_strictly_domestic_short(top["title"], top.get("description", "")):
                 print(f"🚫 [SHORT-REJECT] Blocked non-domestic Short before upload: {top['title']}")
-                state["pending_queue"].pop(0)
+                state["pending_queue"].remove(top)
                 state["rejected_urls"].append(top["url"])
                 continue
         else:
             if not call_ai_copyright_audit(top["title"], top.get("description", "")):
                 print(f"🚫 [AI-AUDIT-REJECT] Blocked unsafe video before upload: {top['title']}")
-                state["pending_queue"].pop(0)
+                state["pending_queue"].remove(top)
                 state["rejected_urls"].append(top["url"])
                 continue
 
@@ -792,23 +790,33 @@ def main():
             print("[PROBE-WARN] Cannot verify quality/duration; retaining candidate for retry.")
             save_state(state)
             return
-        is_vertical = h > w
+        is_short = h > w and dur <= 175
+        top["verified_is_short"] = is_short
+        if is_short and not is_strictly_domestic_short(top["title"], top.get("description", "")):
+            state["pending_queue"].remove(top)
+            state["rejected_urls"].append(top["url"])
+            continue
+        actual_category = "SHORTS" if is_short else detect_primary_category(top["title"])
+        actual_block = publication_block(top, actual_category, state, policy,
+                                         datetime.now(ZoneInfo("Asia/Tehran")))
+        if actual_block:
+            print(f"[TIMING] Verified {actual_category}: {actual_block}")
+            continue
 
-        if is_vertical:
+        if is_short:
             if w > 0 and w < MIN_SHORTS_WIDTH_PX:
                 print(f"⏭️ [SKIP-LOWRES-SHORT] Rejected low-res Short ({w}x{h} < 720p): {top['title']}")
-                state["pending_queue"].pop(0)
+                state["pending_queue"].remove(top)
                 state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
-            is_short = dur <= 175 if dur > 0 else True
             print(f"📱 [VERTICAL-SHORTS] Approved 720p+ HD vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
             candidate = top
             break
         else:
             if h > 0 and h < MIN_HORIZONTAL_HEIGHT_PX:
                 print(f"⏭️ [SKIP-LOWRES-HD] Rejected low-quality horizontal video ({w}x{h} < 720p): {top['title']}")
-                state["pending_queue"].pop(0)
+                state["pending_queue"].remove(top)
                 state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
@@ -817,7 +825,7 @@ def main():
                     f"⏭️ [SKIP-SHORT-HORIZONTAL] Rejected horizontal video under 3 mins "
                     f"({w}x{h}, {dur:.0f}s < 180s): {top['title']}"
                 )
-                state["pending_queue"].pop(0)
+                state["pending_queue"].remove(top)
                 state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
@@ -831,13 +839,15 @@ def main():
         print("[DONE] No qualifying 720p+ HD videos ready in queue.")
         return
 
-    cat = "SHORTS" if is_short else candidate.get("category", "VIDEO")
+    cat = "SHORTS" if is_short else detect_primary_category(candidate["title"])
 
     thumb_to_use = None
     if not is_short:
         thumb_to_use = call_prepare_thumbnail(video_file, candidate.get("poster_url", ""), thumb_file)
 
-    seo = call_generate_seo(candidate["title"], candidate.get("description", ""), cat, is_short)
+    style, explore = title_choice(candidate, policy, "short" if is_short else "main", tehran_now)
+    seo = call_generate_seo(candidate["title"], candidate.get("description", ""), cat, is_short,
+                            learning_context=style)
     final_title = seo.get("title", candidate["title"])[:100]
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
@@ -871,7 +881,7 @@ def main():
         vid_id = response["id"]
         print(f"✅ [SUCCESS] Uploaded Video ID: {vid_id}")
 
-        state["pending_queue"].pop(0)
+        state["pending_queue"].remove(candidate)
         state["uploaded_urls"].append(candidate["url"])
         state["seen_mp4s"].append(candidate["mp4_url"])
         state["uploaded_titles"].append(final_title)
@@ -883,11 +893,16 @@ def main():
             "source_url": source_url,
             "rights_status": candidate.get("rights_status"),
             "published_at": datetime.now(timezone.utc).isoformat(),
+            "title_style": seo.get("title_style"),
+            "title_experiment": explore and seo.get("title_style") == style,
+            "learning_revision": policy["revision"],
+            "topic": topic_for(candidate["title"]),
         }
         state["daily_uploads"]["count"] = uploads_today + 1
-        state["last_upload_timestamp"] = time.time()
-        if is_short:
-            state["last_short_upload_timestamp"] = state["last_upload_timestamp"]
+        state["last_short_upload_timestamp" if is_short else "last_upload_timestamp"] = time.time()
+        state["last_run"]["learning"].update(title_style=seo.get("title_style"),
+                                             selected_factor=candidate["learning_factor"],
+                                             published_tehran=tehran_now.strftime("%H:%M"))
         state["upload_limit_cooldown_until"] = 0
         save_state(state)
 
@@ -930,4 +945,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
