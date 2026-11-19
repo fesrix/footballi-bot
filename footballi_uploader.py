@@ -664,7 +664,8 @@ def deduplicate_and_balance_queue(
         item["learning_factor"] = round(factor, 3)
         priority = is_priority_summary(item, now)
         fresh = timestamp(item.get("source_published_at") or item.get("published_at")
-                          or item.get("source_first_seen_at"))
+                          or item.get("source_first_seen_at")
+                          or item.get("discovery_timestamp"))
         return (not priority, -fresh.timestamp() if priority and fresh else 0,
                 -score, -item["ai_score"], -item["site_views"], -item["video_id"])
 
