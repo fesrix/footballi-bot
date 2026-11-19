@@ -2,7 +2,7 @@
 
 - Analytics window: 2026-08-19 → 2026-11-16
 - Tracked videos: 102
-- Queue size: 4
+- Queue size: 6
 - Uploads today: 2
 
 ## Performance by category
@@ -17,15 +17,15 @@
 
 ## Last run
 
-- New web candidates: 3
+- New web candidates: 2
 - New Instagram candidates: 0
 - Rejections: {}
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 0
-- Kept without reply: 0 | Replied: 0 | Removed: 0
+- Discovered: 2 | Reviewed by AI: 2
+- Kept without reply: 1 | Replied: 0 | Removed: 1
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 125 | Write quota: 800
+- Archive pages processed: 2 | Read quota: 133 | Write quota: 850
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-16 | Revision: 4f53cda18c2baa0c
