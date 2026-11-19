@@ -4,7 +4,9 @@ import re
 import json
 import time
 import inspect
+from collections import defaultdict
 import subprocess
+import sys
 import tempfile
 import math
 from zoneinfo import ZoneInfo
@@ -230,136 +232,141 @@ def detect_primary_category(title: str, description: str = "", is_short: bool = 
     return "VIDEO"
 
 
-def detect_all_matching_playlists(title: str, description: str = "", is_short: bool = False) -> list:
-    matched = []
-    clean_title = re.sub(r"\|.*$", "", title).strip()
-    norm_title = normalize_persian(clean_title).lower()
+def _playlist_text(value: str) -> str:
+    return normalize_persian(value.split("|", 1)[0]).casefold()
 
-    if is_short or "#shorts" in normalize_persian(title).lower():
-        matched.append("SHORTS")
 
-    check_order = [
-        "SUMMARY",
-        "VIDEOCAST",
-        "POSHTE_KHAT",
-        "REFEREE",
-        "FOOTBALL_BARTAR",
-        "SHABHAYE_FOOTBALLI",
-        "ESTEGHLAL",
-        "PERSEPOLIS",
-        "SEPAHAN",
-        "TRACTOR",
-        "TRANSFERS",
-        "TEAM_MELLI",
-    ]
+def _has_phrase(text: str, phrase: str) -> bool:
+    return bool(re.search(rf"(?<!\w){re.escape(_playlist_text(phrase))}(?!\w)", text))
 
-    for key in check_order:
-        pdef = PLAYLIST_DEFINITIONS.get(key, {})
-        for kw in pdef.get("keywords", []):
-            norm_kw = normalize_persian(kw).lower()
-            if norm_kw in norm_title:
-                if key == "ESTEGHLAL" and "استقلال خوزستان" in norm_title:
-                    rem = norm_title.replace("استقلال خوزستان", "")
-                    if "استقلال" not in rem:
-                        continue
-                if key not in matched:
-                    matched.append(key)
+
+def detect_all_matching_playlists(title: str, description: str = "", is_short: bool = False,
+                                  *, source_title: str = "") -> list:
+    # The original headline and display title provide evidence. Generic
+    # description footers and tags can mention unrelated clubs.
+    texts = [_playlist_text(t) for t in (source_title, title) if t]
+    matches = ["SHORTS"] if is_short else []
+    for key, definition in PLAYLIST_DEFINITIONS.items():
+        if key == "SHORTS":
+            continue
+        if key == "INTERVIEW" and "SUMMARY" in matches:
+            continue
+        for text in texts:
+            if key == "ESTEGHLAL":
+                text = re.sub(r"\bاستقلال (?:خوزستان|ملاثانی)\b", "", text)
+            if any(_has_phrase(text, kw) for kw in definition["keywords"]):
+                matches.append(key)
                 break
+            if key == "INTERVIEW" and re.match(r"^[آ-ی][آ-ی ]{2,35}\s*[:：]", text):
+                if not any(code in matches for code in ("VIDEOCAST", "POSHTE_KHAT", "FOOTBALL_BARTAR",
+                                                         "SHABHAYE_FOOTBALLI")):
+                    matches.append(key)
+                    break
+    return matches
 
-    if not is_short and not any(k in matched for k in ["SUMMARY", "VIDEOCAST", "POSHTE_KHAT"]):
-        if "INTERVIEW" not in matched:
-            matched.append("INTERVIEW")
 
-    return matched
+def video_playlist_keys(video, state):
+    video_id = video["video_id"]
+    metadata = state.get("published_metadata", {}).get(video_id, {})
+    fmt = state.get("analytics", {}).get("videos", {}).get(video_id, {}).get("format")
+    is_short = metadata.get("category") == "SHORTS" if metadata.get("category") else fmt == "short"
+    return detect_all_matching_playlists(video["title"], is_short=is_short,
+                                         source_title=metadata.get("source_title", ""))
 
 
-def ensure_all_playlists(youtube, state: dict) -> dict:
-    playlists_state = state.get("playlists", {})
-    if all(k in playlists_state and playlists_state[k] for k in PLAYLIST_DEFINITIONS):
+def playlist_demand(videos, state):
+    evidence = defaultdict(set)
+    for video in videos:
+        if not video.get("public"):
+            continue
+        for key in video_playlist_keys(video, state):
+            evidence[key].add(video["video_id"])
+    return {key: len(ids) for key, ids in evidence.items()}
+
+
+def ensure_all_playlists(youtube, state: dict, demand: dict | None = None, max_new: int = 2) -> dict:
+    playlists_state = state.setdefault("playlists", {})
+    demand = demand or {}
+    missing = [key for key, definition in PLAYLIST_DEFINITIONS.items()
+               if not playlists_state.get(key)
+               and demand.get(key, 0) >= definition.get("minimum_public_videos", 0)]
+    if not missing:
         return playlists_state
 
-    existing_map = {}
+    existing = {}
+    token = None
     try:
-        req = youtube.playlists().list(part="snippet", mine=True, maxResults=50)
-        res = req.execute()
-        for item in res.get("items", []):
-            pl_id = item["id"]
-            pl_title = item["snippet"]["title"].strip()
-            existing_map[pl_title] = pl_id
-            existing_map[normalize_persian(pl_title)] = pl_id
-    except HttpError as e:
-        if "quotaExceeded" in str(e):
-            state["quota_exhausted_date"] = get_quota_reset_key()
-        print(f"[PLAYLIST-WARN] Could not list channel playlists: {e}")
-        return playlists_state
-    except Exception as e:
-        print(f"[PLAYLIST-WARN] Could not list channel playlists: {e}")
-        return playlists_state
-
-    for key, pdef in PLAYLIST_DEFINITIONS.items():
-        if key in playlists_state and playlists_state[key]:
-            continue
-        target_title = pdef["title"]
-        target_desc = pdef["description"]
-        legacy_titles = pdef.get("legacy_titles", [])
-
-        if target_title in existing_map:
-            playlists_state[key] = existing_map[target_title]
-            continue
-
-        found_legacy_id = None
-        for leg in legacy_titles:
-            if leg in existing_map:
-                found_legacy_id = existing_map[leg]
+        while True:
+            page = youtube.playlists().list(part="snippet,status", mine=True,
+                                            maxResults=50, pageToken=token).execute()
+            for playlist in page.get("items", []):
+                if playlist.get("status", {}).get("privacyStatus") == "public":
+                    existing[normalize_persian(playlist["snippet"]["title"]).casefold()] = playlist["id"]
+            token = page.get("nextPageToken")
+            if not token:
                 break
-        if not found_legacy_id and normalize_persian(target_title) in existing_map:
-            found_legacy_id = existing_map[normalize_persian(target_title)]
+    except HttpError as exc:
+        if "quotaExceeded" in str(exc):
+            state["quota_exhausted_date"] = get_quota_reset_key()
+        print(f"[PLAYLIST-WARN] Could not list channel playlists ({exc.resp.status}).")
+        return playlists_state
 
-        if found_legacy_id:
-            playlists_state[key] = found_legacy_id
-            try:
-                youtube.playlists().update(
-                    part="snippet",
-                    body={
-                        "id": found_legacy_id,
-                        "snippet": {"title": target_title, "description": target_desc},
-                    },
-                ).execute()
-                print(f"✨ [PLAYLIST-RENAME] Updated playlist title to: {target_title}")
-            except Exception:
-                pass
+    for key in missing:
+        definition = PLAYLIST_DEFINITIONS[key]
+        title = definition["title"]
+        aliases = [normalize_persian(t).casefold() for t in [title, *definition.get("legacy_titles", [])]]
+        match = next((existing[name] for name in aliases if name in existing), None)
+        if match:
+            playlists_state[key] = match
+            save_state(state)
+            continue
+        if max_new <= 0:
             continue
 
+        max_new -= 1
         try:
             created = youtube.playlists().insert(
                 part="snippet,status",
-                body={
-                    "snippet": {"title": target_title, "description": target_desc},
-                    "status": {"privacyStatus": "public"},
-                },
+                body={"snippet": {"title": title, "description": definition["description"]},
+                      "status": {"privacyStatus": "public"}},
             ).execute()
-            playlists_state[key] = created["id"]
-            print(f"✅ [PLAYLIST-CREATED] Created new official playlist: {target_title}")
-        except Exception as e:
-            print(f"[PLAYLIST-WARN] Could not create playlist {target_title}: {e}")
+        except HttpError as exc:
+            if "quotaExceeded" in str(exc):
+                state["quota_exhausted_date"] = get_quota_reset_key()
+            print(f"[PLAYLIST-WARN] Could not create {key} ({exc.resp.status}).")
             break
-
-    state["playlists"] = playlists_state
+        playlists_state[key] = created["id"]
+        save_state(state)
+        print(f"[PLAYLIST-CREATED] {key}: {title} ({created['id']})")
     return playlists_state
 
 
-def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlists_map: dict, state: dict) -> int:
+def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlists_map: dict,
+                           state: dict, max_checks: int = 3) -> int:
     assignments = state.setdefault("playlist_assignments", {})
     already_assigned = set(assignments.get(video_id, []))
-    added_count = 0
+    checked = 0
 
-    for key in playlist_keys:
+    # Keep format and highlights first, then give evidence-backed new
+    # playlists a chance before the more general editorial categories.
+    ordered_keys = sorted(playlist_keys, key=lambda key: (
+        0 if key in {"SHORTS", "SUMMARY"} else
+        1 if PLAYLIST_DEFINITIONS[key].get("minimum_public_videos") else 2))
+    for key in ordered_keys:
+        if checked >= max_checks:
+            break
         if key in already_assigned:
             continue
         pl_id = playlists_map.get(key)
         if not pl_id:
             continue
+        checked += 1
         try:
+            contents = youtube.playlistItems().list(part="id", playlistId=pl_id, videoId=video_id,
+                                                   maxResults=1).execute()
+            if contents.get("items"):
+                already_assigned.add(key)
+                continue
             youtube.playlistItems().insert(
                 part="snippet",
                 body={
@@ -370,11 +377,16 @@ def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlist
                 },
             ).execute()
             already_assigned.add(key)
-            added_count += 1
             print(f"📂 [PLAYLIST-ADD] Added video {video_id} -> {PLAYLIST_DEFINITIONS[key]['title']}")
         except HttpError as e:
             if e.resp.status == 409 or "videoAlreadyInPlaylist" in str(e):
                 already_assigned.add(key)
+            elif "playlistNotFound" in str(e):
+                playlists_map.pop(key, None)
+                for saved_keys in assignments.values():
+                    if key in saved_keys:
+                        saved_keys.remove(key)
+                already_assigned.discard(key)
             elif "quotaExceeded" in str(e):
                 state["quota_exhausted_date"] = get_quota_reset_key()
                 break
@@ -383,8 +395,9 @@ def add_video_to_playlists(youtube, video_id: str, playlist_keys: list, playlist
         except Exception:
             pass
 
-    assignments[video_id] = list(already_assigned)
-    return added_count
+    if already_assigned:
+        assignments[video_id] = sorted(already_assigned)
+    return checked
 
 
 def fetch_channel_existing_videos(youtube, state: dict, max_items: int = 120) -> list:
@@ -414,6 +427,14 @@ def fetch_channel_existing_videos(youtube, state: dict, max_items: int = 120) ->
             next_page = pl_res.get("nextPageToken")
             if not next_page:
                 break
+        videos = videos[:max_items]
+        for start in range(0, len(videos), 50):
+            group = videos[start:start + 50]
+            details = youtube.videos().list(part="status", id=",".join(row["video_id"] for row in group)).execute()
+            public_ids = {item["id"] for item in details.get("items", [])
+                          if item["status"].get("privacyStatus") == "public"}
+            for row in group:
+                row["public"] = row["video_id"] in public_ids
     except HttpError as e:
         if "quotaExceeded" in str(e):
             state["quota_exhausted_date"] = get_quota_reset_key()
@@ -429,21 +450,44 @@ def organize_existing_channel_videos(youtube, channel_videos: list, playlists_ma
     ops = 0
     assignments = state.setdefault("playlist_assignments", {})
 
-    for vid in channel_videos:
+    matches = [(vid, video_playlist_keys(vid, state)) for vid in channel_videos if vid.get("public")]
+    fresh_categories = {key for key in playlists_map if PLAYLIST_DEFINITIONS.get(key, {}).get("minimum_public_videos")}
+    matches.sort(key=lambda entry: not any(
+        key in fresh_categories and key not in assignments.get(entry[0]["video_id"], [])
+        for key in entry[1]))
+    for vid, target_keys in matches:
         if ops >= max_ops_per_run or state.get("quota_exhausted_date") == get_quota_reset_key():
             break
         vid_id = vid["video_id"]
-        title = vid["title"]
-        desc = vid.get("description", "")
-        is_short = "#shorts" in title.lower() or "#shorts" in desc.lower()
-
-        target_keys = detect_all_matching_playlists(title, desc, is_short=is_short)
         current_keys = set(assignments.get(vid_id, []))
-        missing_keys = [k for k in target_keys if k not in current_keys]
-
+        missing_keys = [key for key in target_keys
+                        if key in playlists_map and key not in current_keys]
         if missing_keys:
-            added = add_video_to_playlists(youtube, vid_id, missing_keys[:2], playlists_map, state)
-            ops += added
+            ops += add_video_to_playlists(youtube, vid_id, missing_keys, playlists_map, state,
+                                          max_checks=max_ops_per_run - ops)
+
+
+def curate_channel_playlists(youtube, state, channel_videos, *, max_new=2, max_ops=3):
+    demand = playlist_demand(channel_videos, state)
+    playlists = ensure_all_playlists(youtube, state, demand, max_new=max_new)
+    organize_existing_channel_videos(youtube, channel_videos, playlists, state, max_ops_per_run=max_ops)
+    save_state(state)
+    for key, definition in PLAYLIST_DEFINITIONS.items():
+        if "minimum_public_videos" in definition:
+            print(f"[PLAYLIST-SUMMARY] {key}: {demand.get(key, 0)} public matches | "
+                  f"{playlists.get(key) or 'waiting for enough videos'}")
+    return playlists
+
+
+def run_playlists_only():
+    state = load_state()
+    youtube = get_youtube_client()
+    channel = youtube.channels().list(part="snippet", mine=True).execute()["items"][0]
+    print(f"[PLAYLIST] Channel: https://www.youtube.com/channel/{channel['id']}")
+    videos = fetch_channel_existing_videos(youtube, state, max_items=180)
+    if not any(video.get("public") for video in videos):
+        raise RuntimeError("Could not verify public channel videos")
+    curate_channel_playlists(youtube, state, videos, max_new=4, max_ops=12)
 
 
 def normalize_queue_item(item: dict) -> dict:
@@ -668,7 +712,7 @@ def main():
     channel_videos = []
     if state.get("quota_exhausted_date") != quota_key:
         youtube = get_youtube_client()
-        channel_videos = fetch_channel_existing_videos(youtube, state, max_items=120)
+        channel_videos = fetch_channel_existing_videos(youtube, state, max_items=180)
         for v in channel_videos:
             known_norm_titles.add(normalize_persian(v["title"]).lower())
 
@@ -718,9 +762,7 @@ def main():
         f"(Reserved for Match Summaries: {RESERVED_SUMMARY_SLOTS})"
     )
 
-    playlists_map = ensure_all_playlists(youtube, state)
-    organize_existing_channel_videos(youtube, channel_videos, playlists_map, state, max_ops_per_run=3)
-    save_state(state)
+    playlists_map = curate_channel_playlists(youtube, state, channel_videos)
 
     if not state["pending_queue"]:
         print("[DONE] No fresh high-potential videos in queue right now.")
@@ -897,6 +939,7 @@ def main():
             "title_experiment": explore and seo.get("title_style") == style,
             "learning_revision": policy["revision"],
             "topic": topic_for(candidate["title"]),
+            "source_title": candidate["title"],
         }
         state["daily_uploads"]["count"] = uploads_today + 1
         state["last_short_upload_timestamp" if is_short else "last_upload_timestamp"] = time.time()
@@ -917,7 +960,7 @@ def main():
                 print(f"[THUMB-WARN] Could not attach custom thumbnail: {te}")
 
         matched_playlists = detect_all_matching_playlists(
-            final_title, final_desc, is_short=is_short
+            final_title, is_short=is_short, source_title=candidate["title"]
         )
         add_video_to_playlists(youtube, vid_id, matched_playlists, playlists_map, state)
 
@@ -944,4 +987,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--playlists-only" in sys.argv[1:]:
+        run_playlists_only()
+    else:
+        main()
