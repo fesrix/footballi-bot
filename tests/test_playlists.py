@@ -2,6 +2,7 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import Mock, patch
 
+from googleapiclient.errors import HttpError
 from config import PLAYLIST_DEFINITIONS
 from footballi_uploader import (
     add_video_to_playlists,
@@ -72,3 +73,15 @@ class PlaylistTests(unittest.TestCase):
         self.assertEqual(add_video_to_playlists(
             yt, "already-present", ["FAJR_SEPASI"], playlists, state), 0)
         yt.playlistItems.return_value.list.assert_called_once()
+
+    def test_unreadable_new_playlist_is_kept_for_retry(self):
+        yt = Mock()
+        yt.playlistItems.return_value.list.return_value.execute.side_effect = HttpError(
+            SimpleNamespace(status=404, reason="Not Found"),
+            b'{"error":{"message":"playlistNotFound"}}',
+        )
+        state = {"playlists": {"FAJR_SEPASI": "new-playlist"}}
+        add_video_to_playlists(yt, "a", ["FAJR_SEPASI"], state["playlists"], state)
+        self.assertEqual(state["playlists"]["FAJR_SEPASI"], "new-playlist")
+        self.assertNotIn("a", state["playlist_assignments"])
+        yt.playlistItems.return_value.insert.assert_not_called()
