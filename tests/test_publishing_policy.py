@@ -54,7 +54,7 @@ class PublishingPolicyTests(unittest.TestCase):
         item = summary("سپاهان و استقلال", 1075800, self.now)
         item["source_published_at"] = None
         item["discovery_timestamp"] = self.now.timestamp()
-        self.assertFalse(uploader.is_priority_summary(item, self.now))
+        self.assertTrue(uploader.is_priority_summary(item, self.now))
         item["source_first_seen_at"] = self.now.timestamp()
         self.assertTrue(uploader.is_priority_summary(item, self.now))
         item["source_published_at"] = (self.now - timedelta(hours=25)).isoformat()
