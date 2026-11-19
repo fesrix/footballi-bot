@@ -18,6 +18,10 @@ on:
         description: "Validate code and state without external writes"
         type: boolean
         default: false
+      playlists_only:
+        description: "Create eligible playlists and organize public videos only"
+        type: boolean
+        default: false
 
 concurrency:
   group: ${{ github.event_name == 'pull_request' && github.ref || 'footballi-bot-runner' }}
@@ -102,14 +106,14 @@ jobs:
 
       - name: Sync YouTube Analytics
         id: analytics
-        if: steps.slot.outputs.live == 'true'
+        if: steps.slot.outputs.live == 'true' && !inputs.playlists_only
         env:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
         run: timeout --kill-after=5s 90s python -u analytics.py
 
       - name: Review YouTube comments
         id: comments
-        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' && !inputs.playlists_only }}
         env:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -118,7 +122,7 @@ jobs:
 
       - name: Process video queue
         id: uploader
-        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' }}
+        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' && !inputs.playlists_only }}
         env:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -127,6 +131,13 @@ jobs:
           CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
           APIFY_FORCE_CHECK: ${{ inputs.force_instagram == true }}
         run: timeout --kill-after=5s 595s python -u footballi_uploader.py
+
+      - name: Curate public playlists
+        if: steps.slot.outputs.live == 'true' && inputs.playlists_only
+        timeout-minutes: 5
+        env:
+          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+        run: python -u footballi_uploader.py --playlists-only
 
       - name: Write run report
         id: report
