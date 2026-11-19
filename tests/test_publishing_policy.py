@@ -27,7 +27,7 @@ class PublishingPolicyTests(unittest.TestCase):
         item = summary("سپاهان و استقلال", 1075800, now)
         state = {"last_upload_timestamp": now.timestamp(), "last_short_upload_timestamp": now.timestamp(),
                  "published_metadata": {str(i): {"category": "VIDEO", "published_at": now.isoformat()}
-                                        for i in range(2)}}
+                                        for i in range(4)}}
         self.assertFalse(uploader.publication_block(item, "SUMMARY", state, {}, now))
         self.assertEqual(uploader.publication_block({}, "VIDEO", state, {}, now), "daily main upload cap")
         self.assertFalse(uploader.is_priority_summary(
@@ -37,6 +37,18 @@ class PublishingPolicyTests(unittest.TestCase):
                                                     "SUMMARY", state, {}, now))
         self.assertTrue(uploader.publication_block({**item, "source_published_at": (now - timedelta(days=2)).isoformat()},
                                                     "SUMMARY", state, {}, now))
+
+    def test_fourth_main_upload_can_follow_after_two_and_a_half_hours(self):
+        now = self.now.replace(hour=21, minute=0, second=0, microsecond=0)
+        previous_uploads = [now.replace(hour=h, minute=m) for h, m in ((10, 0), (12, 30), (18, 30))]
+        state = {"published_metadata": {str(i): {"category": "VIDEO", "published_at": stamp.isoformat()}
+                                        for i, stamp in enumerate(previous_uploads)},
+                 "last_upload_timestamp": previous_uploads[-1].timestamp()}
+        self.assertEqual(uploader.publication_block({}, "VIDEO", state, {}, now - timedelta(minutes=1)),
+                         "minimum spacing for this format")
+        self.assertFalse(uploader.publication_block({}, "VIDEO", state, {}, now))
+        state["published_metadata"]["fourth"] = {"category": "VIDEO", "published_at": now.isoformat()}
+        self.assertEqual(uploader.publication_block({}, "VIDEO", state, {}, now), "daily main upload cap")
 
     def test_only_authoritative_freshness_can_override_routine_schedule(self):
         item = summary("سپاهان و استقلال", 1075800, self.now)
