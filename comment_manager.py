@@ -1,23 +1,24 @@
 # -*- coding: utf-8 -*-
+import hashlib
 import os
 import re
 import json
 import time
 import requests
-from datetime import datetime, timezone, timedelta
+from datetime import datetime
 from googleapiclient.errors import HttpError
 
-from config import PROTO, HISTORY_FILE
+from config import PROTO
 from footballi_uploader import (get_authenticated_service, load_history, save_history,
                                 get_quota_reset_key)
 
 BATCH_SIZE = 8
 MAX_REPLIES_PER_RUN = 12
-# A channel can have more than 200 comments.  We scan a bounded number of
-# time-ordered pages on every run so the backlog is drained over subsequent
-# 30-minute Actions runs without spending the whole daily YouTube quota.
 COMMENT_PAGE_SIZE = 100
-COMMENT_SCAN_MAX_PAGES = 10
+QUEUE_LIMIT = 500
+READ_BUDGET = 1000
+WRITE_BUDGET = 2000
+RUN_SECONDS = 210
 REPLYABLE_REASONS = {"ENGAGE", "BANTER_KEEP", "CRITICISM_KEEP"}
 
 COMMENT_PROMPT = r"""
@@ -90,7 +91,6 @@ credential theft, unsolicited contact solicitation, or explicit
 "subscribe to my channel" promotion.
 A relevant football link alone is not spam.
 Do not infer repeated posting across comments or runs.
-The application detects repetition using stored history.
 
 POLITICAL_SLOGAN:
 Apply this as the outlet's narrow moderation policy, not a claim that
@@ -161,126 +161,15 @@ DELETE_REASONS = {
 
 
 
-def fetch_video_titles_map(youtube, video_ids: list) -> dict:
-    """دریافت عنوان واقعی ویدیوهای یوتیوب برای ارسال کانتکست دقیق به هوش مصنوعی"""
-    titles_map = {}
-    unique_ids = [vid for vid in dict.fromkeys(video_ids) if vid]
-    for i in range(0, len(unique_ids), 50):
-        chunk = unique_ids[i : i + 50]
-        try:
-            res = youtube.videos().list(part="snippet", id=",".join(chunk)).execute()
-            for it in res.get("items", []):
-                titles_map[it["id"]] = it.get("snippet", {}).get("title", "")
-        except Exception:
-            pass
-    return titles_map
-
-
-def fetch_all_unreplied_channel_comments(
-    youtube,
-    my_channel_id: str,
-    ignored_ids: set,
-    deleted_ids: set,
-    max_pages: int = COMMENT_SCAN_MAX_PAGES,
-) -> list:
-    """Fetch eligible top-level comments without silently hiding scan errors.
-
-    The previous implementation stopped after two unspecified-order pages,
-    which left older comments permanently outside the AI's view.  A bounded
-    time-ordered scan lets each run move through the backlog while keeping
-    quota usage predictable.  Any API failure is raised to the caller instead
-    of being reported as an empty, successfully reviewed channel.
-    """
-    unreplied = []
-    seen_thread_ids = set()
-
-    def process_thread_items(items):
-        for item in items:
-            thread_id = item.get("id")
-            if not thread_id or thread_id in seen_thread_ids:
-                continue
-            seen_thread_ids.add(thread_id)
-
-            snip = item.get("snippet", {})
-            top_comment = snip.get("topLevelComment", {})
-            comment_id = top_comment.get("id", thread_id)
-
-            if comment_id in deleted_ids or comment_id in ignored_ids:
-                continue
-
-            c_snip = top_comment.get("snippet", {})
-            author_channel_id = c_snip.get("authorChannelId", {}).get("value", "")
-            if author_channel_id == my_channel_id:
-                continue
-
-            already_replied_by_us = False
-            for rep in item.get("replies", {}).get("comments", []):
-                rep_author_id = rep.get("snippet", {}).get("authorChannelId", {}).get("value", "")
-                if rep_author_id == my_channel_id:
-                    already_replied_by_us = True
-                    break
-
-            if already_replied_by_us:
-                continue
-
-            text = (c_snip.get("textDisplay") or c_snip.get("textOriginal") or "").strip()
-            author = (c_snip.get("authorDisplayName") or "User").strip()
-            video_id = snip.get("videoId", "")
-
-            if text:
-                unreplied.append({
-                    "comment_id": comment_id,
-                    "video_id": video_id,
-                    "video_title": "",
-                    "author": author,
-                    "text": text,
-                })
-
-    next_page = None
-    pages_scanned = 0
-    for _ in range(max(1, int(max_pages))):
-        try:
-            res = youtube.commentThreads().list(
-                part="snippet,replies",
-                allThreadsRelatedToChannelId=my_channel_id,
-                maxResults=COMMENT_PAGE_SIZE,
-                order="time",
-                textFormat="plainText",
-                pageToken=next_page,
-            ).execute()
-            pages_scanned += 1
-            process_thread_items(res.get("items", []))
-            next_page = res.get("nextPageToken")
-            if not next_page:
-                break
-        except HttpError as e:
-            if "quotaExceeded" in str(e):
-                raise
-            raise RuntimeError(f"YouTube comment scan failed on page {pages_scanned + 1}: {e}") from e
-        except Exception as e:
-            raise RuntimeError(f"YouTube comment scan failed on page {pages_scanned + 1}: {e}") from e
-
-    if next_page:
-        print(
-            f"[COMMENT-AGENT] Comment scan reached {pages_scanned} pages; "
-            "older comments remain eligible for the next run."
-        )
-
-    if unreplied:
-        v_map = fetch_video_titles_map(youtube, [c["video_id"] for c in unreplied])
-        for c in unreplied:
-            c["video_title"] = v_map.get(c["video_id"]) or "ویدیوی فوتبال ایران"
-
-    return unreplied
-
-
 def _normalise_ai_decisions(raw) -> dict:
     """Accept strict JSON plus common model wrappers without losing comments."""
     if isinstance(raw, dict) and isinstance(raw.get("decisions"), (dict, list)):
         raw = raw["decisions"]
 
     if isinstance(raw, list):
-        raw = {str(index): value for index, value in enumerate(raw)}
+        # A partial, unindexed list cannot be safely matched to comment IDs.
+        raw = {str(value["index"]): value for value in raw
+               if isinstance(value, dict) and type(value.get("index")) in {int, str}}
     if not isinstance(raw, dict):
         return {}
 
@@ -311,7 +200,7 @@ def _parse_ai_json(text: str) -> dict:
     return {}
 
 
-def ai_evaluate_comments(comments_batch: list) -> dict:
+def ai_evaluate_comments(comments_batch: list, deadline: float) -> dict:
     if not comments_batch:
         return {}
 
@@ -328,6 +217,12 @@ def ai_evaluate_comments(comments_batch: list) -> dict:
     gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
     arvan_key = os.environ.get("ARVAN_API_KEY", "").strip()
 
+    def post(url, **kwargs):
+        remaining = deadline - time.monotonic() - 5
+        if remaining < 2:
+            return None
+        return requests.post(url, timeout=min(12, remaining / 2), **kwargs)
+
     if gemini_key:
         try:
             g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={gemini_key}"
@@ -340,8 +235,8 @@ def ai_evaluate_comments(comments_batch: list) -> dict:
                     "responseMimeType": "application/json",
                 },
             }
-            resp = requests.post(g_url, json=body, timeout=35)
-            if resp.status_code == 200:
+            resp = post(g_url, json=body)
+            if resp is not None and resp.status_code == 200:
                 txt = resp.json()["candidates"][0]["content"]["parts"][0]["text"]
                 parsed = _parse_ai_json(txt)
                 if parsed:
@@ -362,173 +257,387 @@ def ai_evaluate_comments(comments_batch: list) -> dict:
                     "temperature": 0.0,
                     "max_completion_tokens": max(1024, 256 * len(comments_batch)),
                 }
-                resp = requests.post(
+                resp = post(
                     f"{PROTO}ai.najafivip.ir/v1/chat/completions",
                     headers={"Authorization": f"Bearer {arvan_key}", "Content-Type": "application/json"},
                     json=body,
-                    timeout=35,
                 )
-                if resp.status_code == 200:
+                if resp is not None and resp.status_code == 200:
                     content = resp.json()["choices"][0]["message"]["content"]
                     parsed = _parse_ai_json(content)
                     if parsed:
                         print(f"[AI-TIER-2] Evaluated batch of {len(comments_batch)} comments with {model_name}.")
                         return parsed
             except Exception as e:
-                print(f"[WARN] Arvan {model_name} note: {e}")
+                print(f"[COMMENT-WARN] {model_name}: {type(e).__name__}")
 
     return {}
 
 
-def delete_comment_safely(youtube, comment_id: str) -> bool:
+
+class ReviewDeferred(Exception):
+    """A run reached a time or quota limit and can resume later."""
+
+
+def error_reason(exc):
+    if not isinstance(exc, HttpError):
+        return type(exc).__name__
     try:
-        youtube.comments().setModerationStatus(
-            id=comment_id,
-            moderationStatus="rejected",
-        ).execute()
-        return True
-    except Exception:
+        error = json.loads(exc.content)["error"]
+        return error.get("errors", [{}])[0].get("reason") or str(exc.resp.status)
+    except (TypeError, ValueError, KeyError, IndexError, AttributeError):
+        return str(exc.resp.status)
+
+
+def validated_decision(value):
+    if not isinstance(value, dict):
+        return None
+    action, reason, reply = (value.get(k) for k in ("action", "reason", "reply"))
+    if not all(isinstance(v, str) for v in (action, reason, reply)):
+        return None
+    action, reason, reply = action.strip().upper(), reason.strip().upper(), reply.strip()
+    if action == "REPLY" and reason in REPLYABLE_REASONS and 0 < len(reply) <= 300:
+        return action, reason, reply
+    if action == "IGNORE" and reason in VALID_REASONS - DELETE_REASONS and not reply:
+        return action, reason, ""
+    if action == "DELETE" and reason in DELETE_REASONS and not reply:
+        return action, reason, ""
+    return None
+
+
+class CommentReview:
+    def __init__(self, state, youtube, deadline):
+        self.state, self.youtube, self.deadline = state, youtube, deadline
+        self.data = state.setdefault("comment_manager", {})
+        self.data.setdefault("version", 1)
+        self.queue = self.data.setdefault("queue", {})
+        self.records = self.data.setdefault("records", {})
+        self.threads = self.data.setdefault("threads", {})
+        self.deleted = set(state.get("deleted_comments", []))
+        self.stats = dict.fromkeys(("discovered", "reviewed", "reviewed_no_reply", "replied",
+                                    "deleted", "errors", "retries", "archive_pages"), 0)
+        self.reset = get_quota_reset_key()
+        self.quota = self.data.get("quota")
+        if not self.quota or self.quota.get("date") != self.reset:
+            self.quota = self.data["quota"] = {"date": self.reset, "read": 0, "write": 0}
+        self.reply_attempts = 0
+        self.channel_id = None
+
+    def checkpoint(self):
+        self.data["last_run"] = {**self.stats, "remaining": len(self.queue),
+                                 "reply_threads_remaining": len(self.threads),
+                                 "read_units": self.quota["read"], "write_units": self.quota["write"]}
+        save_history(self.state)
+
+    def api(self, request, cost=1, kind="read"):
+        limit = READ_BUDGET if kind == "read" else WRITE_BUDGET
+        if self.deadline - time.monotonic() < 12 or self.quota[kind] + cost > limit:
+            raise ReviewDeferred(kind)
+        self.quota[kind] += cost
+        self.checkpoint()
         try:
-            youtube.comments().delete(id=comment_id).execute()
+            return request.execute()
+        except HttpError as exc:
+            if error_reason(exc) in {"quotaExceeded", "dailyLimitExceeded"}:
+                self.state["quota_exhausted_date"] = self.reset
+                raise ReviewDeferred("YouTube daily quota") from exc
+            raise
+
+    @staticmethod
+    def fingerprint(snippet):
+        return hashlib.sha256((snippet.get("textOriginal") or snippet.get("textDisplay") or "")
+                              .strip().encode("utf-8")).hexdigest()
+
+    def enqueue(self, comment, parent, video):
+        cid, snippet = comment.get("id"), comment.get("snippet", {})
+        if not cid or cid in self.deleted or (snippet.get("authorChannelId") or {}).get("value") == self.channel_id:
             return True
-        except Exception as e:
-            print(f"[WARN] Could not remove comment {comment_id}: {e}")
+        digest = self.fingerprint(snippet)
+        previous = self.queue.get(cid) or self.records.get(cid, {})
+        if self.queue.get(cid, {}).get("sent_at"):
+            return True
+        if previous.get("hash") == digest:
+            return True
+        if cid not in self.queue and len(self.queue) >= QUEUE_LIMIT:
             return False
-
-
-def reply_to_comment(youtube, parent_id: str, reply_text: str) -> bool:
-    try:
-        youtube.comments().insert(
-            part="snippet",
-            body={"snippet": {"parentId": parent_id, "textOriginal": reply_text}},
-        ).execute()
+        self.queue[cid] = {"parent": parent, "video": video, "hash": digest, "status": "pending"}
+        self.stats["discovered"] += 1
         return True
-    except Exception as e:
-        print(f"[WARN] Could not reply to {parent_id}: {e}")
-        return False
+
+    def scan(self, key, page_limit):
+        # Recent pages restart; the archive cursor survives checkpoints and wraps
+        # only at the end. A new pass also picks up edits and replies on old videos.
+        token = self.data.get(key) if key else None
+        for _ in range(page_limit):
+            try:
+                result = self.api(self.youtube.commentThreads().list(
+                    part="snippet,replies", allThreadsRelatedToChannelId=self.channel_id,
+                    moderationStatus="published", order="time", maxResults=COMMENT_PAGE_SIZE,
+                    textFormat="plainText", pageToken=token))
+            except HttpError as exc:
+                if key and token and error_reason(exc) == "invalidPageToken":
+                    self.data.pop(key, None)
+                    self.checkpoint()
+                    return
+                raise
+            for thread in result.get("items", []):
+                snippet = thread["snippet"]
+                top = snippet["topLevelComment"]
+                parent = top["id"]
+                video = snippet.get("videoId") or top["snippet"].get("videoId")
+                if not video:
+                    continue
+                if not self.enqueue(top, parent, video):
+                    self.checkpoint()
+                    return
+                replies = thread.get("replies", {}).get("comments", [])
+                if len(replies) < snippet.get("totalReplyCount", 0):
+                    self.threads.setdefault(parent, {"video": video})
+                for reply in replies:
+                    if not self.enqueue(reply, parent, video):
+                        self.checkpoint()
+                        return
+            token = result.get("nextPageToken")
+            if key:
+                self.data[key] = token
+                self.stats["archive_pages"] += 1
+            self.checkpoint()
+            if not token:
+                return
+
+    def scan_replies(self, page_limit=12):
+        # Rotate parents after each page so busy threads cannot starve others.
+        for _ in range(page_limit):
+            if not self.threads or len(self.queue) >= QUEUE_LIMIT:
+                return
+            parent = min(self.threads, key=lambda cid: self.threads[cid].get("last_checked", 0))
+            thread = self.threads[parent]
+            token = thread.get("token")
+            try:
+                result = self.list_replies(parent, token)
+            except HttpError as exc:
+                if error_reason(exc) in {"commentNotFound", "parentCommentNotFound"}:
+                    del self.threads[parent]
+                elif token and error_reason(exc) == "invalidPageToken":
+                    thread.pop("token", None)
+                    thread["last_checked"] = time.time()
+                else:
+                    raise
+                self.checkpoint()
+                continue
+            for reply in result.get("items", []):
+                if not self.enqueue(reply, parent, thread["video"]):
+                    self.checkpoint()
+                    return
+            if result.get("nextPageToken"):
+                thread.update(token=result["nextPageToken"], last_checked=time.time())
+            else:
+                del self.threads[parent]
+            self.checkpoint()
+
+    def list_replies(self, parent, token=None):
+        return self.api(self.youtube.comments().list(
+            part="snippet", parentId=parent, maxResults=100, textFormat="plainText", pageToken=token))
+
+    def terminal(self, cid, status, reason):
+        entry = self.queue.pop(cid)
+        self.records[cid] = {"status": status, "reason": reason, "hash": entry["hash"],
+                             "reviewed_at": int(time.time())}
+        if status in self.stats:
+            self.stats[status] += 1
+        self.checkpoint()
+
+    def retry(self, cid, reason):
+        entry = self.queue[cid]
+        attempts = entry.get("attempts", 0) + 1
+        entry.update(status="retry", error=reason, attempts=attempts,
+                     retry_at=time.time() + min(21600, 1800 * 2 ** min(attempts - 1, 4)))
+        self.stats["errors"] += 1
+        self.stats["retries"] += 1
+
+    def review_pending(self, batches=12):
+        missing_batches = 0
+        eligible = [cid for cid, entry in self.queue.items()
+                    if not entry.get("action") and entry.get("retry_at", 0) <= time.time()]
+        for offset in range(0, min(len(eligible), batches * BATCH_SIZE), BATCH_SIZE):
+            if self.deadline - time.monotonic() < 20:
+                break
+            cids = eligible[offset:offset + BATCH_SIZE]
+            result = self.api(self.youtube.comments().list(part="snippet", id=",".join(cids),
+                                                            textFormat="plainText"))
+            by_id = {comment["id"]: comment["snippet"] for comment in result.get("items", [])}
+            batch = []
+            for cid in cids:
+                if cid not in by_id:
+                    self.terminal(cid, "reviewed_no_reply", "no_longer_available")
+                    continue
+                snippet = by_id[cid]
+                entry = self.queue[cid]
+                entry["hash"] = self.fingerprint(snippet)
+                batch.append({"comment_id": cid, "video": entry["video"],
+                              "author": snippet.get("authorDisplayName") or "User",
+                              "text": snippet.get("textOriginal") or snippet.get("textDisplay") or ""})
+            if not batch:
+                continue
+            titles = self.api(self.youtube.videos().list(
+                part="snippet", id=",".join(dict.fromkeys(c["video"] for c in batch))))
+            title_map = {item["id"]: item["snippet"].get("title") for item in titles.get("items", [])}
+            for comment in batch:
+                comment["video_title"] = title_map.get(comment["video"]) or "ویدیوی فوتبال ایران"
+            decisions = ai_evaluate_comments(batch, self.deadline)
+            for index, comment in enumerate(batch):
+                cid = comment["comment_id"]
+                decision = validated_decision(decisions.get(str(index)))
+                if decision is None:
+                    self.retry(cid, "ai_missing_or_invalid")
+                    continue
+                action, reason, reply = decision
+                self.stats["reviewed"] += 1
+                if action == "IGNORE":
+                    self.terminal(cid, "reviewed_no_reply", reason)
+                else:
+                    self.queue[cid].update(action=action, reason=reason, reply=reply, status="pending")
+            self.checkpoint()
+            if not any(validated_decision(value) for value in decisions.values()):
+                missing_batches += 1
+                if missing_batches >= 2:
+                    break
+
+    def existing_reply(self, cid, entry):
+        # For a top-level comment, respect a previous channel reply even when
+        # legacy local state cannot distinguish sent replies from ignored items.
+        started = entry.get("sent_at")
+        if not started and cid != entry["parent"]:
+            return False
+        token = entry.get("reconcile_token")
+        while True:
+            try:
+                result = self.list_replies(entry["parent"], token)
+            except HttpError as exc:
+                if not token or error_reason(exc) != "invalidPageToken":
+                    raise
+                entry.pop("reconcile_token", None)
+                self.checkpoint()
+                raise ReviewDeferred("reply pagination changed") from exc
+            for reply in result.get("items", []):
+                snippet = reply["snippet"]
+                if (snippet.get("authorChannelId") or {}).get("value") != self.channel_id:
+                    continue
+                if not started and cid == entry["parent"]:
+                    return True
+                published = datetime.fromisoformat(snippet["publishedAt"]).timestamp()
+                if published >= started - 2 and (snippet.get("textOriginal") or snippet.get("textDisplay")) == entry["reply"]:
+                    return True
+            token = result.get("nextPageToken")
+            if not token:
+                entry.pop("reconcile_token", None)
+                return False
+            entry["reconcile_token"] = token
+            self.checkpoint()
+
+    def apply_decisions(self):
+        for cid in list(self.queue):
+            entry = self.queue[cid]
+            action = entry.get("action")
+            if not action or entry.get("retry_at", 0) > time.time():
+                continue
+            if action == "REPLY" and self.reply_attempts >= MAX_REPLIES_PER_RUN:
+                continue
+            if self.quota["write"] + 50 > WRITE_BUDGET:
+                return
+            try:
+                if action == "REPLY" and self.records.get(cid, {}).get("status") == "replied":
+                    self.terminal(cid, "replied", "previously_replied")
+                    continue
+                if action == "REPLY" and self.existing_reply(cid, entry):
+                    if entry.get("sent_at"):
+                        self.terminal(cid, "replied", entry["reason"])
+                    else:
+                        self.terminal(cid, "reviewed_no_reply", "channel_already_replied")
+                    continue
+                current = self.api(self.youtube.comments().list(part="snippet", id=cid, textFormat="plainText"))
+                items = current.get("items", [])
+                if not items:
+                    self.terminal(cid, "reviewed_no_reply", "no_longer_available")
+                    continue
+                digest = self.fingerprint(items[0]["snippet"])
+                if digest != entry["hash"]:
+                    self.queue[cid] = {"parent": entry["parent"], "video": entry["video"],
+                                       "hash": digest, "status": "pending"}
+                    self.checkpoint()
+                    continue
+                if action == "REPLY":
+                    if self.deadline - time.monotonic() < 12:
+                        raise ReviewDeferred("time")
+                    self.reply_attempts += 1
+                    entry["sent_at"] = time.time()
+                    self.api(self.youtube.comments().insert(
+                        part="snippet", body={"snippet": {"parentId": entry["parent"],
+                                                           "textOriginal": entry["reply"]}}),
+                             cost=50, kind="write")
+                    self.terminal(cid, "replied", entry["reason"])
+                else:
+                    self.api(self.youtube.comments().setModerationStatus(id=cid, moderationStatus="rejected"),
+                             cost=50, kind="write")
+                    self.terminal(cid, "deleted", entry["reason"])
+            except (HttpError, OSError) as exc:
+                reason = error_reason(exc)
+                if reason in {"commentNotFound", "parentCommentNotFound"}:
+                    self.terminal(cid, "reviewed_no_reply", reason)
+                else:
+                    self.retry(cid, reason)
+                    self.checkpoint()
+
+    def run(self):
+        channel = self.api(self.youtube.channels().list(part="id", mine=True))
+        self.channel_id = channel["items"][0]["id"]
+        # Relieve backpressure first, then alternate recent and archive discovery.
+        if len(self.queue) >= QUEUE_LIMIT - COMMENT_PAGE_SIZE:
+            self.review_pending(batches=8)
+            self.apply_decisions()
+        # Under sustained load, rotate which source can fill the available
+        # queue capacity first. Otherwise recent comments get first access.
+        congested = len(self.queue) >= QUEUE_LIMIT - COMMENT_PAGE_SIZE * 2
+        phase = self.data.get("scan_phase", 0)
+        self.data["scan_phase"] = (phase + 1) % 3
+        scanners = (lambda: self.scan(None, 2),
+                    lambda: self.scan("archive_token", 3),
+                    self.scan_replies)
+        for scan in scanners[phase:] + scanners[:phase] if congested else scanners:
+            if len(self.queue) < QUEUE_LIMIT:
+                scan()
+        self.review_pending()
+        self.apply_decisions()
 
 
 def main():
-    print("[COMMENT-AGENT] Starting Footballi AI Comment Moderator (Strict Schema + Contextual Video Titles)...")
     state = load_history()
-    reset_key = get_quota_reset_key()
+    deadline = time.monotonic() + RUN_SECONDS
+    if state.get("quota_exhausted_date") == get_quota_reset_key():
+        print("[COMMENT-AGENT] Waiting for the YouTube daily quota reset.")
+        return 0
 
-    if state.get("quota_exhausted_date") == reset_key:
-        print("⏸️ [COMMENT-AGENT] Daily YouTube API quota is full for today. Skipping until midnight Pacific quota reset.")
-        return
-
+    review = None
     try:
         youtube = get_authenticated_service()
-        ch_res = youtube.channels().list(part="id", mine=True).execute()
-        my_channel_id = ch_res["items"][0]["id"]
-    except HttpError as e:
-        if "quotaExceeded" in str(e):
-            state["quota_exhausted_date"] = reset_key
-            save_history(state)
-            print("⏸️ [COMMENT-AGENT] Daily YouTube API quota reached.")
-            return
-        print(f"[COMMENT-AGENT] Auth/Channel error: {e}")
-        return
-
-    ignored_ids = set(state.get("ignored_comments", []))
-    deleted_ids = set(state.get("deleted_comments", []))
-
-    try:
-        unreplied_comments = fetch_all_unreplied_channel_comments(
-            youtube, my_channel_id, ignored_ids, deleted_ids
-        )
-    except HttpError as e:
-        if "quotaExceeded" in str(e):
-            state["quota_exhausted_date"] = reset_key
-            save_history(state)
-            print("⏸️ [COMMENT-AGENT] Daily YouTube API quota reached during scan.")
-            return
-        print(f"[COMMENT-AGENT] Comment scan failed; pending comments will be retried: {e}")
-        return
-    except Exception as e:
-        print(f"[COMMENT-AGENT] Comment scan failed; pending comments will be retried: {e}")
-        return
-
-    if not unreplied_comments:
-        print("[COMMENT-AGENT] No eligible unreplied comments found in the scanned pages.")
-        return
-
-    print(f"[COMMENT-AGENT] Found {len(unreplied_comments)} unreplied comments. Processing in batches of {BATCH_SIZE}...")
-
-    deleted_count = 0
-    replied_count = 0
-    ignored_count = 0
-    retry_count = 0
-
-    for start_idx in range(0, len(unreplied_comments), BATCH_SIZE):
-        if replied_count >= MAX_REPLIES_PER_RUN:
-            break
-
-        batch = unreplied_comments[start_idx : start_idx + BATCH_SIZE]
-        decisions = ai_evaluate_comments(batch)
-        if not decisions:
-            retry_count += len(batch)
-            print(f"[COMMENT-AGENT] AI returned no usable decisions for {len(batch)} comments; keeping them for retry.")
-            continue
-
-        for idx, c in enumerate(batch):
-            decision = decisions.get(str(idx))
-            if not isinstance(decision, dict):
-                continue
-
-            action = str(decision.get("action", "")).upper().strip()
-            reply_text = str(decision.get("reply", "")).strip()
-            reason = str(decision.get("reason", "")).strip()
-            cid = c["comment_id"]
-
-            if reason not in VALID_REASONS:
-                continue
-
-            if action == "DELETE" and reason in DELETE_REASONS:
-                print(f"🚫 [OFFENSIVE | {reason}] {c['author']}: '{c['text'][:55]}'")
-                if delete_comment_safely(youtube, cid):
-                    deleted_ids.add(cid)
-                    deleted_count += 1
-                    print(f"🗑️ [MODERATOR] Removed comment ({cid}).")
-                else:
-                    retry_count += 1
-
-            elif action == "REPLY" and reason in REPLYABLE_REASONS and reply_text:
-                if replied_count < MAX_REPLIES_PER_RUN:
-                    print(f"✨ [ENGAGE] On '{c['video_title'][:30]}' -> {c['author']}: '{c['text'][:45]}'")
-                    if reply_to_comment(youtube, cid, reply_text):
-                        ignored_ids.add(cid)
-                        replied_count += 1
-                        print(f"💬 [REPLIED] Sent: '{reply_text}'")
-                        time.sleep(1.5)
-                    else:
-                        retry_count += 1
-                else:
-                    retry_count += 1
-
-            elif action == "IGNORE":
-                ignored_ids.add(cid)
-                ignored_count += 1
-            else:
-                # Invalid, incomplete, or failed actions must remain eligible
-                # for a later run; never mark them terminal just to make the
-                # summary look clean.
-                retry_count += 1
-
-            # Persist each successful action before processing the next comment.
-            state["ignored_comments"] = sorted(ignored_ids)[-1000:]
-            state["deleted_comments"] = sorted(deleted_ids)[-1000:]
-            save_history(state)
-
-    state["ignored_comments"] = sorted(ignored_ids)[-1000:]
-    state["deleted_comments"] = sorted(deleted_ids)[-1000:]
-    save_history(state)
-    print(
-        f"[COMMENT-AGENT] Run complete! Deleted: {deleted_count} | "
-        f"Replied: {replied_count} | Ignored: {ignored_count} | Retry pending: {retry_count}"
-    )
+        transport = getattr(youtube._http, "http", youtube._http)
+        transport.timeout = 8
+        review = CommentReview(state, youtube, deadline)
+        review.run()
+    except ReviewDeferred as exc:
+        print(f"[COMMENT-AGENT] Checkpointed for the next run ({exc}).")
+    except Exception as exc:
+        if review:
+            review.stats["errors"] += 1
+        print(f"[COMMENT-ERROR] {error_reason(exc)}")
+        return 1
+    finally:
+        if review:
+            review.checkpoint()
+            print("[COMMENT-AGENT]", json.dumps(review.data["last_run"], sort_keys=True))
+    return int(bool(review and review.stats["errors"] and not review.stats["reviewed"]
+                    and not review.stats["replied"] and not review.stats["deleted"]))
 
 
 if __name__ == "__main__":
-    main()
-
+    raise SystemExit(main())
