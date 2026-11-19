@@ -1,0 +1,39 @@
+name: Recover Short audio
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "ID of an authorized Instagram Short already uploaded by Footballi"
+        required: true
+        type: string
+      stage_upload:
+        description: "Stage a verified replacement on YouTube as unlisted"
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: footballi-bot-runner
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install --quiet --disable-pip-version-check -r requirements.txt 'yt-dlp==2026.10.26'
+      - name: Verify and rebuild original sound
+        env:
+          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+          RECOVER_VIDEO_ID: ${{ inputs.video_id }}
+          STAGE_UPLOAD: ${{ inputs.stage_upload }}
+        run: python -u prepare_short_recovery.py
