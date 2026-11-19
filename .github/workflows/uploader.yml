@@ -2,112 +2,174 @@ name: Footballi YouTube Bot & Comment Manager
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '10,40 * * * *'
+  pull_request:
   workflow_dispatch:
     inputs:
+      scheduled:
+        description: "Set by the external half-hour scheduler"
+        type: boolean
+        default: false
       force_instagram:
-        description: "Run Instagram check immediately, ignoring the normal cooldown"
-        required: false
+        description: "Check Instagram immediately"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Validate code and state without external writes"
         type: boolean
         default: false
 
 concurrency:
-  group: footballi-bot-runner
-  cancel-in-progress: true
+  group: ${{ github.event_name == 'pull_request' && github.ref || 'footballi-bot-runner' }}
+  cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  run-bot:
+  validate:
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    env:
-      PYTHONUNBUFFERED: "1"
-      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      ARVAN_API_KEY: ${{ secrets.ARVAN_API_KEY }}
-      APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-      CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
-      YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
-      APIFY_FORCE_CHECK: ${{ github.event.inputs.force_instagram == 'true' }}
-
+    timeout-minutes: 5
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Run Footballi Pipeline (All-in-One Live Log)
-        timeout-minutes: 14
-        run: |
-          echo "=== [1/5] Fast Setup: FFmpeg Static Binary & Python Packages ==="
-          if ! command -v ffmpeg &> /dev/null; then
-            curl --max-time 25 -sL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz | sudo tar -xJ --strip-components=2 -C /usr/local/bin --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
-          fi
+          cache: pip
+      - run: |
           pip install --quiet --disable-pip-version-check -r requirements.txt
-          echo "✅ Setup completed in seconds! FFmpeg: $(which ffmpeg) | Chrome: $(which google-chrome)"
+          python -m compileall -q .
+          if [ -d tests ]; then python -m unittest discover -s tests; fi
+          python growth_report.py
 
-          echo ""
-          echo "=== [2/5] Syncing YouTube Analytics ==="
-          analytics_status=0
-          python -u analytics.py || analytics_status=$?
+  run-bot:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    env:
+      PYTHONUNBUFFERED: "1"
 
-          echo ""
-          echo "=== [3/5] Running Footballi Video Uploader & Queue ==="
-          uploader_status=0
-          timeout --kill-after=15s 660s stdbuf -oL -eL python -u footballi_uploader.py || uploader_status=$?
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.dry_run && github.sha || 'main' }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
 
-          echo ""
-          echo "=== [4/5] Running AI Comment Moderator & Responder ==="
-          comment_status=0
-          timeout --kill-after=10s 120s stdbuf -oL -eL python -u comment_manager.py || comment_status=$?
+      - name: Check half-hour slot
+        id: slot
+        env:
+          AUTOMATIC: ${{ github.event_name == 'schedule' || inputs.scheduled }}
+          FORCE_INSTAGRAM: ${{ inputs.force_instagram }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          python - <<'PY'
+          import json, os, time
+          from pathlib import Path
+          state = json.loads(Path("uploaded_matches.json").read_text(encoding="utf-8"))
+          slot = int(time.time()) // 1800
+          automatic = os.getenv("AUTOMATIC") == "true" and os.getenv("FORCE_INSTAGRAM") != "true"
+          duplicate = automatic and state.get("last_successful_run_slot") == slot
+          dry = os.getenv("DRY_RUN") == "true"
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              print(f"slot={slot}", file=output)
+              print(f"live={str(not (duplicate or dry)).lower()}", file=output)
+          if duplicate and not dry:
+              print("This half-hour slot was already completed.")
+          PY
 
-          echo ""
-          echo "=== Growth report ==="
-          report_status=0
-          python -u growth_report.py || report_status=$?
-
-          echo ""
-          echo "=== [5/5] Saving Queue & Channel State ==="
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add uploaded_matches.json growth_report.md
-          push_status=0
-          if ! git diff --staged --quiet; then
-            git commit -m "Auto-update video queue and indexed matches [skip ci]"
-            git pull --rebase origin main || push_status=$?
-            if [ "$push_status" -eq 0 ]; then git push || push_status=$?; fi
-            if [ "$push_status" -eq 0 ]; then echo "✅ State saved and pushed!"; fi
-          else
-            echo "ℹ️ No changes to commit."
+      - name: Install dependencies
+        id: setup
+        if: steps.slot.outputs.live == 'true' || inputs.dry_run
+        timeout-minutes: 3
+        run: |
+          pip install --quiet --disable-pip-version-check -r requirements.txt
+          if [ "${{ steps.slot.outputs.live }}" = true ] && ! command -v ffmpeg > /dev/null; then
+            curl --fail --max-time 25 -sSL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz | sudo tar -xJ --strip-components=2 -C /usr/local/bin --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
           fi
 
-          echo "## Footballi run summary" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Analytics status: $analytics_status" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Report status: $report_status" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Uploader status: $uploader_status" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Comment manager status: $comment_status" >> "$GITHUB_STEP_SUMMARY"
-          echo "- State push status: $push_status" >> "$GITHUB_STEP_SUMMARY"
-          if [ -f uploaded_matches.json ]; then
-            python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json
-          with open("uploaded_matches.json", encoding="utf-8") as f:
-              state = json.load(f)
-          run = state.get("last_run", {})
-          analytics = state.get("analytics", {})
-          print(f"- Queue size: {run.get('queue_size', 0)}")
-          print(f"- New web candidates: {run.get('new_web_candidates', 0)}")
-          print(f"- New Instagram candidates: {run.get('new_instagram_candidates', 0)}")
-          print(f"- Analytics rows: {analytics.get('last_row_count', 0)}")
-          print(f"- Rejections: {run.get('rejected_by_reason', {})}")
+      - name: Validate without publishing
+        if: inputs.dry_run
+        run: |
+          python -m compileall -q .
+          if [ -d tests ]; then python -m unittest discover -s tests; fi
+          python growth_report.py
+
+      - name: Sync YouTube Analytics
+        id: analytics
+        if: steps.slot.outputs.live == 'true'
+        env:
+          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+        run: timeout --kill-after=5s 90s python -u analytics.py
+
+      - name: Review YouTube comments
+        id: comments
+        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' }}
+        env:
+          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ARVAN_API_KEY: ${{ secrets.ARVAN_API_KEY }}
+        run: timeout --kill-after=5s 235s python -u comment_manager.py
+
+      - name: Process video queue
+        id: uploader
+        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' }}
+        env:
+          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ARVAN_API_KEY: ${{ secrets.ARVAN_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
+          APIFY_FORCE_CHECK: ${{ inputs.force_instagram == true }}
+        run: timeout --kill-after=5s 595s python -u footballi_uploader.py
+
+      - name: Write run report
+        id: report
+        if: ${{ always() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' }}
+        timeout-minutes: 1
+        run: |
+          python growth_report.py
+          cat growth_report.md >> "$GITHUB_STEP_SUMMARY"
+          printf '\n## Stage outcomes\n- Analytics: %s\n- Comments: %s\n- Publishing: %s\n' \
+            '${{ steps.analytics.outcome }}' '${{ steps.comments.outcome }}' '${{ steps.uploader.outcome }}' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Save state on main
+        id: save
+        if: ${{ always() && steps.slot.outputs.live == 'true' }}
+        timeout-minutes: 1
+        env:
+          SLOT: ${{ steps.slot.outputs.slot }}
+          PIPELINE_OK: ${{ steps.analytics.outcome == 'success' && steps.comments.outcome == 'success' && steps.uploader.outcome == 'success' && steps.report.outcome == 'success' }}
+        run: |
+          cp uploaded_matches.json "$RUNNER_TEMP/footballi-recovery.json"
+          if [ "$PIPELINE_OK" = true ]; then
+            python - <<'PY'
+          from footballi_uploader import load_state, save_state
+          import os
+          state = load_state()
+          state["last_successful_run_slot"] = int(os.environ["SLOT"])
+          save_state(state)
           PY
           fi
-          if [ "$analytics_status" -ne 0 ] || [ "$report_status" -ne 0 ] || [ "$uploader_status" -ne 0 ] || [ "$comment_status" -ne 0 ] || [ "$push_status" -ne 0 ]; then
-            echo "❌ One or more pipeline stages failed." >&2
-            exit 1
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -- uploaded_matches.json
+          if [ -f growth_report.md ]; then git add -- growth_report.md; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Save Footballi bot state [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
 
+      - name: Keep state for recovery if saving failed
+        if: ${{ always() && steps.save.outcome == 'failure' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: footballi-state-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/footballi-recovery.json
+          retention-days: 3

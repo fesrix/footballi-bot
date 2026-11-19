@@ -441,8 +441,9 @@ class CommentReview:
 
     def terminal(self, cid, status, reason):
         entry = self.queue.pop(cid)
+        has_replied = status == "replied" or self.records.get(cid, {}).get("has_replied", False)
         self.records[cid] = {"status": status, "reason": reason, "hash": entry["hash"],
-                             "reviewed_at": int(time.time())}
+                             "reviewed_at": int(time.time()), "has_replied": has_replied}
         if status in self.stats:
             self.stats[status] += 1
         self.checkpoint()
@@ -546,8 +547,8 @@ class CommentReview:
             if self.quota["write"] + 50 > WRITE_BUDGET:
                 return
             try:
-                if action == "REPLY" and self.records.get(cid, {}).get("status") == "replied":
-                    self.terminal(cid, "replied", "previously_replied")
+                if action == "REPLY" and self.records.get(cid, {}).get("has_replied"):
+                    self.terminal(cid, "reviewed_no_reply", "previously_replied")
                     continue
                 if action == "REPLY" and self.existing_reply(cid, entry):
                     if entry.get("sent_at"):
