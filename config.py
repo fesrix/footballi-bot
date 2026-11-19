@@ -6,18 +6,13 @@ PROTO = "https://"
 HISTORY_FILE = "uploaded_matches.json"
 STATE_FILE = "uploaded_matches.json"
 
-# تنظیمات بهینه الگوریتم یوتیوب (کیفیت و ویو بالا به‌جای اسپم روزانه)
-MAX_DAILY_UPLOADS = 8
-RESERVED_SUMMARY_SLOTS = 3
-RESERVED_FOR_SUMMARIES = 3
-MAX_UPLOADS_PER_RUN = 1
-MIN_MINUTES_BETWEEN_UPLOADS = 150  # فاصله ۲.۵ ساعته بین ویدیوهای عادی
-MIN_MINUTES_BETWEEN_SHORTS = 90
-# Windows are Tehran local time (minutes from midnight). The scheduler keeps
-# long-form uploads away from overnight low-attention hours while allowing
-# Shorts to use a separate midday/evening cadence.
-MAIN_UPLOAD_WINDOWS = [(9 * 60 + 30, 12 * 60 + 30), (16 * 60, 24 * 60)]
-SHORT_UPLOAD_WINDOWS = [(11 * 60 + 30, 14 * 60 + 30), (18 * 60, 23 * 60 + 30)]
+# Routine uploads use separate Tehran-day limits and spacing by format.
+# Fresh, authorized match highlights have their own priority path.
+ROUTINE_DAILY_LIMITS = {"main": 2, "short": 2}
+ROUTINE_SPACING_MINUTES = {"main": 180, "short": 120}
+MAIN_UPLOAD_WINDOWS = [(10 * 60, 13 * 60), (16 * 60, 23 * 60 + 30)]
+SHORT_UPLOAD_WINDOWS = [(11 * 60 + 30, 15 * 60), (18 * 60, 23 * 60 + 30)]
+PRIORITY_SUMMARY_MAX_AGE_HOURS = 24
 APIFY_COOLDOWN_HOURS = 8.0
 INSTAGRAM_COOLDOWN_HOURS = 8.0
 

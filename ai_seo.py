@@ -68,8 +68,9 @@ TITLE
 
 CATEGORY RULES
 SUMMARY:
-  Clearly identify "خلاصه بازی" if supplied facts describe a match.
-  Include supplied teams; include a supplied unambiguous score.
+  Start with "خلاصه بازی" followed by the two supplied team names.
+  Include the supplied final score only when unambiguous. Use the real
+  competition or decisive match event in the description only if supplied.
   Never assume لیگ برتر ایران from SUMMARY.
   If match facts are missing, use the source's factual topic and do not
   invent teams or a competition.
@@ -195,6 +196,8 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
     system_prompt = SEO_PROMPT
     if guide:
         system_prompt += f"\nTitle preference, where supported by the source: {guide}"
+    if category == "SUMMARY":
+        system_prompt += "\nFor match highlights prioritize clear, source-grounded teams and score over any generic title preference."
     payload_data = {
         "title": title,
         "description": description or "",
@@ -217,7 +220,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
                     "responseMimeType": "application/json",
                 },
             }
-            r = requests.post(g_url, json=body, timeout=30)
+            r = requests.post(g_url, json=body, timeout=15 if category == "SUMMARY" else 30)
             if r.status_code == 200:
                 txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
                 parsed = json.loads(txt)
@@ -228,7 +231,10 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
             pass
 
     if arvan_key:
-        for model_name in ["Gemini-2.5-Flash-lite", "GPT-4o-mini", "GPT-4.1-Nano"]:
+        models = ["Gemini-2.5-Flash-lite"] if category == "SUMMARY" else [
+            "Gemini-2.5-Flash-lite", "GPT-4o-mini", "GPT-4.1-Nano"
+        ]
+        for model_name in models:
             try:
                 body = {
                     "model": model_name,
@@ -243,7 +249,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
                     f"{PROTO}ai.najafivip.ir/v1/chat/completions",
                     headers={"Authorization": f"Bearer {arvan_key}", "Content-Type": "application/json"},
                     json=body,
-                    timeout=30,
+                    timeout=15 if category == "SUMMARY" else 30,
                 )
                 if r.status_code == 200:
                     txt = r.json()["choices"][0]["message"]["content"].strip()
@@ -256,7 +262,11 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
             except Exception:
                 continue
 
-    clean_t = re.sub(r"[<>\r\n]", " ", title).replace("ي", "ی").replace("ك", "ک").strip()[:88]
+    clean_t = re.sub(r"[<>\r\n]", " ", title).replace("ي", "ی").replace("ك", "ک").strip()
+    if category == "SUMMARY":
+        prefix = re.compile(r"^(?:خلاصه\s+(?:بازی|دیدار|مسابقه)|گل[‌\s]*های بازی)\s*[:،\-–]?\s*")
+        clean_t = f"خلاصه بازی {prefix.sub('', clean_t)}".strip()
+    clean_t = clean_t[:88]
     hashtag_tail = "#فوتبالی #Shorts" if is_short else "#فوتبالی"
     clean_d = f"{clean_t}\n\n{description or clean_t}\n\n{hashtag_tail}".strip()
     return validate_seo_result({

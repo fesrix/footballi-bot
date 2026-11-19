@@ -159,6 +159,7 @@ def sync_analytics(state: dict | None = None) -> int:
     video_ids.extend(it["contentDetails"]["videoId"] for it in recent.get("items", []))
     video_ids.extend(sorted(metadata, key=lambda vid: metadata[vid].get("published_at") or "", reverse=True)[:30])
     _enrich_video_metadata(state, youtube, list(dict.fromkeys(video_ids)))
+    _backfill_content_formats(state, analytics, start_date, end_date)
     save_state(state)
     _collect_first_three_days(state, analytics, date.fromisoformat(end_date))
     state["learning"] = build_policy(state, datetime.now(timezone.utc))
@@ -192,7 +193,7 @@ def _enrich_video_metadata(state: dict, youtube, video_ids: list[str]) -> None:
             cat = metadata.get("category")
             record["category"] = cat or detect_primary_category(title, is_short=record.get("format") == "short")
             if cat:
-                record["format"] = "short" if cat == "SHORTS" else "main"
+                record["format"] = metadata.get("format") or ("short" if cat == "SHORTS" else "main")
                 record["source"] = metadata.get("source") or "youtube"
             record["published_at"] = snippet.get("publishedAt")
             record["recent_statistics"] = {
@@ -200,6 +201,47 @@ def _enrich_video_metadata(state: dict, youtube, video_ids: list[str]) -> None:
                 for key in ("viewCount", "likeCount", "commentCount")
             }
     state["analytics"]["video_count"] = len(videos)
+
+
+def _backfill_content_formats(state, service, start_date, end_date):
+    analytics_state = state["analytics"]
+    if analytics_state.get("format_report_through") == end_date:
+        return
+    videos = analytics_state["videos"]
+    if not any(record.get("format") not in {"main", "short"} for record in videos.values()):
+        return
+
+    # This documented top-videos report supports creatorContentType as a
+    # secondary dimension. One call recovers historical formats for the channel.
+    try:
+        response = service.reports().query(
+            ids="channel==MINE", dimensions="video,creatorContentType", metrics="views",
+            sort="-views", maxResults=200, startDate=start_date, endDate=end_date,
+        ).execute()
+    except HttpError as exc:
+        if exc.resp.status != 400:
+            raise
+        print("[ANALYTICS-WARN] The channel content-format report is unavailable.")
+        analytics_state["format_report_through"] = end_date
+        return
+
+    kinds = {}
+    for video_id, kind, views in response.get("rows", []):
+        if views > 0:
+            kinds.setdefault(video_id, set()).add(kind)
+    recovered = 0
+    for video_id, video_kinds in kinds.items():
+        record = videos.get(video_id)
+        if record is None or record.get("format") in {"main", "short"} or len(video_kinds) != 1:
+            continue
+        fmt = {"SHORTS": "short", "VIDEO_ON_DEMAND": "main"}.get(next(iter(video_kinds)))
+        if fmt:
+            record["format"] = fmt
+            if fmt == "short":
+                record["category"] = "SHORTS"
+            recovered += 1
+    analytics_state["format_report_through"] = end_date
+    print(f"[ANALYTICS] Recovered verified formats for {recovered} videos.")
 
 
 def _collect_first_three_days(state, service, complete_through):
@@ -217,20 +259,6 @@ def _collect_first_three_days(state, service, complete_through):
         record = videos[video_id]
         params = dict(ids="channel==MINE", filters=f"video=={video_id}",
                       startDate=start.isoformat(), endDate=end.isoformat())
-        if record.get("format") not in {"main", "short"}:
-            try:
-                type_report = service.reports().query(**params, metrics="views",
-                                                       dimensions="creatorContentType").execute()
-                kinds = {row[0] for row in type_report.get("rows", [])}
-            except HttpError as exc:
-                if exc.resp.status != 400:
-                    raise
-                print("[ANALYTICS-WARN] Content format is unavailable for an older video.")
-                kinds = set()
-            record["format"] = {"SHORTS": "short", "VIDEO_ON_DEMAND": "main"}.get(
-                next(iter(kinds)) if len(kinds) == 1 else "", "unknown")
-            if record["format"] == "short":
-                record["category"] = "SHORTS"
         metrics = "views,estimatedMinutesWatched,subscribersGained,averageViewPercentage"
         report = service.reports().query(**params, metrics=metrics).execute()
         keys = [col["name"] for col in report.get("columnHeaders", [])]

@@ -111,15 +111,6 @@ jobs:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
         run: timeout --kill-after=5s 90s python -u analytics.py
 
-      - name: Review YouTube comments
-        id: comments
-        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' && !inputs.playlists_only }}
-        env:
-          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ARVAN_API_KEY: ${{ secrets.ARVAN_API_KEY }}
-        run: timeout --kill-after=5s 235s python -u comment_manager.py
-
       - name: Process video queue
         id: uploader
         if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' && !inputs.playlists_only }}
@@ -131,6 +122,15 @@ jobs:
           CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
           APIFY_FORCE_CHECK: ${{ inputs.force_instagram == true }}
         run: timeout --kill-after=5s 595s python -u footballi_uploader.py
+
+      - name: Review YouTube comments
+        id: comments
+        if: ${{ !cancelled() && steps.slot.outputs.live == 'true' && steps.setup.outcome == 'success' && !inputs.playlists_only }}
+        env:
+          YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ARVAN_API_KEY: ${{ secrets.ARVAN_API_KEY }}
+        run: timeout --kill-after=5s 235s python -u comment_manager.py
 
       - name: Curate public playlists
         if: steps.slot.outputs.live == 'true' && inputs.playlists_only

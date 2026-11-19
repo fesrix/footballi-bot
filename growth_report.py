@@ -49,6 +49,14 @@ def build_report(state: dict) -> str:
         f"- New Instagram candidates: {state.get('last_run', {}).get('new_instagram_candidates', 0)}",
         f"- Rejections: {state.get('last_run', {}).get('rejected_by_reason', {})}",
     ])
+    run = state.get("last_run", {})
+    for label, key in (("Published this run", "uploads"), ("Published today by format", "daily_uploads")):
+        counts = run.get(key)
+        if counts:
+            lines.append(f"- {label}: {counts['main']} main, {counts['short']} Shorts, "
+                         f"{counts['priority_summaries']} priority highlights")
+    if run.get("media_retries"):
+        lines.append(f"- Retained media failures: {run['media_retries']}")
     comments = state.get("comment_manager", {}).get("last_run", {})
     if comments:
         lines.extend(["", "## Comment review",
