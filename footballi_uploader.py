@@ -850,6 +850,17 @@ def main():
                 state["rejected_urls"].append(top["url"])
                 state["seen_mp4s"].append(top["mp4_url"])
                 continue
+            audio_issue, peak = media_utils.inspect_audio_file(video_file)
+            if audio_issue:
+                print(f"[SHORT-AUDIO-SKIP] {audio_issue}: {top['title']}")
+                counts = state["last_run"]["rejected_by_reason"]
+                counts[audio_issue] = counts.get(audio_issue, 0) + 1
+                if audio_issue in {"missing_audio", "silent_audio"}:
+                    state["pending_queue"].remove(top)
+                    state["seen_mp4s"].append(top["mp4_url"])
+                save_state(state)
+                continue
+            print(f"[SHORT-AUDIO] Decoded audio peak: {peak:.1f} dBFS")
             print(f"📱 [VERTICAL-SHORTS] Approved 720p+ HD vertical video ({w}x{h}, {dur:.0f}s) for Shorts upload.")
             candidate = top
             break

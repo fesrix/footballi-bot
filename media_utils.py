@@ -4,9 +4,34 @@ import json
 import subprocess
 import time
 import math
+import re
 import requests
 from config import HEADERS
 from ai_seo import sanitize_url
+
+
+def inspect_audio_file(filepath):
+    """Return an issue code (or None) and measured peak dBFS for decoded audio."""
+    try:
+        probe = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "a:0",
+             "-show_entries", "stream=codec_name", "-of", "json", filepath],
+            capture_output=True, text=True, timeout=15, check=True,
+        )
+        if not json.loads(probe.stdout).get("streams"):
+            return "missing_audio", None
+        scan = subprocess.run(
+            ["ffmpeg", "-nostdin", "-hide_banner", "-v", "info", "-xerror", "-i", filepath,
+             "-map", "0:a:0", "-af", "volumedetect", "-f", "null", "-"],
+            capture_output=True, text=True, timeout=30, check=True,
+        )
+        match = re.search(r"max_volume:\s+(-?\d+(?:\.\d+)?)\s+dB", scan.stderr)
+        if not match:
+            return "audio_probe_failed", None
+        peak = float(match.group(1))
+        return ("silent_audio" if peak < -65 else None), peak
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return "audio_probe_failed", None
 
 
 def inspect_video_file(filepath):
