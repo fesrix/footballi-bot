@@ -272,7 +272,7 @@ def _format_from_owned_file(entry):
 
 def _backfill_formats_from_owned_files(state, youtube, end_date):
     analytics_state = state["analytics"]
-    if analytics_state.get("file_format_report_through") == end_date:
+    if analytics_state.get("owner_file_formats_through") == end_date:
         return
     videos = analytics_state["videos"]
     # YouTube's square/vertical three-minute rule covers all channel types
@@ -294,13 +294,13 @@ def _backfill_formats_from_owned_files(state, youtube, end_date):
             result = youtube.videos().list(
                 part="fileDetails,liveStreamingDetails", id=",".join(batch),
                 fields="items(id,liveStreamingDetails(actualStartTime),"
-                       "fileDetails(durationMs,videoStreams(widthPixels,heightPixels,rotation))",
+                       "fileDetails(durationMs,videoStreams(widthPixels,heightPixels,rotation)))",
             ).execute()
         except HttpError as exc:
             if exc.resp.status not in {400, 403}:
                 raise
-            print(f"[ANALYTICS-WARN] Owner file format data is unavailable (HTTP {exc.resp.status}).")
-            break
+            print(f"[ANALYTICS-WARN] Owner file format data is unavailable (HTTP {exc.resp.status}): {exc.reason}")
+            return
         for entry in result.get("items", []):
             fmt = _format_from_owned_file(entry)
             if fmt:
@@ -310,7 +310,7 @@ def _backfill_formats_from_owned_files(state, youtube, end_date):
                 if fmt == "short":
                     record["category"] = "SHORTS"
                 recovered += 1
-    analytics_state["file_format_report_through"] = end_date
+    analytics_state["owner_file_formats_through"] = end_date
     print(f"[ANALYTICS] Recovered {recovered} formats from YouTube owner file metadata.")
 
 

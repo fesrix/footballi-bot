@@ -123,7 +123,10 @@ class LearningTests(unittest.TestCase):
                          ["short", "main", "main", "unknown", "unknown"])
         self.assertEqual(records["short"]["format_source"], "owner_file_details")
         analytics._backfill_formats_from_owned_files(state, youtube, "2026-11-16")
-        youtube.videos.return_value.list.assert_called_once()
+        video_list = youtube.videos.return_value.list
+        video_list.assert_called_once()
+        fields = video_list.call_args.kwargs["fields"]
+        self.assertEqual(fields.count("("), fields.count(")"))
 
     def test_backfill_uses_first_three_days_and_authoritative_short_type(self):
         from datetime import date
