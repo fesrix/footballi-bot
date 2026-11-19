@@ -160,6 +160,7 @@ def sync_analytics(state: dict | None = None) -> int:
     video_ids.extend(sorted(metadata, key=lambda vid: metadata[vid].get("published_at") or "", reverse=True)[:30])
     _enrich_video_metadata(state, youtube, list(dict.fromkeys(video_ids)))
     _backfill_content_formats(state, analytics, start_date, end_date)
+    _backfill_formats_from_owned_files(state, youtube, end_date)
     save_state(state)
     _collect_first_three_days(state, analytics, date.fromisoformat(end_date))
     state["learning"] = build_policy(state, datetime.now(timezone.utc))
@@ -194,6 +195,7 @@ def _enrich_video_metadata(state: dict, youtube, video_ids: list[str]) -> None:
             record["category"] = cat or detect_primary_category(title, is_short=record.get("format") == "short")
             if cat:
                 record["format"] = metadata.get("format") or ("short" if cat == "SHORTS" else "main")
+                record["format_source"] = "published_metadata"
                 record["source"] = metadata.get("source") or "youtube"
             record["published_at"] = snippet.get("publishedAt")
             record["recent_statistics"] = {
@@ -237,11 +239,79 @@ def _backfill_content_formats(state, service, start_date, end_date):
         fmt = {"SHORTS": "short", "VIDEO_ON_DEMAND": "main"}.get(next(iter(video_kinds)))
         if fmt:
             record["format"] = fmt
+            record["format_source"] = "creatorContentType"
             if fmt == "short":
                 record["category"] = "SHORTS"
             recovered += 1
     analytics_state["format_report_through"] = end_date
     print(f"[ANALYTICS] Recovered verified formats for {recovered} videos.")
+
+
+def _format_from_owned_file(entry):
+    if entry.get("liveStreamingDetails"):
+        return None
+    file_details = entry.get("fileDetails") or {}
+    streams = file_details.get("videoStreams") or []
+    if len(streams) != 1:
+        return None
+    stream = streams[0]
+    try:
+        duration = int(file_details["durationMs"])
+        width, height = int(stream["widthPixels"]), int(stream["heightPixels"])
+    except (KeyError, TypeError, ValueError, OverflowError):
+        return None
+    rotation = stream.get("rotation", "none")
+    if min(width, height, duration) <= 0 or rotation not in {
+        "none", "upsideDown", "clockwise", "counterClockwise"
+    }:
+        return None
+    if rotation in {"clockwise", "counterClockwise"}:
+        width, height = height, width
+    return "short" if height >= width and duration <= 180_000 else "main"
+
+
+def _backfill_formats_from_owned_files(state, youtube, end_date):
+    analytics_state = state["analytics"]
+    if analytics_state.get("file_format_report_through") == end_date:
+        return
+    videos = analytics_state["videos"]
+    # YouTube's square/vertical three-minute rule covers all channel types
+    # after December 8, 2025. Older or ambiguous uploads stay unclassified.
+    eligible = []
+    for video_id, record in videos.items():
+        if record.get("format") in {"main", "short"}:
+            continue
+        published = timestamp(record.get("published_at"))
+        if published and published.astimezone(PACIFIC).date() >= date(2025, 12, 9):
+            eligible.append(video_id)
+    if not eligible:
+        return
+
+    recovered = 0
+    for offset in range(0, len(eligible), 50):
+        batch = eligible[offset:offset + 50]
+        try:
+            result = youtube.videos().list(
+                part="fileDetails,liveStreamingDetails", id=",".join(batch),
+                fields="items(id,liveStreamingDetails(actualStartTime),"
+                       "fileDetails(durationMs,videoStreams(widthPixels,heightPixels,rotation))",
+            ).execute()
+        except HttpError as exc:
+            if exc.resp.status not in {400, 403}:
+                raise
+            print(f"[ANALYTICS-WARN] Owner file format data is unavailable (HTTP {exc.resp.status}).")
+            break
+        for entry in result.get("items", []):
+            fmt = _format_from_owned_file(entry)
+            if fmt:
+                record = videos[entry["id"]]
+                record["format"] = fmt
+                record["format_source"] = "owner_file_details"
+                if fmt == "short":
+                    record["category"] = "SHORTS"
+                recovered += 1
+    analytics_state["file_format_report_through"] = end_date
+    print(f"[ANALYTICS] Recovered {recovered} formats from YouTube owner file metadata.")
 
 
 def _collect_first_three_days(state, service, complete_through):

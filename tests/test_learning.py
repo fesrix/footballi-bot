@@ -100,6 +100,31 @@ class LearningTests(unittest.TestCase):
         self.assertTrue(all(style == "context" for style, experiment in choices if not experiment))
         self.assertEqual(choices, [title_choice(item, policy, "main", NOW) for item in candidates])
 
+    def test_owned_file_format_fallback_respects_duration_rotation_and_livestream(self):
+        def details(video_id, duration, width, height, rotation="none", **extra):
+            return {"id": video_id, "fileDetails": {
+                "durationMs": duration,
+                "videoStreams": [{"widthPixels": width, "heightPixels": height, "rotation": rotation}],
+            }, **extra}
+
+        records = {key: {"published_at": NOW.isoformat(), "format": "unknown"}
+                   for key in ("short", "long", "vertical_long", "stream", "invalid")}
+        state = {"analytics": {"videos": records}}
+        youtube = Mock()
+        youtube.videos.return_value.list.return_value.execute.return_value = {"items": [
+            details("short", "180000", 1920, 1080, "clockwise"),
+            details("long", "90000", 1920, 1080),
+            details("vertical_long", "180001", 1080, 1920),
+            details("stream", "90000", 1920, 1080, liveStreamingDetails={"actualStartTime": NOW.isoformat()}),
+            details("invalid", "90000", 1920, 1080, "other"),
+        ]}
+        analytics._backfill_formats_from_owned_files(state, youtube, "2026-11-16")
+        self.assertEqual([records[key]["format"] for key in records],
+                         ["short", "main", "main", "unknown", "unknown"])
+        self.assertEqual(records["short"]["format_source"], "owner_file_details")
+        analytics._backfill_formats_from_owned_files(state, youtube, "2026-11-16")
+        youtube.videos.return_value.list.assert_called_once()
+
     def test_backfill_uses_first_three_days_and_authoritative_short_type(self):
         from datetime import date
 
