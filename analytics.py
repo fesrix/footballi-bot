@@ -7,6 +7,7 @@ YouTube, so the query ends two days ago and is refreshed on every scheduled run.
 """
 
 import json
+import math
 import os
 import time
 from datetime import date, datetime, timedelta, timezone
@@ -92,8 +93,10 @@ def _query_video_rows(analytics, start_date: str, end_date: str) -> list[dict]:
 def _as_number(value):
     try:
         number = float(value)
+        if not math.isfinite(number):
+            return 0
         return int(number) if number.is_integer() else round(number, 3)
-    except (TypeError, ValueError):
+    except (TypeError, ValueError, OverflowError):
         return 0
 
 
