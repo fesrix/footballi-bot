@@ -668,7 +668,9 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "source": "footballi_web",
             "source_url": details["url"],
             "source_published_at": details["published_at"],
-            # The current crawl is authoritative freshness evidence when the page omits a date.\n            # This also covers newly surfaced IDs that are below the stored site head.\n            "source_first_seen_at": recent_ids.get(str(details["video_id"])) or observed_at,
+            # The current crawl is authoritative freshness evidence when the page omits a date.
+            # This also covers newly surfaced IDs that are below the stored site head.
+            "source_first_seen_at": recent_ids.get(str(details["video_id"])) or observed_at,
             "rights_status": "internal_authorized",
             "content_type": "footballi_web_video",
             "discovery_timestamp": time.time(),
