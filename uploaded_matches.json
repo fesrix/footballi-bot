@@ -1333,7 +1333,8 @@
     "TRACTOR": "PLQv9XAlsEx8o",
     "TRANSFERS": "PLZozPlKYbNbQ",
     "TEAM_MELLI": "PLG15F1nvU1DI",
-    "INTERVIEW": "PLYpSSuFpmCkA"
+    "INTERVIEW": "PLYpSSuFpmCkA",
+    "FANS_STADIUM": "PLR2Lb5kN0V38"
   },
   "playlist_assignments": {
     "itGTGlK1vO0": [
@@ -1442,6 +1443,7 @@
       "ESTEGHLAL"
     ],
     "QexBPX9WY7w": [
+      "FANS_STADIUM",
       "INTERVIEW",
       "PERSEPOLIS"
     ],
@@ -1469,12 +1471,14 @@
       "INTERVIEW"
     ],
     "_3OROS99wxQ": [
+      "INTERVIEW",
       "SHORTS"
     ],
     "j4bjTRVQ0nY": [
-      "SHORTS",
       "ESTEGHLAL",
-      "PERSEPOLIS"
+      "FANS_STADIUM",
+      "PERSEPOLIS",
+      "SHORTS"
     ],
     "R2Uy8OtsuQM": [
       "SHORTS"
@@ -1528,12 +1532,14 @@
       "SHORTS"
     ],
     "jKuTNGoRG8Y": [
+      "FANS_STADIUM",
       "PERSEPOLIS",
       "SHORTS"
     ],
     "OawsusTUJ_0": [
-      "SHORTS",
-      "PERSEPOLIS"
+      "INTERVIEW",
+      "PERSEPOLIS",
+      "SHORTS"
     ],
     "R0TxSs1SUdE": [
       "INTERVIEW"
@@ -1707,8 +1713,9 @@
       "SHORTS"
     ],
     "_kfhPpKTxp0": [
-      "POSHTE_KHAT",
-      "PERSEPOLIS"
+      "INTERVIEW",
+      "PERSEPOLIS",
+      "POSHTE_KHAT"
     ],
     "kcXtfRp5vGw": [
       "INTERVIEW"
@@ -1728,9 +1735,11 @@
       "SHORTS"
     ],
     "SgjSIJjRllI": [
+      "FANS_STADIUM",
       "SHORTS"
     ],
     "Odu2hIUafqw": [
+      "FANS_STADIUM",
       "SHORTS"
     ],
     "7gY733Mk_Dw": [
@@ -1809,6 +1818,7 @@
       "INTERVIEW"
     ],
     "3_4mnhwaJdg": [
+      "INTERVIEW",
       "SHORTS",
       "TEAM_MELLI"
     ],
@@ -1821,8 +1831,9 @@
       "INTERVIEW"
     ],
     "SBlVEUMTVj8": [
-      "TEAM_MELLI",
-      "POSHTE_KHAT"
+      "INTERVIEW",
+      "POSHTE_KHAT",
+      "TEAM_MELLI"
     ],
     "FXfpPnmOdhI": [
       "SHORTS",
@@ -1833,8 +1844,9 @@
       "ESTEGHLAL"
     ],
     "CDWL_-oTZ40": [
-      "TEAM_MELLI",
-      "SHORTS"
+      "INTERVIEW",
+      "SHORTS",
+      "TEAM_MELLI"
     ]
   },
   "upload_limit_cooldown_until": 0,
