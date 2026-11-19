@@ -8,8 +8,8 @@ STATE_FILE = "uploaded_matches.json"
 
 # Routine uploads use separate Tehran-day limits and spacing by format.
 # Fresh, authorized match highlights have their own priority path.
-ROUTINE_DAILY_LIMITS = {"main": 2, "short": 2}
-ROUTINE_SPACING_MINUTES = {"main": 180, "short": 120}
+ROUTINE_DAILY_LIMITS = {"main": 4, "short": 2}
+ROUTINE_SPACING_MINUTES = {"main": 150, "short": 120}
 MAIN_UPLOAD_WINDOWS = [(10 * 60, 13 * 60), (16 * 60, 23 * 60 + 30)]
 SHORT_UPLOAD_WINDOWS = [(11 * 60 + 30, 15 * 60), (18 * 60, 23 * 60 + 30)]
 PRIORITY_SUMMARY_MAX_AGE_HOURS = 24
