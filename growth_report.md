@@ -17,17 +17,17 @@
 
 ## Last run
 
-- New web candidates: 0
+- New web candidates: 1
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 1 main, 2 Shorts, 0 priority highlights
 
 ## Comment review
-- Discovered: 3 | Reviewed by AI: 3
-- Kept without reply: 3 | Replied: 0 | Removed: 0
+- Discovered: 1 | Reviewed by AI: 1
+- Kept without reply: 0 | Replied: 1 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 45 | Write quota: 100
+- Archive pages processed: 2 | Read quota: 54 | Write quota: 150
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
