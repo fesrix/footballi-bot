@@ -299,6 +299,7 @@ def load_state() -> dict:
         "analytics": {},
         "published_metadata": {},
         "rights_migration_version": 0,
+        "priority_migration_version": 0,
     }
     if os.path.exists(STATE_FILE):
         try:
@@ -321,6 +322,21 @@ def load_state() -> dict:
                             item.setdefault("source_url", item.get("url", ""))
                             item.setdefault("content_type", "short" if item.get("is_short") else "video")
                 data["rights_migration_version"] = 1
+            if int(data.get("priority_migration_version", 0) or 0) < 1:
+                for metadata in data.get("published_metadata", {}).values():
+                    if not isinstance(metadata, dict) or metadata.get("priority_class") != "match_day":
+                        continue
+                    title_text = normalize_persian(" ".join(str(metadata.get(key, ""))
+                                                               for key in ("title", "source_title"))).casefold()
+                    match_signal = any(normalize_persian(keyword).casefold() in title_text
+                                       for keyword in MATCH_FAN_KEYWORDS + MATCH_PREVIEW_KEYWORDS + MATCH_INTERVIEW_KEYWORDS)
+                    if not match_signal:
+                        for key in ("priority_class", "priority_reason", "fixture_id",
+                                    "fixture_relation", "priority_until", "home_team",
+                                    "away_team", "competition", "kickoff_at"):
+                            metadata.pop(key, None)
+                        metadata["priority_summary"] = False
+                data["priority_migration_version"] = 1
             return data
         except Exception as e:
             # Never replace damaged upload history with an empty successful state.

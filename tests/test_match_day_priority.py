@@ -81,6 +81,23 @@ class MatchDayPriorityTests(unittest.TestCase):
         }
         self.assertFalse(uploader.is_priority_item(item, {"live_fixtures": {"fixtures": [fixture]}}, self.now))
 
+    def test_state_migration_removes_old_false_match_day_priority(self):
+        state = {
+            "published_metadata": {
+                "goal": {"title": "گل اول پرسپولیس به پیکان", "priority_class": "match_day",
+                         "priority_reason": "fan:سکو", "priority_summary": False},
+                "fan": {"title": "مصاحبه هواداران پرسپولیس", "priority_class": "match_day",
+                        "priority_reason": "fan:هواداران", "priority_summary": False},
+            },
+            "priority_migration_version": 0,
+        }
+        migrated = uploader.load_state
+        with patch("footballi_uploader.os.path.exists", return_value=True), \
+             patch("builtins.open", side_effect=[__import__("io").StringIO(__import__("json").dumps(state))]):
+            result = migrated()
+        self.assertNotIn("priority_class", result["published_metadata"]["goal"])
+        self.assertEqual(result["published_metadata"]["fan"]["priority_class"], "match_day")
+
     def test_editorial_categories_bypass_routine_schedule_with_rights(self):
         item = {
             "source": "footballi_web", "source_url": "https://footballi.net/video/1076001",
