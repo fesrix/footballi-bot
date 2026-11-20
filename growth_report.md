@@ -3,7 +3,7 @@
 - Analytics window: 2026-08-20 → 2026-11-17
 - Tracked videos: 115
 - Queue size: 19
-- Uploads today: 13
+- Uploads today: 0
 
 ## Performance by category
 
@@ -22,17 +22,17 @@
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 4 main, 2 Shorts, 4 priority highlights
+- Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 0
-- Kept without reply: 0 | Replied: 0 | Removed: 0
+- Discovered: 1 | Reviewed by AI: 1
+- Kept without reply: 1 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 195 | Write quota: 500
+- Archive pages processed: 2 | Read quota: 202 | Write quota: 500
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
