@@ -900,11 +900,12 @@ def download_candidate(top, path, state, deadline):
     return ""
 
 
-def retain_media_retry(item, state, reason):
+def retain_media_retry(item, state, reason, *, priority=False):
     # Delay only this item, limiting repeated requests against broken source URLs.
     failures = safe_int(item.get("download_failures")) + 1
     item["download_failures"] = failures
-    item["next_media_attempt"] = time.time() + min(120, 20 * 2 ** min(failures - 1, 3)) * 60
+    delay_minutes = 1 if priority else min(120, 20 * 2 ** min(failures - 1, 3))
+    item["next_media_attempt"] = time.time() + delay_minutes * 60
     label = item.get("video_id") or item.get("source", "unknown")
     print(f"[MEDIA-RETRY] {label}: {reason}; trying the next eligible candidate.")
     counts = state["last_run"]["media_retries"]
@@ -948,12 +949,13 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             print(f"♻️ [SKIP-DUPLICATE] Already uploaded to channel: {top['title']}")
             state["pending_queue"].remove(top)
             continue
-        next_attempt = timestamp(top.get("next_media_attempt"))
-        if next_attempt and datetime.now(timezone.utc) < next_attempt:
-            continue
-
         tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
         cat_check = "SHORTS" if top.get("is_short") else top.get("category", "VIDEO")
+        priority_context = priority_item_context(top, state, tehran_now)
+        priority_item = bool(priority_context)
+        next_attempt = timestamp(top.get("next_media_attempt"))
+        if next_attempt and datetime.now(timezone.utc) < next_attempt and not priority_item:
+            continue
         blocked = publication_block(top, cat_check, state, policy, tehran_now)
         # A website clip with unverified dimensions may turn out to be a Short.
         may_be_short = top.get("source") == "footballi_web" and "verified_is_short" not in top
@@ -979,13 +981,17 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
                 continue
 
         downloaded_url = download_candidate(top, video_file, state, deadline)
+        if not downloaded_url and priority_item and deadline - time.monotonic() > 150:
+            top["download_failures"] = max(1, safe_int(top.get("download_failures")))
+            print(f"[PRIORITY-RETRY] Refreshing source page for {top.get('video_id', 'candidate')}.")
+            downloaded_url = download_candidate(top, video_file, state, deadline)
         if not downloaded_url:
-            retain_media_retry(top, state, "download_failed")
+            retain_media_retry(top, state, "download_failed", priority=priority_item)
             continue
 
         w, h, dur = get_exact_video_dimensions(video_file)
         if w <= 0 or h <= 0 or not math.isfinite(dur) or dur <= 0:
-            retain_media_retry(top, state, "video_probe_failed")
+            retain_media_retry(top, state, "video_probe_failed", priority=priority_item)
             continue
         top["mp4_url"] = downloaded_url
         top.pop("next_media_attempt", None)
@@ -1014,7 +1020,7 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
         elif is_short or priority_only:
             audio_issue, peak = media_utils.inspect_audio_file(video_file)
             if audio_issue == "audio_probe_failed":
-                retain_media_retry(top, state, audio_issue)
+                retain_media_retry(top, state, audio_issue, priority=priority_item)
                 continue
             if audio_issue:
                 reason = audio_issue
