@@ -3,7 +3,7 @@
 - Analytics window: 2026-08-20 → 2026-11-17
 - Tracked videos: 114
 - Queue size: 18
-- Uploads today: 12
+- Uploads today: 13
 
 ## Performance by category
 
@@ -20,19 +20,19 @@
 
 - New web candidates: 1
 - New Instagram candidates: 0
-- Rejections: {'horizontal_under_three_minutes': 1}
+- Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 4 main, 2 Shorts, 3 priority highlights
+- Published today by format: 4 main, 2 Shorts, 4 priority highlights
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
-- Match-day candidates: 1 | Priority approved: 1
+- Match-day candidates: 0 | Priority approved: 1
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 0 | Replied: 1 | Removed: 0
+- Discovered: 7 | Reviewed by AI: 7
+- Kept without reply: 7 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 159 | Write quota: 500
+- Archive pages processed: 2 | Read quota: 166 | Write quota: 500
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
@@ -40,3 +40,4 @@
 - Candidates with an Analytics adjustment: 4
 - main: 0 mature samples, preferred Tehran times: default
 - short: 5 mature samples, preferred Tehran times: default
+- Published at 21:01 Tehran | Title style: direct | Queue factor: 1.0
