@@ -13,6 +13,11 @@ ROUTINE_SPACING_MINUTES = {"main": 150, "short": 120}
 MAIN_UPLOAD_WINDOWS = [(10 * 60, 13 * 60), (16 * 60, 23 * 60 + 30)]
 SHORT_UPLOAD_WINDOWS = [(11 * 60 + 30, 15 * 60), (18 * 60, 23 * 60 + 30)]
 PRIORITY_SUMMARY_MAX_AGE_HOURS = 24
+PRIORITY_EDITORIAL_MAX_AGE_HOURS = 48
+MATCH_DAY_PRIORITY_BEFORE_HOURS = 6
+MATCH_DAY_PRIORITY_AFTER_HOURS = 6
+LIVE_SCORES_URL = f"{PROTO}footballi.net/live-scores"
+LIVE_SCORES_PARSER_VERSION = 1
 APIFY_COOLDOWN_HOURS = 8.0
 INSTAGRAM_COOLDOWN_HOURS = 8.0
 
@@ -110,6 +115,15 @@ BLACKLIST_KEYWORDS = FOREIGN_BLACKLIST
 SUMMARY_KEYWORDS = [
     "خلاصه بازی", "خلاصه دیدار", "خلاصه مسابقه", "گل های بازی", "گل‌های بازی"
 ]
+
+FOOTBALL_BARTAR_KEYWORDS = ["فوتبال برتر", "میثاقی", "محمدحسین میثاقی"]
+SHABHAYE_FOOTBALLI_KEYWORDS = ["شب های فوتبالی", "شب‌های فوتبالی", "شبهای فوتبالی", "توتونچی"]
+MATCH_FAN_KEYWORDS = ["هواداران", "هوادار", "سکو", "ورزشگاه", "تماشاگر"]
+MATCH_PREVIEW_KEYWORDS = ["پیش بازی", "پیش‌بازی", "قبل از بازی", "ترکیب", "تمرینات پیش"]
+MATCH_INTERVIEW_KEYWORDS = ["مصاحبه", "گفتگو", "گفت‌وگو", "در آستانه", "صحبت های"]
+PRIORITY_EDITORIAL_CATEGORIES = {
+    "SUMMARY", "VIDEOCAST", "POSHTE_KHAT", "FOOTBALL_BARTAR", "SHABHAYE_FOOTBALLI",
+}
 
 VIDEOCAST_KEYWORDS = [
     "ویدیوکست", "ویدیو کست", "ویدئوکست", "ویدئو کست", "videocast", "تپلیگ", "تُپُلیگ"
