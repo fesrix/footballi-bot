@@ -1015,7 +1015,7 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
         reason = ""
         if (is_short and w < MIN_SHORTS_WIDTH_PX) or (not is_short and h < MIN_HORIZONTAL_HEIGHT_PX):
             reason = "resolution_under_720p"
-        elif not is_short and dur < MIN_HORIZONTAL_DURATION_SECONDS and not priority_only:
+        elif not is_short and dur < MIN_HORIZONTAL_DURATION_SECONDS:
             reason = "horizontal_under_three_minutes"
         elif is_short or priority_only:
             audio_issue, peak = media_utils.inspect_audio_file(video_file)
