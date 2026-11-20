@@ -86,7 +86,7 @@ class PublishingPolicyTests(unittest.TestCase):
 
         with patch.object(uploader, "save_state"), \
              patch.object(uploader, "call_ai_copyright_audit", return_value=True), \
-             patch.object(uploader, "download_candidate", side_effect=["", first["mp4_url"], second["mp4_url"]]), \
+             patch.object(uploader, "download_candidate", side_effect=["", "", first["mp4_url"], second["mp4_url"]]), \
              patch.object(uploader, "get_exact_video_dimensions", return_value=(1920, 1080, 95)), \
              patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -4)), \
              patch.object(uploader, "publish_candidate", side_effect=publish) as upload:
@@ -127,6 +127,13 @@ class PublishingPolicyTests(unittest.TestCase):
             uploader.process_queue(Mock(), state, {}, "today", set(), set(), set(),
                                    ".", time.monotonic() + 500, priority_only=True)
         upload.assert_not_called()
+
+    def test_priority_media_retry_is_short_and_ignores_backoff(self):
+        item = summary("پرسپولیس و پیکان", 1075803, self.now)
+        state = {"last_run": {"media_retries": {}}}
+        with patch.object(uploader, "save_state"):
+            uploader.retain_media_retry(item, state, "download_failed", priority=True)
+        self.assertLess(item["next_media_attempt"] - time.time(), 70)
 
 
 if __name__ == "__main__":
