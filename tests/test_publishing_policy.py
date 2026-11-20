@@ -87,7 +87,7 @@ class PublishingPolicyTests(unittest.TestCase):
         with patch.object(uploader, "save_state"), \
              patch.object(uploader, "call_ai_copyright_audit", return_value=True), \
              patch.object(uploader, "download_candidate", side_effect=["", "", first["mp4_url"], second["mp4_url"]]), \
-             patch.object(uploader, "get_exact_video_dimensions", return_value=(1920, 1080, 95)), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1920, 1080, 180)), \
              patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -4)), \
              patch.object(uploader, "publish_candidate", side_effect=publish) as upload:
             uploader.process_queue(Mock(), state, {}, "today", set(), set(), set(),
@@ -134,6 +134,20 @@ class PublishingPolicyTests(unittest.TestCase):
         with patch.object(uploader, "save_state"):
             uploader.retain_media_retry(item, state, "download_failed", priority=True)
         self.assertLess(item["next_media_attempt"] - time.time(), 70)
+
+    def test_priority_horizontal_video_under_three_minutes_is_rejected(self):
+        item = summary("پرسپولیس و پیکان", 1075804, self.now)
+        state = {"pending_queue": [item], "uploaded_urls": [], "seen_mp4s": [],
+                 "rejected_urls": [], "last_run": {"media_retries": {}, "rejected_by_reason": {}}}
+        with patch.object(uploader, "save_state"), \
+             patch.object(uploader, "call_ai_copyright_audit", return_value=True), \
+             patch.object(uploader, "download_candidate", return_value=item["mp4_url"]), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1920, 1080, 179)), \
+             patch.object(uploader, "publish_candidate") as upload:
+            uploader.process_queue(Mock(), state, {}, "today", set(), set(), set(),
+                                   ".", time.monotonic() + 500, priority_only=True)
+        upload.assert_not_called()
+        self.assertEqual(state["last_run"]["rejected_by_reason"], {"horizontal_under_three_minutes": 1})
 
 
 if __name__ == "__main__":
