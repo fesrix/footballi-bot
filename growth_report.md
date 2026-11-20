@@ -17,21 +17,21 @@
 
 ## Last run
 
-- New web candidates: 2
+- New web candidates: 3
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 1 main, 1 Shorts, 0 priority highlights
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 0
-- Kept without reply: 0 | Replied: 0 | Removed: 0
+- Discovered: 2 | Reviewed by AI: 2
+- Kept without reply: 1 | Replied: 0 | Removed: 1
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 10 | Write quota: 0
+- Archive pages processed: 2 | Read quota: 18 | Write quota: 50
 
 ## Publishing decisions from Analytics
-- Data through: 2026-11-17 | Revision: d7190aaa2619d27b
-- Updated profiles: none
-- Candidates with an Analytics adjustment: 0
+- Data through: 2026-11-17 | Revision: d89f017e1a809ab4
+- Updated profiles: short
+- Candidates with an Analytics adjustment: 4
 - main: 0 mature samples, preferred Tehran times: default
-- short: 4 mature samples, preferred Tehran times: default
+- short: 5 mature samples, preferred Tehran times: default
