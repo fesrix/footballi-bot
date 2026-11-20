@@ -5,7 +5,9 @@ import json
 import time
 import shutil
 import inspect
+import hashlib
 from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
@@ -18,11 +20,19 @@ from config import (
     IRANIAN_DOMESTIC_CLUBS,
     IRANIAN_SAFE_SHOWS,
     IRANIAN_FOOTBALL_ENTITIES,
+    IRANIAN_DOMESTIC_CLUBS,
     APIFY_COOLDOWN_HOURS,
+    LIVE_SCORES_URL,
+    LIVE_SCORES_PARSER_VERSION,
 )
 
 MAX_VIDEO_ID_AGE_GAP = 650
 MIN_ABSOLUTE_VIDEO_ID = 1073500
+TEHRAN = ZoneInfo("Asia/Tehran")
+LIVE_TIME_RE = re.compile(r"(?<!\d)([01]?\d|2[0-3])\s*[:٫.]\s*([0-5]\d)(?!\d)")
+LIVE_STATUS_WORDS = {"پایان", "لغو", "تعویق", "زنده", "درحال برگزاری", "در حال برگزاری"}
+LIVE_GENERIC_WORDS = {"بیشتر", "امروز", "فردا", "دیروز", "نتایج زنده", "پخش زنده"}
+LAST_LIVE_SCORES_STATUS = "unknown"
 
 CURATOR_PROMPT = r"""
 You select videos for Footballi / فوتبالی's Persian YouTube audience.
@@ -112,6 +122,169 @@ def normalize_persian(text: str) -> str:
     for i in range(10):
         text = text.replace(persian_digits[i], str(i)).replace(arabic_digits[i], str(i))
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _live_team_is_iranian(team: str) -> bool:
+    normalized = normalize_persian(team).casefold()
+    return any(normalize_persian(entity).casefold() in normalized
+               for entity in IRANIAN_DOMESTIC_CLUBS + ["ایران", "تیم ملی"])
+
+
+def _live_fixture_id(home: str, away: str, kickoff_at: str) -> str:
+    raw = "|".join(normalize_persian(value).casefold() for value in (home, away, kickoff_at))
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def _live_status(text: str) -> str:
+    normalized = normalize_persian(text)
+    if "لغو" in normalized:
+        return "cancelled"
+    if "تعویق" in normalized:
+        return "postponed"
+    if "پایان" in normalized:
+        return "finished"
+    if "زنده" in normalized or "درحال برگزاری" in normalized or "در حال برگزاری" in normalized:
+        return "live"
+    return "scheduled"
+
+
+def parse_live_fixtures_html(html: str, now=None) -> list:
+    """Extract today's Iranian fixtures from the official Footballi page."""
+    now = now or datetime.now(TEHRAN)
+    soup = BeautifulSoup(html or "", "html.parser")
+    for tag in soup.find_all(["script", "style", "noscript"]):
+        tag.decompose()
+
+    fixtures = []
+    seen = set()
+
+    def append_fixture(block, home, away, text, kickoff):
+        home, away = normalize_persian(home), normalize_persian(away)
+        if not home or not away or not (_live_team_is_iranian(home) or _live_team_is_iranian(away)):
+            return
+        heading = block.find_previous(["h2", "h3", "h4"])
+        competition = normalize_persian(heading.get_text(" ", strip=True)) if heading else ""
+        fixture_id = _live_fixture_id(home, away, kickoff.isoformat())
+        if fixture_id in seen:
+            return
+        seen.add(fixture_id)
+        fixtures.append({
+            "fixture_id": fixture_id,
+            "home_team": home,
+            "away_team": away,
+            "competition": competition,
+            "kickoff_at": kickoff.isoformat(),
+            "status": _live_status(text),
+            "source_url": LIVE_SCORES_URL,
+            "fetched_at": now.isoformat(),
+            "parser_version": LIVE_SCORES_PARSER_VERSION,
+        })
+
+    # The rendered page exposes one /match/ link followed by a compact team
+    # container. This is more stable than relying on CSS class names.
+    for link in soup.select("a[href*='/match/']"):
+        block = link.parent
+        if not block:
+            continue
+        text = normalize_persian(block.get_text(" ", strip=True))
+        names = [normalize_persian(image.get("alt", ""))
+                 for image in block.find_all("img") if normalize_persian(image.get("alt", ""))]
+        if len(names) < 2:
+            names = [normalize_persian(anchor.get_text(" ", strip=True))
+                     for anchor in block.find_all("a")
+                     if normalize_persian(anchor.get_text(" ", strip=True)) not in LIVE_GENERIC_WORDS]
+        if len(names) < 2:
+            continue
+        kickoff = None
+        start_meta = block.find("meta", attrs={"itemprop": "startDate"})
+        if start_meta and start_meta.get("content"):
+            try:
+                kickoff = datetime.fromisoformat(
+                    start_meta["content"].replace("Z", "+00:00")
+                ).astimezone(TEHRAN)
+            except (TypeError, ValueError, OverflowError):
+                kickoff = None
+        if kickoff is None:
+            time_match = LIVE_TIME_RE.search(text)
+            kickoff = (now.replace(hour=int(time_match.group(1)), minute=int(time_match.group(2)),
+                                   second=0, microsecond=0) if time_match else now)
+        append_fixture(block, names[0], names[-1], text, kickoff)
+
+    blocks = []
+    for element in soup.find_all(["article", "li", "section", "div"]):
+        classes = " ".join(element.get("class", []))
+        marker = f"{classes} {element.get('id', '')}".casefold()
+        text = normalize_persian(element.get_text(" ", strip=True))
+        if LIVE_TIME_RE.search(text) and any(word in marker for word in ("match", "game", "fixture", "event", "score")):
+            blocks.append(element)
+    if not blocks:
+        blocks = [node.parent for node in soup.find_all(string=LIVE_TIME_RE)]
+
+    for block in blocks:
+        text = normalize_persian(block.get_text(" ", strip=True))
+        match = LIVE_TIME_RE.search(text)
+        if not match:
+            continue
+        hour, minute = int(match.group(1)), int(match.group(2))
+        kickoff = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        anchors = []
+        for anchor in block.find_all("a"):
+            value = normalize_persian(anchor.get_text(" ", strip=True))
+            if value and value not in LIVE_GENERIC_WORDS and value not in LIVE_STATUS_WORDS:
+                if value not in anchors:
+                    anchors.append(value)
+        if len(anchors) < 2:
+            # Some rendered versions use image alt text instead of anchor text.
+            anchors = [normalize_persian(tag.get("alt", "")) for tag in block.find_all(["img", "input"])
+                       if normalize_persian(tag.get("alt", ""))]
+        if len(anchors) < 2:
+            continue
+        append_fixture(block, anchors[0], anchors[1], text, kickoff)
+    return fixtures
+
+
+def _render_live_scores_html() -> str:
+    chrome_path = find_system_chrome()
+    if not chrome_path:
+        return ""
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        return ""
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(executable_path=chrome_path, headless=True,
+                                        args=["--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu"])
+            page = browser.new_page(user_agent=HEADERS["User-Agent"], locale="fa-IR")
+            page.goto(LIVE_SCORES_URL, wait_until="domcontentloaded", timeout=15000)
+            page.wait_for_timeout(1000)
+            html = page.content()
+            browser.close()
+            return html
+    except Exception as exc:
+        print(f"[LIVE-SCORES-WARN] Browser fallback failed: {type(exc).__name__}")
+        return ""
+
+
+def fetch_live_fixtures(now=None, session=None) -> list:
+    global LAST_LIVE_SCORES_STATUS
+    now = now or datetime.now(TEHRAN)
+    req = session or requests
+    html = ""
+    http_ok = False
+    try:
+        response = req.get(LIVE_SCORES_URL, headers=HEADERS, timeout=12)
+        if response.status_code == 200:
+            html = response.text
+            http_ok = True
+    except Exception as exc:
+        print(f"[LIVE-SCORES-WARN] HTTP fetch failed ({type(exc).__name__}).")
+    fixtures = parse_live_fixtures_html(html, now=now)
+    if not fixtures:
+        fixtures = parse_live_fixtures_html(_render_live_scores_html(), now=now)
+    LAST_LIVE_SCORES_STATUS = "ok" if fixtures or http_ok else "failed"
+    print(f"[LIVE-SCORES] Parsed {len(fixtures)} Iranian fixtures from {LIVE_SCORES_URL}.")
+    return fixtures
 
 
 def extract_numeric_id(url: str) -> int:

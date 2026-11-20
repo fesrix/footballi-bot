@@ -69,7 +69,8 @@ class PublishingPolicyTests(unittest.TestCase):
             "c": {"category": "SHORTS", "published_at": now.isoformat()},
         }}
         self.assertEqual(uploader.daily_publishing_counts(state, now),
-                         {"main": 0, "short": 1, "priority_summaries": 1})
+                         {"main": 0, "short": 1, "priority_summaries": 1,
+                          "priority_editorial": 0, "priority_match_day": 0})
 
     def test_failed_media_does_not_block_second_summary_and_two_valid_summaries_upload(self):
         failed = summary("مس و ملوان", 1075800, self.now)

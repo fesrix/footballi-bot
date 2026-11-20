@@ -57,6 +57,14 @@ def build_report(state: dict) -> str:
                          f"{counts['priority_summaries']} priority highlights")
     if run.get("media_retries"):
         lines.append(f"- Retained media failures: {run['media_retries']}")
+    live_scores = run.get("live_scores", {})
+    if live_scores:
+        lines.extend([
+            "",
+            "## Live match priority",
+            f"- Fixture source: {live_scores.get('status', 'unknown')} | Iranian fixtures: {live_scores.get('fixtures', 0)}",
+            f"- Match-day candidates: {live_scores.get('match_day_candidates', 0)} | Priority approved: {live_scores.get('priority_approved', 0)}",
+        ])
     comments = state.get("comment_manager", {}).get("last_run", {})
     if comments:
         lines.extend(["", "## Comment review",

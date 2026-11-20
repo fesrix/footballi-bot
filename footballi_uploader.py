@@ -24,6 +24,16 @@ from config import (
     ROUTINE_DAILY_LIMITS,
     ROUTINE_SPACING_MINUTES,
     PRIORITY_SUMMARY_MAX_AGE_HOURS,
+    PRIORITY_EDITORIAL_MAX_AGE_HOURS,
+    MATCH_DAY_PRIORITY_BEFORE_HOURS,
+    MATCH_DAY_PRIORITY_AFTER_HOURS,
+    PRIORITY_EDITORIAL_CATEGORIES,
+    MATCH_FAN_KEYWORDS,
+    MATCH_PREVIEW_KEYWORDS,
+    MATCH_INTERVIEW_KEYWORDS,
+    IRANIAN_DOMESTIC_CLUBS,
+    FOOTBALL_BARTAR_KEYWORDS,
+    SHABHAYE_FOOTBALLI_KEYWORDS,
     MAIN_UPLOAD_WINDOWS,
     SHORT_UPLOAD_WINDOWS,
     STATE_FILE,
@@ -41,10 +51,12 @@ from scrapers import (
     is_video_too_old,
     extract_numeric_id,
     extract_video_page_details,
+    fetch_live_fixtures,
     MIN_ABSOLUTE_VIDEO_ID,
 )
 import ai_seo
 import media_utils
+import scrapers
 from learning import build_policy, defer_for_timing, ranking, timestamp, title_choice, topic_for
 
 
@@ -114,17 +126,103 @@ def is_priority_summary(item, now):
     )
 
 
+def _item_text(item) -> str:
+    return normalize_persian(" ".join(str(item.get(key, "")) for key in
+                                       ("title", "description", "source_title"))).casefold()
+
+
+def _fresh_item_timestamp(item):
+    return timestamp(item.get("source_published_at") or item.get("published_at")
+                     or item.get("source_first_seen_at") or item.get("discovery_timestamp"))
+
+
+def _fixture_team_match(text: str, fixture: dict) -> list:
+    matches = []
+    for key in ("home_team", "away_team"):
+        team = normalize_persian(fixture.get(key, "")).casefold()
+        if team and team in text:
+            matches.append(key)
+    return matches
+
+
+def _match_day_priority(item, fixtures, now):
+    if item.get("rights_status") != "internal_authorized" or not is_trusted_source_url(
+            item.get("source_url") or item.get("url", "")):
+        return None
+    text = _item_text(item)
+    keywords = (
+        [("fan", MATCH_FAN_KEYWORDS), ("preview", MATCH_PREVIEW_KEYWORDS),
+         ("interview", MATCH_INTERVIEW_KEYWORDS)]
+    )
+    relation = next(((kind, keyword) for kind, values in keywords
+                     for keyword in values if normalize_persian(keyword).casefold() in text), None)
+    if not relation:
+        return None
+    published = _fresh_item_timestamp(item)
+    if not published:
+        return None
+    for fixture in fixtures:
+        kickoff = timestamp(fixture.get("kickoff_at"))
+        if not kickoff:
+            continue
+        before = kickoff - timedelta(hours=MATCH_DAY_PRIORITY_BEFORE_HOURS)
+        after = kickoff + timedelta(hours=MATCH_DAY_PRIORITY_AFTER_HOURS)
+        if not before <= now <= after:
+            continue
+        team_matches = _fixture_team_match(text, fixture)
+        if not team_matches:
+            continue
+        if now - published > timedelta(hours=48):
+            continue
+        return {
+            "priority_class": "match_day",
+            "priority_reason": f"{relation[0]}:{relation[1]}",
+            "fixture_id": fixture["fixture_id"],
+            "fixture_relation": "both_teams" if len(team_matches) == 2 else team_matches[0],
+            "priority_until": after.isoformat(),
+            "home_team": fixture.get("home_team"),
+            "away_team": fixture.get("away_team"),
+            "competition": fixture.get("competition"),
+            "kickoff_at": fixture.get("kickoff_at"),
+        }
+    return None
+
+
+def priority_item_context(item, state, now):
+    if is_priority_summary(item, now):
+        return {"priority_class": "summary", "priority_reason": "fresh_summary"}
+    category = item.get("category") or detect_primary_category(item.get("title", ""))
+    source = item.get("source_url") or item.get("url", "")
+    if (category in PRIORITY_EDITORIAL_CATEGORIES
+            and category != "SUMMARY"
+            and item.get("rights_status") == "internal_authorized"
+            and is_trusted_source_url(source)):
+        observed = _fresh_item_timestamp(item)
+        if observed and now - observed <= timedelta(hours=PRIORITY_EDITORIAL_MAX_AGE_HOURS):
+            return {"priority_class": "editorial", "priority_reason": f"category:{category}"}
+    return _match_day_priority(item, state.get("live_fixtures", {}).get("fixtures", []), now)
+
+
+def is_priority_item(item, state, now):
+    return bool(priority_item_context(item, state, now))
+
+
 def daily_publishing_counts(state, now):
     today = now.date().isoformat()
     # Publications are already checkpointed on success. Reconstruct counts from
     # that log so old state needs no migration and midnight resets correctly.
-    counts = {"main": 0, "short": 0, "priority_summaries": 0}
+    counts = {"main": 0, "short": 0, "priority_summaries": 0,
+              "priority_editorial": 0, "priority_match_day": 0}
     for metadata in state.get("published_metadata", {}).values():
         published = timestamp(metadata.get("published_at"))
         if not published or published.astimezone(now.tzinfo).date().isoformat() != today:
             continue
-        if metadata.get("priority_summary"):
+        if metadata.get("priority_class") == "summary" or metadata.get("priority_summary"):
             counts["priority_summaries"] += 1
+        elif metadata.get("priority_class") == "editorial":
+            counts["priority_editorial"] += 1
+        elif metadata.get("priority_class") == "match_day":
+            counts["priority_match_day"] += 1
         else:
             fmt = metadata.get("format") or ("short" if metadata.get("category") == "SHORTS" else "main")
             if fmt in ROUTINE_DAILY_LIMITS:
@@ -140,7 +238,7 @@ def last_routine_timestamp(state, fmt):
 
 
 def publication_block(item, category, state, policy, now, *, is_short=None):
-    if not is_priority_summary(item, now):
+    if not is_priority_item(item, state, now):
         short = category == "SHORTS" if is_short is None else is_short
         fmt = "short" if short else "main"
         if daily_publishing_counts(state, now)[fmt] >= ROUTINE_DAILY_LIMITS[fmt]:
@@ -186,6 +284,7 @@ def load_state() -> dict:
         "daily_uploads": {"date": "", "count": 0},
         "last_upload_timestamp": 0,
         "last_short_upload_timestamp": 0,
+        "live_fixtures": {"fixtures": [], "fetched_at": "", "parser_version": 1},
         "upload_limit_cooldown_until": 0,
         "quota_exhausted_date": "",
         "max_seen_video_id": MIN_ABSOLUTE_VIDEO_ID,
@@ -277,6 +376,12 @@ def detect_primary_category(title: str, description: str = "", is_short: bool = 
     for kw in POSHTE_KHAT_KEYWORDS:
         if normalize_persian(kw).lower() in norm_title:
             return "POSHTE_KHAT"
+    for kw in FOOTBALL_BARTAR_KEYWORDS:
+        if normalize_persian(kw).lower() in norm_title:
+            return "FOOTBALL_BARTAR"
+    for kw in SHABHAYE_FOOTBALLI_KEYWORDS:
+        if normalize_persian(kw).lower() in norm_title:
+            return "SHABHAYE_FOOTBALLI"
     return "VIDEO"
 
 
@@ -586,6 +691,7 @@ def deduplicate_and_balance_queue(
     max_site_id: int,
     policy: dict | None = None,
     now: datetime | None = None,
+    priority_state: dict | None = None,
 ) -> list:
     main_items = []
     short_items = []
@@ -625,7 +731,7 @@ def deduplicate_and_balance_queue(
             continue
         priority_now = now or datetime.now(timezone.utc)
         if (is_duplicate_title(item.get("title", ""), known_norm_titles | q_titles)
-                and not is_priority_summary(item, priority_now)):
+                and not (priority_state and is_priority_item(item, priority_state, priority_now))):
             continue
 
         if item.get("is_short"):
@@ -662,7 +768,7 @@ def deduplicate_and_balance_queue(
     def sort_key(item):
         score, factor = ranking(item, policy, now)
         item["learning_factor"] = round(factor, 3)
-        priority = is_priority_summary(item, now)
+        priority = bool(priority_state and is_priority_item(item, priority_state, now))
         fresh = timestamp(item.get("source_published_at") or item.get("published_at")
                           or item.get("source_first_seen_at")
                           or item.get("discovery_timestamp"))
@@ -674,8 +780,10 @@ def deduplicate_and_balance_queue(
 
     # Burst match days can generate more highlights than the routine queue cap.
     # Keep every approved priority summary until it is handled or ages out.
-    main_priority = [item for item in main_items if is_priority_summary(item, now)]
-    short_priority = [item for item in short_items if is_priority_summary(item, now)]
+    main_priority = [item for item in main_items
+                     if priority_state and is_priority_item(item, priority_state, now)]
+    short_priority = [item for item in short_items
+                      if priority_state and is_priority_item(item, priority_state, now)]
     routine_main = main_items[len(main_priority):][:MAX_MAIN_QUEUE_SIZE]
     routine_short = short_items[len(short_priority):][:MAX_SHORTS_QUEUE_SIZE]
     return sorted(main_priority + short_priority, key=sort_key) + routine_main + routine_short
@@ -722,14 +830,18 @@ def call_prepare_thumbnail(video_path: str, poster_url: str, output_path: str) -
 
 
 def call_generate_seo(title: str, desc: str, category: str, is_short: bool,
-                      learning_context: str | None = None) -> dict:
+                      learning_context: str | None = None,
+                      match_context: dict | None = None) -> dict:
     for fn_name in ["generate_seo_metadata", "ai_generate_seo_metadata", "build_seo_package"]:
         fn = getattr(ai_seo, fn_name, None)
         if fn:
             try:
                 sig = inspect.signature(fn)
                 if 'learning_context' in sig.parameters:
-                    return fn(title, desc, category, is_short, learning_context=learning_context)
+                    kwargs = {"learning_context": learning_context}
+                    if "match_context" in sig.parameters:
+                        kwargs["match_context"] = match_context
+                    return fn(title, desc, category, is_short, **kwargs)
                 if len(sig.parameters) >= 4:
                     return fn(title, desc, category, is_short)
                 elif len(sig.parameters) == 3:
@@ -798,7 +910,8 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
     thumb_file = os.path.join(media_directory, "thumbnail.jpg")
     now = datetime.now(ZoneInfo("Asia/Tehran"))
     counts = daily_publishing_counts(state, now)
-    queue = [item for item in state["pending_queue"] if is_priority_summary(item, now) == priority_only]
+    queue = [item for item in state["pending_queue"]
+             if is_priority_item(item, state, now) == priority_only]
     if not priority_only:
         def format_order(item):
             fmt = "short" if item["is_short"] else "main"
@@ -810,7 +923,8 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             print("[BUDGET] Leaving remaining candidates for the next half-hour run.")
             break
 
-        priority_item = is_priority_summary(top, datetime.now(ZoneInfo("Asia/Tehran")))
+        priority_context = priority_item_context(top, state, datetime.now(ZoneInfo("Asia/Tehran")))
+        priority_item = bool(priority_context)
         if ((not priority_item and is_duplicate_title(top["title"], known_norm_titles))
                 or top["url"] in uploaded_urls or top["mp4_url"] in seen_mp4s):
             print(f"♻️ [SKIP-DUPLICATE] Already uploaded to channel: {top['title']}")
@@ -866,7 +980,9 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             state["pending_queue"].remove(top)
             state["rejected_urls"].append(top["url"])
             continue
-        actual_category = "SUMMARY" if priority_only else detect_primary_category(top["title"], is_short=is_short)
+        actual_category = detect_primary_category(top["title"], top.get("description", ""), is_short=is_short)
+        if priority_context:
+            top.update(priority_context)
         tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
         if publication_block(top, actual_category, state, policy, tehran_now, is_short=is_short):
             print(f"[TIMING] Verified {actual_category}: format is currently ineligible.")
@@ -919,9 +1035,19 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
 def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_short,
                       priority_summary, video_file, thumb_file, tehran_now, deadline):
     fmt = "short" if is_short else "main"
+    priority_class = candidate.get("priority_class") or ("summary" if priority_summary else "")
     style, explore = ("direct", False) if priority_summary else title_choice(candidate, policy, fmt, tehran_now)
+    match_context = None
+    if candidate.get("fixture_id"):
+        match_context = {
+            "fixture_id": candidate.get("fixture_id"),
+            "home_team": candidate.get("home_team"),
+            "away_team": candidate.get("away_team"),
+            "competition": candidate.get("competition"),
+            "kickoff_at": candidate.get("kickoff_at"),
+        }
     seo = call_generate_seo(candidate["title"], candidate.get("description", ""), cat, is_short,
-                            learning_context=style)
+                            learning_context=style, match_context=match_context)
     final_title = seo.get("title", candidate["title"])[:100]
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
@@ -964,7 +1090,17 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
             "title": final_title,
             "category": cat,
             "format": fmt,
-            "priority_summary": priority_summary,
+            "priority_summary": priority_class == "summary",
+            "priority_class": priority_class,
+            "priority_reason": candidate.get("priority_reason"),
+            "fixture_id": candidate.get("fixture_id"),
+            "fixture_relation": candidate.get("fixture_relation"),
+            "priority_until": candidate.get("priority_until"),
+            "home_team": candidate.get("home_team"),
+            "away_team": candidate.get("away_team"),
+            "competition": candidate.get("competition"),
+            "kickoff_at": candidate.get("kickoff_at"),
+            "rights_audit": candidate.get("rights_audit", "approved"),
             "source": candidate.get("source"),
             "source_url": source_url,
             "rights_status": candidate.get("rights_status"),
@@ -980,9 +1116,11 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
         if state["daily_uploads"].get("date") != day:
             state["daily_uploads"] = {"date": day, "count": 0}
         state["daily_uploads"]["count"] += 1
-        if not priority_summary:
+        if not priority_class:
             state["last_short_upload_timestamp" if is_short else "last_upload_timestamp"] = tehran_now.timestamp()
-        state["last_run"]["uploads"]["priority_summaries" if priority_summary else fmt] += 1
+        upload_key = f"priority_{priority_class}" if priority_class else fmt
+        state["last_run"]["uploads"].setdefault(upload_key, 0)
+        state["last_run"]["uploads"][upload_key] += 1
         state["last_run"]["learning"].update(title_style=seo.get("title_style"),
                                              selected_factor=candidate["learning_factor"],
                                              published_tehran=tehran_now.strftime("%H:%M"))
@@ -1067,6 +1205,24 @@ def main():
         for v in channel_videos:
             known_norm_titles.add(normalize_persian(v["title"]).lower())
 
+    tehran_now = datetime.now(ZoneInfo("Asia/Tehran"))
+    live_fixtures = fetch_live_fixtures(now=tehran_now)
+    live_status = scrapers.LAST_LIVE_SCORES_STATUS
+    if live_status == "ok":
+        state["live_fixtures"] = {
+            "fixtures": live_fixtures,
+            "fetched_at": tehran_now.isoformat(),
+            "source_url": "https://footballi.net/live-scores",
+            "parser_version": 1,
+        }
+    else:
+        previous = state.get("live_fixtures", {})
+        previous_at = timestamp(previous.get("fetched_at"))
+        if previous_at and tehran_now - previous_at <= timedelta(hours=12):
+            live_fixtures = previous.get("fixtures", [])
+            live_status = "stale_fallback"
+        else:
+            live_fixtures = []
     new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
     state["last_run"] = {
         "finished_at": datetime.now(timezone.utc).isoformat(),
@@ -1074,7 +1230,14 @@ def main():
         "new_instagram_candidates": 0,
         "rejected_by_reason": {},
         "media_retries": {},
-        "uploads": {"main": 0, "short": 0, "priority_summaries": 0},
+        "uploads": {"main": 0, "short": 0, "priority_summaries": 0,
+                    "priority_editorial": 0, "priority_match_day": 0},
+        "live_scores": {
+            "status": live_status,
+            "fixtures": len(live_fixtures),
+            "match_day_candidates": 0,
+            "priority_approved": 0,
+        },
         "learning": {"revision": policy["revision"], "changes": policy["changes"]},
     }
 
@@ -1082,6 +1245,18 @@ def main():
         state["pending_queue"] = deduplicate_and_balance_queue(
             state["pending_queue"] + items, uploaded_urls, set(state["rejected_urls"]),
             seen_mp4s, known_norm_titles, int(state["max_seen_video_id"]), policy,
+            priority_state=state,
+        )
+        now_for_priority = datetime.now(ZoneInfo("Asia/Tehran"))
+        for item in state["pending_queue"]:
+            context = priority_item_context(item, state, now_for_priority)
+            if context:
+                item.update(context)
+                if context.get("priority_class") == "match_day":
+                    state["last_run"]["live_scores"]["match_day_candidates"] += 1
+        state["last_run"]["live_scores"]["priority_approved"] = sum(
+            1 for item in state["pending_queue"]
+            if is_priority_item(item, state, now_for_priority)
         )
         for reason, count in _QUEUE_REJECTION_COUNTS.items():
             rejections = state["last_run"]["rejected_by_reason"]
@@ -1120,7 +1295,8 @@ def main():
                              queue_size=len(state["pending_queue"]), daily_uploads=daily)
     print(f"[STATUS] Routine main {daily['main']}/{ROUTINE_DAILY_LIMITS['main']}, "
           f"routine Shorts {daily['short']}/{ROUTINE_DAILY_LIMITS['short']}, "
-          f"priority summaries {daily['priority_summaries']}, "
+          f"priority summaries {daily['priority_summaries']} | "
+          f"editorial {daily['priority_editorial']} | match-day {daily['priority_match_day']}, "
           f"queue {len(state['pending_queue'])}.")
     save_state(state)
 
