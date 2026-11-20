@@ -1,15 +1,15 @@
 # Footballi Growth Report
 
 - Analytics window: 2026-08-20 → 2026-11-17
-- Tracked videos: 113
-- Queue size: 19
+- Tracked videos: 114
+- Queue size: 20
 - Uploads today: 12
 
 ## Performance by category
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 72 | 80681 | 165366.0 | 217 |
+| VIDEO | 73 | 80681 | 165366.0 | 217 |
 | SHORTS | 17 | 27699 | 4862.0 | 30 |
 | SUMMARY | 16 | 23119 | 63797.0 | 56 |
 | FOOTBALL_BARTAR | 3 | 1041 | 730.0 | 1 |
@@ -18,21 +18,22 @@
 
 ## Last run
 
-- New web candidates: 4
+- New web candidates: 6
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 4 main, 2 Shorts, 3 priority highlights
+- Retained media failures: {'download_failed': 1}
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
-- Match-day candidates: 3 | Priority approved: 3
+- Match-day candidates: 1 | Priority approved: 1
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 0 | Replied: 1 | Removed: 0
+- Discovered: 4 | Reviewed by AI: 4
+- Kept without reply: 2 | Replied: 1 | Removed: 1
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 140 | Write quota: 350
+- Archive pages processed: 2 | Read quota: 150 | Write quota: 450
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
@@ -40,4 +41,3 @@
 - Candidates with an Analytics adjustment: 4
 - main: 0 mature samples, preferred Tehran times: default
 - short: 5 mature samples, preferred Tehran times: default
-- Published at 19:33 Tehran | Title style: direct | Queue factor: 1.0
