@@ -1,37 +1,38 @@
 # Footballi Growth Report
 
-- Analytics window: 2026-08-19 → 2026-11-16
+- Analytics window: 2026-08-20 → 2026-11-17
 - Tracked videos: 107
 - Queue size: 19
-- Uploads today: 1
+- Uploads today: 2
 
 ## Performance by category
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 74 | 77943 | 159817.0 | 213 |
-| SUMMARY | 13 | 22719 | 62743.0 | 54 |
-| SHORTS | 15 | 21336 | 3858.0 | 25 |
-| VIDEOCAST | 3 | 648 | 2044.0 | 5 |
-| POSHTE_KHAT | 2 | 204 | 279.0 | 2 |
+| VIDEO | 74 | 81722 | 166096.0 | 218 |
+| SHORTS | 15 | 27699 | 4862.0 | 30 |
+| SUMMARY | 13 | 23119 | 63797.0 | 56 |
+| VIDEOCAST | 3 | 694 | 2101.0 | 5 |
+| POSHTE_KHAT | 2 | 239 | 284.0 | 2 |
 
 ## Last run
 
-- New web candidates: 1
+- New web candidates: 2
 - New Instagram candidates: 0
 - Rejections: {}
-- Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 1 main, 0 Shorts, 0 priority highlights
+- Published this run: 0 main, 1 Shorts, 0 priority highlights
+- Published today by format: 1 main, 1 Shorts, 0 priority highlights
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 1 | Replied: 0 | Removed: 0
+- Discovered: 0 | Reviewed by AI: 0
+- Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 386 | Write quota: 1050
+- Archive pages processed: 2 | Read quota: 5 | Write quota: 0
 
 ## Publishing decisions from Analytics
-- Data through: 2026-11-16 | Revision: a0d4da957e89f1b1
+- Data through: 2026-11-17 | Revision: 629dc7c1474fdbcb
 - Updated profiles: none
 - Candidates with an Analytics adjustment: 0
 - main: 0 mature samples, preferred Tehran times: default
-- short: 2 mature samples, preferred Tehran times: default
+- short: 3 mature samples, preferred Tehran times: default
+- Published at 11:31 Tehran | Title style: direct | Queue factor: 1.0
