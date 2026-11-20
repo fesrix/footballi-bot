@@ -2,8 +2,8 @@
 
 - Analytics window: 2026-08-19 → 2026-11-16
 - Tracked videos: 106
-- Queue size: 20
-- Uploads today: 0
+- Queue size: 18
+- Uploads today: 1
 
 ## Performance by category
 
@@ -19,15 +19,15 @@
 
 - New web candidates: 0
 - New Instagram candidates: 0
-- Rejections: {}
-- Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 0 main, 0 Shorts, 0 priority highlights
+- Rejections: {'horizontal_under_three_minutes': 1}
+- Published this run: 1 main, 0 Shorts, 0 priority highlights
+- Published today by format: 1 main, 0 Shorts, 0 priority highlights
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 1 | Replied: 0 | Removed: 0
+- Discovered: 0 | Reviewed by AI: 0
+- Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 369 | Write quota: 1050
+- Archive pages processed: 2 | Read quota: 374 | Write quota: 1050
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-16 | Revision: a0d4da957e89f1b1
@@ -35,3 +35,4 @@
 - Candidates with an Analytics adjustment: 0
 - main: 0 mature samples, preferred Tehran times: default
 - short: 2 mature samples, preferred Tehran times: default
+- Published at 10:02 Tehran | Title style: direct | Queue factor: 1.0
