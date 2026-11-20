@@ -9,11 +9,11 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 73 | 77958 | 159832.0 | 212 |
-| SUMMARY | 13 | 22725 | 62768.0 | 54 |
-| SHORTS | 15 | 21347 | 3859.0 | 25 |
+| VIDEO | 73 | 77943 | 159817.0 | 213 |
+| SUMMARY | 13 | 22719 | 62743.0 | 54 |
+| SHORTS | 15 | 21336 | 3858.0 | 25 |
 | VIDEOCAST | 3 | 648 | 2044.0 | 5 |
-| POSHTE_KHAT | 2 | 206 | 279.0 | 2 |
+| POSHTE_KHAT | 2 | 204 | 279.0 | 2 |
 
 ## Last run
 
@@ -24,10 +24,10 @@
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 0
-- Kept without reply: 0 | Replied: 0 | Removed: 0
+- Discovered: 1 | Reviewed by AI: 1
+- Kept without reply: 1 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 362 | Write quota: 1050
+- Archive pages processed: 2 | Read quota: 369 | Write quota: 1050
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-16 | Revision: a0d4da957e89f1b1
