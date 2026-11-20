@@ -2,7 +2,7 @@
 
 - Analytics window: 2026-08-20 → 2026-11-17
 - Tracked videos: 115
-- Queue size: 19
+- Queue size: 20
 - Uploads today: 0
 
 ## Performance by category
@@ -19,7 +19,7 @@
 ## Last run
 
 - New web candidates: 0
-- New Instagram candidates: 0
+- New Instagram candidates: 6
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
@@ -29,14 +29,14 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 1 | Replied: 0 | Removed: 0
+- Discovered: 0 | Reviewed by AI: 0
+- Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 202 | Write quota: 500
+- Archive pages processed: 2 | Read quota: 207 | Write quota: 500
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
 - Updated profiles: none
-- Candidates with an Analytics adjustment: 4
+- Candidates with an Analytics adjustment: 5
 - main: 0 mature samples, preferred Tehran times: default
 - short: 5 mature samples, preferred Tehran times: default
