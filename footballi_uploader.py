@@ -1145,6 +1145,10 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
         upload_key = f"priority_{priority_class}" if priority_class else fmt
         state["last_run"]["uploads"].setdefault(upload_key, 0)
         state["last_run"]["uploads"][upload_key] += 1
+        if not is_short:
+            state["last_run"].setdefault("end_screen_video_ids", []).append(vid_id)
+            print(f"[END-SCREEN] Add Best for viewer and Subscribe in Studio: "
+                  f"https://studio.youtube.com/video/{vid_id}/editor")
         state["last_run"]["learning"].update(title_style=seo.get("title_style"),
                                              selected_factor=candidate["learning_factor"],
                                              published_tehran=tehran_now.strftime("%H:%M"))

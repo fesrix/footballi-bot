@@ -57,6 +57,16 @@ def build_report(state: dict) -> str:
                          f"{counts['priority_summaries']} priority highlights")
     if run.get("media_retries"):
         lines.append(f"- Retained media failures: {run['media_retries']}")
+    if video_ids := run.get("end_screen_video_ids"):
+        lines.extend([
+            "",
+            "## End screens to set in YouTube Studio",
+            "",
+            "In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe** element, then save.",
+            "",
+        ])
+        lines.extend(f"- [Open {video_id} in Studio](https://studio.youtube.com/video/{video_id}/editor)"
+                     for video_id in video_ids)
     live_scores = run.get("live_scores", {})
     if live_scores:
         lines.extend([
