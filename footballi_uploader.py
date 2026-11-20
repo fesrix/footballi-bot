@@ -150,12 +150,14 @@ def _match_day_priority(item, fixtures, now):
             item.get("source_url") or item.get("url", "")):
         return None
     text = _item_text(item)
+    title_text = normalize_persian(" ".join(str(item.get(key, "")) for key in
+                                              ("title", "source_title"))).casefold()
     keywords = (
         [("fan", MATCH_FAN_KEYWORDS), ("preview", MATCH_PREVIEW_KEYWORDS),
          ("interview", MATCH_INTERVIEW_KEYWORDS)]
     )
     relation = next(((kind, keyword) for kind, values in keywords
-                     for keyword in values if normalize_persian(keyword).casefold() in text), None)
+                     for keyword in values if normalize_persian(keyword).casefold() in title_text), None)
     if not relation:
         return None
     published = _fresh_item_timestamp(item)

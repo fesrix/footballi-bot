@@ -68,6 +68,19 @@ class MatchDayPriorityTests(unittest.TestCase):
         self.assertTrue(uploader.is_priority_item(item, state, self.now))
         self.assertFalse(uploader.is_priority_item(item, state, self.now - timedelta(hours=7)))
 
+    def test_generic_description_cannot_turn_a_goal_clip_into_fan_priority(self):
+        kickoff = self.now.replace(hour=16, minute=30)
+        fixture = {
+            "fixture_id": "fixture-1", "home_team": "پرسپولیس", "away_team": "پیکان",
+            "competition": "لیگ برتر", "kickoff_at": kickoff.isoformat(),
+        }
+        item = {
+            "source": "footballi_web", "source_url": "https://footballi.net/video/1076002",
+            "rights_status": "internal_authorized", "title": "گل سوم پرسپولیس به پیکان",
+            "description": "سکو و هواداران در پوشش فوتبال امروز", "source_published_at": self.now.isoformat(),
+        }
+        self.assertFalse(uploader.is_priority_item(item, {"live_fixtures": {"fixtures": [fixture]}}, self.now))
+
     def test_editorial_categories_bypass_routine_schedule_with_rights(self):
         item = {
             "source": "footballi_web", "source_url": "https://footballi.net/video/1076001",
