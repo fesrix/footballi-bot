@@ -9,8 +9,8 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 74 | 82478 | 168619.0 | 218 |
-| SHORTS | 18 | 39971 | 7177.0 | 60 |
+| VIDEO | 74 | 82479 | 168624.0 | 218 |
+| SHORTS | 18 | 39968 | 7177.0 | 60 |
 | SUMMARY | 17 | 23329 | 64438.0 | 57 |
 | FOOTBALL_BARTAR | 3 | 1346 | 901.0 | 1 |
 | VIDEOCAST | 3 | 708 | 2101.0 | 5 |
@@ -29,14 +29,14 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 0
-- Kept without reply: 0 | Replied: 0 | Removed: 0
+- Discovered: 2 | Reviewed by AI: 2
+- Kept without reply: 2 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 32 | Write quota: 100
+- Archive pages processed: 3 | Read quota: 40 | Write quota: 100
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-18 | Revision: 9dbfd771ef9697fa
-- Updated profiles: short
+- Updated profiles: none
 - Candidates with an Analytics adjustment: 4
 - main: 0 mature samples, preferred Tehran times: default
 - short: 10 mature samples, preferred Tehran times: default
