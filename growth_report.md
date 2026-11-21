@@ -29,14 +29,14 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 1 | Replied: 0 | Removed: 0
+- Discovered: 4 | Reviewed by AI: 4
+- Kept without reply: 2 | Replied: 2 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 14 | Write quota: 0
+- Archive pages processed: 3 | Read quota: 26 | Write quota: 100
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-18 | Revision: ce68fdc209ee11b9
-- Updated profiles: short
+- Updated profiles: none
 - Candidates with an Analytics adjustment: 4
 - main: 0 mature samples, preferred Tehran times: default
 - short: 7 mature samples, preferred Tehran times: default
