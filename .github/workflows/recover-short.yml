@@ -50,4 +50,5 @@ jobs:
           YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
           RECOVER_VIDEO_ID: ${{ inputs.video_id }}
           STAGE_UPLOAD: ${{ inputs.stage_upload }}
+          FOOTBALLI_PROGRAMME_HOLD: ${{ vars.FOOTBALLI_PROGRAMME_HOLD }}
         run: python -u prepare_short_recovery.py
