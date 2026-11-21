@@ -18,7 +18,7 @@
 
 ## Last run
 
-- New web candidates: 8
+- New web candidates: 17
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
@@ -29,10 +29,10 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 0
+- Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 2 | In queue: 3 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 287 | Write quota: 650
+- Archive pages processed: 3 | Read quota: 295 | Write quota: 650
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
