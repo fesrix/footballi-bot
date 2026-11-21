@@ -1,28 +1,28 @@
 # Footballi Growth Report
 
-- Analytics window: 2026-08-20 → 2026-11-17
+- Analytics window: 2026-08-21 → 2026-11-18
 - Tracked videos: 116
-- Queue size: 17
-- Uploads today: 1
+- Queue size: 18
+- Uploads today: 2
 
 ## Performance by category
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 74 | 80681 | 165366.0 | 217 |
-| SHORTS | 17 | 27699 | 4862.0 | 30 |
-| SUMMARY | 17 | 23119 | 63797.0 | 56 |
-| FOOTBALL_BARTAR | 3 | 1041 | 730.0 | 1 |
-| VIDEOCAST | 3 | 694 | 2101.0 | 5 |
-| POSHTE_KHAT | 2 | 239 | 284.0 | 2 |
+| VIDEO | 74 | 82478 | 168619.0 | 218 |
+| SHORTS | 17 | 39971 | 7177.0 | 60 |
+| SUMMARY | 17 | 23329 | 64438.0 | 57 |
+| FOOTBALL_BARTAR | 3 | 1346 | 901.0 | 1 |
+| VIDEOCAST | 3 | 708 | 2101.0 | 5 |
+| POSHTE_KHAT | 2 | 378 | 465.0 | 2 |
 
 ## Last run
 
 - New web candidates: 2
 - New Instagram candidates: 0
 - Rejections: {}
-- Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 1 main, 0 Shorts, 0 priority highlights
+- Published this run: 0 main, 1 Shorts, 0 priority highlights
+- Published today by format: 1 main, 1 Shorts, 0 priority highlights
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
@@ -32,11 +32,12 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 369 | Write quota: 700
+- Archive pages processed: 3 | Read quota: 6 | Write quota: 0
 
 ## Publishing decisions from Analytics
-- Data through: 2026-11-17 | Revision: d89f017e1a809ab4
+- Data through: 2026-11-18 | Revision: d89f017e1a809ab4
 - Updated profiles: none
 - Candidates with an Analytics adjustment: 5
 - main: 0 mature samples, preferred Tehran times: default
 - short: 5 mature samples, preferred Tehran times: default
+- Published at 11:31 Tehran | Title style: quote | Queue factor: 0.934
