@@ -708,6 +708,13 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
     if og_desc and og_desc.get("content"):
         description = og_desc["content"].strip()
 
+    source_tags = [
+        tag["content"] for tag in soup.select(
+            'meta[name="keywords"][content], meta[property="article:tag"][content], '
+            'meta[property="video:tag"][content]'
+        )
+    ]
+
     candidate_mp4s = []
     for meta_prop in ["og:video", "og:video:url", "og:video:secure_url", "twitter:player:stream"]:
         m_tag = soup.find("meta", property=meta_prop) or soup.find("meta", attrs={"name": meta_prop})
@@ -744,6 +751,7 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
         "url": page_url,
         "title": title,
         "description": description or title,
+        "source_tags": source_tags,
         "mp4_url": mp4_url,
         "alternate_mp4_url": pick_highest_quality_mp4([url for url in variants if url != mp4_url]),
         "poster_url": poster_url,
@@ -834,6 +842,7 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "url": details["url"],
             "title": details["title"],
             "description": details["description"],
+            "source_tags": details.get("source_tags", []),
             "mp4_url": details["mp4_url"],
             "alternate_mp4_url": details.get("alternate_mp4_url", ""),
             "poster_url": details["poster_url"],
@@ -949,6 +958,10 @@ def fetch_instagram_reels(state: dict) -> list:
                 "url": reel_url,
                 "title": first_line,
                 "description": caption,
+                "source_metadata": {key: item[key] for key in (
+                    "title", "alt", "hashtags", "tags", "ownerUsername", "ownerFullName",
+                    "audioName", "musicInfo", "fileName",
+                ) if key in item},
                 "mp4_url": video_url,
                 "poster_url": item.get("displayUrl", ""),
                 "site_views": int(item.get("videoPlayCount") or item.get("likesCount") or 0),

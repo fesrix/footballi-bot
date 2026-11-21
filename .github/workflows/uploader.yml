@@ -121,6 +121,7 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
           CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
           APIFY_FORCE_CHECK: ${{ inputs.force_instagram == true }}
+          FOOTBALLI_PROGRAMME_HOLD: ${{ vars.FOOTBALLI_PROGRAMME_HOLD }}
         run: timeout --kill-after=5s 595s python -u footballi_uploader.py
 
       - name: Review YouTube comments

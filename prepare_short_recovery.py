@@ -12,6 +12,7 @@ from googleapiclient.http import MediaFileUpload
 
 from footballi_uploader import get_youtube_client, load_state
 from media_utils import download_file, inspect_audio_file, inspect_video_file
+from programme_hold import blocked_candidate_programme
 
 
 def verified_source(state, video_id):
@@ -92,7 +93,8 @@ def prepare_source(source, directory, picture_url="", audio_url=""):
 
 def main():
     video_id = os.environ["RECOVER_VIDEO_ID"].strip()
-    source = verified_source(load_state(), video_id)
+    state = load_state()
+    source = verified_source(state, video_id)
     youtube = get_youtube_client()
     rows = youtube.videos().list(part="snippet,status,fileDetails", id=video_id).execute()["items"]
     if len(rows) != 1 or not rows[0].get("fileDetails"):
@@ -102,6 +104,13 @@ def main():
     print(f"[RECOVERY] Original upload reports {len(streams)} audio stream(s).")
     event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
     inputs = event.get("inputs", {})
+    programme = blocked_candidate_programme(
+        state["published_metadata"][video_id], source, original.get("snippet"),
+        original["fileDetails"].get("fileName"), inputs.get("picture_url"), inputs.get("audio_url"),
+    )
+    if programme:
+        print(f"[PROGRAMME-HOLD] {programme}: skipped recovery of {video_id}")
+        return
     with tempfile.TemporaryDirectory() as work:
         output = prepare_source(source, Path(work), inputs.get("picture_url") or "",
                                 inputs.get("audio_url") or "")

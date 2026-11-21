@@ -57,6 +57,7 @@ from scrapers import (
 import ai_seo
 import media_utils
 import scrapers
+from programme_hold import blocked_candidate_programme, programme_hold_enabled
 from learning import build_policy, defer_for_timing, ranking, timestamp, title_choice, topic_for
 
 
@@ -713,6 +714,9 @@ def deduplicate_and_balance_queue(
 ) -> list:
     main_items = []
     short_items = []
+    held_items = []
+    hold_enabled = programme_hold_enabled()
+    now = now or datetime.now(timezone.utc)
     q_urls = set()
     q_mp4s = set()
     q_titles = set()
@@ -747,9 +751,20 @@ def deduplicate_and_balance_queue(
             continue
         if u in uploaded_urls or u in rejected_urls or u in q_urls or mp4 in seen_mp4s or mp4 in q_mp4s:
             continue
-        priority_now = now or datetime.now(timezone.utc)
+        programme = (item.get("programme_hold") or blocked_candidate_programme(item)) if hold_enabled else ""
+        if programme:
+            observed = _fresh_item_timestamp(item)
+            if not observed or now - observed <= timedelta(hours=48):
+                if not item.get("programme_hold"):
+                    print(f"[PROGRAMME-HOLD] {programme}: candidate {vid_id or u.split('?')[0]}")
+                item["programme_hold"] = programme
+                item["learning_factor"] = 1
+                held_items.append(item)
+                q_urls.add(u)
+            continue
+        item.pop("programme_hold", None)
         if (is_duplicate_title(item.get("title", ""), known_norm_titles | q_titles)
-                and not (priority_state and is_priority_item(item, priority_state, priority_now))):
+                and not (priority_state and is_priority_item(item, priority_state, now))):
             continue
 
         if item.get("is_short"):
@@ -780,7 +795,6 @@ def deduplicate_and_balance_queue(
         state_rejection_counts.clear()
         state_rejection_counts.update(rejection_counts)
 
-    now = now or datetime.now(timezone.utc)
     policy = policy or {}
 
     def sort_key(item):
@@ -804,7 +818,7 @@ def deduplicate_and_balance_queue(
                       if priority_state and is_priority_item(item, priority_state, now)]
     routine_main = main_items[len(main_priority):][:MAX_MAIN_QUEUE_SIZE]
     routine_short = short_items[len(short_priority):][:MAX_SHORTS_QUEUE_SIZE]
-    return sorted(main_priority + short_priority, key=sort_key) + routine_main + routine_short
+    return sorted(main_priority + short_priority, key=sort_key) + routine_main + routine_short + held_items
 
 
 def call_ai_copyright_audit(title: str, desc: str) -> bool:
@@ -888,6 +902,11 @@ def download_candidate(top, path, state, deadline):
             and extract_numeric_id(source_url) and deadline - time.monotonic() > 120):
         fresh = extract_video_page_details(source_url, max_site_id=state.get("max_seen_video_id", 0))
         if fresh:
+            programme = blocked_candidate_programme(fresh)
+            if programme:
+                top["programme_hold"] = programme
+                print(f"[PROGRAMME-HOLD] {programme}: refreshed source for candidate {top.get('video_id')}")
+                return ""
             candidates = [fresh["mp4_url"], fresh.get("alternate_mp4_url"), *candidates]
     for url in dict.fromkeys(filter(None, candidates)):
         remaining = deadline - time.monotonic() - 75
@@ -938,6 +957,8 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
         queue.sort(key=format_order)
 
     for top in queue:
+        if programme_hold_enabled() and (top.get("programme_hold") or blocked_candidate_programme(top)):
+            continue
         if deadline - time.monotonic() < MIN_TIME_TO_START_CANDIDATE:
             print("[BUDGET] Leaving remaining candidates for the next half-hour run.")
             break
@@ -981,11 +1002,14 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
                 continue
 
         downloaded_url = download_candidate(top, video_file, state, deadline)
-        if not downloaded_url and priority_item and deadline - time.monotonic() > 150:
+        if (not downloaded_url and not top.get("programme_hold") and priority_item
+                and deadline - time.monotonic() > 150):
             top["download_failures"] = max(1, safe_int(top.get("download_failures")))
             print(f"[PRIORITY-RETRY] Refreshing source page for {top.get('video_id', 'candidate')}.")
             downloaded_url = download_candidate(top, video_file, state, deadline)
         if not downloaded_url:
+            if top.get("programme_hold"):
+                continue
             retain_media_retry(top, state, "download_failed", priority=priority_item)
             continue
 
@@ -1046,6 +1070,8 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             priority_only, video_file, thumb_file, tehran_now, deadline
         )
         if not published:
+            if top.get("programme_hold"):
+                continue
             break  # The platform-wide limit applies to every candidate.
         uploaded_urls.add(top["url"])
         seen_mp4s.add(top["mp4_url"])
@@ -1078,6 +1104,13 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
     source_url = candidate.get("source_url") or candidate.get("url")
     if source_url and source_url not in final_desc:
         final_desc = f"{final_desc}\n\nمنبع رسمی: {source_url}"
+
+    programme = blocked_candidate_programme(candidate, video_file, final_title, final_desc, final_tags)
+    if programme:
+        candidate["programme_hold"] = programme
+        print(f"[PROGRAMME-HOLD] {programme}: skipped before upload ({candidate.get('video_id', 'candidate')})")
+        save_state(state)
+        return False
 
     print(f"[UPLOAD] Publishing {cat} ({'priority' if priority_summary else fmt} | Score: {candidate.get('ai_score', 6)}/10): {final_title}")
 
@@ -1284,7 +1317,7 @@ def main():
                     state["last_run"]["live_scores"]["match_day_candidates"] += 1
         state["last_run"]["live_scores"]["priority_approved"] = sum(
             1 for item in state["pending_queue"]
-            if is_priority_item(item, state, now_for_priority)
+            if not item.get("programme_hold") and is_priority_item(item, state, now_for_priority)
         )
         for reason, count in _QUEUE_REJECTION_COUNTS.items():
             rejections = state["last_run"]["rejected_by_reason"]
