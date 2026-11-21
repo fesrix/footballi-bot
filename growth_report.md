@@ -20,19 +20,19 @@
 
 - New web candidates: 2
 - New Instagram candidates: 0
-- Rejections: {'horizontal_under_three_minutes': 1}
+- Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
-- Match-day candidates: 0 | Priority approved: 1
+- Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
 - Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 0 | Replied: 0 | Removed: 1
+- Kept without reply: 1 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 247 | Write quota: 650
+- Archive pages processed: 3 | Read quota: 255 | Write quota: 650
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
