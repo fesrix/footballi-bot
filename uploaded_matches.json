@@ -445,7 +445,8 @@
     "https://www.instagram.com/p/Df-aaahqr3P/",
     "https://footballi.net/video/1076268/%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D8%A8%D8%A7%D8%B4%DA%AF%D8%A7%D9%87-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86-%D8%A8%D9%87-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D8%B5%D9%86%D8%B9%D8%AA-%D9%86%D9%81%D8%AA",
     "https://footballi.net/video/1076363/%D9%BE%D8%B4%D8%AA-%D8%AE%D8%B7-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D9%81%D8%AA%D8%A7%D8%AD%DB%8C-%D9%84%DB%8C%D8%B3%D8%AA%DB%8C-%D8%A8%D9%87-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D9%86%D8%AF%D8%A7%D8%AF%D9%87-%D8%B1%D9%88%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84%DB%8C-%D8%A8%D9%88%D8%AF%D9%86-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D8%AD%D8%B3%D8%A7%D8%A8-%DA%A9%D8%B1%D8%AF%DB%8C%D9%85",
-    "https://footballi.net/video/1076132/%D8%A7%D9%84%D9%87%D8%A7%D9%85%DB%8C-%D8%A2%D9%85%D8%A7%D8%B1-%D9%85%D8%A7-%D8%A7%D8%B2-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D9%87%D8%AA%D8%B1-%D8%A8%D9%88%D8%AF-%D8%A7%D9%85%D8%A7-%D9%86%D8%AA%DB%8C%D8%AC%D9%87-%D8%A8%D8%B1%D8%B9%DA%A9%D8%B3-%D8%B4%D8%AF"
+    "https://footballi.net/video/1076132/%D8%A7%D9%84%D9%87%D8%A7%D9%85%DB%8C-%D8%A2%D9%85%D8%A7%D8%B1-%D9%85%D8%A7-%D8%A7%D8%B2-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%A8%D9%87%D8%AA%D8%B1-%D8%A8%D9%88%D8%AF-%D8%A7%D9%85%D8%A7-%D9%86%D8%AA%DB%8C%D8%AC%D9%87-%D8%A8%D8%B1%D8%B9%DA%A9%D8%B3-%D8%B4%D8%AF",
+    "https://footballi.net/video/1076398/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D9%85%D8%A7%D8%B2%D9%86%D8%AF%D8%B1%D8%A7%D9%86-0-0-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -639,7 +640,8 @@
     "کارشناسی داوری پرسپولیس و پیکان با حیدر سلیمانی",
     "اعتراض استقلال خوزستان به داوری؛ خطای پنالتی واضح؟",
     "بهتاش فریبا: فتاحی لیستی به سهراب نداده است",
-    "الهامی: آمار ما از پرسپولیس بهتر بود اما نتیجه برعکس شد"
+    "الهامی: آمار ما از پرسپولیس بهتر بود اما نتیجه برعکس شد",
+    "خلاصه بازی نساجی مازندران ۰-۰ آلومینیوم اراک در لیگ برتر"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -677,6 +679,30 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
+      "video_id": 1076399,
+      "published_at": null,
+      "discovered_at": 1795273284.5816097,
+      "url": "https://footballi.net/video/1076399/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A8%D9%87-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%88%D8%AD%DB%8C%D8%AF-%D8%A7%D9%85%DB%8C%D8%B1%DB%8C",
+      "title": "گل اول فولاد به سپاهان (وحید امیری)",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | سپاهان,فولاد خوزستان,لیگ برتر ایران",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-3a3bbbba-df97-4015-af4a-8d6200bb3452.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-45c355f3-980d-40ab-a725-798023352133.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/XDaoTDTi2LIaEGGFqKPi5ioEgJyLrst41zYPCzkq.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076399/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A8%D9%87-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%88%D8%AD%DB%8C%D8%AF-%D8%A7%D9%85%DB%8C%D8%B1%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795273284.151046,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795273284.5816536,
+      "attempt_count": 2,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0
+    },
+    {
       "video_id": 1076393,
       "published_at": null,
       "discovered_at": 1795271488.2166927,
@@ -694,7 +720,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795271488.2167344,
-      "attempt_count": 2,
+      "attempt_count": 3,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -718,7 +744,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795269677.870098,
-      "attempt_count": 4,
+      "attempt_count": 5,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -742,7 +768,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795267870.2898886,
-      "attempt_count": 5,
+      "attempt_count": 6,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -766,7 +792,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795248081.945169,
-      "attempt_count": 16,
+      "attempt_count": 17,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -791,7 +817,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228286.662862,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -815,7 +841,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228286.8943288,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -839,7 +865,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228287.3319385,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -863,7 +889,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228287.657812,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -887,7 +913,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228287.8866508,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -911,7 +937,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228288.260383,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -935,7 +961,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795228288.6863208,
-      "attempt_count": 28,
+      "attempt_count": 29,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -959,7 +985,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795226485.7524142,
-      "attempt_count": 29,
+      "attempt_count": 30,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -983,7 +1009,7 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795226486.2640297,
-      "attempt_count": 29,
+      "attempt_count": 30,
       "is_short": false,
       "ai_score": 7,
       "category": "VIDEO",
@@ -1007,30 +1033,6 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795246270.4735472,
-      "attempt_count": 17,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076172,
-      "published_at": null,
-      "discovered_at": 1795244495.9644005,
-      "url": "https://footballi.net/video/1076172/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AC%D8%A7%D9%84%D8%A8-%D8%B1%D8%AD%D9%85%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D8%AD%D8%B6%D9%88%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
-      "title": "واکنش جالب رحمتی به احتمال حضورش روی نیمکت استقلال!",
-      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | استقلال,گل‌گهر سیرجان,سیدمهدی رحمتی,شب های فوتبالی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-bf2ba66a-2ceb-4a5b-8a85-9e5457cb114a.mp4",
-      "alternate_mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-886deb72-43a6-4e84-bb41-20bfb73c05bf.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/PdOjaT8d7reTiTWVbbk73Ujb4mY2A2FxOIspDsLc.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076172/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AC%D8%A7%D9%84%D8%A8-%D8%B1%D8%AD%D9%85%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D8%AD%D8%B6%D9%88%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
-      "source_published_at": null,
-      "source_first_seen_at": 1795201296.7063568,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795244495.964436,
       "attempt_count": 18,
       "is_short": false,
       "ai_score": 7,
@@ -1053,7 +1055,7 @@
       "rights_status": "internal_authorized",
       "content_type": "instagram_reel",
       "discovery_timestamp": 1795208587.9682028,
-      "attempt_count": 39,
+      "attempt_count": 40,
       "is_short": true,
       "ai_score": 9,
       "category": "SHORTS",
@@ -1075,7 +1077,7 @@
       "rights_status": "internal_authorized",
       "content_type": "instagram_reel",
       "discovery_timestamp": 1795208587.9682705,
-      "attempt_count": 39,
+      "attempt_count": 40,
       "is_short": true,
       "ai_score": 9,
       "category": "SHORTS",
@@ -1097,7 +1099,7 @@
       "rights_status": "internal_authorized",
       "content_type": "instagram_reel",
       "discovery_timestamp": 1795269728.3817155,
-      "attempt_count": 3,
+      "attempt_count": 4,
       "is_short": true,
       "ai_score": 8,
       "category": "SHORTS",
@@ -1119,7 +1121,7 @@
       "rights_status": "internal_authorized",
       "content_type": "instagram_reel",
       "discovery_timestamp": 1795269728.381665,
-      "attempt_count": 3,
+      "attempt_count": 4,
       "is_short": true,
       "ai_score": 8,
       "category": "SHORTS",
@@ -1141,7 +1143,7 @@
       "rights_status": "internal_authorized",
       "content_type": "instagram_reel",
       "discovery_timestamp": 1795269728.3816845,
-      "attempt_count": 3,
+      "attempt_count": 4,
       "is_short": true,
       "ai_score": 8,
       "category": "SHORTS",
@@ -1576,11 +1578,12 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-e7abb5fb-c22d-4a43-aa4e-d8589183735c.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-8f3cda9f-4339-4ed6-b12c-435a3d83b19a.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-3ed2e69b-d3bf-476c-9afc-f66b47ced345.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-014416dc-91c9-4eda-b3e9-3d3e6a8040c4.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-014416dc-91c9-4eda-b3e9-3d3e6a8040c4.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-87c8bd83-92fa-4768-9b72-0160b34104d9.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-21",
-    "count": 5
+    "count": 6
   },
   "last_upload_timestamp": 1795264421.732079,
   "last_apify_check": 1795269728.3019345,
@@ -2197,6 +2200,9 @@
     "OrzdOCnd8SI": [
       "INTERVIEW",
       "PERSEPOLIS"
+    ],
+    "EwjkpTf5-R4": [
+      "SUMMARY"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2232,7 +2238,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1076393,
+  "max_seen_video_id": 1076400,
   "rejected_urls": [
     "https://footballi.net/video/1075273/%D9%85%D8%B3%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%88%D9%84-%D8%A8%D8%A7%DB%8C%D8%AF-%D9%BE%D9%84%D9%86-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D8%AF-%D8%AA%D8%A7-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D8%B4%D8%AE%D8%B5-%D8%B4%D9%88%D9%86%D8%AF",
     "https://footballi.net/video/1075317/%DA%A9%D8%A7%D8%B8%D9%85%DB%8C-%D8%AA%D9%85%D8%A7%D9%85-%D9%85%D9%87%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A7%DB%8C%D9%86-%D9%81%D8%B5%D9%84-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AE%D9%88%D8%A8%DB%8C-%D8%AF%D8%A7%D8%B4%D8%AA%D9%86%D8%AF",
@@ -2643,7 +2649,11 @@
     "https://footballi.net/video/1076384/%D8%AA%D8%B4%D9%88%DB%8C%D9%82-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D8%AF%D8%B1-%D8%AC%D8%B1%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
     "https://footballi.net/video/1076356/%D8%AD%D8%B1%DA%A9%D8%A7%D8%AA-%D9%86%D9%85%D8%A7%DB%8C%D8%B4%DB%8C-%D8%AC%D8%B0%D8%A7%D8%A8-%DB%8C%DA%A9-%D9%81%D8%B1%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%DB%8C%D9%84%DB%8C%D8%B3%D8%AA-%DA%98%D8%A7%D9%BE%D9%86%DB%8C",
     "https://footballi.net/video/1076372/%DB%B2%DB%B7-%D8%B3%D8%A7%D9%84-%D8%A7%D8%B2-%D8%A7%D9%88%D9%84%DB%8C%D9%86-%DA%AF%D9%84-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%DB%8C%D9%86%DB%8C%D9%88-%D8%AF%D8%B1-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D8%A8%D8%B1%D8%B2%DB%8C%D9%84-%DA%AF%D8%B0%D8%B4%D8%AA",
-    "https://footballi.net/video/1076391/%DA%AF%D8%B1%D9%85-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%88-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D8%AF%D8%B1-%D8%A2%D8%B3%D8%AA%D8%A7%D9%86%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%AF%D9%88-%D8%AA%DB%8C%D9%85"
+    "https://footballi.net/video/1076391/%DA%AF%D8%B1%D9%85-%DA%A9%D8%B1%D8%AF%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%88-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D8%AF%D8%B1-%D8%A2%D8%B3%D8%AA%D8%A7%D9%86%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%AF%D9%88-%D8%AA%DB%8C%D9%85",
+    "https://footballi.net/video/1076400/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D8%A8%D9%87-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%B9%D8%A7%D8%B1%D9%81-%D8%AD%D8%A7%D8%AC%DB%8C-%D8%B9%DB%8C%D8%AF%DB%8C",
+    "https://footballi.net/video/1076396/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1-%D8%B3%DB%8C%D8%AA%DB%8C-1-1-%D9%81%D9%88%D9%84%D8%A7%D9%85",
+    "https://footballi.net/video/1076397/%D8%AE%D9%88%D8%B4-%D9%88-%D8%A8%D8%B4-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AF%D9%88-%D8%AA%DB%8C%D9%85-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%88-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AF%D8%B1-%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C",
+    "https://footballi.net/video/1076358/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%AA%DB%8C%D9%85-%DA%86%D9%84%D8%B3%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D9%85%D8%B5%D8%A7%D9%81-%D8%A8%D8%A7-%D9%84%DB%8C%D8%AF%D8%B2-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%DB%8C%D8%A7%D8%B2%D8%AF%D9%87%D9%85-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3"
   ],
   "seen_raw_titles": [
     "شوخی و خنده با ملی‌پوشان؛ گپ‌وگفتی متفاوت در فوتبال برتر",
@@ -2688,7 +2698,8 @@
     "کارشناسی داوری پرسپولیس - پیکان با حیدر سلیمانی",
     "اعتراض باشگاه استقلال خوزستان به داوری دیدار با صنعت نفت",
     "پشت خط/ بهتاش فریبا: فتاحی لیستی به سهراب نداده!/ روی استقلالی بودن بختیاری زاده حساب کردیم",
-    "الهامی: آمار ما از پرسپولیس بهتر بود اما نتیجه برعکس شد"
+    "الهامی: آمار ما از پرسپولیس بهتر بود اما نتیجه برعکس شد",
+    "خلاصه بازی نساجی مازندران 0-0 آلومینیوم اراک"
   ],
   "analytics": {
     "videos": {
@@ -2751,7 +2762,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -2845,7 +2856,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -2939,7 +2950,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3033,7 +3044,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3052,7 +3063,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-10T06:35:06Z",
         "recent_statistics": {
-          "viewCount": 10058,
+          "viewCount": 10059,
           "likeCount": 54,
           "commentCount": 24
         },
@@ -3221,7 +3232,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3240,7 +3251,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-06T14:47:27Z",
         "recent_statistics": {
-          "viewCount": 5400,
+          "viewCount": 5403,
           "likeCount": 33,
           "commentCount": 2
         },
@@ -3315,7 +3326,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3409,7 +3420,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3503,7 +3514,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3597,7 +3608,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3691,7 +3702,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3785,7 +3796,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3879,7 +3890,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -3898,7 +3909,7 @@
         "category": "SHORTS",
         "published_at": "2026-11-07T07:36:31Z",
         "recent_statistics": {
-          "viewCount": 1460,
+          "viewCount": 1459,
           "likeCount": 20,
           "commentCount": 0
         },
@@ -3974,7 +3985,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4068,7 +4079,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4162,7 +4173,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4256,7 +4267,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4275,7 +4286,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-08T09:46:02Z",
         "recent_statistics": {
-          "viewCount": 943,
+          "viewCount": 942,
           "likeCount": 11,
           "commentCount": 0
         },
@@ -4350,7 +4361,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4445,7 +4456,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4464,7 +4475,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-03T21:33:06Z",
         "recent_statistics": {
-          "viewCount": 1406,
+          "viewCount": 1407,
           "likeCount": 38,
           "commentCount": 0
         },
@@ -4539,7 +4550,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4558,7 +4569,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-06T08:17:35Z",
         "recent_statistics": {
-          "viewCount": 174,
+          "viewCount": 177,
           "likeCount": 3,
           "commentCount": 3
         },
@@ -4633,7 +4644,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4727,7 +4738,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4821,7 +4832,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -4840,7 +4851,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-13T08:02:50Z",
         "recent_statistics": {
-          "viewCount": 319,
+          "viewCount": 318,
           "likeCount": 2,
           "commentCount": 0
         },
@@ -4915,7 +4926,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5009,7 +5020,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5197,7 +5208,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5291,7 +5302,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5385,7 +5396,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5479,7 +5490,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5761,7 +5772,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5855,7 +5866,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5949,7 +5960,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -5968,7 +5979,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-14T10:33:13Z",
         "recent_statistics": {
-          "viewCount": 95,
+          "viewCount": 92,
           "likeCount": 0,
           "commentCount": 0
         },
@@ -6043,7 +6054,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6137,7 +6148,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6231,7 +6242,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6325,7 +6336,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6419,7 +6430,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6438,7 +6449,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-14T09:32:52Z",
         "recent_statistics": {
-          "viewCount": 151,
+          "viewCount": 150,
           "likeCount": 0,
           "commentCount": 0
         },
@@ -6701,7 +6712,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6795,7 +6806,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6889,7 +6900,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -6983,7 +6994,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7077,7 +7088,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7160,7 +7171,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7243,7 +7254,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7337,7 +7348,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7431,7 +7442,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7525,7 +7536,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7619,7 +7630,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7713,7 +7724,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7807,7 +7818,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7890,7 +7901,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -7984,7 +7995,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8078,7 +8089,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8172,7 +8183,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8257,7 +8268,7 @@
         ],
         "video_id": "s2bUTzUIsQs",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8350,7 +8361,7 @@
         ],
         "video_id": "xRmWpp-FcK8",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8367,7 +8378,7 @@
         "category": "SHORTS",
         "published_at": "2026-11-15T14:32:02Z",
         "recent_statistics": {
-          "viewCount": 10966,
+          "viewCount": 10977,
           "likeCount": 99,
           "commentCount": 13
         },
@@ -8445,7 +8456,7 @@
         ],
         "video_id": "fo0CJYWV9XA",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8538,7 +8549,7 @@
         ],
         "video_id": "_kfhPpKTxp0",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8631,7 +8642,7 @@
         ],
         "video_id": "wbsXnJe0u74",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8724,7 +8735,7 @@
         ],
         "video_id": "yNMQFVLrYI0",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8817,7 +8828,7 @@
         ],
         "video_id": "j2FxETm3Q-A",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -8910,7 +8921,7 @@
         ],
         "video_id": "kcXtfRp5vGw",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9003,7 +9014,7 @@
         ],
         "video_id": "eL3xQkAGtjM",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9096,7 +9107,7 @@
         ],
         "video_id": "cvuAwQ4k21M",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9191,7 +9202,7 @@
         ],
         "video_id": "Txy_j-gn5cM",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9272,7 +9283,7 @@
         ],
         "video_id": "5dWV-l6DvS0",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9425,7 +9436,7 @@
         ],
         "video_id": "7gY733Mk_Dw",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9506,7 +9517,7 @@
         ],
         "video_id": "pOWvf8sxbFk",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9585,7 +9596,7 @@
         ],
         "video_id": "5ELPWaInU5E",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9602,7 +9613,7 @@
         "category": "SHORTS",
         "published_at": "2026-11-16T09:32:09Z",
         "recent_statistics": {
-          "viewCount": 3490,
+          "viewCount": 3501,
           "likeCount": 33,
           "commentCount": 2
         },
@@ -9666,7 +9677,7 @@
         ],
         "video_id": "MZA1NXvV1SQ",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9683,7 +9694,7 @@
         "category": "SUMMARY",
         "published_at": "2026-11-16T17:33:41Z",
         "recent_statistics": {
-          "viewCount": 379,
+          "viewCount": 380,
           "likeCount": 3,
           "commentCount": 0
         },
@@ -9745,7 +9756,7 @@
         ],
         "video_id": "Odu2hIUafqw",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9826,7 +9837,7 @@
         ],
         "video_id": "SgjSIJjRllI",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9907,7 +9918,7 @@
         ],
         "video_id": "-Ud6slcyGiI",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -9986,7 +9997,7 @@
         ],
         "video_id": "78pHfXgilGU",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -10067,7 +10078,7 @@
         ],
         "video_id": "Gppn0m_RFMY",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -10146,7 +10157,7 @@
         ],
         "video_id": "NjBDBkuT0ow",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -10225,7 +10236,7 @@
         ],
         "video_id": "1zQhf6XSwHA",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -10541,7 +10552,7 @@
         ],
         "video_id": "Nb6g5gq3CxI",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -10620,7 +10631,7 @@
         ],
         "video_id": "RSSubbsW44E",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -10931,7 +10942,7 @@
         ],
         "video_id": "cY91jitiefk",
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11002,12 +11013,12 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T16:02:00Z",
         "recent_statistics": {
-          "viewCount": 42687,
-          "likeCount": 741,
+          "viewCount": 42774,
+          "likeCount": 744,
           "commentCount": 26
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11050,7 +11061,7 @@
           "commentCount": 0
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11145,12 +11156,12 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T06:02:19Z",
         "recent_statistics": {
-          "viewCount": 5393,
+          "viewCount": 5361,
           "likeCount": 47,
           "commentCount": 4
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11202,12 +11213,12 @@
         "source": "footballi_web",
         "published_at": "2026-11-17T17:31:51Z",
         "recent_statistics": {
-          "viewCount": 1481,
+          "viewCount": 1479,
           "likeCount": 8,
           "commentCount": 7
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11262,7 +11273,7 @@
           "commentCount": 0
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11317,7 +11328,7 @@
           "commentCount": 0
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-21T14:30:48.608090+00:00",
+        "last_synced_at": "2026-11-21T15:00:54.553062+00:00",
         "period_start": "2026-08-21",
         "period_end": "2026-11-18",
         "metrics": {
@@ -11352,7 +11363,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-19T10:44:32Z",
         "recent_statistics": {
-          "viewCount": 1284,
+          "viewCount": 1283,
           "likeCount": 18,
           "commentCount": 1
         }
@@ -11382,7 +11393,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T15:07:32Z",
         "recent_statistics": {
-          "viewCount": 1076,
+          "viewCount": 1097,
           "likeCount": 11,
           "commentCount": 2
         }
@@ -11397,7 +11408,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T18:02:09Z",
         "recent_statistics": {
-          "viewCount": 66,
+          "viewCount": 64,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -11412,7 +11423,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T18:11:28Z",
         "recent_statistics": {
-          "viewCount": 1416,
+          "viewCount": 1404,
           "likeCount": 8,
           "commentCount": 3
         }
@@ -11442,8 +11453,8 @@
         "source": "instagram",
         "published_at": "2026-11-20T08:01:53Z",
         "recent_statistics": {
-          "viewCount": 7164,
-          "likeCount": 75,
+          "viewCount": 7232,
+          "likeCount": 76,
           "commentCount": 19
         }
       },
@@ -11457,8 +11468,8 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T10:06:36Z",
         "recent_statistics": {
-          "viewCount": 3244,
-          "likeCount": 77,
+          "viewCount": 3283,
+          "likeCount": 78,
           "commentCount": 19
         }
       },
@@ -11487,7 +11498,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T14:32:11Z",
         "recent_statistics": {
-          "viewCount": 430,
+          "viewCount": 421,
           "likeCount": 5,
           "commentCount": 2
         }
@@ -11502,7 +11513,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T14:49:48Z",
         "recent_statistics": {
-          "viewCount": 385,
+          "viewCount": 384,
           "likeCount": 2,
           "commentCount": 0
         }
@@ -11517,7 +11528,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T15:13:05Z",
         "recent_statistics": {
-          "viewCount": 14013,
+          "viewCount": 14058,
           "likeCount": 43,
           "commentCount": 5
         }
@@ -11532,7 +11543,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T16:04:24Z",
         "recent_statistics": {
-          "viewCount": 250,
+          "viewCount": 248,
           "likeCount": 3,
           "commentCount": 2
         }
@@ -11577,7 +11588,7 @@
         "source": "instagram",
         "published_at": "2026-11-21T08:02:11Z",
         "recent_statistics": {
-          "viewCount": 395,
+          "viewCount": 425,
           "likeCount": 6,
           "commentCount": 0
         }
@@ -11592,7 +11603,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T10:33:05Z",
         "recent_statistics": {
-          "viewCount": 28,
+          "viewCount": 30,
           "likeCount": 2,
           "commentCount": 0
         }
@@ -11607,7 +11618,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T12:34:15Z",
         "recent_statistics": {
-          "viewCount": 20,
+          "viewCount": 36,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -11628,7 +11639,7 @@
         }
       }
     },
-    "last_sync_at": "2026-11-21T14:30:48.608090+00:00",
+    "last_sync_at": "2026-11-21T15:00:54.553062+00:00",
     "period_start": "2026-08-21",
     "period_end": "2026-11-18",
     "video_count": 120,
@@ -12137,40 +12148,70 @@
       "learning_revision": "9dbfd771ef9697fa",
       "topic": "پرسپولیس",
       "source_title": "الهامی: آمار ما از پرسپولیس بهتر بود اما نتیجه برعکس شد"
+    },
+    "EwjkpTf5-R4": {
+      "title": "خلاصه بازی نساجی مازندران ۰-۰ آلومینیوم اراک در لیگ برتر",
+      "category": "SUMMARY",
+      "format": "main",
+      "priority_summary": true,
+      "priority_class": "summary",
+      "priority_reason": "fresh_summary",
+      "fixture_id": null,
+      "fixture_relation": null,
+      "priority_until": null,
+      "home_team": null,
+      "away_team": null,
+      "competition": null,
+      "kickoff_at": null,
+      "rights_audit": "approved",
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076398/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D9%85%D8%A7%D8%B2%D9%86%D8%AF%D8%B1%D8%A7%D9%86-0-0-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9",
+      "rights_status": "internal_authorized",
+      "published_at": "2026-11-21T15:01:57.881682+00:00",
+      "title_style": "direct",
+      "title_experiment": false,
+      "learning_revision": "9dbfd771ef9697fa",
+      "topic": "",
+      "source_title": "خلاصه بازی نساجی مازندران 0-0 آلومینیوم اراک"
     }
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-21T18:01:38.528112+03:30",
+    "finished_at": "2026-11-21T18:32:02.452320+03:30",
     "new_web_candidates": 2,
     "new_instagram_candidates": 0,
-    "rejected_by_reason": {
-      "horizontal_under_three_minutes": 1
-    },
+    "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
       "main": 0,
       "short": 0,
       "priority_summaries": 0,
       "priority_editorial": 0,
-      "priority_match_day": 0
+      "priority_match_day": 0,
+      "priority_summary": 1
     },
     "live_scores": {
       "status": "ok",
-      "fixtures": 4,
-      "match_day_candidates": 1,
+      "fixtures": 2,
+      "match_day_candidates": 0,
       "priority_approved": 1
     },
     "learning": {
       "revision": "9dbfd771ef9697fa",
       "changes": [],
-      "queue_adjusted": 5
+      "queue_adjusted": 5,
+      "title_style": "direct",
+      "selected_factor": 1.0,
+      "published_tehran": "18:31"
     },
+    "end_screen_video_ids": [
+      "EwjkpTf5-R4"
+    ],
     "queue_size": 20,
     "daily_uploads": {
       "main": 2,
       "short": 2,
-      "priority_summaries": 0,
+      "priority_summaries": 1,
       "priority_editorial": 1,
       "priority_match_day": 0
     }
@@ -14125,7 +14166,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-21",
-      "read": 93,
+      "read": 98,
       "write": 150
     },
     "last_run": {
@@ -14139,14 +14180,19 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 93,
+      "read_units": 98,
       "write_units": 150
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997373,
+  "last_successful_run_slot": 997374,
   "footballi_recent_publications": {
+    "1076400": 1795273284.151046,
+    "1076399": 1795273284.151046,
+    "1076398": 1795273284.151046,
+    "1076397": 1795273284.151046,
+    "1076396": 1795273284.151046,
     "1076393": 1795271487.9515057,
     "1076391": 1795271487.9515057,
     "1076388": 1795269675.5934577,
@@ -14241,12 +14287,7 @@
     "1076138": 1795195871.068458,
     "1076137": 1795195871.068458,
     "1076136": 1795194081.2445436,
-    "1076135": 1795194081.2445436,
-    "1076132": 1795194081.2445436,
-    "1076130": 1795194081.2445436,
-    "1076129": 1795194081.2445436,
-    "1076128": 1795194081.2445436,
-    "1076127": 1795194081.2445436
+    "1076135": 1795194081.2445436
   },
   "live_fixtures": {
     "fixtures": [
@@ -14256,9 +14297,9 @@
         "away_team": "آلومینیوم اراک",
         "competition": "لیگ برتر خلیج فارس",
         "kickoff_at": "2026-11-21T19:45:00+03:30",
-        "status": "scheduled",
+        "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-21T18:00:53.254470+03:30",
+        "fetched_at": "2026-11-21T18:30:56.793858+03:30",
         "parser_version": 1
       },
       {
@@ -14269,33 +14310,11 @@
         "kickoff_at": "2026-11-21T21:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-21T18:00:53.254470+03:30",
-        "parser_version": 1
-      },
-      {
-        "fixture_id": "dabc4ebe5a159e9c",
-        "home_team": "نساجی مازندران",
-        "away_team": "آلومینیوم اراک",
-        "competition": "لیگ برتر خلیج فارس",
-        "kickoff_at": "2026-11-21T18:00:00+03:30",
-        "status": "scheduled",
-        "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-21T18:00:53.254470+03:30",
-        "parser_version": 1
-      },
-      {
-        "fixture_id": "08d159731f3f0e28",
-        "home_team": "فولاد خوزستان",
-        "away_team": "سپاهان",
-        "competition": "لیگ برتر خلیج فارس",
-        "kickoff_at": "2026-11-21T18:00:00+03:30",
-        "status": "scheduled",
-        "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-21T18:00:53.254470+03:30",
+        "fetched_at": "2026-11-21T18:30:56.793858+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-21T18:00:53.254470+03:30",
+    "fetched_at": "2026-11-21T18:30:56.793858+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },

@@ -3,7 +3,7 @@
 - Analytics window: 2026-08-21 → 2026-11-18
 - Tracked videos: 120
 - Queue size: 20
-- Uploads today: 5
+- Uploads today: 6
 
 ## Performance by category
 
@@ -20,19 +20,25 @@
 
 - New web candidates: 2
 - New Instagram candidates: 0
-- Rejections: {'horizontal_under_three_minutes': 1}
+- Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 2 main, 2 Shorts, 0 priority highlights
+- Published today by format: 2 main, 2 Shorts, 1 priority highlights
+
+## End screens to set in YouTube Studio
+
+In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe** element, then save.
+
+- [Open EwjkpTf5-R4 in Studio](https://studio.youtube.com/video/EwjkpTf5-R4/editor)
 
 ## Live match priority
-- Fixture source: ok | Iranian fixtures: 4
-- Match-day candidates: 1 | Priority approved: 1
+- Fixture source: ok | Iranian fixtures: 2
+- Match-day candidates: 0 | Priority approved: 1
 
 ## Comment review
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 93 | Write quota: 150
+- Archive pages processed: 2 | Read quota: 98 | Write quota: 150
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-18 | Revision: 9dbfd771ef9697fa
@@ -40,3 +46,4 @@
 - Candidates with an Analytics adjustment: 5
 - main: 0 mature samples, preferred Tehran times: default
 - short: 10 mature samples, preferred Tehran times: default
+- Published at 18:31 Tehran | Title style: direct | Queue factor: 1.0
