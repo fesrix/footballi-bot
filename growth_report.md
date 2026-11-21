@@ -31,8 +31,8 @@
 ## Comment review
 - Discovered: 1 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
-- Errors: 1 | In queue: 1 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 263 | Write quota: 650
+- Errors: 1 | In queue: 2 | Threads awaiting a reply scan: 0
+- Archive pages processed: 3 | Read quota: 271 | Write quota: 650
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
