@@ -1,7 +1,7 @@
 # Footballi Growth Report
 
 - Analytics window: 2026-08-20 → 2026-11-17
-- Tracked videos: 115
+- Tracked videos: 116
 - Queue size: 15
 - Uploads today: 1
 
@@ -9,7 +9,7 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 73 | 80681 | 165366.0 | 217 |
+| VIDEO | 74 | 80681 | 165366.0 | 217 |
 | SHORTS | 17 | 27699 | 4862.0 | 30 |
 | SUMMARY | 17 | 23119 | 63797.0 | 56 |
 | FOOTBALL_BARTAR | 3 | 1041 | 730.0 | 1 |
@@ -18,17 +18,11 @@
 
 ## Last run
 
-- New web candidates: 2
+- New web candidates: 1
 - New Instagram candidates: 0
-- Rejections: {'horizontal_under_three_minutes': 4}
-- Published this run: 1 main, 0 Shorts, 0 priority highlights
+- Rejections: {}
+- Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 1 main, 0 Shorts, 0 priority highlights
-
-## End screens to set in YouTube Studio
-
-In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe** element, then save.
-
-- [Open OGaKvEc6jEY in Studio](https://studio.youtube.com/video/OGaKvEc6jEY/editor)
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
@@ -38,7 +32,7 @@ In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe
 - Discovered: 1 | Reviewed by AI: 1
 - Kept without reply: 1 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 355 | Write quota: 700
+- Archive pages processed: 3 | Read quota: 363 | Write quota: 700
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-17 | Revision: d89f017e1a809ab4
@@ -46,4 +40,3 @@ In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe
 - Candidates with an Analytics adjustment: 5
 - main: 0 mature samples, preferred Tehran times: default
 - short: 5 mature samples, preferred Tehran times: default
-- Published at 10:02 Tehran | Title style: direct | Queue factor: 1.0
