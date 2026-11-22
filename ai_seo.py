@@ -80,6 +80,7 @@ VIDEOCAST:
   Title leads with the episode's actual topic, not the episode number.
   If no topic is supplied, use the factual program/episode title.
 POSHTE_KHAT:
+  Use the exact title spelling "پُشتِ‌ خَط".
   Include "پشت خط فوتبالی" once in the description.
   Do not assume a phone interview, guest or exclusive scoop.
 FOOTBALL_BARTAR:
