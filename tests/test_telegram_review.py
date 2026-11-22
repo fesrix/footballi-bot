@@ -162,12 +162,35 @@ class TelegramReviewTests(unittest.TestCase):
             self.reviewer.send_preview_probe(self.state, persist)
         persist.assert_called_once()
         api.assert_called_once()
-        probe = telegram.review_state(self.state)["items"]["telegram:connection"]
+        probe = telegram.review_state(self.state)["items"]["telegram:feedback"]
         callback = self.callback(message_id=100)
         callback["data"] = f"a:{probe['button_id']}"
         self.reviewer.decide(telegram.review_state(self.state), callback)
         self.assertEqual(probe["status"], "approved")
-        self.assertNotIn("telegram:connection", telegram.approvals_for(self.state))
+        self.assertNotIn("telegram:feedback", telegram.approvals_for(self.state))
+
+    def test_keyboard_sends_visible_action_and_confirms_after_checkpoint(self):
+        code = self.card["button_id"][:12].upper()
+        with patch.object(self.reviewer, "call", return_value={}) as api:
+            self.reviewer.refresh_keyboard(self.state)
+            self.assertEqual(api.call_args.kwargs["reply_markup"]["keyboard"],
+                             [[f"تأیید {code}", f"رد {code}"]])
+        message = {"from": {"id": 8}, "chat": {"id": 8, "type": "private"},
+                   "message_id": 101, "text": f"تأیید {code}"}
+        persist = Mock()
+        with patch.object(self.reviewer, "call", return_value=[{"update_id": 57, "message": message}]) as api:
+            self.reviewer.poll(self.state, persist)
+            api.assert_called_once()
+            self.assertIn("message", api.call_args.kwargs["allowed_updates"])
+        persist.assert_called_once()
+        self.assertEqual(self.card["status"], "approved")
+        self.assertIn("101", self.state["telegram_review"]["receipts"])
+        with patch.object(self.reviewer, "call", side_effect=[None, {"message_id": 102}]) as api:
+            self.reviewer.flush_receipts(self.state, time.monotonic() + 90)
+            self.assertIn("101", self.state["telegram_review"]["receipts"])
+            self.reviewer.flush_receipts(self.state, time.monotonic() + 90)
+        self.assertEqual(api.call_args.kwargs["reply_parameters"]["message_id"], 101)
+        self.assertEqual(self.state["telegram_review"]["receipts"], {})
 
     @patch.dict("os.environ", {"GEMINI_API_KEY": "mock", "ARVAN_API_KEY": "mock"})
     def test_audit_fallback_occurs_on_error_but_never_after_denial(self):

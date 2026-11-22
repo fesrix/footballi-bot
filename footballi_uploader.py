@@ -1470,6 +1470,7 @@ def main():
     reviewer = telegram.TelegramReview.from_env() if strict else None
     if reviewer:
         reviewer.poll(state, lambda: telegram.checkpoint(state, save_state))
+        reviewer.flush_receipts(state, min(deadline, time.monotonic() + 32))
     if strict:
         originals.repartition_queue(state, approvals=telegram.approvals_for(state),
                                     rejected=telegram.rejected_sources(state))
@@ -1596,6 +1597,7 @@ def main():
             originals.repartition_queue(state, approvals=telegram.approvals_for(state),
                                         rejected=telegram.rejected_sources(state))
             propose_telegram_reviews(reviewer, state, media_directory, deadline)
+            reviewer.refresh_keyboard(state)
 
         platform_block = platform_upload_block(state, quota_key)
         if not youtube or platform_block:

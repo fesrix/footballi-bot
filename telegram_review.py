@@ -88,7 +88,7 @@ class TelegramReview:
         review = review_state(state)
         offset = review["offset"] if time.time() - review.get("updated_at", 0) < 6 * 86400 else 0
         updates = self.call("getUpdates", offset=offset, timeout=2, limit=10,
-                            allowed_updates=["callback_query"])
+                            allowed_updates=["message", "callback_query"])
         if not isinstance(updates, list) or not updates:
             return
         callbacks = []
@@ -96,6 +96,17 @@ class TelegramReview:
             callback = update.get("callback_query")
             if callback:
                 callbacks.append((callback["id"], self.decide(review, callback)))
+            message = update.get("message")
+            if message and self.is_owner(message.get("from") or {}, message):
+                match = re.fullmatch(r"(تأیید|رد) ([A-Fa-f0-9]{12})", message.get("text", ""))
+                if match:
+                    action, code = match.groups()
+                    items = [item for item in review["items"].values()
+                             if item["button_id"].startswith(code.lower())]
+                    result = (self.record_decision(items[0], "a" if action == "تأیید" else "r")
+                              if len(items) == 1 and items[0].get("message_id")
+                              else "این پیشنهاد پیدا نشد یا منقضی شده است.")
+                    review.setdefault("receipts", {})[str(message["message_id"])] = result
         review["offset"] = max(update["update_id"] for update in updates) + 1
         review["updated_at"] = time.time()
         persist()
@@ -105,24 +116,31 @@ class TelegramReview:
                 break
             self.call("answerCallbackQuery", callback_query_id=callback_id, text=result)
 
+    def is_owner(self, sender, message):
+        chat = message.get("chat") or {}
+        return sender.get("id") == self.owner and chat.get("id") == self.owner and chat.get("type") == "private"
+
     def decide(self, review, callback):
         message = callback.get("message") or {}
-        chat = message.get("chat") or {}
-        if (callback.get("from", {}).get("id") != self.owner or chat.get("id") != self.owner
-                or chat.get("type") != "private"):
+        if not self.is_owner(callback.get("from") or {}, message):
             return "این حساب اجازهٔ بررسی ندارد."
         match = re.fullmatch(r"([ar]):([a-f0-9]{32})", callback.get("data") or "")
         if not match:
             return "دکمه معتبر نیست."
         action, button_id = match.groups()
         item = next((item for item in review["items"].values() if item["button_id"] == button_id), None)
-        if not item or item["preview"] != preview_only():
+        if not item:
             return "این پیشنهاد منقضی شده است."
-        if item["status"] != "waiting":
-            return "تصمیم این پیشنهاد قبلاً ثبت شده است."
         if item.get("message_id") not in (None, message.get("message_id")):
             return "این پیام معتبر نیست."
         item["message_id"] = message["message_id"]
+        return self.record_decision(item, action)
+
+    def record_decision(self, item, action):
+        if item["preview"] != preview_only():
+            return "این پیشنهاد منقضی شده است."
+        if item["status"] != "waiting":
+            return "تصمیم این پیشنهاد قبلاً ثبت شده است. " + item.get("result", "")
         item["status"] = "approved" if action == "a" else "rejected"
         item["decided_at"] = datetime.now(timezone.utc).isoformat()
         if action == "a":
@@ -144,16 +162,41 @@ class TelegramReview:
         return label
 
     def send_card(self, item):
-        button = item["button_id"]
-        reply = self.call("sendMessage", chat_id=self.owner, text=item["card"],
-                          reply_markup={"inline_keyboard": [[
-                              {"text": "تأیید انتشار", "callback_data": f"a:{button}"},
-                              {"text": "رد", "callback_data": f"r:{button}"},
-                          ]]})
+        code = item["button_id"][:12].upper()
+        text = (f"{item['card']}\n\nکد پیشنهاد: {code}\n"
+                "دکمه را از صفحه‌کلید ربات بزن. انتخابت بلافاصله به‌صورت پیام در چت دیده می‌شود. "
+                "رسید ثبت تصمیم در اجرای بعدی می‌رسد.")
+        reply = self.call("sendMessage", chat_id=self.owner, text=text)
         if isinstance(reply, dict) and isinstance(reply.get("message_id"), int):
             item["message_id"] = reply["message_id"]
             return True
         return False
+
+    def refresh_keyboard(self, state):
+        review = review_state(state)
+        codes = [item["button_id"][:12].upper() for item in review["items"].values()
+                 if item["preview"] == preview_only() and item["status"] == "waiting"
+                 and item.get("message_id")][:3]
+        if codes == review.get("keyboard_codes", []):
+            return
+        markup = {"keyboard": [[f"تأیید {code}", f"رد {code}"] for code in codes],
+                  "resize_keyboard": True} if codes else {"remove_keyboard": True}
+        text = ("دکمهٔ مربوط به کد پیشنهاد را انتخاب کن. پیام انتخاب فوراً دیده می‌شود؛ "
+                "✔️ رسید ثبت تصمیم در اجرای نیم‌ساعتهٔ بعد می‌رسد."
+                if codes else "تصمیم‌های این صفحه‌کلید پردازش شدند.")
+        if self.call("sendMessage", chat_id=self.owner, text=text, reply_markup=markup) is not None:
+            review["keyboard_codes"] = codes
+
+    def flush_receipts(self, state, deadline):
+        receipts = review_state(state).get("receipts", {})
+        for message_id, result in list(receipts.items()):
+            if time.monotonic() + 13 >= deadline:
+                break
+            reply = self.call("sendMessage", chat_id=self.owner, text=f"✔️ {result}",
+                              reply_parameters={"message_id": int(message_id),
+                                                "allow_sending_without_reply": True})
+            if reply is not None:
+                receipts.pop(message_id)
 
     def send_preview_probe(self, state, persist):
         """Exercise both directions when no real media passed the preview screening."""
@@ -161,7 +204,7 @@ class TelegramReview:
         if not preview_only() or any(item["preview"] and item["status"] == "waiting"
                                      and item.get("message_id") for item in items.values()):
             return
-        probe = items.get("telegram:connection")
+        probe = items.get("telegram:feedback")
         if probe is None:
             probe = {
                 "status": "waiting", "preview": True, "generation": 1,
@@ -169,7 +212,7 @@ class TelegramReview:
                 "button_id": hashlib.sha256(os.urandom(32)).hexdigest()[:32],
                 "card": "آزمون اتصال ربات فوتبالی\nبرای بررسی ثبت تصمیم، یکی از دکمه‌ها را بزن. این پیام ویدیویی برای انتشار ندارد.",
             }
-            items["telegram:connection"] = probe
+            items["telegram:feedback"] = probe
             persist()
         if probe["status"] == "waiting" and not probe.get("message_id") and self.send_card(probe):
             print("[TELEGRAM] Preview connection card sent.")
