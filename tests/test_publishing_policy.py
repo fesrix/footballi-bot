@@ -18,6 +18,7 @@ def summary(title, video_id, now):
     }
 
 
+@patch.dict("os.environ", {"FOOTBALLI_ORIGINALS_ONLY": "false"})
 class PublishingPolicyTests(unittest.TestCase):
     def setUp(self):
         self.now = datetime.now(TEHRAN)

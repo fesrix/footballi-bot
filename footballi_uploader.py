@@ -57,6 +57,7 @@ from scrapers import (
 import ai_seo
 import media_utils
 import scrapers
+import originals_policy as originals
 from programme_hold import blocked_candidate_programme, programme_hold_enabled
 from learning import build_policy, defer_for_timing, ranking, timestamp, title_choice, topic_for
 
@@ -241,6 +242,8 @@ def last_routine_timestamp(state, fmt):
 
 
 def publication_block(item, category, state, policy, now, *, is_short=None):
+    if originals.originals_only():
+        return originals.admission(item, originals.load_approvals())[1]
     if not is_priority_item(item, state, now):
         short = category == "SHORTS" if is_short is None else is_short
         fmt = "short" if short else "main"
@@ -948,9 +951,10 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
     thumb_file = os.path.join(media_directory, "thumbnail.jpg")
     now = datetime.now(ZoneInfo("Asia/Tehran"))
     counts = daily_publishing_counts(state, now)
+    strict = originals.originals_only()
     queue = [item for item in state["pending_queue"]
-             if is_priority_item(item, state, now) == priority_only]
-    if not priority_only:
+             if (priority_only if strict else is_priority_item(item, state, now) == priority_only)]
+    if not priority_only and not strict:
         def format_order(item):
             fmt = "short" if item["is_short"] else "main"
             return counts[fmt] / ROUTINE_DAILY_LIMITS[fmt], last_routine_timestamp(state, fmt)
@@ -1041,7 +1045,7 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             reason = "resolution_under_720p"
         elif not is_short and dur < MIN_HORIZONTAL_DURATION_SECONDS:
             reason = "horizontal_under_three_minutes"
-        elif is_short or priority_only:
+        elif is_short or priority_only or strict:
             audio_issue, peak = media_utils.inspect_audio_file(video_file)
             if audio_issue == "audio_probe_failed":
                 retain_media_retry(top, state, audio_issue, priority=priority_item)
@@ -1067,10 +1071,10 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
         save_state(state)
         published = publish_candidate(
             youtube, state, policy, quota_key, top, actual_category, is_short,
-            priority_only, video_file, thumb_file, tehran_now, deadline
+            priority_only and not strict, video_file, thumb_file, tehran_now, deadline
         )
         if not published:
-            if top.get("programme_hold"):
+            if top.get("programme_hold") or (strict and top.get("originals_decision") != "approved"):
                 continue
             break  # The platform-wide limit applies to every candidate.
         uploaded_urls.add(top["url"])
@@ -1086,7 +1090,10 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
                       priority_summary, video_file, thumb_file, tehran_now, deadline):
     fmt = "short" if is_short else "main"
     priority_class = candidate.get("priority_class") or ("summary" if priority_summary else "")
-    style, explore = ("direct", False) if priority_summary else title_choice(candidate, policy, fmt, tehran_now)
+    if priority_summary or originals.originals_only():
+        style, explore = "direct", False
+    else:
+        style, explore = title_choice(candidate, policy, fmt, tehran_now)
     match_context = None
     if candidate.get("fixture_id"):
         match_context = {
@@ -1104,6 +1111,16 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
     source_url = candidate.get("source_url") or candidate.get("url")
     if source_url and source_url not in final_desc:
         final_desc = f"{final_desc}\n\nمنبع رسمی: {source_url}"
+
+    if originals.originals_only():
+        decision = originals.verify_upload(candidate, video_file, {
+            "title": final_title, "description": final_desc, "tags": final_tags,
+        })
+        candidate["originals_decision"] = decision
+        if decision != "approved":
+            print(f"[ORIGINALS] skipped {originals.source_key(source_url)} | {decision}")
+            save_state(state)
+            return False
 
     programme = blocked_candidate_programme(candidate, video_file, final_title, final_desc, final_tags)
     if programme:
@@ -1161,6 +1178,7 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
             "source": candidate.get("source"),
             "source_url": source_url,
             "rights_status": candidate.get("rights_status"),
+            "originals_decision": candidate.get("originals_decision") if originals.originals_only() else None,
             "published_at": datetime.now(timezone.utc).isoformat(),
             "title_style": seo.get("title_style"),
             "title_experiment": explore and seo.get("title_style") == style,
@@ -1191,7 +1209,8 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
 
         thumb_to_use = None
         if not is_short and deadline - time.monotonic() >= 35:
-            thumb_to_use = call_prepare_thumbnail(video_file, candidate.get("poster_url", ""), thumb_file)
+            poster = "" if originals.originals_only() else candidate.get("poster_url", "")
+            thumb_to_use = call_prepare_thumbnail(video_file, poster, thumb_file)
         if thumb_to_use and os.path.exists(thumb_to_use):
             try:
                 youtube.thumbnails().set(
@@ -1240,6 +1259,13 @@ def main():
     print("[START] Footballi Bot — independent format schedules and priority match highlights.")
     deadline = time.monotonic() + PUBLISHING_BUDGET_SECONDS
     state = load_state()
+    strict = originals.originals_only()
+    if strict:
+        originals.repartition_queue(state)
+        originals.report_queue(state)
+        save_state(state)
+    else:
+        state["pending_queue"].extend(state.pop("originals_waiting", []))
     global _QUEUE_REJECTION_COUNTS
     policy = state.get("learning") or build_policy(state, datetime.now(timezone.utc))
     state["learning"] = policy
@@ -1284,7 +1310,7 @@ def main():
             live_status = "stale_fallback"
         else:
             live_fixtures = []
-    new_web_videos = crawl_footballi_videos(state, max_new_candidates=20)
+    new_web_videos = crawl_footballi_videos(state, max_new_candidates=20, originals_review=strict)
     state["last_run"] = {
         "finished_at": datetime.now(timezone.utc).isoformat(),
         "new_web_candidates": len(new_web_videos),
@@ -1303,6 +1329,14 @@ def main():
     }
 
     def merge_queue(items):
+        if strict:
+            originals.repartition_queue(state, items)
+            state["pending_queue"] = [normalize_queue_item(item) for item in state["pending_queue"]]
+            for item in state["pending_queue"]:
+                item["learning_factor"] = 1
+            originals.report_queue(state)
+            save_state(state)
+            return
         state["pending_queue"] = deduplicate_and_balance_queue(
             state["pending_queue"] + items, uploaded_urls, set(state["rejected_urls"]),
             seen_mp4s, known_norm_titles, int(state["max_seen_video_id"]), policy,
@@ -1334,10 +1368,13 @@ def main():
                           seen_mp4s, media_directory, deadline, priority_only=True)
 
         if deadline - time.monotonic() >= 150:
-            new_ig_reels = fetch_instagram_reels(state)
+            new_ig_reels = fetch_instagram_reels(state, originals_review=strict)
             state["last_run"]["new_instagram_candidates"] = len(new_ig_reels)
             if new_ig_reels:
                 merge_queue(new_ig_reels)
+                if strict and youtube:
+                    process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded_urls,
+                                  seen_mp4s, media_directory, deadline, priority_only=True)
         else:
             print("[BUDGET] Instagram check deferred after priority work.")
 
@@ -1363,7 +1400,11 @@ def main():
 
 
 if __name__ == "__main__":
-    if "--playlists-only" in sys.argv[1:]:
+    if "--audit-originals-queue" in sys.argv[1:]:
+        audit_state = load_state()
+        originals.repartition_queue(audit_state)
+        originals.report_queue(audit_state)
+    elif "--playlists-only" in sys.argv[1:]:
         run_playlists_only()
     else:
         main()

@@ -51,4 +51,6 @@ jobs:
           RECOVER_VIDEO_ID: ${{ inputs.video_id }}
           STAGE_UPLOAD: ${{ inputs.stage_upload }}
           FOOTBALLI_PROGRAMME_HOLD: ${{ vars.FOOTBALLI_PROGRAMME_HOLD }}
+          FOOTBALLI_ORIGINALS_ONLY: ${{ vars.FOOTBALLI_ORIGINALS_ONLY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -u prepare_short_recovery.py

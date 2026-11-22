@@ -5,6 +5,7 @@ import footballi_uploader as uploader
 from programme_hold import blocked_candidate_programme, blocked_programme
 
 
+@patch.dict("os.environ", {"FOOTBALLI_ORIGINALS_ONLY": "false"})
 class ProgrammeHoldTests(unittest.TestCase):
     @patch.dict("os.environ", {"FOOTBALLI_PROGRAMME_HOLD": "true"})
     def test_source_metadata_and_spelling(self):

@@ -1,0 +1,25 @@
+name: Validate original-content safety
+
+on:
+  pull_request:
+    paths:
+      - '**.py'
+      - 'approved_originals.json'
+      - '.github/workflows/**'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          pip install --quiet --disable-pip-version-check -r requirements.txt
+          python -m unittest discover -s tests
+          python footballi_uploader.py --audit-originals-queue

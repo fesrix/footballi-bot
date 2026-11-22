@@ -45,9 +45,9 @@ def _text_values(value):
             yield from _text_values(child)
 
 
-def blocked_programme(*metadata):
+def blocked_programme(*metadata, force=False):
     """Return a programme code when any supplied metadata field matches."""
-    if not programme_hold_enabled():
+    if not force and not programme_hold_enabled():
         return ""
     for value in _text_values(metadata):
         decoded = unicodedata.normalize("NFKC", html.unescape(unquote(value))).translate(_PERSIAN_CHARS)

@@ -17,6 +17,7 @@ on:
 
 jobs:
   live_stream:
+    if: vars.FOOTBALLI_ORIGINALS_ONLY == 'false'
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:

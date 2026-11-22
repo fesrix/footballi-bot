@@ -35,6 +35,7 @@ def candidate(title, category, score, video_id):
             "rights_status": "internal_authorized"}
 
 
+@patch.dict("os.environ", {"FOOTBALLI_ORIGINALS_ONLY": "false"})
 class LearningTests(unittest.TestCase):
     def ranked(self, items, policy):
         with patch.object(uploader, "is_video_too_old", return_value=False), \

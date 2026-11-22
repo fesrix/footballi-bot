@@ -759,11 +759,12 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
     }
 
 
-def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
+def crawl_footballi_videos(state: dict, max_new_candidates: int = 20, *, originals_review=False) -> list:
     uploaded_urls = set(state.get("uploaded_urls", []))
     rejected_urls = set(state.get("rejected_urls", []))
     seen_mp4s = set(state.get("seen_mp4s", []))
-    queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
+    queued_urls = {item["url"] for item in state.get("pending_queue", []) + state.get("originals_waiting", [])
+                   if item.get("url")}
     queued_mp4s = {item.get("mp4_url") for item in state.get("pending_queue", []) if item.get("mp4_url")}
 
     known_ids = set()
@@ -860,7 +861,7 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
             "is_short": False,
         })
 
-    verified = ai_judge_videos(raw_extracted, state=state)
+    verified = raw_extracted if originals_review else ai_judge_videos(raw_extracted, state=state)
     results = []
     for item in verified[:max_new_candidates]:
         seen_mp4s.add(item["mp4_url"])
@@ -870,7 +871,7 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20) -> list:
     return results
 
 
-def fetch_instagram_reels(state: dict) -> list:
+def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
     apify_token = os.environ.get("APIFY_TOKEN", "").strip()
     if not apify_token:
         return []
@@ -917,7 +918,8 @@ def fetch_instagram_reels(state: dict) -> list:
         uploaded_urls = set(state.get("uploaded_urls", []))
         rejected_urls = set(state.get("rejected_urls", []))
         seen_mp4s = set(state.get("seen_mp4s", []))
-        queued_urls = {item.get("url") for item in state.get("pending_queue", []) if item.get("url")}
+        queued_urls = {item["url"] for item in state.get("pending_queue", []) + state.get("originals_waiting", [])
+                       if item.get("url")}
 
         dataset_id = None
         if isinstance(run, dict):
@@ -975,7 +977,7 @@ def fetch_instagram_reels(state: dict) -> list:
                 "is_short": True,
             })
 
-        verified_reels = ai_judge_videos(raw_reels, state=state)
+        verified_reels = raw_reels if originals_review else ai_judge_videos(raw_reels, state=state)
         print(f"[APIFY] AI Curator approved {len(verified_reels)} high-potential HD Reels from Instagram!")
         return verified_reels
     except Exception as e:
