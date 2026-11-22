@@ -689,439 +689,7 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [
-    {
-      "video_id": 1076671,
-      "published_at": null,
-      "discovered_at": 1795363970.8072398,
-      "url": "https://footballi.net/video/1076671/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AC%D8%A7%D9%84%D8%A8-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D8%A7%D8%B2-%D8%B9%D9%84%DB%8C%D9%BE%D9%88%D8%B1-%D9%85%D8%B9%D9%84%D9%88%D9%85-%D9%86%DB%8C%D8%B3%D8%AA-%D8%A8%D8%A7-%D9%85%D8%A7%D8%B3%D8%AA-%DB%8C%D8%A7-%D8%A8%D8%A7-%D8%A7%D9%88%D9%86%D8%A7",
-      "title": "انتقاد جالب تارتار از علیپور: معلوم نیست با ماست یا با اونا!",
-      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | مهدی تارتار,پرسپولیس,علی علیپور,حواشی",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/22/tus-f8a3f51f-ad81-48b7-8753-f16b614bfd2b.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/YuAPEBRGpwrub8Nx9XVSjSApYUSQXOZdBd2moash.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076671/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AC%D8%A7%D9%84%D8%A8-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D8%A7%D8%B2-%D8%B9%D9%84%DB%8C%D9%BE%D9%88%D8%B1-%D9%85%D8%B9%D9%84%D9%88%D9%85-%D9%86%DB%8C%D8%B3%D8%AA-%D8%A8%D8%A7-%D9%85%D8%A7%D8%B3%D8%AA-%DB%8C%D8%A7-%D8%A8%D8%A7-%D8%A7%D9%88%D9%86%D8%A7",
-      "source_published_at": null,
-      "source_first_seen_at": 1795363962.4434474,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795363970.8072753,
-      "attempt_count": 3,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076543,
-      "published_at": null,
-      "discovered_at": 1795294915.2545855,
-      "url": "https://footballi.net/video/1076543/%D8%B3%D8%AE%D9%86%DA%AF%D9%88%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%88-%D8%BA%D8%B1%DB%8C%D8%A8%DB%8C-%D8%A7%D8%B2-%D9%86%D8%B8%D8%B1-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%BE%DB%8C%D8%B4-%D8%A2%D9%85%D8%AF",
-      "title": "سخنگوی فولاد: اتفاقات عجیب و غریبی از نظر داوری در بازی مقابل سپاهان پیش آمد",
-      "description": "در بازی‌های مختلف این اتفاقات برای فولاد می‌افتد. صحنه احسان حاج‌صفی را همه دیدند که باید کارت قرمز می‌گرفت. محمدی باید چند کارت زرد می‌گرفت. خواهش می‌کنم کمیته داوران صدای داورها را بشنود. حق فولاد این نیست",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-7d48c2c5-630a-44a5-a536-a891a056ded2.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/Nlw5s1Pe2ibxp3dZfU0B6kzPgLh59aTQFtPQGoII.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076543/%D8%B3%D8%AE%D9%86%DA%AF%D9%88%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%88-%D8%BA%D8%B1%DB%8C%D8%A8%DB%8C-%D8%A7%D8%B2-%D9%86%D8%B8%D8%B1-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%BE%DB%8C%D8%B4-%D8%A2%D9%85%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795294913.041174,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795294915.2546194,
-      "attempt_count": 22,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076542,
-      "published_at": null,
-      "discovered_at": 1795294915.513434,
-      "url": "https://footballi.net/video/1076542/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AD%D9%85%DB%8C%D8%AF-%D9%85%D8%B7%D9%87%D8%B1%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A2%D9%82%D8%A7%DB%8C-%D8%AF%D8%A7%D9%88%D8%B1-%D9%BE%D9%8F%D8%B1-%D8%A7%D8%AF%D8%B9%D8%A7-%D8%A7%DB%8C%D9%86-%DA%86%D9%87-%D9%82%D8%B6%D8%A7%D9%88%D8%AA%DB%8C-%D8%A7%D8%B3%D8%AA",
-      "title": "انتقاد حمید مطهری سرمربی فولاد: آقای داور پُر ادعا این چه قضاوتی است؟",
-      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | سپاهان,فولاد خوزستان,حمید مطهری",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-7f4dfdf9-2257-48d8-aad8-455eb3f5956c.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/r5ykOtbywQ7kfUzgTCpodqSlhZueNK1R8cs4CsxE.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076542/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AD%D9%85%DB%8C%D8%AF-%D9%85%D8%B7%D9%87%D8%B1%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A2%D9%82%D8%A7%DB%8C-%D8%AF%D8%A7%D9%88%D8%B1-%D9%BE%D9%8F%D8%B1-%D8%A7%D8%AF%D8%B9%D8%A7-%D8%A7%DB%8C%D9%86-%DA%86%D9%87-%D9%82%D8%B6%D8%A7%D9%88%D8%AA%DB%8C-%D8%A7%D8%B3%D8%AA",
-      "source_published_at": null,
-      "source_first_seen_at": 1795294913.041174,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795294915.5134516,
-      "attempt_count": 22,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076541,
-      "published_at": null,
-      "discovered_at": 1795294915.7837474,
-      "url": "https://footballi.net/video/1076541/%D9%86%D9%88%DB%8C%D8%AF%DA%A9%DB%8C%D8%A7-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%85%D9%86-%D9%87%DB%8C%DA%86%D9%88%D9%82%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D9%87-%D8%B2%D9%85%DB%8C%D9%86-%D9%86%D9%85%DB%8C-%D8%B1%D9%88%D9%85",
-      "title": "نویدکیا پس از تساوی مقابل فولاد: من هیچوقت برای تساوی به زمین نمی روم",
-      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | سپاهان,فولاد خوزستان,محرم نویدکیا",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-6f8bd945-0f1a-4784-bd6e-b9dbf2f5d249.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/sOQMRsvLRBrayotoR32zdPM71KCeaLDR6nCYfU7m.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076541/%D9%86%D9%88%DB%8C%D8%AF%DA%A9%DB%8C%D8%A7-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%85%D9%86-%D9%87%DB%8C%DA%86%D9%88%D9%82%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D9%87-%D8%B2%D9%85%DB%8C%D9%86-%D9%86%D9%85%DB%8C-%D8%B1%D9%88%D9%85",
-      "source_published_at": null,
-      "source_first_seen_at": 1795294913.041174,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795294915.7837667,
-      "attempt_count": 22,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076466,
-      "published_at": null,
-      "discovered_at": 1795282276.0130835,
-      "url": "https://footballi.net/video/1076466/%D9%BE%DB%8C%D8%B1%D9%88%D8%B2-%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86%DB%8C-%DA%A9%D9%87-%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-%D8%B1%D8%AA%D8%A8%D9%87-%D8%B1%D8%A7%D8%B6%DB%8C-%D9%87%D8%B3%D8%AA%D9%86%D8%AF-%D9%86%DB%8C%D9%85-%D9%81%D8%B5%D9%84-%D8%AC%D8%AF%D8%A7-%D9%85%DB%8C-%D8%B4%D9%88%D9%86%D8%AF",
-      "title": "پیروز قربانی سرمربی آلومینیوم: بازیکنانی که به این رتبه راضی هستند نیم فصل جدا می شوند",
-      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | پیروز قربانی,آلومینیوم اراک,نساجی,لیگ برتر ایران",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-b8123a5c-608b-4d23-950b-4f7d855ead4a.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/uJ2fRX7BB3iEqtKjHy0NG2Vm118JEP5sQ7AyYJP7.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076466/%D9%BE%DB%8C%D8%B1%D9%88%D8%B2-%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86%DB%8C-%DA%A9%D9%87-%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-%D8%B1%D8%AA%D8%A8%D9%87-%D8%B1%D8%A7%D8%B6%DB%8C-%D9%87%D8%B3%D8%AA%D9%86%D8%AF-%D9%86%DB%8C%D9%85-%D9%81%D8%B5%D9%84-%D8%AC%D8%AF%D8%A7-%D9%85%DB%8C-%D8%B4%D9%88%D9%86%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795282275.4915595,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795282276.013106,
-      "attempt_count": 29,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076432,
-      "published_at": null,
-      "discovered_at": 1795278680.2396574,
-      "url": "https://footballi.net/video/1076432/%D8%AF%D8%A7%D9%88%D8%B1-%D8%AF%D8%B1-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%84%D8%AD%D8%B8%D8%A7%D8%AA-%D8%A7%D8%B2-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%AD%D8%A7%D8%AC-%D8%B5%D9%81%DB%8C-%D9%BE%D8%B4%DB%8C%D9%85%D8%A7%D9%86-%D8%B4%D8%AF",
-      "title": "داور در آخرین لحظات از اخراج حاج صفی پشیمان شد!",
-      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | سپاهان,فولاد خوزستان,احسان حاج‌‌صفی",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-10b2ff38-0f6f-4321-b8a4-ea8fe55b39dd.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/QWc0udOb5tXsXtU6Kn21f4bPY1pt0nhi3kawPkkt.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076432/%D8%AF%D8%A7%D9%88%D8%B1-%D8%AF%D8%B1-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%84%D8%AD%D8%B8%D8%A7%D8%AA-%D8%A7%D8%B2-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%AD%D8%A7%D8%AC-%D8%B5%D9%81%DB%8C-%D9%BE%D8%B4%DB%8C%D9%85%D8%A7%D9%86-%D8%B4%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795278678.9113233,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795278680.2396786,
-      "attempt_count": 31,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076429,
-      "published_at": null,
-      "discovered_at": 1795278681.7305884,
-      "url": "https://footballi.net/video/1076429/%DA%A9%D8%A7%D8%B1%D8%AA-%D9%82%D8%B1%D9%85%D8%B2-%D8%B1%D8%B6%D8%A7%D9%88%D9%86%D8%AF-%D8%A8%D8%A7-%D8%AA%D8%B5%D9%85%DB%8C%D9%85-%D8%AF%D8%A7%D9%88%D8%B1-%D9%88-VAR-%D9%BE%D8%B3-%DA%AF%D8%B1%D9%81%D8%AA%D9%87-%D8%B4%D8%AF",
-      "title": "کارت قرمز رضاوند با تصمیم داور و VAR پس گرفته شد",
-      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | سپاهان,فولاد خوزستان,آرش رضاوند",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d1963bd1-b6ea-4552-aee8-e0ca247cf8aa.mp4",
-      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-45c355f3-980d-40ab-a725-798023352133.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/4HFPkAbKpsyNjLMgWAhpL6sf1TatV2GMQQglDQ7J.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076429/%DA%A9%D8%A7%D8%B1%D8%AA-%D9%82%D8%B1%D9%85%D8%B2-%D8%B1%D8%B6%D8%A7%D9%88%D9%86%D8%AF-%D8%A8%D8%A7-%D8%AA%D8%B5%D9%85%DB%8C%D9%85-%D8%AF%D8%A7%D9%88%D8%B1-%D9%88-VAR-%D9%BE%D8%B3-%DA%AF%D8%B1%D9%81%D8%AA%D9%87-%D8%B4%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795278678.9113233,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795278681.730616,
-      "attempt_count": 31,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076387,
-      "published_at": null,
-      "discovered_at": 1795269677.8700666,
-      "url": "https://footballi.net/video/1076387/%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%87-%D8%A8%DA%86%DA%AF%D8%A7%D9%86%D9%87-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D9%85%D8%AD%D9%85%D8%AF-%DA%A9%D9%88%D9%87%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
-      "title": "اشتباه بچگانه؛ اخراج ابوالفضل کوهی بازیکن نساجی مقابل آلومینیوم!",
-      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | آلومینیوم اراک,نساجی,کارت قرمز,اخراج,لیگ برتر ایران,ابوالفضل کوهی",
-      "mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-3ea854c5-f27b-44d9-99d9-2933d09969e9.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/9fWfi9xkWNMjLx6Z0et3En2vxzme0y2tggYz5laE.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076387/%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%87-%D8%A8%DA%86%DA%AF%D8%A7%D9%86%D9%87-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D9%85%D8%AD%D9%85%D8%AF-%DA%A9%D9%88%D9%87%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
-      "source_published_at": null,
-      "source_first_seen_at": 1795269675.5934577,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795269677.870098,
-      "attempt_count": 38,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076380,
-      "published_at": null,
-      "discovered_at": 1795267870.28987,
-      "url": "https://footballi.net/video/1076380/%D8%A7%D8%B3%D8%AA%DB%8C%D9%84%DB%8C-%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%D9%87%D9%85%D8%A7%D9%86%D8%B7%D9%88%D8%B1-%DA%A9%D9%87-%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D8%A8%D8%B2%D8%B1%DA%AF-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-%D8%A7%D9%85%DB%8C%D8%AF%D9%88%D8%A7%D8%B1%D9%85-%D8%AF%D8%B1-%D8%A7%D8%AE%D9%84%D8%A7%D9%82-%D9%87%D9%85-%D8%A8%D8%B2%D8%B1%DA%AF-%D8%B4%D9%88%D8%AF",
-      "title": "استیلی: بیرانوند همانطور که در فنی بزرگ می‌شود امیدوارم در اخلاق هم بزرگ شود!",
-      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | اختصاصی,حمید استیلی,مهدی اربابی,مراسم ختم",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-3ee372c3-51a6-4913-9f32-ebfa08f556bc.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/7JmO7Fine4e9kdCkfpZwvYwlXn69qrUbqMuO8qQp.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076380/%D8%A7%D8%B3%D8%AA%DB%8C%D9%84%DB%8C-%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%D9%87%D9%85%D8%A7%D9%86%D8%B7%D9%88%D8%B1-%DA%A9%D9%87-%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D8%A8%D8%B2%D8%B1%DA%AF-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-%D8%A7%D9%85%DB%8C%D8%AF%D9%88%D8%A7%D8%B1%D9%85-%D8%AF%D8%B1-%D8%A7%D8%AE%D9%84%D8%A7%D9%82-%D9%87%D9%85-%D8%A8%D8%B2%D8%B1%DA%AF-%D8%B4%D9%88%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795267870.0318196,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795267870.2898886,
-      "attempt_count": 39,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 1076289,
-      "published_at": null,
-      "discovered_at": 1795248081.9451394,
-      "url": "https://footballi.net/video/1076289/%D8%AD%D8%B6%D9%88%D8%B1-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D8%A7%D8%B1%D8%AF%D9%88%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C",
-      "title": "حضور مهدی تاج در اردوی تیم ملی فوتبال ساحلی",
-      "description": "حضور رئیس فدراسیون در اردوی ملی‌پوشان فوتبال ساحلی و دیدار با اعضای تیم در آستانه دیدار دوم برابر ویتنام",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-46bf94ac-3f05-4dee-a70c-130c74d7ab69.mp4",
-      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-13700a53-dccb-42fc-b179-8c25a2820a3e.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/ARmKr1kQV8pxan8tltCQHCJWUNRjuWokI037a0g6.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076289/%D8%AD%D8%B6%D9%88%D8%B1-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D8%A7%D8%B1%D8%AF%D9%88%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C",
-      "source_published_at": null,
-      "source_first_seen_at": 1795248081.7350843,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795248081.945169,
-      "attempt_count": 50,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0,
-      "verified_is_short": false
-    },
-    {
-      "video_id": 1076266,
-      "published_at": null,
-      "discovered_at": 1795228286.6628377,
-      "url": "https://footballi.net/video/1076266/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87",
-      "title": "واکنش بهتاش فریبا به حواشی استعفای سهراب بختیاری زاده",
-      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | استقلال,بهتاش فریبا,سهراب بختیاری‌زاده",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-81de903d-881e-45d2-a27e-d436914b8d92.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/HFTJOr42gRA2BHRIsCFINHm66SORQnlllQlSjwVY.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076266/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87",
-      "source_published_at": null,
-      "source_first_seen_at": 1795228285.9640448,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795228286.662862,
-      "attempt_count": 62,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1.0
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795199342.0,
-      "discovered_at": 1795208587.9681993,
-      "url": "https://www.instagram.com/p/Df-S3UTtxnV/",
-      "title": "سیرتا پیاز درگیری زارع و تیکدری!",
-      "description": ".\n📌سیرتا پیاز درگیری زارع و تیکدری!",
-      "mp4_url": "https://instagram.fsdu7-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPE4wp6nbJ5RQEYnx3TUeh8Ztfv7yEV91S9zSZqobmmpsPyHPcL9Zejmjf7Otfi2MZDstag-mn6zl2VmLmS7t_9YUgz-Y7T8HbBxZk.mp4?_nc_cat=101&_nc_oc=AdrtUQqG_vTESlBcn8KetKXqq3HhtHJEIDmDyc4OXzZngHu_Si4FnAXdTe7Qm1ihvPo&_nc_sid=5e9851&_nc_ht=instagram.fsdu7-1.fna.fbcdn.net&_nc_ohc=dVL4nqr4qoAQ7kNvwGM2t9G&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6Mjk2MjkzNzcxODAwODYxOTAsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NDUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=aeea291c033300c7&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zREFFQTVCQzM3NEE0MDI4OTYyQ0VCOUZDQ0NGOUQyRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0NEREEwNzAxRDA5NTQ5RjFBMkQxRjIyMkVCREVDQkY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbcvuHb3vChaRUCKAJDMywXQEbzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=vvMokO_4rvpa5AaZRaJe6w&_nc_ss=70980&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UlFhg93tzmGkqCTEqy2YQMho1NpFoKM4xuS0Li1MAS2N3aANtvbmjkC8OcSf7sqccqnPy1scHBGKspJMYZX4HlzRfu18vdHJb6KXaXbzhc283PyWogAc6_PVXYw&oh=00_AQT8TbqEj5DxC5b9brhI18aRsESU6Smo04vtZwOsEYXlZQ&oe=6B0294B6",
-      "poster_url": "https://instagram.fsdu7-1.fna.fbcdn.net/v/t51.71878-15/919000990_1736857584693727_7066951098079387876_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNDc0NTI4MjM4NDU2Njc0MTI5NjI5NDExMDkwMDgyNzk5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=FggJrtRnSUgQ7kNvwHN1NPx&_nc_oc=AdqFHhMz7uwF8lIN0yAbXra3F2R-sGmNayDjPp3ERbnUZcBq4LcYIrejyTrBmCJPEb0&_nc_zt=23&_nc_ht=instagram.fsdu7-1.fna&_nc_gid=vvMokO_4rvpa5AaZRaJe6w&_nc_ss=70980&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQT5d8tb5Qe4VSDsVLhTByzBILO-Zfkjpa9zAOLvJ496iA&oe=6B066DE8",
-      "site_views": 125361,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/Df-S3UTtxnV/",
-      "source_published_at": 1795199342.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795208587.9682028,
-      "attempt_count": 73,
-      "is_short": true,
-      "ai_score": 9,
-      "category": "SHORTS",
-      "learning_factor": 0.984
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795199246.0,
-      "discovered_at": 1795208587.9682696,
-      "url": "https://www.instagram.com/p/Df-TAL9NFZX/",
-      "title": "تبریک کریم باقری به بیرانوند همراه با",
-      "description": ".\nتبریک کریم باقری به بیرانوند همراه با \nیک توصیه ویژه!",
-      "mp4_url": "https://scontent-nrt1-2.cdninstagram.com/o1/v/t2/f2/m86/AQPjx81ZIsjPDDQCRpVkL60YWQaVREAAo6gnx9nvgP9IICYBJs8lvmraUKa64nhi1Y1KBxxz06BUUFcUVt2c40se7CDyBQdzrvc9o8o.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_ohc=ppWBzrmEWpUQ7kNvwGu6vYH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAwOTA1NzU5NDkzNjcwMywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f1eaac7d13cba7c1&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82NUFFQjM3OEQ4RjE0RDY1QjM0RTQzMEY2QTFEN0I0OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0JFODVGMDUyQkJFOTQ0ODc5MjFDMjVFM0FCNDU3RkE1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACb-tYj48O7KAxUCKAJDMywXQF9d0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=Sl7id4fsBYklPQkxnS-Lkw&_nc_ss=70580&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQGwcDhLqQv_1YGp34KZdDRKxEARhmGC49K6WQhGGdiig&oe=6B02777B",
-      "poster_url": "https://scontent-nrt1-2.cdninstagram.com/v/t51.71878-15/918032880_2486428081760669_9081431962722245846_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNDc0NTg5MTg5MjI1NDI5NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=8-WcjSo6kKYQ7kNvwEQ4IeK&_nc_oc=AdqztxxpAu-mqmQZPqh0Grzd0usFwM2rW4w3W2C5xH31EoP_e9QsxLYU8yolKOUWUpC9nZaDlI9a4DkmqCjfKJdl&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_gid=Sl7id4fsBYklPQkxnS-Lkw&_nc_ss=70580&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQSfudsLitz7qXtBCpUG6SLtemztgHWv0DuFIYMqhcSciw&oe=6B06733D",
-      "site_views": 178640,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/Df-TAL9NFZX/",
-      "source_published_at": 1795199246.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795208587.9682705,
-      "attempt_count": 73,
-      "is_short": true,
-      "ai_score": 9,
-      "category": "SHORTS",
-      "learning_factor": 0.984
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795250076.0,
-      "discovered_at": 1795269728.3817143,
-      "url": "https://www.instagram.com/p/Df_yIaDAwMp/",
-      "title": "یوسفی: وظیفه اطرافیان بیرانوند بود که به همه جزییات پوشش او توجه می کردند",
-      "description": ".\n📌یوسفی: وظیفه اطرافیان بیرانوند بود که به همه جزییات پوشش او توجه می کردند\n\n💬صحبتهای پیمان یوسفی درباره تیپ و استایل بیرانوند در مراسم انتخاب بهترین های سال آسیا",
-      "mp4_url": "https://scontent-nrt6-1.cdninstagram.com/o1/v/t2/f2/m86/AQN0flMuhHJbuvBo0fzf76doDX5fwQil7HIB2JkKfyNerg7RCC_AF4M6tV9vQ39pOY_8KzDFN7Rnhk1H9D0sjbMdDAv4q78ehigZxlc.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_ohc=402n-UYU_dUQ7kNvwFuHT7g&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTY3MzczMzY2MTA5NDA4NywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f325631e7655a5fd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83NzU0OTJCNzE4Rjc0NEFCODAwRUFGNDRFRkZFQUFEMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA3Rjk3NDE3OTk2ODRBNjZBNzNBOTY4NTkzNzczRjg4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACaOw4vFj5D5BRUCKAJDMywXQEAzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=oh88gm1lEd75cJI3E0OHEA&_nc_ss=70580&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRYKDn9j_v4bqd6jZ2PqJTvNAn1lm12jci7hgQIXMEWMQ&oe=6B0369FE",
-      "poster_url": "https://scontent-nrt1-1.cdninstagram.com/v/t51.71878-15/918787787_1158871867098616_6410937365722440425_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNTE2NDI3MTE5NjQzOTMzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=_TquvCs0Gq4Q7kNvwFawaeL&_nc_oc=AdpM1wssRJRe0z1jnBpem5_M7lKbTyoQtIN7sU-60mclmmskVsUhQqCHVe15asYzQw49WER38t9BWPLbzh_12h_k&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_gid=oh88gm1lEd75cJI3E0OHEA&_nc_ss=70580&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQSgtDsXMNxFGxwpdrQYvcjN2fKI9YWF9YpM1d9hJNZ0A&oe=6B07788C",
-      "site_views": 305062,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/Df_yIaDAwMp/",
-      "source_published_at": 1795250076.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795269728.3817155,
-      "attempt_count": 37,
-      "is_short": true,
-      "ai_score": 8,
-      "category": "SHORTS",
-      "learning_factor": 0.984
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795246588.0,
-      "discovered_at": 1795269728.3816614,
-      "url": "https://www.instagram.com/p/Df_s6Ljgj80/",
-      "title": "بیرانوند: رابطه خوبی با هواداران پرسپولیس دارم",
-      "description": ".\n📌بیرانوند: رابطه خوبی با هواداران پرسپولیس دارم\n این کینه دوست داشتنی است",
-      "mp4_url": "https://instagram.fplu44-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQObJcxlI-hzmo7nmpT3VZ_MjdxcT-JIjqUivSA-2eMnZww6bcjmEqNmJS45sir85_muv3_-zidSK3C9i9OWAwUNXDKnXpXN1NMOxXzdh1yR3w.mp4?_nc_cat=108&_nc_oc=AdpL8BWXzEeVWfDitYsDlpWLmscf6RaR23Xa985WStmclbxlR5-segG0azSgmanbqKo&_nc_sid=9ca052&_nc_ht=instagram.fplu44-1.fna.fbcdn.net&_nc_ohc=fTYhiuokZRUQ7kNvwE5Nvuc&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MjIxMzk0NjI1NTg2MTQ2OSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNTEsImJpdHJhdGUiOjE1MzM0NjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Jb3hxdA0N069okHKhEpUfA&_nc_ss=70a8c&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSNKJNAuEe79rYrpjKBFTTce01-Lf5_1nJg2uQsvlEc4g&oe=6B0780D4",
-      "poster_url": "https://instagram.fplu44-1.fna.fbcdn.net/v/t51.71878-15/914395072_1926327625000729_6261268347095555511_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNTE0MTMwMzMzMDI5MTUwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&_nc_aid=0&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=mzKfTDZoBhoQ7kNvwGvu2E5&_nc_oc=Adr4knGAzGSQ_LQ6GvWUupD_sthGucIHwvkXAJHuJY2LHJn7L1Lea_NElai5xCMSxIo&_nc_zt=23&_nc_ht=instagram.fplu44-1.fna&_nc_gid=Jb3hxdA0N069okHKhEpUfA&_nc_ss=70a8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQT_kUocFspzi5v4Avin5beW6Os5R-TYUJMbavF1CI7GyQ&oe=6B075EB5",
-      "site_views": 104902,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/Df_s6Ljgj80/",
-      "source_published_at": 1795246588.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795269728.381665,
-      "attempt_count": 37,
-      "is_short": true,
-      "ai_score": 8,
-      "category": "SHORTS",
-      "learning_factor": 0.984
-    },
-    {
-      "video_id": 1076263,
-      "published_at": null,
-      "discovered_at": 1795228287.657774,
-      "url": "https://footballi.net/video/1076263/%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%B3%D8%A7%D9%84-%D8%A2%D8%B3%DB%8C%D8%A7-%D8%B4%D8%AF",
-      "title": "بیرانوند چگونه بهترین بازیکن سال آسیا شد؟",
-      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | علیرضا بیرانوند,شب های فوتبالی,بهترین های سال فوتبال آسیا",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-82e7bdf3-f0a9-4ef1-b0ee-2e56932c3397.mp4",
-      "alternate_mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-c7d7553d-2dd2-4b0d-adab-6c22aca06b57.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/c1UaXGWEOH8VEjl9gxIFE6QcoSphne5cUyclsjK9.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076263/%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%B3%D8%A7%D9%84-%D8%A2%D8%B3%DB%8C%D8%A7-%D8%B4%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795228285.9640448,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795228287.657812,
-      "attempt_count": 62,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1,
-      "programme_hold": "shabhaye_footballi"
-    },
-    {
-      "video_id": 1076172,
-      "published_at": null,
-      "discovered_at": 1795276256.3534098,
-      "url": "https://footballi.net/video/1076172/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AC%D8%A7%D9%84%D8%A8-%D8%B1%D8%AD%D9%85%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D8%AD%D8%B6%D9%88%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
-      "title": "واکنش جالب رحمتی به احتمال حضورش روی نیمکت استقلال!",
-      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | استقلال,گل‌گهر سیرجان,سیدمهدی رحمتی,شب های فوتبالی",
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-bf2ba66a-2ceb-4a5b-8a85-9e5457cb114a.mp4",
-      "alternate_mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-886deb72-43a6-4e84-bb41-20bfb73c05bf.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/PdOjaT8d7reTiTWVbbk73Ujb4mY2A2FxOIspDsLc.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1076172/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AC%D8%A7%D9%84%D8%A8-%D8%B1%D8%AD%D9%85%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D8%AD%D8%B6%D9%88%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
-      "source_published_at": null,
-      "source_first_seen_at": 1795201296.7063568,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795276256.3534489,
-      "attempt_count": 33,
-      "is_short": false,
-      "ai_score": 7,
-      "category": "VIDEO",
-      "learning_factor": 1,
-      "programme_hold": "shabhaye_footballi"
-    }
-  ],
+  "pending_queue": [],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -2240,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1076706,
+  "max_seen_video_id": 1076776,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -2857,12 +2425,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 9909,
               "estimatedMinutesWatched": 43688,
               "averageViewDuration": 419,
-              "averageViewPercentage": 44.35,
+              "averageViewPercentage": 44.36,
               "subscribersGained": 60,
               "likes": 82,
               "comments": 55,
@@ -2870,14 +2438,14 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 9909,
           "estimatedMinutesWatched": 43688,
           "averageViewDuration": 419,
-          "averageViewPercentage": 44.35,
+          "averageViewPercentage": 44.36,
           "subscribersGained": 60,
           "likes": 82,
           "comments": 55,
@@ -2965,12 +2533,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 16046,
               "estimatedMinutesWatched": 43200,
               "averageViewDuration": 276,
-              "averageViewPercentage": 33.84,
+              "averageViewPercentage": 33.85,
               "subscribersGained": 31,
               "likes": 87,
               "comments": 6,
@@ -2978,14 +2546,14 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 16046,
           "estimatedMinutesWatched": 43200,
           "averageViewDuration": 276,
-          "averageViewPercentage": 33.84,
+          "averageViewPercentage": 33.85,
           "subscribersGained": 31,
           "likes": 87,
           "comments": 6,
@@ -3086,7 +2654,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3194,7 +2762,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3396,7 +2964,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3504,7 +3072,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3523,7 +3091,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-11T05:37:04Z",
         "recent_statistics": {
-          "viewCount": 8614,
+          "viewCount": 8616,
           "likeCount": 53,
           "commentCount": 25
         },
@@ -3612,7 +3180,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3720,7 +3288,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3828,7 +3396,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3936,7 +3504,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -3955,7 +3523,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-09T18:38:41Z",
         "recent_statistics": {
-          "viewCount": 2521,
+          "viewCount": 2522,
           "likeCount": 66,
           "commentCount": 14
         },
@@ -4044,7 +3612,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4152,7 +3720,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4261,7 +3829,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4369,7 +3937,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4388,7 +3956,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-10T06:34:43Z",
         "recent_statistics": {
-          "viewCount": 570,
+          "viewCount": 571,
           "likeCount": 2,
           "commentCount": 0
         },
@@ -4477,7 +4045,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4585,7 +4153,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4693,7 +4261,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4802,7 +4370,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -4910,7 +4478,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5018,7 +4586,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5126,7 +4694,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5234,7 +4802,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5342,7 +4910,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5450,7 +5018,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5652,7 +5220,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5760,7 +5328,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5868,7 +5436,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -5976,7 +5544,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6272,7 +5840,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6380,7 +5948,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6488,7 +6056,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6596,7 +6164,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6704,7 +6272,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6812,7 +6380,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -6920,7 +6488,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7028,7 +6596,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7324,7 +6892,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7432,7 +7000,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7540,7 +7108,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7648,7 +7216,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7756,7 +7324,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7853,7 +7421,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -7950,7 +7518,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8058,7 +7626,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8166,7 +7734,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8274,7 +7842,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8382,7 +7950,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8490,7 +8058,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8598,7 +8166,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8695,7 +8263,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -8803,7 +8371,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9005,7 +8573,7 @@
             }
           }
         ],
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9089,12 +8657,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 1552,
               "estimatedMinutesWatched": 1025,
               "averageViewDuration": 83,
-              "averageViewPercentage": 42.02,
+              "averageViewPercentage": 42.05,
               "subscribersGained": 3,
               "likes": 9,
               "comments": 0,
@@ -9104,14 +8672,14 @@
         ],
         "video_id": "s2bUTzUIsQs",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 1552,
           "estimatedMinutesWatched": 1025,
           "averageViewDuration": 83,
-          "averageViewPercentage": 42.02,
+          "averageViewPercentage": 42.05,
           "subscribersGained": 3,
           "likes": 9,
           "comments": 0,
@@ -9121,7 +8689,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-15T10:33:01Z",
         "recent_statistics": {
-          "viewCount": 1557,
+          "viewCount": 1559,
           "likeCount": 9,
           "commentCount": 0
         },
@@ -9196,12 +8764,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 10855,
               "estimatedMinutesWatched": 2013,
               "averageViewDuration": 18,
-              "averageViewPercentage": 74.62,
+              "averageViewPercentage": 74.61,
               "subscribersGained": 16,
               "likes": 99,
               "comments": 8,
@@ -9211,14 +8779,14 @@
         ],
         "video_id": "xRmWpp-FcK8",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 10855,
           "estimatedMinutesWatched": 2013,
           "averageViewDuration": 18,
-          "averageViewPercentage": 74.62,
+          "averageViewPercentage": 74.61,
           "subscribersGained": 16,
           "likes": 99,
           "comments": 8,
@@ -9228,7 +8796,7 @@
         "category": "SHORTS",
         "published_at": "2026-11-15T14:32:02Z",
         "recent_statistics": {
-          "viewCount": 11020,
+          "viewCount": 11026,
           "likeCount": 99,
           "commentCount": 13
         },
@@ -9320,7 +8888,7 @@
         ],
         "video_id": "fo0CJYWV9XA",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9427,7 +8995,7 @@
         ],
         "video_id": "_kfhPpKTxp0",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9444,7 +9012,7 @@
         "category": "POSHTE_KHAT",
         "published_at": "2026-11-15T15:33:48Z",
         "recent_statistics": {
-          "viewCount": 266,
+          "viewCount": 267,
           "likeCount": 1,
           "commentCount": 0
         },
@@ -9534,7 +9102,7 @@
         ],
         "video_id": "wbsXnJe0u74",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9626,12 +9194,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 323,
               "estimatedMinutesWatched": 205,
-              "averageViewDuration": 84,
-              "averageViewPercentage": 31.06,
+              "averageViewDuration": 85,
+              "averageViewPercentage": 31.62,
               "subscribersGained": 0,
               "likes": 1,
               "comments": 0,
@@ -9641,14 +9209,14 @@
         ],
         "video_id": "yNMQFVLrYI0",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 323,
           "estimatedMinutesWatched": 205,
-          "averageViewDuration": 84,
-          "averageViewPercentage": 31.06,
+          "averageViewDuration": 85,
+          "averageViewPercentage": 31.62,
           "subscribersGained": 0,
           "likes": 1,
           "comments": 0,
@@ -9748,7 +9316,7 @@
         ],
         "video_id": "j2FxETm3Q-A",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9855,7 +9423,7 @@
         ],
         "video_id": "kcXtfRp5vGw",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -9962,7 +9530,7 @@
         ],
         "video_id": "eL3xQkAGtjM",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10069,7 +9637,7 @@
         ],
         "video_id": "cvuAwQ4k21M",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10178,7 +9746,7 @@
         ],
         "video_id": "Txy_j-gn5cM",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10273,7 +9841,7 @@
         ],
         "video_id": "5dWV-l6DvS0",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10440,7 +10008,7 @@
         ],
         "video_id": "7gY733Mk_Dw",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10535,7 +10103,7 @@
         ],
         "video_id": "pOWvf8sxbFk",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10552,7 +10120,7 @@
         "category": "FOOTBALL_BARTAR",
         "published_at": "2026-11-16T22:32:32Z",
         "recent_statistics": {
-          "viewCount": 4407,
+          "viewCount": 4405,
           "likeCount": 13,
           "commentCount": 0
         },
@@ -10628,7 +10196,7 @@
         ],
         "video_id": "5ELPWaInU5E",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10723,7 +10291,7 @@
         ],
         "video_id": "MZA1NXvV1SQ",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10816,7 +10384,7 @@
         ],
         "video_id": "Odu2hIUafqw",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10911,7 +10479,7 @@
         ],
         "video_id": "SgjSIJjRllI",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -10991,12 +10559,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 172,
               "estimatedMinutesWatched": 177,
-              "averageViewDuration": 109,
-              "averageViewPercentage": 40.55,
+              "averageViewDuration": 110,
+              "averageViewPercentage": 41.02,
               "subscribersGained": 0,
               "likes": 1,
               "comments": 0,
@@ -11006,14 +10574,14 @@
         ],
         "video_id": "-Ud6slcyGiI",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 172,
           "estimatedMinutesWatched": 177,
-          "averageViewDuration": 109,
-          "averageViewPercentage": 40.55,
+          "averageViewDuration": 110,
+          "averageViewPercentage": 41.02,
           "subscribersGained": 0,
           "likes": 1,
           "comments": 0,
@@ -11099,7 +10667,7 @@
         ],
         "video_id": "78pHfXgilGU",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -11116,7 +10684,7 @@
         "category": "SHORTS",
         "published_at": "2026-11-16T13:33:00Z",
         "recent_statistics": {
-          "viewCount": 1148,
+          "viewCount": 1150,
           "likeCount": 17,
           "commentCount": 0
         },
@@ -11194,7 +10762,7 @@
         ],
         "video_id": "Gppn0m_RFMY",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -11272,12 +10840,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 259,
               "estimatedMinutesWatched": 184,
-              "averageViewDuration": 77,
-              "averageViewPercentage": 30.96,
+              "averageViewDuration": 76,
+              "averageViewPercentage": 30.43,
               "subscribersGained": 0,
               "likes": 0,
               "comments": 0,
@@ -11287,14 +10855,14 @@
         ],
         "video_id": "NjBDBkuT0ow",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 259,
           "estimatedMinutesWatched": 184,
-          "averageViewDuration": 77,
-          "averageViewPercentage": 30.96,
+          "averageViewDuration": 76,
+          "averageViewPercentage": 30.43,
           "subscribersGained": 0,
           "likes": 0,
           "comments": 0,
@@ -11380,7 +10948,7 @@
         ],
         "video_id": "1zQhf6XSwHA",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -11397,7 +10965,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-16T14:32:20Z",
         "recent_statistics": {
-          "viewCount": 93,
+          "viewCount": 94,
           "likeCount": 0,
           "commentCount": 0
         },
@@ -11710,7 +11278,7 @@
         ],
         "video_id": "Nb6g5gq3CxI",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -11803,7 +11371,7 @@
         ],
         "video_id": "RSSubbsW44E",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -11820,7 +11388,7 @@
         "category": "VIDEO",
         "published_at": "2026-11-17T06:32:50Z",
         "recent_statistics": {
-          "viewCount": 103,
+          "viewCount": 104,
           "likeCount": 0,
           "commentCount": 0
         },
@@ -12128,7 +11696,7 @@
         ],
         "video_id": "cY91jitiefk",
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12184,12 +11752,12 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T08:48:20Z",
         "recent_statistics": {
-          "viewCount": 7690,
+          "viewCount": 7906,
           "likeCount": 52,
           "commentCount": 17
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12241,12 +11809,12 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T16:02:00Z",
         "recent_statistics": {
-          "viewCount": 46352,
-          "likeCount": 766,
+          "viewCount": 46900,
+          "likeCount": 772,
           "commentCount": 26
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12303,7 +11871,7 @@
           "commentCount": 0
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12392,12 +11960,12 @@
           },
           {
             "window": "2026-08-22:2026-11-19",
-            "synced_at": "2026-11-22T16:12:09.635086+00:00",
+            "synced_at": "2026-11-22T20:26:48.833930+00:00",
             "metrics": {
               "views": 4375,
               "estimatedMinutesWatched": 795,
               "averageViewDuration": 19,
-              "averageViewPercentage": 97.24,
+              "averageViewPercentage": 97.21,
               "subscribersGained": 8,
               "likes": 40,
               "comments": 1,
@@ -12412,19 +11980,19 @@
         "source": "footballi_web",
         "published_at": "2026-11-18T06:02:19Z",
         "recent_statistics": {
-          "viewCount": 6091,
+          "viewCount": 6104,
           "likeCount": 51,
           "commentCount": 4
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
           "views": 4375,
           "estimatedMinutesWatched": 795,
           "averageViewDuration": 19,
-          "averageViewPercentage": 97.24,
+          "averageViewPercentage": 97.21,
           "subscribersGained": 8,
           "likes": 40,
           "comments": 1,
@@ -12498,7 +12066,7 @@
           "commentCount": 7
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12577,7 +12145,7 @@
           "commentCount": 0
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12656,7 +12224,7 @@
           "commentCount": 0
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12716,12 +12284,12 @@
         "category": "VIDEO",
         "published_at": "2026-11-19T10:44:32Z",
         "recent_statistics": {
-          "viewCount": 1370,
+          "viewCount": 1374,
           "likeCount": 18,
           "commentCount": 3
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12759,12 +12327,12 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T15:02:57Z",
         "recent_statistics": {
-          "viewCount": 114,
+          "viewCount": 115,
           "likeCount": 1,
           "commentCount": 0
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12803,11 +12371,11 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T15:07:32Z",
         "recent_statistics": {
-          "viewCount": 1342,
+          "viewCount": 1364,
           "likeCount": 12,
           "commentCount": 2
         },
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12846,11 +12414,11 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T18:02:09Z",
         "recent_statistics": {
-          "viewCount": 79,
+          "viewCount": 80,
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12893,7 +12461,7 @@
           "likeCount": 8,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12932,11 +12500,11 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T06:33:32Z",
         "recent_statistics": {
-          "viewCount": 112,
+          "viewCount": 113,
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-22T16:12:09.635086+00:00",
+        "last_synced_at": "2026-11-22T20:26:48.833930+00:00",
         "period_start": "2026-08-22",
         "period_end": "2026-11-19",
         "metrics": {
@@ -12960,8 +12528,8 @@
         "source": "instagram",
         "published_at": "2026-11-20T08:01:53Z",
         "recent_statistics": {
-          "viewCount": 8585,
-          "likeCount": 83,
+          "viewCount": 8624,
+          "likeCount": 84,
           "commentCount": 19
         }
       },
@@ -12975,9 +12543,9 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T10:06:36Z",
         "recent_statistics": {
-          "viewCount": 3827,
+          "viewCount": 3861,
           "likeCount": 87,
-          "commentCount": 21
+          "commentCount": 20
         }
       },
       "hjyvyrIylHE": {
@@ -13095,7 +12663,7 @@
         "source": "instagram",
         "published_at": "2026-11-21T08:02:11Z",
         "recent_statistics": {
-          "viewCount": 824,
+          "viewCount": 826,
           "likeCount": 16,
           "commentCount": 0
         }
@@ -13110,7 +12678,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T10:33:05Z",
         "recent_statistics": {
-          "viewCount": 71,
+          "viewCount": 79,
           "likeCount": 3,
           "commentCount": 0
         }
@@ -13155,7 +12723,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T15:02:26Z",
         "recent_statistics": {
-          "viewCount": 220,
+          "viewCount": 221,
           "likeCount": 1,
           "commentCount": 0
         }
@@ -13170,7 +12738,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T15:33:48Z",
         "recent_statistics": {
-          "viewCount": 37,
+          "viewCount": 40,
           "likeCount": 1,
           "commentCount": 0
         }
@@ -13200,7 +12768,7 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T18:32:10Z",
         "recent_statistics": {
-          "viewCount": 16,
+          "viewCount": 18,
           "likeCount": 0,
           "commentCount": 0
         }
@@ -13215,16 +12783,46 @@
         "source": "footballi_web",
         "published_at": "2026-11-22T08:01:03Z",
         "recent_statistics": {
-          "viewCount": 16,
+          "viewCount": 21,
           "likeCount": 1,
+          "commentCount": 0
+        }
+      },
+      "yedFiMntrSw": {
+        "snapshots": [],
+        "video_id": "yedFiMntrSw",
+        "title": "پیروز قربانی: ارزش جایزه علیرضا بیرانوند بیشتر از طلای المپیک است",
+        "category": "SHORTS",
+        "format": "short",
+        "format_source": "published_metadata",
+        "source": "instagram",
+        "published_at": "2026-11-22T16:16:11Z",
+        "recent_statistics": {
+          "viewCount": 16,
+          "likeCount": 0,
+          "commentCount": 0
+        }
+      },
+      "esdlTAsMb9I": {
+        "snapshots": [],
+        "video_id": "esdlTAsMb9I",
+        "title": "عملکرد نویدکیا، حاشیه‌های تارتار و استعفای سهراب در پشت خط",
+        "category": "POSHTE_KHAT",
+        "format": "main",
+        "format_source": "published_metadata",
+        "source": "footballi_web",
+        "published_at": "2026-11-22T16:15:59Z",
+        "recent_statistics": {
+          "viewCount": 0,
+          "likeCount": 0,
           "commentCount": 0
         }
       }
     },
-    "last_sync_at": "2026-11-22T16:12:09.635086+00:00",
+    "last_sync_at": "2026-11-22T20:26:48.833930+00:00",
     "period_start": "2026-08-22",
     "period_end": "2026-11-19",
-    "video_count": 125,
+    "video_count": 127,
     "last_row_count": 91,
     "format_report_through": "2026-11-19",
     "file_format_report_through": "2026-11-16",
@@ -13909,16 +13507,16 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-22T19:45:47.016799+03:30",
-    "new_web_candidates": 2,
-    "new_instagram_candidates": 1,
+    "finished_at": "2026-11-22T23:57:45.472145+03:30",
+    "new_web_candidates": 17,
+    "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
       "main": 0,
-      "short": 1,
+      "short": 0,
       "priority_summaries": 0,
-      "priority_editorial": 1,
+      "priority_editorial": 0,
       "priority_match_day": 0
     },
     "live_scores": {
@@ -13929,18 +13527,9 @@
     },
     "learning": {
       "revision": "92bd5211dded13e5",
-      "changes": [
-        "short"
-      ],
-      "queue_adjusted": 5,
-      "title_style": "direct",
-      "selected_factor": 0.984,
-      "published_tehran": "19:45"
+      "changes": []
     },
-    "end_screen_video_ids": [
-      "esdlTAsMb9I"
-    ],
-    "queue_size": 17,
+    "queue_size": 0,
     "daily_uploads": {
       "main": 1,
       "short": 1,
@@ -14021,9 +13610,7 @@
         "preferred_minutes": {}
       }
     },
-    "changes": [
-      "short"
-    ]
+    "changes": []
   },
   "comment_manager": {
     "version": 1,
@@ -15944,28 +15531,51 @@
     "threads": {},
     "quota": {
       "date": "2026-11-22",
-      "read": 13,
+      "read": 18,
       "write": 50
     },
     "last_run": {
-      "discovered": 1,
-      "reviewed": 1,
+      "discovered": 0,
+      "reviewed": 0,
       "reviewed_no_reply": 0,
       "replied": 0,
-      "deleted": 1,
+      "deleted": 0,
       "errors": 0,
       "retries": 0,
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 13,
+      "read_units": 18,
       "write_units": 50
     },
-    "scan_phase": 2,
+    "scan_phase": 0,
     "archive_token": null
   },
-  "last_successful_run_slot": 997424,
+  "last_successful_run_slot": 997432,
   "footballi_recent_publications": {
+    "1076776": 1795379248.997779,
+    "1076775": 1795379248.997779,
+    "1076770": 1795379248.997779,
+    "1076769": 1795379248.997779,
+    "1076766": 1795379248.997779,
+    "1076763": 1795379248.997779,
+    "1076754": 1795379248.997779,
+    "1076752": 1795379248.997779,
+    "1076750": 1795379248.997779,
+    "1076748": 1795379248.997779,
+    "1076747": 1795379248.997779,
+    "1076746": 1795379248.997779,
+    "1076742": 1795379248.997779,
+    "1076740": 1795379248.997779,
+    "1076739": 1795379248.997779,
+    "1076738": 1795379248.997779,
+    "1076736": 1795379248.997779,
+    "1076734": 1795379248.997779,
+    "1076732": 1795379248.997779,
+    "1076721": 1795379248.997779,
+    "1076715": 1795379248.997779,
+    "1076712": 1795379248.997779,
+    "1076708": 1795379248.997779,
     "1076706": 1795363962.4434474,
     "1076701": 1795363962.4434474,
     "1076699": 1795363962.4434474,
@@ -16042,36 +15652,905 @@
     "1076493": 1795287691.8268456,
     "1076491": 1795287691.8268456,
     "1076488": 1795287691.8268456,
-    "1076486": 1795285872.316367,
-    "1076484": 1795285872.316367,
-    "1076483": 1795285872.316367,
-    "1076478": 1795284078.8826826,
-    "1076477": 1795284078.8826826,
-    "1076474": 1795284078.8826826,
-    "1076471": 1795284078.8826826,
-    "1076469": 1795282275.4915595,
-    "1076466": 1795282275.4915595,
-    "1076457": 1795282275.4915595,
-    "1076455": 1795282275.4915595,
-    "1076453": 1795280478.1658676,
-    "1076452": 1795280478.1658676,
-    "1076451": 1795280478.1658676,
-    "1076450": 1795280478.1658676,
-    "1076446": 1795280478.1658676,
-    "1076436": 1795278678.9113233,
-    "1076435": 1795278678.9113233,
-    "1076433": 1795278678.9113233,
-    "1076432": 1795278678.9113233,
-    "1076431": 1795278678.9113233,
-    "1076430": 1795278678.9113233,
-    "1076429": 1795278678.9113233,
-    "1076425": 1795276881.4594634
+    "1076486": 1795285872.316367
   },
   "live_fixtures": {
     "fixtures": [],
-    "fetched_at": "2026-11-22T19:42:12.817031+03:30",
+    "fetched_at": "2026-11-22T23:56:51.720921+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
-  "priority_migration_version": 1
+  "priority_migration_version": 1,
+  "originals_waiting": [
+    {
+      "video_id": 1076776,
+      "published_at": null,
+      "discovered_at": 1795379249.4433823,
+      "url": "https://footballi.net/video/1076776/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%A7%D8%AA%D9%84%D8%AA%DB%8C%DA%A9%D9%88-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-%D8%A8%D9%87-%D8%AE%D8%AA%D8%A7%D9%81%D9%87-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D8%A8%D8%A7%D8%A6%D9%86%D8%A7",
+      "title": "گل اول اتلتیکو مادرید به ختافه (سوپرگل بائنا)",
+      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | اتلتیکو مادرید,ختافه,الکس بائنا",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-9879ba2b-a11a-480c-b01f-99866a29ec9d.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/EvQnr9gugw9vqLByMgjV5EXWCcAzkVVz7F87pzvi.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076776/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%A7%D8%AA%D9%84%D8%AA%DB%8C%DA%A9%D9%88-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-%D8%A8%D9%87-%D8%AE%D8%AA%D8%A7%D9%81%D9%87-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D8%A8%D8%A7%D8%A6%D9%86%D8%A7",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379249.4434118,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076775,
+      "published_at": null,
+      "discovered_at": 1795379249.683307,
+      "url": "https://footballi.net/video/1076775/%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%AF%D9%88%D8%B3%D8%AA-%D9%87%D8%AF%D9%81-%D8%A8%D8%A7%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D8%A7%D9%86%D8%AF%D9%86-%D8%AF%D8%B1-%DA%A9%D9%88%D8%B1%D8%B3-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%DB%8C-%D8%A7%D8%B3%D8%AA",
+      "title": "ایراندوست: هدف باشگاه ماندن در کورس قهرمانی است",
+      "description": "ایراندوست: با هواداران انزلی چالشی نداشتمخوشحالم که در چنین جمعی هستم/ به ورزش استان مازندران تبریک می‌گویم/ من از سال ۸۸ مربی تیم‌های پایه ملی بودم و می‌دانم مازندرانی‌ها چه پتانسیلی در لیگ دارند/ متاسفانه از همه تیم‌های مازندرانی نهایتا دو سال حمایت شد/ الان می‌بینم این حمایت حداکثری رسانه با حمایت مسئولین این استان و شهر به وجود آمده و امیدوارم تداوم داشته باشد/ به خانم مرضیه جعفری تبریک می‌گویم/ بعد از سالها حضور در مسابقات و دو حضور پی در پی در جام ملتها تاثیر زیادی در این انتخاب داشته/ باز ...",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-abf2d780-3a85-4e9e-9e12-27c4d15f5eb8.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/yAZLc1DQ0HoK96yR0V1XiOsljVljA1lwIqA8OMVI.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076775/%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%D8%AF%D9%88%D8%B3%D8%AA-%D9%87%D8%AF%D9%81-%D8%A8%D8%A7%D8%B4%DA%AF%D8%A7%D9%87-%D9%85%D8%A7%D9%86%D8%AF%D9%86-%D8%AF%D8%B1-%DA%A9%D9%88%D8%B1%D8%B3-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%DB%8C-%D8%A7%D8%B3%D8%AA",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379249.6833453,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076770,
+      "published_at": null,
+      "discovered_at": 1795379250.0235152,
+      "url": "https://footballi.net/video/1076770/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%B1%D8%B6%DB%8C%D9%87-%D8%AC%D8%B9%D9%81%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D8%AE%D8%A7%D8%AA%D9%88%D9%86-%D8%A8%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86",
+      "title": "صحبت‌های مرضیه جعفری و بازیکنان تیم خاتون بم بعد بازی با سپاهان",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | فوتبال بانوان,مرضیه جعفری,خاتون بم,ورزش زنان,تیم فوتبال بانوان سپاهان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-6b7fe59d-9ce4-4a67-9c17-c20d66e7729d.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/XmVQYloki79ttN0V0BLNPTpY4XLaiSMNexDDTs6a.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076770/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%85%D8%B1%D8%B6%DB%8C%D9%87-%D8%AC%D8%B9%D9%81%D8%B1%DB%8C-%D9%88-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%AA%DB%8C%D9%85-%D8%AE%D8%A7%D8%AA%D9%88%D9%86-%D8%A8%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379250.0235496,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076769,
+      "published_at": null,
+      "discovered_at": 1795379250.4725802,
+      "url": "https://footballi.net/video/1076769/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%A8%DB%8C%D8%A7%D9%86-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%88-%D9%86%DA%AF%DB%8C%D9%86-%D9%86%D9%82%D8%AF%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86",
+      "title": "صحبت‌های بیان محمودی سرمربی و نگین نقدی بازیکن سپاهان",
+      "description": "صحبت‌های بیان محمودی سرمربی و نکین نقدی بازیکن سپاهان پس از شکست مقابل خاتون در لیگ برتر فوتبال بانوان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-bd2e5929-27b6-429a-bc23-7dd91b52617e.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/59ZjXAa6Yl2mYkSJ4uk1zyw624gJhfCLKePaYt7t.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076769/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%A8%DB%8C%D8%A7%D9%86-%D9%85%D8%AD%D9%85%D9%88%D8%AF%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%88-%D9%86%DA%AF%DB%8C%D9%86-%D9%86%D9%82%D8%AF%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379250.4726129,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076766,
+      "published_at": null,
+      "discovered_at": 1795379250.7174616,
+      "url": "https://footballi.net/video/1076766/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%DB%8C%D9%84%D8%A7%D9%86-5-1-%D9%81%D8%B1%D9%88%D8%B2%DB%8C%D9%86%D9%88%D9%86%D9%87",
+      "title": "خلاصه بازی میلان 5-1 فروزینونه",
+      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | سری آ,میلان,خلاصه بازی,فروزینونه",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-b04e131d-ef56-410d-b796-568138980dee.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/3bcycPWtlJfeqf0xQdPI38jlL2n4D5S47shiZN6S.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076766/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%DB%8C%D9%84%D8%A7%D9%86-5-1-%D9%81%D8%B1%D9%88%D8%B2%DB%8C%D9%86%D9%88%D9%86%D9%87",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379250.717497,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076763,
+      "published_at": null,
+      "discovered_at": 1795379250.955301,
+      "url": "https://footballi.net/video/1076763/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D9%88%D8%B1%D9%BE%D9%88%D9%84-4-0-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%DB%8C%D9%88%D9%86%D8%A7%DB%8C%D8%AA%D8%AF",
+      "title": "خلاصه بازی لیورپول 4-0 منچستریونایتد",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | منچستریونایتد,لیگ برتر انگلیس,لیورپول,خلاصه بازی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/foot/upload/videos/2026/11/22/tus-e893d173-e2da-4a8b-bb20-774a8d17c235.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/XHguMCt4rNuOd51dNYuouFr6FKkS8izMX3rstCQM.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076763/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D9%88%D8%B1%D9%BE%D9%88%D9%84-4-0-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%DB%8C%D9%88%D9%86%D8%A7%DB%8C%D8%AA%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379250.9553423,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076754,
+      "published_at": null,
+      "discovered_at": 1795379251.3067994,
+      "url": "https://footballi.net/video/1076754/%DA%AF%D9%84-%D9%BE%D9%86%D8%AC%D9%85-%D9%85%DB%8C%D9%84%D8%A7%D9%86-%D8%A8%D9%87-%D9%81%D8%B1%D9%88%D8%B2%DB%8C%D9%86%D9%88%D9%86%D9%87-%DA%A9%D8%B1%DB%8C%D8%B3%D8%AA%DB%8C%D9%86-%D9%BE%D9%88%D9%84%DB%8C%D8%B4%DB%8C%DA%86",
+      "title": "گل پنجم میلان به فروزینونه (کریستین پولیشیچ)",
+      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | میلان,کریستین پولیشیچ,فروزینونه",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-db464923-e651-408e-89f1-ef6ec41dd9a0.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/8W9uTqkKo6yBYqr903keT5MGq92yRNIn7xPPwsZe.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076754/%DA%AF%D9%84-%D9%BE%D9%86%D8%AC%D9%85-%D9%85%DB%8C%D9%84%D8%A7%D9%86-%D8%A8%D9%87-%D9%81%D8%B1%D9%88%D8%B2%DB%8C%D9%86%D9%88%D9%86%D9%87-%DA%A9%D8%B1%DB%8C%D8%B3%D8%AA%DB%8C%D9%86-%D9%BE%D9%88%D9%84%DB%8C%D8%B4%DB%8C%DA%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379251.3068357,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076752,
+      "published_at": null,
+      "discovered_at": 1795379252.6814167,
+      "url": "https://footballi.net/video/1076752/%DA%AF%D9%84-%DA%86%D9%87%D8%A7%D8%B1%D9%85-%D9%85%DB%8C%D9%84%D8%A7%D9%86-%D8%A8%D9%87-%D9%81%D8%B1%D9%88%D8%B2%DB%8C%D9%86%D9%88%D9%86%D9%87-%D8%A2%D9%84%D9%81%D8%A7%D8%AF%DB%8C%D9%88-%D8%B3%DB%8C%D8%B3%D9%87",
+      "title": "گل چهارم میلان به فروزینونه (آلفادیو سیسه)",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | میلان,فروزینونه,آلفادیو سیسه",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-a926c78d-ee95-41f8-b792-98680c31c5b9.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/XAM7r8bHNokViEkrbTMUrsgfEJZCVg0oO3kBEA8X.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076752/%DA%AF%D9%84-%DA%86%D9%87%D8%A7%D8%B1%D9%85-%D9%85%DB%8C%D9%84%D8%A7%D9%86-%D8%A8%D9%87-%D9%81%D8%B1%D9%88%D8%B2%DB%8C%D9%86%D9%88%D9%86%D9%87-%D8%A2%D9%84%D9%81%D8%A7%D8%AF%DB%8C%D9%88-%D8%B3%DB%8C%D8%B3%D9%87",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379252.681461,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076750,
+      "published_at": null,
+      "discovered_at": 1795379253.4592235,
+      "url": "https://footballi.net/video/1076750/%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%A8%D9%87-%D8%AF%D9%84%DB%8C%D9%84-%D8%AF%D8%B3%D8%AA-%D9%86%D8%AF%D8%A7%D8%AF%D9%86",
+      "title": "اخراج به دلیل دست ندادن!",
+      "description": "اوکان بوروک سرمربی گالاتاسرای پس از پایان بازی مقابل سامسون اسپور وارد زمین شد و با یکی از کمک داورها دست داد اما با داور وسط دست نداد و داور وسط بازی پس از این اتفاق کارت زرد دوم را به اون نشان داد و او را اخراج کرد!",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-f8aac7d9-1ea1-4b9e-80b5-4c38b4cb7ee4.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/lIOG6KQiOPJzECtLhSzvgmzPRWrAaA00I8ksIQHi.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076750/%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%A8%D9%87-%D8%AF%D9%84%DB%8C%D9%84-%D8%AF%D8%B3%D8%AA-%D9%86%D8%AF%D8%A7%D8%AF%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379253.4592638,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076748,
+      "published_at": null,
+      "discovered_at": 1795379253.697098,
+      "url": "https://footballi.net/video/1076748/%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D9%88%D8%B1%D9%BE%D9%88%D9%84-4-0-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%DB%8C%D9%88%D9%86%D8%A7%DB%8C%D8%AA%D8%AF-%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4-%D9%81%D8%B1%D9%87%D8%A7%D8%AF-%D9%85%D8%AD%D9%85%D8%AF%DB%8C%D8%A7%D9%86",
+      "title": "هایلایت بازی لیورپول 4-0 منچستریونایتد (گزارش فرهاد محمدیان)",
+      "description": "هایلایت بازی لیورپول 4-0 منچستریونایتد (گزارش فرهاد محمدیان)",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-2dd17763-bb56-451a-8f7f-e9dcc5cf4bf7.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/aa1yAPDoKfwyblGU9PsOQKIYFbb3sSu2dWWLkx0i.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076748/%D9%87%D8%A7%DB%8C%D9%84%D8%A7%DB%8C%D8%AA-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D9%88%D8%B1%D9%BE%D9%88%D9%84-4-0-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%DB%8C%D9%88%D9%86%D8%A7%DB%8C%D8%AA%D8%AF-%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4-%D9%81%D8%B1%D9%87%D8%A7%D8%AF-%D9%85%D8%AD%D9%85%D8%AF%DB%8C%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379253.6971498,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076715,
+      "published_at": null,
+      "discovered_at": 1795379260.7078972,
+      "url": "https://footballi.net/video/1076715/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D9%88-%D8%A7%D8%B3%D9%84%D8%A7%D9%85%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D9%85%D8%B5%D8%A7%D9%81-%D8%A8%D8%A7-%D8%A7%D9%84%D8%B9%DB%8C%D9%86",
+      "title": "صحبت‌های بختیاری‌زاده و اسلامی پیش از مصاف با العین",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | استقلال,سهراب بختیاری‌زاده,العین,محمدحسین اسلامی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-b7ed723b-2160-4035-857a-5ca07fb110d9.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/foot/upload/videos/2026/11/21/tus-baa45f53-0682-4210-9f70-e8d8c10b4fa5.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/Qx0u5ngGXcnerXEfttUphltrlN2bnhb0yRw1p1xK.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076715/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D9%88-%D8%A7%D8%B3%D9%84%D8%A7%D9%85%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D9%85%D8%B5%D8%A7%D9%81-%D8%A8%D8%A7-%D8%A7%D9%84%D8%B9%DB%8C%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379260.7079368,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076712,
+      "published_at": null,
+      "discovered_at": 1795379261.6741304,
+      "url": "https://footballi.net/video/1076712/%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%DB%8C%D9%88%D9%86%D8%A7%DB%8C%D8%AA%D8%AF-%D8%A8%D9%87-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A2%D9%86%D9%81%DB%8C%D9%84%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF%D9%86%D8%AF",
+      "title": "بازیکنان منچستریونایتد به ورزشگاه آنفیلد رسیدند",
+      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | منچستریونایتد,لیگ برتر انگلیس,لیورپول,آنفیلد",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-4131af3c-29ba-4f3d-80b9-d10c1919b8dd.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/aspCsodH7T9cNoQhr9QWIgaR9p0WQP1vYfkiaigi.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076712/%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1%DB%8C%D9%88%D9%86%D8%A7%DB%8C%D8%AA%D8%AF-%D8%A8%D9%87-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D8%A2%D9%86%D9%81%DB%8C%D9%84%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF%D9%86%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379261.6741726,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076708,
+      "published_at": null,
+      "discovered_at": 1795379262.4731834,
+      "url": "https://footballi.net/video/1076708/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%DB%B2-%DB%B2-%D8%A7%D9%84%D8%B9%DB%8C%D9%86-%D9%84%DB%8C%DA%AF-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%D8%A7%D9%86-%D8%A2%D8%B3%DB%8C%D8%A7-%DB%B2%DB%B0%DB%B1%DB%B8",
+      "title": "خلاصه بازی استقلال ۲-۲ العین لیگ قهرمانان آسیا ۲۰۱۸",
+      "description": "۱۵ اسفند ۱۳۹۶ استقلال به سرمربیگری وینفرد شفر در مرحله گروهی لیگ قهرمانان آسیا ۲۰۱۸ به مصاف العین رفت و با نتیجه دو بر دو از زمین بیرون آمد. دو گل استقلال را مامه تیام در دقایق ۵۲ و ۷۷ به ثمر رساند.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-c952d33b-082f-44d4-89a8-5c9e3dfeb7c5.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/foot/upload/videos/2026/11/21/tus-baa45f53-0682-4210-9f70-e8d8c10b4fa5.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/oK7LCvJ8c7zw69JyqiBVfGdWEpFYZvU7TcbCG2wR.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076708/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%DB%B2-%DB%B2-%D8%A7%D9%84%D8%B9%DB%8C%D9%86-%D9%84%DB%8C%DA%AF-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%D8%A7%D9%86-%D8%A2%D8%B3%DB%8C%D8%A7-%DB%B2%DB%B0%DB%B1%DB%B8",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379262.4732246,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076665,
+      "published_at": null,
+      "discovered_at": 1795379263.5361693,
+      "url": "https://footballi.net/video/1076665/%DA%AF%D9%84-%D8%AC%D9%88%D8%AF-%D8%A8%D9%84%DB%8C%D9%86%DA%AF%D8%A7%D9%85-%D8%A8%D9%87-%D8%B3%D9%84%D8%AA%D8%A7%D9%88%DB%8C%DA%AF%D9%88-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+      "title": "گل جود بلینگام به سلتاویگو از دید هواداران",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | رئال مادرید,لالیگا,سلتاویگو,جود بلینگام",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-90880446-4abf-4c2b-89c9-2c1ffcf18566.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/9ukWthR2b8bkd1PfnCn9rtJwxVNNRNFWDCOtVF9L.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076665/%DA%AF%D9%84-%D8%AC%D9%88%D8%AF-%D8%A8%D9%84%DB%8C%D9%86%DA%AF%D8%A7%D9%85-%D8%A8%D9%87-%D8%B3%D9%84%D8%AA%D8%A7%D9%88%DB%8C%DA%AF%D9%88-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379263.536206,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076663,
+      "published_at": null,
+      "discovered_at": 1795379264.0631208,
+      "url": "https://footballi.net/video/1076663/%DA%AF%D9%84-%DA%A9%D8%A7%D8%B1%D9%84%D9%88%D8%B3-%D8%A7%D8%B3%D9%BE%DB%8C-%D8%A8%D9%87-%D8%B3%D9%84%D8%AA%D8%A7%D9%88%DB%8C%DA%AF%D9%88-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+      "title": "گل کارلوس اسپی به سلتاویگو از دید هواداران",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | رئال مادرید,لالیگا,سلتاویگو,کارلوس اسپی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-7ded56df-74ad-4040-b016-117b9824e98a.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d4f46b12-1d0f-4f10-b17f-27852f7b2450.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/WOGCbBvQ34Bfw7naoX9kMl25bp060rCebBFqYs44.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076663/%DA%AF%D9%84-%DA%A9%D8%A7%D8%B1%D9%84%D9%88%D8%B3-%D8%A7%D8%B3%D9%BE%DB%8C-%D8%A8%D9%87-%D8%B3%D9%84%D8%AA%D8%A7%D9%88%DB%8C%DA%AF%D9%88-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF-%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379264.063154,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076657,
+      "published_at": null,
+      "discovered_at": 1795379264.9003656,
+      "url": "https://footballi.net/video/1076657/%D9%BE%D8%A7%D8%B3%D8%AE-%D8%AF%D8%A8%DB%8C%D8%B1-%D8%A8%D9%87-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%AA%DB%8C%D9%85%D8%AF%D8%A7%D8%B1%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%DA%A9%D8%B4%D8%AA%DB%8C",
+      "title": "پاسخ دبیر به اعتراض بختیاری‌زاده درباره تیمداری استقلال در کشتی!",
+      "description": "واکنش دبیر به ناراحتی سهراب بختیاری‌زاده از تیمداری باشگاه استقلال در کشتی و سایر رشته‌ها: باشگاه حرفه‌ای باید در همه رشته ها فعالیت کندبخش چهارم صحبت های علیرضا دبیر رییس فدراسیون کشتی در مراسم تجلیل از مدال‌آوران کشتی ایران در مسابقات جهانی ۲۰۲۶",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-6704d1d1-9fc8-4bba-b48e-3519b3d29296.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/foot/upload/videos/2026/11/22/tus-eee82e8c-28b0-443c-b84d-80b3b7e6f5ec.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/ZNcnH21CMcOcSIhEwfT7jkzeqrWb23GE71dDt4mI.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076657/%D9%BE%D8%A7%D8%B3%D8%AE-%D8%AF%D8%A8%DB%8C%D8%B1-%D8%A8%D9%87-%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%AA%DB%8C%D9%85%D8%AF%D8%A7%D8%B1%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%DA%A9%D8%B4%D8%AA%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379264.900405,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076642,
+      "published_at": null,
+      "discovered_at": 1795379265.2531638,
+      "url": "https://footballi.net/video/1076642/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%DB%B1-%DB%B0-%D8%A7%D9%84%D8%B9%DB%8C%D9%86-%D9%84%DB%8C%DA%AF-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%D8%A7%D9%86-%D8%A2%D8%B3%DB%8C%D8%A7-%DB%B2%DB%B0%DB%B1%DB%B7",
+      "title": "خلاصه بازی استقلال ۱-۰ العین لیگ قهرمانان آسیا ۲۰۱۷",
+      "description": "۱ خرداد ۱۳۹۶ استقلال به سرمربیگری علیرضا منصوریان در ورزشگاه آزادی در بازی رفت مرحله حذفی لیگ قهرمانان آسیا میزبان العین بود و با تک گل کاوه رضایی از روی نقطه پنالتی در دقیقه ۹۱ پیروز این دیدار شد.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/foot/upload/videos/foot/upload/videos/2026/11/22/tus-6c0b9e49-089c-426a-9d30-aeea733a059e.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/foot/upload/videos/2026/11/21/tus-baa45f53-0682-4210-9f70-e8d8c10b4fa5.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/iHYX2K9f2QV41BJ2QoEYd7VHbAeq1gYCOyF8WOvu.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076642/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%DB%B1-%DB%B0-%D8%A7%D9%84%D8%B9%DB%8C%D9%86-%D9%84%DB%8C%DA%AF-%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%D8%A7%D9%86-%D8%A2%D8%B3%DB%8C%D8%A7-%DB%B2%DB%B0%DB%B1%DB%B7",
+      "source_published_at": null,
+      "source_first_seen_at": 1795379248.997779,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795379265.2532027,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076671,
+      "published_at": null,
+      "discovered_at": 1795363970.8072398,
+      "url": "https://footballi.net/video/1076671/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AC%D8%A7%D9%84%D8%A8-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D8%A7%D8%B2-%D8%B9%D9%84%DB%8C%D9%BE%D9%88%D8%B1-%D9%85%D8%B9%D9%84%D9%88%D9%85-%D9%86%DB%8C%D8%B3%D8%AA-%D8%A8%D8%A7-%D9%85%D8%A7%D8%B3%D8%AA-%DB%8C%D8%A7-%D8%A8%D8%A7-%D8%A7%D9%88%D9%86%D8%A7",
+      "title": "انتقاد جالب تارتار از علیپور: معلوم نیست با ماست یا با اونا!",
+      "description": "نزدیک تر از نیمکت تیم ها به زمین مسابقه، با سایت و ویدئوهای فوتبالی | مهدی تارتار,پرسپولیس,علی علیپور,حواشی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/22/tus-f8a3f51f-ad81-48b7-8753-f16b614bfd2b.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/YuAPEBRGpwrub8Nx9XVSjSApYUSQXOZdBd2moash.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076671/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AC%D8%A7%D9%84%D8%A8-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D8%A7%D8%B2-%D8%B9%D9%84%DB%8C%D9%BE%D9%88%D8%B1-%D9%85%D8%B9%D9%84%D9%88%D9%85-%D9%86%DB%8C%D8%B3%D8%AA-%D8%A8%D8%A7-%D9%85%D8%A7%D8%B3%D8%AA-%DB%8C%D8%A7-%D8%A8%D8%A7-%D8%A7%D9%88%D9%86%D8%A7",
+      "source_published_at": null,
+      "source_first_seen_at": 1795363962.4434474,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795363970.8072753,
+      "attempt_count": 3,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076543,
+      "published_at": null,
+      "discovered_at": 1795294915.2545855,
+      "url": "https://footballi.net/video/1076543/%D8%B3%D8%AE%D9%86%DA%AF%D9%88%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%88-%D8%BA%D8%B1%DB%8C%D8%A8%DB%8C-%D8%A7%D8%B2-%D9%86%D8%B8%D8%B1-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%BE%DB%8C%D8%B4-%D8%A2%D9%85%D8%AF",
+      "title": "سخنگوی فولاد: اتفاقات عجیب و غریبی از نظر داوری در بازی مقابل سپاهان پیش آمد",
+      "description": "در بازی‌های مختلف این اتفاقات برای فولاد می‌افتد. صحنه احسان حاج‌صفی را همه دیدند که باید کارت قرمز می‌گرفت. محمدی باید چند کارت زرد می‌گرفت. خواهش می‌کنم کمیته داوران صدای داورها را بشنود. حق فولاد این نیست",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-7d48c2c5-630a-44a5-a536-a891a056ded2.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/Nlw5s1Pe2ibxp3dZfU0B6kzPgLh59aTQFtPQGoII.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076543/%D8%B3%D8%AE%D9%86%DA%AF%D9%88%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D8%A7%D8%AA-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%88-%D8%BA%D8%B1%DB%8C%D8%A8%DB%8C-%D8%A7%D8%B2-%D9%86%D8%B8%D8%B1-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86-%D9%BE%DB%8C%D8%B4-%D8%A2%D9%85%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795294913.041174,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795294915.2546194,
+      "attempt_count": 22,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076542,
+      "published_at": null,
+      "discovered_at": 1795294915.513434,
+      "url": "https://footballi.net/video/1076542/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AD%D9%85%DB%8C%D8%AF-%D9%85%D8%B7%D9%87%D8%B1%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A2%D9%82%D8%A7%DB%8C-%D8%AF%D8%A7%D9%88%D8%B1-%D9%BE%D9%8F%D8%B1-%D8%A7%D8%AF%D8%B9%D8%A7-%D8%A7%DB%8C%D9%86-%DA%86%D9%87-%D9%82%D8%B6%D8%A7%D9%88%D8%AA%DB%8C-%D8%A7%D8%B3%D8%AA",
+      "title": "انتقاد حمید مطهری سرمربی فولاد: آقای داور پُر ادعا این چه قضاوتی است؟",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | سپاهان,فولاد خوزستان,حمید مطهری",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-7f4dfdf9-2257-48d8-aad8-455eb3f5956c.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/r5ykOtbywQ7kfUzgTCpodqSlhZueNK1R8cs4CsxE.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076542/%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D8%AF-%D8%AD%D9%85%DB%8C%D8%AF-%D9%85%D8%B7%D9%87%D8%B1%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%A2%D9%82%D8%A7%DB%8C-%D8%AF%D8%A7%D9%88%D8%B1-%D9%BE%D9%8F%D8%B1-%D8%A7%D8%AF%D8%B9%D8%A7-%D8%A7%DB%8C%D9%86-%DA%86%D9%87-%D9%82%D8%B6%D8%A7%D9%88%D8%AA%DB%8C-%D8%A7%D8%B3%D8%AA",
+      "source_published_at": null,
+      "source_first_seen_at": 1795294913.041174,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795294915.5134516,
+      "attempt_count": 22,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076541,
+      "published_at": null,
+      "discovered_at": 1795294915.7837474,
+      "url": "https://footballi.net/video/1076541/%D9%86%D9%88%DB%8C%D8%AF%DA%A9%DB%8C%D8%A7-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%85%D9%86-%D9%87%DB%8C%DA%86%D9%88%D9%82%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D9%87-%D8%B2%D9%85%DB%8C%D9%86-%D9%86%D9%85%DB%8C-%D8%B1%D9%88%D9%85",
+      "title": "نویدکیا پس از تساوی مقابل فولاد: من هیچوقت برای تساوی به زمین نمی روم",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | سپاهان,فولاد خوزستان,محرم نویدکیا",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-6f8bd945-0f1a-4784-bd6e-b9dbf2f5d249.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/sOQMRsvLRBrayotoR32zdPM71KCeaLDR6nCYfU7m.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076541/%D9%86%D9%88%DB%8C%D8%AF%DA%A9%DB%8C%D8%A7-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%85%D9%86-%D9%87%DB%8C%DA%86%D9%88%D9%82%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D9%87-%D8%B2%D9%85%DB%8C%D9%86-%D9%86%D9%85%DB%8C-%D8%B1%D9%88%D9%85",
+      "source_published_at": null,
+      "source_first_seen_at": 1795294913.041174,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795294915.7837667,
+      "attempt_count": 22,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076466,
+      "published_at": null,
+      "discovered_at": 1795282276.0130835,
+      "url": "https://footballi.net/video/1076466/%D9%BE%DB%8C%D8%B1%D9%88%D8%B2-%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86%DB%8C-%DA%A9%D9%87-%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-%D8%B1%D8%AA%D8%A8%D9%87-%D8%B1%D8%A7%D8%B6%DB%8C-%D9%87%D8%B3%D8%AA%D9%86%D8%AF-%D9%86%DB%8C%D9%85-%D9%81%D8%B5%D9%84-%D8%AC%D8%AF%D8%A7-%D9%85%DB%8C-%D8%B4%D9%88%D9%86%D8%AF",
+      "title": "پیروز قربانی سرمربی آلومینیوم: بازیکنانی که به این رتبه راضی هستند نیم فصل جدا می شوند",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | پیروز قربانی,آلومینیوم اراک,نساجی,لیگ برتر ایران",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-b8123a5c-608b-4d23-950b-4f7d855ead4a.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/uJ2fRX7BB3iEqtKjHy0NG2Vm118JEP5sQ7AyYJP7.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076466/%D9%BE%DB%8C%D8%B1%D9%88%D8%B2-%D9%82%D8%B1%D8%A8%D8%A7%D9%86%DB%8C-%D8%B3%D8%B1%D9%85%D8%B1%D8%A8%DB%8C-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86%DB%8C-%DA%A9%D9%87-%D8%A8%D9%87-%D8%A7%DB%8C%D9%86-%D8%B1%D8%AA%D8%A8%D9%87-%D8%B1%D8%A7%D8%B6%DB%8C-%D9%87%D8%B3%D8%AA%D9%86%D8%AF-%D9%86%DB%8C%D9%85-%D9%81%D8%B5%D9%84-%D8%AC%D8%AF%D8%A7-%D9%85%DB%8C-%D8%B4%D9%88%D9%86%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795282275.4915595,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795282276.013106,
+      "attempt_count": 29,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076432,
+      "published_at": null,
+      "discovered_at": 1795278680.2396574,
+      "url": "https://footballi.net/video/1076432/%D8%AF%D8%A7%D9%88%D8%B1-%D8%AF%D8%B1-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%84%D8%AD%D8%B8%D8%A7%D8%AA-%D8%A7%D8%B2-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%AD%D8%A7%D8%AC-%D8%B5%D9%81%DB%8C-%D9%BE%D8%B4%DB%8C%D9%85%D8%A7%D9%86-%D8%B4%D8%AF",
+      "title": "داور در آخرین لحظات از اخراج حاج صفی پشیمان شد!",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | سپاهان,فولاد خوزستان,احسان حاج‌‌صفی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-10b2ff38-0f6f-4321-b8a4-ea8fe55b39dd.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/QWc0udOb5tXsXtU6Kn21f4bPY1pt0nhi3kawPkkt.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076432/%D8%AF%D8%A7%D9%88%D8%B1-%D8%AF%D8%B1-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%84%D8%AD%D8%B8%D8%A7%D8%AA-%D8%A7%D8%B2-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D8%AD%D8%A7%D8%AC-%D8%B5%D9%81%DB%8C-%D9%BE%D8%B4%DB%8C%D9%85%D8%A7%D9%86-%D8%B4%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795278678.9113233,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795278680.2396786,
+      "attempt_count": 31,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076429,
+      "published_at": null,
+      "discovered_at": 1795278681.7305884,
+      "url": "https://footballi.net/video/1076429/%DA%A9%D8%A7%D8%B1%D8%AA-%D9%82%D8%B1%D9%85%D8%B2-%D8%B1%D8%B6%D8%A7%D9%88%D9%86%D8%AF-%D8%A8%D8%A7-%D8%AA%D8%B5%D9%85%DB%8C%D9%85-%D8%AF%D8%A7%D9%88%D8%B1-%D9%88-VAR-%D9%BE%D8%B3-%DA%AF%D8%B1%D9%81%D8%AA%D9%87-%D8%B4%D8%AF",
+      "title": "کارت قرمز رضاوند با تصمیم داور و VAR پس گرفته شد",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | سپاهان,فولاد خوزستان,آرش رضاوند",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-d1963bd1-b6ea-4552-aee8-e0ca247cf8aa.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-45c355f3-980d-40ab-a725-798023352133.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/4HFPkAbKpsyNjLMgWAhpL6sf1TatV2GMQQglDQ7J.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076429/%DA%A9%D8%A7%D8%B1%D8%AA-%D9%82%D8%B1%D9%85%D8%B2-%D8%B1%D8%B6%D8%A7%D9%88%D9%86%D8%AF-%D8%A8%D8%A7-%D8%AA%D8%B5%D9%85%DB%8C%D9%85-%D8%AF%D8%A7%D9%88%D8%B1-%D9%88-VAR-%D9%BE%D8%B3-%DA%AF%D8%B1%D9%81%D8%AA%D9%87-%D8%B4%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795278678.9113233,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795278681.730616,
+      "attempt_count": 31,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1076387,
+      "published_at": null,
+      "discovered_at": 1795269677.8700666,
+      "url": "https://footballi.net/video/1076387/%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%87-%D8%A8%DA%86%DA%AF%D8%A7%D9%86%D9%87-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D9%85%D8%AD%D9%85%D8%AF-%DA%A9%D9%88%D9%87%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
+      "title": "اشتباه بچگانه؛ اخراج ابوالفضل کوهی بازیکن نساجی مقابل آلومینیوم!",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | آلومینیوم اراک,نساجی,کارت قرمز,اخراج,لیگ برتر ایران,ابوالفضل کوهی",
+      "mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-3ea854c5-f27b-44d9-99d9-2933d09969e9.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/9fWfi9xkWNMjLx6Z0et3En2vxzme0y2tggYz5laE.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076387/%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%87-%D8%A8%DA%86%DA%AF%D8%A7%D9%86%D9%87-%D8%A7%D8%AE%D8%B1%D8%A7%D8%AC-%D9%85%D8%AD%D9%85%D8%AF-%DA%A9%D9%88%D9%87%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%86%D8%B3%D8%A7%D8%AC%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
+      "source_published_at": null,
+      "source_first_seen_at": 1795269675.5934577,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795269677.870098,
+      "attempt_count": 38,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1076380,
+      "published_at": null,
+      "discovered_at": 1795267870.28987,
+      "url": "https://footballi.net/video/1076380/%D8%A7%D8%B3%D8%AA%DB%8C%D9%84%DB%8C-%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%D9%87%D9%85%D8%A7%D9%86%D8%B7%D9%88%D8%B1-%DA%A9%D9%87-%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D8%A8%D8%B2%D8%B1%DA%AF-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-%D8%A7%D9%85%DB%8C%D8%AF%D9%88%D8%A7%D8%B1%D9%85-%D8%AF%D8%B1-%D8%A7%D8%AE%D9%84%D8%A7%D9%82-%D9%87%D9%85-%D8%A8%D8%B2%D8%B1%DA%AF-%D8%B4%D9%88%D8%AF",
+      "title": "استیلی: بیرانوند همانطور که در فنی بزرگ می‌شود امیدوارم در اخلاق هم بزرگ شود!",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | اختصاصی,حمید استیلی,مهدی اربابی,مراسم ختم",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-3ee372c3-51a6-4913-9f32-ebfa08f556bc.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/7JmO7Fine4e9kdCkfpZwvYwlXn69qrUbqMuO8qQp.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076380/%D8%A7%D8%B3%D8%AA%DB%8C%D9%84%DB%8C-%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%D9%87%D9%85%D8%A7%D9%86%D8%B7%D9%88%D8%B1-%DA%A9%D9%87-%D8%AF%D8%B1-%D9%81%D9%86%DB%8C-%D8%A8%D8%B2%D8%B1%DA%AF-%D9%85%DB%8C-%D8%B4%D9%88%D8%AF-%D8%A7%D9%85%DB%8C%D8%AF%D9%88%D8%A7%D8%B1%D9%85-%D8%AF%D8%B1-%D8%A7%D8%AE%D9%84%D8%A7%D9%82-%D9%87%D9%85-%D8%A8%D8%B2%D8%B1%DA%AF-%D8%B4%D9%88%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795267870.0318196,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795267870.2898886,
+      "attempt_count": 39,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1076289,
+      "published_at": null,
+      "discovered_at": 1795248081.9451394,
+      "url": "https://footballi.net/video/1076289/%D8%AD%D8%B6%D9%88%D8%B1-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D8%A7%D8%B1%D8%AF%D9%88%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C",
+      "title": "حضور مهدی تاج در اردوی تیم ملی فوتبال ساحلی",
+      "description": "حضور رئیس فدراسیون در اردوی ملی‌پوشان فوتبال ساحلی و دیدار با اعضای تیم در آستانه دیدار دوم برابر ویتنام",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-46bf94ac-3f05-4dee-a70c-130c74d7ab69.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-13700a53-dccb-42fc-b179-8c25a2820a3e.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/ARmKr1kQV8pxan8tltCQHCJWUNRjuWokI037a0g6.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076289/%D8%AD%D8%B6%D9%88%D8%B1-%D9%85%D9%87%D8%AF%DB%8C-%D8%AA%D8%A7%D8%AC-%D8%AF%D8%B1-%D8%A7%D8%B1%D8%AF%D9%88%DB%8C-%D8%AA%DB%8C%D9%85-%D9%85%D9%84%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795248081.7350843,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795248081.945169,
+      "attempt_count": 50,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "verified_is_short": false,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1076266,
+      "published_at": null,
+      "discovered_at": 1795228286.6628377,
+      "url": "https://footballi.net/video/1076266/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87",
+      "title": "واکنش بهتاش فریبا به حواشی استعفای سهراب بختیاری زاده",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | استقلال,بهتاش فریبا,سهراب بختیاری‌زاده",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-81de903d-881e-45d2-a27e-d436914b8d92.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/HFTJOr42gRA2BHRIsCFINHm66SORQnlllQlSjwVY.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076266/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87",
+      "source_published_at": null,
+      "source_first_seen_at": 1795228285.9640448,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795228286.662862,
+      "attempt_count": 62,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1.0,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795199342.0,
+      "discovered_at": 1795208587.9681993,
+      "url": "https://www.instagram.com/p/Df-S3UTtxnV/",
+      "title": "سیرتا پیاز درگیری زارع و تیکدری!",
+      "description": ".\n📌سیرتا پیاز درگیری زارع و تیکدری!",
+      "mp4_url": "https://instagram.fsdu7-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPE4wp6nbJ5RQEYnx3TUeh8Ztfv7yEV91S9zSZqobmmpsPyHPcL9Zejmjf7Otfi2MZDstag-mn6zl2VmLmS7t_9YUgz-Y7T8HbBxZk.mp4?_nc_cat=101&_nc_oc=AdrtUQqG_vTESlBcn8KetKXqq3HhtHJEIDmDyc4OXzZngHu_Si4FnAXdTe7Qm1ihvPo&_nc_sid=5e9851&_nc_ht=instagram.fsdu7-1.fna.fbcdn.net&_nc_ohc=dVL4nqr4qoAQ7kNvwGM2t9G&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6Mjk2MjkzNzcxODAwODYxOTAsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6NDUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=aeea291c033300c7&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zREFFQTVCQzM3NEE0MDI4OTYyQ0VCOUZDQ0NGOUQyRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0NEREEwNzAxRDA5NTQ5RjFBMkQxRjIyMkVCREVDQkY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbcvuHb3vChaRUCKAJDMywXQEbzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=vvMokO_4rvpa5AaZRaJe6w&_nc_ss=70980&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UlFhg93tzmGkqCTEqy2YQMho1NpFoKM4xuS0Li1MAS2N3aANtvbmjkC8OcSf7sqccqnPy1scHBGKspJMYZX4HlzRfu18vdHJb6KXaXbzhc283PyWogAc6_PVXYw&oh=00_AQT8TbqEj5DxC5b9brhI18aRsESU6Smo04vtZwOsEYXlZQ&oe=6B0294B6",
+      "poster_url": "https://instagram.fsdu7-1.fna.fbcdn.net/v/t51.71878-15/919000990_1736857584693727_7066951098079387876_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNDc0NTI4MjM4NDU2Njc0MTI5NjI5NDExMDkwMDgyNzk5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fdXNlcl9zZWxlY3RlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=FggJrtRnSUgQ7kNvwHN1NPx&_nc_oc=AdqFHhMz7uwF8lIN0yAbXra3F2R-sGmNayDjPp3ERbnUZcBq4LcYIrejyTrBmCJPEb0&_nc_zt=23&_nc_ht=instagram.fsdu7-1.fna&_nc_gid=vvMokO_4rvpa5AaZRaJe6w&_nc_ss=70980&_nc_ct=RQosPBUIFQ4lBAAAAA&oh=00_AQT5d8tb5Qe4VSDsVLhTByzBILO-Zfkjpa9zAOLvJ496iA&oe=6B066DE8",
+      "site_views": 125361,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/Df-S3UTtxnV/",
+      "source_published_at": 1795199342.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795208587.9682028,
+      "attempt_count": 73,
+      "is_short": true,
+      "ai_score": 9,
+      "category": "SHORTS",
+      "learning_factor": 0.984,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795199246.0,
+      "discovered_at": 1795208587.9682696,
+      "url": "https://www.instagram.com/p/Df-TAL9NFZX/",
+      "title": "تبریک کریم باقری به بیرانوند همراه با",
+      "description": ".\nتبریک کریم باقری به بیرانوند همراه با \nیک توصیه ویژه!",
+      "mp4_url": "https://scontent-nrt1-2.cdninstagram.com/o1/v/t2/f2/m86/AQPjx81ZIsjPDDQCRpVkL60YWQaVREAAo6gnx9nvgP9IICYBJs8lvmraUKa64nhi1Y1KBxxz06BUUFcUVt2c40se7CDyBQdzrvc9o8o.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_ohc=ppWBzrmEWpUQ7kNvwGu6vYH&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTAwOTA1NzU5NDkzNjcwMywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMjUsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f1eaac7d13cba7c1&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82NUFFQjM3OEQ4RjE0RDY1QjM0RTQzMEY2QTFEN0I0OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0JFODVGMDUyQkJFOTQ0ODc5MjFDMjVFM0FCNDU3RkE1X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACb-tYj48O7KAxUCKAJDMywXQF9d0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=Sl7id4fsBYklPQkxnS-Lkw&_nc_ss=70580&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQGwcDhLqQv_1YGp34KZdDRKxEARhmGC49K6WQhGGdiig&oe=6B02777B",
+      "poster_url": "https://scontent-nrt1-2.cdninstagram.com/v/t51.71878-15/918032880_2486428081760669_9081431962722245846_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNDc0NTg5MTg5MjI1NDI5NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=8-WcjSo6kKYQ7kNvwEQ4IeK&_nc_oc=AdqztxxpAu-mqmQZPqh0Grzd0usFwM2rW4w3W2C5xH31EoP_e9QsxLYU8yolKOUWUpC9nZaDlI9a4DkmqCjfKJdl&_nc_zt=23&_nc_ht=scontent-nrt1-2.cdninstagram.com&_nc_gid=Sl7id4fsBYklPQkxnS-Lkw&_nc_ss=70580&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQSfudsLitz7qXtBCpUG6SLtemztgHWv0DuFIYMqhcSciw&oe=6B06733D",
+      "site_views": 178640,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/Df-TAL9NFZX/",
+      "source_published_at": 1795199246.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795208587.9682705,
+      "attempt_count": 73,
+      "is_short": true,
+      "ai_score": 9,
+      "category": "SHORTS",
+      "learning_factor": 0.984,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795250076.0,
+      "discovered_at": 1795269728.3817143,
+      "url": "https://www.instagram.com/p/Df_yIaDAwMp/",
+      "title": "یوسفی: وظیفه اطرافیان بیرانوند بود که به همه جزییات پوشش او توجه می کردند",
+      "description": ".\n📌یوسفی: وظیفه اطرافیان بیرانوند بود که به همه جزییات پوشش او توجه می کردند\n\n💬صحبتهای پیمان یوسفی درباره تیپ و استایل بیرانوند در مراسم انتخاب بهترین های سال آسیا",
+      "mp4_url": "https://scontent-nrt6-1.cdninstagram.com/o1/v/t2/f2/m86/AQN0flMuhHJbuvBo0fzf76doDX5fwQil7HIB2JkKfyNerg7RCC_AF4M6tV9vQ39pOY_8KzDFN7Rnhk1H9D0sjbMdDAv4q78ehigZxlc.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_ohc=402n-UYU_dUQ7kNvwFuHT7g&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTY3MzczMzY2MTA5NDA4NywiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f325631e7655a5fd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83NzU0OTJCNzE4Rjc0NEFCODAwRUFGNDRFRkZFQUFEMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzA3Rjk3NDE3OTk2ODRBNjZBNzNBOTY4NTkzNzczRjg4X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACaOw4vFj5D5BRUCKAJDMywXQEAzMzMzMzMYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=oh88gm1lEd75cJI3E0OHEA&_nc_ss=70580&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRYKDn9j_v4bqd6jZ2PqJTvNAn1lm12jci7hgQIXMEWMQ&oe=6B0369FE",
+      "poster_url": "https://scontent-nrt1-1.cdninstagram.com/v/t51.71878-15/918787787_1158871867098616_6410937365722440425_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNTE2NDI3MTE5NjQzOTMzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=_TquvCs0Gq4Q7kNvwFawaeL&_nc_oc=AdpM1wssRJRe0z1jnBpem5_M7lKbTyoQtIN7sU-60mclmmskVsUhQqCHVe15asYzQw49WER38t9BWPLbzh_12h_k&_nc_zt=23&_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_gid=oh88gm1lEd75cJI3E0OHEA&_nc_ss=70580&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQQSgtDsXMNxFGxwpdrQYvcjN2fKI9YWF9YpM1d9hJNZ0A&oe=6B07788C",
+      "site_views": 305062,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/Df_yIaDAwMp/",
+      "source_published_at": 1795250076.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795269728.3817155,
+      "attempt_count": 37,
+      "is_short": true,
+      "ai_score": 8,
+      "category": "SHORTS",
+      "learning_factor": 0.984,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795246588.0,
+      "discovered_at": 1795269728.3816614,
+      "url": "https://www.instagram.com/p/Df_s6Ljgj80/",
+      "title": "بیرانوند: رابطه خوبی با هواداران پرسپولیس دارم",
+      "description": ".\n📌بیرانوند: رابطه خوبی با هواداران پرسپولیس دارم\n این کینه دوست داشتنی است",
+      "mp4_url": "https://instagram.fplu44-1.fna.fbcdn.net/o1/v/t2/f2/m367/AQObJcxlI-hzmo7nmpT3VZ_MjdxcT-JIjqUivSA-2eMnZww6bcjmEqNmJS45sir85_muv3_-zidSK3C9i9OWAwUNXDKnXpXN1NMOxXzdh1yR3w.mp4?_nc_cat=108&_nc_oc=AdpL8BWXzEeVWfDitYsDlpWLmscf6RaR23Xa985WStmclbxlR5-segG0azSgmanbqKo&_nc_sid=9ca052&_nc_ht=instagram.fplu44-1.fna.fbcdn.net&_nc_ohc=fTYhiuokZRUQ7kNvwE5Nvuc&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MjIxMzk0NjI1NTg2MTQ2OSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNTEsImJpdHJhdGUiOjE1MzM0NjEsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&_nc_gid=Jb3hxdA0N069okHKhEpUfA&_nc_ss=70a8c&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQSNKJNAuEe79rYrpjKBFTTce01-Lf5_1nJg2uQsvlEc4g&oe=6B0780D4",
+      "poster_url": "https://instagram.fplu44-1.fna.fbcdn.net/v/t51.71878-15/914395072_1926327625000729_6261268347095555511_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNTE0MTMwMzMzMDI5MTUwOA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&_nc_aid=0&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=mzKfTDZoBhoQ7kNvwGvu2E5&_nc_oc=Adr4knGAzGSQ_LQ6GvWUupD_sthGucIHwvkXAJHuJY2LHJn7L1Lea_NElai5xCMSxIo&_nc_zt=23&_nc_ht=instagram.fplu44-1.fna&_nc_gid=Jb3hxdA0N069okHKhEpUfA&_nc_ss=70a8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQT_kUocFspzi5v4Avin5beW6Os5R-TYUJMbavF1CI7GyQ&oe=6B075EB5",
+      "site_views": 104902,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/Df_s6Ljgj80/",
+      "source_published_at": 1795246588.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795269728.381665,
+      "attempt_count": 37,
+      "is_short": true,
+      "ai_score": 8,
+      "category": "SHORTS",
+      "learning_factor": 0.984,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1076263,
+      "published_at": null,
+      "discovered_at": 1795228287.657774,
+      "url": "https://footballi.net/video/1076263/%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%B3%D8%A7%D9%84-%D8%A2%D8%B3%DB%8C%D8%A7-%D8%B4%D8%AF",
+      "title": "بیرانوند چگونه بهترین بازیکن سال آسیا شد؟",
+      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | علیرضا بیرانوند,شب های فوتبالی,بهترین های سال فوتبال آسیا",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-82e7bdf3-f0a9-4ef1-b0ee-2e56932c3397.mp4",
+      "alternate_mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-c7d7553d-2dd2-4b0d-adab-6c22aca06b57.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/c1UaXGWEOH8VEjl9gxIFE6QcoSphne5cUyclsjK9.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076263/%D8%A8%DB%8C%D8%B1%D8%A7%D9%86%D9%88%D9%86%D8%AF-%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D8%B3%D8%A7%D9%84-%D8%A2%D8%B3%DB%8C%D8%A7-%D8%B4%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795228285.9640448,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795228287.657812,
+      "attempt_count": 62,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1,
+      "programme_hold": "shabhaye_footballi",
+      "originals_decision": "excluded_programme"
+    },
+    {
+      "video_id": 1076172,
+      "published_at": null,
+      "discovered_at": 1795276256.3534098,
+      "url": "https://footballi.net/video/1076172/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AC%D8%A7%D9%84%D8%A8-%D8%B1%D8%AD%D9%85%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D8%AD%D8%B6%D9%88%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
+      "title": "واکنش جالب رحمتی به احتمال حضورش روی نیمکت استقلال!",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | استقلال,گل‌گهر سیرجان,سیدمهدی رحمتی,شب های فوتبالی",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/20/tus-bf2ba66a-2ceb-4a5b-8a85-9e5457cb114a.mp4",
+      "alternate_mp4_url": "https://vod.liveboks.com/foot/upload/videos/2026/11/21/tus-886deb72-43a6-4e84-bb41-20bfb73c05bf.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/PdOjaT8d7reTiTWVbbk73Ujb4mY2A2FxOIspDsLc.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1076172/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%AC%D8%A7%D9%84%D8%A8-%D8%B1%D8%AD%D9%85%D8%AA%DB%8C-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D8%AD%D8%B6%D9%88%D8%B1%D8%B4-%D8%B1%D9%88%DB%8C-%D9%86%DB%8C%D9%85%DA%A9%D8%AA-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84",
+      "source_published_at": null,
+      "source_first_seen_at": 1795201296.7063568,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795276256.3534489,
+      "attempt_count": 33,
+      "is_short": false,
+      "ai_score": 7,
+      "category": "VIDEO",
+      "learning_factor": 1,
+      "programme_hold": "shabhaye_footballi",
+      "originals_decision": "excluded_programme"
+    }
+  ]
 }
