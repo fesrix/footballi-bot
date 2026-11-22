@@ -621,12 +621,13 @@ def browser_discover_links(max_pages: int = 6) -> list:
     return discovered_urls
 
 
-def extract_video_page_details(page_url: str, max_site_id: int = 0, session: requests.Session = None) -> dict:
+def extract_video_page_details(page_url: str, max_site_id: int = 0, session: requests.Session = None,
+                               *, allow_existing: bool = False) -> dict:
     video_id = extract_numeric_id(page_url)
     if video_id <= 0:
         return None
 
-    if is_video_too_old("", "", video_id=video_id, max_site_id=max_site_id):
+    if not allow_existing and is_video_too_old("", "", video_id=video_id, max_site_id=max_site_id):
         return None
 
     req = session or requests
@@ -685,8 +686,8 @@ def extract_video_page_details(page_url: str, max_site_id: int = 0, session: req
             if published_at is not None:
                 break
     main_text_sample = soup.get_text(" ", strip=True)[:800]
-    if is_video_too_old(title, main_text_sample, video_id=video_id, max_site_id=max_site_id,
-                        published_at=published_at):
+    if not allow_existing and is_video_too_old(title, main_text_sample, video_id=video_id,
+                                              max_site_id=max_site_id, published_at=published_at):
         return None
 
     site_views = 0

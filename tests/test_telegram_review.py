@@ -94,6 +94,62 @@ class TelegramReviewTests(unittest.TestCase):
         self.assertIn("پُشتِ‌ خَط", proposal["card"])
         self.assertIn("233", proposal["card"])
 
+    def test_send_limit_preserves_remaining_candidates_for_next_run(self):
+        self.state["telegram_review"]["items"].clear()
+        self.state["originals_waiting"] = [
+            {**self.source, "url": f"https://footballi.net/video/{2000 + i}",
+             "originals_decision": "editorial_approval_missing"}
+            for i in range(12)
+        ]
+
+        def send_card(item):
+            item["message_id"] = 101 + len(self.state["telegram_review"]["items"])
+            return True
+
+        with patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1280, 720, 233)), \
+             patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -3)), \
+             patch.object(policy, "audit_with_ai", return_value="approved"), \
+             patch.object(policy, "file_sha256", return_value=self.card["sha256"]), \
+             patch.object(telegram, "checkpoint"), patch.object(self.reviewer, "send_card", side_effect=send_card) as send:
+            uploader.propose_telegram_reviews(self.reviewer, self.state, str(self.path.parent),
+                                              time.monotonic() + 180)
+            self.assertEqual(send.call_count, 10)
+            self.assertEqual(len(self.state["originals_waiting"]), 12)
+            uploader.propose_telegram_reviews(self.reviewer, self.state, str(self.path.parent),
+                                              time.monotonic() + 180)
+        self.assertEqual(send.call_count, 12)
+        self.assertEqual(len(self.state["telegram_review"]["items"]), 12)
+
+    def test_old_card_remains_actionable_when_outside_keyboard(self):
+        review = telegram.review_state(self.state)
+        self.card["message_id"] = 1
+        for i in range(telegram.KEYBOARD_REVIEW_ROWS):
+            source = {**self.source, "url": f"https://footballi.net/video/{3000 + i}"}
+            item = telegram.prepare_card(source, "عنوان", (1280, 720, 240, False),
+                                         self.card["sha256"], "نشانهٔ تولید")
+            item["message_id"] = 100 + i
+            review["items"][telegram.source_id(source)] = item
+        with patch.object(self.reviewer, "call", return_value={}):
+            self.reviewer.refresh_keyboard(self.state)
+        code = self.card["button_id"][:12].upper()
+        self.assertNotIn(code, review["keyboard_codes"])
+        self.assertEqual(review["keyboard_waiting"], telegram.KEYBOARD_REVIEW_ROWS + 1)
+        update = {"update_id": 74, "message": {"from": {"id": 8}, "chat": {"id": 8, "type": "private"},
+                                               "message_id": 501, "text": f"تأیید {code}"}}
+        with patch.object(self.reviewer, "call", return_value=[update]):
+            self.reviewer.poll(self.state, Mock())
+        self.assertEqual(self.card["status"], "approved")
+
+    def test_refresh_of_held_website_video_allows_older_source_page(self):
+        source = {**self.source, "source": "footballi_web", "download_failures": 1}
+        self.approve()
+        self.state["seen_mp4s"] = []
+        with patch.object(uploader, "extract_video_page_details", return_value=None) as refresh, \
+             patch.object(uploader.media_utils, "download_file", return_value=True):
+            uploader.download_candidate(source, str(self.path), self.state, time.monotonic() + 200)
+        self.assertTrue(refresh.call_args.kwargs["allow_existing"])
+
     def publish(self, youtube, *, short=False, audit="approved"):
         self.state.update(pending_queue=[self.source], daily_uploads={}, uploaded_urls=[],
                           seen_mp4s=[], uploaded_titles=[], seen_raw_titles=[],

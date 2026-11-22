@@ -62,8 +62,11 @@ the reviewer's numeric Telegram user ID as `TELEGRAM_REVIEWER_ID` in the
 repository's GitHub Actions secrets. Use a bot without an active webhook or
 another update consumer. Keep the token out of chat, commits, and logs.
 
-With originals-only mode active, the next normal run discovers media and
-sends up to three new cards. Approve only when Footballi produced the video
+With originals-only mode active, each run discovers media and sends up to
+ten review cards within its time budget. Outstanding cards stay open
+between runs. The reply keyboard shows recent cards, and every new card
+includes copyable decision commands that work even after it leaves the keyboard.
+Approve only when Footballi produced the video
 and holds permission to publish its picture and sound on YouTube. The next
 run reads the decision and checks the exact file before publishing. Rejecting
 a card removes that source from consideration. Current status and the
