@@ -83,6 +83,7 @@ MIN_HORIZONTAL_HEIGHT_PX = 720  # رد خودکار ویدیوهای بی‌کی
 MIN_SHORTS_WIDTH_PX = 720       # شورتس‌ها فقط 720p و 1080p
 # Leave time for a final checkpoint before the workflow's 595-second hard timeout.
 PUBLISHING_BUDGET_SECONDS = 510
+MAX_TELEGRAM_PROPOSALS_PER_RUN = 10
 MIN_TIME_TO_START_CANDIDATE = 85
 
 
@@ -939,7 +940,10 @@ def download_candidate(top, path, state, deadline):
     candidates = [top["mp4_url"], top.get("alternate_mp4_url")]
     if (attempts and top.get("source") == "footballi_web" and is_trusted_source_url(source_url)
             and extract_numeric_id(source_url) and deadline - time.monotonic() > 120):
-        fresh = extract_video_page_details(source_url, max_site_id=state.get("max_seen_video_id", 0))
+        review = state.get("telegram_review", {}).get("items", {}).get(telegram.source_id(top))
+        refresh_options = {"allow_existing": True} if review and originals.originals_only() else {}
+        fresh = extract_video_page_details(source_url, max_site_id=state.get("max_seen_video_id", 0),
+                                           **refresh_options)
         if fresh:
             programme = blocked_candidate_programme(fresh)
             if not programme and originals.originals_only():
@@ -1390,11 +1394,15 @@ def reconcile_telegram_uploads(state, channel_videos):
 
 def propose_telegram_reviews(reviewer, state, media_directory, deadline):
     items = telegram.review_state(state)["items"]
-    sent = attempts = 0
-    waiting = sorted(state.get("originals_waiting", []), key=lambda item: not footballi_show(item))
+    sent = 0
+    def review_order(item):
+        discovered = timestamp(item.get("discovery_timestamp") or item.get("discovered_at"))
+        return not footballi_show(item), discovered.timestamp() if discovered else 0
+
+    waiting = sorted(state.get("originals_waiting", []), key=review_order)
     path = os.path.join(media_directory, "review.mp4")
     for candidate in waiting:
-        if sent >= 3 or attempts >= 6 or deadline - time.monotonic() < 120:
+        if sent >= MAX_TELEGRAM_PROPOSALS_PER_RUN or deadline - time.monotonic() < 120:
             break
         key = telegram.source_id(candidate)
         if (not key or originals.prohibited(candidate)
@@ -1409,11 +1417,9 @@ def propose_telegram_reviews(reviewer, state, media_directory, deadline):
         record = items.get(key)
         if record and record["preview"] == telegram.preview_only():
             if record["status"] == "waiting" and not record.get("message_id"):
-                attempts += 1
                 sent += reviewer.send_card(record)
             if record["status"] != "file_changed":
                 continue
-        attempts += 1
         downloaded = download_candidate(candidate, path, state, deadline)
         if not downloaded:
             retain_media_retry(candidate, state, "review_download_failed", priority=False)

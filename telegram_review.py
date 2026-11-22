@@ -11,6 +11,8 @@ import requests
 
 import originals_policy as originals
 
+KEYBOARD_REVIEW_ROWS = 12
+
 
 def preview_only():
     return os.getenv("FOOTBALLI_TELEGRAM_PREVIEW_ONLY", "").lower() == "true"
@@ -164,9 +166,13 @@ class TelegramReview:
     def send_card(self, item):
         code = item["button_id"][:12].upper()
         text = (f"{item['card']}\n\nکد پیشنهاد: {code}\n"
-                "دکمه را از صفحه‌کلید ربات بزن. انتخابت بلافاصله به‌صورت پیام در چت دیده می‌شود. "
-                "رسید ثبت تصمیم در اجرای بعدی می‌رسد.")
-        reply = self.call("sendMessage", chat_id=self.owner, text=text)
+                "دکمهٔ این کد را از صفحه‌کلید بزن، یا فرمان را از همین کارت کپی کن و در چت بفرست. "
+                "رسید ثبت تصمیم در اجرای بعدی می‌رسد. پیشنهاد تا زمان تصمیم باز می‌ماند.")
+        reply = self.call("sendMessage", chat_id=self.owner, text=text,
+                          reply_markup={"inline_keyboard": [[
+                              {"text": "کپی فرمان تأیید", "copy_text": {"text": f"تأیید {code}"}},
+                              {"text": "کپی فرمان رد", "copy_text": {"text": f"رد {code}"}},
+                          ]]})
         if isinstance(reply, dict) and isinstance(reply.get("message_id"), int):
             item["message_id"] = reply["message_id"]
             return True
@@ -174,18 +180,22 @@ class TelegramReview:
 
     def refresh_keyboard(self, state):
         review = review_state(state)
-        codes = [item["button_id"][:12].upper() for item in review["items"].values()
-                 if item["preview"] == preview_only() and item["status"] == "waiting"
-                 and item.get("message_id")][:3]
-        if codes == review.get("keyboard_codes", []):
+        waiting = sorted((item for item in review["items"].values()
+                          if item["preview"] == preview_only() and item["status"] == "waiting"
+                          and item.get("message_id")), key=lambda item: item["message_id"], reverse=True)
+        codes = [item["button_id"][:12].upper() for item in waiting[:KEYBOARD_REVIEW_ROWS]]
+        count = len(waiting)
+        if codes == review.get("keyboard_codes", []) and count == review.get("keyboard_waiting", 0):
             return
         markup = {"keyboard": [[f"تأیید {code}", f"رد {code}"] for code in codes],
                   "resize_keyboard": True} if codes else {"remove_keyboard": True}
-        text = ("دکمهٔ مربوط به کد پیشنهاد را انتخاب کن. پیام انتخاب فوراً دیده می‌شود؛ "
+        text = (f"{count} پیشنهاد منتظر تصمیم است. دکمهٔ مربوط به کد پیشنهاد را انتخاب کن. "
+                "برای کارت‌های قدیمی هم می‌توانی فرمان همان کارت را کپی و ارسال کنی. "
                 "✔️ رسید ثبت تصمیم در اجرای نیم‌ساعتهٔ بعد می‌رسد."
                 if codes else "تصمیم‌های این صفحه‌کلید پردازش شدند.")
         if self.call("sendMessage", chat_id=self.owner, text=text, reply_markup=markup) is not None:
             review["keyboard_codes"] = codes
+            review["keyboard_waiting"] = count
 
     def flush_receipts(self, state, deadline):
         receipts = review_state(state).get("receipts", {})
