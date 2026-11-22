@@ -407,6 +407,33 @@ def detect_primary_category(title: str, description: str = "", is_short: bool = 
     return "VIDEO"
 
 
+POSHTE_KHAT_TITLE = "پُشتِ‌ خَط"
+_PERSIAN_MARKS = r"[\u064B-\u065F\u0670]*"
+_POSHTE_KHAT_TITLE_RE = re.compile(
+    r"(?<!\w)" + _PERSIAN_MARKS.join("پشت") + _PERSIAN_MARKS
+    + r"[\s\u200c\u200d_-]*" + _PERSIAN_MARKS.join("خط") + _PERSIAN_MARKS + r"(?!\w)"
+)
+
+
+def footballi_show(item):
+    for title in (item.get("title") or "", item.get("source_title") or ""):
+        if _POSHTE_KHAT_TITLE_RE.search(title):
+            return "POSHTE_KHAT"
+        if any(detect_primary_category(part) == "VIDEOCAST" for part in title.split("|")):
+            return "VIDEOCAST"
+    return ""
+
+
+def format_upload_title(title, candidate, category):
+    if category != "POSHTE_KHAT" and footballi_show(candidate) != "POSHTE_KHAT":
+        return title[:100]
+    title = _POSHTE_KHAT_TITLE_RE.sub(POSHTE_KHAT_TITLE, title)
+    if POSHTE_KHAT_TITLE not in title[:100]:
+        topic = _POSHTE_KHAT_TITLE_RE.sub("", title).strip(" |–—:-‌")
+        title = f"{POSHTE_KHAT_TITLE} | {topic}" if topic else POSHTE_KHAT_TITLE
+    return title[:100]
+
+
 def _playlist_text(value: str) -> str:
     return normalize_persian(value.split("|", 1)[0]).casefold()
 
@@ -954,6 +981,8 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
     strict = originals.originals_only()
     queue = [item for item in state["pending_queue"]
              if (priority_only if strict else is_priority_item(item, state, now) == priority_only)]
+    if strict:
+        queue.sort(key=lambda item: not footballi_show(item))
     if not priority_only and not strict:
         def format_order(item):
             fmt = "short" if item["is_short"] else "main"
@@ -1105,7 +1134,7 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
         }
     seo = call_generate_seo(candidate["title"], candidate.get("description", ""), cat, is_short,
                             learning_context=style, match_context=match_context)
-    final_title = seo.get("title", candidate["title"])[:100]
+    final_title = format_upload_title(seo.get("title", candidate["title"]), candidate, cat)
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
     source_url = candidate.get("source_url") or candidate.get("url")

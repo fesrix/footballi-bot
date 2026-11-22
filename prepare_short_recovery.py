@@ -11,7 +11,7 @@ from urllib.parse import urlsplit
 
 from googleapiclient.http import MediaFileUpload
 
-from footballi_uploader import get_youtube_client, load_state
+from footballi_uploader import format_upload_title, get_youtube_client, load_state
 from media_utils import download_file, inspect_audio_file, inspect_video_file
 from programme_hold import blocked_candidate_programme
 
@@ -131,6 +131,7 @@ def main():
             "status": {"privacyStatus": "unlisted",
                        "selfDeclaredMadeForKids": original["status"].get("selfDeclaredMadeForKids", False)},
         }
+        body["snippet"]["title"] = format_upload_title(snippet["title"], candidate, "SHORTS")
         if originals.originals_only():
             decision = originals.verify_upload(candidate, output, body["snippet"])
             print(f"[ORIGINALS] recovery | {decision}")
