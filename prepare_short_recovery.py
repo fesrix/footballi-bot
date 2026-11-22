@@ -1,5 +1,6 @@
 """Rebuild an already-published Instagram Short from its official source."""
 import os
+import originals_policy as originals
 import json
 import re
 import subprocess
@@ -100,6 +101,14 @@ def main():
     if len(rows) != 1 or not rows[0].get("fileDetails"):
         raise RuntimeError("Could not verify the original upload as its owner")
     original = rows[0]
+    candidate = {**state["published_metadata"][video_id], "source_url": source}
+    if originals.originals_only():
+        _, reason = originals.admission(candidate, originals.load_approvals())
+        reason = reason or originals.prohibited(candidate, original.get("snippet"),
+                                                original["fileDetails"].get("fileName"))
+        if reason:
+            print(f"[ORIGINALS] recovery held | {reason}")
+            return
     streams = original["fileDetails"].get("audioStreams", [])
     print(f"[RECOVERY] Original upload reports {len(streams)} audio stream(s).")
     event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text(encoding="utf-8"))
@@ -122,6 +131,11 @@ def main():
             "status": {"privacyStatus": "unlisted",
                        "selfDeclaredMadeForKids": original["status"].get("selfDeclaredMadeForKids", False)},
         }
+        if originals.originals_only():
+            decision = originals.verify_upload(candidate, output, body["snippet"])
+            print(f"[ORIGINALS] recovery | {decision}")
+            if decision != "approved":
+                return
         request = youtube.videos().insert(
             part="snippet,status", body=body,
             media_body=MediaFileUpload(output, chunksize=8 * 1024 * 1024, resumable=True,

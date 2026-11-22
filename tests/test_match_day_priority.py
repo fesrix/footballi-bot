@@ -22,6 +22,7 @@ LIVE_HTML = """
 """
 
 
+@patch.dict("os.environ", {"FOOTBALLI_ORIGINALS_ONLY": "false"})
 class MatchDayPriorityTests(unittest.TestCase):
     def setUp(self):
         self.now = datetime(2026, 11, 20, 12, 0, tzinfo=TEHRAN)

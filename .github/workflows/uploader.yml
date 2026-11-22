@@ -103,6 +103,7 @@ jobs:
           python -m compileall -q .
           if [ -d tests ]; then python -m unittest discover -s tests; fi
           python growth_report.py
+          python footballi_uploader.py --audit-originals-queue
 
       - name: Sync YouTube Analytics
         id: analytics
@@ -122,6 +123,7 @@ jobs:
           CLIENT_SECRETS: ${{ secrets.CLIENT_SECRETS }}
           APIFY_FORCE_CHECK: ${{ inputs.force_instagram == true }}
           FOOTBALLI_PROGRAMME_HOLD: ${{ vars.FOOTBALLI_PROGRAMME_HOLD }}
+          FOOTBALLI_ORIGINALS_ONLY: ${{ vars.FOOTBALLI_ORIGINALS_ONLY }}
         run: timeout --kill-after=5s 595s python -u footballi_uploader.py
 
       - name: Review YouTube comments

@@ -48,3 +48,22 @@ python -m pip install -r requirements.txt
 The workflow reads `YOUTUBE_TOKEN` and `CLIENT_SECRETS` for YouTube authentication, `GEMINI_API_KEY` and `ARVAN_API_KEY` for AI integrations, and `APIFY_TOKEN` for Instagram discovery. Configure credentials through GitHub Actions secrets. Treat manual dispatch and the uploader entry point as live operations when a real channel is connected.
 
 For troubleshooting, start with the job summary and stage logs in the [Actions run](https://github.com/fesrix/footballi-bot/actions/workflows/uploader.yml), then check the [upload history](uploaded_matches.json) for the recorded state.
+# Emergency editorial approvals
+
+Originals-only publishing is active by default. Set the GitHub Actions
+repository variable `FOOTBALLI_ORIGINALS_ONLY=false` only after explicitly
+resuming ordinary uploads. The separate programme hold has its own setting.
+
+For each editorial clearance, add a record to `approved_originals.json`. The
+object keys are official Footballi video or Instagram post URLs. Each record
+requires a non-empty `production_evidence` describing how the production and
+rights were verified, boolean `visual_rights_confirmed` and
+`audio_rights_confirmed` set to `true`, and the 64-character `sha256` of the
+exact file the bot will upload. Recovery requires the hash of the recovered
+output. Keep private evidence and credentials out of the repository. Use the
+existing Gemini credential for the AI evidence review.
+
+Run `python footballi_uploader.py --audit-originals-queue` to review the
+queue without touching YouTube or writing state. The SHA-256 and AI checks
+run on the actual upload path after file retrieval.
+
