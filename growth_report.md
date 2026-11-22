@@ -32,7 +32,7 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 43 | Write quota: 50
+- Archive pages processed: 2 | Read quota: 48 | Write quota: 50
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-19 | Revision: 92bd5211dded13e5
