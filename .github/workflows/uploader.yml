@@ -124,7 +124,14 @@ jobs:
           APIFY_FORCE_CHECK: ${{ inputs.force_instagram == true }}
           FOOTBALLI_PROGRAMME_HOLD: ${{ vars.FOOTBALLI_PROGRAMME_HOLD }}
           FOOTBALLI_ORIGINALS_ONLY: ${{ vars.FOOTBALLI_ORIGINALS_ONLY }}
-        run: timeout --kill-after=5s 595s python -u footballi_uploader.py
+          FOOTBALLI_TELEGRAM_PREVIEW_ONLY: ${{ vars.FOOTBALLI_TELEGRAM_PREVIEW_ONLY }}
+          FOOTBALLI_TELEGRAM_CHECKPOINT: "true"
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_REVIEWER_ID: ${{ secrets.TELEGRAM_REVIEWER_ID }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          timeout --kill-after=5s 595s python -u footballi_uploader.py
 
       - name: Review YouTube comments
         id: comments

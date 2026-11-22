@@ -54,7 +54,30 @@ Originals-only publishing is active by default. Set the GitHub Actions
 repository variable `FOOTBALLI_ORIGINALS_ONLY=false` only after explicitly
 resuming ordinary uploads. The separate programme hold has its own setting.
 
-For each editorial clearance, add a record to `approved_originals.json`. The
+### Telegram review
+
+Create a dedicated bot in [BotFather](https://t.me/BotFather) and send it
+`/start` from the reviewer's private chat. Configure `TELEGRAM_BOT_TOKEN` and
+the reviewer's numeric Telegram user ID as `TELEGRAM_REVIEWER_ID` in the
+repository's GitHub Actions secrets. Use a bot without an active webhook or
+another update consumer. Keep the token out of chat, commits, and logs.
+
+With originals-only mode active, the next normal run discovers media and
+sends up to three new cards. Approve only when Footballi produced the video
+and holds permission to publish its picture and sound on YouTube. The next
+run reads the decision and checks the exact file before publishing. Rejecting
+a card removes that source from consideration. Current status and the
+YouTube URL are added to the original card.
+
+To test on the live schedule, set the repository variable
+`FOOTBALLI_TELEGRAM_PREVIEW_ONLY=true` before configuring the secrets.
+Wait for a card and click a button, then confirm the result on the following
+run. Preview approvals cannot authorize publication. Remove the variable
+to resume publication and review the new production cards.
+
+### Editorial approval file
+
+Editorial clearance can also be entered in `approved_originals.json`. The
 object keys are official Footballi video or Instagram post URLs. Each record
 requires a non-empty `production_evidence` describing how the production and
 rights were verified, boolean `visual_rights_confirmed` and
