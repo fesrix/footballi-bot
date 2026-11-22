@@ -13507,7 +13507,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-23T00:55:00.840519+03:30",
+    "finished_at": "2026-11-23T00:57:19.584123+03:30",
     "new_web_candidates": 0,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -15531,7 +15531,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-22",
-      "read": 48,
+      "read": 53,
       "write": 50
     },
     "last_run": {
@@ -15545,10 +15545,10 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 48,
+      "read_units": 53,
       "write_units": 50
     },
-    "scan_phase": 0,
+    "scan_phase": 1,
     "archive_token": null
   },
   "last_successful_run_slot": 997434,
@@ -15664,7 +15664,7 @@
         "kickoff_at": "2026-11-23T18:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15675,7 +15675,7 @@
         "kickoff_at": "2026-11-23T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15686,7 +15686,7 @@
         "kickoff_at": "2026-11-23T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15697,7 +15697,7 @@
         "kickoff_at": "2026-11-23T20:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15708,7 +15708,7 @@
         "kickoff_at": "2026-11-23T20:45:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15719,7 +15719,7 @@
         "kickoff_at": "2026-11-23T23:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15730,7 +15730,7 @@
         "kickoff_at": "2026-11-23T23:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15741,7 +15741,7 @@
         "kickoff_at": "2026-11-23T14:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15752,7 +15752,7 @@
         "kickoff_at": "2026-11-23T15:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15763,7 +15763,7 @@
         "kickoff_at": "2026-11-23T15:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15774,7 +15774,7 @@
         "kickoff_at": "2026-11-23T16:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15785,7 +15785,7 @@
         "kickoff_at": "2026-11-23T17:15:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15796,7 +15796,7 @@
         "kickoff_at": "2026-11-23T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       },
       {
@@ -15807,11 +15807,11 @@
         "kickoff_at": "2026-11-23T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+        "fetched_at": "2026-11-23T00:56:50.960846+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-23T00:54:28.147626+03:30",
+    "fetched_at": "2026-11-23T00:56:50.960846+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
@@ -16855,16 +16855,11 @@
           "visual_rights_confirmed": true,
           "audio_rights_confirmed": true
         },
-        "result": "تأیید آزمایشی ثبت شد. انتشار غیرفعال است.",
-        "notice": "تأیید آزمایشی ثبت شد. انتشار غیرفعال است."
+        "result": "تأیید آزمایشی ثبت شد. انتشار غیرفعال است."
       }
     },
     "updated_at": 1795382808.2901697,
-    "keyboard_codes": [
-      "FB83B4688AF6"
-    ],
-    "receipts": {
-      "5": "تأیید آزمایشی ثبت شد. انتشار غیرفعال است."
-    }
+    "keyboard_codes": [],
+    "receipts": {}
   }
 }
