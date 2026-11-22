@@ -13507,7 +13507,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-22T21:16:27.330974+00:00",
+    "finished_at": "2026-11-23T00:46:28.988133+03:30",
     "new_web_candidates": 0,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -13528,6 +13528,14 @@
     "learning": {
       "revision": "92bd5211dded13e5",
       "changes": []
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 0,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795364145.662677,
@@ -15523,7 +15531,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-22",
-      "read": 33,
+      "read": 38,
       "write": 50
     },
     "last_run": {
@@ -15537,10 +15545,10 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 33,
+      "read_units": 38,
       "write_units": 50
     },
-    "scan_phase": 0,
+    "scan_phase": 1,
     "archive_token": null
   },
   "last_successful_run_slot": 997434,
@@ -16820,7 +16828,8 @@
         "sha256": "",
         "evidence": "",
         "button_id": "4c67a21028881fc6253a7b0721319617",
-        "card": "آزمون اتصال ربات فوتبالی\nبرای بررسی ثبت تصمیم، یکی از دکمه‌ها را بزن. این پیام ویدیویی برای انتشار ندارد."
+        "card": "آزمون اتصال ربات فوتبالی\nبرای بررسی ثبت تصمیم، یکی از دکمه‌ها را بزن. این پیام ویدیویی برای انتشار ندارد.",
+        "message_id": 2
       }
     }
   }
