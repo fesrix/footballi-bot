@@ -58,6 +58,7 @@ import ai_seo
 import media_utils
 import scrapers
 import originals_policy as originals
+import telegram_review as telegram
 from programme_hold import blocked_candidate_programme, programme_hold_enabled
 from learning import build_policy, defer_for_timing, ranking, timestamp, title_choice, topic_for
 
@@ -242,8 +243,16 @@ def last_routine_timestamp(state, fmt):
 
 
 def publication_block(item, category, state, policy, now, *, is_short=None):
+    if telegram.preview_only():
+        return "Telegram review preview only"
+    key = telegram.source_id(item)
+    review = telegram.review_state(state)["items"].get(key, {})
+    if review.get("status") in {"upload_uncertain", "published"}:
+        return "YouTube upload already started"
+    if key in telegram.rejected_sources(state):
+        return "rejected in Telegram"
     if originals.originals_only():
-        return originals.admission(item, originals.load_approvals())[1]
+        return originals.admission(item, telegram.approvals_for(state))[1]
     if not is_priority_item(item, state, now):
         short = category == "SHORTS" if is_short is None else is_short
         fmt = "short" if short else "main"
@@ -933,11 +942,25 @@ def download_candidate(top, path, state, deadline):
         fresh = extract_video_page_details(source_url, max_site_id=state.get("max_seen_video_id", 0))
         if fresh:
             programme = blocked_candidate_programme(fresh)
+            if not programme and originals.originals_only():
+                programme = originals.prohibited(fresh)
             if programme:
                 top["programme_hold"] = programme
                 print(f"[PROGRAMME-HOLD] {programme}: refreshed source for candidate {top.get('video_id')}")
                 return ""
             candidates = [fresh["mp4_url"], fresh.get("alternate_mp4_url"), *candidates]
+    elif attempts and telegram.source_id(top).startswith("instagram:") and deadline - time.monotonic() > 210:
+        key = telegram.source_id(top)
+        reel_url = f"https://www.instagram.com/reel/{key.split(':', 1)[1]}/"
+        for fresh in fetch_instagram_reels(state, originals_review=True, refresh_url=reel_url):
+            owner = (fresh.get("source_metadata") or {}).get("ownerUsername")
+            if telegram.source_id(fresh) != key or str(owner).casefold() != "footballiapp":
+                continue
+            if originals.originals_only() and originals.prohibited(fresh):
+                return ""
+            top["source_metadata"] = fresh["source_metadata"]
+            candidates.insert(0, fresh["mp4_url"])
+            break
     for url in dict.fromkeys(filter(None, candidates)):
         remaining = deadline - time.monotonic() - 75
         if remaining <= 0:
@@ -972,7 +995,7 @@ def platform_upload_block(state, quota_key):
 
 def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded_urls, seen_mp4s,
                   media_directory, deadline, *, priority_only):
-    if platform_upload_block(state, quota_key):
+    if telegram.preview_only() or platform_upload_block(state, quota_key):
         return
     video_file = os.path.join(media_directory, "video.mp4")
     thumb_file = os.path.join(media_directory, "thumbnail.jpg")
@@ -1046,6 +1069,20 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             retain_media_retry(top, state, "download_failed", priority=priority_item)
             continue
 
+        review_item = telegram.review_state(state)["items"].get(telegram.source_id(top))
+        if review_item and review_item["status"] == "approved" and not review_item["preview"]:
+            try:
+                digest = originals.file_sha256(video_file)
+            except OSError:
+                retain_media_retry(top, state, "file_unreadable", priority=priority_item)
+                continue
+            if digest != review_item["sha256"]:
+                review_item["status"] = "file_changed"
+                top["mp4_url"] = downloaded_url
+                telegram.set_notice(review_item, "فایل منبع تغییر کرده است. نسخهٔ تازه دوباره بررسی می‌شود.")
+                save_state(state)
+                continue
+
         w, h, dur = get_exact_video_dimensions(video_file)
         if w <= 0 or h <= 0 or not math.isfinite(dur) or dur <= 0:
             retain_media_retry(top, state, "video_probe_failed", priority=priority_item)
@@ -1092,6 +1129,9 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
             seen_mp4s.add(top["mp4_url"])
             rejected = state["last_run"]["rejected_by_reason"]
             rejected[reason] = rejected.get(reason, 0) + 1
+            if review_item and review_item["status"] == "approved":
+                review_item["status"] = "media_rejected"
+                telegram.set_notice(review_item, f"فایل شرایط انتشار را ندارد. علت: {reason}")
             continue
         if deadline - time.monotonic() < 60:
             print("[BUDGET] Video verified; deferring upload to allow a safe checkpoint.")
@@ -1117,6 +1157,15 @@ def process_queue(youtube, state, policy, quota_key, known_norm_titles, uploaded
 
 def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_short,
                       priority_summary, video_file, thumb_file, tehran_now, deadline):
+    if telegram.preview_only():
+        return False
+    source_id = telegram.source_id(candidate)
+    review_item = telegram.review_state(state)["items"].get(source_id)
+    if review_item and not review_item["preview"]:
+        if review_item["status"] != "approved":
+            return False
+    approval_card = (review_item if review_item and review_item["status"] == "approved"
+                     and not review_item["preview"] else None)
     fmt = "short" if is_short else "main"
     priority_class = candidate.get("priority_class") or ("summary" if priority_summary else "")
     if priority_summary or originals.originals_only():
@@ -1141,19 +1190,32 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
     if source_url and source_url not in final_desc:
         final_desc = f"{final_desc}\n\nمنبع رسمی: {source_url}"
 
-    if originals.originals_only():
+    if approval_card:
+        marker = f"Footballi ID: {approval_card['button_id']}"
+        final_desc = final_desc[:4900] + "\n\n" + marker
+    if originals.originals_only() or approval_card:
         decision = originals.verify_upload(candidate, video_file, {
             "title": final_title, "description": final_desc, "tags": final_tags,
-        })
+        }, telegram.approvals_for(state))
         candidate["originals_decision"] = decision
         if decision != "approved":
             print(f"[ORIGINALS] skipped {originals.source_key(source_url)} | {decision}")
+            if approval_card:
+                changed = decision == "file_hash_mismatch"
+                if changed:
+                    approval_card["status"] = "file_changed"
+                telegram.set_notice(approval_card, (
+                    "فایل منبع تغییر کرده است. نسخهٔ تازه دوباره بررسی می‌شود." if changed
+                    else f"انتشار متوقف شد. نتیجهٔ بررسی نهایی: {decision}"
+                ))
             save_state(state)
             return False
 
     programme = blocked_candidate_programme(candidate, video_file, final_title, final_desc, final_tags)
     if programme:
         candidate["programme_hold"] = programme
+        if approval_card:
+            telegram.set_notice(approval_card, "انتشار متوقف شد. متادیتای نهایی مشمول فیلتر برنامه‌هاست.")
         print(f"[PROGRAMME-HOLD] {programme}: skipped before upload ({candidate.get('video_id', 'candidate')})")
         save_state(state)
         return False
@@ -1174,6 +1236,10 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
             },
         }
         media = MediaFileUpload(video_file, chunksize=32 * 1024 * 1024, resumable=True, mimetype="video/mp4")
+        if approval_card:
+            approval_card["status"] = "upload_uncertain"
+            telegram.set_notice(approval_card, "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.")
+            telegram.checkpoint(state, save_state)
         req = youtube.videos().insert(part="snippet,status", body=body, media_body=media)
         response = None
         while response is None:
@@ -1182,6 +1248,8 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
                 print(f"⬆️ [UPLOADING] {int(status.progress() * 100)}% complete...")
 
         vid_id = response["id"]
+        if approval_card:
+            telegram.mark_published(approval_card, vid_id)
         print(f"✅ [SUCCESS] Uploaded Video ID: {vid_id}")
 
         state["pending_queue"].remove(candidate)
@@ -1263,6 +1331,9 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
         err_str = str(e)
         print(f" YouTube API Upload error: {e}")
         if "uploadLimitExceeded" in err_str:
+            if approval_card:
+                approval_card["status"] = "approved"
+                telegram.set_notice(approval_card, "به سقف آپلود یوتیوب رسیدیم. بعداً دوباره تلاش می‌شود.")
             rejections = safe_int(state.get("upload_limit_rejections")) + 1
             state["upload_limit_rejections"] = rejections
             retry_minutes = 60 if rejections == 1 else 120
@@ -1271,6 +1342,9 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
             save_state(state)
             return False
         elif "quotaExceeded" in err_str:
+            if approval_card:
+                approval_card["status"] = "approved"
+                telegram.set_notice(approval_card, "سهمیهٔ یوتیوب تمام شده است. بعد از بازنشانی دوباره تلاش می‌شود.")
             state["quota_exhausted_date"] = quota_key
             print("⏸️ [QUOTA-GUARD] Daily API quota reached! Holding queue until midnight Pacific quota reset.")
             save_state(state)
@@ -1284,13 +1358,119 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
         raise
 
 
+def reconcile_telegram_uploads(state, channel_videos):
+    items = telegram.review_state(state)["items"]
+    for key, record in items.items():
+        if record["status"] != "upload_uncertain":
+            continue
+        marker = f"Footballi ID: {record['button_id']}"
+        matches = [row for row in channel_videos if row.get("public")
+                   and marker in row.get("description", "").splitlines()]
+        if len(matches) != 1:
+            telegram.set_notice(record, "نتیجهٔ آپلود هنوز مشخص نیست. برای جلوگیری از تکرار، آپلود دوباره انجام نمی‌شود.")
+            continue
+        row = matches[0]
+        telegram.mark_published(record, row["video_id"])
+        for item in state["pending_queue"]:
+            if telegram.source_id(item) == key:
+                state["uploaded_urls"].append(item["url"])
+                state["seen_mp4s"].append(item["mp4_url"])
+                state["uploaded_titles"].append(row["title"])
+                state["seen_raw_titles"].append(item["title"])
+                state["published_metadata"].setdefault(row["video_id"], {
+                    "title": row["title"], "source": item.get("source"),
+                    "source_url": item.get("source_url") or item["url"],
+                    "source_title": item["title"], "originals_decision": "approved",
+                    "category": detect_primary_category(item["title"], is_short=item.get("is_short", False)),
+                    "format": "short" if item.get("is_short") else "main",
+                })
+                break
+        state["pending_queue"] = [item for item in state["pending_queue"] if telegram.source_id(item) != key]
+
+
+def propose_telegram_reviews(reviewer, state, media_directory, deadline):
+    items = telegram.review_state(state)["items"]
+    sent = attempts = 0
+    waiting = sorted(state.get("originals_waiting", []), key=lambda item: not footballi_show(item))
+    path = os.path.join(media_directory, "review.mp4")
+    for candidate in waiting:
+        if sent >= 3 or attempts >= 6 or deadline - time.monotonic() < 120:
+            break
+        key = telegram.source_id(candidate)
+        if (not key or originals.prohibited(candidate)
+                or candidate.get("originals_decision") != "editorial_approval_missing"
+                or candidate.get("telegram_screening")
+                or float(candidate.get("next_media_attempt") or 0) > time.time()):
+            continue
+        if key.startswith("instagram:"):
+            owner = (candidate.get("source_metadata") or {}).get("ownerUsername")
+            if not isinstance(owner, str) or owner.casefold() != "footballiapp":
+                continue
+        record = items.get(key)
+        if record and record["preview"] == telegram.preview_only():
+            if record["status"] == "waiting" and not record.get("message_id"):
+                attempts += 1
+                sent += reviewer.send_card(record)
+            if record["status"] != "file_changed":
+                continue
+        attempts += 1
+        downloaded = download_candidate(candidate, path, state, deadline)
+        if not downloaded:
+            retain_media_retry(candidate, state, "review_download_failed", priority=False)
+            continue
+        width, height, seconds = get_exact_video_dimensions(path)
+        if width <= 0 or height <= 0 or not math.isfinite(seconds) or seconds <= 0:
+            retain_media_retry(candidate, state, "review_probe_failed", priority=False)
+            continue
+        short = height >= width and seconds <= 180
+        if (short and (width < MIN_SHORTS_WIDTH_PX or not is_strictly_domestic_short(
+                candidate["title"], candidate.get("description", "")))) or (
+                not short and (height < MIN_HORIZONTAL_HEIGHT_PX or seconds < MIN_HORIZONTAL_DURATION_SECONDS)):
+            candidate["telegram_screening"] = "quality_or_format_rejected"
+            continue
+        audio_issue, _ = media_utils.inspect_audio_file(path)
+        if audio_issue:
+            if audio_issue == "audio_probe_failed":
+                retain_media_retry(candidate, state, audio_issue, priority=False)
+            else:
+                candidate["telegram_screening"] = audio_issue
+            continue
+        title = format_upload_title(candidate["title"], candidate, "")
+        if originals.prohibited(candidate, downloaded, title):
+            continue
+        show = {"POSHTE_KHAT": POSHTE_KHAT_TITLE, "VIDEOCAST": "ویدیوکست"}.get(footballi_show(candidate))
+        evidence = (f"نام برنامه در عنوان منبع: {show}." if show
+                    else "هوش مصنوعی در متادیتای منبع نشانهٔ تولید فوتبالی تشخیص داد.")
+        verdict = originals.audit_with_ai(candidate, {"title": title},
+                                         "Review the official source title and description; rights are unconfirmed.",
+                                         screening=True)
+        if verdict != "approved":
+            if verdict == "ai_unavailable":
+                retain_media_retry(candidate, state, "review_ai_unavailable", priority=False)
+            else:
+                candidate["telegram_screening"] = verdict
+            continue
+        digest = originals.file_sha256(path)
+        record = telegram.prepare_card(candidate, title, (width, height, seconds, short),
+                                       digest, evidence, previous=record)
+        items[key] = record
+        candidate["mp4_url"] = downloaded
+        telegram.checkpoint(state, save_state)
+        sent += reviewer.send_card(record)
+    print(f"[TELEGRAM] {sent} review cards sent.")
+
+
 def main():
     print("[START] Footballi Bot — independent format schedules and priority match highlights.")
     deadline = time.monotonic() + PUBLISHING_BUDGET_SECONDS
     state = load_state()
     strict = originals.originals_only()
+    reviewer = telegram.TelegramReview.from_env() if strict else None
+    if reviewer:
+        reviewer.poll(state, lambda: telegram.checkpoint(state, save_state))
     if strict:
-        originals.repartition_queue(state)
+        originals.repartition_queue(state, approvals=telegram.approvals_for(state),
+                                    rejected=telegram.rejected_sources(state))
         originals.report_queue(state)
         save_state(state)
     else:
@@ -1318,6 +1498,7 @@ def main():
     if state.get("quota_exhausted_date") != quota_key:
         youtube = get_youtube_client()
         channel_videos = fetch_channel_existing_videos(youtube, state, max_items=180)
+        reconcile_telegram_uploads(state, channel_videos)
         for v in channel_videos:
             known_norm_titles.add(normalize_persian(v["title"]).lower())
 
@@ -1359,7 +1540,8 @@ def main():
 
     def merge_queue(items):
         if strict:
-            originals.repartition_queue(state, items)
+            originals.repartition_queue(state, items, approvals=telegram.approvals_for(state),
+                                        rejected=telegram.rejected_sources(state))
             state["pending_queue"] = [normalize_queue_item(item) for item in state["pending_queue"]]
             for item in state["pending_queue"]:
                 item["learning_factor"] = 1
@@ -1407,6 +1589,12 @@ def main():
         else:
             print("[BUDGET] Instagram check deferred after priority work.")
 
+        if reviewer:
+            reviewer.flush_notices(state, min(deadline, time.monotonic() + 35))
+            originals.repartition_queue(state, approvals=telegram.approvals_for(state),
+                                        rejected=telegram.rejected_sources(state))
+            propose_telegram_reviews(reviewer, state, media_directory, deadline)
+
         platform_block = platform_upload_block(state, quota_key)
         if not youtube or platform_block:
             print(f"[QUOTA-GUARD] {platform_block or 'YouTube unavailable'}; queue preserved.")
@@ -1431,7 +1619,8 @@ def main():
 if __name__ == "__main__":
     if "--audit-originals-queue" in sys.argv[1:]:
         audit_state = load_state()
-        originals.repartition_queue(audit_state)
+        originals.repartition_queue(audit_state, approvals=telegram.approvals_for(audit_state),
+                                    rejected=telegram.rejected_sources(audit_state))
         originals.report_queue(audit_state)
     elif "--playlists-only" in sys.argv[1:]:
         run_playlists_only()

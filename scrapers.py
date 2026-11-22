@@ -871,7 +871,7 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20, *, origina
     return results
 
 
-def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
+def fetch_instagram_reels(state: dict, *, originals_review=False, refresh_url="") -> list:
     apify_token = os.environ.get("APIFY_TOKEN", "").strip()
     if not apify_token:
         return []
@@ -879,7 +879,7 @@ def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
     last_check = float(state.get("last_apify_check", 0))
     elapsed_hours = (time.time() - last_check) / 3600.0
     force_check = os.environ.get("APIFY_FORCE_CHECK", "").strip().lower() in {"1", "true", "yes"}
-    if elapsed_hours < APIFY_COOLDOWN_HOURS and not force_check:
+    if elapsed_hours < APIFY_COOLDOWN_HOURS and not force_check and not refresh_url:
         rem = APIFY_COOLDOWN_HOURS - elapsed_hours
         print(f"[APIFY] Cooldown active ({rem:.1f}h remaining before next Instagram check).")
         return []
@@ -890,8 +890,8 @@ def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
         from apify_client import ApifyClient
         client = ApifyClient(apify_token)
         run_input = {
-            "username": ["footballiapp"],
-            "resultsLimit": 6,
+            "username": [refresh_url or "footballiapp"],
+            "resultsLimit": 1 if refresh_url else 6,
         }
         print("[APIFY] Fetching latest HD Reels from @footballiapp Instagram...")
         actor = client.actor("apify/instagram-reel-scraper")
@@ -913,7 +913,8 @@ def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
         elif "run_timeout" in call_parameters:
             call_kwargs["run_timeout"] = timedelta(seconds=90)
         run = actor.call(**call_kwargs)
-        state["last_apify_check"] = time.time()
+        if not refresh_url:
+            state["last_apify_check"] = time.time()
 
         uploaded_urls = set(state.get("uploaded_urls", []))
         rejected_urls = set(state.get("rejected_urls", []))
@@ -933,17 +934,16 @@ def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
         for item in client.dataset(dataset_id).iterate_items():
             reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
             published_at = parse_published_timestamp(item.get("timestamp"))
-            if is_video_too_old("", published_at=published_at):
+            if not refresh_url and is_video_too_old("", published_at=published_at):
                 continue
             video_url = item.get("videoUrl")
             caption = (item.get("caption") or "").strip()
-            if (
-                not video_url
-                or reel_url in uploaded_urls
+            if not video_url or (not refresh_url and (
+                reel_url in uploaded_urls
                 or reel_url in rejected_urls
                 or reel_url in queued_urls
                 or video_url in seen_mp4s
-            ):
+            )):
                 continue
 
             clean_lines = [
@@ -981,6 +981,6 @@ def fetch_instagram_reels(state: dict, *, originals_review=False) -> list:
         print(f"[APIFY] AI Curator approved {len(verified_reels)} high-potential HD Reels from Instagram!")
         return verified_reels
     except Exception as e:
-        print(f"[APIFY-WARN] Instagram check skipped: {e}")
+        print(f"[APIFY-WARN] Instagram check skipped ({type(e).__name__}).")
         return []
 
