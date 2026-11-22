@@ -153,3 +153,33 @@ class TelegramReviewTests(unittest.TestCase):
         youtube = Mock()
         self.assertFalse(self.publish(youtube))
         youtube.videos.assert_not_called()
+
+    @patch.dict("os.environ", {"FOOTBALLI_TELEGRAM_PREVIEW_ONLY": "true"})
+    def test_preview_probe_is_sent_once_and_cannot_approve_a_video(self):
+        with patch.object(self.reviewer, "call", return_value={"message_id": 100}) as api:
+            persist = Mock()
+            self.reviewer.send_preview_probe(self.state, persist)
+            self.reviewer.send_preview_probe(self.state, persist)
+        persist.assert_called_once()
+        api.assert_called_once()
+        probe = telegram.review_state(self.state)["items"]["telegram:connection"]
+        callback = self.callback(message_id=100)
+        callback["data"] = f"a:{probe['button_id']}"
+        self.reviewer.decide(telegram.review_state(self.state), callback)
+        self.assertEqual(probe["status"], "approved")
+        self.assertNotIn("telegram:connection", telegram.approvals_for(self.state))
+
+    @patch.dict("os.environ", {"GEMINI_API_KEY": "mock", "ARVAN_API_KEY": "mock"})
+    def test_audit_fallback_occurs_on_error_but_never_after_denial(self):
+        denied = Mock()
+        denied.json.return_value = {"candidates": [{"content": {"parts": [{"text":
+            '{"footballi_original":false,"third_party_or_excluded":true}'}]}}]}
+        fallback = Mock()
+        fallback.json.return_value = {"choices": [{"message": {"content":
+            '{"footballi_original":true,"third_party_or_excluded":false}'}}]}
+        with patch.object(policy.requests, "post", side_effect=[policy.requests.Timeout, fallback]) as post:
+            self.assertEqual(policy.audit_with_ai(self.source, {}, "evidence"), "approved")
+            self.assertEqual(post.call_count, 2)
+        with patch.object(policy.requests, "post", return_value=denied) as post:
+            self.assertEqual(policy.audit_with_ai(self.source, {}, "evidence"), "ai_unconfirmed")
+            post.assert_called_once()

@@ -155,6 +155,25 @@ class TelegramReview:
             return True
         return False
 
+    def send_preview_probe(self, state, persist):
+        """Exercise both directions when no real media passed the preview screening."""
+        items = review_state(state)["items"]
+        if not preview_only() or any(item["preview"] and item["status"] == "waiting"
+                                     and item.get("message_id") for item in items.values()):
+            return
+        probe = items.get("telegram:connection")
+        if probe is None:
+            probe = {
+                "status": "waiting", "preview": True, "generation": 1,
+                "sha256": "", "evidence": "",
+                "button_id": hashlib.sha256(os.urandom(32)).hexdigest()[:32],
+                "card": "آزمون اتصال ربات فوتبالی\nبرای بررسی ثبت تصمیم، یکی از دکمه‌ها را بزن. این پیام ویدیویی برای انتشار ندارد.",
+            }
+            items["telegram:connection"] = probe
+            persist()
+        if probe["status"] == "waiting" and not probe.get("message_id") and self.send_card(probe):
+            print("[TELEGRAM] Preview connection card sent.")
+
     def flush_notices(self, state, deadline):
         for item in review_state(state)["items"].values():
             if time.monotonic() + 15 >= deadline:

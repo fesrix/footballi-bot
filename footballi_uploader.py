@@ -1458,6 +1458,8 @@ def propose_telegram_reviews(reviewer, state, media_directory, deadline):
         telegram.checkpoint(state, save_state)
         sent += reviewer.send_card(record)
     print(f"[TELEGRAM] {sent} review cards sent.")
+    if not sent and deadline - time.monotonic() > 65:
+        reviewer.send_preview_probe(state, lambda: telegram.checkpoint(state, save_state))
 
 
 def main():
