@@ -9,16 +9,16 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| VIDEO | 78 | 92041 | 179769.0 | 236 |
-| SHORTS | 20 | 89268 | 18414.0 | 164 |
-| SUMMARY | 19 | 25372 | 70141.0 | 58 |
-| FOOTBALL_BARTAR | 3 | 3822 | 3237.0 | 5 |
+| VIDEO | 78 | 92037 | 179766.0 | 237 |
+| SHORTS | 20 | 89265 | 18415.0 | 166 |
+| SUMMARY | 19 | 25372 | 70142.0 | 58 |
+| FOOTBALL_BARTAR | 3 | 3823 | 3237.0 | 5 |
 | VIDEOCAST | 3 | 749 | 2251.0 | 5 |
 | POSHTE_KHAT | 4 | 438 | 494.0 | 2 |
 
 ## Last run
 
-- New web candidates: 0
+- New web candidates: 5
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
@@ -32,7 +32,7 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 115 | Write quota: 0
+- Archive pages processed: 2 | Read quota: 120 | Write quota: 0
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-20 | Revision: cbc853707631e2b4
