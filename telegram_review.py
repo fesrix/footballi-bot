@@ -6,6 +6,7 @@ import re
 import subprocess
 import time
 from datetime import datetime, timezone
+from urllib.parse import urlsplit
 
 import requests
 
@@ -100,7 +101,8 @@ class TelegramReview:
                 callbacks.append((callback["id"], self.decide(review, callback)))
             message = update.get("message")
             if message and self.is_owner(message.get("from") or {}, message):
-                match = re.fullmatch(r"(تأیید|رد) ([A-Fa-f0-9]{12})", message.get("text", ""))
+                content = (message.get("text") or "").strip()
+                match = re.fullmatch(r"(تأیید|رد) ([A-Fa-f0-9]{12})", content)
                 if match:
                     action, code = match.groups()
                     items = [item for item in review["items"].values()
@@ -108,6 +110,10 @@ class TelegramReview:
                     result = (self.record_decision(items[0], "a" if action == "تأیید" else "r")
                               if len(items) == 1 and items[0].get("message_id")
                               else "این پیشنهاد پیدا نشد یا منقضی شده است.")
+                    review.setdefault("receipts", {})[str(message["message_id"])] = result
+                elif content.startswith(("/upload", "https://", "http://")):
+                    link = content.removeprefix("/upload ").strip()
+                    result = self.register_link(state, link, message["message_id"])
                     review.setdefault("receipts", {})[str(message["message_id"])] = result
         review["offset"] = max(update["update_id"] for update in updates) + 1
         review["updated_at"] = time.time()
@@ -121,6 +127,25 @@ class TelegramReview:
     def is_owner(self, sender, message):
         chat = message.get("chat") or {}
         return sender.get("id") == self.owner and chat.get("id") == self.owner and chat.get("type") == "private"
+
+    def register_link(self, state, link, message_id):
+        key = originals.source_key(link) if not re.search(r"\s", link) else ""
+        if not key.startswith("footballi:"):
+            return "یک لینک مستقیم ویدیوی وب‌سایت فوتبالی با https بفرست."
+        if preview_only():
+            return "انتشار در حالت آزمایشی غیرفعال است. پس از فعال شدن، لینک را دوباره بفرست."
+        review = review_state(state)
+        if any(originals.source_key(url) == key for url in state.get("uploaded_urls", [])):
+            return "این ویدیو قبلاً منتشر شده است."
+        previous = review["items"].get(key)
+        if previous and not previous["preview"] and previous["status"] not in {"waiting", "file_changed"}:
+            return previous.get("result") or "این ویدیو قبلاً بررسی شده است."
+        requests = review.setdefault("link_requests", {})
+        if key in requests:
+            return "این لینک از قبل در صف بررسی است."
+        url = urlsplit(link)._replace(query="", fragment="").geturl()
+        requests[key] = {"url": url, "message_id": message_id}
+        return "درخواست انتشار ثبت شد. پس از بررسی نهایی فایل و حقوق محتوا نتیجه را همین‌جا می‌فرستم."
 
     def decide(self, review, callback):
         message = callback.get("message") or {}
@@ -146,10 +171,12 @@ class TelegramReview:
         item["status"] = "approved" if action == "a" else "rejected"
         item["decided_at"] = datetime.now(timezone.utc).isoformat()
         if action == "a":
+            mechanism = ("by submitting a direct Footballi URL as a publishing request"
+                         if item.get("request_message_id") else "via the private approval card")
             item["approval"] = {
                 "sha256": item["sha256"],
                 "production_evidence": (
-                    "An authorized Footballi reviewer confirmed via the private approval card that "
+                    f"An authorized Footballi reviewer confirmed {mechanism} that "
                     "Footballi produced this exact source video and cleared its visual and audio rights "
                     "for YouTube. " + item["evidence"]
                 ),
@@ -231,7 +258,15 @@ class TelegramReview:
         for item in review_state(state)["items"].values():
             if time.monotonic() + 15 >= deadline:
                 break
-            if item.get("notice") and item.get("message_id"):
+            if not item.get("notice"):
+                continue
+            if item.get("request_message_id"):
+                result = self.call("sendMessage", chat_id=self.owner, text=item["notice"],
+                                   reply_parameters={"message_id": item["request_message_id"],
+                                                     "allow_sending_without_reply": True})
+                if result is not None:
+                    item.pop("notice")
+            elif item.get("message_id"):
                 result = self.call("editMessageText", chat_id=self.owner, message_id=item["message_id"],
                                    text=item["card"] + "\n\n" + item["notice"],
                                    reply_markup={"inline_keyboard": []})

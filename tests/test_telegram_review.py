@@ -248,6 +248,52 @@ class TelegramReviewTests(unittest.TestCase):
         self.assertEqual(api.call_args.kwargs["reply_parameters"]["message_id"], 101)
         self.assertEqual(self.state["telegram_review"]["receipts"], {})
 
+    def test_official_link_enters_exact_file_pipeline_with_seo(self):
+        url = self.source["url"]
+        incoming = {"update_id": 80, "message": {"from": {"id": 8},
+            "chat": {"id": 8, "type": "private"}, "message_id": 141, "text": url + "?tracking=1"}}
+        with patch.object(self.reviewer, "call", return_value=[incoming]):
+            self.reviewer.poll(self.state, Mock())
+        self.assertEqual(telegram.review_state(self.state)["link_requests"][self.key]["url"], url)
+        request_path = self.path.with_name("telegram-request.mp4")
+        request_path.write_bytes(self.path.read_bytes())
+        with patch.object(uploader, "extract_video_page_details", return_value=self.source) as fetch, \
+             patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1280, 720, 230)):
+            items = uploader.prepare_telegram_link_requests(self.reviewer, self.state, str(self.path.parent),
+                                                             time.monotonic() + 300)
+        fetch.assert_called_once_with(url, allow_existing=True)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(telegram.approvals_for(self.state)[self.key]["sha256"], policy.file_sha256(self.path))
+        youtube = Mock()
+        youtube.videos.return_value.insert.return_value.next_chunk.return_value = None, {"id": "video123"}
+        self.assertTrue(self.publish(youtube))
+        body = youtube.videos.return_value.insert.call_args.kwargs["body"]
+        self.assertIn("پُشتِ‌ خَط", body["snippet"]["title"])
+        self.assertIn(url, body["snippet"]["description"])
+        with patch.object(self.reviewer, "call", return_value={}) as api:
+            self.reviewer.flush_notices(self.state, time.monotonic() + 90)
+        self.assertEqual(api.call_args.kwargs["reply_parameters"]["message_id"], 141)
+        self.assertIn("https://www.youtube.com/watch?v=video123", api.call_args.kwargs["text"])
+
+    def test_untrusted_sender_or_non_footballi_links_do_not_enqueue(self):
+        incoming = {"update_id": 81, "message": {"from": {"id": 7},
+            "chat": {"id": 8, "type": "private"}, "message_id": 142, "text": self.source["url"]}}
+        with patch.object(self.reviewer, "call", return_value=[incoming]):
+            self.reviewer.poll(self.state, Mock())
+        self.reviewer.register_link(self.state, "https://footballi.net.evil.test/video/1234", 143)
+        self.assertFalse(telegram.review_state(self.state).get("link_requests"))
+
+    def test_prohibited_link_is_stopped_before_download(self):
+        self.reviewer.register_link(self.state, self.source["url"], 144)
+        highlights = {**self.source, "title": "خلاصه بازی پرسپولیس"}
+        with patch.object(uploader, "extract_video_page_details", return_value=highlights), \
+             patch.object(uploader, "download_candidate") as download:
+            self.assertEqual(uploader.prepare_telegram_link_requests(
+                self.reviewer, self.state, str(self.path.parent), time.monotonic() + 300), [])
+        download.assert_not_called()
+        self.assertNotIn(self.key, telegram.approvals_for(self.state))
+
     @patch.dict("os.environ", {"GEMINI_API_KEY": "mock", "ARVAN_API_KEY": "mock"})
     def test_audit_fallback_occurs_on_error_but_never_after_denial(self):
         denied = Mock()
