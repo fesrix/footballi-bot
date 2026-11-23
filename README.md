@@ -72,6 +72,12 @@ run reads the decision and checks the exact file before publishing. Rejecting
 a card removes that source from consideration. Current status and the
 YouTube URL are added to the original card.
 
+To request direct publication, send a single HTTPS Footballi video-page link
+to the bot's private chat. This confirms that Footballi produced that video
+and has permission to publish its picture and sound. The next run records
+the request, binds it to the downloaded file and runs the normal rights,
+media, and metadata checks. Results are sent as replies to the link message.
+
 To test on the live schedule, set the repository variable
 `FOOTBALLI_TELEGRAM_PREVIEW_ONLY=true` before configuring the secrets.
 Wait for a card and click a button, then confirm the result on the following

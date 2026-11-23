@@ -223,7 +223,7 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
 
     if gemini_key:
         try:
-            g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key={gemini_key}"
+            g_url = f"{PROTO}generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent"
             body = {
                 "systemInstruction": {"parts": [{"text": system_prompt}]},
                 "contents": [{"role": "user", "parts": [{"text": json.dumps(payload_data, ensure_ascii=False)}]}],
@@ -233,7 +233,8 @@ def generate_seo_metadata(title: str, description: str = "", category: str = "VI
                     "responseMimeType": "application/json",
                 },
             }
-            r = requests.post(g_url, json=body, timeout=15 if category == "SUMMARY" else 30)
+            r = requests.post(g_url, headers={"x-goog-api-key": gemini_key}, json=body,
+                              timeout=15 if category == "SUMMARY" else 30)
             if r.status_code == 200:
                 txt = r.json()["candidates"][0]["content"]["parts"][0]["text"]
                 parsed = json.loads(txt)
