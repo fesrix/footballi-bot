@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077290,
+  "max_seen_video_id": 1077299,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T00:01:11.982174+03:30",
-    "new_web_candidates": 9,
+    "finished_at": "2026-11-25T00:31:34.959409+03:30",
+    "new_web_candidates": 4,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -16645,7 +16645,7 @@
     },
     "live_scores": {
       "status": "ok",
-      "fixtures": 2,
+      "fixtures": 1,
       "match_day_candidates": 0,
       "priority_approved": 0
     },
@@ -18731,6 +18731,10 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077299": 1795554092.3380108,
+    "1077297": 1795554092.3380108,
+    "1077296": 1795554092.3380108,
+    "1077293": 1795554092.3380108,
     "1077290": 1795552265.5197642,
     "1077288": 1795552265.5197642,
     "1077287": 1795552265.5197642,
@@ -18826,43 +18830,132 @@
     "1077093": 1795483879.4646714,
     "1077092": 1795483879.4646714,
     "1077091": 1795482088.9230134,
-    "1077090": 1795482088.9230134,
-    "1077089": 1795482088.9230134,
-    "1077088": 1795482088.9230134,
-    "1077087": 1795482088.9230134,
-    "1077086": 1795482088.9230134
+    "1077090": 1795482088.9230134
   },
   "live_fixtures": {
     "fixtures": [
       {
-        "fixture_id": "49541db230ae7977",
-        "home_team": "فرد البرز",
-        "away_team": "پارس جنوبی جم",
-        "competition": "جام آزادگان",
-        "kickoff_at": "2026-11-24T18:30:00+03:30",
-        "status": "finished",
+        "fixture_id": "ab4fe0bcfd90a756",
+        "home_team": "الجزیره",
+        "away_team": "گل گهر سیرجان",
+        "competition": "لیگ قهرمانان آسیا 2",
+        "kickoff_at": "2026-11-25T19:30:00+03:30",
+        "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T00:00:44.942516+03:30",
-        "parser_version": 1
-      },
-      {
-        "fixture_id": "5ff11547ec101559",
-        "home_team": "شاهین بندر عامری",
-        "away_team": "نفت مسجدسلیمان",
-        "competition": "جام آزادگان",
-        "kickoff_at": "2026-11-24T21:00:00+03:30",
-        "status": "finished",
-        "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T00:00:44.942516+03:30",
+        "fetched_at": "2026-11-25T00:30:56.695855+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T00:00:44.942516+03:30",
+    "fetched_at": "2026-11-25T00:30:56.695855+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077299,
+      "published_at": null,
+      "discovered_at": 1795554092.722564,
+      "url": "https://footballi.net/video/1077299/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%B1%D8%A6%D8%A7%D9%84-%D8%A8%D8%AA%DB%8C%D8%B3-%D8%A8%D9%87-%D8%A7%D8%B3%D9%84%D9%88%D8%A7%D9%86-%D8%A8%D8%B1%D8%A7%D8%AA%DB%8C%D8%B3%D9%84%D8%A7%D9%88%D8%A7-%D8%AE%D9%88%D8%A7%D9%86-%D9%87%D8%B1%D9%86%D8%A7%D9%86%D8%AF%D8%B2-%DA%A9%D9%88%DA%86%D9%88",
+      "title": "گل اول رئال بتیس به اسلوان براتیسلاوا (خوان هرناندز کوچو)",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | لیگ قهرمانان اروپا,رئال بتیس,اسلوان براتیسلاوا",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-745817cf-b341-4115-a1af-5dee160edae2.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-4a2197bf-16bd-4147-85d4-0da8ea9815d3.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/tZmkPtaZSARzgFakqosicsD8IqNOiVNjBDxxHY5w.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077299/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%B1%D8%A6%D8%A7%D9%84-%D8%A8%D8%AA%DB%8C%D8%B3-%D8%A8%D9%87-%D8%A7%D8%B3%D9%84%D9%88%D8%A7%D9%86-%D8%A8%D8%B1%D8%A7%D8%AA%DB%8C%D8%B3%D9%84%D8%A7%D9%88%D8%A7-%D8%AE%D9%88%D8%A7%D9%86-%D9%87%D8%B1%D9%86%D8%A7%D9%86%D8%AF%D8%B2-%DA%A9%D9%88%DA%86%D9%88",
+      "source_published_at": null,
+      "source_first_seen_at": 1795554092.3380108,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795554092.7225986,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077297,
+      "published_at": null,
+      "discovered_at": 1795554092.9308035,
+      "url": "https://footballi.net/video/1077297/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%AF%D9%84%DB%8C%D9%85%D8%AA-1-0-%D9%84%D8%A7%D8%B3%DA%A9-%D9%84%DB%8C%D9%86%D8%B2",
+      "title": "خلاصه بازی گلیمت 1-0 لاسک لینز",
+      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | لیگ قهرمانان اروپا,خلاصه بازی,لاسک,بودو گلیمت",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-5f862d3d-c8ad-44ad-aafc-a39325581e34.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/MOZWVGkSkTGwKpO7ysQfuwylsQyxCXJGik9GgaJV.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077297/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%AF%D9%84%DB%8C%D9%85%D8%AA-1-0-%D9%84%D8%A7%D8%B3%DA%A9-%D9%84%DB%8C%D9%86%D8%B2",
+      "source_published_at": null,
+      "source_first_seen_at": 1795554092.3380108,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795554092.9308279,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077296,
+      "published_at": null,
+      "discovered_at": 1795554093.2974446,
+      "url": "https://footballi.net/video/1077296/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%AF%D8%A7%D9%84%D8%A7%D8%AA%D8%A7%D8%B3%D8%B1%D8%A7%DB%8C-1-0-%D9%88%DB%8C%D8%A7%D8%B1%D8%A6%D8%A7%D9%84",
+      "title": "خلاصه بازی گالاتاسرای 1-0 ویارئال",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | لیگ قهرمانان اروپا,ویارئال,گالاتاسرای,خلاصه بازی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-25437ab1-eca2-4400-a3ab-94a85c1a577a.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-4a2197bf-16bd-4147-85d4-0da8ea9815d3.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/a9KtBq5oVHEdiX1DhX7wOGvxTmIM7o5870mSg4cM.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077296/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%AF%D8%A7%D9%84%D8%A7%D8%AA%D8%A7%D8%B3%D8%B1%D8%A7%DB%8C-1-0-%D9%88%DB%8C%D8%A7%D8%B1%D8%A6%D8%A7%D9%84",
+      "source_published_at": null,
+      "source_first_seen_at": 1795554092.3380108,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795554093.2974749,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077293,
+      "published_at": null,
+      "discovered_at": 1795554093.5101185,
+      "url": "https://footballi.net/video/1077293/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%A2%DB%8C%D9%86%D8%AF%D9%87%D9%88%D9%88%D9%86-%D8%A8%D9%87-%D8%B1%D8%A6%D8%A7%D9%84-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-%D9%BE%D8%B1%DB%8C%D8%B4%DB%8C%DA%86",
+      "title": "گل اول آیندهوون به رئال مادرید (پریشیچ)",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | رئال مادرید,لیگ قهرمانان اروپا,آیندهوون,ایوان پریشیچ",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-f3abb770-89e5-4bc6-9674-81d8e2f66ae1.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-4a2197bf-16bd-4147-85d4-0da8ea9815d3.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/ebm2pGaW80PMQXDGMCw5loRoHWumwuaSlyOvQKJb.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077293/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D8%A2%DB%8C%D9%86%D8%AF%D9%87%D9%88%D9%88%D9%86-%D8%A8%D9%87-%D8%B1%D8%A6%D8%A7%D9%84-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-%D9%BE%D8%B1%DB%8C%D8%B4%DB%8C%DA%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795554092.3380108,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795554093.510151,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077290,
       "published_at": null,
