@@ -53,7 +53,7 @@ def _get_credentials() -> Credentials:
 
     if not credentials.has_scopes([ANALYTICS_SCOPE]):
         raise AnalyticsUnavailable(
-            "YOUTUBE_TOKEN does not include yt-analytics.readonly; regenerate it with refresh_token.yml"
+            "YOUTUBE_TOKEN does not include yt-analytics.readonly; renew it with renew_youtube_oauth.py"
         )
     return credentials
 
