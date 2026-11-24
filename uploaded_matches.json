@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077333,
+  "max_seen_video_id": 1077341,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T02:01:19.942194+03:30",
-    "new_web_candidates": 4,
+    "finished_at": "2026-11-25T02:31:20.103111+03:30",
+    "new_web_candidates": 2,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18731,6 +18731,8 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077341": 1795561278.2063684,
+    "1077338": 1795561278.2063684,
     "1077333": 1795559477.083439,
     "1077331": 1795559477.083439,
     "1077322": 1795559477.083439,
@@ -18828,9 +18830,7 @@
     "1077113": 1795489279.1530328,
     "1077112": 1795489279.1530328,
     "1077111": 1795489279.1530328,
-    "1077110": 1795489279.1530328,
-    "1077109": 1795489279.1530328,
-    "1077108": 1795489279.1530328
+    "1077110": 1795489279.1530328
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,68 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T02:00:45.353104+03:30",
+        "fetched_at": "2026-11-25T02:30:51.019895+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T02:00:45.353104+03:30",
+    "fetched_at": "2026-11-25T02:30:51.019895+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077341,
+      "published_at": null,
+      "discovered_at": 1795561278.4106615,
+      "url": "https://footballi.net/video/1077341/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-2-1-%D8%A7%D9%84%D8%B3%D8%AF-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D9%81%D9%84%DB%8C%DA%A9%D8%B3-%D9%88-%DA%AF%D9%84%D8%B2%D9%86%DB%8C-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88",
+      "title": "خلاصه بازی النصر 2-1 السد (سوپرگل فلیکس و گلزنی رونالدو)",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | السد,خلاصه بازی,النصر عربستان,لیگ نخبگان آسیا",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-45b5ce10-b140-45e8-be56-40f4b421e998.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/dX5mSCIp918hKdcgJVjPgTN28fffyTzN3TnYBz9y.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077341/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-2-1-%D8%A7%D9%84%D8%B3%D8%AF-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D9%81%D9%84%DB%8C%DA%A9%D8%B3-%D9%88-%DA%AF%D9%84%D8%B2%D9%86%DB%8C-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88",
+      "source_published_at": null,
+      "source_first_seen_at": 1795561278.2063684,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795561278.4106853,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077338,
+      "published_at": null,
+      "discovered_at": 1795561278.6160526,
+      "url": "https://footballi.net/video/1077338/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%B1%D8%A6%D8%A7%D9%84-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-5-1-%D8%A2%DB%8C%D9%86%D8%AF%D9%87%D9%88%D9%88%D9%86-%D8%AF%D8%A8%D9%84-%D8%A7%D9%85%D8%A8%D8%A7%D9%BE%D9%87",
+      "title": "خلاصه بازی رئال مادرید 5-1 آیندهوون (دبل امباپه)",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | رئال مادرید,لیگ قهرمانان اروپا,آیندهوون,خلاصه بازی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/G60Gw9fUuj7hc3rg3EzkTqC2SX2RnaIeDIrdHiT6.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077338/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%B1%D8%A6%D8%A7%D9%84-%D9%85%D8%A7%D8%AF%D8%B1%DB%8C%D8%AF-5-1-%D8%A2%DB%8C%D9%86%D8%AF%D9%87%D9%88%D9%88%D9%86-%D8%AF%D8%A8%D9%84-%D8%A7%D9%85%D8%A8%D8%A7%D9%BE%D9%87",
+      "source_published_at": null,
+      "source_first_seen_at": 1795561278.2063684,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795561278.6160738,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077333,
       "published_at": null,
