@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077270,
+  "max_seen_video_id": 1077279,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-24T23:01:46.769956+03:30",
-    "new_web_candidates": 4,
+    "finished_at": "2026-11-24T23:33:10.074372+03:30",
+    "new_web_candidates": 2,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18731,6 +18731,8 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077279": 1795550586.6495101,
+    "1077275": 1795550586.6495101,
     "1077270": 1795548700.9005015,
     "1077267": 1795548700.9005015,
     "1077265": 1795548700.9005015,
@@ -18828,9 +18830,7 @@
     "1077084": 1795480273.7639613,
     "1077083": 1795480273.7639613,
     "1077077": 1795478489.9406683,
-    "1077075": 1795478489.9406683,
-    "1077069": 1795478489.9406683,
-    "1077067": 1795476675.0028603
+    "1077075": 1795478489.9406683
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,7 +18842,7 @@
         "kickoff_at": "2026-11-24T18:30:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-24T23:00:59.870078+03:30",
+        "fetched_at": "2026-11-24T23:32:44.900768+03:30",
         "parser_version": 1
       },
       {
@@ -18853,16 +18853,68 @@
         "kickoff_at": "2026-11-24T21:00:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-24T23:00:59.870078+03:30",
+        "fetched_at": "2026-11-24T23:32:44.900768+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-24T23:00:59.870078+03:30",
+    "fetched_at": "2026-11-24T23:32:44.900768+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077279,
+      "published_at": null,
+      "discovered_at": 1795550586.9292402,
+      "url": "https://footballi.net/video/1077279/%DA%AF%D9%84-%D8%AF%D9%88%D9%85-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%A8%D9%87-%D8%A7%D9%84%D8%B3%D8%AF-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%DA%98%D8%A7%D8%A6%D9%88-%D9%81%D9%84%DB%8C%DA%A9%D8%B3",
+      "title": "گل دوم النصر به السد (سوپرگل برگردان ژائو فلیکس)",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | السد,النصر عربستان,سوپرگل,ژائو فلیکس",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-1c6c6493-658c-46ae-b936-65283de678a4.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/23/tus-07a89494-658d-4924-ad63-c924a7371fd9.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/qumIrwnEZiD9BoDsuLO5QkGAXZ4gW4egXe9QJCMC.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077279/%DA%AF%D9%84-%D8%AF%D9%88%D9%85-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%A8%D9%87-%D8%A7%D9%84%D8%B3%D8%AF-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%DA%98%D8%A7%D8%A6%D9%88-%D9%81%D9%84%DB%8C%DA%A9%D8%B3",
+      "source_published_at": null,
+      "source_first_seen_at": 1795550586.6495101,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795550586.9292767,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077275,
+      "published_at": null,
+      "discovered_at": 1795550587.76156,
+      "url": "https://footballi.net/video/1077275/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%B4%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D8%A7%D9%87%D9%84%DB%8C-1-5-%D8%A7%D9%84%D9%82%D8%A7%D8%AF%D8%B3%DB%8C%D9%87-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86",
+      "title": "خلاصه بازی شباب الاهلی 1-5 القادسیه عربستان",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | خلاصه بازی,شباب الاهلی,القادسیه,لیگ نخبگان آسیا",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-aebad545-df99-4da3-832d-179eda106750.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/23/tus-07a89494-658d-4924-ad63-c924a7371fd9.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/Wm6ilmA7RLFd56KHTthjCSu9MSIUSI6OTjuH1sDg.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077275/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%B4%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D8%A7%D9%87%D9%84%DB%8C-1-5-%D8%A7%D9%84%D9%82%D8%A7%D8%AF%D8%B3%DB%8C%D9%87-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795550586.6495101,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795550587.7615964,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077270,
       "published_at": null,
