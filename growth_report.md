@@ -32,11 +32,11 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 5 | Write quota: 0
+- Archive pages processed: 2 | Read quota: 10 | Write quota: 0
 
 ## Publishing decisions from Analytics
-- Data through: 2026-11-21 | Revision: dbb455b63acbc6fc
-- Updated profiles: short
+- Data through: 2026-11-21 | Revision: 46acd3d4e15b0c74
+- Updated profiles: main
 - Candidates with an Analytics adjustment: 0
-- main: 4 mature samples, preferred Tehran times: default
+- main: 6 mature samples, preferred Tehran times: default
 - short: 14 mature samples, preferred Tehran times: default
