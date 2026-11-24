@@ -15,6 +15,7 @@ from datetime import datetime, timezone, timedelta
 from urllib.parse import urlsplit
 
 from google.oauth2.credentials import Credentials
+from google.auth.exceptions import RefreshError
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
@@ -1598,9 +1599,15 @@ def main():
     }
 
     youtube = None
+    youtube_auth_failed = False
     channel_videos = []
     if state.get("quota_exhausted_date") != quota_key:
-        youtube = get_youtube_client()
+        try:
+            youtube = get_youtube_client()
+        except RefreshError:
+            youtube_auth_failed = True
+            print("[YOUTUBE-OAUTH] Token refresh failed. Renew YOUTUBE_TOKEN; continuing discovery and Telegram.")
+    if youtube:
         channel_videos = fetch_channel_existing_videos(youtube, state, max_items=180)
         reconcile_telegram_uploads(state, channel_videos)
         for v in channel_videos:
@@ -1724,6 +1731,8 @@ def main():
           f"editorial {daily['priority_editorial']} | match-day {daily['priority_match_day']}, "
           f"queue {len(state['pending_queue'])}.")
     save_state(state)
+    if youtube_auth_failed:
+        raise SystemExit("YouTube authentication failed. Discovery and Telegram state were saved.")
 
 
 if __name__ == "__main__":

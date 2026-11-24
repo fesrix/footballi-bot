@@ -48,6 +48,27 @@ python -m pip install -r requirements.txt
 The workflow reads `YOUTUBE_TOKEN` and `CLIENT_SECRETS` for YouTube authentication, `GEMINI_API_KEY` and `ARVAN_API_KEY` for AI integrations, and `APIFY_TOKEN` for Instagram discovery. Configure credentials through GitHub Actions secrets. Treat manual dispatch and the uploader entry point as live operations when a real channel is connected.
 
 For troubleshooting, start with the job summary and stage logs in the [Actions run](https://github.com/fesrix/footballi-bot/actions/workflows/uploader.yml), then check the [upload history](uploaded_matches.json) for the recorded state.
+
+## Renew YouTube access
+
+If Google returns `invalid_grant`, authorize the bot again from a computer
+using the **Desktop app** OAuth client JSON from the Google Cloud project that
+has YouTube Data API and YouTube Analytics API enabled.
+
+```powershell
+python renew_youtube_oauth.py "C:\path\to\client_secret.json" --channel-id UCPGCQK4sFYpENqfP_ssCtoQ
+```
+
+Sign in as the channel owner in the browser and grant all requested scopes.
+The script verifies token refresh and the expected channel before saving a
+temporary JSON file outside the repository. Paste that file's contents into
+the GitHub Actions secret `YOUTUBE_TOKEN`, then delete the temporary file.
+Keep the OAuth client JSON and temporary token file out of source control.
+
+Check the OAuth app's publishing status if this recurs weekly. Google
+[expires refresh tokens after seven days](https://developers.google.com/identity/protocols/oauth2#expiration)
+for external apps in Testing when using these scopes.
+
 # Emergency editorial approvals
 
 Originals-only publishing is active by default. Set the GitHub Actions
