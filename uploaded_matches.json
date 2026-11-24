@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077318,
+  "max_seen_video_id": 1077333,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T01:32:09.257546+03:30",
-    "new_web_candidates": 7,
+    "finished_at": "2026-11-25T02:01:19.942194+03:30",
+    "new_web_candidates": 4,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18731,6 +18731,10 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077333": 1795559477.083439,
+    "1077331": 1795559477.083439,
+    "1077322": 1795559477.083439,
+    "1077321": 1795559477.083439,
     "1077318": 1795557723.3390732,
     "1077316": 1795557723.3390732,
     "1077315": 1795557723.3390732,
@@ -18826,11 +18830,7 @@
     "1077111": 1795489279.1530328,
     "1077110": 1795489279.1530328,
     "1077109": 1795489279.1530328,
-    "1077108": 1795489279.1530328,
-    "1077107": 1795487474.6565964,
-    "1077106": 1795485673.166505,
-    "1077105": 1795485673.166505,
-    "1077104": 1795485673.166505
+    "1077108": 1795489279.1530328
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,120 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T01:31:12.297169+03:30",
+        "fetched_at": "2026-11-25T02:00:45.353104+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T01:31:12.297169+03:30",
+    "fetched_at": "2026-11-25T02:00:45.353104+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077333,
+      "published_at": null,
+      "discovered_at": 1795559477.862674,
+      "url": "https://footballi.net/video/1077333/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%81%D8%A7%DB%8C%D9%86%D9%88%D8%B1%D8%AF-0-1-%D9%BE%D9%88%D8%B1%D8%AA%D9%88",
+      "title": "خلاصه بازی فاینورد 0-1 پورتو",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | لیگ قهرمانان اروپا,پورتو,فاینورد,خلاصه بازی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-31394c3c-2d32-4566-a0f1-de2d42b3de90.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/nx80YCtk7Zv5glWci0vWOUpMDgjBM7WVAkc36Nyz.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077333/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%81%D8%A7%DB%8C%D9%86%D9%88%D8%B1%D8%AF-0-1-%D9%BE%D9%88%D8%B1%D8%AA%D9%88",
+      "source_published_at": null,
+      "source_first_seen_at": 1795559477.083439,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795559477.8626974,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077331,
+      "published_at": null,
+      "discovered_at": 1795559478.0636222,
+      "url": "https://footballi.net/video/1077331/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%A9%D9%88%D9%85%D9%88-1-0-%D8%A2-%D8%A7-%DA%A9-%D8%A2%D8%AA%D9%86",
+      "title": "خلاصه بازی کومو 1-0 آ. ا.ک آتن",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | لیگ قهرمانان اروپا,خلاصه بازی,آاک آتن,کومو",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-d255054b-d395-4a7e-b3b1-ad86cbe48c0b.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/1JnAHoIqNymKqOdMiqgoLJLv9ye74OoK3d4B3TuN.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077331/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%A9%D9%88%D9%85%D9%88-1-0-%D8%A2-%D8%A7-%DA%A9-%D8%A2%D8%AA%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795559477.083439,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795559478.0636473,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077322,
+      "published_at": null,
+      "discovered_at": 1795559478.2643929,
+      "url": "https://footballi.net/video/1077322/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A2%D8%B1%D8%B3%D9%86%D8%A7%D9%84-1-1-%D8%AF%D9%88%D8%B1%D8%AA%D9%85%D9%88%D9%86%D8%AF",
+      "title": "خلاصه بازی آرسنال 1-1 دورتموند",
+      "description": "مصاحبه اختصاصی با هواداران فوتبال و بازیکنان بعد از اتمام بازی ها در فوتبالی ببینید | لیگ قهرمانان اروپا,آرسنال,دورتموند,خلاصه بازی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-16c4d80d-fbfc-40e6-bbd3-33e637bdf0a2.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/1jLq0Uqm2pCGfRr5mxd8tjopVxojnmZIXAXbAjZx.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077322/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A2%D8%B1%D8%B3%D9%86%D8%A7%D9%84-1-1-%D8%AF%D9%88%D8%B1%D8%AA%D9%85%D9%88%D9%86%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795559477.083439,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795559478.2644124,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077321,
+      "published_at": null,
+      "discovered_at": 1795559478.4679787,
+      "url": "https://footballi.net/video/1077321/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1-%D8%B3%DB%8C%D8%AA%DB%8C-2-2-%D9%86%D8%A7%D9%BE%D9%88%D9%84%DB%8C",
+      "title": "خلاصه بازی منچستر سیتی 2-2 ناپولی",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | منچسترسیتی,ناپولی,لیگ قهرمانان اروپا,خلاصه بازی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-8e717fe6-8e8e-4374-b49d-c8300dc5bbfc.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-4a2197bf-16bd-4147-85d4-0da8ea9815d3.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/TwXRjQqR4LoCK7tEqdxuVaYjx23rz24rbIXZWPux.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077321/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%86%DA%86%D8%B3%D8%AA%D8%B1-%D8%B3%DB%8C%D8%AA%DB%8C-2-2-%D9%86%D8%A7%D9%BE%D9%88%D9%84%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795559477.083439,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795559478.468007,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077318,
       "published_at": null,
