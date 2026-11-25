@@ -1138,7 +1138,7 @@
     "count": 0
   },
   "last_upload_timestamp": 1795334425.900249,
-  "last_apify_check": 1795577509.0910711,
+  "last_apify_check": 1795608132.3328836,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
     "SHORTS": "PLfu5X5snZYqc",
@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077422,
+  "max_seen_video_id": 1077424,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,9 +16631,9 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T15:01:12.419687+03:30",
+    "finished_at": "2026-11-25T15:32:13.619283+03:30",
     "new_web_candidates": 1,
-    "new_instagram_candidates": 0,
+    "new_instagram_candidates": 1,
     "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
@@ -18731,6 +18731,7 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077424": 1795608090.5756664,
     "1077422": 1795606271.5290294,
     "1077415": 1795604492.9842696,
     "1077400": 1795602674.1869977,
@@ -18829,8 +18830,7 @@
     "1077187": 1795527102.1557217,
     "1077186": 1795525280.806774,
     "1077183": 1795525280.806774,
-    "1077181": 1795523489.8149593,
-    "1077180": 1795521689.6210885
+    "1077181": 1795523489.8149593
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,77 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T15:00:45.754208+03:30",
+        "fetched_at": "2026-11-25T15:30:59.308723+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T15:00:45.754208+03:30",
+    "fetched_at": "2026-11-25T15:30:59.308723+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 0,
+      "published_at": 1795607246.0,
+      "discovered_at": 1795608132.5597792,
+      "url": "https://www.instagram.com/p/DgKdNMCgs_r/",
+      "title": "فروش نقدی کاپرا B تک کابین و دو کابین",
+      "description": "فروش نقدی کاپرا B تک کابین و دو کابین\n\n @bhn.commercial \n\nجهت خرید و کسب اطلاعات بیشتر به عاملیت‌های مجاز بهمن دیزل و یا سایت  salepro.bahman.ir مراجعه فرمایید.⁩",
+      "source_metadata": {
+        "alt": "Video by فوتبالی || footballiapp on November 25, 2026. May be an image of truck, dune buggy, buggy and text.",
+        "hashtags": [],
+        "ownerUsername": "footballiapp",
+        "ownerFullName": "فوتبالی || footballiapp",
+        "musicInfo": {
+          "artist_name": "footballiapp",
+          "song_name": "Original audio",
+          "uses_original_audio": true,
+          "should_mute_audio": false,
+          "should_mute_audio_reason": "",
+          "audio_id": "40512067251739938"
+        }
+      },
+      "mp4_url": "https://scontent-sjc6-1.cdninstagram.com/o1/v/t2/f2/m367/AQNOaJqOduORIgAFk4aq5eh2XYXl2zajbgtKD2jV6uYEvGvURDlPb2gSdUShn9kVrosAKDGBRumhIKlz5fTIAAIJ4yrbjyNTuXx-s9dv91GtOQ.mp4?_nc_cat=106&_nc_sid=9ca052&_nc_ht=scontent-sjc6-1.cdninstagram.com&_nc_ohc=UjMC7X_CHkQQ7kNvwF-JDGf&efg=eyJ2ZW5jb2RlX3RhZyI6ImlnLXhwdmRzLmNsaXBzLmlnd3d3LUMzLmRhc2hfdnA5LWJhc2ljLWdlbjJfMTA4MHAiLCJ2aWRlb19pZCI6bnVsbCwib2lsX3VybGdlbl9hcHBfaWQiOjkzNjYxOTc0MzM5MjQ1OSwiY2xpZW50X25hbWUiOiJpZyIsInhwdl9hc3NldF9pZCI6MTAxMzcxMTgzODQ2MDcwMiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMiwiYml0cmF0ZSI6Mjc5MjQ1MCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=E2_u9E-RbqZmmO3FwI-MRA&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQRZRDMT46mpoXQwJo33Byk6rZ9LfIfQAvaAXxLO0nf3kw&oe=6B0C84C2",
+      "poster_url": "https://scontent-sjc3-1.cdninstagram.com/v/t51.82787-15/927344447_1013712155127337_3616035097163663810_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&_nc_map=urlgen_bucketless&ig_cache_key=NDAzODE2ODQ2NTUyMDExOTc4NzEwMTM3MTIxNTE3OTQwMDQ%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjYxMC5zZHIudmlkZW9fdXNlcl91cGxvYWRlZF90aHVtYm5haWwuQzMifQ%3D%3D&_nc_ohc=CWwwZKW_Ag8Q7kNvwFG77rs&_nc_oc=AdoeajDtraKitGhaVVHRytcjYUSiwk0EM8-QaFgpaiGFvgGTqxI2u5zoC5RL2hA_TZksrCNxodBPW0e_UWR85tlt&_nc_zt=23&_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_gid=E2_u9E-RbqZmmO3FwI-MRA&_nc_ss=70789&_nc_ct=RQosPBUIFQwlBAAAAA&oh=00_AQQjxfM2mO4AVOCq_BeT6pNnHKCwC5o2gHJg7uucPxgkJw&oe=6B0C9E8B",
+      "site_views": 4834,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgKdNMCgs_r/",
+      "source_published_at": 1795607246.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795608132.5597851,
+      "attempt_count": 1,
+      "is_short": true,
+      "originals_decision": "editorial_approval_missing",
+      "telegram_screening": "missing_audio"
+    },
+    {
+      "video_id": 1077424,
+      "published_at": null,
+      "discovered_at": 1795608090.9837215,
+      "url": "https://footballi.net/video/1077424/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AC%D8%A7%D9%84%D8%A8-%D9%85%D8%B1%D8%A8%DB%8C%D8%A7%D9%86-%D9%84%D8%A7%D9%84%DB%8C%DA%AF%D8%A7-%D8%AA%D8%A7-%D8%A7%DB%8C%D9%86%D8%AC%D8%A7%DB%8C-%D9%81%D8%B5%D9%84",
+      "title": "واکنش های جالب مربیان لالیگا تا اینجای فصل",
+      "description": "مربیان لالیگا در جریان مسابقات این فصل، با واکنش‌های متفاوتی به اتفاقات داخل زمین، تصمیمات داوری، موقعیت‌های حساس و عملکرد بازیکنان تیم‌هایشان توجه دوربین‌ها را جلب کرده‌اند. از عصبانیت و اعتراض گرفته تا شادی، تعجب و لحظات غیرمنتظره روی نیمکت، در این ویدیو مجموعه‌ای از واکنش‌های جالب و دیدنی سرمربیان فوتبال اسپانیا را مرور می‌کنیم.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-b47cf91a-34f9-4ef4-9218-26771190e5f6.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/g1NpAPBGXH73GzXIOBjpArrVlHZvdGXn0cBw5PeW.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077424/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D9%87%D8%A7%DB%8C-%D8%AC%D8%A7%D9%84%D8%A8-%D9%85%D8%B1%D8%A8%DB%8C%D8%A7%D9%86-%D9%84%D8%A7%D9%84%DB%8C%DA%AF%D8%A7-%D8%AA%D8%A7-%D8%A7%DB%8C%D9%86%D8%AC%D8%A7%DB%8C-%D9%81%D8%B5%D9%84",
+      "source_published_at": null,
+      "source_first_seen_at": 1795608090.5756664,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795608090.9837542,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077422,
       "published_at": null,
