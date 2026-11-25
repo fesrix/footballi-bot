@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077504,
+  "max_seen_video_id": 1077507,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -18368,8 +18368,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T22:03:58.738876+03:30",
-    "new_web_candidates": 0,
+    "finished_at": "2026-11-25T22:31:39.241346+03:30",
+    "new_web_candidates": 2,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18387,7 +18387,7 @@
       "priority_approved": 0
     },
     "learning": {
-      "revision": "ba5544bb173ab85e",
+      "revision": "b60684fffeaaca32",
       "changes": [
         "main",
         "short"
@@ -20464,7 +20464,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-25",
-      "read": 5,
+      "read": 10,
       "write": 0
     },
     "last_run": {
@@ -20478,14 +20478,16 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 5,
+      "read_units": 10,
       "write_units": 0
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997573,
+  "last_successful_run_slot": 997574,
   "footballi_recent_publications": {
+    "1077507": 1795633294.419789,
+    "1077506": 1795633294.419789,
     "1077504": 1795631490.9126172,
     "1077503": 1795631490.9126172,
     "1077502": 1795631490.9126172,
@@ -20583,18 +20585,68 @@
     "1077232": 1795546889.6393592,
     "1077231": 1795546889.6393592,
     "1077230": 1795546889.6393592,
-    "1077228": 1795546889.6393592,
-    "1077226": 1795546889.6393592,
-    "1077225": 1795546889.6393592
+    "1077228": 1795546889.6393592
   },
   "live_fixtures": {
     "fixtures": [],
-    "fetched_at": "2026-11-25T22:03:32.504326+03:30",
+    "fetched_at": "2026-11-25T22:31:04.559954+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077507,
+      "published_at": null,
+      "discovered_at": 1795633295.4188964,
+      "url": "https://footballi.net/video/1077507/%DA%AF%D9%84-%D8%AF%D9%88%D9%85-%D8%A8%D8%A7%D8%B1%D8%B3%D9%84%D9%88%D9%86%D8%A7-%D8%A8%D9%87-%D8%B5%D8%A8%D8%A7%D8%AD-%D8%AF%D8%A8%D9%84-%D8%A2%D9%86%D8%AA%D9%88%D9%86%DB%8C-%DA%AF%D9%88%D8%B1%D8%AF%D9%88%D9%86",
+      "title": "گل دوم بارسلونا به صباح (دبل آنتونی گوردون)",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | بارسلونا,آنتونی گوردون,صباح آذربایجان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-27684b73-0199-4503-8ee3-06f94ca28125.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/se7dscos3WvwAjmZkQBbafYaYYZpAU25yaissWah.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077507/%DA%AF%D9%84-%D8%AF%D9%88%D9%85-%D8%A8%D8%A7%D8%B1%D8%B3%D9%84%D9%88%D9%86%D8%A7-%D8%A8%D9%87-%D8%B5%D8%A8%D8%A7%D8%AD-%D8%AF%D8%A8%D9%84-%D8%A2%D9%86%D8%AA%D9%88%D9%86%DB%8C-%DA%AF%D9%88%D8%B1%D8%AF%D9%88%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795633294.419789,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795633295.4189339,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077506,
+      "published_at": null,
+      "discovered_at": 1795633296.1034598,
+      "url": "https://footballi.net/video/1077506/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D9%84%D8%AC%D8%B2%DB%8C%D8%B1%D9%87-1-0-%DA%AF%D9%84-%DA%AF%D9%87%D8%B1-%D8%B3%DB%8C%D8%B1%D8%AC%D8%A7%D9%86",
+      "title": "خلاصه بازی الجزیره 1-0 گل گهر سیرجان",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | خلاصه بازی,الجزیره,گل گهر,لیگ قهرمانان آسیا,لیگ قهرمانان آسیا دو",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-9423c3a9-49e5-41f4-98bd-2ca784fa50b1.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/E2MVpI5OEgqch63kfy2KD2aXU1rLYNH2r7U3vfmd.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077506/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A7%D9%84%D8%AC%D8%B2%DB%8C%D8%B1%D9%87-1-0-%DA%AF%D9%84-%DA%AF%D9%87%D8%B1-%D8%B3%DB%8C%D8%B1%D8%AC%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795633294.419789,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795633296.1034884,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077504,
       "published_at": null,
@@ -29697,14 +29749,7 @@
     },
     "updated_at": 1795633257.8660161,
     "keyboard_codes": [],
-    "receipts": {
-      "11": "درخواست انتشار ثبت شد. پس از بررسی نهایی فایل و حقوق محتوا نتیجه را همین‌جا می‌فرستم."
-    },
-    "link_requests": {
-      "footballi:1077193": {
-        "url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
-        "message_id": 11
-      }
-    }
+    "receipts": {},
+    "link_requests": {}
   }
 }
