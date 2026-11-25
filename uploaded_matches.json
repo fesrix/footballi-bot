@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077381,
+  "max_seen_video_id": 1077385,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,7 +16631,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T11:31:18.209598+03:30",
+    "finished_at": "2026-11-25T12:01:23.444068+03:30",
     "new_web_candidates": 3,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -18731,6 +18731,9 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077385": 1795595481.0865924,
+    "1077383": 1795595481.0865924,
+    "1077382": 1795595481.0865924,
     "1077381": 1795593676.6836221,
     "1077378": 1795593676.6836221,
     "1077377": 1795593676.6836221,
@@ -18827,10 +18830,7 @@
     "1077150": 1795509078.1181142,
     "1077149": 1795509078.1181142,
     "1077140": 1795509078.1181142,
-    "1077139": 1795507290.336986,
-    "1077138": 1795507290.336986,
-    "1077135": 1795505471.2330875,
-    "1077132": 1795503693.2345161
+    "1077139": 1795507290.336986
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,94 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T11:30:53.847370+03:30",
+        "fetched_at": "2026-11-25T12:00:52.572170+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T11:30:53.847370+03:30",
+    "fetched_at": "2026-11-25T12:00:52.572170+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077385,
+      "published_at": null,
+      "discovered_at": 1795595481.3285198,
+      "url": "https://footballi.net/video/1077385/%D8%B4%D8%A7%D8%AF%DB%8C-%D8%B9%D9%84%DB%8C-%D9%86%D8%A7%D8%AF%D8%B1%DB%8C-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%B4%DA%A9%D8%B3%D8%AA-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86",
+      "title": "شادی علی نادری پس از شکست عربستان",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | فوتبال ساحلی,تیم ملی فوتبال ساحلی ایران,علی نادری,تیم ملی فوتبال ساحلی عربستان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-85b00d19-ec87-4017-a6bf-0f4a2d1f0ae1.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/rLyM7dWu991hVVfckf0DOQLxKTRaYLu8r71EDznh.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077385/%D8%B4%D8%A7%D8%AF%DB%8C-%D8%B9%D9%84%DB%8C-%D9%86%D8%A7%D8%AF%D8%B1%DB%8C-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%B4%DA%A9%D8%B3%D8%AA-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795595481.0865924,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795595481.328541,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077383,
+      "published_at": null,
+      "discovered_at": 1795595482.016917,
+      "url": "https://footballi.net/video/1077383/%DA%AF%D9%84-%D8%B4%D8%B4%D9%85-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86-%D9%81%D8%A7%D9%84%D9%87",
+      "title": "گل ششم فوتبال ساحلی ایران به عربستان (فاله)",
+      "description": "خلاصه بازی های مهم اروپایی، جهانی و ایران را در وب سایت فوتبالی دنبال کنید | فوتبال ساحلی,تیم ملی فوتبال ساحلی ایران,تیم ملی فوتبال ساحلی عربستان,سبحان فاله",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-bf761587-4d1e-419f-80b5-f4df3091a182.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-85b00d19-ec87-4017-a6bf-0f4a2d1f0ae1.mp4",
+      "poster_url": "/DhfTd0dGBgtz2CvJolyqscfzyID9P5Brlz7hajmM.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077383/%DA%AF%D9%84-%D8%B4%D8%B4%D9%85-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86-%D9%81%D8%A7%D9%84%D9%87",
+      "source_published_at": null,
+      "source_first_seen_at": 1795595481.0865924,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795595482.0169518,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077382,
+      "published_at": null,
+      "discovered_at": 1795595482.7800632,
+      "url": "https://footballi.net/video/1077382/%DA%AF%D9%84-%D9%BE%D9%86%D8%AC%D9%85-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D9%88-%D8%AF%D8%A8%D9%84-%D9%85%D8%AE%D8%AA%D8%A7%D8%B1%DB%8C",
+      "title": "گل پنجم فوتبال ساحلی ایران به عربستان (سوپرگل و دبل مختاری)",
+      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | فوتبال ساحلی,تیم ملی فوتبال ساحلی ایران,تیم ملی فوتبال ساحلی عربستان,محمدعلی مختاری",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-f2476a27-4fa7-41a8-a77b-e75ee1ab8709.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "/u0c8LDUH3QMHi2CFTncwPE1QbCu9s37Mb03RQBc0.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077382/%DA%AF%D9%84-%D9%BE%D9%86%D8%AC%D9%85-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%A8%D9%87-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86-%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D9%88-%D8%AF%D8%A8%D9%84-%D9%85%D8%AE%D8%AA%D8%A7%D8%B1%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795595481.0865924,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795595482.7800848,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077381,
       "published_at": null,
