@@ -18,14 +18,14 @@
 
 ## Last run
 
-- New web candidates: 1
+- New web candidates: 2
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Live match priority
-- Fixture source: ok | Iranian fixtures: 1
+- Fixture source: ok | Iranian fixtures: 0
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
