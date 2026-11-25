@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T05:31:24.773217+03:30",
-    "new_web_candidates": 1,
+    "finished_at": "2026-11-25T06:01:17.935846+03:30",
+    "new_web_candidates": 0,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18842,11 +18842,11 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T05:30:54.037898+03:30",
+        "fetched_at": "2026-11-25T06:00:49.359582+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T05:30:54.037898+03:30",
+    "fetched_at": "2026-11-25T06:00:49.359582+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
