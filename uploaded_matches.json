@@ -16631,7 +16631,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T18:31:37.555390+03:30",
+    "finished_at": "2026-11-25T19:01:19.532505+03:30",
     "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -18842,16 +18842,42 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T18:31:07.484628+03:30",
+        "fetched_at": "2026-11-25T19:00:50.216448+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T18:31:07.484628+03:30",
+    "fetched_at": "2026-11-25T19:00:50.216448+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077426,
+      "published_at": null,
+      "discovered_at": 1795620678.9732316,
+      "url": "https://footballi.net/video/1077426/%DA%AF%D9%84-%D8%B2%DB%8C%D8%A8%D8%A7%DB%8C-%D8%A7%D8%B3%DA%A9%D8%A7%D8%AA-%D9%85%DA%A9-%D8%AA%D8%A7%D9%85%DB%8C%D9%86%DB%8C-%D8%A8%D9%87-%D8%AA%D9%88%D8%B1%DB%8C%D9%86%D9%88-%D8%A7%D8%B2-%D8%AA%D9%85%D8%A7%D9%85-%D8%B2%D9%88%D8%A7%DB%8C%D8%A7",
+      "title": "گل زیبای اسکات مک تامینی به تورینو از تمام زوایا",
+      "description": "حواشی جنجالی فوتبالی قبل و بعد از بازی ها را در سایت فوتبالی مشاهده کنید | بارسلونا,ناپولی,اسکات مک تامینی",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-04917f04-924c-4d00-b43d-d345a7ffd567.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/0KtH04mP3VZxCyMA60AMdfVyZarMoIuVo959WMSL.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077426/%DA%AF%D9%84-%D8%B2%DB%8C%D8%A8%D8%A7%DB%8C-%D8%A7%D8%B3%DA%A9%D8%A7%D8%AA-%D9%85%DA%A9-%D8%AA%D8%A7%D9%85%DB%8C%D9%86%DB%8C-%D8%A8%D9%87-%D8%AA%D9%88%D8%B1%DB%8C%D9%86%D9%88-%D8%A7%D8%B2-%D8%AA%D9%85%D8%A7%D9%85-%D8%B2%D9%88%D8%A7%DB%8C%D8%A7",
+      "source_published_at": null,
+      "source_first_seen_at": 1795620678.5328493,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795620678.9732647,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077477,
       "published_at": null,
