@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077415,
+  "max_seen_video_id": 1077422,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,7 +16631,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T14:31:33.859650+03:30",
+    "finished_at": "2026-11-25T15:01:12.419687+03:30",
     "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -18731,6 +18731,7 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077422": 1795606271.5290294,
     "1077415": 1795604492.9842696,
     "1077400": 1795602674.1869977,
     "1077398": 1795600878.2395525,
@@ -18829,8 +18830,7 @@
     "1077186": 1795525280.806774,
     "1077183": 1795525280.806774,
     "1077181": 1795523489.8149593,
-    "1077180": 1795521689.6210885,
-    "1077175": 1795519870.8869114
+    "1077180": 1795521689.6210885
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,42 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T14:31:01.703936+03:30",
+        "fetched_at": "2026-11-25T15:00:45.754208+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T14:31:01.703936+03:30",
+    "fetched_at": "2026-11-25T15:00:45.754208+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077422,
+      "published_at": null,
+      "discovered_at": 1795606271.7360392,
+      "url": "https://footballi.net/video/1077422/%DB%B1%DB%B0%DB%B0-%D9%86%D9%82%D9%84-%D9%88-%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%DA%AF%D8%B1%D8%A7%D9%86-%D9%82%DB%8C%D9%85%D8%AA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84",
+      "title": "۱۰۰ نقل‌ و انتقال گران‌ قیمت فوتبال",
+      "description": "در بازار نقل‌وانتقالات فوتبال، بعضی از انتقال‌ها با رقم‌های نجومی رکوردهای تاریخی را جابه‌جا کرده‌اند و مسیر حرفه‌ای بازیکنان و باشگاه‌ها را تغییر داده‌اند. در این ویدیو نگاهی داریم به ۱۰۰ انتقال گران‌قیمت تاریخ فوتبال؛ از جابه‌جایی ستاره‌های بزرگ بین غول‌های اروپا تا قراردادهایی که با مبالغ حیرت‌انگیز، نامشان در تاریخ نقل‌وانتقالات ثبت شده است.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-541a5314-b7d6-4eb8-b1ec-2f7c990ff78b.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/QEnhcrVivRNRuAFpJ6nHpBXLaKIfcyMIGKXvHUw0.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077422/%DB%B1%DB%B0%DB%B0-%D9%86%D9%82%D9%84-%D9%88-%D8%A7%D9%86%D8%AA%D9%82%D8%A7%D9%84-%DA%AF%D8%B1%D8%A7%D9%86-%D9%82%DB%8C%D9%85%D8%AA-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84",
+      "source_published_at": null,
+      "source_first_seen_at": 1795606271.5290294,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795606271.7360747,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077415,
       "published_at": null,
