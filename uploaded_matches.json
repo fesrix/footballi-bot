@@ -16631,7 +16631,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T20:31:40.344869+03:30",
+    "finished_at": "2026-11-25T21:01:11.437666+03:30",
     "new_web_candidates": 0,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -18834,7 +18834,7 @@
   },
   "live_fixtures": {
     "fixtures": [],
-    "fetched_at": "2026-11-25T20:31:07.153071+03:30",
+    "fetched_at": "2026-11-25T21:00:48.463082+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
