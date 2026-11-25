@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077385,
+  "max_seen_video_id": 1077389,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T12:01:23.444068+03:30",
-    "new_web_candidates": 3,
+    "finished_at": "2026-11-25T12:31:20.453617+03:30",
+    "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18731,6 +18731,7 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077389": 1795597279.5915043,
     "1077385": 1795595481.0865924,
     "1077383": 1795595481.0865924,
     "1077382": 1795595481.0865924,
@@ -18829,8 +18830,7 @@
     "1077157": 1795512679.644036,
     "1077150": 1795509078.1181142,
     "1077149": 1795509078.1181142,
-    "1077140": 1795509078.1181142,
-    "1077139": 1795507290.336986
+    "1077140": 1795509078.1181142
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,42 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T12:00:52.572170+03:30",
+        "fetched_at": "2026-11-25T12:30:54.938679+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T12:00:52.572170+03:30",
+    "fetched_at": "2026-11-25T12:30:54.938679+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077389,
+      "published_at": null,
+      "discovered_at": 1795597279.798471,
+      "url": "https://footballi.net/video/1077389/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-6-0-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86",
+      "title": "خلاصه بازی فوتبال ساحلی ایران 6-0 عربستان",
+      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | فوتبال ساحلی,تیم ملی فوتبال ساحلی ایران,خلاصه بازی,تیم ملی فوتبال ساحلی عربستان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-f2071668-0426-4372-8fbc-49fec809a946.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/u2jHjmH6YjgM76USx4Uj0B7a9TWoyBXiGKiwAh6r.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077389/%D8%AE%D9%84%D8%A7%D8%B5%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%B3%D8%A7%D8%AD%D9%84%DB%8C-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-6-0-%D8%B9%D8%B1%D8%A8%D8%B3%D8%AA%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795597279.5915043,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795597279.7984965,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077385,
       "published_at": null,
