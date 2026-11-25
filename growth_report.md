@@ -19,7 +19,7 @@
 ## Last run
 
 - New web candidates: 0
-- New Instagram candidates: 0
+- New Instagram candidates: 1
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
