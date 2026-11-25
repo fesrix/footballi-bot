@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077434,
+  "max_seen_video_id": 1077462,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -16631,8 +16631,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-25T16:01:01.327141+03:30",
-    "new_web_candidates": 1,
+    "finished_at": "2026-11-25T17:01:17.869412+03:30",
+    "new_web_candidates": 4,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -18731,6 +18731,9 @@
   },
   "last_successful_run_slot": 997518,
   "footballi_recent_publications": {
+    "1077462": 1795613475.663867,
+    "1077454": 1795613475.663867,
+    "1077443": 1795613475.663867,
     "1077434": 1795609860.7322993,
     "1077424": 1795608090.5756664,
     "1077422": 1795606271.5290294,
@@ -18827,10 +18830,7 @@
     "1077198": 1795530674.3336794,
     "1077193": 1795527102.1557217,
     "1077192": 1795527102.1557217,
-    "1077190": 1795527102.1557217,
-    "1077187": 1795527102.1557217,
-    "1077186": 1795525280.806774,
-    "1077183": 1795525280.806774
+    "1077190": 1795527102.1557217
   },
   "live_fixtures": {
     "fixtures": [
@@ -18842,16 +18842,120 @@
         "kickoff_at": "2026-11-25T19:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-25T16:00:43.644991+03:30",
+        "fetched_at": "2026-11-25T17:00:47.760799+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-25T16:00:43.644991+03:30",
+    "fetched_at": "2026-11-25T17:00:47.760799+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077462,
+      "published_at": null,
+      "discovered_at": 1795613476.3946207,
+      "url": "https://footballi.net/video/1077462/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1%DB%8C-%D8%A8%D8%A7-%D9%85%D8%B5%D8%AF%D9%88%D9%85%DB%8C%D8%AA-%DA%86%D9%86%D8%AF-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%8C-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA%D9%85%D8%A7%D9%86-%D8%AE%D8%A7%D8%B5-%D8%B4%D8%AF%D9%87-%D8%A7%D8%B3%D8%AA",
+      "title": "اخباری: با مصدومیت چند بازیکن، وضعیتمان خاص شده است",
+      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | سعید اخباری,لیگ برتر ایران,چادرملو اردکان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-35a3b735-0b12-4ea8-8fcb-608985df4cfd.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/Qb8e1yxYKfn0VNbk4zafSOQgkcEQxnZWYuYi1801.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077462/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1%DB%8C-%D8%A8%D8%A7-%D9%85%D8%B5%D8%AF%D9%88%D9%85%DB%8C%D8%AA-%DA%86%D9%86%D8%AF-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%8C-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA%D9%85%D8%A7%D9%86-%D8%AE%D8%A7%D8%B5-%D8%B4%D8%AF%D9%87-%D8%A7%D8%B3%D8%AA",
+      "source_published_at": null,
+      "source_first_seen_at": 1795613475.663867,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795613476.3946488,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077454,
+      "published_at": null,
+      "discovered_at": 1795613477.0203714,
+      "url": "https://footballi.net/video/1077454/%D9%BE%D8%B4%D8%AA-%D8%AE%D8%B7-%D9%86%D8%B5%D8%B1%D8%AA%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1-%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%87%D8%A7%DB%8C%D8%B4-%D9%87%D9%85%DB%8C%D8%B4%D9%87-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%B4%DA%A9%D8%A7%DB%8C%D8%AA-%D8%A7%D8%B3%D8%AA",
+      "title": "پشت خط/ نصرتی: نکونام در مصاحبه‌هایش همیشه در حال شکایت است!",
+      "description": "در این قسمت از برنامه پشت خط با محمد نصرتی بازیکن و مربی اسبق تراکتور درباره عملکرد ضعیف تراکتور با جواد نکونام در لیگ نخبگان آسیا صحبت کردیم.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-1a96eefe-5d70-4841-b316-4e58b14e84a9.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/tGt1dWjK5pMFSrtAaHzWEl1sPEZQ7i86qsAN86h5.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077454/%D9%BE%D8%B4%D8%AA-%D8%AE%D8%B7-%D9%86%D8%B5%D8%B1%D8%AA%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1-%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D9%87%D8%A7%DB%8C%D8%B4-%D9%87%D9%85%DB%8C%D8%B4%D9%87-%D8%AF%D8%B1-%D8%AD%D8%A7%D9%84-%D8%B4%DA%A9%D8%A7%DB%8C%D8%AA-%D8%A7%D8%B3%D8%AA",
+      "source_published_at": null,
+      "source_first_seen_at": 1795613475.663867,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795613477.020403,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077443,
+      "published_at": null,
+      "discovered_at": 1795613477.2465396,
+      "url": "https://footballi.net/video/1077443/%D9%85%D8%AC%D8%AA%D8%A8%DB%8C-%D8%AD%D8%B3%DB%8C%D9%86%DB%8C-%D8%B3%D8%B9%DB%8C-%DA%A9%D8%B1%D8%AF%D9%85-%D8%AA%DB%8C%D9%85-%D8%B1%D8%A7-%D8%A7%D8%B2-%D9%86%D8%B8%D8%B1-%D8%B1%D9%88%D8%AD%DB%8C-%D8%A2%D9%85%D8%A7%D8%AF%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%A9%D9%86%DB%8C%D9%85",
+      "title": "مجتبی حسینی: سعی کردم تیم را از نظر روحی آماده بازی کنیم",
+      "description": "با فوتبالی همراه باشید تا درجریان بروزترین ویدئوها قرار بگیرید | مجتبی حسینی,مس شهربابک,لیگ برتر ایران",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-d50a311c-446f-49ca-8412-aae1d21587a5.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/BjeECQckdlc4yUmGHXXUaan9l2KnAvZWk6ks8Cxr.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077443/%D9%85%D8%AC%D8%AA%D8%A8%DB%8C-%D8%AD%D8%B3%DB%8C%D9%86%DB%8C-%D8%B3%D8%B9%DB%8C-%DA%A9%D8%B1%D8%AF%D9%85-%D8%AA%DB%8C%D9%85-%D8%B1%D8%A7-%D8%A7%D8%B2-%D9%86%D8%B8%D8%B1-%D8%B1%D9%88%D8%AD%DB%8C-%D8%A2%D9%85%D8%A7%D8%AF%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C-%DA%A9%D9%86%DB%8C%D9%85",
+      "source_published_at": null,
+      "source_first_seen_at": 1795613475.663867,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795613477.246556,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
+    {
+      "video_id": 1077432,
+      "published_at": null,
+      "discovered_at": 1795613477.4696815,
+      "url": "https://footballi.net/video/1077432/%D8%AA%DA%A9%D9%84-%D9%87%D8%A7%DB%8C-%D8%AF%DB%8C%D9%88%D8%A7%D9%86%D9%87-%D9%88%D8%A7%D8%B1-%D9%85%D8%A7%D9%84%D8%AF%DB%8C%D9%86%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%B1%D8%A7%D8%A8%D8%B1-%D8%B1%D8%A7%D9%85%D9%88%D8%B3",
+      "title": "تکل های دیوانه وار؛ مالدینی در برابر راموس",
+      "description": "در فوتبال، بعضی تکل‌ها به دلیل شدت، زمان‌بندی دقیق و جسارت بازیکنان به صحنه‌هایی ماندگار تبدیل می‌شوند. از تکل‌های بی‌نقص و تماشایی پائولو مالدینی، مدافع افسانه‌ای میلان، تا برخوردهای قدرتمند و نجات‌بخش سرخیو راموس، در این ویدیو مجموعه‌ای از تکل‌های دیوانه‌وار و دیدنی دو مدافع بزرگ تاریخ فوتبال را مرور می‌کنیم؛ لحظاتی که دفاع کردن به هنر تبدیل می‌شود.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-27262934-ebc8-4cbf-aaa8-e6b3c156450e.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-7926e717-f20c-475b-a374-3f8819871d72.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/dKomRlosyIYlcqNIrzM3J40LdSmYvbpAjnv8dHV6.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077432/%D8%AA%DA%A9%D9%84-%D9%87%D8%A7%DB%8C-%D8%AF%DB%8C%D9%88%D8%A7%D9%86%D9%87-%D9%88%D8%A7%D8%B1-%D9%85%D8%A7%D9%84%D8%AF%DB%8C%D9%86%DB%8C-%D8%AF%D8%B1-%D8%A8%D8%B1%D8%A7%D8%A8%D8%B1-%D8%B1%D8%A7%D9%85%D9%88%D8%B3",
+      "source_published_at": null,
+      "source_first_seen_at": 1795613475.663867,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795613477.469705,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077434,
       "published_at": null,
