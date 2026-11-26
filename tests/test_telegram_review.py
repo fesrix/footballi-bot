@@ -94,6 +94,27 @@ class TelegramReviewTests(unittest.TestCase):
         self.assertIn("پُشتِ‌ خَط", proposal["card"])
         self.assertIn("233", proposal["card"])
 
+    def test_fan_reaction_gets_telegram_slot_ahead_of_other_content(self):
+        self.state["telegram_review"]["items"].clear()
+        ordinary = {**self.source, "title": "گزارش اختصاصی فوتبالی",
+                    "originals_decision": "editorial_approval_missing"}
+        fan = {**ordinary, "url": "https://footballi.net/video/1235",
+               "title": "واکنش هواداران استقلال به گل اول", "description": "حواشی بازی و گل اول"}
+        self.state["originals_waiting"] = [ordinary, fan]
+        with patch.object(uploader, "MAX_TELEGRAM_PROPOSALS_PER_RUN", 1), \
+             patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1280, 720, 240)), \
+             patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -3)), \
+             patch.object(policy, "audit_with_ai", return_value="ai_unconfirmed"), \
+             patch.object(policy, "file_sha256", return_value=self.card["sha256"]), \
+             patch.object(telegram, "checkpoint"), patch.object(self.reviewer, "send_card", return_value=True) as send:
+            uploader.propose_telegram_reviews(self.reviewer, self.state, str(self.path.parent),
+                                              time.monotonic() + 180)
+        send.assert_called_once()
+        proposal = send.call_args.args[0]
+        self.assertIn("هواداران و واکنش‌ها", proposal["card"])
+        self.assertEqual(proposal["status"], "waiting")
+
     def test_send_limit_preserves_remaining_candidates_for_next_run(self):
         self.state["telegram_review"]["items"].clear()
         self.state["originals_waiting"] = [

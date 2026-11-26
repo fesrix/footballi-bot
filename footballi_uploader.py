@@ -472,6 +472,21 @@ def format_upload_title(title, candidate, category):
     return title[:100]
 
 
+def format_source_description(description, source_url):
+    source = originals.source_key(source_url)
+    if not source:
+        return description
+    label = ("در سایت فوتبالی ببینید" if source.startswith("footballi:")
+             else "در اینستاگرام فوتبالی ببینید")
+    link = f"{label}: {source_url}"
+    old_link = rf"(?m)^(?:(?:منبع رسمی|لینک رسمی)[:：])?[ \t]*{re.escape(source_url)}[ \t]*$"
+    if re.search(old_link, description):
+        return re.sub(old_link, lambda _: link, description)
+    if source_url in description:
+        return description
+    return f"{description.rstrip()}\n\n{link}".lstrip()
+
+
 def _playlist_text(value: str) -> str:
     return normalize_persian(value.split("|", 1)[0]).casefold()
 
@@ -1277,8 +1292,7 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
     final_desc = seo.get("description", candidate.get("description", ""))
     final_tags = seo.get("tags", ["فوتبالی", "فوتبال ایران"])
     source_url = candidate.get("source_url") or candidate.get("url")
-    if source_url and source_url not in final_desc:
-        final_desc = f"{final_desc}\n\nمنبع رسمی: {source_url}"
+    final_desc = format_source_description(final_desc, source_url)
 
     if approval_card:
         marker = f"Footballi ID: {approval_card['button_id']}"
@@ -1553,7 +1567,8 @@ def propose_telegram_reviews(reviewer, state, media_directory, deadline):
     trusted_staged = 0
     def review_order(item):
         discovered = timestamp(item.get("discovery_timestamp") or item.get("discovered_at"))
-        return not footballi_show(item), discovered.timestamp() if discovered else 0
+        return (not footballi_show(item), not originals.editorial_review_topic(item),
+                discovered.timestamp() if discovered else 0)
 
     waiting = sorted(state.get("originals_waiting", []), key=review_order)
     path = os.path.join(media_directory, "review.mp4")
@@ -1617,6 +1632,12 @@ def propose_telegram_reviews(reviewer, state, media_directory, deadline):
                 "ai_unavailable": "⚠️ بررسی هوش مصنوعی در دسترس نبود. منبع تصویر و صدا را بررسی کن.",
                 "ai_third_party": "⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
             }.get(verdict, "⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.")
+            topic = {
+                "fan": "هواداران و واکنش‌ها", "matchday": "حواشی قبل یا بعد بازی",
+                "interview": "مصاحبه و گفت‌وگو",
+            }.get(originals.editorial_review_topic(candidate))
+            if topic:
+                evidence = f"{topic}\n{evidence}"
         try:
             digest = originals.file_sha256(path)
         except OSError:
@@ -1658,6 +1679,10 @@ def main():
     deadline = time.monotonic() + PUBLISHING_BUDGET_SECONDS
     state = load_state()
     strict = originals.originals_only()
+    if strict:
+        reconsidered = originals.reconsider_recent_exclusions(state, time.time())
+        if reconsidered:
+            print(f"[ORIGINALS] Reopened {reconsidered} recent website decisions for editorial review.")
     archived_before = len(state["originals_exclusions"])
     reviewer = telegram.TelegramReview.from_env() if strict else None
     if reviewer:
