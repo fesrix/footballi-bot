@@ -459,7 +459,8 @@
     "https://www.instagram.com/p/DgH-tspgA6B/",
     "https://www.instagram.com/p/DgGVYgZg_OZ/",
     "https://www.instagram.com/p/DgGbZjjA-ZH/",
-    "https://www.instagram.com/p/DgGTValgLT0/"
+    "https://www.instagram.com/p/DgGTValgLT0/",
+    "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -667,7 +668,8 @@
     "انتقاد میثاقی از قراردادهای بازیکنان خارجی استقلال",
     "انتقاد علیرضا بیرانوند از نحوه بازتاب عملکردش",
     "علیرضا بیرانوند: به پرسپولیسی‌ها خیانت نکرده بودم",
-    "گاف علیرضا بیرانوند در مراسم برترین‌های آسیا"
+    "گاف علیرضا بیرانوند در مراسم برترین‌های آسیا",
+    "تمرینات آلومینیوم اراک پیش از دیدار با پرسپولیس"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -703,38 +705,7 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [
-    {
-      "video_id": 1077606,
-      "published_at": null,
-      "discovered_at": 1795705299.4412706,
-      "url": "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
-      "title": "تمرینات آلومینیوم اراک پیش از بازی با پرسپولیس",
-      "description": "بازیکنان آلومینیوم اراک تمرینات خود را برای آماده‌سازی پیش از دیدار حساس مقابل پرسپولیس دنبال کردند. شاگردان پیروز قربانی در این جلسات تمرینی، برنامه‌های تاکتیکی و آمادگی جسمانی خود را مرور کردند تا با آمادگی مناسب به مصاف سرخ‌پوشان پایتخت بروند. این مسابقه از دیدارهای مهم آلومینیوم در ادامه رقابت‌های لیگ برتر محسوب می‌شود.منبع: رسانه رسمی باشگاه آلومینیوم اراک",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-4b8657c2-32cb-4a67-b5df-8121964418da.mp4",
-      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-184d1631-87d0-4d43-8a94-7f967b520c0a.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/T6HKMU192WmGCwM4XBOxgFxNf7veoljapiwxYNLw.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
-      "source_published_at": null,
-      "source_first_seen_at": 1795678293.9086132,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795705299.4413006,
-      "attempt_count": 2,
-      "is_short": true,
-      "originals_decision": "approved",
-      "ai_score": 6,
-      "category": "VIDEO",
-      "learning_factor": 1,
-      "verified_is_short": true
-    }
-  ],
+  "pending_queue": [],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -1183,11 +1154,12 @@
     "https://scontent-cdg4-2.cdninstagram.com/o1/v/t2/f2/m86/AQNYYWlw9YpkkUMzofEwFZvhCbwWoD5x6ji2muNx410-_uVEOgI0SOGenC5XWonX-39_qJYpLhZzR1CFQSY0kGbuSVYEDHhtidRRT8Q.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_ohc=AagC_j-YZx0Q7kNvwExmCnQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg4ODA2Mjk1NTcwMTg1MiwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f470edf4a91d613b&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81MzFEMkQ5OEUzQzc0OEMzQTY2RDhGOTdBQUYzRkU1Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzgzN0E2ODU5NjhDNzREREU4NTA4NERBNUY1RjhCMDExX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACa4mc6c3cvaBhUCKAJDMywXQGYCHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=Ajo1MSSLfB-TSmLJz447IQ&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=Ur3E97_tSmbzDdJo0bR4WEJu_t-FzPy4E5msJ2bHwff9AhFJi6POLw6fxX_p0p-XaGsmGRalcSRFZY5ezg6GDsuk_qxJ3tNW0VvzCKfxKP40PX_QsSIiswMj0jQ&oh=00_AQR2Tg0NKJSEEULiCjUVjnkOW2J5pnux7-phr12XZlSU3A&oe=6B0A2DF1",
     "https://scontent-cdg4-1.cdninstagram.com/o1/v/t2/f2/m86/AQPdRdLHdfVu29XMSLPP3Oku6tgzuU0rBRZyFZkrrwGyv00eCXj8Opa-5-5eBHQFKmpP8Bz135uetp490jQVCkSf5DvxZwO7Byo1Y2w.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-cdg4-1.cdninstagram.com&_nc_ohc=RK_wmhHsgr4Q7kNvwFyAX7P&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4NTA4Nzk2Njg3MzAwNSwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=18183f374a65b14e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EQkRDQkU3OUE5Mjg0NzM3ODZBRTQ4MTEyNjdBQzE2Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzlGQzdFMTlFOUQ1QTQxREFCQkQ2RUQ5OEE1OUIwQ0I5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbalvzD3e71BBUCKAJDMywXQFcCHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=1WSK74IthhdN7QbaCpmoDw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UiC4sBuVLuepRUlZhk_GXCLRioKXGBKXToMJcjhtohzeCh6_vQ-XSy_d-K6ZNPEP_pv17sCrIUjJmbQMYRN7NtRGm4pyH1-p0Ozaahtgbdpin6InC8sn4Zk3OIE&oh=00_AQRG9eM9JaBPF6Oz-URG0rcRM4cLM9vi2Fhg3Ur1z0qGRQ&oe=6B0A1AF3",
     "https://instagram.ficn3-4.fna.fbcdn.net/o1/v/t2/f2/m86/AQPUPpcowOqQVMokdbSBUbf2bBdfCQeFWS4RvvIcyNW66o9-NtnS4h_Z2s8SD8r4m2czoSgCQbptPUpcxCt8NZwMfJikbgGpCd4X2i8.mp4?_nc_cat=109&_nc_oc=AdreLVs1P1I6x2hghTwVoXm6bN4yR1TAGX7CdiPv8M21F1LBm-uEdXOKrpRhM1B2fTc&_nc_sid=5e9851&_nc_ht=instagram.ficn3-4.fna.fbcdn.net&_nc_ohc=fqdTU6jlebEQ7kNvwH5gcAh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTE2MjE1MzA5NjMzNDY4MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=e3c6f585428cddba&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83QjhCNDdGMDY0NkE0NDZFQjdERjYwMUQ1OEMwMDk4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg1OTk1N0Y5MjQ0QjQ2OTNBQkQyNzZCMzQxREY2RDFEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACawtdqnm76QBBUCKAJDMywXQFugAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=vb8qKTUnCtfP0hkYdBKV-g&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UrfAbjCrKEKscoXgb2c5xdnK0PR-y1UzjY2zCqBWNfgaN6nUlPbqyZSOjmkPhdNh0gZwfrD9Di93HiO3YzDw_tdKyp_Pmm6NT35AVUwGqTRqkoDSkLkOVQ220dM&oh=00_AQTkGZDJM6-lU40SSwn_w8KwsLk7ObGYmrG1QT1jtXMdaQ&oe=6B0A444A",
-    "https://instagram.fbhx1-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQN5RX63Hiql4NzpJSuoUIt2aP1MTZRIjVFxe7lCn6CIRMnMABKCYUzX2-YNPNitEO8211XsPeHHLR16hWKK03XwmiLzbWz7TQ99tzo.mp4?_nc_cat=108&_nc_oc=Adocf6bDqfYzMyoixb_vZRqg03zCbVvntf3D3BvO6SdWZ3Y2WNCbHiF2Grk6uswjJBk&_nc_sid=5e9851&_nc_ht=instagram.fbhx1-1.fna.fbcdn.net&_nc_ohc=ckbw7f2EZl8Q7kNvwFIWH63&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg1Njg1OTE5MTkxNjI3MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=bba6bbfd751922e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83RTgzNkRDNTM4RTc0RDg1Qjg4QjAyNzgwM0FENjQ4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FGQzJBNzAwMjMyQzQwRTM5QjQ1RUY4RUM0Njg3NEY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbc28GIt7PMBhUCKAJDMywXQFeRBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=IOKC79ylZ3EaMhXVpzjtxw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UtcdcCwzNnr3kNxJ63GRJ8k9H-SVMbabhsRITRH6sfieSCeYCj8QMWwfwv0BXNwksWZ96CGaZb8aN9Jee2VB2OrrwQYJ3dOkwB2A9tfEYsbFsHPzJXlbxYielaM&oh=00_AQRu8QHltI5Q9yXIAvNQYo5Yq3XZi8hVo2Pn3lfof2XXrQ&oe=6B0A0DF1"
+    "https://instagram.fbhx1-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQN5RX63Hiql4NzpJSuoUIt2aP1MTZRIjVFxe7lCn6CIRMnMABKCYUzX2-YNPNitEO8211XsPeHHLR16hWKK03XwmiLzbWz7TQ99tzo.mp4?_nc_cat=108&_nc_oc=Adocf6bDqfYzMyoixb_vZRqg03zCbVvntf3D3BvO6SdWZ3Y2WNCbHiF2Grk6uswjJBk&_nc_sid=5e9851&_nc_ht=instagram.fbhx1-1.fna.fbcdn.net&_nc_ohc=ckbw7f2EZl8Q7kNvwFIWH63&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg1Njg1OTE5MTkxNjI3MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=bba6bbfd751922e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83RTgzNkRDNTM4RTc0RDg1Qjg4QjAyNzgwM0FENjQ4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FGQzJBNzAwMjMyQzQwRTM5QjQ1RUY4RUM0Njg3NEY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbc28GIt7PMBhUCKAJDMywXQFeRBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=IOKC79ylZ3EaMhXVpzjtxw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UtcdcCwzNnr3kNxJ63GRJ8k9H-SVMbabhsRITRH6sfieSCeYCj8QMWwfwv0BXNwksWZ96CGaZb8aN9Jee2VB2OrrwQYJ3dOkwB2A9tfEYsbFsHPzJXlbxYielaM&oh=00_AQRu8QHltI5Q9yXIAvNQYo5Yq3XZi8hVo2Pn3lfof2XXrQ&oe=6B0A0DF1",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-4b8657c2-32cb-4a67-b5df-8121964418da.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-26",
-    "count": 7
+    "count": 8
   },
   "last_upload_timestamp": 1795702240.864569,
   "last_apify_check": 1795699892.8042696,
@@ -1855,6 +1827,10 @@
     ],
     "6p7t_EfgomM": [
       "SHORTS"
+    ],
+    "u8VzbOBp5LE": [
+      "PERSEPOLIS",
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2450,7 +2426,8 @@
     "میثاقی: آیا یک نفر بازرس در استقلال نیست؟",
     "بیرانوند: چرا فقط کارهای منفی من را نشان می‌دهید؟",
     "بیرانوند: اگر از پرسپولیسی‌ها تشکر نمی‌کردم، به آن‌ها خیانت کرده بودم!",
-    "گاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا"
+    "گاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا",
+    "تمرینات آلومینیوم اراک پیش از بازی با پرسپولیس"
   ],
   "analytics": {
     "videos": {
@@ -20395,18 +20372,45 @@
       "learning_revision": "8c60097012372b59",
       "topic": "",
       "source_title": "گاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا"
+    },
+    "u8VzbOBp5LE": {
+      "title": "تمرینات آلومینیوم اراک پیش از دیدار با پرسپولیس",
+      "category": "SHORTS",
+      "format": "short",
+      "priority_summary": false,
+      "priority_class": "",
+      "priority_reason": null,
+      "fixture_id": null,
+      "fixture_relation": null,
+      "priority_until": null,
+      "home_team": null,
+      "away_team": null,
+      "competition": null,
+      "kickoff_at": null,
+      "rights_audit": "approved",
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
+      "rights_status": "internal_authorized",
+      "originals_decision": "approved",
+      "publication_route": "telegram_review",
+      "published_at": "2026-11-26T18:31:27.418385+00:00",
+      "title_style": "direct",
+      "title_experiment": false,
+      "learning_revision": "8c60097012372b59",
+      "topic": "پرسپولیس",
+      "source_title": "تمرینات آلومینیوم اراک پیش از بازی با پرسپولیس"
     }
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T18:31:16.181570+00:00",
+    "finished_at": "2026-11-26T22:01:30.060065+03:30",
     "new_web_candidates": 0,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
       "main": 0,
-      "short": 0,
+      "short": 1,
       "priority_summaries": 0,
       "priority_editorial": 0,
       "priority_match_day": 0
@@ -20419,10 +20423,34 @@
     },
     "learning": {
       "revision": "8c60097012372b59",
-      "changes": []
+      "changes": [],
+      "title_style": "direct",
+      "selected_factor": 1,
+      "published_tehran": "22:01"
+    },
+    "publication_routes": {
+      "telegram_review": 1
+    },
+    "telegram_proposals": {
+      "sent": 0,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 1,
+        "editorial_approval_missing": 4,
+        "quality_or_format_rejected": 4,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 7,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
-  "last_short_upload_timestamp": 1795705464.351817,
+  "last_short_upload_timestamp": 1795717887.418422,
   "learning": {
     "version": 1,
     "revision": "8c60097012372b59",
@@ -22511,7 +22539,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 124,
+      "read": 129,
       "write": 0
     },
     "last_run": {
@@ -22525,13 +22553,13 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 124,
+      "read_units": 129,
       "write_units": 0
     },
-    "scan_phase": 0,
+    "scan_phase": 1,
     "archive_token": null
   },
-  "last_successful_run_slot": 997620,
+  "last_successful_run_slot": 997621,
   "footballi_recent_publications": {
     "1077712": 1795714281.4409792,
     "1077700": 1795710678.0092165,
@@ -23109,7 +23137,7 @@
         "video_id": "pegOqCoFyYo"
       },
       "footballi:1077606": {
-        "status": "upload_uncertain",
+        "status": "published",
         "preview": false,
         "button_id": "1606b86ebbd41517561fbf589e4a423b",
         "generation": 1,
@@ -23125,17 +23153,15 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
-        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
+        "result": "منتشر شد: https://www.youtube.com/watch?v=u8VzbOBp5LE",
+        "video_id": "u8VzbOBp5LE"
       }
     },
     "updated_at": 1795717845.8922374,
-    "keyboard_codes": [
-      "1606B86EBBD4"
-    ],
+    "keyboard_codes": [],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 1
+    "keyboard_waiting": 0
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
