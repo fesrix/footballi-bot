@@ -693,7 +693,202 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [],
+  "pending_queue": [
+    {
+      "video_id": 0,
+      "published_at": 1795523512.0,
+      "discovered_at": 1795546936.4024205,
+      "url": "https://www.instagram.com/p/DgH9Z_cgIRY/",
+      "title": "فاجعه مدیریتی استقلال در پرونده کوجو!",
+      "description": ".\n📌فاجعه مدیریتی استقلال در پرونده کوجو!",
+      "source_metadata": {
+        "alt": "Video by فوتبالی || footballiapp on November 24, 2026. May be an image of football and text.",
+        "hashtags": [],
+        "ownerUsername": "footballiapp",
+        "ownerFullName": "فوتبالی || footballiapp",
+        "musicInfo": {
+          "artist_name": "footballiapp",
+          "song_name": "Original audio",
+          "uses_original_audio": true,
+          "should_mute_audio": false,
+          "should_mute_audio_reason": "",
+          "audio_id": "29845300841824175"
+        }
+      },
+      "mp4_url": "https://scontent-ord5-2.cdninstagram.com/o1/v/t2/f2/m86/AQMozCd28sq7_aLImW1-ePJZsUZY9HZapiCj4A5h35OsJuT2VLsYj51I4xzajWbFKZ1ldvKtV_2aNMRqXZS1uBjjMJ6a3YErqrb9CCU.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-ord5-2.cdninstagram.com&_nc_ohc=6aNjpFm9zaAQ7kNvwFCa8jo&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6OTgzNjg4ODM3NzIxMTg4LCJhc3NldF9hZ2VfZGF5cyI6MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE0NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=94363e4c859c50ad&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zQTcwOEQ1NjA0NDI0MUY2OUQyMTAyRDU1RUYwQ0IyNl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc0Q0U1NTdDRTVFNzQwMzU4RENFMDAwMEVDRThGNEJBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbIse_7nKq_AxUCKAJDMywXQGISHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=SFfoPSTuBsCOk1PLufp-dw&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQHXHK2vpnC7_48wVE_zf6tsYAnXBmHsV4yb8f86ys1vw&oe=6B0A24AF",
+      "poster_url": "https://scontent-nrt6-1.cdninstagram.com/v/t51.71878-15/921751756_2066619207384909_4135406117896970703_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNzQ2NTY1NzkwODk1NDIwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=vRC8HKs05tcQ7kNvwG--r7n&_nc_oc=AdoHUXFAGVqpV91qMfAzh27lxI3f4nclwGgcxNCjBZaosPzGQhAXxSyTGOgazx1f1iRDRR4FVuRIodoYjmhD0IKB&_nc_zt=23&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_gid=tFU_d-LrlYC7EGwAVY9YNA&_nc_ss=70789&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQTRIIie5zu42hdF8UT8WfRBC-KG2ebDrvvAsstwi01P5g&oe=6B0B9FB5",
+      "site_views": 134331,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgH9Z_cgIRY/",
+      "source_published_at": 1795523512.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795546936.4024265,
+      "attempt_count": 2,
+      "is_short": true,
+      "originals_decision": "approved",
+      "ai_score": 6,
+      "category": "SHORTS",
+      "learning_factor": 1,
+      "verified_is_short": true
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795524210.0,
+      "discovered_at": 1795546936.4025195,
+      "url": "https://www.instagram.com/p/DgH-tspgA6B/",
+      "title": "میثاقی: آیا یک نفر بازرس در استقلال نیست؟",
+      "description": ".\n🎙میثاقی: آیا یک نفر بازرس در استقلال نیست؟\n\n💬یک نفر بازرسی در باشگاه استقلال نیست که بگوید اصلاً اندونگ کجاست\n\n💬 اندونگ در کنار اوبامیانگ هر دفعه به تیم ملی گابن دعوت می‌شوند\n\n💬 فکر می‌کنید قرارداد این بازیکن دست مدیر برنامه‌هایش نیست\n\n💬 این قرارداد ۲ میلیون دلاری را تا لحظه آخر از شما خواهد گرفت\n\n💬 نازون با مشکل قلبی با مبلغ یک میلیون و ششصد هزار دلار به استقلال آمد اما الان در تیم جدیدش قرارداد به مبلغ ۱۰۰ هزار دلار دارد\n\n💬 سهراب بختیاری‌زاده هم از همین مسائل ناراحت است",
+      "source_metadata": {
+        "alt": "Video by فوتبالی || footballiapp on November 24, 2026. May be a meme of one or more people, people playing cricket, stadium and text.",
+        "hashtags": [],
+        "ownerUsername": "footballiapp",
+        "ownerFullName": "فوتبالی || footballiapp",
+        "musicInfo": {
+          "artist_name": "footballiapp",
+          "song_name": "Original audio",
+          "uses_original_audio": true,
+          "should_mute_audio": false,
+          "should_mute_audio_reason": "",
+          "audio_id": "30018733137724538"
+        }
+      },
+      "mp4_url": "https://scontent-lhr6-2.cdninstagram.com/o1/v/t2/f2/m86/AQNYYWlw9YpkkUMzofEwFZvhCbwWoD5x6ji2muNx410-_uVEOgI0SOGenC5XWonX-39_qJYpLhZzR1CFQSY0kGbuSVYEDHhtidRRT8Q.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=scontent-lhr6-2.cdninstagram.com&_nc_ohc=AagC_j-YZx0Q7kNvwEXcDgf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg4ODA2Mjk1NTcwMTg1MiwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f470edf4a91d613b&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81MzFEMkQ5OEUzQzc0OEMzQTY2RDhGOTdBQUYzRkU1Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzgzN0E2ODU5NjhDNzREREU4NTA4NERBNUY1RjhCMDExX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACa4mc6c3cvaBhUCKAJDMywXQGYCHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=9xxkHevCIOsjfM-QgE1nQQ&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UjWBCNuD-bZsWDyNlpygz7_uB7Jccw6hHAnMv6kj8n5pHrCWIrihWnf2Puakvq5j5YsOxNbkKSK3OCue9wch4bR9gWjqtzJYXc4_jlr66WR-MaGKLBGY5gqDp1k&oh=00_AQRWes2_EYSxTgX0E9UkxnsW4-dXDz_DmSpnqWCOwZxjFA&oe=6B0A2DF1",
+      "poster_url": "https://scontent-lhr6-2.cdninstagram.com/v/t51.71878-15/928738430_1800852214524735_8239593400396984728_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNzQ3MTQxMDE2MTk3OTAwOTE4ODgwNjM5MzkwMzUwODc%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=ojiGQHnYHUkQ7kNvwEKEJwY&_nc_oc=Adrn8i861dg24hnsZzhTtRCDl03A8po_pO9FODz6arGA7P0JR13PicOyPErrnvE1ETI&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&_nc_gid=9D_pG7tf3fv6ebOPmOpQ9g&_nc_ss=70b8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQREhbVvzmYovFDjTSCouFnCqiroBUD6uxPYZD1DG50MyA&oe=6B0BC936",
+      "site_views": 398689,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgH-tspgA6B/",
+      "source_published_at": 1795524210.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795546936.4025223,
+      "attempt_count": 2,
+      "is_short": true,
+      "originals_decision": "awaiting_file_and_ai",
+      "download_failures": 1,
+      "next_media_attempt": 1795702842.0436132,
+      "ai_score": 6,
+      "category": "SHORTS",
+      "learning_factor": 1
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795468986.0,
+      "discovered_at": 1795485702.7274446,
+      "url": "https://www.instagram.com/p/DgGVYgZg_OZ/",
+      "title": "بیرانوند: چرا فقط کارهای منفی من را نشان می‌دهید؟",
+      "description": ".\nبیرانوند: چرا فقط کارهای منفی من را نشان می‌دهید؟ \nجوانان پیگیر شوند چگونه مرد سال آسیا شدم!",
+      "source_metadata": {
+        "alt": "Video by فوتبالی || footballiapp on November 23, 2026. May be a Twitter screenshot of one or more people, beard, poster and text.",
+        "hashtags": [],
+        "ownerUsername": "footballiapp",
+        "ownerFullName": "فوتبالی || footballiapp",
+        "musicInfo": {
+          "artist_name": "footballiapp",
+          "song_name": "Original audio",
+          "uses_original_audio": true,
+          "should_mute_audio": false,
+          "should_mute_audio_reason": "",
+          "audio_id": "30557922940462011"
+        }
+      },
+      "mp4_url": "https://scontent-man2-1.cdninstagram.com/o1/v/t2/f2/m86/AQPdRdLHdfVu29XMSLPP3Oku6tgzuU0rBRZyFZkrrwGyv00eCXj8Opa-5-5eBHQFKmpP8Bz135uetp490jQVCkSf5DvxZwO7Byo1Y2w.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_ohc=RK_wmhHsgr4Q7kNvwGpb-XI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4NTA4Nzk2Njg3MzAwNSwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=18183f374a65b14e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EQkRDQkU3OUE5Mjg0NzM3ODZBRTQ4MTEyNjdBQzE2Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzlGQzdFMTlFOUQ1QTQxREFCQkQ2RUQ5OEE1OUIwQ0I5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbalvzD3e71BBUCKAJDMywXQFcCHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=Wkba3d3P2H8C63OJrTcIXg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UgVBoCnbO-l1iV-RkZ1wUbg9_kJ0Mmj85AlLKsmwveY35tgdtpzlEM95LYMDG7rB5eJ_2MSGlYhXAIa04-VqOYpWWWK4Tj0H5OvpRD1ufC_WHFPaybfPDvkEZIc&oh=00_AQQCvf2c1f7yEJuXXelQrG0alxKDcxqyUBqGjZ---w3gHg&oe=6B0A1AF3",
+      "poster_url": "https://scontent-ams2-1.cdninstagram.com/v/t51.71878-15/921125514_1487578500009331_463659205659050547_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNzAwODE1OTAxNjIxOTU0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=dBRrp2MI5S8Q7kNvwE1Nj61&_nc_oc=Adp2FJlqNHPr4tBdO2GkA6IQVbpxKMZBGk6pZZgYM_w7jd8VZC6TQ4Yjw4xLbdo3tYBiot8HLoPsBppA9NKLC8wx&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=Qre3j9WsFrNg2giV-0HScw&_nc_ss=70789&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQRm4p7iBELOSG4EbbV3tXvt5Z6X6TfJJBlPnywhTV27tA&oe=6B0AA70B",
+      "site_views": 67390,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgGVYgZg_OZ/",
+      "source_published_at": 1795468986.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795485702.7274492,
+      "attempt_count": 2,
+      "is_short": true,
+      "originals_decision": "awaiting_file_and_ai",
+      "download_failures": 1,
+      "next_media_attempt": 1795702840.3067906,
+      "ai_score": 6,
+      "category": "SHORTS",
+      "learning_factor": 1
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795472130.0,
+      "discovered_at": 1795485702.7274652,
+      "url": "https://www.instagram.com/p/DgGbZjjA-ZH/",
+      "title": "بیرانوند: اگر از پرسپولیسی‌ها تشکر نمی‌کردم، به آن‌ها خیانت کرده بودم!",
+      "description": ".\nبیرانوند: اگر از پرسپولیسی‌ها تشکر نمی‌کردم، به آن‌ها خیانت کرده بودم!",
+      "source_metadata": {
+        "alt": "Video by فوتبالی || footballiapp on November 23, 2026. May be an image of newsroom and text.",
+        "hashtags": [],
+        "ownerUsername": "footballiapp",
+        "ownerFullName": "فوتبالی || footballiapp",
+        "musicInfo": {
+          "artist_name": "footballiapp",
+          "song_name": "Original audio",
+          "uses_original_audio": true,
+          "should_mute_audio": false,
+          "should_mute_audio_reason": "",
+          "audio_id": "29206871182296232"
+        }
+      },
+      "mp4_url": "https://instagram.fbhx4-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPUPpcowOqQVMokdbSBUbf2bBdfCQeFWS4RvvIcyNW66o9-NtnS4h_Z2s8SD8r4m2czoSgCQbptPUpcxCt8NZwMfJikbgGpCd4X2i8.mp4?_nc_cat=109&_nc_oc=Adqtllkimy9KngE4ciK3mvJccc3E0SID7UYvMSF9rbT1H2GD_6ED6jlscrbv7lhk5QCk-SYWbq24HZycVGD8JXY9&_nc_sid=5e9851&_nc_ht=instagram.fbhx4-1.fna.fbcdn.net&_nc_ohc=fqdTU6jlebEQ7kNvwGGd2uF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTE2MjE1MzA5NjMzNDY4MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=e3c6f585428cddba&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83QjhCNDdGMDY0NkE0NDZFQjdERjYwMUQ1OEMwMDk4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg1OTk1N0Y5MjQ0QjQ2OTNBQkQyNzZCMzQxREY2RDFEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACawtdqnm76QBBUCKAJDMywXQFugAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=owFUDdbWaNGeDCgP0rMIfg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UnvvtF1jxKEdfNZ5vh90ZtKEsf1dfu5c33wlFiqdr1223_m3j4Q28QNDc0xnDUAnv_VAyLxeOP8e_uAoFoSKRGQbSbSCnoB-145c5TAbqmfwoEAkyvdvyV1Uin4&oh=00_AQSvu95b--q8Io4gwvQlfxqjP9ZC-4zlzixkj2BtuKuARw&oe=6B0A0C0A",
+      "poster_url": "https://scontent-lhr11-1.cdninstagram.com/v/t51.71878-15/920249889_1126213610405613_4329849111628755706_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNzAzNDYxOTM5NTM2ODUxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=EIQLTm-MjP8Q7kNvwFmeEAB&_nc_oc=AdpSOsYAidjHw-yVdrcC-MVzLGeNqiLY87uyWzdfp6CQIeYLEowhaTv4-N7XJ2fB4l08NSTNdy9GAWIaw22u0JKr&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_gid=XV9hWgdbk7H9CkwlBdbkew&_nc_ss=70b8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQSVZ7yYynCZv4M4cZCuAYjJmxfATZW4M5xGA5aPaRjr0w&oe=6B0ACACB",
+      "site_views": 55789,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgGbZjjA-ZH/",
+      "source_published_at": 1795472130.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795485702.727467,
+      "attempt_count": 2,
+      "is_short": true,
+      "originals_decision": "awaiting_file_and_ai",
+      "download_failures": 1,
+      "next_media_attempt": 1795702840.6832247,
+      "ai_score": 6,
+      "category": "SHORTS",
+      "learning_factor": 1
+    },
+    {
+      "video_id": 0,
+      "published_at": 1795467912.0,
+      "discovered_at": 1795485702.727509,
+      "url": "https://www.instagram.com/p/DgGTValgLT0/",
+      "title": "گاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا",
+      "description": ".\nگاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا",
+      "source_metadata": {
+        "alt": "Video by فوتبالی || footballiapp on November 23, 2026. May be an image of one or more people, beard, pie and text.",
+        "hashtags": [],
+        "ownerUsername": "footballiapp",
+        "ownerFullName": "فوتبالی || footballiapp",
+        "musicInfo": {
+          "artist_name": "footballiapp",
+          "song_name": "Original audio",
+          "uses_original_audio": true,
+          "should_mute_audio": false,
+          "should_mute_audio_reason": "",
+          "audio_id": "29834841806101913"
+        }
+      },
+      "mp4_url": "https://instagram.fbhx4-2.fna.fbcdn.net/o1/v/t2/f2/m86/AQN5RX63Hiql4NzpJSuoUIt2aP1MTZRIjVFxe7lCn6CIRMnMABKCYUzX2-YNPNitEO8211XsPeHHLR16hWKK03XwmiLzbWz7TQ99tzo.mp4?_nc_cat=108&_nc_oc=Adoz98agMmqpAng8NIW1JnJcV05yFETAXXTnRMO2xBYfN-Nz2F57UZk0diP-PNmyIgs&_nc_sid=5e9851&_nc_ht=instagram.fbhx4-2.fna.fbcdn.net&_nc_ohc=ckbw7f2EZl8Q7kNvwEP-LvQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg1Njg1OTE5MTkxNjI3MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=bba6bbfd751922e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83RTgzNkRDNTM4RTc0RDg1Qjg4QjAyNzgwM0FENjQ4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FGQzJBNzAwMjMyQzQwRTM5QjQ1RUY4RUM0Njg3NEY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbc28GIt7PMBhUCKAJDMywXQFeRBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=RvmadKAe0cQ786tFnuo2mg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UhgbG6xn1EbzisXizx97o95wF56lACDk1OrmaFZi6rIxhVbbL2xKZ16Hc7aQRyHHGmOg3YIYQkT6tRenlqUrbVSKlthKsHzCpXJDq_j4QAIuikew_73FdznqjGk&oh=00_AQTB4FlSRLZFmO45CxuacceUUEjwbDnzCMxP4cmQtcQRHQ&oe=6B0A0DF1",
+      "poster_url": "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.71878-15/928442051_1189030623684849_8818234729405418092_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNjk5OTE1MDUyMzQzMDEzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=loiRVreNvYIQ7kNvwGexADd&_nc_oc=AdryQEKyA3zwRECABR-xTzZWySKGxGvq0AEragYDLv0nUhJZbGi_OfSaDCByaldHL04&_nc_zt=23&_nc_ht=instagram.fpoz5-1.fna&_nc_gid=pKyLwSOV97pS2IAzfd6-ag&_nc_ss=70689&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQRv6yfGHihiFzdmWOUNAIrLj3eau8TxkO8WxbcOH2UDFQ&oe=6B0AC4E5",
+      "site_views": 152770,
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgGTValgLT0/",
+      "source_published_at": 1795467912.0,
+      "rights_status": "internal_authorized",
+      "content_type": "instagram_reel",
+      "discovery_timestamp": 1795485702.72751,
+      "attempt_count": 2,
+      "is_short": true,
+      "originals_decision": "awaiting_file_and_ai",
+      "download_failures": 1,
+      "next_media_attempt": 1795702841.1370344,
+      "ai_score": 6,
+      "category": "SHORTS",
+      "learning_factor": 1
+    }
+  ],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -1824,7 +2019,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077675,
+  "max_seen_video_id": 1077681,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -20118,8 +20313,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T18:04:23.363996+03:30",
-    "new_web_candidates": 1,
+    "finished_at": "2026-11-26T15:01:39.441331+00:00",
+    "new_web_candidates": 12,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -20139,24 +20334,6 @@
     "learning": {
       "revision": "8c60097012372b59",
       "changes": []
-    },
-    "telegram_proposals": {
-      "sent": 5,
-      "trusted_staged": 0,
-      "waiting_by_reason": {
-        "editorial_approval_missing": 9,
-        "telegram_rejected": 1,
-        "quality_or_format_rejected": 3,
-        "missing_audio": 1
-      }
-    },
-    "queue_size": 0,
-    "daily_uploads": {
-      "main": 1,
-      "short": 1,
-      "priority_summaries": 0,
-      "priority_editorial": 0,
-      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795701984.964609,
@@ -22256,6 +22433,8 @@
   },
   "last_successful_run_slot": 997613,
   "footballi_recent_publications": {
+    "1077681": 1795705290.640855,
+    "1077678": 1795705290.640855,
     "1077675": 1795702127.0097833,
     "1077666": 1795701616.4287426,
     "1077663": 1795701616.4287426,
@@ -22353,9 +22532,7 @@
     "1077374": 1795591879.8765037,
     "1077372": 1795591879.8765037,
     "1077366": 1795590075.4984868,
-    "1077363": 1795590075.4984868,
-    "1077361": 1795590075.4984868,
-    "1077360": 1795588273.8967073
+    "1077363": 1795590075.4984868
   },
   "live_fixtures": {
     "fixtures": [
@@ -22365,18 +22542,70 @@
         "away_team": "مس شهر بابک",
         "competition": "لیگ برتر خلیج فارس",
         "kickoff_at": "2026-11-26T19:45:00+03:30",
-        "status": "scheduled",
+        "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-26T18:00:56.091410+03:30",
+        "fetched_at": "2026-11-26T18:31:03.707726+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-26T18:00:56.091410+03:30",
+    "fetched_at": "2026-11-26T18:31:03.707726+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077662,
+      "published_at": null,
+      "discovered_at": 1795705293.83885,
+      "url": "https://footballi.net/video/1077662/%D8%AA%D8%B4%D9%88%DB%8C%D9%82-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%DA%AF%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B3%D9%86%D8%AF-%D8%AA%D9%88%D8%B3%D8%B7-%D8%AA%D9%85%D8%A7%D8%B4%D8%A7%DA%AF%D8%B1%D8%A7%D9%86-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C",
+      "title": "تشویق بازیکنان گیتی پسند توسط تماشاگران اصفهانی در پایان بازی",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | فوتسال,گیتی پسند,دائم پناه مشهد",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-27e79dc9-8ac8-4db7-96dc-e109ad7e1332.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-184d1631-87d0-4d43-8a94-7f967b520c0a.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/dWVG78JtzVKaYKpMuQMzPCGQbWArgdKT4c6E44pV.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077662/%D8%AA%D8%B4%D9%88%DB%8C%D9%82-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%DA%AF%DB%8C%D8%AA%DB%8C-%D9%BE%D8%B3%D9%86%D8%AF-%D8%AA%D9%88%D8%B3%D8%B7-%D8%AA%D9%85%D8%A7%D8%B4%D8%A7%DA%AF%D8%B1%D8%A7%D9%86-%D8%A7%D8%B5%D9%81%D9%87%D8%A7%D9%86%DB%8C-%D8%AF%D8%B1-%D9%BE%D8%A7%DB%8C%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795699865.866497,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795705293.8388886,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1077606,
+      "published_at": null,
+      "discovered_at": 1795705299.4412706,
+      "url": "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
+      "title": "تمرینات آلومینیوم اراک پیش از بازی با پرسپولیس",
+      "description": "بازیکنان آلومینیوم اراک تمرینات خود را برای آماده‌سازی پیش از دیدار حساس مقابل پرسپولیس دنبال کردند. شاگردان پیروز قربانی در این جلسات تمرینی، برنامه‌های تاکتیکی و آمادگی جسمانی خود را مرور کردند تا با آمادگی مناسب به مصاف سرخ‌پوشان پایتخت بروند. این مسابقه از دیدارهای مهم آلومینیوم در ادامه رقابت‌های لیگ برتر محسوب می‌شود.منبع: رسانه رسمی باشگاه آلومینیوم اراک",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-4b8657c2-32cb-4a67-b5df-8121964418da.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-184d1631-87d0-4d43-8a94-7f967b520c0a.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/T6HKMU192WmGCwM4XBOxgFxNf7veoljapiwxYNLw.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
+      "source_published_at": null,
+      "source_first_seen_at": 1795678293.9086132,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795705299.4413006,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "editorial_approval_missing"
+    },
     {
       "video_id": 0,
       "published_at": 1795607246.0,
@@ -22411,186 +22640,6 @@
       "is_short": true,
       "originals_decision": "editorial_approval_missing",
       "telegram_screening": "missing_audio"
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795523512.0,
-      "discovered_at": 1795546936.4024205,
-      "url": "https://www.instagram.com/p/DgH9Z_cgIRY/",
-      "title": "فاجعه مدیریتی استقلال در پرونده کوجو!",
-      "description": ".\n📌فاجعه مدیریتی استقلال در پرونده کوجو!",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 24, 2026. May be an image of football and text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "29845300841824175"
-        }
-      },
-      "mp4_url": "https://instagram.flcg2-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQMozCd28sq7_aLImW1-ePJZsUZY9HZapiCj4A5h35OsJuT2VLsYj51I4xzajWbFKZ1ldvKtV_2aNMRqXZS1uBjjMJ6a3YErqrb9CCU.mp4?_nc_cat=106&_nc_oc=AdqCj706_Scr0mOSm5gDyEAfXCvv01EeD-PX20lq3VR0ivUmAfTomD_FSjuXU2NWBQ8&_nc_sid=5e9851&_nc_ht=instagram.flcg2-1.fna.fbcdn.net&_nc_ohc=6aNjpFm9zaAQ7kNvwEjfqkm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6OTgzNjg4ODM3NzIxMTg4LCJhc3NldF9hZ2VfZGF5cyI6MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE0NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=94363e4c859c50ad&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zQTcwOEQ1NjA0NDI0MUY2OUQyMTAyRDU1RUYwQ0IyNl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzc0Q0U1NTdDRTVFNzQwMzU4RENFMDAwMEVDRThGNEJBX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbIse_7nKq_AxUCKAJDMywXQGISHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=NuY3t-mXgnWeCnadeK_LVA&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQ0MtwsLqRozEd3MkVayzIvv08mkInloqL88TatCIv_4Q&oe=6B0A24AF",
-      "poster_url": "https://scontent-nrt6-1.cdninstagram.com/v/t51.71878-15/921751756_2066619207384909_4135406117896970703_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNzQ2NTY1NzkwODk1NDIwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=vRC8HKs05tcQ7kNvwG--r7n&_nc_oc=AdoHUXFAGVqpV91qMfAzh27lxI3f4nclwGgcxNCjBZaosPzGQhAXxSyTGOgazx1f1iRDRR4FVuRIodoYjmhD0IKB&_nc_zt=23&_nc_ht=scontent-nrt6-1.cdninstagram.com&_nc_gid=tFU_d-LrlYC7EGwAVY9YNA&_nc_ss=70789&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQTRIIie5zu42hdF8UT8WfRBC-KG2ebDrvvAsstwi01P5g&oe=6B0B9FB5",
-      "site_views": 134331,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgH9Z_cgIRY/",
-      "source_published_at": 1795523512.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795546936.4024265,
-      "attempt_count": 1,
-      "is_short": true,
-      "originals_decision": "editorial_approval_missing",
-      "download_failures": 1,
-      "next_media_attempt": 1795702841.6678672
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795524210.0,
-      "discovered_at": 1795546936.4025195,
-      "url": "https://www.instagram.com/p/DgH-tspgA6B/",
-      "title": "میثاقی: آیا یک نفر بازرس در استقلال نیست؟",
-      "description": ".\n🎙میثاقی: آیا یک نفر بازرس در استقلال نیست؟\n\n💬یک نفر بازرسی در باشگاه استقلال نیست که بگوید اصلاً اندونگ کجاست\n\n💬 اندونگ در کنار اوبامیانگ هر دفعه به تیم ملی گابن دعوت می‌شوند\n\n💬 فکر می‌کنید قرارداد این بازیکن دست مدیر برنامه‌هایش نیست\n\n💬 این قرارداد ۲ میلیون دلاری را تا لحظه آخر از شما خواهد گرفت\n\n💬 نازون با مشکل قلبی با مبلغ یک میلیون و ششصد هزار دلار به استقلال آمد اما الان در تیم جدیدش قرارداد به مبلغ ۱۰۰ هزار دلار دارد\n\n💬 سهراب بختیاری‌زاده هم از همین مسائل ناراحت است",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 24, 2026. May be a meme of one or more people, people playing cricket, stadium and text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "30018733137724538"
-        }
-      },
-      "mp4_url": "https://scontent-lhr6-2.cdninstagram.com/o1/v/t2/f2/m86/AQNYYWlw9YpkkUMzofEwFZvhCbwWoD5x6ji2muNx410-_uVEOgI0SOGenC5XWonX-39_qJYpLhZzR1CFQSY0kGbuSVYEDHhtidRRT8Q.mp4?_nc_cat=108&_nc_sid=5e9851&_nc_ht=scontent-lhr6-2.cdninstagram.com&_nc_ohc=AagC_j-YZx0Q7kNvwEXcDgf&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg4ODA2Mjk1NTcwMTg1MiwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNzYsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=f470edf4a91d613b&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81MzFEMkQ5OEUzQzc0OEMzQTY2RDhGOTdBQUYzRkU1Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzgzN0E2ODU5NjhDNzREREU4NTA4NERBNUY1RjhCMDExX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACa4mc6c3cvaBhUCKAJDMywXQGYCHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=9xxkHevCIOsjfM-QgE1nQQ&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UjWBCNuD-bZsWDyNlpygz7_uB7Jccw6hHAnMv6kj8n5pHrCWIrihWnf2Puakvq5j5YsOxNbkKSK3OCue9wch4bR9gWjqtzJYXc4_jlr66WR-MaGKLBGY5gqDp1k&oh=00_AQRWes2_EYSxTgX0E9UkxnsW4-dXDz_DmSpnqWCOwZxjFA&oe=6B0A2DF1",
-      "poster_url": "https://scontent-lhr6-2.cdninstagram.com/v/t51.71878-15/928738430_1800852214524735_8239593400396984728_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNzQ3MTQxMDE2MTk3OTAwOTE4ODgwNjM5MzkwMzUwODc%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=ojiGQHnYHUkQ7kNvwEKEJwY&_nc_oc=Adrn8i861dg24hnsZzhTtRCDl03A8po_pO9FODz6arGA7P0JR13PicOyPErrnvE1ETI&_nc_zt=23&_nc_ht=scontent-lhr6-2.cdninstagram.com&_nc_gid=9D_pG7tf3fv6ebOPmOpQ9g&_nc_ss=70b8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQREhbVvzmYovFDjTSCouFnCqiroBUD6uxPYZD1DG50MyA&oe=6B0BC936",
-      "site_views": 398689,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgH-tspgA6B/",
-      "source_published_at": 1795524210.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795546936.4025223,
-      "attempt_count": 1,
-      "is_short": true,
-      "originals_decision": "editorial_approval_missing",
-      "download_failures": 1,
-      "next_media_attempt": 1795702842.0436132
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795468986.0,
-      "discovered_at": 1795485702.7274446,
-      "url": "https://www.instagram.com/p/DgGVYgZg_OZ/",
-      "title": "بیرانوند: چرا فقط کارهای منفی من را نشان می‌دهید؟",
-      "description": ".\nبیرانوند: چرا فقط کارهای منفی من را نشان می‌دهید؟ \nجوانان پیگیر شوند چگونه مرد سال آسیا شدم!",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 23, 2026. May be a Twitter screenshot of one or more people, beard, poster and text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "30557922940462011"
-        }
-      },
-      "mp4_url": "https://scontent-man2-1.cdninstagram.com/o1/v/t2/f2/m86/AQPdRdLHdfVu29XMSLPP3Oku6tgzuU0rBRZyFZkrrwGyv00eCXj8Opa-5-5eBHQFKmpP8Bz135uetp490jQVCkSf5DvxZwO7Byo1Y2w.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-man2-1.cdninstagram.com&_nc_ohc=RK_wmhHsgr4Q7kNvwGpb-XI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM4NTA4Nzk2Njg3MzAwNSwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5MiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=18183f374a65b14e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EQkRDQkU3OUE5Mjg0NzM3ODZBRTQ4MTEyNjdBQzE2Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzlGQzdFMTlFOUQ1QTQxREFCQkQ2RUQ5OEE1OUIwQ0I5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbalvzD3e71BBUCKAJDMywXQFcCHKwIMScYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=Wkba3d3P2H8C63OJrTcIXg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UgVBoCnbO-l1iV-RkZ1wUbg9_kJ0Mmj85AlLKsmwveY35tgdtpzlEM95LYMDG7rB5eJ_2MSGlYhXAIa04-VqOYpWWWK4Tj0H5OvpRD1ufC_WHFPaybfPDvkEZIc&oh=00_AQQCvf2c1f7yEJuXXelQrG0alxKDcxqyUBqGjZ---w3gHg&oe=6B0A1AF3",
-      "poster_url": "https://scontent-ams2-1.cdninstagram.com/v/t51.71878-15/921125514_1487578500009331_463659205659050547_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNzAwODE1OTAxNjIxOTU0NQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=dBRrp2MI5S8Q7kNvwE1Nj61&_nc_oc=Adp2FJlqNHPr4tBdO2GkA6IQVbpxKMZBGk6pZZgYM_w7jd8VZC6TQ4Yjw4xLbdo3tYBiot8HLoPsBppA9NKLC8wx&_nc_zt=23&_nc_ht=scontent-ams2-1.cdninstagram.com&_nc_gid=Qre3j9WsFrNg2giV-0HScw&_nc_ss=70789&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQRm4p7iBELOSG4EbbV3tXvt5Z6X6TfJJBlPnywhTV27tA&oe=6B0AA70B",
-      "site_views": 67390,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgGVYgZg_OZ/",
-      "source_published_at": 1795468986.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795485702.7274492,
-      "attempt_count": 1,
-      "is_short": true,
-      "originals_decision": "editorial_approval_missing",
-      "download_failures": 1,
-      "next_media_attempt": 1795702840.3067906
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795472130.0,
-      "discovered_at": 1795485702.7274652,
-      "url": "https://www.instagram.com/p/DgGbZjjA-ZH/",
-      "title": "بیرانوند: اگر از پرسپولیسی‌ها تشکر نمی‌کردم، به آن‌ها خیانت کرده بودم!",
-      "description": ".\nبیرانوند: اگر از پرسپولیسی‌ها تشکر نمی‌کردم، به آن‌ها خیانت کرده بودم!",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 23, 2026. May be an image of newsroom and text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "29206871182296232"
-        }
-      },
-      "mp4_url": "https://instagram.fbhx4-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPUPpcowOqQVMokdbSBUbf2bBdfCQeFWS4RvvIcyNW66o9-NtnS4h_Z2s8SD8r4m2czoSgCQbptPUpcxCt8NZwMfJikbgGpCd4X2i8.mp4?_nc_cat=109&_nc_oc=Adqtllkimy9KngE4ciK3mvJccc3E0SID7UYvMSF9rbT1H2GD_6ED6jlscrbv7lhk5QCk-SYWbq24HZycVGD8JXY9&_nc_sid=5e9851&_nc_ht=instagram.fbhx4-1.fna.fbcdn.net&_nc_ohc=fqdTU6jlebEQ7kNvwGGd2uF&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTE2MjE1MzA5NjMzNDY4MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=e3c6f585428cddba&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83QjhCNDdGMDY0NkE0NDZFQjdERjYwMUQ1OEMwMDk4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg1OTk1N0Y5MjQ0QjQ2OTNBQkQyNzZCMzQxREY2RDFEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACawtdqnm76QBBUCKAJDMywXQFugAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=owFUDdbWaNGeDCgP0rMIfg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UnvvtF1jxKEdfNZ5vh90ZtKEsf1dfu5c33wlFiqdr1223_m3j4Q28QNDc0xnDUAnv_VAyLxeOP8e_uAoFoSKRGQbSbSCnoB-145c5TAbqmfwoEAkyvdvyV1Uin4&oh=00_AQSvu95b--q8Io4gwvQlfxqjP9ZC-4zlzixkj2BtuKuARw&oe=6B0A0C0A",
-      "poster_url": "https://scontent-lhr11-1.cdninstagram.com/v/t51.71878-15/920249889_1126213610405613_4329849111628755706_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=100&_nc_map=urlgen_bucketless&ig_cache_key=NDAzNzAzNDYxOTM5NTM2ODUxOQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=EIQLTm-MjP8Q7kNvwFmeEAB&_nc_oc=AdpSOsYAidjHw-yVdrcC-MVzLGeNqiLY87uyWzdfp6CQIeYLEowhaTv4-N7XJ2fB4l08NSTNdy9GAWIaw22u0JKr&_nc_zt=23&_nc_ht=scontent-lhr11-1.cdninstagram.com&_nc_gid=XV9hWgdbk7H9CkwlBdbkew&_nc_ss=70b8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQSVZ7yYynCZv4M4cZCuAYjJmxfATZW4M5xGA5aPaRjr0w&oe=6B0ACACB",
-      "site_views": 55789,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgGbZjjA-ZH/",
-      "source_published_at": 1795472130.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795485702.727467,
-      "attempt_count": 1,
-      "is_short": true,
-      "originals_decision": "editorial_approval_missing",
-      "download_failures": 1,
-      "next_media_attempt": 1795702840.6832247
-    },
-    {
-      "video_id": 0,
-      "published_at": 1795467912.0,
-      "discovered_at": 1795485702.727509,
-      "url": "https://www.instagram.com/p/DgGTValgLT0/",
-      "title": "گاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا",
-      "description": ".\nگاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 23, 2026. May be an image of one or more people, beard, pie and text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "29834841806101913"
-        }
-      },
-      "mp4_url": "https://instagram.fbhx4-2.fna.fbcdn.net/o1/v/t2/f2/m86/AQN5RX63Hiql4NzpJSuoUIt2aP1MTZRIjVFxe7lCn6CIRMnMABKCYUzX2-YNPNitEO8211XsPeHHLR16hWKK03XwmiLzbWz7TQ99tzo.mp4?_nc_cat=108&_nc_oc=Adoz98agMmqpAng8NIW1JnJcV05yFETAXXTnRMO2xBYfN-Nz2F57UZk0diP-PNmyIgs&_nc_sid=5e9851&_nc_ht=instagram.fbhx4-2.fna.fbcdn.net&_nc_ohc=ckbw7f2EZl8Q7kNvwEP-LvQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg1Njg1OTE5MTkxNjI3MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=bba6bbfd751922e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83RTgzNkRDNTM4RTc0RDg1Qjg4QjAyNzgwM0FENjQ4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FGQzJBNzAwMjMyQzQwRTM5QjQ1RUY4RUM0Njg3NEY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbc28GIt7PMBhUCKAJDMywXQFeRBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=RvmadKAe0cQ786tFnuo2mg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UhgbG6xn1EbzisXizx97o95wF56lACDk1OrmaFZi6rIxhVbbL2xKZ16Hc7aQRyHHGmOg3YIYQkT6tRenlqUrbVSKlthKsHzCpXJDq_j4QAIuikew_73FdznqjGk&oh=00_AQTB4FlSRLZFmO45CxuacceUUEjwbDnzCMxP4cmQtcQRHQ&oe=6B0A0DF1",
-      "poster_url": "https://instagram.fpoz5-1.fna.fbcdn.net/v/t51.71878-15/928442051_1189030623684849_8818234729405418092_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzNjk5OTE1MDUyMzQzMDEzMg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=loiRVreNvYIQ7kNvwGexADd&_nc_oc=AdryQEKyA3zwRECABR-xTzZWySKGxGvq0AEragYDLv0nUhJZbGi_OfSaDCByaldHL04&_nc_zt=23&_nc_ht=instagram.fpoz5-1.fna&_nc_gid=pKyLwSOV97pS2IAzfd6-ag&_nc_ss=70689&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQRv6yfGHihiFzdmWOUNAIrLj3eau8TxkO8WxbcOH2UDFQ&oe=6B0AC4E5",
-      "site_views": 152770,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgGTValgLT0/",
-      "source_published_at": 1795467912.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795485702.72751,
-      "attempt_count": 1,
-      "is_short": true,
-      "originals_decision": "editorial_approval_missing",
-      "download_failures": 1,
-      "next_media_attempt": 1795702841.1370344
     },
     {
       "video_id": 1076387,
@@ -22945,7 +22994,7 @@
         "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
       },
       "instagram:DgH9Z_cgIRY": {
-        "status": "approved",
+        "status": "upload_uncertain",
         "preview": false,
         "button_id": "b5e0847599c3df11e136b266186ab869",
         "generation": 1,
@@ -22961,8 +23010,8 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-        "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       },
       "instagram:DgH-tspgA6B": {
         "status": "approved",
@@ -22993,13 +23042,7 @@
       "DEF85DFE9AFD",
       "667CA731F05D"
     ],
-    "receipts": {
-      "31": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-      "32": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-      "33": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-      "34": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-      "35": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
-    },
+    "receipts": {},
     "link_requests": {},
     "keyboard_waiting": 5
   },
@@ -23375,7 +23418,17 @@
     "footballi:1076429": "excluded_content",
     "footballi:1076263": "excluded_programme",
     "footballi:1076172": "excluded_programme",
-    "footballi:1077641": "excluded_content"
+    "footballi:1077641": "excluded_content",
+    "footballi:1077681": "excluded_content",
+    "footballi:1077678": "excluded_content",
+    "footballi:1077675": "excluded_content",
+    "footballi:1077666": "excluded_content",
+    "footballi:1077663": "excluded_content",
+    "footballi:1077658": "excluded_content",
+    "footballi:1077638": "excluded_content",
+    "footballi:1077631": "excluded_content",
+    "footballi:1077627": "excluded_content",
+    "footballi:1077610": "excluded_content"
   },
   "editorial_review_migration": 1
 }
