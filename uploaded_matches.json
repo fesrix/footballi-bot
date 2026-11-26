@@ -20293,7 +20293,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T15:01:39.441331+00:00",
+    "finished_at": "2026-11-26T18:34:54.606592+03:30",
     "new_web_candidates": 12,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -20320,6 +20320,24 @@
     },
     "publication_routes": {
       "telegram_review": 5
+    },
+    "telegram_proposals": {
+      "sent": 1,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 1,
+        "editorial_approval_missing": 5,
+        "quality_or_format_rejected": 4,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 6,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795705464.351817,
@@ -22397,7 +22415,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 85,
+      "read": 90,
       "write": 0
     },
     "last_run": {
@@ -22411,13 +22429,13 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 85,
+      "read_units": 90,
       "write_units": 0
     },
-    "scan_phase": 2,
+    "scan_phase": 0,
     "archive_token": null
   },
-  "last_successful_run_slot": 997613,
+  "last_successful_run_slot": 997614,
   "footballi_recent_publications": {
     "1077681": 1795705290.640855,
     "1077678": 1795705290.640855,
@@ -23027,20 +23045,17 @@
         "generation": 1,
         "sha256": "d568f95c53f8f5608c45f9d06e293e4a03b6bccfed8d544205a8a48435d80cad",
         "evidence": "حواشی قبل یا بعد بازی\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.",
-        "card": "پیشنهاد انتشار\nتمرینات آلومینیوم اراک پیش از بازی با پرسپولیس\nhttps://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nشورت | 45 ثانیه | 1080×1920\nدلیل پیشنهاد: حواشی قبل یا بعد بازی\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nتمرینات آلومینیوم اراک پیش از بازی با پرسپولیس\nhttps://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nشورت | 45 ثانیه | 1080×1920\nدلیل پیشنهاد: حواشی قبل یا بعد بازی\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 41
       }
     },
     "updated_at": 1795705259.7115655,
     "keyboard_codes": [
-      "35DA159BEAAF",
-      "B5E0847599C3",
-      "633B7A2CF9B8",
-      "DEF85DFE9AFD",
-      "667CA731F05D"
+      "1606B86EBBD4"
     ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 5
+    "keyboard_waiting": 1
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
