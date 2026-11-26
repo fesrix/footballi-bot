@@ -453,7 +453,8 @@
     "https://footballi.net/video/1076544/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%AD%D8%A7%D9%85%D8%AF-%D9%84%DA%A9%D8%8C-%D9%85%D8%AD%D8%B1%D9%88%D9%82%DB%8C-%D9%88-%D8%A7%DA%A9%D9%88%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86",
     "https://footballi.net/video/1076684/%D9%BE%D8%B4%D8%AA-%D8%AE%D8%B7-%D8%A7%D8%B2-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D9%86%D9%88%DB%8C%D8%AF%DA%A9%DB%8C%D8%A7-%D8%AA%D8%A7-%D8%AD%D8%A7%D8%B4%DB%8C%D9%87-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D9%88-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8",
     "https://www.instagram.com/p/DgBN0aBArt4/",
-    "https://www.instagram.com/p/DgJFV9IAP3l/"
+    "https://www.instagram.com/p/DgJFV9IAP3l/",
+    "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -655,7 +656,8 @@
     "مصاحبه بازیکنان فولاد پس از تساوی با سپاهان",
     "عملکرد نویدکیا، حاشیه‌های تارتار و استعفای سهراب در پشت خط",
     "پیروز قربانی: ارزش جایزه علیرضا بیرانوند بیشتر از طلای المپیک است",
-    "یاسر آسانی: زندگی من استقلال است"
+    "یاسر آسانی: زندگی من استقلال است",
+    "بررسی عملکرد تراکتور و استقلال در لیگ نخبگان آسیا"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -691,37 +693,7 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [
-    {
-      "video_id": 1077193,
-      "published_at": null,
-      "discovered_at": 1795702129.1178355,
-      "url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
-      "title": "ویدیو کست/ بررسی عملکرد ضعیف تراکتور و درخشش استقلال در آسیا",
-      "description": "در این قسمت از برنامه ویدیو کست با ناصر نامدار عضو تحریریه فوتبالی درباره شکست سنگین تراکتور مقابل الوصل و تساوی ارزشمند استقلال مقابل العین در لیگ نخبگان آسیا صحبت کردیم.",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-d82ddc30-5866-491c-b61f-c15ff53171c2.mp4",
-      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-184d1631-87d0-4d43-8a94-7f967b520c0a.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/uhekQEPLPOUycNBKnvKCyJsdKfuhFmqyRdIROgZb.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
-      "category": "VIDEOCAST",
-      "is_short": false,
-      "learning_factor": 1,
-      "originals_decision": "approved",
-      "ai_score": 6,
-      "source_published_at": null,
-      "rights_status": "",
-      "content_type": "video",
-      "discovery_timestamp": 1795702172.1735685,
-      "attempt_count": 1,
-      "verified_is_short": false
-    }
-  ],
+  "pending_queue": [],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -1164,13 +1136,14 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/21/tus-bc583da0-508e-4103-95fb-a5c6c63fdd32.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/22/tus-27455b4c-b20b-4c88-aa06-e7431ecbc2e6.mp4",
     "https://instagram.fper9-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQOOR1bcCEvx-OoQiNwN5-fJG7rW-fXOuL2I7n8ROKGHzIpFDg7tF5By5LuteKgXcoOJQAp5YfySji-F1EfOXEDcBnNCYQO99NxBB5s.mp4?_nc_cat=102&_nc_oc=Adom5mXwj-of8jmB06ppr-YkOj2wuBhLMxauWSTpiuOlx74JaARtcVRkGkd8cZaaAcA&_nc_sid=5e9851&_nc_ht=instagram.fper9-1.fna.fbcdn.net&_nc_ohc=l-ExUfEDjZMQ7kNvwHR8iE9&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTQzMTgwMjI5MjI3MTA1OSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo2MSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=f773db70299b128c&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yOUMwNzdGQkJDMjk0RDU0OThBQTBBOTQxOThDQkNGRV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzFCRTNFN0EyMUE0RDRCNkJBNzA1MDBBQUU5RjU5QTkyX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACam36ew7o2LBRUCKAJDMywXQE7u2RaHKwIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=QBeQ3O7hkpLeRn-Kh2mT_g&_nc_ss=70a8c&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQQ9ETwD73zyr_GBR1fkR1kOYlcBBnkKhV_cdj8_ZEu3pg&oe=6B047347",
-    "https://scontent-waw2-2.cdninstagram.com/o1/v/t2/f2/m86/AQPzhCuSxy0mbNOupGfv6Uc1WvwG6pnnT8cKjMKACNKQVVLyqGadZc5jVao501zcbtHGeAwbv0VwYAlXtwxj1BabqKrzOIfKk0CdHwY.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_ohc=IkjWxPm_SQ0Q7kNvwGcaKV_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MzEyNTA5NTEwMTE3MDU4MSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozNSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=33d30e7f2262ba17&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8wOEE2QjdENzE0NDg0REY0QUY0NkM4NDFENzhBOUFBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0M4Mjc4RDQ5NUNEQzQzNDg4ODEyQUJBNzNGMUMyMzI3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACaqjqj2vJCNCxUCKAJDMywXQEHu2RaHKwIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=g2OaIIs3TdvZkuz6TaGxhg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UhU81odf_bbqW3AdrIhYKTXEcUPdhhPioDTzpuL6KIJzStOoyvq-rFSHqQfHSdd3qTDvy_YOsisXghvfQVt1cbpo-6ulJbVSHQxEIP7AoChtq6QXlGoir2JN7qs&oh=00_AQQlqYOZtOq4m6gdof4Y5vVLa1fzPg2GjCo6l1TLSvOLJg&oe=6B084FAE"
+    "https://scontent-waw2-2.cdninstagram.com/o1/v/t2/f2/m86/AQPzhCuSxy0mbNOupGfv6Uc1WvwG6pnnT8cKjMKACNKQVVLyqGadZc5jVao501zcbtHGeAwbv0VwYAlXtwxj1BabqKrzOIfKk0CdHwY.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-waw2-2.cdninstagram.com&_nc_ohc=IkjWxPm_SQ0Q7kNvwGcaKV_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MzEyNTA5NTEwMTE3MDU4MSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozNSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=33d30e7f2262ba17&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8wOEE2QjdENzE0NDg0REY0QUY0NkM4NDFENzhBOUFBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0M4Mjc4RDQ5NUNEQzQzNDg4ODEyQUJBNzNGMUMyMzI3X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACaqjqj2vJCNCxUCKAJDMywXQEHu2RaHKwIYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=g2OaIIs3TdvZkuz6TaGxhg&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UhU81odf_bbqW3AdrIhYKTXEcUPdhhPioDTzpuL6KIJzStOoyvq-rFSHqQfHSdd3qTDvy_YOsisXghvfQVt1cbpo-6ulJbVSHQxEIP7AoChtq6QXlGoir2JN7qs&oh=00_AQQlqYOZtOq4m6gdof4Y5vVLa1fzPg2GjCo6l1TLSvOLJg&oe=6B084FAE",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-d82ddc30-5866-491c-b61f-c15ff53171c2.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-26",
-    "count": 1
+    "count": 2
   },
-  "last_upload_timestamp": 1795334425.900249,
+  "last_upload_timestamp": 1795702240.864569,
   "last_apify_check": 1795699892.8042696,
   "playlists": {
     "SUMMARY": "PLc20gneNt7W0",
@@ -1811,6 +1784,11 @@
       "ESTEGHLAL",
       "INTERVIEW",
       "SHORTS"
+    ],
+    "EKZhMdwca1s": [
+      "ESTEGHLAL",
+      "TRACTOR",
+      "VIDEOCAST"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2400,7 +2378,8 @@
     "مصاحبه حامد لک، محروقی و اکوان بازیکنان فولاد پس از تساوی با سپاهان",
     "پشت خط/ از عملکرد نویدکیا تا حاشیه های تارتار و استعفای سهراب!",
     "پیروز قربانی: ارزش جایزه علیرضا بیرانوند از طلای المپیک هم بیشتر است",
-    "یاسرآسانی: زندگی من استقلال است!"
+    "یاسرآسانی: زندگی من استقلال است!",
+    "ویدیو کست/ بررسی عملکرد ضعیف تراکتور و درخشش استقلال در آسیا"
   ],
   "analytics": {
     "videos": {
@@ -20093,17 +20072,44 @@
       "learning_revision": "8c60097012372b59",
       "topic": "استقلال",
       "source_title": "یاسرآسانی: زندگی من استقلال است!"
+    },
+    "EKZhMdwca1s": {
+      "title": "بررسی عملکرد تراکتور و استقلال در لیگ نخبگان آسیا",
+      "category": "VIDEOCAST",
+      "format": "main",
+      "priority_summary": false,
+      "priority_class": "",
+      "priority_reason": null,
+      "fixture_id": null,
+      "fixture_relation": null,
+      "priority_until": null,
+      "home_team": null,
+      "away_team": null,
+      "competition": null,
+      "kickoff_at": null,
+      "rights_audit": "approved",
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
+      "rights_status": "",
+      "originals_decision": "approved",
+      "publication_route": "manual_link",
+      "published_at": "2026-11-26T14:10:40.864537+00:00",
+      "title_style": "direct",
+      "title_experiment": false,
+      "learning_revision": "8c60097012372b59",
+      "topic": "استقلال",
+      "source_title": "ویدیو کست/ بررسی عملکرد ضعیف تراکتور و درخشش استقلال در آسیا"
     }
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T14:08:47.630183+00:00",
+    "finished_at": "2026-11-26T17:40:49.059307+03:30",
     "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
-      "main": 0,
+      "main": 1,
       "short": 0,
       "priority_summaries": 0,
       "priority_editorial": 0,
@@ -20117,7 +20123,37 @@
     },
     "learning": {
       "revision": "8c60097012372b59",
-      "changes": []
+      "changes": [],
+      "title_style": "direct",
+      "selected_factor": 1,
+      "published_tehran": "17:40"
+    },
+    "publication_routes": {
+      "manual_link": 1
+    },
+    "end_screen_video_ids": [
+      "EKZhMdwca1s"
+    ],
+    "telegram_proposals": {
+      "sent": 0,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "excluded_content": 331,
+        "editorial_approval_missing": 4,
+        "telegram_rejected": 1,
+        "excluded_programme": 64,
+        "quality_or_format_rejected": 3,
+        "ai_unconfirmed": 5,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 1,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795701984.964609,
@@ -22195,7 +22231,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 75,
+      "read": 80,
       "write": 0
     },
     "last_run": {
@@ -22209,10 +22245,10 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 75,
+      "read_units": 80,
       "write_units": 0
     },
-    "scan_phase": 0,
+    "scan_phase": 1,
     "archive_token": null
   },
   "last_successful_run_slot": 997612,
@@ -33132,7 +33168,7 @@
         "video_id": "_2c0PFSBBHg"
       },
       "footballi:1077193": {
-        "status": "upload_uncertain",
+        "status": "published",
         "preview": false,
         "button_id": "fd31f38a679eccd51027ee5962fca245",
         "generation": 1,
@@ -33148,8 +33184,8 @@
           "audio_rights_confirmed": true,
           "route": "manual_link"
         },
-        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
-        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
+        "result": "منتشر شد: https://www.youtube.com/watch?v=EKZhMdwca1s",
+        "video_id": "EKZhMdwca1s"
       }
     },
     "updated_at": 1795702105.5392976,
