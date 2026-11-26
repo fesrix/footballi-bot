@@ -36,11 +36,39 @@ class OriginalsPolicyTests(unittest.TestCase):
         policy.repartition_queue(state)
         self.assertEqual(state["pending_queue"], [])
         self.assertEqual([x["originals_decision"] for x in state["originals_waiting"]],
-                         ["excluded_content", "editorial_approval_missing"])
+                         ["editorial_approval_missing"])
+        self.assertEqual(state["originals_exclusions"], {"footballi:1076500": "excluded_content"})
         self.assertEqual(state["published_metadata"], {"history": {}})
         with patch.object(policy, "load_approvals", return_value={"footballi:1076501": self.record}):
             policy.repartition_queue(state)
         self.assertEqual(state["pending_queue"], [repost])
+
+    def test_archived_id_skips_reclassification_and_can_be_requested_directly(self):
+        excluded = {**self.item, "title": "خلاصه بازی پرسپولیس"}
+        key = policy.source_key(excluded["url"])
+        state = {"pending_queue": [], "originals_waiting": [excluded]}
+        policy.repartition_queue(state, approvals={})
+        self.assertEqual(state["originals_waiting"], [])
+        rediscovered = {**excluded, "url": "https://www.footballi.net/video/1076500/other-slug"}
+        with patch.object(policy, "admission", wraps=policy.admission) as admission:
+            policy.repartition_queue(state, [rediscovered], approvals={})
+        admission.assert_not_called()
+        manual = {**self.record, "route": "manual_link"}
+        policy.repartition_queue(state, [rediscovered], approvals={key: manual})
+        self.assertEqual(state["pending_queue"], [rediscovered])
+        state["telegram_review"] = {"items": {key: {"status": "file_changed", "request_message_id": 1}}}
+        policy.repartition_queue(state, approvals={})
+        self.assertEqual(state["originals_waiting"], [rediscovered])
+
+    def test_crawler_does_not_fetch_archived_page_in_originals_mode(self):
+        archived = "https://www.footballi.net/video/1076500/other-slug"
+        new = "https://footballi.net/video/1076501"
+        state = {"originals_exclusions": {"footballi:1076500": "excluded_content"}}
+        with patch.object(uploader.scrapers, "browser_discover_links", return_value=[archived, new]), \
+             patch.object(uploader.scrapers, "ENTRY_URLS", []), \
+             patch.object(uploader.scrapers, "extract_video_page_details", return_value=None) as extract:
+            uploader.scrapers.crawl_footballi_videos(state, originals_review=True)
+        self.assertEqual([call.args[0] for call in extract.call_args_list], [new])
 
     def test_changed_file_and_blocked_final_tags_never_reach_ai(self):
         with patch.object(policy, "audit_with_ai") as audit:
