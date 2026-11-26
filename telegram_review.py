@@ -27,6 +27,13 @@ def source_id(candidate):
     return originals.source_key(candidate.get("source_url") or candidate.get("url"))
 
 
+def approval_route(state, candidate):
+    item = state.get("telegram_review", {}).get("items", {}).get(source_id(candidate), {})
+    if item.get("status") == "approved" and not item.get("preview"):
+        return item.get("approval", {}).get("route", "")
+    return ""
+
+
 def approvals_for(state):
     approvals = originals.load_approvals()
     for key, item in review_state(state)["items"].items():
@@ -138,7 +145,7 @@ class TelegramReview:
         if any(originals.source_key(url) == key for url in state.get("uploaded_urls", [])):
             return "این ویدیو قبلاً منتشر شده است."
         previous = review["items"].get(key)
-        if previous and not previous["preview"] and previous["status"] not in {"waiting", "file_changed"}:
+        if previous and not previous["preview"] and previous["status"] not in {"waiting", "file_changed", "rejected"}:
             return previous.get("result") or "این ویدیو قبلاً بررسی شده است."
         requests = review.setdefault("link_requests", {})
         if key in requests:
@@ -182,6 +189,7 @@ class TelegramReview:
                 ),
                 "visual_rights_confirmed": True,
                 "audio_rights_confirmed": True,
+                "route": "manual_link" if item.get("request_message_id") else "telegram_review",
             }
         label = "رد شد." if action == "r" else (
             "تأیید آزمایشی ثبت شد. انتشار غیرفعال است." if item["preview"]
@@ -271,6 +279,9 @@ class TelegramReview:
                                    text=item["card"] + "\n\n" + item["notice"],
                                    reply_markup={"inline_keyboard": []})
                 if result is not None:
+                    item.pop("notice")
+            elif item.get("approval", {}).get("route") == "trusted_show":
+                if self.call("sendMessage", chat_id=self.owner, text=item["notice"]) is not None:
                     item.pop("notice")
 
 

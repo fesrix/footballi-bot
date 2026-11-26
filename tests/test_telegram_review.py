@@ -174,10 +174,9 @@ class TelegramReviewTests(unittest.TestCase):
             self.assertIn("پُشتِ‌ خَط", body["snippet"]["title"])
             self.assertEqual(self.card["status"], "published")
 
-    def test_ambiguous_ai_or_changed_file_never_uploads(self):
+    def test_approved_card_still_rejects_changed_file(self):
         self.approve()
         youtube = Mock()
-        self.assertFalse(self.publish(youtube, audit="ai_unconfirmed"))
         self.path.write_bytes(b"changed")
         self.assertFalse(self.publish(youtube))
         self.assertEqual(self.card["status"], "file_changed")
@@ -284,15 +283,95 @@ class TelegramReviewTests(unittest.TestCase):
         self.reviewer.register_link(self.state, "https://footballi.net.evil.test/video/1234", 143)
         self.assertFalse(telegram.review_state(self.state).get("link_requests"))
 
-    def test_prohibited_link_is_stopped_before_download(self):
+    def test_only_direct_link_allows_blocked_content_and_can_replace_rejection(self):
+        self.reviewer.decide(telegram.review_state(self.state), self.callback("r"))
         self.reviewer.register_link(self.state, self.source["url"], 144)
-        highlights = {**self.source, "title": "خلاصه بازی پرسپولیس"}
-        with patch.object(uploader, "extract_video_page_details", return_value=highlights), \
-             patch.object(uploader, "download_candidate") as download:
-            self.assertEqual(uploader.prepare_telegram_link_requests(
-                self.reviewer, self.state, str(self.path.parent), time.monotonic() + 300), [])
-        download.assert_not_called()
-        self.assertNotIn(self.key, telegram.approvals_for(self.state))
+        self.source["title"] = "برنامه فوتبال برتر | خلاصه بازی پرسپولیس"
+        self.assertTrue(policy.prohibited(self.source))
+        self.path.with_name("telegram-request.mp4").write_bytes(self.path.read_bytes())
+        self.state["seen_mp4s"] = []
+        with patch.object(uploader, "extract_video_page_details", return_value=self.source), \
+             patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1280, 720, 240)):
+            prepared = uploader.prepare_telegram_link_requests(
+                self.reviewer, self.state, str(self.path.parent), time.monotonic() + 300)
+        self.assertEqual(len(prepared), 1)
+        self.assertEqual(telegram.approval_route(self.state, self.source), "manual_link")
+        youtube = Mock()
+        youtube.videos.return_value.insert.return_value.next_chunk.return_value = None, {"id": "direct"}
+        self.state.update(pending_queue=prepared, daily_uploads={}, uploaded_urls=[], seen_mp4s=[],
+                          uploaded_titles=[], seen_raw_titles=[], rejected_urls=[],
+                          last_run={"uploads": {}, "learning": {}, "media_retries": {}})
+        with patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+             patch.object(uploader, "get_exact_video_dimensions", return_value=(1280, 720, 240)), \
+             patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -3)), \
+             patch.object(uploader, "call_ai_copyright_audit", return_value=False) as early_audit, \
+             patch.object(policy, "audit_with_ai", return_value="ai_unavailable") as final_audit, \
+             patch.object(uploader, "call_generate_seo", return_value={"title": self.source["title"]}), \
+             patch.object(uploader, "MediaFileUpload"), patch.object(uploader, "save_state"), \
+             patch.object(uploader, "call_prepare_thumbnail"), patch.object(uploader, "add_video_to_playlists"):
+            uploader.process_queue(youtube, self.state, {"revision": "test"}, "today", set(), set(), set(),
+                                   str(self.path.parent), time.monotonic() + 120, priority_only=True)
+        early_audit.assert_not_called()
+        final_audit.assert_not_called()
+        self.assertEqual(youtube.videos.return_value.insert.call_args.kwargs["body"]["status"]["privacyStatus"],
+                         "public")
+        self.assertEqual(self.state["last_run"]["publication_routes"]["manual_link"], 1)
+        self.assertIn("قبلاً", self.reviewer.register_link(self.state, self.source["url"], 145))
+
+    def test_ambiguous_or_unavailable_ai_is_visible_and_human_can_publish(self):
+        for verdict in ("ai_unconfirmed", "ai_unavailable", "ai_third_party"):
+            self.state["telegram_review"]["items"].clear()
+            self.state["originals_waiting"] = [
+                {**self.source, "originals_decision": "editorial_approval_missing",
+                 "telegram_screening": "ai_unconfirmed", "telegram_screening_version": 2}
+            ]
+            with patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+                 patch.object(uploader, "get_exact_video_dimensions", return_value=(1280, 720, 240)), \
+                 patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -3)), \
+                 patch.object(policy, "audit_with_ai", return_value=verdict), \
+                 patch.object(policy, "file_sha256", return_value=self.card["sha256"]), \
+                 patch.object(telegram, "checkpoint"), patch.object(self.reviewer, "send_card", return_value=True):
+                uploader.propose_telegram_reviews(self.reviewer, self.state, str(self.path.parent),
+                                                  time.monotonic() + 180)
+            self.card = self.state["telegram_review"]["items"][self.key]
+            self.assertIn("⚠️", self.card["card"])
+            self.card["message_id"] = 99
+            self.approve()
+            youtube = Mock()
+            youtube.videos.return_value.insert.return_value.next_chunk.return_value = None, {"id": "reviewed"}
+            self.assertTrue(self.publish(youtube, audit=verdict))
+
+    def test_verified_programmes_are_staged_and_published_in_both_formats(self):
+        for programme, name in (("VIDEOCAST", "ویدیوکست"), ("POSHTE_KHAT", "پشت خط")):
+            for short in (False, True):
+                self.state["telegram_review"]["items"].clear()
+                self.source.update(title=f"گفتگو | {name}", source_published_at=time.time() - 60)
+                self.state["originals_waiting"] = [
+                    {**self.source, "originals_decision": "editorial_approval_missing"}
+                ]
+                dimensions = (1080, 1920, 90) if short else (1920, 1080, 240)
+                with patch.object(uploader, "download_candidate", return_value=self.source["mp4_url"]), \
+                     patch.object(uploader, "get_exact_video_dimensions", return_value=dimensions), \
+                     patch.object(uploader.media_utils, "inspect_audio_file", return_value=(None, -3)), \
+                     patch.object(policy, "audit_with_ai") as audit, \
+                     patch.object(policy, "file_sha256", return_value=self.card["sha256"]), \
+                     patch.object(telegram, "checkpoint"), patch.object(self.reviewer, "send_card") as send:
+                    self.assertEqual(uploader.propose_telegram_reviews(
+                        self.reviewer, self.state, str(self.path.parent), time.monotonic() + 180), 1)
+                audit.assert_not_called()
+                send.assert_not_called()
+                record = self.state["telegram_review"]["items"][self.key]
+                self.assertEqual(record["programme"], programme)
+                youtube = Mock()
+                youtube.videos.return_value.insert.return_value.next_chunk.return_value = None, {"id": "show"}
+                self.assertTrue(self.publish(youtube, short=short, audit="ai_unavailable"))
+                self.assertEqual(self.state["last_run"]["publication_routes"]["trusted_show"], 1)
+
+    def test_programme_reference_in_description_is_not_enough(self):
+        self.source.update(title="گزارش اختصاصی از تمرین", description="در ویدیوکست درباره تیم گفتیم",
+                           source_published_at=time.time() - 60)
+        self.assertEqual(uploader.trusted_episode(self.source, uploader.datetime.now(uploader.timezone.utc)), "")
 
     @patch.dict("os.environ", {"GEMINI_API_KEY": "mock", "ARVAN_API_KEY": "mock"})
     def test_audit_fallback_occurs_on_error_but_never_after_denial(self):
