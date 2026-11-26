@@ -87,17 +87,23 @@ With originals-only mode active, each run discovers media and sends up to
 ten review cards within its time budget. Outstanding cards stay open
 between runs. The reply keyboard shows recent cards, and every new card
 includes copyable decision commands that work even after it leaves the keyboard.
-Approve only when Footballi produced the video
+AI screening warnings are included in the card. Approve only when Footballi produced the video
 and holds permission to publish its picture and sound on YouTube. The next
 run reads the decision and checks the exact file before publishing. Rejecting
-a card removes that source from consideration. Current status and the
+a card removes that source from automatic consideration. Current status and the
 YouTube URL are added to the original card.
 
+Fresh episodes of Footballi's Videocast and Posht-e Khat publish automatically
+when the official source identifies the programme and the exact file passes
+the media checks. Broadcast and programme exclusions still apply to discovery.
+
 To request direct publication, send a single HTTPS Footballi video-page link
-to the bot's private chat. This confirms that Footballi produced that video
-and has permission to publish its picture and sound. The next run records
-the request, binds it to the downloaded file and runs the normal rights,
-media, and metadata checks. Results are sent as replies to the link message.
+to the bot's private chat. Sending the link attests that you have checked
+the publication rights for its picture and sound. This route can override
+content exclusions and an earlier Telegram rejection for that source.
+The next run verifies the official source and exact file, runs media and
+duplicate checks, and generates the title and description. Results are
+sent as replies to the link message.
 
 To test on the live schedule, set the repository variable
 `FOOTBALLI_TELEGRAM_PREVIEW_ONLY=true` before configuring the secrets.

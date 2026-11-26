@@ -57,6 +57,15 @@ def build_report(state: dict) -> str:
                          f"{counts['priority_summaries']} priority highlights")
     if run.get("media_retries"):
         lines.append(f"- Retained media failures: {run['media_retries']}")
+    if "telegram_proposals" in run:
+        proposals = run["telegram_proposals"]
+        routes = run.get("publication_routes", {})
+        lines.extend(["", "## Publication routes",
+                      f"- Telegram cards sent: {proposals['sent']}",
+                      f"- Waiting by reason: {proposals['waiting_by_reason']}",
+                      f"- Trusted programme uploads: {routes.get('trusted_show', 0)}",
+                      f"- Telegram-approved uploads: {routes.get('telegram_review', 0)}",
+                      f"- Direct-link uploads: {routes.get('manual_link', 0)}"])
     if video_ids := run.get("end_screen_video_ids"):
         lines.extend([
             "",

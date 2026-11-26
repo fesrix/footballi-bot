@@ -54,7 +54,7 @@ def load_approvals():
             if key in approvals:
                 print("[ORIGINALS] Ambiguous duplicate source in approval file")
                 return {}
-            approvals[key] = record
+            approvals[key] = {name: value for name, value in record.items() if name != "route"}
     return approvals
 
 
@@ -78,11 +78,13 @@ def prohibited(candidate, *extra):
 
 
 def admission(candidate, approvals):
+    key = source_key(candidate.get("source_url") or candidate.get("url"))
+    record = approvals.get(key) if key else None
+    if record and record.get("route") == "manual_link" and key.startswith("footballi:"):
+        return record, ""
     reason = prohibited(candidate)
     if reason:
         return None, reason
-    key = source_key(candidate.get("source_url") or candidate.get("url"))
-    record = approvals.get(key)
     return (record, "") if record else (None, "editorial_approval_missing")
 
 
@@ -142,6 +144,8 @@ def audit_with_ai(candidate, final, evidence, *, screening=False):
                 and result["footballi_original"] is True and result["third_party_or_excluded"] is False):
             print(f"[ORIGINALS-AI] {name} passed {'screening' if screening else 'final review'}.")
             return "approved"
+        if screening and isinstance(result, dict) and result.get("third_party_or_excluded") is True:
+            return "ai_third_party"
         return "ai_unconfirmed"
     return "ai_unavailable"
 
@@ -153,7 +157,8 @@ def file_sha256(path):
 
 def verify_upload(candidate, path, final, approvals=None):
     record, reason = admission(candidate, load_approvals() if approvals is None else approvals)
-    reason = reason or prohibited(candidate, final, Path(path).name)
+    if not reason and record.get("route") != "manual_link":
+        reason = prohibited(candidate, final, Path(path).name)
     if reason:
         return reason
     try:
@@ -162,6 +167,8 @@ def verify_upload(candidate, path, final, approvals=None):
         return "file_unreadable"
     if actual_hash != record["sha256"].lower():
         return "file_hash_mismatch"
+    if record.get("route") in {"manual_link", "telegram_review", "trusted_show"}:
+        return "approved"
     return audit_with_ai(candidate, final, record["production_evidence"])
 
 
