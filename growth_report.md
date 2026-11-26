@@ -9,9 +9,9 @@
 
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
-| SHORTS | 20 | 100864 | 21417.0 | 188 |
-| VIDEO | 78 | 93430 | 181092.0 | 242 |
-| SUMMARY | 19 | 42705 | 154524.0 | 80 |
+| SHORTS | 20 | 100855 | 21415.0 | 188 |
+| VIDEO | 78 | 93431 | 181092.0 | 243 |
+| SUMMARY | 19 | 42699 | 154503.0 | 80 |
 | FOOTBALL_BARTAR | 3 | 4982 | 4190.0 | 5 |
 | VIDEOCAST | 3 | 757 | 2287.0 | 5 |
 | POSHTE_KHAT | 4 | 580 | 921.0 | 2 |
@@ -32,7 +32,7 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 2 | Read quota: 65 | Write quota: 0
+- Archive pages processed: 2 | Read quota: 70 | Write quota: 0
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-22 | Revision: b60684fffeaaca32
