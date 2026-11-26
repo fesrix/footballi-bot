@@ -3,7 +3,7 @@
 - Analytics window: 2026-08-26 → 2026-11-23
 - Tracked videos: 135
 - Queue size: 0
-- Uploads today: 8
+- Uploads today: 0
 
 ## Performance by category
 
@@ -18,11 +18,11 @@
 
 ## Last run
 
-- New web candidates: 3
+- New web candidates: 2
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 1 main, 7 Shorts, 0 priority highlights
+- Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Publication routes
 - Telegram cards sent: 0
@@ -36,10 +36,10 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 2 | Reviewed by AI: 2
-- Kept without reply: 1 | Replied: 0 | Removed: 1
+- Discovered: 1 | Reviewed by AI: 1
+- Kept without reply: 1 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 156 | Write quota: 150
+- Archive pages processed: 3 | Read quota: 164 | Write quota: 150
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-23 | Revision: 8c60097012372b59
