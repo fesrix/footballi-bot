@@ -1866,7 +1866,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077752,
+  "max_seen_video_id": 1077757,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -20418,9 +20418,9 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T01:32:15.278407+03:30",
-    "new_web_candidates": 5,
-    "new_instagram_candidates": 1,
+    "finished_at": "2026-11-27T02:01:10.715797+03:30",
+    "new_web_candidates": 4,
+    "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
@@ -20441,11 +20441,11 @@
       "changes": []
     },
     "telegram_proposals": {
-      "sent": 1,
+      "sent": 0,
       "trusted_staged": 0,
       "waiting_by_reason": {
-        "telegram_rejected": 1,
-        "editorial_approval_missing": 5,
+        "telegram_rejected": 2,
+        "editorial_approval_missing": 4,
         "quality_or_format_rejected": 4,
         "missing_audio": 1
       }
@@ -22662,18 +22662,39 @@
         "hash": "9195685be71ee926f2bca3c06681f28f757cf6d08fa1d52c87983f642ad5a06a",
         "reviewed_at": 1795730541,
         "has_replied": false
+      },
+      "UgxPBtEOU78E8ZBQ0Ph4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "2a17fd54c32e7b55b6d19a674e5d83e6ac395f005bc31c0316b197714b77d037",
+        "reviewed_at": 1795732277,
+        "has_replied": false
+      },
+      "UgzhX7GbXBRlIpqdUxd4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "b316eedef2d3e7c1dd3761597fb7dd7ece0d0bc0ef1834245ed5471844a61389",
+        "reviewed_at": 1795732277,
+        "has_replied": false
+      },
+      "UgyydHo7BdxYlyU91ol4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "cb568473dc9c3148312a3a0119d74b55228092d075a916049a5515a6bb3843b1",
+        "reviewed_at": 1795732277,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 191,
+      "read": 199,
       "write": 250
     },
     "last_run": {
-      "discovered": 1,
-      "reviewed": 1,
-      "reviewed_no_reply": 1,
+      "discovered": 3,
+      "reviewed": 3,
+      "reviewed_no_reply": 3,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -22681,14 +22702,17 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 191,
+      "read_units": 199,
       "write_units": 250
     },
-    "scan_phase": 2,
+    "scan_phase": 0,
     "archive_token": null
   },
-  "last_successful_run_slot": 997628,
+  "last_successful_run_slot": 997629,
   "footballi_recent_publications": {
+    "1077757": 1795732268.204079,
+    "1077755": 1795732268.204079,
+    "1077754": 1795732268.204079,
     "1077752": 1795730492.9238977,
     "1077746": 1795730492.9238977,
     "1077745": 1795730492.9238977,
@@ -22785,10 +22809,7 @@
     "1077511": 1795635078.881816,
     "1077508": 1795635078.881816,
     "1077507": 1795633294.419789,
-    "1077506": 1795633294.419789,
-    "1077504": 1795631490.9126172,
-    "1077503": 1795631490.9126172,
-    "1077502": 1795631490.9126172
+    "1077506": 1795633294.419789
   },
   "live_fixtures": {
     "fixtures": [
@@ -22800,7 +22821,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
@@ -22811,7 +22832,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
@@ -22822,7 +22843,7 @@
         "kickoff_at": "2026-11-27T19:45:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
@@ -22833,18 +22854,18 @@
         "kickoff_at": "2026-11-27T20:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
         "fixture_id": "414d002eee6561a5",
         "home_team": "پیکان",
         "away_team": "فولاد خوزستان",
-        "competition": "لیگ برتر خلیج فارس",
+        "competition": "",
         "kickoff_at": "2026-11-27T15:00:00+03:30",
-        "status": "scheduled",
+        "status": "live",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
@@ -22855,7 +22876,7 @@
         "kickoff_at": "2026-11-27T15:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
@@ -22866,7 +22887,7 @@
         "kickoff_at": "2026-11-27T16:15:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       },
       {
@@ -22877,11 +22898,11 @@
         "kickoff_at": "2026-11-27T16:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+        "fetched_at": "2026-11-27T02:00:48.996113+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-27T01:30:59.992764+03:30",
+    "fetched_at": "2026-11-27T02:00:48.996113+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
@@ -22919,7 +22940,7 @@
       "discovery_timestamp": 1795730529.1488266,
       "attempt_count": 1,
       "is_short": true,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "telegram_rejected"
     },
     {
       "video_id": 1077662,
@@ -23405,19 +23426,14 @@
         "card": "پیشنهاد انتشار\nواکنش عجیب تارتار به عدم نتیجه‌گیری پرسپولیس در بازی با تیم‌های بالانشین جدول\nhttps://www.instagram.com/p/DgN6lWUg1JQ/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795723352.0\nشورت | 60 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
         "message_id": 46,
         "decided_at": "2026-11-26T22:30:45.123833+00:00",
-        "result": "رد شد.",
-        "notice": "رد شد."
+        "result": "رد شد."
       }
     },
     "updated_at": 1795732245.123855,
-    "keyboard_codes": [
-      "EB5C9676F6E2"
-    ],
-    "receipts": {
-      "48": "رد شد."
-    },
+    "keyboard_codes": [],
+    "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 1
+    "keyboard_waiting": 0
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
@@ -23835,7 +23851,11 @@
     "footballi:1077745": "excluded_content",
     "footballi:1077744": "excluded_content",
     "footballi:1077743": "excluded_content",
-    "footballi:1077742": "excluded_content"
+    "footballi:1077742": "excluded_content",
+    "footballi:1077757": "excluded_content",
+    "footballi:1077755": "excluded_content",
+    "footballi:1077754": "excluded_content",
+    "footballi:1077752": "excluded_content"
   },
   "editorial_review_migration": 1
 }
