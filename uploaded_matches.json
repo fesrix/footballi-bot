@@ -20118,7 +20118,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T14:31:39.708616+00:00",
+    "finished_at": "2026-11-26T18:04:23.363996+03:30",
     "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -20139,6 +20139,24 @@
     "learning": {
       "revision": "8c60097012372b59",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 5,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "editorial_approval_missing": 9,
+        "telegram_rejected": 1,
+        "quality_or_format_rejected": 3,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 1,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795701984.964609,
@@ -22216,7 +22234,7 @@
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 80,
+      "read": 85,
       "write": 0
     },
     "last_run": {
@@ -22230,13 +22248,13 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 80,
+      "read_units": 85,
       "write_units": 0
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997612,
+  "last_successful_run_slot": 997613,
   "footballi_recent_publications": {
     "1077675": 1795702127.0097833,
     "1077666": 1795701616.4287426,
@@ -22913,14 +22931,21 @@
         "generation": 1,
         "sha256": "ec09ac4f2e4413ef3f2f467fd0ec40a98fb9b14d345e33d9317c55a618d2402c",
         "evidence": "⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nمیثاقی: آیا یک نفر بازرس در استقلال نیست؟\nhttps://www.instagram.com/p/DgH-tspgA6B/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795524210.0\nشورت | 176 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nمیثاقی: آیا یک نفر بازرس در استقلال نیست؟\nhttps://www.instagram.com/p/DgH-tspgA6B/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795524210.0\nشورت | 176 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 29
       }
     },
     "updated_at": 1795702105.5392976,
-    "keyboard_codes": [],
+    "keyboard_codes": [
+      "35DA159BEAAF",
+      "B5E0847599C3",
+      "633B7A2CF9B8",
+      "DEF85DFE9AFD",
+      "667CA731F05D"
+    ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 0
+    "keyboard_waiting": 5
   },
   "originals_exclusions": {
     "footballi:1077675": "excluded_content",
