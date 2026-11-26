@@ -298,6 +298,7 @@ def load_state() -> dict:
         "uploaded_titles": [],
         "seen_raw_titles": [],
         "pending_queue": [],
+        "originals_exclusions": {},
         "daily_uploads": {"date": "", "count": 0},
         "last_upload_timestamp": 0,
         "last_short_upload_timestamp": 0,
@@ -1621,6 +1622,7 @@ def main():
     deadline = time.monotonic() + PUBLISHING_BUDGET_SECONDS
     state = load_state()
     strict = originals.originals_only()
+    archived_before = len(state["originals_exclusions"])
     reviewer = telegram.TelegramReview.from_env() if strict else None
     if reviewer:
         reviewer.poll(state, lambda: telegram.checkpoint(state, save_state))
@@ -1628,7 +1630,6 @@ def main():
     if strict:
         originals.repartition_queue(state, approvals=telegram.approvals_for(state),
                                     rejected=telegram.rejected_sources(state))
-        originals.report_queue(state)
         save_state(state)
     else:
         state["pending_queue"].extend(state.pop("originals_waiting", []))
@@ -1708,7 +1709,6 @@ def main():
             state["pending_queue"] = [normalize_queue_item(item) for item in state["pending_queue"]]
             for item in state["pending_queue"]:
                 item["learning_factor"] = 1
-            originals.report_queue(state)
             save_state(state)
             return
         state["pending_queue"] = deduplicate_and_balance_queue(
@@ -1735,7 +1735,12 @@ def main():
         )
         save_state(state)
 
-    merge_queue(new_web_videos)
+    if new_web_videos or not strict:
+        merge_queue(new_web_videos)
+    else:
+        for item in state["pending_queue"]:
+            normalize_queue_item(item)
+            item["learning_factor"] = 1
     with tempfile.TemporaryDirectory(prefix="footballi-media-") as media_directory:
         if reviewer and youtube and not platform_upload_block(state, quota_key):
             requested = prepare_telegram_link_requests(reviewer, state, media_directory, deadline)
@@ -1780,6 +1785,8 @@ def main():
                 curate_channel_playlists(youtube, state, channel_videos)
 
     finished = datetime.now(ZoneInfo("Asia/Tehran"))
+    if strict:
+        originals.report_queue(state, newly_archived=len(state["originals_exclusions"]) - archived_before)
     daily = daily_publishing_counts(state, finished)
     state["last_run"].update(finished_at=finished.isoformat(),
                              queue_size=len(state["pending_queue"]), daily_uploads=daily)

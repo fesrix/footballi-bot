@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import re
+from collections import Counter
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
@@ -12,6 +13,7 @@ import requests
 from programme_hold import blocked_programme, _text_values
 
 APPROVALS = Path(__file__).with_name("approved_originals.json")
+ARCHIVED_REASONS = {"excluded_content", "excluded_programme"}
 
 
 def originals_only():
@@ -176,14 +178,28 @@ def repartition_queue(state, candidates=(), *, approvals=None, rejected=()):
     pending, held = [], []
     approvals = load_approvals() if approvals is None else approvals
     seen = set()
+    exclusions = state.setdefault("originals_exclusions", {})
+    reviews = state.get("telegram_review", {}).get("items", {})
     for item in [*candidates, *state["pending_queue"], *state.get("originals_waiting", [])]:
         url = item.get("source_url") or item.get("url") or ""
-        identity = source_key(url) or url
+        key = source_key(url)
+        identity = key or url
         if identity and identity in seen:
             continue
         if identity:
             seen.add(identity)
+        review = reviews.get(key, {})
+        manual = key.startswith("footballi:") and (
+            approvals.get(key, {}).get("route") == "manual_link"
+            or (review.get("request_message_id") and not review.get("preview")
+                and review.get("status") in {"file_changed", "waiting"})
+        )
+        if key in exclusions and not manual:
+            continue
         _, reason = admission(item, approvals)
+        if key and reason in ARCHIVED_REASONS and not manual:
+            exclusions[key] = reason
+            continue
         if identity in rejected:
             reason = "telegram_rejected"
         if reason or item.get("originals_decision") in {None, "editorial_approval_missing", "approved"}:
@@ -193,9 +209,12 @@ def repartition_queue(state, candidates=(), *, approvals=None, rejected=()):
     return approvals
 
 
-def report_queue(state):
-    for item in state["pending_queue"] + state.get("originals_waiting", []):
-        print(f"[ORIGINALS] {source_key(item.get('source_url') or item.get('url')) or 'unknown source'}"
-              f" | {item.get('originals_decision', 'unreviewed')}")
-    print(f"[ORIGINALS] {len(state['pending_queue'])} eligible for file review, "
-          f"{len(state.get('originals_waiting', []))} held")
+def report_queue(state, *, newly_archived=None):
+    held = state.get("originals_waiting", [])
+    waiting = Counter(item.get("originals_decision", "unreviewed") for item in held)
+    archived = Counter(state.get("originals_exclusions", {}).values())
+    summary = (f"[ORIGINALS] Ready: {len(state['pending_queue'])} | Waiting: {len(held)} "
+               f"{dict(waiting)} | Archived: {sum(archived.values())} {dict(archived)}")
+    if newly_archived is not None:
+        summary += f" | Added to archive this run: {newly_archived}"
+    print(summary)

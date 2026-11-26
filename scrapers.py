@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+from originals_policy import source_key
 
 from config import (
     PROTO,
@@ -769,6 +770,11 @@ def crawl_footballi_videos(state: dict, max_new_candidates: int = 20, *, origina
     queued_mp4s = {item.get("mp4_url") for item in state.get("pending_queue", []) if item.get("mp4_url")}
 
     known_ids = set()
+    if originals_review:
+        for key in state.get("originals_exclusions", {}):
+            source, _, identifier = key.partition(":")
+            if source == "footballi" and identifier.isdecimal():
+                known_ids.add(int(identifier))
     for u in uploaded_urls | queued_urls | rejected_urls:
         vid_id = extract_numeric_id(u)
         if vid_id:
@@ -932,6 +938,7 @@ def fetch_instagram_reels(state: dict, *, originals_review=False, refresh_url=""
             raise RuntimeError("Apify run completed without a default dataset ID")
 
         raw_reels = []
+        exclusions = state.get("originals_exclusions", {}) if originals_review else {}
         for item in client.dataset(dataset_id).iterate_items():
             reel_url = item.get("url") or f"https://www.instagram.com/p/{item.get('shortCode')}/"
             published_at = parse_published_timestamp(item.get("timestamp"))
@@ -944,6 +951,7 @@ def fetch_instagram_reels(state: dict, *, originals_review=False, refresh_url=""
                 or reel_url in rejected_urls
                 or reel_url in queued_urls
                 or video_url in seen_mp4s
+                or source_key(reel_url) in exclusions
             )):
                 continue
 
