@@ -20020,7 +20020,9 @@
     "new_web_candidates": 4,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
-    "media_retries": {},
+    "media_retries": {
+      "review_download_failed": 5
+    },
     "uploads": {
       "main": 0,
       "short": 0,
@@ -25184,9 +25186,7 @@
       "discovery_timestamp": 1795577509.2393348,
       "attempt_count": 1,
       "is_short": true,
-      "originals_decision": "editorial_approval_missing",
-      "telegram_screening": "ai_unconfirmed",
-      "telegram_screening_version": 2
+      "originals_decision": "editorial_approval_missing"
     },
     {
       "video_id": 1077352,
@@ -26363,7 +26363,9 @@
       "is_short": true,
       "originals_decision": "editorial_approval_missing",
       "telegram_screening": "ai_unconfirmed",
-      "telegram_screening_version": 2
+      "telegram_screening_version": 2,
+      "download_failures": 1,
+      "next_media_attempt": 1795702841.6678672
     },
     {
       "video_id": 0,
@@ -26399,7 +26401,9 @@
       "is_short": true,
       "originals_decision": "editorial_approval_missing",
       "telegram_screening": "ai_unconfirmed",
-      "telegram_screening_version": 2
+      "telegram_screening_version": 2,
+      "download_failures": 1,
+      "next_media_attempt": 1795702842.0436132
     },
     {
       "video_id": 1077263,
@@ -28021,7 +28025,9 @@
       "is_short": true,
       "originals_decision": "editorial_approval_missing",
       "telegram_screening": "ai_unconfirmed",
-      "telegram_screening_version": 2
+      "telegram_screening_version": 2,
+      "download_failures": 1,
+      "next_media_attempt": 1795702840.3067906
     },
     {
       "video_id": 0,
@@ -28057,7 +28063,9 @@
       "is_short": true,
       "originals_decision": "editorial_approval_missing",
       "telegram_screening": "ai_unconfirmed",
-      "telegram_screening_version": 2
+      "telegram_screening_version": 2,
+      "download_failures": 1,
+      "next_media_attempt": 1795702840.6832247
     },
     {
       "video_id": 0,
@@ -28127,7 +28135,9 @@
       "is_short": true,
       "originals_decision": "editorial_approval_missing",
       "telegram_screening": "ai_unconfirmed",
-      "telegram_screening_version": 2
+      "telegram_screening_version": 2,
+      "download_failures": 1,
+      "next_media_attempt": 1795702841.1370344
     },
     {
       "video_id": 1077106,
@@ -33051,7 +33061,17 @@
         "generation": 1,
         "sha256": "a7130108f69ae83ab4ce36e7f5af0206b4b3168b689db0f979d350acdf79fc67",
         "evidence": "⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nواکنش بهتاش فریبا به حواشی استعفای سهراب بختیاری زاده\nhttps://footballi.net/video/1076266/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 218 ثانیه | 1920×1080\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nواکنش بهتاش فریبا به حواشی استعفای سهراب بختیاری زاده\nhttps://footballi.net/video/1076266/%D9%88%D8%A7%DA%A9%D9%86%D8%B4-%D8%A8%D9%87%D8%AA%D8%A7%D8%B4-%D9%81%D8%B1%DB%8C%D8%A8%D8%A7-%D8%A8%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B9%D9%81%D8%A7%DB%8C-%D8%B3%D9%87%D8%B1%D8%A7%D8%A8-%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C-%D8%B2%D8%A7%D8%AF%D9%87\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 218 ثانیه | 1920×1080\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 14
+      },
+      "instagram:DgJFV9IAP3l": {
+        "status": "waiting",
+        "preview": false,
+        "button_id": "4f002f631ad4350ed26adbded999700d",
+        "generation": 1,
+        "sha256": "7a4413ae8109bdd7931c0ee1df7dfc3aa734e3bd848581c55d43aa4da8ebcfe7",
+        "evidence": "⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
+        "card": "پیشنهاد انتشار\nیاسرآسانی: زندگی من استقلال است!\nhttps://www.instagram.com/p/DgJFV9IAP3l/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795561450.0\nشورت | 36 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
       }
     },
     "updated_at": 1795633257.8660161,
