@@ -20418,7 +20418,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T22:01:36.552664+00:00",
+    "finished_at": "2026-11-27T01:32:15.278407+03:30",
     "new_web_candidates": 5,
     "new_instagram_candidates": 1,
     "rejected_by_reason": {},
@@ -20439,6 +20439,24 @@
     "learning": {
       "revision": "8c60097012372b59",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 1,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 1,
+        "editorial_approval_missing": 5,
+        "quality_or_format_rejected": 4,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 0,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -22637,32 +22655,39 @@
         "hash": "a03fa415c05e18f28293ff5302e8738f9e3d2548568d68f6ca1bdc18cc0f1204",
         "reviewed_at": 1795728690,
         "has_replied": true
+      },
+      "UgwxxLouzhIarmvvz5F4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "9195685be71ee926f2bca3c06681f28f757cf6d08fa1d52c87983f642ad5a06a",
+        "reviewed_at": 1795730541,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 183,
+      "read": 191,
       "write": 250
     },
     "last_run": {
-      "discovered": 3,
-      "reviewed": 3,
+      "discovered": 1,
+      "reviewed": 1,
       "reviewed_no_reply": 1,
-      "replied": 1,
-      "deleted": 1,
+      "replied": 0,
+      "deleted": 0,
       "errors": 0,
       "retries": 0,
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 183,
+      "read_units": 191,
       "write_units": 250
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997627,
+  "last_successful_run_slot": 997628,
   "footballi_recent_publications": {
     "1077752": 1795730492.9238977,
     "1077746": 1795730492.9238977,
@@ -23377,14 +23402,17 @@
         "generation": 1,
         "sha256": "85fb3c7a9d7a8f25757039b350e7d81170374c6ec786c3e615aac88e36771300",
         "evidence": "⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nواکنش عجیب تارتار به عدم نتیجه‌گیری پرسپولیس در بازی با تیم‌های بالانشین جدول\nhttps://www.instagram.com/p/DgN6lWUg1JQ/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795723352.0\nشورت | 60 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nواکنش عجیب تارتار به عدم نتیجه‌گیری پرسپولیس در بازی با تیم‌های بالانشین جدول\nhttps://www.instagram.com/p/DgN6lWUg1JQ/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795723352.0\nشورت | 60 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 46
       }
     },
     "updated_at": 1795717845.8922374,
-    "keyboard_codes": [],
+    "keyboard_codes": [
+      "EB5C9676F6E2"
+    ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 0
+    "keyboard_waiting": 1
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
