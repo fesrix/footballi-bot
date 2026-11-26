@@ -70,6 +70,45 @@ class OriginalsPolicyTests(unittest.TestCase):
             uploader.scrapers.crawl_footballi_videos(state, originals_review=True)
         self.assertEqual([call.args[0] for call in extract.call_args_list], [new])
 
+    def test_editorial_titles_are_not_blocked_by_match_references(self):
+        for title, topic in (
+            ("واکنش هواداران استقلال به گل اول", "fan"),
+            ("حواشی بعد از بازی استقلال و سپاهان", "matchday"),
+            ("مصاحبه با سرمربی پرسپولیس", "interview"),
+        ):
+            with self.subTest(title=title):
+                item = {**self.item, "title": title, "description": "مرور سوپرگل و گل اول تیم"}
+                self.assertEqual(policy.editorial_review_topic(item), topic)
+                self.assertEqual(policy.prohibited(item), "")
+                self.assertEqual(policy.prohibited(item, {"title": "گل اول پرسپولیس"}), "excluded_content")
+                self.assertEqual(policy.prohibited(item, {"description": "حاوی تصاویر مسابقه"}), "excluded_content")
+                self.assertEqual(policy.prohibited(item, {"tags": ["فوتبال برتر"]}), "excluded_programme")
+        clip = {**self.item, "title": "گل اول استقلال | واکنش هواداران"}
+        self.assertEqual(policy.prohibited(clip), "excluded_content")
+        mixed = {**self.item, "title": "حواشی بعد از بازی | خلاصه بازی استقلال"}
+        self.assertEqual(policy.prohibited(mixed), "excluded_content")
+
+    def test_recent_exclusions_are_reconsidered_once(self):
+        state = {
+            "originals_exclusions": {"footballi:11": "excluded_content",
+                                     "footballi:12": "excluded_programme",
+                                     "footballi:13": "excluded_content"},
+            "footballi_recent_publications": {"11": 199999, "12": 199999, "13": 1},
+        }
+        self.assertEqual(policy.reconsider_recent_exclusions(state, 200000), 1)
+        self.assertEqual(set(state["originals_exclusions"]), {"footballi:12", "footballi:13"})
+        self.assertEqual(policy.reconsider_recent_exclusions(state, 200000), 0)
+
+    def test_source_description_uses_short_label_only_once(self):
+        url = self.item["url"]
+        expected = f"متن\n\nدر سایت فوتبالی ببینید: {url}"
+        self.assertEqual(uploader.format_source_description("متن", url), expected)
+        self.assertEqual(uploader.format_source_description(f"متن\n\nمنبع رسمی: {url}", url), expected)
+        self.assertEqual(uploader.format_source_description(expected, url), expected)
+        instagram = "https://www.instagram.com/reel/Example/"
+        self.assertEqual(uploader.format_source_description("", instagram),
+                         f"در اینستاگرام فوتبالی ببینید: {instagram}")
+
     def test_official_thumbnail_repair_uses_exact_source_and_no_video_fallback(self):
         video_id = "EKZhMdwca1s"
         source = self.item["url"]

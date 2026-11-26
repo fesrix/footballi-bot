@@ -14,6 +14,33 @@ from programme_hold import blocked_programme, _text_values
 
 APPROVALS = Path(__file__).with_name("approved_originals.json")
 ARCHIVED_REASONS = {"excluded_content", "excluded_programme"}
+EDITORIAL_TOPICS = (
+    ("fan", r"هوادار(?:ان|ی)?|تماشاگر(?:ان)?|روی سکوها|جو ورزشگاه|روی سکو"),
+    ("matchday", r"حواشی|حاشیه های (?:قبل|بعد|بازی|مسابقه)|پیش بازی|(?:قبل|بعد|پیش|پس) از (?:بازی|مسابقه|دیدار)"),
+    ("interview", r"مصاحبه|گفت\s*و?\s*گو|صحبت های|کنفرانس خبری|نشست خبری"),
+)
+EXPLICIT_BROADCAST = re.compile(
+    r"تصاویر پخش مسابقه|پخش کامل مسابقه|(?:حاوی|همراه با) تصاویر (?:بازی|مسابقه)|"
+    r"[|+＋]\s*(?:خلاصه (?:بازی|دیدار|مسابقه)|گل (?:اول|دوم|سوم|چهارم|پنجم))|"
+    r"match footage|match broadcast|match highlights|goal clip"
+)
+CLIP_TITLE = re.compile(
+    r"خلاصه (?:بازی|دیدار|مسابقه)|بازی کامل|هایلایت بازی|صحنه گل|گل (?:اول|دوم|سوم|چهارم|پنجم)|"
+    r"گل (?:های )?بازی|(?:^|[|:])\s*(?:گل|مهار|سیو|هایلایت)\b"
+)
+
+
+def editorial_review_topic(candidate):
+    from scrapers import normalize_persian
+
+    title = normalize_persian(candidate.get("title") or candidate.get("source_title") or "").casefold()
+    clip = CLIP_TITLE.search(title)
+    matches = []
+    for topic, pattern in EDITORIAL_TOPICS:
+        signal = re.search(rf"(?<!\w)(?:{pattern})(?!\w)", title)
+        if signal and (clip is None or signal.start() < clip.start()):
+            matches.append((signal.start(), topic))
+    return min(matches)[1] if matches else ""
 
 
 def originals_only():
@@ -66,15 +93,27 @@ def prohibited(candidate, *extra):
     fields = {k: v for k, v in candidate.items() if k not in {
         "category", "priority_reason", "programme_hold", "originals_decision"
     }}
-    if candidate.get("category") in {"SUMMARY", "FOOTBALL_BARTAR", "SHABHAYE_FOOTBALLI"}:
+    editorial = editorial_review_topic(candidate)
+    if candidate.get("category") in {"FOOTBALL_BARTAR", "SHABHAYE_FOOTBALLI"} or (
+            candidate.get("category") == "SUMMARY" and not editorial):
         return "excluded_content"
     if blocked_programme(fields, *extra, force=True):
         return "excluded_programme"
+    if editorial:
+        if any(EXPLICIT_BROADCAST.search(re.sub(r"[-_/]", " ", normalize_persian(unquote(value)).casefold()))
+               for value in _text_values((fields, extra))):
+            return "excluded_content"
+        for metadata in extra:
+            if isinstance(metadata, dict):
+                title = normalize_persian(metadata.get("title") or "").casefold()
+                if CLIP_TITLE.search(title) and not editorial_review_topic(metadata):
+                    return "excluded_content"
+        return ""
     for value in _text_values((fields, extra)):
         normalized = normalize_persian(unquote(value)).casefold()
         separated = re.sub(r"[-_/]", " ", normalized)
-        if (is_match_broadcast_footage(separated)
-                or re.search(r"تصاویر پخش مسابقه|پخش کامل مسابقه|صحنه گل|match footage|match broadcast|match highlights|goal clip", separated)):
+        if (is_match_broadcast_footage(separated) or "صحنه گل" in separated
+                or EXPLICIT_BROADCAST.search(separated)):
             return "excluded_content"
     return ""
 
@@ -207,6 +246,22 @@ def repartition_queue(state, candidates=(), *, approvals=None, rejected=()):
         (held if reason else pending).append(item)
     state["pending_queue"], state["originals_waiting"] = pending, held
     return approvals
+
+
+def reconsider_recent_exclusions(state, now):
+    """Revisit one bounded set of recent URLs classified before editorial context was recognized."""
+    if state.get("editorial_review_migration"):
+        return 0
+    state["editorial_review_migration"] = 1
+    recent = state.get("footballi_recent_publications", {})
+    exclusions = state.get("originals_exclusions", {})
+    keys = [f"footballi:{identifier}" for identifier, seen_at in recent.items()
+            if isinstance(seen_at, (int, float)) and 0 <= now - seen_at <= 48 * 3600
+            and exclusions.get(f"footballi:{identifier}") == "excluded_content"]
+    reopened = keys[:24]
+    for key in reopened:
+        exclusions.pop(key)
+    return len(reopened)
 
 
 def report_queue(state, *, newly_archived=None):
