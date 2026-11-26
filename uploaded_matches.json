@@ -691,7 +691,37 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [],
+  "pending_queue": [
+    {
+      "video_id": 1077193,
+      "published_at": null,
+      "discovered_at": 1795702129.1178355,
+      "url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
+      "title": "ویدیو کست/ بررسی عملکرد ضعیف تراکتور و درخشش استقلال در آسیا",
+      "description": "در این قسمت از برنامه ویدیو کست با ناصر نامدار عضو تحریریه فوتبالی درباره شکست سنگین تراکتور مقابل الوصل و تساوی ارزشمند استقلال مقابل العین در لیگ نخبگان آسیا صحبت کردیم.",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-d82ddc30-5866-491c-b61f-c15ff53171c2.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-184d1631-87d0-4d43-8a94-7f967b520c0a.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/uhekQEPLPOUycNBKnvKCyJsdKfuhFmqyRdIROgZb.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
+      "category": "VIDEOCAST",
+      "is_short": false,
+      "learning_factor": 1,
+      "originals_decision": "approved",
+      "ai_score": 6,
+      "source_published_at": null,
+      "rights_status": "",
+      "content_type": "video",
+      "discovery_timestamp": 1795702172.1735685,
+      "attempt_count": 1,
+      "verified_is_short": false
+    }
+  ],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -1816,7 +1846,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077666,
+  "max_seen_video_id": 1077675,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -20067,14 +20097,14 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T17:36:28.776029+03:30",
-    "new_web_candidates": 0,
+    "finished_at": "2026-11-26T14:08:47.630183+00:00",
+    "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
     "uploads": {
       "main": 0,
-      "short": 1,
+      "short": 0,
       "priority_summaries": 0,
       "priority_editorial": 0,
       "priority_match_day": 0
@@ -20087,34 +20117,7 @@
     },
     "learning": {
       "revision": "8c60097012372b59",
-      "changes": [],
-      "title_style": "direct",
-      "selected_factor": 1,
-      "published_tehran": "17:36"
-    },
-    "publication_routes": {
-      "telegram_review": 1
-    },
-    "telegram_proposals": {
-      "sent": 0,
-      "trusted_staged": 0,
-      "waiting_by_reason": {
-        "excluded_content": 331,
-        "editorial_approval_missing": 4,
-        "telegram_rejected": 1,
-        "excluded_programme": 64,
-        "quality_or_format_rejected": 3,
-        "ai_unconfirmed": 5,
-        "missing_audio": 1
-      }
-    },
-    "queue_size": 0,
-    "daily_uploads": {
-      "main": 0,
-      "short": 1,
-      "priority_summaries": 0,
-      "priority_editorial": 0,
-      "priority_match_day": 0
+      "changes": []
     }
   },
   "last_short_upload_timestamp": 1795701984.964609,
@@ -22214,6 +22217,7 @@
   },
   "last_successful_run_slot": 997612,
   "footballi_recent_publications": {
+    "1077675": 1795702127.0097833,
     "1077666": 1795701616.4287426,
     "1077663": 1795701616.4287426,
     "1077662": 1795699865.866497,
@@ -22312,8 +22316,7 @@
     "1077366": 1795590075.4984868,
     "1077363": 1795590075.4984868,
     "1077361": 1795590075.4984868,
-    "1077360": 1795588273.8967073,
-    "1077358": 1795588273.8967073
+    "1077360": 1795588273.8967073
   },
   "live_fixtures": {
     "fixtures": [
@@ -22325,16 +22328,42 @@
         "kickoff_at": "2026-11-26T19:45:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-26T17:36:00.675198+03:30",
+        "fetched_at": "2026-11-26T17:38:28.728852+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-26T17:36:00.675198+03:30",
+    "fetched_at": "2026-11-26T17:38:28.728852+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077675,
+      "published_at": null,
+      "discovered_at": 1795702127.630126,
+      "url": "https://footballi.net/video/1077675/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%85%D8%B3-%D8%B4%D9%87%D8%B1%D8%A8%D8%A7%D8%A8%DA%A9-%D8%A8%D9%87-%DA%86%D8%A7%D8%AF%D8%B1%D9%85%D9%84%D9%88-%D8%A8%D9%87-%DA%AF%D9%84-%D8%B2%DB%8C%D8%A8%D8%A7%DB%8C-%D9%87%D9%85%D8%A7%DB%8C%D9%88%D9%86-%D8%A7%D9%81%D8%AA%D8%AE%D8%A7%D8%B1%DB%8C",
+      "title": "گل اول مس شهربابک به چادرملو به (گل زیبای همایون افتخاری)",
+      "description": "با بخش ویدئو فوتبالی تمام لیگ های فوتبال جهان را به خانه بیاورید | مس شهربابک,لیگ برتر ایران,چادرملو اردکان",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-bf87881e-b0dc-4208-84ed-c940e3678f30.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/25/tus-184d1631-87d0-4d43-8a94-7f967b520c0a.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/h6A448aQEtE7AbyDYBHUGWZ5Ybm4cR5HTsNoUa9p.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077675/%DA%AF%D9%84-%D8%A7%D9%88%D9%84-%D9%85%D8%B3-%D8%B4%D9%87%D8%B1%D8%A8%D8%A7%D8%A8%DA%A9-%D8%A8%D9%87-%DA%86%D8%A7%D8%AF%D8%B1%D9%85%D9%84%D9%88-%D8%A8%D9%87-%DA%AF%D9%84-%D8%B2%DB%8C%D8%A8%D8%A7%DB%8C-%D9%87%D9%85%D8%A7%DB%8C%D9%88%D9%86-%D8%A7%D9%81%D8%AA%D8%AE%D8%A7%D8%B1%DB%8C",
+      "source_published_at": null,
+      "source_first_seen_at": 1795702127.0097833,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795702127.6301603,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077666,
       "published_at": null,
@@ -26963,32 +26992,6 @@
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
       "discovery_timestamp": 1795530678.3445141,
-      "attempt_count": 1,
-      "is_short": false,
-      "originals_decision": "excluded_content"
-    },
-    {
-      "video_id": 1077193,
-      "published_at": null,
-      "discovered_at": 1795527102.407899,
-      "url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
-      "title": "ویدیو کست/ بررسی عملکرد ضعیف تراکتور و درخشش استقلال در آسیا",
-      "description": "در این قسمت از برنامه ویدیو کست با ناصر نامدار عضو تحریریه فوتبالی درباره شکست سنگین تراکتور مقابل الوصل و تساوی ارزشمند استقلال مقابل العین در لیگ نخبگان آسیا صحبت کردیم.",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/24/tus-d82ddc30-5866-491c-b61f-c15ff53171c2.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/hAhU2bFrtlhxK6fT3kZUpEriRCbKbaEhyOS5y489.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
-      "source_published_at": null,
-      "source_first_seen_at": 1795527102.1557217,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795527102.4079266,
       "attempt_count": 1,
       "is_short": false,
       "originals_decision": "excluded_content"
@@ -33127,19 +33130,32 @@
         },
         "result": "منتشر شد: https://www.youtube.com/watch?v=_2c0PFSBBHg",
         "video_id": "_2c0PFSBBHg"
+      },
+      "footballi:1077193": {
+        "status": "upload_uncertain",
+        "preview": false,
+        "button_id": "fd31f38a679eccd51027ee5962fca245",
+        "generation": 1,
+        "sha256": "bd3b4a8030df2f8b5d331e91abf37583d81a2b35dbf88bc3fae75ffd4ddda806",
+        "evidence": "The reviewer supplied the exact official source link.",
+        "card": "پیشنهاد انتشار\nویدیو کست/ بررسی عملکرد ضعیف تراکتور و درخشش استقلال در آسیا\nhttps://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 972 ثانیه | 1920×1080\nدلیل پیشنهاد: The reviewer supplied the exact official source link.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "request_message_id": 22,
+        "decided_at": "2026-11-26T14:09:31.935765+00:00",
+        "approval": {
+          "sha256": "bd3b4a8030df2f8b5d331e91abf37583d81a2b35dbf88bc3fae75ffd4ddda806",
+          "production_evidence": "An authorized Footballi reviewer confirmed by submitting a direct Footballi URL as a publishing request that Footballi produced this exact source video and cleared its visual and audio rights for YouTube. The reviewer supplied the exact official source link.",
+          "visual_rights_confirmed": true,
+          "audio_rights_confirmed": true,
+          "route": "manual_link"
+        },
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       }
     },
     "updated_at": 1795702105.5392976,
     "keyboard_codes": [],
-    "receipts": {
-      "22": "درخواست انتشار ثبت شد. پس از بررسی نهایی فایل و حقوق محتوا نتیجه را همین‌جا می‌فرستم."
-    },
-    "link_requests": {
-      "footballi:1077193": {
-        "url": "https://footballi.net/video/1077193/%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%DA%A9%D8%B3%D8%AA-%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%B6%D8%B9%DB%8C%D9%81-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1-%D9%88-%D8%AF%D8%B1%D8%AE%D8%B4%D8%B4-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84-%D8%AF%D8%B1-%D8%A2%D8%B3%DB%8C%D8%A7",
-        "message_id": 22
-      }
-    },
+    "receipts": {},
+    "link_requests": {},
     "keyboard_waiting": 0
   }
 }
