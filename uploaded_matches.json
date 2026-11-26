@@ -1808,7 +1808,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077606,
+  "max_seen_video_id": 1077608,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -2478,11 +2478,25 @@
               "comments": 55,
               "shares": 20
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 9925,
+              "estimatedMinutesWatched": 43731,
+              "averageViewDuration": 418,
+              "averageViewPercentage": 44.32,
+              "subscribersGained": 60,
+              "likes": 82,
+              "comments": 55,
+              "shares": 20
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 9925,
           "estimatedMinutesWatched": 43731,
@@ -2628,11 +2642,25 @@
               "comments": 6,
               "shares": 9
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 16091,
+              "estimatedMinutesWatched": 43273,
+              "averageViewDuration": 276,
+              "averageViewPercentage": 33.81,
+              "subscribersGained": 31,
+              "likes": 87,
+              "comments": 6,
+              "shares": 9
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 16091,
           "estimatedMinutesWatched": 43273,
@@ -2778,14 +2806,28 @@
               "comments": 14,
               "shares": 23
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 18933,
+              "estimatedMinutesWatched": 35129,
+              "averageViewDuration": 231,
+              "averageViewPercentage": 44.19,
+              "subscribersGained": 44,
+              "likes": 89,
+              "comments": 14,
+              "shares": 23
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 18931,
-          "estimatedMinutesWatched": 35128,
+          "views": 18933,
+          "estimatedMinutesWatched": 35129,
           "averageViewDuration": 231,
           "averageViewPercentage": 44.19,
           "subscribersGained": 44,
@@ -2928,11 +2970,25 @@
               "comments": 17,
               "shares": 4
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 10063,
+              "estimatedMinutesWatched": 27111,
+              "averageViewDuration": 274,
+              "averageViewPercentage": 53.64,
+              "subscribersGained": 21,
+              "likes": 54,
+              "comments": 17,
+              "shares": 4
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 10063,
           "estimatedMinutesWatched": 27111,
@@ -3078,11 +3134,25 @@
               "comments": 30,
               "shares": 3
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 5397,
+              "estimatedMinutesWatched": 22648,
+              "averageViewDuration": 401,
+              "averageViewPercentage": 41.61,
+              "subscribersGained": 14,
+              "likes": 33,
+              "comments": 30,
+              "shares": 3
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 5397,
           "estimatedMinutesWatched": 22648,
@@ -3228,11 +3298,25 @@
               "comments": 1,
               "shares": 6
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 5411,
+              "estimatedMinutesWatched": 17773,
+              "averageViewDuration": 379,
+              "averageViewPercentage": 50.17,
+              "subscribersGained": 18,
+              "likes": 33,
+              "comments": 1,
+              "shares": 6
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 5411,
           "estimatedMinutesWatched": 17773,
@@ -3378,13 +3462,27 @@
               "comments": 16,
               "shares": 12
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 8619,
+              "estimatedMinutesWatched": 14543,
+              "averageViewDuration": 196,
+              "averageViewPercentage": 41.82,
+              "subscribersGained": 19,
+              "likes": 53,
+              "comments": 16,
+              "shares": 12
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 8618,
+          "views": 8619,
           "estimatedMinutesWatched": 14543,
           "averageViewDuration": 196,
           "averageViewPercentage": 41.82,
@@ -3528,11 +3626,25 @@
               "comments": 7,
               "shares": 9
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 5470,
+              "estimatedMinutesWatched": 7683,
+              "averageViewDuration": 160,
+              "averageViewPercentage": 51.64,
+              "subscribersGained": 14,
+              "likes": 28,
+              "comments": 7,
+              "shares": 9
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 5470,
           "estimatedMinutesWatched": 7683,
@@ -3678,11 +3790,25 @@
               "comments": 29,
               "shares": 4
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 3836,
+              "estimatedMinutesWatched": 4841,
+              "averageViewDuration": 145,
+              "averageViewPercentage": 49.25,
+              "subscribersGained": 21,
+              "likes": 28,
+              "comments": 29,
+              "shares": 4
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 3836,
           "estimatedMinutesWatched": 4841,
@@ -3828,11 +3954,25 @@
               "comments": 1,
               "shares": 2
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 697,
+              "estimatedMinutesWatched": 2572,
+              "averageViewDuration": 441,
+              "averageViewPercentage": 33.71,
+              "subscribersGained": 3,
+              "likes": 3,
+              "comments": 1,
+              "shares": 2
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 697,
           "estimatedMinutesWatched": 2572,
@@ -3978,13 +4118,27 @@
               "comments": 11,
               "shares": 5
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 2523,
+              "estimatedMinutesWatched": 1701,
+              "averageViewDuration": 60,
+              "averageViewPercentage": 55.73,
+              "subscribersGained": 3,
+              "likes": 66,
+              "comments": 11,
+              "shares": 5
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 2522,
+          "views": 2523,
           "estimatedMinutesWatched": 1701,
           "averageViewDuration": 60,
           "averageViewPercentage": 55.73,
@@ -4128,11 +4282,25 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 438,
+              "estimatedMinutesWatched": 1409,
+              "averageViewDuration": 415,
+              "averageViewPercentage": 32.91,
+              "subscribersGained": 4,
+              "likes": 6,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 438,
           "estimatedMinutesWatched": 1409,
@@ -4278,16 +4446,30 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1469,
+              "estimatedMinutesWatched": 781,
+              "averageViewDuration": 56,
+              "averageViewPercentage": 70.21,
+              "subscribersGained": 1,
+              "likes": 20,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 1464,
-          "estimatedMinutesWatched": 780,
+          "views": 1469,
+          "estimatedMinutesWatched": 781,
           "averageViewDuration": 56,
-          "averageViewPercentage": 70.28,
+          "averageViewPercentage": 70.21,
           "subscribersGained": 1,
           "likes": 20,
           "comments": 0,
@@ -4429,13 +4611,27 @@
               "comments": 3,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1150,
+              "estimatedMinutesWatched": 759,
+              "averageViewDuration": 57,
+              "averageViewPercentage": 37.24,
+              "subscribersGained": 5,
+              "likes": 16,
+              "comments": 3,
+              "shares": 1
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 1149,
+          "views": 1150,
           "estimatedMinutesWatched": 759,
           "averageViewDuration": 57,
           "averageViewPercentage": 37.24,
@@ -4579,11 +4775,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 572,
+              "estimatedMinutesWatched": 690,
+              "averageViewDuration": 152,
+              "averageViewPercentage": 31.81,
+              "subscribersGained": 0,
+              "likes": 2,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 572,
           "estimatedMinutesWatched": 690,
@@ -4729,11 +4939,25 @@
               "comments": 4,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1596,
+              "estimatedMinutesWatched": 620,
+              "averageViewDuration": 36,
+              "averageViewPercentage": 84,
+              "subscribersGained": 4,
+              "likes": 21,
+              "comments": 4,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1596,
           "estimatedMinutesWatched": 620,
@@ -4879,11 +5103,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 943,
+              "estimatedMinutesWatched": 576,
+              "averageViewDuration": 47,
+              "averageViewPercentage": 40.71,
+              "subscribersGained": 3,
+              "likes": 11,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 943,
           "estimatedMinutesWatched": 576,
@@ -5029,11 +5267,25 @@
               "comments": 4,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1656,
+              "estimatedMinutesWatched": 483,
+              "averageViewDuration": 27,
+              "averageViewPercentage": 48.95,
+              "subscribersGained": 1,
+              "likes": 21,
+              "comments": 4,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1656,
           "estimatedMinutesWatched": 483,
@@ -5180,11 +5432,25 @@
               "comments": 2,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1409,
+              "estimatedMinutesWatched": 417,
+              "averageViewDuration": 24,
+              "averageViewPercentage": 43.68,
+              "subscribersGained": 4,
+              "likes": 39,
+              "comments": 2,
+              "shares": 1
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1409,
           "estimatedMinutesWatched": 417,
@@ -5330,11 +5596,25 @@
               "comments": 2,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 182,
+              "estimatedMinutesWatched": 506,
+              "averageViewDuration": 290,
+              "averageViewPercentage": 19.17,
+              "subscribersGained": 1,
+              "likes": 3,
+              "comments": 2,
+              "shares": 1
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 182,
           "estimatedMinutesWatched": 506,
@@ -5480,11 +5760,25 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 3525,
+              "estimatedMinutesWatched": 324,
+              "averageViewDuration": 10,
+              "averageViewPercentage": 104.21,
+              "subscribersGained": 1,
+              "likes": 20,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 3525,
           "estimatedMinutesWatched": 324,
@@ -5630,11 +5924,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 216,
+              "estimatedMinutesWatched": 321,
+              "averageViewDuration": 134,
+              "averageViewPercentage": 22.02,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 216,
           "estimatedMinutesWatched": 321,
@@ -5780,11 +6088,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 334,
+              "estimatedMinutesWatched": 316,
+              "averageViewDuration": 127,
+              "averageViewPercentage": 25.42,
+              "subscribersGained": 2,
+              "likes": 2,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 334,
           "estimatedMinutesWatched": 316,
@@ -5930,11 +6252,25 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 775,
+              "estimatedMinutesWatched": 292,
+              "averageViewDuration": 30,
+              "averageViewPercentage": 33.16,
+              "subscribersGained": 0,
+              "likes": 24,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 775,
           "estimatedMinutesWatched": 292,
@@ -6080,11 +6416,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 185,
+              "estimatedMinutesWatched": 252,
+              "averageViewDuration": 211,
+              "averageViewPercentage": 30.09,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 185,
           "estimatedMinutesWatched": 252,
@@ -6324,11 +6674,25 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 318,
+              "estimatedMinutesWatched": 236,
+              "averageViewDuration": 118,
+              "averageViewPercentage": 42.07,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 318,
           "estimatedMinutesWatched": 236,
@@ -6474,11 +6838,25 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 135,
+              "estimatedMinutesWatched": 248,
+              "averageViewDuration": 188,
+              "averageViewPercentage": 22.06,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 135,
           "estimatedMinutesWatched": 248,
@@ -6624,11 +7002,25 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 235,
+              "estimatedMinutesWatched": 214,
+              "averageViewDuration": 131,
+              "averageViewPercentage": 36.05,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 235,
           "estimatedMinutesWatched": 214,
@@ -6774,11 +7166,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 191,
+              "estimatedMinutesWatched": 222,
+              "averageViewDuration": 176,
+              "averageViewPercentage": 34.41,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 191,
           "estimatedMinutesWatched": 222,
@@ -7112,11 +7518,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 104,
+              "estimatedMinutesWatched": 104,
+              "averageViewDuration": 152,
+              "averageViewPercentage": 45.25,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 104,
           "estimatedMinutesWatched": 104,
@@ -7262,11 +7682,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 93,
+              "estimatedMinutesWatched": 94,
+              "averageViewDuration": 113,
+              "averageViewPercentage": 34.59,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 93,
           "estimatedMinutesWatched": 94,
@@ -7412,11 +7846,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 96,
+              "estimatedMinutesWatched": 101,
+              "averageViewDuration": 169,
+              "averageViewPercentage": 30.67,
+              "subscribersGained": 1,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 96,
           "estimatedMinutesWatched": 101,
@@ -7562,11 +8010,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 73,
+              "estimatedMinutesWatched": 83,
+              "averageViewDuration": 93,
+              "averageViewPercentage": 41.91,
+              "subscribersGained": 0,
+              "likes": 2,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 73,
           "estimatedMinutesWatched": 83,
@@ -7712,11 +8174,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 151,
+              "estimatedMinutesWatched": 95,
+              "averageViewDuration": 80,
+              "averageViewPercentage": 24.41,
+              "subscribersGained": 1,
+              "likes": 2,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 151,
           "estimatedMinutesWatched": 95,
@@ -7862,11 +8338,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 82,
+              "estimatedMinutesWatched": 67,
+              "averageViewDuration": 114,
+              "averageViewPercentage": 13.86,
+              "subscribersGained": 0,
+              "likes": 2,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 82,
           "estimatedMinutesWatched": 67,
@@ -8012,11 +8502,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 96,
+              "estimatedMinutesWatched": 58,
+              "averageViewDuration": 64,
+              "averageViewPercentage": 21.79,
+              "subscribersGained": 0,
+              "likes": 4,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 96,
           "estimatedMinutesWatched": 58,
@@ -8162,11 +8666,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 151,
+              "estimatedMinutesWatched": 69,
+              "averageViewDuration": 55,
+              "averageViewPercentage": 16.15,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 151,
           "estimatedMinutesWatched": 69,
@@ -8500,11 +9018,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 59,
+              "estimatedMinutesWatched": 35,
+              "averageViewDuration": 96,
+              "averageViewPercentage": 22.36,
+              "subscribersGained": 0,
+              "likes": 2,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 59,
           "estimatedMinutesWatched": 35,
@@ -8650,11 +9182,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 57,
+              "estimatedMinutesWatched": 53,
+              "averageViewDuration": 102,
+              "averageViewPercentage": 20.43,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 57,
           "estimatedMinutesWatched": 53,
@@ -8800,11 +9346,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 79,
+              "estimatedMinutesWatched": 50,
+              "averageViewDuration": 78,
+              "averageViewPercentage": 13.49,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 79,
           "estimatedMinutesWatched": 50,
@@ -8950,11 +9510,25 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 18,
+              "estimatedMinutesWatched": 48,
+              "averageViewDuration": 206,
+              "averageViewPercentage": 39.03,
+              "subscribersGained": 1,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 18,
           "estimatedMinutesWatched": 48,
@@ -9100,11 +9674,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 12,
+              "estimatedMinutesWatched": 27,
+              "averageViewDuration": 164,
+              "averageViewPercentage": 25.79,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 12,
           "estimatedMinutesWatched": 27,
@@ -9239,11 +9827,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 9,
+              "estimatedMinutesWatched": 26,
+              "averageViewDuration": 178,
+              "averageViewPercentage": 40.77,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 9,
           "estimatedMinutesWatched": 26,
@@ -9378,11 +9980,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 96,
+              "estimatedMinutesWatched": 20,
+              "averageViewDuration": 37,
+              "averageViewPercentage": 20.84,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 96,
           "estimatedMinutesWatched": 20,
@@ -9528,11 +10144,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 77,
+              "estimatedMinutesWatched": 37,
+              "averageViewDuration": 42,
+              "averageViewPercentage": 36.74,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 77,
           "estimatedMinutesWatched": 37,
@@ -9678,11 +10308,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 72,
+              "estimatedMinutesWatched": 16,
+              "averageViewDuration": 62,
+              "averageViewPercentage": 27.99,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 72,
           "estimatedMinutesWatched": 16,
@@ -9828,11 +10472,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 38,
+              "estimatedMinutesWatched": 23,
+              "averageViewDuration": 52,
+              "averageViewPercentage": 22.19,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 38,
           "estimatedMinutesWatched": 23,
@@ -9978,11 +10636,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 59,
+              "estimatedMinutesWatched": 21,
+              "averageViewDuration": 50,
+              "averageViewPercentage": 26.14,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 59,
           "estimatedMinutesWatched": 21,
@@ -10128,11 +10800,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 72,
+              "estimatedMinutesWatched": 21,
+              "averageViewDuration": 40,
+              "averageViewPercentage": 15.75,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 72,
           "estimatedMinutesWatched": 21,
@@ -10278,11 +10964,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 17,
+              "estimatedMinutesWatched": 9,
+              "averageViewDuration": 51,
+              "averageViewPercentage": 12.98,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 17,
           "estimatedMinutesWatched": 9,
@@ -10417,11 +11117,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 37,
+              "estimatedMinutesWatched": 8,
+              "averageViewDuration": 21,
+              "averageViewPercentage": 27.59,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 37,
           "estimatedMinutesWatched": 8,
@@ -10567,11 +11281,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 3,
+              "estimatedMinutesWatched": 2,
+              "averageViewDuration": 68,
+              "averageViewPercentage": 55.77,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 3,
           "estimatedMinutesWatched": 2,
@@ -10811,11 +11539,25 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 10,
+              "estimatedMinutesWatched": 1,
+              "averageViewDuration": 10,
+              "averageViewPercentage": 3.24,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 10,
           "estimatedMinutesWatched": 1,
@@ -10950,13 +11692,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1559,
+              "estimatedMinutesWatched": 1027,
+              "averageViewDuration": 83,
+              "averageViewPercentage": 41.97,
+              "subscribersGained": 3,
+              "likes": 9,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "s2bUTzUIsQs",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1559,
           "estimatedMinutesWatched": 1027,
@@ -11099,18 +11855,32 @@
               "comments": 8,
               "shares": 7
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 11039,
+              "estimatedMinutesWatched": 2039,
+              "averageViewDuration": 18,
+              "averageViewPercentage": 74.54,
+              "subscribersGained": 16,
+              "likes": 99,
+              "comments": 8,
+              "shares": 7
+            }
           }
         ],
         "video_id": "xRmWpp-FcK8",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 11031,
-          "estimatedMinutesWatched": 2038,
+          "views": 11039,
+          "estimatedMinutesWatched": 2039,
           "averageViewDuration": 18,
-          "averageViewPercentage": 74.55,
+          "averageViewPercentage": 74.54,
           "subscribersGained": 16,
           "likes": 99,
           "comments": 8,
@@ -11250,13 +12020,27 @@
               "comments": 1,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 289,
+              "estimatedMinutesWatched": 305,
+              "averageViewDuration": 150,
+              "averageViewPercentage": 28.09,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 1,
+              "shares": 1
+            }
           }
         ],
         "video_id": "fo0CJYWV9XA",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 289,
           "estimatedMinutesWatched": 305,
@@ -11399,13 +12183,27 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 267,
+              "estimatedMinutesWatched": 287,
+              "averageViewDuration": 157,
+              "averageViewPercentage": 18.52,
+              "subscribersGained": 2,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "_kfhPpKTxp0",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 267,
           "estimatedMinutesWatched": 287,
@@ -11548,13 +12346,27 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 156,
+              "estimatedMinutesWatched": 173,
+              "averageViewDuration": 164,
+              "averageViewPercentage": 7.33,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
         "video_id": "wbsXnJe0u74",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 156,
           "estimatedMinutesWatched": 173,
@@ -11697,13 +12509,27 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 326,
+              "estimatedMinutesWatched": 208,
+              "averageViewDuration": 85,
+              "averageViewPercentage": 31.44,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "yNMQFVLrYI0",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 326,
           "estimatedMinutesWatched": 208,
@@ -11846,13 +12672,27 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 200,
+              "estimatedMinutesWatched": 75,
+              "averageViewDuration": 75,
+              "averageViewPercentage": 36.15,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "j2FxETm3Q-A",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 200,
           "estimatedMinutesWatched": 75,
@@ -11995,13 +12835,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 82,
+              "estimatedMinutesWatched": 28,
+              "averageViewDuration": 42,
+              "averageViewPercentage": 18.33,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "kcXtfRp5vGw",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 82,
           "estimatedMinutesWatched": 28,
@@ -12144,13 +12998,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 56,
+              "estimatedMinutesWatched": 25,
+              "averageViewDuration": 90,
+              "averageViewPercentage": 22.41,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "eL3xQkAGtjM",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 56,
           "estimatedMinutesWatched": 25,
@@ -12293,13 +13161,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 463,
+              "estimatedMinutesWatched": 47,
+              "averageViewDuration": 16,
+              "averageViewPercentage": 52.4,
+              "subscribersGained": 2,
+              "likes": 6,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "cvuAwQ4k21M",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 463,
           "estimatedMinutesWatched": 47,
@@ -12444,13 +13326,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 6602,
+              "estimatedMinutesWatched": 694,
+              "averageViewDuration": 12,
+              "averageViewPercentage": 101.17,
+              "subscribersGained": 3,
+              "likes": 27,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "Txy_j-gn5cM",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 6602,
           "estimatedMinutesWatched": 694,
@@ -12581,18 +13477,32 @@
               "comments": 0,
               "shares": 2
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 164,
+              "estimatedMinutesWatched": 705,
+              "averageViewDuration": 424,
+              "averageViewPercentage": 16.05,
+              "subscribersGained": 1,
+              "likes": 1,
+              "comments": 0,
+              "shares": 2
+            }
           }
         ],
         "video_id": "5dWV-l6DvS0",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 163,
+          "views": 164,
           "estimatedMinutesWatched": 705,
-          "averageViewDuration": 429,
-          "averageViewPercentage": 16.22,
+          "averageViewDuration": 424,
+          "averageViewPercentage": 16.05,
           "subscribersGained": 1,
           "likes": 1,
           "comments": 0,
@@ -12790,13 +13700,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1577,
+              "estimatedMinutesWatched": 371,
+              "averageViewDuration": 23,
+              "averageViewPercentage": 68.58,
+              "subscribersGained": 1,
+              "likes": 22,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "7gY733Mk_Dw",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1577,
           "estimatedMinutesWatched": 371,
@@ -12927,13 +13851,27 @@
               "comments": 2,
               "shares": 7
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 4403,
+              "estimatedMinutesWatched": 3895,
+              "averageViewDuration": 114,
+              "averageViewPercentage": 50.53,
+              "subscribersGained": 5,
+              "likes": 13,
+              "comments": 2,
+              "shares": 7
+            }
           }
         ],
         "video_id": "pOWvf8sxbFk",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 4403,
           "estimatedMinutesWatched": 3895,
@@ -13062,15 +14000,29 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 3519,
+              "estimatedMinutesWatched": 409,
+              "averageViewDuration": 12,
+              "averageViewPercentage": 96.53,
+              "subscribersGained": 4,
+              "likes": 33,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
         "video_id": "5ELPWaInU5E",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 3518,
+          "views": 3519,
           "estimatedMinutesWatched": 409,
           "averageViewDuration": 12,
           "averageViewPercentage": 96.53,
@@ -13199,13 +14151,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 384,
+              "estimatedMinutesWatched": 276,
+              "averageViewDuration": 89,
+              "averageViewPercentage": 48.78,
+              "subscribersGained": 1,
+              "likes": 3,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "MZA1NXvV1SQ",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 384,
           "estimatedMinutesWatched": 276,
@@ -13334,13 +14300,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1445,
+              "estimatedMinutesWatched": 187,
+              "averageViewDuration": 15,
+              "averageViewPercentage": 89.91,
+              "subscribersGained": 3,
+              "likes": 25,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "Odu2hIUafqw",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1445,
           "estimatedMinutesWatched": 187,
@@ -13471,13 +14451,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1853,
+              "estimatedMinutesWatched": 175,
+              "averageViewDuration": 9,
+              "averageViewPercentage": 88.59,
+              "subscribersGained": 2,
+              "likes": 12,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "SgjSIJjRllI",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1853,
           "estimatedMinutesWatched": 175,
@@ -13608,13 +14602,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 173,
+              "estimatedMinutesWatched": 178,
+              "averageViewDuration": 109,
+              "averageViewPercentage": 40.85,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "-Ud6slcyGiI",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 173,
           "estimatedMinutesWatched": 178,
@@ -13743,15 +14751,29 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1153,
+              "estimatedMinutesWatched": 163,
+              "averageViewDuration": 14,
+              "averageViewPercentage": 62.55,
+              "subscribersGained": 5,
+              "likes": 17,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "78pHfXgilGU",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 1150,
+          "views": 1153,
           "estimatedMinutesWatched": 163,
           "averageViewDuration": 14,
           "averageViewPercentage": 62.55,
@@ -13880,13 +14902,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 215,
+              "estimatedMinutesWatched": 120,
+              "averageViewDuration": 94,
+              "averageViewPercentage": 14.44,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "Gppn0m_RFMY",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 215,
           "estimatedMinutesWatched": 120,
@@ -14015,13 +15051,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 269,
+              "estimatedMinutesWatched": 187,
+              "averageViewDuration": 75,
+              "averageViewPercentage": 30.21,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "NjBDBkuT0ow",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 269,
           "estimatedMinutesWatched": 187,
@@ -14150,13 +15200,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 94,
+              "estimatedMinutesWatched": 46,
+              "averageViewDuration": 56,
+              "averageViewPercentage": 23.44,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "1zQhf6XSwHA",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 94,
           "estimatedMinutesWatched": 46,
@@ -14401,13 +15465,27 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 188,
+              "estimatedMinutesWatched": 205,
+              "averageViewDuration": 117,
+              "averageViewPercentage": 37.95,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "AxVGoleCjpk",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 188,
           "estimatedMinutesWatched": 205,
@@ -14536,13 +15614,27 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 211,
+              "estimatedMinutesWatched": 69,
+              "averageViewDuration": 67,
+              "averageViewPercentage": 22.59,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "Nb6g5gq3CxI",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 211,
           "estimatedMinutesWatched": 69,
@@ -14671,13 +15763,27 @@
               "comments": 0,
               "shares": 2
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 104,
+              "estimatedMinutesWatched": 119,
+              "averageViewDuration": 150,
+              "averageViewPercentage": 45.98,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 2
+            }
           }
         ],
         "video_id": "RSSubbsW44E",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 104,
           "estimatedMinutesWatched": 119,
@@ -15038,13 +16144,27 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 124,
+              "estimatedMinutesWatched": 51,
+              "averageViewDuration": 99,
+              "averageViewPercentage": 42.81,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "cY91jitiefk",
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 124,
           "estimatedMinutesWatched": 51,
@@ -15131,6 +16251,20 @@
               "comments": 14,
               "shares": 6
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 7885,
+              "estimatedMinutesWatched": 9964,
+              "averageViewDuration": 131,
+              "averageViewPercentage": 58.85,
+              "subscribersGained": 15,
+              "likes": 52,
+              "comments": 14,
+              "shares": 6
+            }
           }
         ],
         "video_id": "HMcCNwgsmvE",
@@ -15145,12 +16279,12 @@
           "commentCount": 17
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 7883,
-          "estimatedMinutesWatched": 9962,
+          "views": 7885,
+          "estimatedMinutesWatched": 9964,
           "averageViewDuration": 131,
           "averageViewPercentage": 58.85,
           "subscribersGained": 15,
@@ -15240,6 +16374,20 @@
               "comments": 19,
               "shares": 10
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 47544,
+              "estimatedMinutesWatched": 9895,
+              "averageViewDuration": 24,
+              "averageViewPercentage": 93.48,
+              "subscribersGained": 114,
+              "likes": 772,
+              "comments": 19,
+              "shares": 10
+            }
           }
         ],
         "video_id": "FXfpPnmOdhI",
@@ -15254,16 +16402,16 @@
           "commentCount": 26
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 47460,
-          "estimatedMinutesWatched": 9878,
+          "views": 47544,
+          "estimatedMinutesWatched": 9895,
           "averageViewDuration": 24,
-          "averageViewPercentage": 93.47,
+          "averageViewPercentage": 93.48,
           "subscribersGained": 114,
-          "likes": 774,
+          "likes": 772,
           "comments": 19,
           "shares": 10
         },
@@ -15349,6 +16497,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 179,
+              "estimatedMinutesWatched": 208,
+              "averageViewDuration": 121,
+              "averageViewPercentage": 17.15,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "SBlVEUMTVj8",
@@ -15363,9 +16525,9 @@
           "commentCount": 0
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 179,
           "estimatedMinutesWatched": 208,
@@ -15520,6 +16682,20 @@
               "comments": 1,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 6134,
+              "estimatedMinutesWatched": 1085,
+              "averageViewDuration": 18,
+              "averageViewPercentage": 93.92,
+              "subscribersGained": 8,
+              "likes": 51,
+              "comments": 1,
+              "shares": 0
+            }
           }
         ],
         "video_id": "kwIauwo-fjI",
@@ -15534,12 +16710,12 @@
           "commentCount": 4
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 6128,
-          "estimatedMinutesWatched": 1084,
+          "views": 6134,
+          "estimatedMinutesWatched": 1085,
           "averageViewDuration": 18,
           "averageViewPercentage": 93.92,
           "subscribersGained": 8,
@@ -15643,6 +16819,20 @@
               "comments": 5,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1546,
+              "estimatedMinutesWatched": 245,
+              "averageViewDuration": 18,
+              "averageViewPercentage": 75.61,
+              "subscribersGained": 3,
+              "likes": 8,
+              "comments": 5,
+              "shares": 0
+            }
           }
         ],
         "video_id": "3_4mnhwaJdg",
@@ -15657,9 +16847,9 @@
           "commentCount": 7
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1546,
           "estimatedMinutesWatched": 245,
@@ -15766,6 +16956,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 152,
+              "estimatedMinutesWatched": 76,
+              "averageViewDuration": 57,
+              "averageViewPercentage": 7.53,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "fdXOpvO5cJI",
@@ -15778,9 +16982,9 @@
           "commentCount": 0
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 152,
           "estimatedMinutesWatched": 76,
@@ -15887,6 +17091,20 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 182,
+              "estimatedMinutesWatched": 156,
+              "averageViewDuration": 75,
+              "averageViewPercentage": 25.93,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "dtVC92Zuv6g",
@@ -15899,9 +17117,9 @@
           "commentCount": 0
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 182,
           "estimatedMinutesWatched": 156,
@@ -15999,6 +17217,20 @@
               "comments": 3,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1380,
+              "estimatedMinutesWatched": 437,
+              "averageViewDuration": 32,
+              "averageViewPercentage": 52.52,
+              "subscribersGained": 6,
+              "likes": 18,
+              "comments": 3,
+              "shares": 1
+            }
           }
         ],
         "video_id": "o51-Z58vMYE",
@@ -16011,18 +17243,18 @@
           "commentCount": 3
         },
         "source": "youtube",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 1373,
-          "estimatedMinutesWatched": 436,
+          "views": 1380,
+          "estimatedMinutesWatched": 437,
           "averageViewDuration": 32,
-          "averageViewPercentage": 52.61,
+          "averageViewPercentage": 52.52,
           "subscribersGained": 6,
           "likes": 18,
           "comments": 3,
-          "shares": 0
+          "shares": 1
         },
         "first_three_days": {
           "start": "2026-11-19",
@@ -16092,6 +17324,20 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 115,
+              "estimatedMinutesWatched": 79,
+              "averageViewDuration": 64,
+              "averageViewPercentage": 32.35,
+              "subscribersGained": 1,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "iUMcGvrIaDo",
@@ -16106,9 +17352,9 @@
           "commentCount": 0
         },
         "format_source": "published_metadata",
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 115,
           "estimatedMinutesWatched": 79,
@@ -16187,6 +17433,20 @@
               "comments": 2,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1359,
+              "estimatedMinutesWatched": 131,
+              "averageViewDuration": 13,
+              "averageViewPercentage": 81.54,
+              "subscribersGained": 1,
+              "likes": 12,
+              "comments": 2,
+              "shares": 0
+            }
           }
         ],
         "video_id": "gr6LNI6A7lw",
@@ -16201,9 +17461,9 @@
           "likeCount": 12,
           "commentCount": 2
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1359,
           "estimatedMinutesWatched": 131,
@@ -16282,6 +17542,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 79,
+              "estimatedMinutesWatched": 36,
+              "averageViewDuration": 66,
+              "averageViewPercentage": 35.83,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "ZBhclMGMwkA",
@@ -16296,9 +17570,9 @@
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 79,
           "estimatedMinutesWatched": 36,
@@ -16377,6 +17651,20 @@
               "comments": 2,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1391,
+              "estimatedMinutesWatched": 4252,
+              "averageViewDuration": 352,
+              "averageViewPercentage": 58.5,
+              "subscribersGained": 1,
+              "likes": 8,
+              "comments": 2,
+              "shares": 0
+            }
           }
         ],
         "video_id": "DgUAHIJ9KOY",
@@ -16387,13 +17675,13 @@
         "source": "footballi_web",
         "published_at": "2026-11-19T18:11:28Z",
         "recent_statistics": {
-          "viewCount": 1403,
+          "viewCount": 1405,
           "likeCount": 8,
           "commentCount": 3
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1391,
           "estimatedMinutesWatched": 4252,
@@ -16472,6 +17760,20 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 111,
+              "estimatedMinutesWatched": 98,
+              "averageViewDuration": 75,
+              "averageViewPercentage": 14.06,
+              "subscribersGained": 2,
+              "likes": 0,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "Vsb1D6KO71I",
@@ -16486,9 +17788,9 @@
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 111,
           "estimatedMinutesWatched": 98,
@@ -16553,6 +17855,20 @@
               "comments": 19,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 8738,
+              "estimatedMinutesWatched": 3214,
+              "averageViewDuration": 36,
+              "averageViewPercentage": 79.28,
+              "subscribersGained": 15,
+              "likes": 84,
+              "comments": 19,
+              "shares": 0
+            }
           }
         ],
         "video_id": "RLL3zMJhIZg",
@@ -16563,18 +17879,18 @@
         "source": "instagram",
         "published_at": "2026-11-20T08:01:53Z",
         "recent_statistics": {
-          "viewCount": 8745,
+          "viewCount": 8748,
           "likeCount": 84,
           "commentCount": 19
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 8708,
-          "estimatedMinutesWatched": 3205,
+          "views": 8738,
+          "estimatedMinutesWatched": 3214,
           "averageViewDuration": 36,
-          "averageViewPercentage": 79.25,
+          "averageViewPercentage": 79.28,
           "subscribersGained": 15,
           "likes": 84,
           "comments": 19,
@@ -16634,6 +17950,20 @@
               "comments": 26,
               "shares": 8
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 3876,
+              "estimatedMinutesWatched": 927,
+              "averageViewDuration": 27,
+              "averageViewPercentage": 79.93,
+              "subscribersGained": 7,
+              "likes": 87,
+              "comments": 26,
+              "shares": 8
+            }
           }
         ],
         "video_id": "9EgjWZp7TxQ",
@@ -16648,14 +17978,14 @@
           "likeCount": 87,
           "commentCount": 20
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 3866,
-          "estimatedMinutesWatched": 926,
+          "views": 3876,
+          "estimatedMinutesWatched": 927,
           "averageViewDuration": 27,
-          "averageViewPercentage": 79.94,
+          "averageViewPercentage": 79.93,
           "subscribersGained": 7,
           "likes": 87,
           "comments": 26,
@@ -16715,6 +18045,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 101,
+              "estimatedMinutesWatched": 58,
+              "averageViewDuration": 52,
+              "averageViewPercentage": 14.82,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "hjyvyrIylHE",
@@ -16729,9 +18073,9 @@
           "likeCount": 1,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 101,
           "estimatedMinutesWatched": 58,
@@ -16796,6 +18140,20 @@
               "comments": 1,
               "shares": 3
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 447,
+              "estimatedMinutesWatched": 1245,
+              "averageViewDuration": 271,
+              "averageViewPercentage": 56.38,
+              "subscribersGained": 1,
+              "likes": 5,
+              "comments": 1,
+              "shares": 3
+            }
           }
         ],
         "video_id": "UCKY8tUWbi0",
@@ -16810,9 +18168,9 @@
           "likeCount": 5,
           "commentCount": 2
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 447,
           "estimatedMinutesWatched": 1245,
@@ -16849,6 +18207,20 @@
               "comments": 0,
               "shares": 3
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 391,
+              "estimatedMinutesWatched": 1015,
+              "averageViewDuration": 239,
+              "averageViewPercentage": 48.47,
+              "subscribersGained": 1,
+              "likes": 2,
+              "comments": 0,
+              "shares": 3
+            }
           }
         ],
         "video_id": "Qf5fgvIgYI8",
@@ -16863,9 +18235,9 @@
           "likeCount": 2,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 391,
           "estimatedMinutesWatched": 1015,
@@ -16902,6 +18274,20 @@
               "comments": 3,
               "shares": 9
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 14812,
+              "estimatedMinutesWatched": 78301,
+              "averageViewDuration": 534,
+              "averageViewPercentage": 61.65,
+              "subscribersGained": 20,
+              "likes": 46,
+              "comments": 3,
+              "shares": 9
+            }
           }
         ],
         "video_id": "1DmUxNJzezE",
@@ -16912,13 +18298,13 @@
         "source": "footballi_web",
         "published_at": "2026-11-20T15:13:05Z",
         "recent_statistics": {
-          "viewCount": 14824,
+          "viewCount": 14826,
           "likeCount": 46,
           "commentCount": 5
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 14812,
           "estimatedMinutesWatched": 78301,
@@ -16983,6 +18369,20 @@
               "comments": 2,
               "shares": 3
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 254,
+              "estimatedMinutesWatched": 507,
+              "averageViewDuration": 171,
+              "averageViewPercentage": 51.85,
+              "subscribersGained": 0,
+              "likes": 3,
+              "comments": 2,
+              "shares": 3
+            }
           }
         ],
         "video_id": "a2pLBEGcBeQ",
@@ -16997,11 +18397,11 @@
           "likeCount": 3,
           "commentCount": 2
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 253,
+          "views": 254,
           "estimatedMinutesWatched": 507,
           "averageViewDuration": 171,
           "averageViewPercentage": 51.85,
@@ -17036,6 +18436,20 @@
               "comments": 1,
               "shares": 3
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 1726,
+              "estimatedMinutesWatched": 4278,
+              "averageViewDuration": 269,
+              "averageViewPercentage": 56.23,
+              "subscribersGained": 0,
+              "likes": 7,
+              "comments": 1,
+              "shares": 3
+            }
           }
         ],
         "video_id": "b7Ob44QjsiU",
@@ -17050,9 +18464,9 @@
           "likeCount": 7,
           "commentCount": 2
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 1726,
           "estimatedMinutesWatched": 4278,
@@ -17123,6 +18537,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 839,
+              "estimatedMinutesWatched": 543,
+              "averageViewDuration": 61,
+              "averageViewPercentage": 42.72,
+              "subscribersGained": 2,
+              "likes": 16,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "3y8p6aFCyK4",
@@ -17137,14 +18565,14 @@
           "likeCount": 16,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 833,
+          "views": 839,
           "estimatedMinutesWatched": 543,
-          "averageViewDuration": 62,
-          "averageViewPercentage": 42.94,
+          "averageViewDuration": 61,
+          "averageViewPercentage": 42.72,
           "subscribersGained": 2,
           "likes": 16,
           "comments": 0,
@@ -17180,6 +18608,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 94,
+              "estimatedMinutesWatched": 10,
+              "averageViewDuration": 13,
+              "averageViewPercentage": 37.34,
+              "subscribersGained": 0,
+              "likes": 3,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "kzFzEyMmyOM",
@@ -17194,18 +18636,28 @@
           "likeCount": 3,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 84,
-          "estimatedMinutesWatched": 9,
-          "averageViewDuration": 12,
-          "averageViewPercentage": 35.45,
+          "views": 94,
+          "estimatedMinutesWatched": 10,
+          "averageViewDuration": 13,
+          "averageViewPercentage": 37.34,
           "subscribersGained": 0,
           "likes": 3,
           "comments": 0,
           "shares": 0
+        },
+        "first_three_days": {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "metrics": {
+            "views": 94,
+            "estimatedMinutesWatched": 10,
+            "subscribersGained": 0,
+            "averageViewPercentage": 37.34
+          }
         }
       },
       "OrzdOCnd8SI": {
@@ -17237,6 +18689,20 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 91,
+              "estimatedMinutesWatched": 112,
+              "averageViewDuration": 105,
+              "averageViewPercentage": 22.33,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "OrzdOCnd8SI",
@@ -17251,11 +18717,11 @@
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 90,
+          "views": 91,
           "estimatedMinutesWatched": 112,
           "averageViewDuration": 105,
           "averageViewPercentage": 22.33,
@@ -17263,6 +18729,16 @@
           "likes": 0,
           "comments": 0,
           "shares": 1
+        },
+        "first_three_days": {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "metrics": {
+            "views": 91,
+            "estimatedMinutesWatched": 112,
+            "subscribersGained": 0,
+            "averageViewPercentage": 22.33
+          }
         }
       },
       "zGtFsiqwcLM": {
@@ -17294,6 +18770,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 123,
+              "estimatedMinutesWatched": 425,
+              "averageViewDuration": 504,
+              "averageViewPercentage": 41.92,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "zGtFsiqwcLM",
@@ -17304,13 +18794,13 @@
         "source": "footballi_web",
         "published_at": "2026-11-21T12:33:25Z",
         "recent_statistics": {
-          "viewCount": 123,
+          "viewCount": 124,
           "likeCount": 1,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 123,
           "estimatedMinutesWatched": 425,
@@ -17320,6 +18810,16 @@
           "likes": 1,
           "comments": 0,
           "shares": 0
+        },
+        "first_three_days": {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "metrics": {
+            "views": 123,
+            "estimatedMinutesWatched": 425,
+            "subscribersGained": 0,
+            "averageViewPercentage": 41.92
+          }
         }
       },
       "EwjkpTf5-R4": {
@@ -17351,6 +18851,20 @@
               "comments": 0,
               "shares": 1
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 221,
+              "estimatedMinutesWatched": 424,
+              "averageViewDuration": 178,
+              "averageViewPercentage": 57.46,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 1
+            }
           }
         ],
         "video_id": "EwjkpTf5-R4",
@@ -17365,9 +18879,9 @@
           "likeCount": 1,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 221,
           "estimatedMinutesWatched": 424,
@@ -17408,6 +18922,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 41,
+              "estimatedMinutesWatched": 160,
+              "averageViewDuration": 310,
+              "averageViewPercentage": 31.64,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "1eSDqyjrW1g",
@@ -17422,9 +18950,9 @@
           "likeCount": 1,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 41,
           "estimatedMinutesWatched": 160,
@@ -17465,6 +18993,20 @@
               "comments": 2,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 35,
+              "estimatedMinutesWatched": 108,
+              "averageViewDuration": 241,
+              "averageViewPercentage": 50.24,
+              "subscribersGained": 0,
+              "likes": 2,
+              "comments": 2,
+              "shares": 0
+            }
           }
         ],
         "video_id": "JhNxw89NznA",
@@ -17479,9 +19021,9 @@
           "likeCount": 2,
           "commentCount": 2
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 35,
           "estimatedMinutesWatched": 108,
@@ -17491,6 +19033,16 @@
           "likes": 2,
           "comments": 2,
           "shares": 0
+        },
+        "first_three_days": {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "metrics": {
+            "views": 35,
+            "estimatedMinutesWatched": 108,
+            "subscribersGained": 0,
+            "averageViewPercentage": 50.24000000000001
+          }
         }
       },
       "miAQAzMXPwk": {
@@ -17522,6 +19074,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 19,
+              "estimatedMinutesWatched": 19,
+              "averageViewDuration": 100,
+              "averageViewPercentage": 35.52,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "miAQAzMXPwk",
@@ -17536,9 +19102,9 @@
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
           "views": 19,
           "estimatedMinutesWatched": 19,
@@ -17548,6 +19114,16 @@
           "likes": 0,
           "comments": 0,
           "shares": 0
+        },
+        "first_three_days": {
+          "start": "2026-11-21",
+          "end": "2026-11-23",
+          "metrics": {
+            "views": 19,
+            "estimatedMinutesWatched": 19,
+            "subscribersGained": 0,
+            "averageViewPercentage": 35.52
+          }
         }
       },
       "z87Iwhy6ynQ": {
@@ -17560,6 +19136,20 @@
               "estimatedMinutesWatched": 21,
               "averageViewDuration": 99,
               "averageViewPercentage": 39.58,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 25,
+              "estimatedMinutesWatched": 22,
+              "averageViewDuration": 95,
+              "averageViewPercentage": 38.09,
               "subscribersGained": 0,
               "likes": 1,
               "comments": 0,
@@ -17579,14 +19169,14 @@
           "likeCount": 1,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 22,
-          "estimatedMinutesWatched": 21,
-          "averageViewDuration": 99,
-          "averageViewPercentage": 39.58,
+          "views": 25,
+          "estimatedMinutesWatched": 22,
+          "averageViewDuration": 95,
+          "averageViewPercentage": 38.09,
           "subscribersGained": 0,
           "likes": 1,
           "comments": 0,
@@ -17608,6 +19198,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 156,
+              "estimatedMinutesWatched": 69,
+              "averageViewDuration": 49,
+              "averageViewPercentage": 79.87,
+              "subscribersGained": 0,
+              "likes": 1,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "yedFiMntrSw",
@@ -17622,16 +19226,16 @@
           "likeCount": 1,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 112,
-          "estimatedMinutesWatched": 47,
-          "averageViewDuration": 45,
-          "averageViewPercentage": 73.94,
+          "views": 156,
+          "estimatedMinutesWatched": 69,
+          "averageViewDuration": 49,
+          "averageViewPercentage": 79.87,
           "subscribersGained": 0,
-          "likes": 0,
+          "likes": 1,
           "comments": 0,
           "shares": 0
         }
@@ -17651,6 +19255,20 @@
               "comments": 0,
               "shares": 0
             }
+          },
+          {
+            "window": "2026-08-26:2026-11-23",
+            "synced_at": "2026-11-26T08:00:55.398346+00:00",
+            "metrics": {
+              "views": 15,
+              "estimatedMinutesWatched": 12,
+              "averageViewDuration": 116,
+              "averageViewPercentage": 9.22,
+              "subscribersGained": 0,
+              "likes": 0,
+              "comments": 0,
+              "shares": 0
+            }
           }
         ],
         "video_id": "esdlTAsMb9I",
@@ -17665,14 +19283,14 @@
           "likeCount": 0,
           "commentCount": 0
         },
-        "last_synced_at": "2026-11-26T07:30:53.556293+00:00",
-        "period_start": "2026-08-25",
-        "period_end": "2026-11-22",
+        "last_synced_at": "2026-11-26T08:00:55.398346+00:00",
+        "period_start": "2026-08-26",
+        "period_end": "2026-11-23",
         "metrics": {
-          "views": 11,
-          "estimatedMinutesWatched": 1,
-          "averageViewDuration": 28,
-          "averageViewPercentage": 2.22,
+          "views": 15,
+          "estimatedMinutesWatched": 12,
+          "averageViewDuration": 116,
+          "averageViewPercentage": 9.22,
           "subscribersGained": 0,
           "likes": 0,
           "comments": 0,
@@ -17680,14 +19298,14 @@
         }
       }
     },
-    "last_sync_at": "2026-11-26T07:30:53.556293+00:00",
-    "period_start": "2026-08-25",
-    "period_end": "2026-11-22",
+    "last_sync_at": "2026-11-26T08:00:55.398346+00:00",
+    "period_start": "2026-08-26",
+    "period_end": "2026-11-23",
     "video_count": 127,
     "last_row_count": 112,
-    "format_report_through": "2026-11-22",
+    "format_report_through": "2026-11-23",
     "file_format_report_through": "2026-11-16",
-    "owner_file_formats_through": "2026-11-22"
+    "owner_file_formats_through": "2026-11-23"
   },
   "published_metadata": {
     "3_4mnhwaJdg": {
@@ -18368,7 +19986,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-26T11:01:34.896319+03:30",
+    "finished_at": "2026-11-26T11:31:42.245286+03:30",
     "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -18387,8 +20005,11 @@
       "priority_approved": 0
     },
     "learning": {
-      "revision": "b60684fffeaaca32",
-      "changes": []
+      "revision": "ed4617da7333c31d",
+      "changes": [
+        "main",
+        "short"
+      ]
     },
     "queue_size": 0,
     "daily_uploads": {
@@ -18402,142 +20023,157 @@
   "last_short_upload_timestamp": 1795364145.662677,
   "learning": {
     "version": 1,
-    "revision": "b60684fffeaaca32",
-    "data_through": "2026-11-22",
+    "revision": "ed4617da7333c31d",
+    "data_through": "2026-11-23",
     "as_of": "2026-11-26",
     "formats": {
       "main": {
-        "samples": 12,
+        "samples": 16,
         "categories": {
           "SUMMARY": {
-            "n": 5,
-            "score": 1.377
+            "n": 6,
+            "score": 1.175
           },
           "VIDEO": {
-            "n": 6,
-            "score": 0.377
+            "n": 8,
+            "score": 0.302
           },
           "POSHTE_KHAT": {
-            "n": 1,
-            "score": 0.157
+            "n": 2,
+            "score": 0.253
           }
         },
         "topics": {
           "پرسپولیس": {
-            "n": 2,
-            "score": 1.123
+            "n": 3,
+            "score": 0.428
+          },
+          "سپاهان": {
+            "n": 1,
+            "score": 0.21
           },
           "تیم ملی": {
             "n": 1,
-            "score": 0.157
+            "score": 0.205
           },
           "تراکتور": {
             "n": 2,
-            "score": 0.285
+            "score": 0.309
           },
           "استقلال": {
-            "n": 1,
-            "score": 1.377
+            "n": 2,
+            "score": 0.844
           },
           "مصاحبه": {
             "n": 1,
-            "score": 0.097
+            "score": 0.121
           }
         },
         "titles": {
           "direct": {
-            "n": 10,
-            "score": 0.655
+            "n": 13,
+            "score": 0.441
           }
         },
         "slots": {
           "720": {
             "n": 1,
-            "score": 1.895
+            "score": 1.897
           },
           "960": {
-            "n": 2,
-            "score": 0.127
+            "n": 4,
+            "score": 0.178
           },
           "600": {
             "n": 1,
-            "score": 0.604
+            "score": 0.632
           },
           "1200": {
             "n": 1,
-            "score": 0.158
+            "score": 0.176
           },
           "1080": {
             "n": 2,
-            "score": 0.377
+            "score": 0.434
+          },
+          "1320": {
+            "n": 1,
+            "score": 0.133
           }
         },
         "reason": "first_three_days_by_format",
         "preferred_minutes": {}
       },
       "short": {
-        "samples": 16,
+        "samples": 17,
         "categories": {
           "SHORTS": {
-            "n": 16,
-            "score": 0.835
+            "n": 17,
+            "score": 0.846
           }
         },
         "topics": {
           "مصاحبه": {
             "n": 1,
-            "score": 0.645
+            "score": 0.662
           },
           "تیم ملی": {
             "n": 2,
-            "score": 0.929
+            "score": 0.936
           },
           "پرسپولیس": {
             "n": 1,
-            "score": 0.52
+            "score": 0.539
+          },
+          "استقلال": {
+            "n": 1,
+            "score": 0.098
           }
         },
         "titles": {
           "direct": {
-            "n": 3,
-            "score": 1.849
+            "n": 4,
+            "score": 1.227
           }
         },
         "slots": {
           "1200": {
             "n": 1,
-            "score": 0.791
+            "score": 0.813
           },
           "720": {
             "n": 2,
-            "score": 1.618
+            "score": 1.637
           },
           "960": {
             "n": 2,
-            "score": 0.817
+            "score": 0.84
           },
           "1080": {
             "n": 3,
-            "score": 1.84
+            "score": 1.841
           },
           "600": {
             "n": 5,
-            "score": 0.645
+            "score": 0.662
           },
           "840": {
-            "n": 2,
-            "score": 0.81
+            "n": 3,
+            "score": 0.827
           },
           "480": {
             "n": 1,
-            "score": 1.883
+            "score": 1.884
           }
         },
         "reason": "first_three_days_by_format",
         "preferred_minutes": {}
       }
     },
-    "changes": []
+    "changes": [
+      "main",
+      "short"
+    ]
   },
   "comment_manager": {
     "version": 1,
@@ -20457,8 +22093,8 @@
     },
     "threads": {},
     "quota": {
-      "date": "2026-11-25",
-      "read": 135,
+      "date": "2026-11-26",
+      "read": 5,
       "write": 0
     },
     "last_run": {
@@ -20472,14 +22108,15 @@
       "archive_pages": 2,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 135,
+      "read_units": 5,
       "write_units": 0
     },
-    "scan_phase": 0,
+    "scan_phase": 1,
     "archive_token": null
   },
-  "last_successful_run_slot": 997599,
+  "last_successful_run_slot": 997600,
   "footballi_recent_publications": {
+    "1077608": 1795680100.645091,
     "1077606": 1795678293.9086132,
     "1077602": 1795674681.2347288,
     "1077600": 1795672878.5966542,
@@ -20578,8 +22215,7 @@
     "1077321": 1795559477.083439,
     "1077318": 1795557723.3390732,
     "1077316": 1795557723.3390732,
-    "1077315": 1795557723.3390732,
-    "1077314": 1795557723.3390732
+    "1077315": 1795557723.3390732
   },
   "live_fixtures": {
     "fixtures": [
@@ -20591,7 +22227,7 @@
         "kickoff_at": "2026-11-26T19:45:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-26T11:00:58.071089+03:30",
+        "fetched_at": "2026-11-26T11:31:03.822727+03:30",
         "parser_version": 1
       },
       {
@@ -20602,16 +22238,42 @@
         "kickoff_at": "2026-11-26T16:15:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-26T11:00:58.071089+03:30",
+        "fetched_at": "2026-11-26T11:31:03.822727+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-26T11:00:58.071089+03:30",
+    "fetched_at": "2026-11-26T11:31:03.822727+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
+    {
+      "video_id": 1077608,
+      "published_at": null,
+      "discovered_at": 1795680101.0779912,
+      "url": "https://footballi.net/video/1077608/%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%DA%98%D8%A7%D8%A6%D9%88-%D9%81%D9%84%DB%8C%DA%A9%D8%B3-%D8%A8%D9%87-%D8%A7%D9%84%D8%B3%D8%AF-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AA%D9%85%D8%A7%D8%B4%D8%A7%DA%AF%D8%B1%D8%A7%D9%86",
+      "title": "سوپرگل قیچی برگردان ژائو فلیکس به السد از زاویه تماشاگران",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | السد,النصر عربستان,سوپرگل,ژائو فلیکس,لیگ نخبگان آسیا",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-b6f6e677-f3e0-4642-9d11-1509420d6d9f.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/ogNkDQQdqTXRc7royPeze4aWqW5s6lpR2LhUNKqZ.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077608/%D8%B3%D9%88%D9%BE%D8%B1%DA%AF%D9%84-%D9%82%DB%8C%DA%86%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B1%D8%AF%D8%A7%D9%86-%DA%98%D8%A7%D8%A6%D9%88-%D9%81%D9%84%DB%8C%DA%A9%D8%B3-%D8%A8%D9%87-%D8%A7%D9%84%D8%B3%D8%AF-%D8%A7%D8%B2-%D8%B2%D8%A7%D9%88%DB%8C%D9%87-%D8%AA%D9%85%D8%A7%D8%B4%D8%A7%DA%AF%D8%B1%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795680100.645091,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795680101.078033,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "excluded_content"
+    },
     {
       "video_id": 1077606,
       "published_at": null,
