@@ -929,6 +929,41 @@ def call_prepare_thumbnail(video_path: str, poster_url: str, output_path: str) -
         return None
 
 
+def official_footballi_poster(candidate):
+    if not telegram.source_id(candidate).startswith("footballi:"):
+        return ""
+    url = candidate.get("poster_url") or ""
+    try:
+        parsed = urlsplit(url)
+    except ValueError:
+        return ""
+    host = parsed.hostname or ""
+    if parsed.scheme != "https" or parsed.netloc != host:
+        return ""
+    return url if host in {"footballi.net", "cdn.oddrun.ir"} or host.endswith(".footballi.net") else ""
+
+
+def repair_official_thumbnail(video_id):
+    if not re.fullmatch(r"[A-Za-z0-9_-]{11}", video_id):
+        raise ValueError("Provide the 11-character YouTube video ID.")
+    published = load_state().get("published_metadata", {}).get(video_id, {})
+    source = published.get("source_url")
+    if not originals.source_key(source).startswith("footballi:") or published.get("format") != "main":
+        raise ValueError("The video must be a recorded main upload from Footballi's website.")
+    details = extract_video_page_details(source, allow_existing=True)
+    poster = official_footballi_poster({**(details or {}), "source_url": source})
+    if not poster:
+        raise RuntimeError("The original Footballi page did not provide a trusted poster.")
+    with tempfile.TemporaryDirectory(prefix="footballi-poster-") as work:
+        path = call_prepare_thumbnail("", poster, os.path.join(work, "thumbnail.jpg"))
+        if not path or not os.path.isfile(path):
+            raise RuntimeError("Could not prepare the official poster.")
+        get_youtube_client().thumbnails().set(
+            videoId=video_id, media_body=MediaFileUpload(path, mimetype="image/jpeg"),
+        ).execute()
+    print(f"[THUMBNAIL] Official Footballi poster updated for YouTube video {video_id}.")
+
+
 def call_generate_seo(title: str, desc: str, category: str, is_short: bool,
                       learning_context: str | None = None,
                       match_context: dict | None = None) -> dict:
@@ -1369,7 +1404,8 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
 
         thumb_to_use = None
         if not is_short and deadline - time.monotonic() >= 35:
-            poster = "" if originals.originals_only() else candidate.get("poster_url", "")
+            poster = (official_footballi_poster(candidate) if originals.originals_only()
+                      else candidate.get("poster_url", ""))
             thumb_to_use = call_prepare_thumbnail(video_file, poster, thumb_file)
         if thumb_to_use and os.path.exists(thumb_to_use):
             try:
@@ -1377,7 +1413,7 @@ def publish_candidate(youtube, state, policy, quota_key, candidate, cat, is_shor
                     videoId=vid_id,
                     media_body=MediaFileUpload(thumb_to_use, mimetype="image/jpeg"),
                 ).execute()
-                print("🖼️ [THUMBNAIL] Official HD poster attached to video.")
+                print("🖼️ [THUMBNAIL] Custom thumbnail attached to video.")
             except Exception as te:
                 print(f"[THUMB-WARN] Could not attach custom thumbnail: {te}")
 
@@ -1815,5 +1851,9 @@ if __name__ == "__main__":
               f"{len(telegram.review_state(audit_state).get('link_requests', {}))}")
     elif "--playlists-only" in sys.argv[1:]:
         run_playlists_only()
+    elif sys.argv[1:2] == ["--repair-official-thumbnail"]:
+        if len(sys.argv) != 3:
+            raise SystemExit("Usage: footballi_uploader.py --repair-official-thumbnail VIDEO_ID")
+        repair_official_thumbnail(sys.argv[2])
     else:
         main()

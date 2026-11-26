@@ -164,7 +164,7 @@ def prepare_clean_thumbnail(video_path, thumb_url, output_thumb_path, duration=1
     if os.path.exists(raw_thumb):
         os.remove(raw_thumb)
 
-    # Fallback to clean video frame only if website had no poster at all
+    # Fall back to a video frame when the official poster cannot be prepared.
     if video_path and os.path.exists(video_path):
         seek_sec = max(5.0, min(duration * 0.25, 45.0))
         cmd_frame = [
@@ -178,6 +178,7 @@ def prepare_clean_thumbnail(video_path, thumb_url, output_thumb_path, duration=1
         ]
         result = subprocess.run(cmd_frame, timeout=35)
         if result.returncode == 0 and os.path.exists(output_thumb_path) and 8_000 < os.path.getsize(output_thumb_path) < 2_000_000:
+            print("[THUMBNAIL] Frame extracted from the uploaded video.")
             return output_thumb_path
 
     return None

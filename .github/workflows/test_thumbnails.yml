@@ -7,6 +7,10 @@ on:
         description: 'لینک ویدیو یا شناسه یوتیوب (Video URL or ID)'
         required: true
         default: 'https://youtu.be/--vp7qA9TVw'
+      official_source:
+        description: "Repair the thumbnail from the original Footballi page (provide the YouTube video ID)"
+        type: boolean
+        default: false
 
 jobs:
   update_thumbnail:
@@ -18,11 +22,11 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install Dependencies
         run: |
-          pip install requests google-api-python-client google-auth-httplib2 google-auth-oauthlib Pillow
+          pip install --quiet --disable-pip-version-check -r requirements.txt
 
       - name: Run Single Thumbnail Generator
         env:
@@ -30,5 +34,10 @@ jobs:
           ARVAN_API_KEY: ${{ secrets.ARVAN_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           TARGET_VIDEO: ${{ inputs.video_url_or_id }}
+          OFFICIAL_SOURCE: ${{ inputs.official_source }}
         run: |
-          python generate_thumbnails_batch.py
+          if [ "$OFFICIAL_SOURCE" = true ]; then
+            python footballi_uploader.py --repair-official-thumbnail "$TARGET_VIDEO"
+          else
+            python generate_thumbnails_batch.py
+          fi

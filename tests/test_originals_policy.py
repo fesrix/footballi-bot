@@ -70,6 +70,24 @@ class OriginalsPolicyTests(unittest.TestCase):
             uploader.scrapers.crawl_footballi_videos(state, originals_review=True)
         self.assertEqual([call.args[0] for call in extract.call_args_list], [new])
 
+    def test_official_thumbnail_repair_uses_exact_source_and_no_video_fallback(self):
+        video_id = "EKZhMdwca1s"
+        source = self.item["url"]
+        poster = "https://cdn.oddrun.ir/news/1000/images/footballi.jpg"
+        state = {"published_metadata": {video_id: {"format": "main", "source_url": source}}}
+        youtube = Mock()
+        with patch.object(uploader, "load_state", return_value=state), \
+             patch.object(uploader, "extract_video_page_details", return_value={"poster_url": poster}) as fetch, \
+             patch.object(uploader, "call_prepare_thumbnail", return_value=str(self.path)) as prepare, \
+             patch.object(uploader, "get_youtube_client", return_value=youtube), \
+             patch.object(uploader, "MediaFileUpload"):
+            uploader.repair_official_thumbnail(video_id)
+        fetch.assert_called_once_with(source, allow_existing=True)
+        self.assertEqual(prepare.call_args.args[:2], ("", poster))
+        self.assertEqual(youtube.thumbnails.return_value.set.call_args.kwargs["videoId"], video_id)
+        self.assertFalse(uploader.official_footballi_poster({**self.item,
+            "poster_url": "https://cdn.oddrun.ir.example.com/image.jpg"}))
+
     def test_changed_file_and_blocked_final_tags_never_reach_ai(self):
         with patch.object(policy, "audit_with_ai") as audit:
             self.assertEqual(policy.verify_upload(self.item, self.path, {"tags": ["Shabhaye Footballi"]}),
