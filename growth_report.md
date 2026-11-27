@@ -3,7 +3,7 @@
 - Analytics window: 2026-08-27 → 2026-11-24
 - Tracked videos: 138
 - Queue size: 0
-- Uploads today: 3
+- Uploads today: 4
 
 ## Performance by category
 
@@ -18,18 +18,24 @@
 
 ## Last run
 
-- New web candidates: 1
+- New web candidates: 4
 - New Instagram candidates: 0
 - Rejections: {}
-- Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 1 main, 0 Shorts, 0 priority highlights
+- Published this run: 1 main, 0 Shorts, 0 priority highlights
+- Published today by format: 2 main, 0 Shorts, 0 priority highlights
 
 ## Publication routes
-- Telegram cards sent: 1
-- Waiting by reason: {'telegram_rejected': 7, 'editorial_approval_missing': 5, 'quality_or_format_rejected': 21, 'missing_audio': 1}
+- Telegram cards sent: 0
+- Waiting by reason: {'telegram_rejected': 7, 'editorial_approval_missing': 4, 'quality_or_format_rejected': 22, 'missing_audio': 1}
 - Trusted programme uploads: 0
-- Telegram-approved uploads: 0
+- Telegram-approved uploads: 1
 - Direct-link uploads: 0
+
+## End screens to set in YouTube Studio
+
+In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe** element, then save.
+
+- [Open dS10hsqkpeE in Studio](https://studio.youtube.com/video/dS10hsqkpeE/editor)
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
@@ -39,7 +45,7 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 149 | Write quota: 100
+- Archive pages processed: 3 | Read quota: 155 | Write quota: 100
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
@@ -47,3 +53,4 @@
 - Candidates with an Analytics adjustment: 0
 - main: 20 mature samples, preferred Tehran times: default
 - short: 19 mature samples, preferred Tehran times: default
+- Published at 21:31 Tehran | Title style: direct | Queue factor: 1
