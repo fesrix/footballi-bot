@@ -36,10 +36,10 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 0 | Reviewed by AI: 0
-- Kept without reply: 0 | Replied: 0 | Removed: 0
+- Discovered: 3 | Reviewed by AI: 3
+- Kept without reply: 1 | Replied: 1 | Removed: 1
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 175 | Write quota: 100
+- Archive pages processed: 3 | Read quota: 186 | Write quota: 200
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
