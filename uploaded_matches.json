@@ -20418,7 +20418,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T07:31:06.533310+00:00",
+    "finished_at": "2026-11-27T11:01:37.061063+03:30",
     "new_web_candidates": 2,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -20439,6 +20439,24 @@
     "learning": {
       "revision": "8c60097012372b59",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 1,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 2,
+        "editorial_approval_missing": 5,
+        "quality_or_format_rejected": 4,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 0,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -22728,18 +22746,25 @@
         "hash": "ce8d0251efc8221788217e78d6f2a312757d32d139fadbeece036f906f9faa60",
         "reviewed_at": 1795761109,
         "has_replied": true
+      },
+      "UgyctIc9K4X6wiWkJWN4AaABAg.AdhOfAzwFPIAdhbKoEYdx_": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "0a5ecfef7d86e3d466905a7d8d56097cb0126d2dd567ec3b4d10f960627fa8b4",
+        "reviewed_at": 1795764702,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-26",
-      "read": 320,
+      "read": 328,
       "write": 450
     },
     "last_run": {
-      "discovered": 0,
-      "reviewed": 0,
-      "reviewed_no_reply": 0,
+      "discovered": 1,
+      "reviewed": 1,
+      "reviewed_no_reply": 1,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -22747,13 +22772,13 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 320,
+      "read_units": 328,
       "write_units": 450
     },
-    "scan_phase": 2,
+    "scan_phase": 0,
     "archive_token": null
   },
-  "last_successful_run_slot": 997646,
+  "last_successful_run_slot": 997647,
   "footballi_recent_publications": {
     "1077783": 1795764666.1151645,
     "1077782": 1795764666.1151645,
@@ -23506,14 +23531,17 @@
         "generation": 1,
         "sha256": "a312283e2c70dba0443a91ecf31cf549b54d6406988d494bb1736eabcc6788ee",
         "evidence": "مصاحبه و گفت‌وگو\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.",
-        "card": "پیشنهاد انتشار\nصحبت‌های تقوی در خصوص جنجال‌های عجیب لیگ برتر والیبال!\nhttps://footballi.net/video/1077783/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D9%82%D9%88%DB%8C-%D8%AF%D8%B1-%D8%AE%D8%B5%D9%88%D8%B5-%D8%AC%D9%86%D8%AC%D8%A7%D9%84-%D9%87%D8%A7%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%88%D8%A7%D9%84%DB%8C%D8%A8%D8%A7%D9%84\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 242 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nصحبت‌های تقوی در خصوص جنجال‌های عجیب لیگ برتر والیبال!\nhttps://footballi.net/video/1077783/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D9%82%D9%88%DB%8C-%D8%AF%D8%B1-%D8%AE%D8%B5%D9%88%D8%B5-%D8%AC%D9%86%D8%AC%D8%A7%D9%84-%D9%87%D8%A7%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%88%D8%A7%D9%84%DB%8C%D8%A8%D8%A7%D9%84\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 242 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 51
       }
     },
     "updated_at": 1795732245.123855,
-    "keyboard_codes": [],
+    "keyboard_codes": [
+      "EE24F7A1A5FB"
+    ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 0
+    "keyboard_waiting": 1
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
