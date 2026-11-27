@@ -22016,7 +22016,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T08:31:36.437605+00:00",
+    "finished_at": "2026-11-27T12:01:58.126654+03:30",
     "new_web_candidates": 2,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -22037,6 +22037,24 @@
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 1,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 3,
+        "editorial_approval_missing": 5,
+        "quality_or_format_rejected": 4,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 0,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24347,18 +24365,25 @@
         "hash": "3306daed6280f5b0c23a62cf345334c04a206ff302131a48dd04289f4de62d55",
         "reviewed_at": 1795766500,
         "has_replied": false
+      },
+      "UgyotUkdHXnBvyIg6g14AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "f31c047fc137e7643a07d7cfb520a4142e973bdde1c71935df4b2d5199adb941",
+        "reviewed_at": 1795768324,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-27",
-      "read": 8,
+      "read": 16,
       "write": 0
     },
     "last_run": {
-      "discovered": 2,
-      "reviewed": 2,
-      "reviewed_no_reply": 2,
+      "discovered": 1,
+      "reviewed": 1,
+      "reviewed_no_reply": 1,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -24366,13 +24391,13 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 8,
+      "read_units": 16,
       "write_units": 0
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997648,
+  "last_successful_run_slot": 997649,
   "footballi_recent_publications": {
     "1077790": 1795768295.6309583,
     "1077788": 1795768295.6309583,
@@ -25163,14 +25188,17 @@
         "generation": 1,
         "sha256": "c64008d098ae38f6b569cf3b4c91761dab8336c9fd465a58a33d6907aa81a7b4",
         "evidence": "حواشی قبل یا بعد بازی\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nبررسی قوانین و چینش داوری در لیگ انگلیس؛ به بهانه حواشی داوری در فوتبال ایران\nhttps://footballi.net/video/1077790/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86-%D9%88-%DA%86%DB%8C%D9%86%D8%B4-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D9%84%DB%8C%DA%AF-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3-%D8%A8%D9%87-%D8%A8%D9%87%D8%A7%D9%86%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 346 ثانیه | 1920×1080\nدلیل پیشنهاد: حواشی قبل یا بعد بازی\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nبررسی قوانین و چینش داوری در لیگ انگلیس؛ به بهانه حواشی داوری در فوتبال ایران\nhttps://footballi.net/video/1077790/%D8%A8%D8%B1%D8%B1%D8%B3%DB%8C-%D9%82%D9%88%D8%A7%D9%86%DB%8C%D9%86-%D9%88-%DA%86%DB%8C%D9%86%D8%B4-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D9%84%DB%8C%DA%AF-%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3-%D8%A8%D9%87-%D8%A8%D9%87%D8%A7%D9%86%D9%87-%D8%AD%D9%88%D8%A7%D8%B4%DB%8C-%D8%AF%D8%A7%D9%88%D8%B1%DB%8C-%D8%AF%D8%B1-%D9%81%D9%88%D8%AA%D8%A8%D8%A7%D9%84-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 346 ثانیه | 1920×1080\nدلیل پیشنهاد: حواشی قبل یا بعد بازی\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 56
       }
     },
     "updated_at": 1795766458.0825045,
-    "keyboard_codes": [],
+    "keyboard_codes": [
+      "02535E48920E"
+    ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 0
+    "keyboard_waiting": 1
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
