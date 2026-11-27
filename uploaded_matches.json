@@ -707,7 +707,76 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [],
+  "pending_queue": [
+    {
+      "video_id": 1077934,
+      "published_at": null,
+      "discovered_at": 1795795300.9448762,
+      "url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
+      "title": "صحبت های جنجالی فرشید باقری بازیکن پیکان پس از تساوی با فولاد",
+      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | پیکان,فولاد خوزستان,لیگ برتر ایران",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-45c475a7-18eb-4897-be6b-1465f5cd68c0.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-145cd980-dd96-4aba-b08b-0406bbcd7e3d.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/JOMBesTsJAaEXukekt0RJrk8URf8ubOfvSjyGf9q.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
+      "source_published_at": null,
+      "source_first_seen_at": 1795795293.9676213,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795795300.9449067,
+      "attempt_count": 2,
+      "is_short": false,
+      "originals_decision": "approved",
+      "ai_score": 6,
+      "category": "VIDEO",
+      "learning_factor": 1,
+      "verified_is_short": false,
+      "priority_class": "match_day",
+      "priority_reason": "interview:صحبت های",
+      "fixture_id": "e94240b7f424e907",
+      "fixture_relation": "both_teams",
+      "priority_until": "2026-11-28T00:30:00+03:30",
+      "home_team": "پیکان",
+      "away_team": "فولاد خوزستان",
+      "competition": "لیگ برتر خلیج فارس",
+      "kickoff_at": "2026-11-27T18:30:00+03:30"
+    },
+    {
+      "video_id": 1077931,
+      "published_at": null,
+      "discovered_at": 1795795303.199523,
+      "url": "https://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86",
+      "title": "مصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | پیکان,فولاد خوزستان,لیگ برتر ایران",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-3501ef03-b15a-41d8-97bf-a21980730d39.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/96eCXho6Mq5PIzVfHqugpXgrD5YoygIFMsOcVBZ3.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86",
+      "source_published_at": null,
+      "source_first_seen_at": 1795795293.9676213,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795795303.1995459,
+      "attempt_count": 2,
+      "is_short": false,
+      "originals_decision": "awaiting_file_and_ai",
+      "ai_score": 6,
+      "category": "VIDEO",
+      "learning_factor": 1
+    }
+  ],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -1873,7 +1942,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077943,
+  "max_seen_video_id": 1077949,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -22066,8 +22135,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T19:32:43.888729+03:30",
-    "new_web_candidates": 10,
+    "finished_at": "2026-11-27T16:31:27.968128+00:00",
+    "new_web_candidates": 7,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -22087,24 +22156,6 @@
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
-    },
-    "telegram_proposals": {
-      "sent": 2,
-      "trusted_staged": 0,
-      "waiting_by_reason": {
-        "telegram_rejected": 5,
-        "editorial_approval_missing": 8,
-        "quality_or_format_rejected": 21,
-        "missing_audio": 1
-      }
-    },
-    "queue_size": 0,
-    "daily_uploads": {
-      "main": 1,
-      "short": 0,
-      "priority_summaries": 0,
-      "priority_editorial": 0,
-      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24547,6 +24598,10 @@
   },
   "last_successful_run_slot": 997664,
   "footballi_recent_publications": {
+    "1077949": 1795797083.3798184,
+    "1077948": 1795797083.3798184,
+    "1077947": 1795797083.3798184,
+    "1077944": 1795797083.3798184,
     "1077943": 1795795293.9676213,
     "1077942": 1795795293.9676213,
     "1077939": 1795795293.9676213,
@@ -24642,11 +24697,7 @@
     "1077768": 1795759281.634456,
     "1077767": 1795734086.4987583,
     "1077766": 1795734086.4987583,
-    "1077765": 1795734086.4987583,
-    "1077763": 1795734086.4987583,
-    "1077757": 1795732268.204079,
-    "1077755": 1795732268.204079,
-    "1077754": 1795732268.204079
+    "1077765": 1795734086.4987583
   },
   "live_fixtures": {
     "fixtures": [
@@ -24658,7 +24709,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T19:31:03.308937+03:30",
+        "fetched_at": "2026-11-27T20:00:59.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24669,7 +24720,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T19:31:03.308937+03:30",
+        "fetched_at": "2026-11-27T20:00:59.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24680,7 +24731,7 @@
         "kickoff_at": "2026-11-27T19:45:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T19:31:03.308937+03:30",
+        "fetched_at": "2026-11-27T20:00:59.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24691,11 +24742,11 @@
         "kickoff_at": "2026-11-27T20:00:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T19:31:03.308937+03:30",
+        "fetched_at": "2026-11-27T20:00:59.039758+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-27T19:31:03.308937+03:30",
+    "fetched_at": "2026-11-27T20:00:59.039758+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
@@ -24729,58 +24780,6 @@
       "telegram_screening": "quality_or_format_rejected"
     },
     {
-      "video_id": 1077934,
-      "published_at": null,
-      "discovered_at": 1795795300.9448762,
-      "url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
-      "title": "صحبت های جنجالی فرشید باقری بازیکن پیکان پس از تساوی با فولاد",
-      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | پیکان,فولاد خوزستان,لیگ برتر ایران",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-45c475a7-18eb-4897-be6b-1465f5cd68c0.mp4",
-      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-145cd980-dd96-4aba-b08b-0406bbcd7e3d.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/JOMBesTsJAaEXukekt0RJrk8URf8ubOfvSjyGf9q.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795795293.9676213,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795795300.9449067,
-      "attempt_count": 1,
-      "is_short": false,
-      "originals_decision": "editorial_approval_missing"
-    },
-    {
-      "video_id": 1077931,
-      "published_at": null,
-      "discovered_at": 1795795303.199523,
-      "url": "https://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86",
-      "title": "مصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان",
-      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | پیکان,فولاد خوزستان,لیگ برتر ایران",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-3501ef03-b15a-41d8-97bf-a21980730d39.mp4",
-      "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/96eCXho6Mq5PIzVfHqugpXgrD5YoygIFMsOcVBZ3.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86",
-      "source_published_at": null,
-      "source_first_seen_at": 1795795293.9676213,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795795303.1995459,
-      "attempt_count": 1,
-      "is_short": false,
-      "originals_decision": "editorial_approval_missing"
-    },
-    {
       "video_id": 0,
       "published_at": 1795773797.0,
       "discovered_at": 1795791740.2067502,
@@ -24812,7 +24811,7 @@
       "discovery_timestamp": 1795791740.2067559,
       "attempt_count": 1,
       "is_short": true,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "telegram_rejected"
     },
     {
       "video_id": 0,
@@ -24846,7 +24845,7 @@
       "discovery_timestamp": 1795791740.2068112,
       "attempt_count": 1,
       "is_short": true,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "telegram_rejected"
     },
     {
       "video_id": 1077903,
@@ -25961,7 +25960,7 @@
         "notice": "رد شد."
       },
       "footballi:1077934": {
-        "status": "approved",
+        "status": "upload_uncertain",
         "preview": false,
         "button_id": "183d790adfc84a217e4e075dc1f94dfb",
         "generation": 1,
@@ -25977,8 +25976,8 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-        "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       },
       "footballi:1077931": {
         "status": "approved",
@@ -26008,12 +26007,7 @@
       "455F34A66B9A",
       "BF2A63674D1E"
     ],
-    "receipts": {
-      "75": "رد شد.",
-      "76": "رد شد.",
-      "77": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-      "78": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
-    },
+    "receipts": {},
     "link_requests": {},
     "keyboard_waiting": 4
   },
@@ -26514,7 +26508,14 @@
     "footballi:1077937": "excluded_content",
     "footballi:1077935": "excluded_content",
     "footballi:1077933": "excluded_content",
-    "footballi:1077932": "excluded_content"
+    "footballi:1077932": "excluded_content",
+    "footballi:1077949": "excluded_content",
+    "footballi:1077948": "excluded_content",
+    "footballi:1077947": "excluded_content",
+    "footballi:1077944": "excluded_content",
+    "footballi:1077929": "excluded_content",
+    "footballi:1077912": "excluded_content",
+    "footballi:1077907": "excluded_content"
   },
   "editorial_review_migration": 1
 }
