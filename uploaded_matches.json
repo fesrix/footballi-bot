@@ -705,7 +705,38 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/10/tus-202a7cc8-a87c-4360-8df8-6323923ba95b.mp4"
   ],
   "unblocked_v3": true,
-  "pending_queue": [],
+  "pending_queue": [
+    {
+      "video_id": 1077835,
+      "published_at": null,
+      "discovered_at": 1795779080.0460825,
+      "url": "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1",
+      "title": "صحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور",
+      "description": "کنفرانس خبری جواد نکونام سرمربی تراکتور تبریز پیش از تقابل با ذوب آهن اصفهان را در پایگاه خبری فوتبالی مشاهده کنید",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bbc5760e-0c57-487b-8c2d-9283c197a72c.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/k3dXtmjCSg48KYAGLiMkyHKXCkRDZk7PYmIkDPI9.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1",
+      "source_published_at": null,
+      "source_first_seen_at": 1795779079.3422592,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795779080.0461142,
+      "attempt_count": 2,
+      "is_short": false,
+      "originals_decision": "approved",
+      "ai_score": 6,
+      "category": "VIDEO",
+      "learning_factor": 1,
+      "verified_is_short": false
+    }
+  ],
   "organized_playlist_vids": [
     "XC6weIJrsjQ",
     "-FrmmxnlQEw",
@@ -1866,7 +1897,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077840,
+  "max_seen_video_id": 1077855,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -22016,8 +22047,8 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T15:01:36.003948+03:30",
-    "new_web_candidates": 5,
+    "finished_at": "2026-11-27T12:01:36.356792+00:00",
+    "new_web_candidates": 10,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
     "media_retries": {},
@@ -22030,31 +22061,13 @@
     },
     "live_scores": {
       "status": "ok",
-      "fixtures": 8,
+      "fixtures": 7,
       "match_day_candidates": 0,
       "priority_approved": 0
     },
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
-    },
-    "telegram_proposals": {
-      "sent": 1,
-      "trusted_staged": 0,
-      "waiting_by_reason": {
-        "telegram_rejected": 3,
-        "editorial_approval_missing": 7,
-        "quality_or_format_rejected": 9,
-        "missing_audio": 1
-      }
-    },
-    "queue_size": 0,
-    "daily_uploads": {
-      "main": 0,
-      "short": 0,
-      "priority_summaries": 0,
-      "priority_editorial": 0,
-      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24455,6 +24468,17 @@
   },
   "last_successful_run_slot": 997655,
   "footballi_recent_publications": {
+    "1077855": 1795780889.6982794,
+    "1077854": 1795780889.6982794,
+    "1077853": 1795780889.6982794,
+    "1077852": 1795780889.6982794,
+    "1077851": 1795780889.6982794,
+    "1077850": 1795780889.6982794,
+    "1077848": 1795780889.6982794,
+    "1077846": 1795780889.6982794,
+    "1077844": 1795780889.6982794,
+    "1077842": 1795780889.6982794,
+    "1077841": 1795780889.6982794,
     "1077840": 1795779079.3422592,
     "1077838": 1795779079.3422592,
     "1077835": 1795779079.3422592,
@@ -24543,18 +24567,7 @@
     "1077675": 1795702127.0097833,
     "1077666": 1795701616.4287426,
     "1077663": 1795701616.4287426,
-    "1077662": 1795699865.866497,
-    "1077658": 1795699865.866497,
-    "1077656": 1795699865.866497,
-    "1077653": 1795698081.8734703,
-    "1077646": 1795694480.945627,
-    "1077640": 1795692693.181855,
-    "1077638": 1795690885.2945564,
-    "1077636": 1795689066.951928,
-    "1077634": 1795687283.1074471,
-    "1077631": 1795687283.1074471,
-    "1077629": 1795687283.1074471,
-    "1077627": 1795685481.504677
+    "1077662": 1795699865.866497
   },
   "live_fixtures": {
     "fixtures": [
@@ -24566,7 +24579,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       },
       {
@@ -24577,7 +24590,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       },
       {
@@ -24588,7 +24601,7 @@
         "kickoff_at": "2026-11-27T19:45:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       },
       {
@@ -24599,29 +24612,18 @@
         "kickoff_at": "2026-11-27T20:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       },
       {
-        "fixture_id": "414d002eee6561a5",
+        "fixture_id": "5b5b89e4169e5990",
         "home_team": "پیکان",
         "away_team": "فولاد خوزستان",
         "competition": "",
-        "kickoff_at": "2026-11-27T15:00:00+03:30",
+        "kickoff_at": "2026-11-27T16:15:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
-        "parser_version": 1
-      },
-      {
-        "fixture_id": "51b7e716d4173fc0",
-        "home_team": "شمس آذر قزوین",
-        "away_team": "خیبر خرم آباد",
-        "competition": "لیگ برتر خلیج فارس",
-        "kickoff_at": "2026-11-27T15:00:00+03:30",
-        "status": "scheduled",
-        "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       },
       {
@@ -24632,7 +24634,7 @@
         "kickoff_at": "2026-11-27T16:15:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       },
       {
@@ -24643,38 +24645,116 @@
         "kickoff_at": "2026-11-27T16:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+        "fetched_at": "2026-11-27T15:31:01.937269+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-27T15:00:51.244377+03:30",
+    "fetched_at": "2026-11-27T15:31:01.937269+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
   "priority_migration_version": 1,
   "originals_waiting": [
     {
-      "video_id": 1077835,
+      "video_id": 1077855,
       "published_at": null,
-      "discovered_at": 1795779080.0460825,
-      "url": "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1",
-      "title": "صحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور",
-      "description": "کنفرانس خبری جواد نکونام سرمربی تراکتور تبریز پیش از تقابل با ذوب آهن اصفهان را در پایگاه خبری فوتبالی مشاهده کنید",
+      "discovered_at": 1795780890.393264,
+      "url": "https://footballi.net/video/1077855/%DA%AF%D9%81%D8%AA-%D9%88-%DA%AF%D9%88-%D8%A8%D8%A7-%D8%AF%D8%AE%D8%AA%D8%B1%D8%B9%D9%85%D9%88%D9%87%D8%A7%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3%DB%8C-%D9%88-%D9%BE%DB%8C%D8%B4-%D8%A8%DB%8C%D9%86%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
+      "title": "گفت و گو با دخترعموهای پرسپولیسی و پیش بینی بازی مقابل آلومینیوم",
+      "description": "ویدئوهای جذاب ورزشی و فوتبالی هر روز همینجا | پرسپولیس,آلومینیوم اراک,لیگ برتر ایران",
       "source_tags": [
         "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
         "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
       ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bbc5760e-0c57-487b-8c2d-9283c197a72c.mp4",
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-223683bd-f6fc-4ebd-9765-b63353760354.mp4",
       "alternate_mp4_url": "",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/k3dXtmjCSg48KYAGLiMkyHKXCkRDZk7PYmIkDPI9.jpg",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/4pfIlFPovz5uIp6lo3YNRLD4dRkAlyr6dAPhNqbW.jpg",
       "site_views": 0,
       "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1",
+      "source_url": "https://footballi.net/video/1077855/%DA%AF%D9%81%D8%AA-%D9%88-%DA%AF%D9%88-%D8%A8%D8%A7-%D8%AF%D8%AE%D8%AA%D8%B1%D8%B9%D9%85%D9%88%D9%87%D8%A7%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3%DB%8C-%D9%88-%D9%BE%DB%8C%D8%B4-%D8%A8%DB%8C%D9%86%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85",
       "source_published_at": null,
-      "source_first_seen_at": 1795779079.3422592,
+      "source_first_seen_at": 1795780889.6982794,
       "rights_status": "internal_authorized",
       "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795779080.0461142,
+      "discovery_timestamp": 1795780890.3932922,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1077854,
+      "published_at": null,
+      "discovered_at": 1795780890.6064303,
+      "url": "https://footballi.net/video/1077854/%DA%AF%D9%81%D8%AA-%D9%88-%DA%AF%D9%88-%D8%A8%D8%A7-%D8%B2%D9%88%D8%AC-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D8%A8%D8%A7-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9",
+      "title": "گفت و گو با زوج پرسپولیسی پیش از تقابل با آلومینیوم اراک",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | پرسپولیس,آلومینیوم اراک,لیگ برتر ایران",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-3d8d6f91-28f4-4402-8d85-b99c6efb52d6.mp4",
+      "alternate_mp4_url": "",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/qTd1k2QVuoBupNa7Cy312mUqpjRuwRtLxog2p9rV.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077854/%DA%AF%D9%81%D8%AA-%D9%88-%DA%AF%D9%88-%D8%A8%D8%A7-%D8%B2%D9%88%D8%AC-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3%DB%8C-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%AA%D9%82%D8%A7%D8%A8%D9%84-%D8%A8%D8%A7-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9",
+      "source_published_at": null,
+      "source_first_seen_at": 1795780889.6982794,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795780890.6064572,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1077851,
+      "published_at": null,
+      "discovered_at": 1795780891.5138113,
+      "url": "https://footballi.net/video/1077851/%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D9%85%D8%B1%D8%A8%DB%8C-%D8%AE%D9%88%D8%A8%DB%8C%D9%87-%D9%88%D9%84%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%DA%A9%D9%88%DA%86%DB%8C%DA%A9%D9%87",
+      "title": "هوادار پرسپولیس: تارتار مربی خوبیه ولی برای پرسپولیس کوچیکه!",
+      "description": "ویدئو های اختصاصی از اتفاقات لیگ ایران و جهان را در فوتبالی پیگیر باشید | مهدی تارتار,پرسپولیس,آلومینیوم اراک",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bc0bb519-7ea2-4926-8a13-bb5a1a3657e1.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-bf87881e-b0dc-4208-84ed-c940e3678f30.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/d9ZPU8WYYiXRmQ3nr9ofRBI2rDf4xH86brAc5pDZ.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077851/%D9%87%D9%88%D8%A7%D8%AF%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D8%B1-%D9%85%D8%B1%D8%A8%DB%8C-%D8%AE%D9%88%D8%A8%DB%8C%D9%87-%D9%88%D9%84%DB%8C-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3-%DA%A9%D9%88%DA%86%DB%8C%DA%A9%D9%87",
+      "source_published_at": null,
+      "source_first_seen_at": 1795780889.6982794,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795780891.5138474,
+      "attempt_count": 1,
+      "is_short": false,
+      "originals_decision": "editorial_approval_missing"
+    },
+    {
+      "video_id": 1077850,
+      "published_at": null,
+      "discovered_at": 1795780891.7362468,
+      "url": "https://footballi.net/video/1077850/%D8%AD%D8%A7%D9%84-%D9%88-%D9%87%D9%88%D8%A7%DB%8C-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D9%82%D8%A8%D9%84-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D9%88-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
+      "title": "حال و هوای ورزشگاه قبل از بازی آلومینیوم و پرسپولیس",
+      "description": "با اپلیکیشن و سایت فوتبالی خودتان را در زمین مسابقه یا روی سکوها احساس کنید | پرسپولیس,آلومینیوم اراک,لیگ برتر ایران",
+      "source_tags": [
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
+        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
+      ],
+      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bb811a55-b2e6-455b-b398-c0d98f22f1a8.mp4",
+      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bc0bb519-7ea2-4926-8a13-bb5a1a3657e1.mp4",
+      "poster_url": "https://cdn.oddrun.ir/news/1000/images/dtUlRUgy2JBjgycGrLnFHTxwuhLooSc5TVtjRpFr.jpg",
+      "site_views": 0,
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077850/%D8%AD%D8%A7%D9%84-%D9%88-%D9%87%D9%88%D8%A7%DB%8C-%D9%88%D8%B1%D8%B2%D8%B4%DA%AF%D8%A7%D9%87-%D9%82%D8%A8%D9%84-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D9%88-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
+      "source_published_at": null,
+      "source_first_seen_at": 1795780889.6982794,
+      "rights_status": "internal_authorized",
+      "content_type": "footballi_web_video",
+      "discovery_timestamp": 1795780891.73628,
       "attempt_count": 1,
       "is_short": false,
       "originals_decision": "editorial_approval_missing"
@@ -24757,7 +24837,7 @@
       "discovery_timestamp": 1795771882.4742641,
       "attempt_count": 1,
       "is_short": false,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "telegram_rejected"
     },
     {
       "video_id": 1077795,
@@ -24864,7 +24944,7 @@
       "discovery_timestamp": 1795768295.9011965,
       "attempt_count": 1,
       "is_short": false,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "telegram_rejected"
     },
     {
       "video_id": 1077783,
@@ -25451,7 +25531,7 @@
         "notice": "رد شد."
       },
       "footballi:1077835": {
-        "status": "approved",
+        "status": "upload_uncertain",
         "preview": false,
         "button_id": "ac3d584da2854c763d8e9e14af87645a",
         "generation": 1,
@@ -25467,8 +25547,8 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-        "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       }
     },
     "updated_at": 1795780858.0033355,
@@ -25477,11 +25557,7 @@
       "EA381009DFB0",
       "02535E48920E"
     ],
-    "receipts": {
-      "62": "رد شد.",
-      "63": "رد شد.",
-      "64": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
-    },
+    "receipts": {},
     "link_requests": {},
     "keyboard_waiting": 3
   },
@@ -25942,7 +26018,13 @@
     "footballi:1077814": "excluded_content",
     "footballi:1077838": "excluded_content",
     "footballi:1077831": "excluded_content",
-    "footballi:1077829": "excluded_content"
+    "footballi:1077829": "excluded_content",
+    "footballi:1077853": "excluded_content",
+    "footballi:1077852": "excluded_content",
+    "footballi:1077848": "excluded_content",
+    "footballi:1077846": "excluded_content",
+    "footballi:1077844": "excluded_content",
+    "footballi:1077842": "excluded_content"
   },
   "editorial_review_migration": 1
 }
