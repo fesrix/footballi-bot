@@ -26,20 +26,20 @@
 
 ## Publication routes
 - Telegram cards sent: 0
-- Waiting by reason: {'telegram_rejected': 5, 'editorial_approval_missing': 4, 'quality_or_format_rejected': 15, 'missing_audio': 1}
+- Waiting by reason: {'telegram_rejected': 5, 'editorial_approval_missing': 4, 'quality_or_format_rejected': 17, 'missing_audio': 1}
 - Trusted programme uploads: 0
 - Telegram-approved uploads: 0
 - Direct-link uploads: 0
 
 ## Live match priority
-- Fixture source: ok | Iranian fixtures: 7
+- Fixture source: ok | Iranian fixtures: 6
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 2 | Reviewed by AI: 2
-- Kept without reply: 2 | Replied: 0 | Removed: 0
+- Discovered: 0 | Reviewed by AI: 0
+- Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 80 | Write quota: 50
+- Archive pages processed: 3 | Read quota: 86 | Write quota: 50
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
