@@ -1,7 +1,7 @@
 # Footballi Growth Report
 
 - Analytics window: 2026-08-27 → 2026-11-24
-- Tracked videos: 136
+- Tracked videos: 138
 - Queue size: 0
 - Uploads today: 3
 
@@ -10,7 +10,7 @@
 | Category | Videos | Views | Watch minutes | Subscribers gained |
 |---|---:|---:|---:|---:|
 | SHORTS | 27 | 101092 | 21473.0 | 188 |
-| VIDEO | 79 | 93471 | 181113.0 | 243 |
+| VIDEO | 81 | 93471 | 181113.0 | 243 |
 | SUMMARY | 19 | 42699 | 154503.0 | 80 |
 | FOOTBALL_BARTAR | 3 | 4982 | 4190.0 | 5 |
 | VIDEOCAST | 4 | 758 | 2287.0 | 5 |
@@ -18,7 +18,7 @@
 
 ## Last run
 
-- New web candidates: 7
+- New web candidates: 10
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
@@ -28,15 +28,8 @@
 - Telegram cards sent: 0
 - Waiting by reason: {'telegram_rejected': 7, 'editorial_approval_missing': 4, 'quality_or_format_rejected': 21, 'missing_audio': 1}
 - Trusted programme uploads: 0
-- Telegram-approved uploads: 2
+- Telegram-approved uploads: 0
 - Direct-link uploads: 0
-
-## End screens to set in YouTube Studio
-
-In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe** element, then save.
-
-- [Open V3vh0LUw8qE in Studio](https://studio.youtube.com/video/V3vh0LUw8qE/editor)
-- [Open GC1sGupdVfw in Studio](https://studio.youtube.com/video/GC1sGupdVfw/editor)
 
 ## Live match priority
 - Fixture source: ok | Iranian fixtures: 4
@@ -46,7 +39,7 @@ In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe
 - Discovered: 3 | Reviewed by AI: 3
 - Kept without reply: 3 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 135 | Write quota: 100
+- Archive pages processed: 3 | Read quota: 143 | Write quota: 100
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
@@ -54,4 +47,3 @@ In the last 20 seconds, add a Video set to **Best for viewer** and a **Subscribe
 - Candidates with an Analytics adjustment: 0
 - main: 20 mature samples, preferred Tehran times: default
 - short: 19 mature samples, preferred Tehran times: default
-- Published at 20:02 Tehran | Title style: direct | Queue factor: 1
