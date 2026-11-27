@@ -22066,7 +22066,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T15:01:49.875702+00:00",
+    "finished_at": "2026-11-27T18:32:28.416817+03:30",
     "new_web_candidates": 7,
     "new_instagram_candidates": 2,
     "rejected_by_reason": {},
@@ -22087,6 +22087,24 @@
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 2,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 5,
+        "editorial_approval_missing": 6,
+        "quality_or_format_rejected": 20,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24481,32 +24499,39 @@
         "hash": "962c603f941733a3271a12e10644dd6d3e2fd252930983205732f0450159dada",
         "reviewed_at": 1795782691,
         "has_replied": false
+      },
+      "Ugy6QRBTPaml4bbsEdd4AaABAg": {
+        "status": "deleted",
+        "reason": "SEXUAL_ABUSE",
+        "hash": "936236511760237b39d7be8ba8d4286ea99a64e346a1a63a9bbb76deb79743de",
+        "reviewed_at": 1795791754,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-27",
-      "read": 104,
-      "write": 50
+      "read": 113,
+      "write": 100
     },
     "last_run": {
-      "discovered": 0,
-      "reviewed": 0,
+      "discovered": 1,
+      "reviewed": 1,
       "reviewed_no_reply": 0,
       "replied": 0,
-      "deleted": 0,
+      "deleted": 1,
       "errors": 0,
       "retries": 0,
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 104,
-      "write_units": 50
+      "read_units": 113,
+      "write_units": 100
     },
-    "scan_phase": 2,
+    "scan_phase": 0,
     "archive_token": null
   },
-  "last_successful_run_slot": 997661,
+  "last_successful_run_slot": 997662,
   "footballi_recent_publications": {
     "1077920": 1795791698.0031114,
     "1077918": 1795791698.0031114,
@@ -25833,14 +25858,18 @@
         "generation": 1,
         "sha256": "84dd38d1846c8b83e65217f42fe743384e25c46cf702bd9e063416569bcd5dda",
         "evidence": "⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nتنظیم چراغ های فیدلیتی XB1\nhttps://www.instagram.com/p/DgPhNSYAN2X/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795777233.0\nشورت | 50 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nتنظیم چراغ های فیدلیتی XB1\nhttps://www.instagram.com/p/DgPhNSYAN2X/\nمنبع: Instagram رسمی فوتبالی\nتاریخ منبع: 1795777233.0\nشورت | 50 ثانیه | 720×1280\nدلیل پیشنهاد: ⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 70
       }
     },
     "updated_at": 1795780858.0033355,
-    "keyboard_codes": [],
+    "keyboard_codes": [
+      "455F34A66B9A",
+      "BF2A63674D1E"
+    ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 0
+    "keyboard_waiting": 2
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
