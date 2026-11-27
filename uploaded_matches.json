@@ -1866,7 +1866,7 @@
     "Ugz_-NosHp-bXis5K6R4AaABAg",
     "UgztF7V6szAur2arx-J4AaABAg"
   ],
-  "max_seen_video_id": 1077783,
+  "max_seen_video_id": 1077785,
   "rejected_urls": [
     "https://footballi.net/video/1075275",
     "https://footballi.net/video/1075211",
@@ -22016,7 +22016,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T11:01:37.061063+03:30",
+    "finished_at": "2026-11-27T11:31:31.128730+03:30",
     "new_web_candidates": 2,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -22035,15 +22035,18 @@
       "priority_approved": 0
     },
     "learning": {
-      "revision": "8c60097012372b59",
-      "changes": []
+      "revision": "da83426ab03bc961",
+      "changes": [
+        "main",
+        "short"
+      ]
     },
     "telegram_proposals": {
-      "sent": 1,
+      "sent": 0,
       "trusted_staged": 0,
       "waiting_by_reason": {
-        "telegram_rejected": 2,
-        "editorial_approval_missing": 5,
+        "telegram_rejected": 3,
+        "editorial_approval_missing": 4,
         "quality_or_format_rejected": 4,
         "missing_audio": 1
       }
@@ -24354,18 +24357,32 @@
         "hash": "0a5ecfef7d86e3d466905a7d8d56097cb0126d2dd567ec3b4d10f960627fa8b4",
         "reviewed_at": 1795764702,
         "has_replied": false
+      },
+      "UgxHVyQC-HDZFUfgYk14AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "d6d3033925ad410c3d826d85830319f46512c95563ce94b0ba2d2a205a04af51",
+        "reviewed_at": 1795766500,
+        "has_replied": false
+      },
+      "UgyEkCPmUVeJK5lOA3Z4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "BANTER_KEEP",
+        "hash": "3306daed6280f5b0c23a62cf345334c04a206ff302131a48dd04289f4de62d55",
+        "reviewed_at": 1795766500,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
-      "date": "2026-11-26",
-      "read": 328,
-      "write": 450
+      "date": "2026-11-27",
+      "read": 8,
+      "write": 0
     },
     "last_run": {
-      "discovered": 1,
-      "reviewed": 1,
-      "reviewed_no_reply": 1,
+      "discovered": 2,
+      "reviewed": 2,
+      "reviewed_no_reply": 2,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -24373,14 +24390,16 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 328,
-      "write_units": 450
+      "read_units": 8,
+      "write_units": 0
     },
-    "scan_phase": 0,
+    "scan_phase": 1,
     "archive_token": null
   },
-  "last_successful_run_slot": 997647,
+  "last_successful_run_slot": 997648,
   "footballi_recent_publications": {
+    "1077785": 1795766489.2297459,
+    "1077784": 1795766489.2297459,
     "1077783": 1795764666.1151645,
     "1077782": 1795764666.1151645,
     "1077781": 1795762893.1389134,
@@ -24478,9 +24497,7 @@
     "1077547": 1795642278.5579534,
     "1077545": 1795642278.5579534,
     "1077541": 1795640481.3892941,
-    "1077540": 1795640481.3892941,
-    "1077538": 1795640481.3892941,
-    "1077535": 1795640481.3892941
+    "1077540": 1795640481.3892941
   },
   "live_fixtures": {
     "fixtures": [
@@ -24492,7 +24509,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24503,7 +24520,7 @@
         "kickoff_at": "2026-11-27T18:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24514,7 +24531,7 @@
         "kickoff_at": "2026-11-27T19:45:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24525,7 +24542,7 @@
         "kickoff_at": "2026-11-27T20:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24536,7 +24553,7 @@
         "kickoff_at": "2026-11-27T15:00:00+03:30",
         "status": "finished",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24547,7 +24564,7 @@
         "kickoff_at": "2026-11-27T15:00:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24558,7 +24575,7 @@
         "kickoff_at": "2026-11-27T16:15:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       },
       {
@@ -24569,11 +24586,11 @@
         "kickoff_at": "2026-11-27T16:30:00+03:30",
         "status": "scheduled",
         "source_url": "https://footballi.net/live-scores",
-        "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+        "fetched_at": "2026-11-27T11:31:01.039758+03:30",
         "parser_version": 1
       }
     ],
-    "fetched_at": "2026-11-27T11:00:48.618648+03:30",
+    "fetched_at": "2026-11-27T11:31:01.039758+03:30",
     "source_url": "https://footballi.net/live-scores",
     "parser_version": 1
   },
@@ -24603,7 +24620,7 @@
       "discovery_timestamp": 1795764666.3268142,
       "attempt_count": 1,
       "is_short": false,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "telegram_rejected"
     },
     {
       "video_id": 0,
@@ -25135,19 +25152,14 @@
         "card": "پیشنهاد انتشار\nصحبت‌های تقوی در خصوص جنجال‌های عجیب لیگ برتر والیبال!\nhttps://footballi.net/video/1077783/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AA%D9%82%D9%88%DB%8C-%D8%AF%D8%B1-%D8%AE%D8%B5%D9%88%D8%B5-%D8%AC%D9%86%D8%AC%D8%A7%D9%84-%D9%87%D8%A7%DB%8C-%D8%B9%D8%AC%DB%8C%D8%A8-%D9%84%DB%8C%DA%AF-%D8%A8%D8%B1%D8%AA%D8%B1-%D9%88%D8%A7%D9%84%DB%8C%D8%A8%D8%A7%D9%84\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 242 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ تولید اختصاصی یا نبود بازنشر برای هوش مصنوعی احراز نشد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
         "message_id": 51,
         "decided_at": "2026-11-27T08:00:58.082481+00:00",
-        "result": "رد شد.",
-        "notice": "رد شد."
+        "result": "رد شد."
       }
     },
     "updated_at": 1795766458.0825045,
-    "keyboard_codes": [
-      "EE24F7A1A5FB"
-    ],
-    "receipts": {
-      "53": "رد شد."
-    },
+    "keyboard_codes": [],
+    "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 1
+    "keyboard_waiting": 0
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
@@ -25581,7 +25593,9 @@
     "footballi:1077775": "excluded_content",
     "footballi:1077781": "excluded_content",
     "footballi:1077779": "excluded_content",
-    "footballi:1077782": "excluded_content"
+    "footballi:1077782": "excluded_content",
+    "footballi:1077785": "excluded_content",
+    "footballi:1077784": "excluded_content"
   },
   "editorial_review_migration": 1
 }
