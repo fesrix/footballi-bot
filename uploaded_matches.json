@@ -22016,7 +22016,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T11:31:20.963204+00:00",
+    "finished_at": "2026-11-27T15:01:36.003948+03:30",
     "new_web_candidates": 5,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -22037,6 +22037,24 @@
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 1,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 3,
+        "editorial_approval_missing": 7,
+        "quality_or_format_rejected": 9,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 0,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24396,18 +24414,32 @@
         "hash": "8989faa36dcd2ec515b87aa204f92b9764df0565ede6a02e8c1fc0418ff51036",
         "reviewed_at": 1795777295,
         "has_replied": false
+      },
+      "UgyDF2RBRIbzI7Kmhlp4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "5050a537357269ffdf1cb30f4cdc2be2101cc7813ce18d7e59475bdfc0d3e916",
+        "reviewed_at": 1795779101,
+        "has_replied": false
+      },
+      "UgwDzz36G8sv_3WJvtR4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "fa1edd14756a57d91207d5a264e7563c61faae7fbf846d1613d2dbdcb55b1216",
+        "reviewed_at": 1795779101,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-27",
-      "read": 54,
+      "read": 62,
       "write": 0
     },
     "last_run": {
-      "discovered": 1,
-      "reviewed": 1,
-      "reviewed_no_reply": 1,
+      "discovered": 2,
+      "reviewed": 2,
+      "reviewed_no_reply": 2,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -24415,13 +24447,13 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 54,
+      "read_units": 62,
       "write_units": 0
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997654,
+  "last_successful_run_slot": 997655,
   "footballi_recent_publications": {
     "1077840": 1795779079.3422592,
     "1077838": 1795779079.3422592,
@@ -24671,7 +24703,8 @@
       "discovery_timestamp": 1795779080.249416,
       "attempt_count": 1,
       "is_short": false,
-      "originals_decision": "editorial_approval_missing"
+      "originals_decision": "editorial_approval_missing",
+      "telegram_screening": "quality_or_format_rejected"
     },
     {
       "video_id": 1077807,
@@ -25418,17 +25451,19 @@
         "generation": 1,
         "sha256": "b4fe78018d71c110996b25867269dec1ace52aeae45f86782339bc7dc076c822",
         "evidence": "مصاحبه و گفت‌وگو\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nصحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور\nhttps://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 203 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nصحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور\nhttps://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 203 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 60
       }
     },
     "updated_at": 1795766458.0825045,
     "keyboard_codes": [
+      "AC3D584DA285",
       "EA381009DFB0",
       "02535E48920E"
     ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 2
+    "keyboard_waiting": 3
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
