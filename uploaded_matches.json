@@ -22066,7 +22066,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T16:01:44.059886+00:00",
+    "finished_at": "2026-11-27T19:32:43.888729+03:30",
     "new_web_candidates": 10,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -22087,6 +22087,24 @@
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 2,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 5,
+        "editorial_approval_missing": 8,
+        "quality_or_format_rejected": 21,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 0
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24488,18 +24506,32 @@
         "hash": "936236511760237b39d7be8ba8d4286ea99a64e346a1a63a9bbb76deb79743de",
         "reviewed_at": 1795791754,
         "has_replied": false
+      },
+      "Ugx7dTP7TobJNjP581x4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "34f48d967924636fd525dd753a5c51dd156425c8136e65ed55c0610293869621",
+        "reviewed_at": 1795795369,
+        "has_replied": false
+      },
+      "Ugwt1PXTF3h1BkUPLNN4AaABAg": {
+        "status": "reviewed_no_reply",
+        "reason": "CRITICISM_KEEP",
+        "hash": "4d5784d1be01e9eef42647b6d14234007d9ce463fd62728166501abdef8d1168",
+        "reviewed_at": 1795795369,
+        "has_replied": false
       }
     },
     "threads": {},
     "quota": {
       "date": "2026-11-27",
-      "read": 119,
+      "read": 127,
       "write": 100
     },
     "last_run": {
-      "discovered": 0,
-      "reviewed": 0,
-      "reviewed_no_reply": 0,
+      "discovered": 2,
+      "reviewed": 2,
+      "reviewed_no_reply": 2,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -24507,13 +24539,13 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 119,
+      "read_units": 127,
       "write_units": 100
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997663,
+  "last_successful_run_slot": 997664,
   "footballi_recent_publications": {
     "1077943": 1795795293.9676213,
     "1077942": 1795795293.9676213,
@@ -25939,17 +25971,20 @@
         "generation": 1,
         "sha256": "73677e4d9de5160680177f95898e5d1924f446217e44d1bc5d307d285ede1b52",
         "evidence": "مصاحبه و گفت‌وگو\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nمصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان\nhttps://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 278 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nمصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان\nhttps://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 278 ثانیه | 1920×1080\nدلیل پیشنهاد: مصاحبه و گفت‌وگو\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 73
       }
     },
     "updated_at": 1795780858.0033355,
     "keyboard_codes": [
+      "9F5C3E83670C",
+      "183D790ADFC8",
       "455F34A66B9A",
       "BF2A63674D1E"
     ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 2
+    "keyboard_waiting": 4
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
