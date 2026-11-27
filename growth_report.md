@@ -18,7 +18,7 @@
 
 ## Last run
 
-- New web candidates: 3
+- New web candidates: 6
 - New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
@@ -26,7 +26,7 @@
 
 ## Publication routes
 - Telegram cards sent: 0
-- Waiting by reason: {'telegram_rejected': 3, 'editorial_approval_missing': 6, 'quality_or_format_rejected': 7, 'missing_audio': 1}
+- Waiting by reason: {'telegram_rejected': 3, 'editorial_approval_missing': 6, 'quality_or_format_rejected': 8, 'missing_audio': 1}
 - Trusted programme uploads: 0
 - Telegram-approved uploads: 0
 - Direct-link uploads: 0
@@ -36,10 +36,10 @@
 - Match-day candidates: 0 | Priority approved: 0
 
 ## Comment review
-- Discovered: 1 | Reviewed by AI: 1
-- Kept without reply: 1 | Replied: 0 | Removed: 0
+- Discovered: 3 | Reviewed by AI: 3
+- Kept without reply: 3 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 38 | Write quota: 0
+- Archive pages processed: 3 | Read quota: 46 | Write quota: 0
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
