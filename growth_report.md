@@ -25,7 +25,7 @@
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Publication routes
-- Telegram cards sent: 1
+- Telegram cards sent: 0
 - Waiting by reason: {'telegram_rejected': 3, 'editorial_approval_missing': 6, 'quality_or_format_rejected': 7, 'missing_audio': 1}
 - Trusted programme uploads: 0
 - Telegram-approved uploads: 0
@@ -39,7 +39,7 @@
 - Discovered: 1 | Reviewed by AI: 1
 - Kept without reply: 1 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 30 | Write quota: 0
+- Archive pages processed: 3 | Read quota: 38 | Write quota: 0
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
