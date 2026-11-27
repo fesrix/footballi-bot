@@ -461,7 +461,8 @@
     "https://www.instagram.com/p/DgGbZjjA-ZH/",
     "https://www.instagram.com/p/DgGTValgLT0/",
     "https://footballi.net/video/1077606/%D8%AA%D9%85%D8%B1%DB%8C%D9%86%D8%A7%D8%AA-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A7%D8%B1%D8%A7%DA%A9-%D9%BE%DB%8C%D8%B4-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
-    "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1"
+    "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1",
+    "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -671,7 +672,8 @@
     "علیرضا بیرانوند: به پرسپولیسی‌ها خیانت نکرده بودم",
     "گاف علیرضا بیرانوند در مراسم برترین‌های آسیا",
     "تمرینات آلومینیوم اراک پیش از دیدار با پرسپولیس",
-    "صحبت‌های جواد نکونام پیش از دیدار تراکتور و ذوب‌آهن"
+    "صحبت‌های جواد نکونام پیش از دیدار تراکتور و ذوب‌آهن",
+    "صحبت های فرشید باقری پس از تساوی پیکان و فولاد"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -709,45 +711,6 @@
   "unblocked_v3": true,
   "pending_queue": [
     {
-      "video_id": 1077934,
-      "published_at": null,
-      "discovered_at": 1795795300.9448762,
-      "url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
-      "title": "صحبت های جنجالی فرشید باقری بازیکن پیکان پس از تساوی با فولاد",
-      "description": "ویدئوهای مشابه،حواشی و سایر ویدئوهای ورزشی را در وب سایت فوتبالی تماشا کنید | پیکان,فولاد خوزستان,لیگ برتر ایران",
-      "source_tags": [
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال",
-        "فوتبالی,ویدئو فوتبال,خلاصه بازی,حواشی فوتبال"
-      ],
-      "mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-45c475a7-18eb-4897-be6b-1465f5cd68c0.mp4",
-      "alternate_mp4_url": "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-145cd980-dd96-4aba-b08b-0406bbcd7e3d.mp4",
-      "poster_url": "https://cdn.oddrun.ir/news/1000/images/JOMBesTsJAaEXukekt0RJrk8URf8ubOfvSjyGf9q.jpg",
-      "site_views": 0,
-      "source": "footballi_web",
-      "source_url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
-      "source_published_at": null,
-      "source_first_seen_at": 1795795293.9676213,
-      "rights_status": "internal_authorized",
-      "content_type": "footballi_web_video",
-      "discovery_timestamp": 1795795300.9449067,
-      "attempt_count": 2,
-      "is_short": false,
-      "originals_decision": "approved",
-      "ai_score": 6,
-      "category": "VIDEO",
-      "learning_factor": 1,
-      "verified_is_short": false,
-      "priority_class": "match_day",
-      "priority_reason": "interview:صحبت های",
-      "fixture_id": "e94240b7f424e907",
-      "fixture_relation": "both_teams",
-      "priority_until": "2026-11-28T00:30:00+03:30",
-      "home_team": "پیکان",
-      "away_team": "فولاد خوزستان",
-      "competition": "لیگ برتر خلیج فارس",
-      "kickoff_at": "2026-11-27T18:30:00+03:30"
-    },
-    {
       "video_id": 1077931,
       "published_at": null,
       "discovered_at": 1795795303.199523,
@@ -771,10 +734,20 @@
       "discovery_timestamp": 1795795303.1995459,
       "attempt_count": 2,
       "is_short": false,
-      "originals_decision": "awaiting_file_and_ai",
+      "originals_decision": "approved",
       "ai_score": 6,
       "category": "VIDEO",
-      "learning_factor": 1
+      "learning_factor": 1,
+      "verified_is_short": false,
+      "priority_class": "match_day",
+      "priority_reason": "interview:مصاحبه",
+      "fixture_id": "e94240b7f424e907",
+      "fixture_relation": "both_teams",
+      "priority_until": "2026-11-28T00:30:00+03:30",
+      "home_team": "پیکان",
+      "away_team": "فولاد خوزستان",
+      "competition": "لیگ برتر خلیج فارس",
+      "kickoff_at": "2026-11-27T18:30:00+03:30"
     }
   ],
   "organized_playlist_vids": [
@@ -1227,11 +1200,12 @@
     "https://instagram.ficn3-4.fna.fbcdn.net/o1/v/t2/f2/m86/AQPUPpcowOqQVMokdbSBUbf2bBdfCQeFWS4RvvIcyNW66o9-NtnS4h_Z2s8SD8r4m2czoSgCQbptPUpcxCt8NZwMfJikbgGpCd4X2i8.mp4?_nc_cat=109&_nc_oc=AdreLVs1P1I6x2hghTwVoXm6bN4yR1TAGX7CdiPv8M21F1LBm-uEdXOKrpRhM1B2fTc&_nc_sid=5e9851&_nc_ht=instagram.ficn3-4.fna.fbcdn.net&_nc_ohc=fqdTU6jlebEQ7kNvwH5gcAh&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTE2MjE1MzA5NjMzNDY4MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMTAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=e3c6f585428cddba&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83QjhCNDdGMDY0NkE0NDZFQjdERjYwMUQ1OEMwMDk4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzg1OTk1N0Y5MjQ0QjQ2OTNBQkQyNzZCMzQxREY2RDFEX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACawtdqnm76QBBUCKAJDMywXQFugAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=vb8qKTUnCtfP0hkYdBKV-g&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UrfAbjCrKEKscoXgb2c5xdnK0PR-y1UzjY2zCqBWNfgaN6nUlPbqyZSOjmkPhdNh0gZwfrD9Di93HiO3YzDw_tdKyp_Pmm6NT35AVUwGqTRqkoDSkLkOVQ220dM&oh=00_AQTkGZDJM6-lU40SSwn_w8KwsLk7ObGYmrG1QT1jtXMdaQ&oe=6B0A444A",
     "https://instagram.fbhx1-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQN5RX63Hiql4NzpJSuoUIt2aP1MTZRIjVFxe7lCn6CIRMnMABKCYUzX2-YNPNitEO8211XsPeHHLR16hWKK03XwmiLzbWz7TQ99tzo.mp4?_nc_cat=108&_nc_oc=Adocf6bDqfYzMyoixb_vZRqg03zCbVvntf3D3BvO6SdWZ3Y2WNCbHiF2Grk6uswjJBk&_nc_sid=5e9851&_nc_ht=instagram.fbhx1-1.fna.fbcdn.net&_nc_ohc=ckbw7f2EZl8Q7kNvwFIWH63&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg1Njg1OTE5MTkxNjI3MCwiYXNzZXRfYWdlX2RheXMiOjIsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo5NCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=bba6bbfd751922e&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83RTgzNkRDNTM4RTc0RDg1Qjg4QjAyNzgwM0FENjQ4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0FGQzJBNzAwMjMyQzQwRTM5QjQ1RUY4RUM0Njg3NEY5X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbc28GIt7PMBhUCKAJDMywXQFeRBiTdLxsYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=IOKC79ylZ3EaMhXVpzjtxw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UtcdcCwzNnr3kNxJ63GRJ8k9H-SVMbabhsRITRH6sfieSCeYCj8QMWwfwv0BXNwksWZ96CGaZb8aN9Jee2VB2OrrwQYJ3dOkwB2A9tfEYsbFsHPzJXlbxYielaM&oh=00_AQRu8QHltI5Q9yXIAvNQYo5Yq3XZi8hVo2Pn3lfof2XXrQ&oe=6B0A0DF1",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/26/tus-4b8657c2-32cb-4a67-b5df-8121964418da.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bbc5760e-0c57-487b-8c2d-9283c197a72c.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bbc5760e-0c57-487b-8c2d-9283c197a72c.mp4",
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-45c475a7-18eb-4897-be6b-1465f5cd68c0.mp4"
   ],
   "daily_uploads": {
     "date": "2026-11-27",
-    "count": 1
+    "count": 2
   },
   "last_upload_timestamp": 1795780910.190046,
   "last_apify_check": 1795791740.003077,
@@ -1907,6 +1881,9 @@
     "mBLGx-0SqSY": [
       "INTERVIEW",
       "TRACTOR"
+    ],
+    "V3vh0LUw8qE": [
+      "INTERVIEW"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2504,7 +2481,8 @@
     "بیرانوند: اگر از پرسپولیسی‌ها تشکر نمی‌کردم، به آن‌ها خیانت کرده بودم!",
     "گاف عجیب و خنده‌دار علیرضا بیرانوند در مراسم برترین‌های آسیا",
     "تمرینات آلومینیوم اراک پیش از بازی با پرسپولیس",
-    "صحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور"
+    "صحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور",
+    "صحبت های جنجالی فرشید باقری بازیکن پیکان پس از تساوی با فولاد"
   ],
   "analytics": {
     "videos": {
@@ -22131,6 +22109,33 @@
       "learning_revision": "da83426ab03bc961",
       "topic": "تراکتور",
       "source_title": "صحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور"
+    },
+    "V3vh0LUw8qE": {
+      "title": "صحبت های فرشید باقری پس از تساوی پیکان و فولاد",
+      "category": "VIDEO",
+      "format": "main",
+      "priority_summary": false,
+      "priority_class": "match_day",
+      "priority_reason": "interview:صحبت های",
+      "fixture_id": "e94240b7f424e907",
+      "fixture_relation": "both_teams",
+      "priority_until": "2026-11-28T00:30:00+03:30",
+      "home_team": "پیکان",
+      "away_team": "فولاد خوزستان",
+      "competition": "لیگ برتر خلیج فارس",
+      "kickoff_at": "2026-11-27T18:30:00+03:30",
+      "rights_audit": "approved",
+      "source": "footballi_web",
+      "source_url": "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
+      "rights_status": "internal_authorized",
+      "originals_decision": "approved",
+      "publication_route": "telegram_review",
+      "published_at": "2026-11-27T16:31:52.159210+00:00",
+      "title_style": "direct",
+      "title_experiment": false,
+      "learning_revision": "da83426ab03bc961",
+      "topic": "",
+      "source_title": "صحبت های جنجالی فرشید باقری بازیکن پیکان پس از تساوی با فولاد"
     }
   },
   "rights_migration_version": 1,
@@ -22145,7 +22150,7 @@
       "short": 0,
       "priority_summaries": 0,
       "priority_editorial": 0,
-      "priority_match_day": 0
+      "priority_match_day": 1
     },
     "live_scores": {
       "status": "ok",
@@ -22155,8 +22160,17 @@
     },
     "learning": {
       "revision": "da83426ab03bc961",
-      "changes": []
-    }
+      "changes": [],
+      "title_style": "direct",
+      "selected_factor": 1,
+      "published_tehran": "20:01"
+    },
+    "publication_routes": {
+      "telegram_review": 1
+    },
+    "end_screen_video_ids": [
+      "V3vh0LUw8qE"
+    ]
   },
   "last_short_upload_timestamp": 1795717887.418422,
   "learning": {
@@ -25960,7 +25974,7 @@
         "notice": "رد شد."
       },
       "footballi:1077934": {
-        "status": "upload_uncertain",
+        "status": "published",
         "preview": false,
         "button_id": "183d790adfc84a217e4e075dc1f94dfb",
         "generation": 1,
@@ -25976,11 +25990,12 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
-        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
+        "result": "منتشر شد: https://www.youtube.com/watch?v=V3vh0LUw8qE",
+        "notice": "منتشر شد: https://www.youtube.com/watch?v=V3vh0LUw8qE",
+        "video_id": "V3vh0LUw8qE"
       },
       "footballi:1077931": {
-        "status": "approved",
+        "status": "upload_uncertain",
         "preview": false,
         "button_id": "9f5c3e83670c9e22551d7e267cea10e3",
         "generation": 1,
@@ -25996,8 +26011,8 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-        "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       }
     },
     "updated_at": 1795797053.5649962,
