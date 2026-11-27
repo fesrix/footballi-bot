@@ -22164,7 +22164,7 @@
   },
   "rights_migration_version": 1,
   "last_run": {
-    "finished_at": "2026-11-27T17:31:16.018926+00:00",
+    "finished_at": "2026-11-27T21:02:08.707046+03:30",
     "new_web_candidates": 1,
     "new_instagram_candidates": 0,
     "rejected_by_reason": {},
@@ -22185,6 +22185,24 @@
     "learning": {
       "revision": "da83426ab03bc961",
       "changes": []
+    },
+    "telegram_proposals": {
+      "sent": 1,
+      "trusted_staged": 0,
+      "waiting_by_reason": {
+        "telegram_rejected": 7,
+        "editorial_approval_missing": 5,
+        "quality_or_format_rejected": 21,
+        "missing_audio": 1
+      }
+    },
+    "queue_size": 0,
+    "daily_uploads": {
+      "main": 1,
+      "short": 0,
+      "priority_summaries": 0,
+      "priority_editorial": 0,
+      "priority_match_day": 2
     }
   },
   "last_short_upload_timestamp": 1795717887.418422,
@@ -24647,13 +24665,13 @@
     "threads": {},
     "quota": {
       "date": "2026-11-27",
-      "read": 143,
+      "read": 149,
       "write": 100
     },
     "last_run": {
-      "discovered": 3,
-      "reviewed": 3,
-      "reviewed_no_reply": 3,
+      "discovered": 0,
+      "reviewed": 0,
+      "reviewed_no_reply": 0,
       "replied": 0,
       "deleted": 0,
       "errors": 0,
@@ -24661,13 +24679,13 @@
       "archive_pages": 3,
       "remaining": 0,
       "reply_threads_remaining": 0,
-      "read_units": 143,
+      "read_units": 149,
       "write_units": 100
     },
-    "scan_phase": 1,
+    "scan_phase": 2,
     "archive_token": null
   },
-  "last_successful_run_slot": 997666,
+  "last_successful_run_slot": 997667,
   "footballi_recent_publications": {
     "1077968": 1795798884.770184,
     "1077966": 1795798884.770184,
@@ -26101,14 +26119,17 @@
         "generation": 1,
         "sha256": "72f5119d9075a4a80be32f8659e015153ec436a11167da55199099c7a6d45e02",
         "evidence": "حواشی قبل یا بعد بازی\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.",
-        "card": "پیشنهاد انتشار\nصحبتهای بازیکنان آلومینیوم بعد از دیدار با پرسپولیس\nhttps://footballi.net/video/1077951/%D8%B5%D8%AD%D8%A8%D8%AA%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 680 ثانیه | 1920×1080\nدلیل پیشنهاد: حواشی قبل یا بعد بازی\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی."
+        "card": "پیشنهاد انتشار\nصحبتهای بازیکنان آلومینیوم بعد از دیدار با پرسپولیس\nhttps://footballi.net/video/1077951/%D8%B5%D8%AD%D8%A8%D8%AA%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3\nمنبع: وب‌سایت فوتبالی\nتاریخ منبع: نامشخص\nویدیوی اصلی | 680 ثانیه | 1920×1080\nدلیل پیشنهاد: حواشی قبل یا بعد بازی\n⚠️ هوش مصنوعی احتمال بازنشر یا محتوای شخص ثالث را گزارش کرد.\nبا تأیید، تولید فوتبالی و حق انتشار تصویر و صدای همین ویدیو در یوتیوب را گواهی می‌کنی.",
+        "message_id": 84
       }
     },
     "updated_at": 1795797053.5649962,
-    "keyboard_codes": [],
+    "keyboard_codes": [
+      "F9124D94868A"
+    ],
     "receipts": {},
     "link_requests": {},
-    "keyboard_waiting": 0
+    "keyboard_waiting": 1
   },
   "originals_exclusions": {
     "footballi:1077661": "excluded_content",
