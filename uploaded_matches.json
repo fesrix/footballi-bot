@@ -466,7 +466,8 @@
     "https://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86",
     "https://footballi.net/video/1077951/%D8%B5%D8%AD%D8%A8%D8%AA%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
     "https://www.instagram.com/p/DgQWQ13NYgc/",
-    "https://www.instagram.com/p/DgQMR-cArp4/"
+    "https://www.instagram.com/p/DgQMR-cArp4/",
+    "https://www.instagram.com/p/DgQJIPOgNXQ/"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -681,7 +682,8 @@
     "مصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان",
     "صحبتهای بازیکنان آلومینیوم پس از دیدار با پرسپولیس",
     "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم",
-    "واکنش محمدی به حضور خلیفه و گودرزی در استقلال"
+    "واکنش محمدی به حضور خلیفه و گودرزی در استقلال",
+    "صحبت‌های تارتار درباره تساوی استقلال مقابل آلومینیوم در اراک"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -720,44 +722,6 @@
   "pending_queue": [
     {
       "video_id": 0,
-      "published_at": 1795798077.0,
-      "discovered_at": 1795822335.7672892,
-      "url": "https://www.instagram.com/p/DgQJIPOgNXQ/",
-      "title": "تارتار: استقلال هم نتوانست در اراک، آلومینیوم را ببرد!",
-      "description": ".\nتارتار: استقلال هم نتوانست در اراک، آلومینیوم را ببرد!",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 27, 2026. May be an image of text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "29262299583424754"
-        }
-      },
-      "mp4_url": "https://instagram.fsyd13-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPgDxxjNbmV7RARPOo5h13eagr_noeuSaLwQWvncR6cs5WYfkXcEe3CjEmYMNSV_E9hCUDj2TaJtOS_OJJlh-DBWlc1jInDSRaejzU.mp4?_nc_cat=107&_nc_oc=Adp437AVzTCSJTHjvuHRSe1RP5qRP0q7WfX0dxd60ekSbyZcIJPZJ0IDeen9J0uSQBg3EofU2REphxhEdPBWkjNg&_nc_sid=5e9851&_nc_ht=instagram.fsyd13-1.fna.fbcdn.net&_nc_ohc=va9UTJdRZWgQ7kNvwFgD4D4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEzOTY4MDYzNTU4MTc1NCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo3NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8e551b8c73526f4a&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EOTQwNDc2MTg1QkE0N0NEQkVBMEFFM0Q0M0UzMUE0RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0EwNDc1RkE5QUZCRTQwQzVBMDk4OUY2NEM1QzhFREQxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACb01Ie3kqKGBBUCKAJDMywXQFL3bItDlYEYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=21Y7LwuV6JXxF2WXOd46Jw&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UuGK52kvdX5A9z9zyydXcNnnD9_AoZ86GxRhCSJoBro6CPurLfAQd4kSqOaw2r7TIpClF9XAIwxTjGmEBdMbUn43g_9JiO--iJBFJcmeX6CqRz-pmIv6u71c5GQ&oh=00_AQXCU-vcHWMb4DwHrYgFidIJAP-vWwKH32aLBG31zHZ99w&oe=6B0C051C",
-      "poster_url": "https://instagram.fsyd8-1.fna.fbcdn.net/v/t51.71878-15/931163130_3718409431657794_7654381033860084942_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&_nc_map=urlgen_bucketless&ig_cache_key=NDAzOTc2OTAxNDI3NTIwMDQ2NDExMzk2ODExOTIyNDgzNjU%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=tnvZxMj4jhIQ7kNvwFB7hXp&_nc_oc=AdoD1YC-NgYsxQJV1PEzlrdMV1WQlCi1uH_JZSLoyzC4-P4QCiyLyXSWhXmosoB4e29b2xTtv-s5NvZkdgQV0T5W&_nc_zt=23&_nc_ht=instagram.fsyd8-1.fna&_nc_gid=21Y7LwuV6JXxF2WXOd46Jw&_nc_ss=70789&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQWv9TPi_0lkaUvxURYyJUmBb0dVX-NikER2NygfKqNzzA&oe=6B0FCF56",
-      "site_views": 91900,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgQJIPOgNXQ/",
-      "source_published_at": 1795798077.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795822335.7672915,
-      "attempt_count": 2,
-      "is_short": true,
-      "originals_decision": "approved",
-      "ai_score": 6,
-      "category": "SHORTS",
-      "learning_factor": 1,
-      "verified_is_short": true
-    },
-    {
-      "video_id": 0,
       "published_at": 1795798223.0,
       "discovered_at": 1795822335.767329,
       "url": "https://www.instagram.com/p/DgQJU08gku6/",
@@ -788,10 +752,11 @@
       "discovery_timestamp": 1795822335.7673306,
       "attempt_count": 2,
       "is_short": true,
-      "originals_decision": "awaiting_file_and_ai",
+      "originals_decision": "approved",
       "ai_score": 6,
       "category": "SHORTS",
-      "learning_factor": 1
+      "learning_factor": 1,
+      "verified_is_short": true
     }
   ],
   "organized_playlist_vids": [
@@ -1249,11 +1214,12 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-3501ef03-b15a-41d8-97bf-a21980730d39.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-324a3d42-a458-4732-8a2d-2cbb310024d3.mp4",
     "https://scontent-ber1-1.cdninstagram.com/o1/v/t2/f2/m86/AQMSS90kPv1TajJCo32D6Z9SCes7OJa1WPHRivhFPbYQuLf0S-Xa_th-9RQR6NHqSoJ2s8vu_ix0trCY_826O1bmuFaICAv5kNUNnaw.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_ohc=vWeIpTXW5awQ7kNvwFwKC6r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5OTc1MDM4NzkxNTkyMiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo2NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a3bed4348b79b4ed&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9ENjVFMDE1NEU4MTY0NjM2QkNBNUM1ODVFNUUwQzBGNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzREODQ1NjlBRERBNzQ5RjU4Njg2M0VBNEQ2RUY2MTM0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACak8vKoobeyBhUCKAJDMywXQFDAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=LJI3gY22xldhNonUlUvRRw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQUMkMVYkWR1ATUWUo3OXuT01THEYwcs2hvFu_R_kVHUMg&oe=6B0BFFD0",
-    "https://scontent-mrs2-1.cdninstagram.com/o1/v/t2/f2/m86/AQMys1-vWI97iSw4zWvnrQBrNQUxpn7bpXVWk4FuSoD6LMHwyEw7WuQxS6v5w4RLn_dZyXgjLpnijEMIhHDXPDsNDSUAVe9km9yEb5I.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_ohc=JCswPEBZeBMQ7kNvwGJU-NE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTY4Njg1MzQ0OTgxNTM5NiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=987adf366e1099e9&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DMTBDOEQ0QzI0QkU0QjQzOTk3MzNGNDQwQzRGNkYyNl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0IwNjY2MUM1MDI5QTRBRTZBQjZEQTkyODU4QzM0Qzg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbI1dDK5Yv_BRUCKAJDMywXQEyd0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=T5Q4AYky44gkSSfC3zXScA&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UkU5xYq8V7cPwjye6tEk1PcJ8881Sg9wtlTq3pz-g2astjWMzQ7bqkAhGLSdtLtolPODsGIv0dUAV_oHo7Ib1WTXJEnd2mgx72O0LrEMNqO0LqJD_YzDTjWBbEY&oh=00_AQU4fG-B3B8bxGJGDsKr_HtEK9B7WPUIKOz37t--3s7xgg&oe=6B0C015E"
+    "https://scontent-mrs2-1.cdninstagram.com/o1/v/t2/f2/m86/AQMys1-vWI97iSw4zWvnrQBrNQUxpn7bpXVWk4FuSoD6LMHwyEw7WuQxS6v5w4RLn_dZyXgjLpnijEMIhHDXPDsNDSUAVe9km9yEb5I.mp4?_nc_cat=101&_nc_sid=5e9851&_nc_ht=scontent-mrs2-1.cdninstagram.com&_nc_ohc=JCswPEBZeBMQ7kNvwGJU-NE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTY4Njg1MzQ0OTgxNTM5NiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo1NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=987adf366e1099e9&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DMTBDOEQ0QzI0QkU0QjQzOTk3MzNGNDQwQzRGNkYyNl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0IwNjY2MUM1MDI5QTRBRTZBQjZEQTkyODU4QzM0Qzg2X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACbI1dDK5Yv_BRUCKAJDMywXQEyd0vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=T5Q4AYky44gkSSfC3zXScA&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UkU5xYq8V7cPwjye6tEk1PcJ8881Sg9wtlTq3pz-g2astjWMzQ7bqkAhGLSdtLtolPODsGIv0dUAV_oHo7Ib1WTXJEnd2mgx72O0LrEMNqO0LqJD_YzDTjWBbEY&oh=00_AQU4fG-B3B8bxGJGDsKr_HtEK9B7WPUIKOz37t--3s7xgg&oe=6B0C015E",
+    "https://instagram.fsyd13-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQPgDxxjNbmV7RARPOo5h13eagr_noeuSaLwQWvncR6cs5WYfkXcEe3CjEmYMNSV_E9hCUDj2TaJtOS_OJJlh-DBWlc1jInDSRaejzU.mp4?_nc_cat=107&_nc_oc=Adp437AVzTCSJTHjvuHRSe1RP5qRP0q7WfX0dxd60ekSbyZcIJPZJ0IDeen9J0uSQBg3EofU2REphxhEdPBWkjNg&_nc_sid=5e9851&_nc_ht=instagram.fsyd13-1.fna.fbcdn.net&_nc_ohc=va9UTJdRZWgQ7kNvwFgD4D4&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTEzOTY4MDYzNTU4MTc1NCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo3NSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8e551b8c73526f4a&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9EOTQwNDc2MTg1QkE0N0NEQkVBMEFFM0Q0M0UzMUE0RF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0EwNDc1RkE5QUZCRTQwQzVBMDk4OUY2NEM1QzhFREQxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACb01Ie3kqKGBBUCKAJDMywXQFL3bItDlYEYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=21Y7LwuV6JXxF2WXOd46Jw&_nc_ss=70789&_nc_map=urlgen_bucketless&_nc_zt=28&_nc_enc=UuGK52kvdX5A9z9zyydXcNnnD9_AoZ86GxRhCSJoBro6CPurLfAQd4kSqOaw2r7TIpClF9XAIwxTjGmEBdMbUn43g_9JiO--iJBFJcmeX6CqRz-pmIv6u71c5GQ&oh=00_AQXCU-vcHWMb4DwHrYgFidIJAP-vWwKH32aLBG31zHZ99w&oe=6B0C051C"
   ],
   "daily_uploads": {
     "date": "2026-11-28",
-    "count": 2
+    "count": 3
   },
   "last_upload_timestamp": 1795802510.363039,
   "last_apify_check": 1795822335.5792835,
@@ -1946,6 +1912,11 @@
     "-2B_OkRW3e0": [
       "ESTEGHLAL",
       "SHORTS"
+    ],
+    "P5DEZ3G88hs": [
+      "ESTEGHLAL",
+      "INTERVIEW",
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2548,7 +2519,8 @@
     "مصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان",
     "صحبتهای بازیکنان آلومینیوم بعد از دیدار با پرسپولیس",
     "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم",
-    "واکنش محمدی به حضور خلیفه و گودرزی در استقلال؛ به هیچ بازیکنی اجازه جدایی نمی‌دهیم!"
+    "واکنش محمدی به حضور خلیفه و گودرزی در استقلال؛ به هیچ بازیکنی اجازه جدایی نمی‌دهیم!",
+    "تارتار: استقلال هم نتوانست در اراک، آلومینیوم را ببرد!"
   ],
   "analytics": {
     "videos": {
@@ -22355,6 +22327,33 @@
       "learning_revision": "da83426ab03bc961",
       "topic": "استقلال",
       "source_title": "واکنش محمدی به حضور خلیفه و گودرزی در استقلال؛ به هیچ بازیکنی اجازه جدایی نمی‌دهیم!"
+    },
+    "P5DEZ3G88hs": {
+      "title": "صحبت‌های تارتار درباره تساوی استقلال مقابل آلومینیوم در اراک",
+      "category": "SHORTS",
+      "format": "short",
+      "priority_summary": false,
+      "priority_class": "",
+      "priority_reason": null,
+      "fixture_id": null,
+      "fixture_relation": null,
+      "priority_until": null,
+      "home_team": null,
+      "away_team": null,
+      "competition": null,
+      "kickoff_at": null,
+      "rights_audit": "approved",
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgQJIPOgNXQ/",
+      "rights_status": "internal_authorized",
+      "originals_decision": "approved",
+      "publication_route": "telegram_review",
+      "published_at": "2026-11-28T03:31:36.272331+00:00",
+      "title_style": "direct",
+      "title_experiment": false,
+      "learning_revision": "da83426ab03bc961",
+      "topic": "استقلال",
+      "source_title": "تارتار: استقلال هم نتوانست در اراک، آلومینیوم را ببرد!"
     }
   },
   "rights_migration_version": 1,
@@ -22366,7 +22365,7 @@
     "media_retries": {},
     "uploads": {
       "main": 0,
-      "short": 2,
+      "short": 3,
       "priority_summaries": 0,
       "priority_editorial": 0,
       "priority_match_day": 0
@@ -22385,10 +22384,10 @@
       "published_tehran": "07:01"
     },
     "publication_routes": {
-      "telegram_review": 2
+      "telegram_review": 3
     }
   },
-  "last_short_upload_timestamp": 1795836687.69979,
+  "last_short_upload_timestamp": 1795836696.272363,
   "learning": {
     "version": 1,
     "revision": "da83426ab03bc961",
@@ -26528,7 +26527,7 @@
         "video_id": "-2B_OkRW3e0"
       },
       "instagram:DgQJIPOgNXQ": {
-        "status": "upload_uncertain",
+        "status": "published",
         "preview": false,
         "button_id": "5609276b94abc6dffe3b327151958648",
         "generation": 1,
@@ -26544,11 +26543,12 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
-        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
+        "result": "منتشر شد: https://www.youtube.com/watch?v=P5DEZ3G88hs",
+        "notice": "منتشر شد: https://www.youtube.com/watch?v=P5DEZ3G88hs",
+        "video_id": "P5DEZ3G88hs"
       },
       "instagram:DgQJU08gku6": {
-        "status": "approved",
+        "status": "upload_uncertain",
         "preview": false,
         "button_id": "f7bc2f9f8e00f74b84e56685dd889c38",
         "generation": 1,
@@ -26564,8 +26564,8 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-        "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       }
     },
     "updated_at": 1795836645.1468337,
