@@ -18,14 +18,14 @@
 
 ## Last run
 
-- New web candidates: 2
-- New Instagram candidates: 6
+- New web candidates: 0
+- New Instagram candidates: 0
 - Rejections: {}
 - Published this run: 0 main, 0 Shorts, 0 priority highlights
 - Published today by format: 0 main, 0 Shorts, 0 priority highlights
 
 ## Publication routes
-- Telegram cards sent: 4
+- Telegram cards sent: 0
 - Waiting by reason: {'telegram_rejected': 7, 'editorial_approval_missing': 8, 'quality_or_format_rejected': 22, 'missing_audio': 3}
 - Trusted programme uploads: 0
 - Telegram-approved uploads: 0
@@ -39,7 +39,7 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 233 | Write quota: 250
+- Archive pages processed: 3 | Read quota: 239 | Write quota: 250
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
