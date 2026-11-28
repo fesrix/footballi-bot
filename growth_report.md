@@ -3,7 +3,7 @@
 - Analytics window: 2026-08-27 → 2026-11-24
 - Tracked videos: 139
 - Queue size: 0
-- Uploads today: 0
+- Uploads today: 4
 
 ## Performance by category
 
@@ -21,14 +21,14 @@
 - New web candidates: 0
 - New Instagram candidates: 0
 - Rejections: {}
-- Published this run: 0 main, 0 Shorts, 0 priority highlights
-- Published today by format: 0 main, 0 Shorts, 0 priority highlights
+- Published this run: 0 main, 4 Shorts, 0 priority highlights
+- Published today by format: 0 main, 4 Shorts, 0 priority highlights
 
 ## Publication routes
 - Telegram cards sent: 0
-- Waiting by reason: {'telegram_rejected': 7, 'editorial_approval_missing': 8, 'quality_or_format_rejected': 22, 'missing_audio': 3}
+- Waiting by reason: {'telegram_rejected': 7, 'editorial_approval_missing': 4, 'quality_or_format_rejected': 22, 'missing_audio': 3}
 - Trusted programme uploads: 0
-- Telegram-approved uploads: 0
+- Telegram-approved uploads: 4
 - Direct-link uploads: 0
 
 ## Live match priority
@@ -39,7 +39,7 @@
 - Discovered: 0 | Reviewed by AI: 0
 - Kept without reply: 0 | Replied: 0 | Removed: 0
 - Errors: 0 | In queue: 0 | Threads awaiting a reply scan: 0
-- Archive pages processed: 3 | Read quota: 275 | Write quota: 250
+- Archive pages processed: 3 | Read quota: 281 | Write quota: 250
 
 ## Publishing decisions from Analytics
 - Data through: 2026-11-24 | Revision: da83426ab03bc961
@@ -47,3 +47,4 @@
 - Candidates with an Analytics adjustment: 0
 - main: 20 mature samples, preferred Tehran times: default
 - short: 19 mature samples, preferred Tehran times: default
+- Published at 07:01 Tehran | Title style: direct | Queue factor: 1
