@@ -464,7 +464,8 @@
     "https://footballi.net/video/1077835/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D9%86%DA%A9%D9%88%D9%86%D8%A7%D9%85-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%B3%D9%81%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%D8%AE%D8%AA-%D8%A8%D8%B1%D8%A7%DB%8C-%D9%84%DB%8C%DA%AF-%D9%86%D8%AE%D8%A8%DA%AF%D8%A7%D9%86%D8%8C-%D8%AA%D8%B4%DA%A9%D8%B1-%D8%A7%D8%B2-%D8%B2%D9%86%D9%88%D8%B2%DB%8C-%D9%88-%D8%A2%D8%AE%D8%B1%DB%8C%D9%86-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AF%D8%B1%D9%88%D8%A7%D8%B2%D9%87-%D8%A8%D8%A7%D9%86-%D8%AA%D8%B1%D8%A7%DA%A9%D8%AA%D9%88%D8%B1",
     "https://footballi.net/video/1077934/%D8%B5%D8%AD%D8%A8%D8%AA-%D9%87%D8%A7%DB%8C-%D8%AC%D9%86%D8%AC%D8%A7%D9%84%DB%8C-%D9%81%D8%B1%D8%B4%DB%8C%D8%AF-%D8%A8%D8%A7%D9%82%D8%B1%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D8%A8%D8%A7-%D9%81%D9%88%D9%84%D8%A7%D8%AF",
     "https://footballi.net/video/1077931/%D9%85%D8%B5%D8%A7%D8%AD%D8%A8%D9%87-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D9%BE%DB%8C%DA%A9%D8%A7%D9%86-%D9%BE%D8%B3-%D8%A7%D8%B2-%D8%AA%D8%B3%D8%A7%D9%88%DB%8C-%D9%85%D9%82%D8%A7%D8%A8%D9%84-%D9%81%D9%88%D9%84%D8%A7%D8%AF-%D8%AE%D9%88%D8%B2%D8%B3%D8%AA%D8%A7%D9%86",
-    "https://footballi.net/video/1077951/%D8%B5%D8%AD%D8%A8%D8%AA%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3"
+    "https://footballi.net/video/1077951/%D8%B5%D8%AD%D8%A8%D8%AA%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%DB%8C%DA%A9%D9%86%D8%A7%D9%86-%D8%A2%D9%84%D9%88%D9%85%DB%8C%D9%86%DB%8C%D9%88%D9%85-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B2-%D8%AF%DB%8C%D8%AF%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%B1%D8%B3%D9%BE%D9%88%D9%84%DB%8C%D8%B3",
+    "https://www.instagram.com/p/DgQWQ13NYgc/"
   ],
   "uploaded_titles": [
     "خلاصه و حواشی بازی استقلال 5-1 آلومینیوم اراک",
@@ -677,7 +678,8 @@
     "صحبت‌های جواد نکونام پیش از دیدار تراکتور و ذوب‌آهن",
     "صحبت های فرشید باقری پس از تساوی پیکان و فولاد",
     "مصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان",
-    "صحبتهای بازیکنان آلومینیوم پس از دیدار با پرسپولیس"
+    "صحبتهای بازیکنان آلومینیوم پس از دیدار با پرسپولیس",
+    "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم"
   ],
   "last_apify_run": 1794461460.4437513,
   "unblocked_v2": true,
@@ -716,44 +718,6 @@
   "pending_queue": [
     {
       "video_id": 0,
-      "published_at": 1795804923.0,
-      "discovered_at": 1795822335.7671824,
-      "url": "https://www.instagram.com/p/DgQWQ13NYgc/",
-      "title": "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم",
-      "description": ".\nپیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم\nگربه را در خود حجله می‌کشم!",
-      "source_metadata": {
-        "alt": "Video by فوتبالی || footballiapp on November 27, 2026. May be an image of text.",
-        "hashtags": [],
-        "ownerUsername": "footballiapp",
-        "ownerFullName": "فوتبالی || footballiapp",
-        "musicInfo": {
-          "artist_name": "footballiapp",
-          "song_name": "Original audio",
-          "uses_original_audio": true,
-          "should_mute_audio": false,
-          "should_mute_audio_reason": "",
-          "audio_id": "29111133481920168"
-        }
-      },
-      "mp4_url": "https://scontent-ber1-1.cdninstagram.com/o1/v/t2/f2/m86/AQMSS90kPv1TajJCo32D6Z9SCes7OJa1WPHRivhFPbYQuLf0S-Xa_th-9RQR6NHqSoJ2s8vu_ix0trCY_826O1bmuFaICAv5kNUNnaw.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_ohc=vWeIpTXW5awQ7kNvwFwKC6r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5OTc1MDM4NzkxNTkyMiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo2NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a3bed4348b79b4ed&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9ENjVFMDE1NEU4MTY0NjM2QkNBNUM1ODVFNUUwQzBGNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzREODQ1NjlBRERBNzQ5RjU4Njg2M0VBNEQ2RUY2MTM0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACak8vKoobeyBhUCKAJDMywXQFDAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=LJI3gY22xldhNonUlUvRRw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQUMkMVYkWR1ATUWUo3OXuT01THEYwcs2hvFu_R_kVHUMg&oe=6B0BFFD0",
-      "poster_url": "https://scontent-ber1-1.cdninstagram.com/v/t51.71878-15/914395533_2102233267118755_2171469054119503669_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=1&ig_cache_key=NDAzOTgyNjc4MDEyMDc3ODc4MDE3OTk3NTA1NjQ1ODI1NzE%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjY0MC5zZHIudmlkZW9fZmlyc3RfZnJhbWVfdGh1bWJuYWlsLkMzIn0%3D&_nc_ohc=WIrPjsKBsfcQ7kNvwH3Y-Xd&_nc_oc=AdqvDYf66rtqvhOHOzLd2xdV81zDda6Afyjw_ogt9YbwuWEZMfEu3E0mE0chGjSQx3QgIPliRIvIH490HCCWWMCc&_nc_zt=23&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_gid=LJI3gY22xldhNonUlUvRRw&_nc_ss=70b8c&_nc_ct=RQosPBUIFQolBAAAAA&oh=00_AQVKTx7Ld3VF-fGNGOGnqljIzvoeZFGn1rpIsWGn1KG-JA&oe=6B0FD070",
-      "site_views": 364251,
-      "source": "instagram",
-      "source_url": "https://www.instagram.com/p/DgQWQ13NYgc/",
-      "source_published_at": 1795804923.0,
-      "rights_status": "internal_authorized",
-      "content_type": "instagram_reel",
-      "discovery_timestamp": 1795822335.7671876,
-      "attempt_count": 2,
-      "is_short": true,
-      "originals_decision": "approved",
-      "ai_score": 6,
-      "category": "SHORTS",
-      "learning_factor": 1,
-      "verified_is_short": true
-    },
-    {
-      "video_id": 0,
       "published_at": 1795799701.0,
       "discovered_at": 1795822335.767232,
       "url": "https://www.instagram.com/p/DgQMR-cArp4/",
@@ -784,10 +748,11 @@
       "discovery_timestamp": 1795822335.7672353,
       "attempt_count": 2,
       "is_short": true,
-      "originals_decision": "awaiting_file_and_ai",
+      "originals_decision": "approved",
       "ai_score": 6,
       "category": "SHORTS",
-      "learning_factor": 1
+      "learning_factor": 1,
+      "verified_is_short": true
     },
     {
       "video_id": 0,
@@ -1317,11 +1282,12 @@
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-bbc5760e-0c57-487b-8c2d-9283c197a72c.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-45c475a7-18eb-4897-be6b-1465f5cd68c0.mp4",
     "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-3501ef03-b15a-41d8-97bf-a21980730d39.mp4",
-    "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-324a3d42-a458-4732-8a2d-2cbb310024d3.mp4"
+    "https://vod.cdnboks.com/foot/upload/videos/2026/11/27/tus-324a3d42-a458-4732-8a2d-2cbb310024d3.mp4",
+    "https://scontent-ber1-1.cdninstagram.com/o1/v/t2/f2/m86/AQMSS90kPv1TajJCo32D6Z9SCes7OJa1WPHRivhFPbYQuLf0S-Xa_th-9RQR6NHqSoJ2s8vu_ix0trCY_826O1bmuFaICAv5kNUNnaw.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_ohc=vWeIpTXW5awQ7kNvwFwKC6r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc5OTc1MDM4NzkxNTkyMiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo2NywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a3bed4348b79b4ed&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9ENjVFMDE1NEU4MTY0NjM2QkNBNUM1ODVFNUUwQzBGNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzREODQ1NjlBRERBNzQ5RjU4Njg2M0VBNEQ2RUY2MTM0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwOIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRJjb3B5X3NhbXBsZV9ncm91cHMBMRUAACak8vKoobeyBhUCKAJDMywXQFDAAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=LJI3gY22xldhNonUlUvRRw&_nc_ss=70b8c&_nc_map=urlgen_bucketless&_nc_zt=28&oh=00_AQUMkMVYkWR1ATUWUo3OXuT01THEYwcs2hvFu_R_kVHUMg&oe=6B0BFFD0"
   ],
   "daily_uploads": {
     "date": "2026-11-28",
-    "count": 0
+    "count": 1
   },
   "last_upload_timestamp": 1795802510.363039,
   "last_apify_check": 1795822335.5792835,
@@ -2006,6 +1972,10 @@
     ],
     "dS10hsqkpeE": [
       "PERSEPOLIS"
+    ],
+    "gdq5mAH5Ja0": [
+      "INTERVIEW",
+      "SHORTS"
     ]
   },
   "upload_limit_cooldown_until": 0,
@@ -2606,7 +2576,8 @@
     "صحبت های نکونام درباره سفرهای سخت برای لیگ نخبگان، تشکر از زنوزی و آخرین وضعیت دروازه بان تراکتور",
     "صحبت های جنجالی فرشید باقری بازیکن پیکان پس از تساوی با فولاد",
     "مصاحبه بازیکنان پیکان پس از تساوی مقابل فولاد خوزستان",
-    "صحبتهای بازیکنان آلومینیوم بعد از دیدار با پرسپولیس"
+    "صحبتهای بازیکنان آلومینیوم بعد از دیدار با پرسپولیس",
+    "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم"
   ],
   "analytics": {
     "videos": {
@@ -22359,6 +22330,33 @@
       "learning_revision": "da83426ab03bc961",
       "topic": "پرسپولیس",
       "source_title": "صحبتهای بازیکنان آلومینیوم بعد از دیدار با پرسپولیس"
+    },
+    "gdq5mAH5Ja0": {
+      "title": "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم",
+      "category": "SHORTS",
+      "format": "short",
+      "priority_summary": false,
+      "priority_class": "",
+      "priority_reason": null,
+      "fixture_id": null,
+      "fixture_relation": null,
+      "priority_until": null,
+      "home_team": null,
+      "away_team": null,
+      "competition": null,
+      "kickoff_at": null,
+      "rights_audit": "approved",
+      "source": "instagram",
+      "source_url": "https://www.instagram.com/p/DgQWQ13NYgc/",
+      "rights_status": "internal_authorized",
+      "originals_decision": "approved",
+      "publication_route": "telegram_review",
+      "published_at": "2026-11-28T03:31:21.176295+00:00",
+      "title_style": "direct",
+      "title_experiment": false,
+      "learning_revision": "da83426ab03bc961",
+      "topic": "",
+      "source_title": "پیروز قربانی: من چیزی را زیرسبیلی رد نمی‌کنم"
     }
   },
   "rights_migration_version": 1,
@@ -22370,7 +22368,7 @@
     "media_retries": {},
     "uploads": {
       "main": 0,
-      "short": 0,
+      "short": 1,
       "priority_summaries": 0,
       "priority_editorial": 0,
       "priority_match_day": 0
@@ -22383,10 +22381,16 @@
     },
     "learning": {
       "revision": "da83426ab03bc961",
-      "changes": []
+      "changes": [],
+      "title_style": "direct",
+      "selected_factor": 1,
+      "published_tehran": "07:01"
+    },
+    "publication_routes": {
+      "telegram_review": 1
     }
   },
-  "last_short_upload_timestamp": 1795717887.418422,
+  "last_short_upload_timestamp": 1795836681.176334,
   "learning": {
     "version": 1,
     "revision": "da83426ab03bc961",
@@ -26484,7 +26488,7 @@
         "video_id": "dS10hsqkpeE"
       },
       "instagram:DgQWQ13NYgc": {
-        "status": "upload_uncertain",
+        "status": "published",
         "preview": false,
         "button_id": "d03ad74322107c943256418b70aeddcb",
         "generation": 1,
@@ -26500,11 +26504,12 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
-        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
+        "result": "منتشر شد: https://www.youtube.com/watch?v=gdq5mAH5Ja0",
+        "notice": "منتشر شد: https://www.youtube.com/watch?v=gdq5mAH5Ja0",
+        "video_id": "gdq5mAH5Ja0"
       },
       "instagram:DgQMR-cArp4": {
-        "status": "approved",
+        "status": "upload_uncertain",
         "preview": false,
         "button_id": "6cb5d688c7e00d03fae2c73d4d8000c1",
         "generation": 1,
@@ -26520,8 +26525,8 @@
           "audio_rights_confirmed": true,
           "route": "telegram_review"
         },
-        "result": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است.",
-        "notice": "تأیید ثبت شد. در انتظار بررسی نهایی فایل است."
+        "result": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب.",
+        "notice": "در حال تطبیق نتیجهٔ آپلود با کانال یوتیوب."
       },
       "instagram:DgQJIPOgNXQ": {
         "status": "approved",
